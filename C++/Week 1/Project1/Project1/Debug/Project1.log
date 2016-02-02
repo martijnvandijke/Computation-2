@@ -1,0 +1,14 @@
+﻿Build started 2-2-2016 10:28:15.
+     1>Project "C:\Users\martijn\Documents\GitHub\Computation-II-\Project1\Project1\Project1.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt Source.cpp
+         Source.cpp
+     1>c:\users\martijn\documents\github\computation-ii-\project1\project1\source.cpp(30): error C2562: 'get_value': 'void' function returning a value
+         c:\users\martijn\documents\github\computation-ii-\project1\project1\source.cpp(29): note: see declaration of 'get_value'
+     1>c:\users\martijn\documents\github\computation-ii-\project1\project1\source.cpp(54): error C2664: 'double fourth(int)': cannot convert argument 1 from 'void' to 'int'
+         c:\users\martijn\documents\github\computation-ii-\project1\project1\source.cpp(54): note: Expressions of type void cannot be converted to other types
+     1>Done Building Project "C:\Users\martijn\Documents\GitHub\Computation-II-\Project1\Project1\Project1.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.35
