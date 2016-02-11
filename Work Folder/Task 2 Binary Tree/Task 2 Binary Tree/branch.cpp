@@ -204,12 +204,36 @@ int branch::count() const
 //
 branch* branch::find(string word)
 {
-    //
-    // TO BE IMPLEMENTED BY YOU
-    //
+	int i;
+	i = word.compare(_word);
 
-    cout << "The function branch::find is yet to be implemented!" << endl;
-    return nullptr;
+	if (i < 0) {
+		if (_left != nullptr) {
+			return _left->find(word);
+		}
+		else
+		{
+			return 0;
+		}
+	}
+
+	if (i> 0) {
+		if (_right != nullptr) {
+			return _right->find(word);
+		}
+		else
+		{
+			return 0;
+		}
+	}
+
+	else
+	{
+		return this;
+	}
+
+    //cout << "The function branch::find is yet to be implemented!" << endl;
+    //return nullptr;
 }
 
 //
@@ -249,6 +273,7 @@ void branch::print_words_alphabetically() const
 //
 branch* branch::remove(string word, branch** ptr_to_branch_ptr)
 {
+	
     //
     // TO BE IMPLEMENTED BY YOU (optionally)
     //
