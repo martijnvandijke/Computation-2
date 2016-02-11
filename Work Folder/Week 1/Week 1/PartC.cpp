@@ -10,45 +10,33 @@
 #include <string>
 
 using namespace std;
-string months[] = { "January", "February" , "March","April","May", "June","July","August","September","October" , "November", "December" };
 
-void reverse_string_array(string months[], int size) {
-	//std::reverse(str, &str[strlen(str)]);
-	string temp;
-	for (int i = 0; i < (size / 2); i++) {
-		temp = months[i];
-		months[i] = months[size - i - 1];
-		months[size - i - 1] = temp;
-
-	}
-
-
-}
-
-int get_value(int* num) {
-	return *num;
-
-}
-
-double fourth(int x) {
-	double out = x*x*x*x;
-	return out;
-
-}
 
 void main(void)
 {
+	std:: string input1, input2; 
+	cout	<< "Welcome to Part C \n"
+			<< "This program will ask you to input two stings \n" 
+			<< "Enter the first word:"
+			<< endl;
+	cin >> input1;
+	cout	<< "Enter the second word:" << endl;
+	cin >> input2;
 
-	int i = 5; // (2) integer variable i, set to 5
-	int* ip = &i;
-	int** ipp = &ip;
+	if (input1 == input2) {
+		cout	<<input1
+				<<" and "
+				<< input2
+				<< " are eqaul."
+				<< endl;
+	}
 
-	char* ber_string = &months[8][6];
-
-	// Reverse the order of the words in string array months
-	reverse_string_array(months, 12);
-	cout << months[3] << "," << months[2] << "," << months[1] << " and " << months[0] << " are the months \nof the year that end with " << ber_string << endl;
-	cout << "Fourth(" << **ipp << ")  = " << fourth(get_value(*ipp)) << endl;
-
+	else {
+		cout << "Concatenated: "
+			<< input1 + input2
+			<< " or "
+			<< input2 +input1
+			<< endl;
+	}
 
 }
