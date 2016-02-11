@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{228041D3-65AE-4539-B491-D4A2ACF4D442}</ProjectGuid>
-    <RootNamespace>Task2BinaryTree</RootNamespace>
+    <ProjectGuid>{61C96973-F92B-4ED6-BE63-83EDE4019F7E}</ProjectGuid>
+    <RootNamespace>Task2</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -118,11 +118,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="branch.cpp" />
-    <ClCompile Include="io.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="output.cpp" />
-    <ClCompile Include="tree.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

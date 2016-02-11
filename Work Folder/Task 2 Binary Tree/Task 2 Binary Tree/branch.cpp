@@ -2,8 +2,8 @@
 //
 // Task Binary Tree
 // File: branch.cpp
-// Name: <your name>
-// Student number:
+// Name: Martyn van Dijke
+// Student number: 0887668
 //
 // Contents: Bodies of member functions of class 'branch'
 //
@@ -15,6 +15,7 @@
 
 #include <fstream>
 #include <iostream>
+#include <algorithm> 
 #include <string>
 
 using namespace std;
@@ -86,12 +87,47 @@ void branch::add(string word)
     // In case a subtree already exists, recursively call this
     // member function on the _left or _right subtree.
     // In case there is no such subtree, make a new leaf-branch.
+	
+	int i; 
+	i = word.compare(_word);
+	if (i < 0) {			//string should go left
+		//cout << "I need to go left" << endl;
+		
+		if (	_left == nullptr) {	//there is no brach connected to this word
+			_left = new branch(word);		
+			cout	<< "Added the word " 
+					<< word
+					<< " to the tree"  << endl;
+		}
 
-    //
-    // TO BE IMPLEMENTED BY YOU!
-    //
+		else {
+			_left->add(word);
+		}
 
-    cout << "The function branch::add is yet to be implemented!" << endl;
+	}
+	if (i > 0) {			//string should go right
+		//cout << "I need to go right" << endl;
+		
+		if (	_right == nullptr) {	//there is no brach connected to this word
+			_right = new branch(word);
+			cout << "Added the word "
+				<< word
+				<< " to the tree" << endl;
+		}
+
+		else {
+			_right->add(word);
+		}
+
+	}
+	//else {
+		//cout << "Word "
+			//<< word
+			//<< " already in the database" << endl;
+	//}
+
+	//cout << i << endl;
+    //cout << "The function branch::add is yet to be implemented!" << endl;
 }
 
 //
@@ -103,15 +139,29 @@ void branch::add(string word)
 //
 int branch::height() const
 {
-    // Something like: get height of each of the two child
-    // trees, and then return the longest of these two + 1
 
-    //
-    // TO BE IMPLEMENTED BY YOU
-    //
+	if ( _left == nullptr) {// if nothing is connected to the left
 
-    cout << "The function branch::height is yet to be implemented!" << endl;
-    return -1;
+			if ( _right == nullptr) { //and nothing is connected to the right
+				return  1; //then there is no deeper sub tree
+			}
+
+			else {	// if something is connected to the right 
+				return _right->height() + 1;	
+			}
+
+	}
+
+	else{
+		if (_right == nullptr) { //if nothing is connected the the right
+			return _left->height() +1 ;	
+		}
+
+		else{
+			return max( _left->height(), _right->height()) + 1	;
+		}
+	}
+
 }
 
 //
@@ -119,12 +169,30 @@ int branch::height() const
 //
 int branch::count() const
 {
-    //
-    // TO BE IMPLEMENTED BY YOU
-    //
+	if (_left == nullptr) {// if nothing is connected to the left
 
-    cout << "The function branch::height is yet to be implemented!" << endl;
-    return -1;
+		if (_right == nullptr) { //and nothing is connected to the right
+			return  1; //then there is no deeper sub tree
+		}
+
+		else {	// if something is connected to the right 
+			return _right->count() + 1;
+		}
+
+	}
+
+	else {
+		if (_right == nullptr) { //if nothing is connected the the right
+			return _left->count() + 1;
+		}
+
+		else {
+			return _left->count() + _right->height();
+		}
+	}
+
+    //cout << "The function branch::height is yet to be implemented!" << endl;
+    //return -1;
 }
 
 //

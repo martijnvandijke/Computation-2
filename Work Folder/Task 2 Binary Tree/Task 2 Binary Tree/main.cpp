@@ -2,8 +2,7 @@
 ///////////////////////////////////////////////////
 //
 // Task Binary Tree
-// Name: _________________fill in your name________
-//
+// Name: Martyn van Dijke
 // File: main.cpp
 //
 // Contents: The main() of the binary tree function

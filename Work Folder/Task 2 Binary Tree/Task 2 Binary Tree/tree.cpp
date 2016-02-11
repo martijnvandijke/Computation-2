@@ -2,8 +2,9 @@
 //
 // Task Binary Tree
 // File: tree.cpp
-// Name: <your name>
-// Student number:
+// Name: Martyn van Dijke
+// Student number: 0887668
+
 //
 // Contents: Bodies of member functions of class 'tree'
 //

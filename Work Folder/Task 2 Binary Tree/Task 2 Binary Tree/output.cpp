@@ -2,6 +2,8 @@
 //
 // Task Binary Tree
 // File: output.cpp
+// Name: Martyn van Dijke
+// Student number: 0887668
 //
 // Contents: The printf member functions of the
 //           classes tree and branch
