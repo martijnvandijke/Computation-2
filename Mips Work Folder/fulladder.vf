@@ -1,0 +1,71 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : fulladder.vf
+// /___/   /\     Timestamp : 02/12/2016 14:36:18
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog "C:/Users/martijn/Documents/GitHub/Computation-2/Mips Work Folder/fulladder.vf" -w "C:/Users/martijn/Documents/GitHub/Computation-2/Mips Work Folder/fulladder.sch"
+//Design Name: fulladder
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module fulladder(a, 
+                 b, 
+                 c, 
+                 carry, 
+                 sum);
+
+    input a;
+    input b;
+    input c;
+   output carry;
+   output sum;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   wire XLXN_3;
+   wire XLXN_4;
+   wire XLXN_7;
+   wire XLXN_8;
+   wire XLXN_9;
+   
+   OR2  XLXI_1 (.I0(b), 
+               .I1(a), 
+               .O(XLXN_1));
+   OR2  XLXI_2 (.I0(XLXN_7), 
+               .I1(XLXN_8), 
+               .O(sum));
+   AND2  XLXI_3 (.I0(c), 
+                .I1(XLXN_1), 
+                .O(XLXN_2));
+   AND2  XLXI_4 (.I0(b), 
+                .I1(a), 
+                .O(XLXN_3));
+   AND2  XLXI_5 (.I0(XLXN_4), 
+                .I1(XLXN_9), 
+                .O(XLXN_8));
+   OR3  XLXI_7 (.I0(c), 
+               .I1(b), 
+               .I2(a), 
+               .O(XLXN_4));
+   AND3  XLXI_9 (.I0(c), 
+                .I1(b), 
+                .I2(a), 
+                .O(XLXN_7));
+   NOR2  XLXI_10 (.I0(XLXN_3), 
+                 .I1(XLXN_2), 
+                 .O(XLXN_9));
+   INV  XLXI_11 (.I(XLXN_9), 
+                .O(carry));
+endmodule

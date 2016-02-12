@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/martijn/Documents/GitHub/Computation-2/Mips Work Folder/fulladder_fulladder_sch_tb_isim_beh.exe" -prj "C:/Users/martijn/Documents/GitHub/Computation-2/Mips Work Folder/fulladder_fulladder_sch_tb_beh.prj" "work.fulladder_fulladder_sch_tb" "work.glbl" 
