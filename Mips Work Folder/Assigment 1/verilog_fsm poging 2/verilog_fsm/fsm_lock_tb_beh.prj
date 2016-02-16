@@ -1,0 +1,3 @@
+verilog work "fsm_lock.v"
+verilog work "fsm_lock_tb.v"
+verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

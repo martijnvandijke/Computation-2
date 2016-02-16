@@ -1,0 +1,2 @@
+verilog work "fsm_lock.v"
+verilog work "fsm_lock_tb.v"

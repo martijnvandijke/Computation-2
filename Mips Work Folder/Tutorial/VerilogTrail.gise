@@ -36,6 +36,7 @@
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
     <transform xil_pn:end_ts="1455284177" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1455284177">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
     <transform xil_pn:end_ts="1455284177" xil_pn:in_ck="-4152584914601969365" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1455284177">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -49,6 +50,8 @@
     <transform xil_pn:end_ts="1455284179" xil_pn:in_ck="-8258719962344325761" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-769407722412466843" xil_pn:start_ts="1455284177">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="fulladder.vf"/>
     </transform>
     <transform xil_pn:end_ts="1455284179" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="8073852539807264877" xil_pn:start_ts="1455284179">
@@ -58,12 +61,15 @@
     <transform xil_pn:end_ts="1455284179" xil_pn:in_ck="9173022626641037032" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1455284179">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="fulladder.vf"/>
       <outfile xil_pn:name="testfixture.v"/>
     </transform>
     <transform xil_pn:end_ts="1455284186" xil_pn:in_ck="9173022626641037032" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-2371136281525728044" xil_pn:start_ts="1455284179">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="fulladder_fulladder_sch_tb_beh.prj"/>
       <outfile xil_pn:name="fulladder_fulladder_sch_tb_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
@@ -73,6 +79,8 @@
     <transform xil_pn:end_ts="1455284207" xil_pn:in_ck="-37989976987845146" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="6320240397322411095" xil_pn:start_ts="1455284207">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="fulladder_fulladder_sch_tb_isim_beh.wdb"/>
