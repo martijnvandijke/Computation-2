@@ -37,7 +37,7 @@ void tree::read_from_file(string filename)
     destroy();
 
     // Open the file
-	filename = filename + ".txt";
+	//filename = filename;// +".txt";
     fp.open(filename, ios::in);
 	if (!fp.is_open()) {
 	   cerr << "Cannot open file \"" << filename << "\"" << endl;
@@ -68,14 +68,14 @@ void tree::read_from_file(string filename)
 //
 void tree::write_into_file(string fname) const
 {
-	std::string filename = fname + ".txt";
+	std::string filename = fname;// +".txt";
 	ofstream stream(filename, ios::out);
 	_root->write_pre_order(&stream);
 	stream.close();
-	cout	<< "Tree written into file : "
-			<< fname
-			<<".txt"
-			<< endl;
+	//cout	<< "Tree written into file : "
+			//<< fname
+			//<<".txt"
+			//<< endl;
 }
 
 //

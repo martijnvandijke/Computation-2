@@ -1,0 +1,10 @@
+Command line:
+   fsm_lock_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  1
+     -socket  53748
+
+Tue Feb 16 10:29:18 2016
+
+
+ Elaboration Time: 0.0625 sec
