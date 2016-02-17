@@ -4,10 +4,12 @@ Number of CPUs detected in this system: 8
 Turning on mult-threading, number of parallel sub-compilation jobs: 16 
 Determining compilation order of HDL files
 Analyzing Verilog file "C:/Users/martijn/Documents/GitHub/Computation-2/Mips Work Folder/Assigment 1/verilog_fsm poging 2/verilog_fsm/fsm_lock.v" into library work
+WARNING:HDLCompiler:751 - "C:/Users/martijn/Documents/GitHub/Computation-2/Mips Work Folder/Assigment 1/verilog_fsm poging 2/verilog_fsm/fsm_lock.v" Line 30: Redeclaration of ansi port out is not allowed
+WARNING:HDLCompiler:751 - "C:/Users/martijn/Documents/GitHub/Computation-2/Mips Work Folder/Assigment 1/verilog_fsm poging 2/verilog_fsm/fsm_lock.v" Line 31: Redeclaration of ansi port hex_display is not allowed
 Analyzing Verilog file "C:/Users/martijn/Documents/GitHub/Computation-2/Mips Work Folder/Assigment 1/verilog_fsm poging 2/verilog_fsm/fsm_lock_tb.v" into library work
 Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Starting static elaboration
-WARNING:HDLCompiler:189 - "C:/Users/martijn/Documents/GitHub/Computation-2/Mips Work Folder/Assigment 1/verilog_fsm poging 2/verilog_fsm/fsm_lock_tb.v" Line 28: Size mismatch in connection of port <hex_display>. Formal port size is 1-bit while actual signal size is 4-bit.
+WARNING:HDLCompiler:189 - "C:/Users/martijn/Documents/GitHub/Computation-2/Mips Work Folder/Assigment 1/verilog_fsm poging 2/verilog_fsm/fsm_lock_tb.v" Line 27: Size mismatch in connection of port <out>. Formal port size is 4-bit while actual signal size is 1-bit.
 Completed static elaboration
 Compiling module fsm_lock
 Compiling module fsm_lock_tb
@@ -15,5 +17,5 @@ Compiling module glbl
 Time Resolution for simulation is 1ps.
 Compiled 3 Verilog Units
 Built simulation executable C:/Users/martijn/Documents/GitHub/Computation-2/Mips Work Folder/Assigment 1/verilog_fsm poging 2/verilog_fsm/fsm_lock_tb_isim_beh.exe
-Fuse Memory Usage: 28400 KB
-Fuse CPU Usage: 499 ms
+Fuse Memory Usage: 28516 KB
+Fuse CPU Usage: 390 ms

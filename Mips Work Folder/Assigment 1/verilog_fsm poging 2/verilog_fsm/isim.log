@@ -6,17 +6,20 @@ WARNING: A WEBPACK license was found.
 WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
 WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
 This is a Lite version of ISim.
-WARNING: File "C:/Users/martijn/Documents/GitHub/Computation-2/Mips Work Folder/Assigment 1/verilog_fsm poging 2/verilog_fsm/fsm_lock_tb.v" Line 13.  For instance fsm_lock_tb/uut/, width 1 of formal port hex_display is not equal to width 4 of actual signal hex_display.
+WARNING: File "C:/Users/martijn/Documents/GitHub/Computation-2/Mips Work Folder/Assigment 1/verilog_fsm poging 2/verilog_fsm/fsm_lock_tb.v" Line 12.  For instance fsm_lock_tb/uut/, width 4 of formal port out is not equal to width 1 of actual signal out.
 Time resolution is 1 ps
 # onerror resume
 # wave add /
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
-Time resolution is 1 fs
-The simulator has terminated in an unexpected manner.  Please review the ISim log (isim.log) for details.
-# onerror resume
-# wave add /
-No active Database
-# run 1000 ns
-Unable to execute live simulation command.
+The value of the hex display is: xxxx
+The value of the hex display is: xxxx
+The value of the hex display is: xxxx
+The value of the hex display is: xxxx
+The value of the hex display is: xxxx
+The value of the hex display is: xxxx
+The value of the hex display is: xxxx
+The value of the hex display is: xxxx
+The value of the hex display is: xxxx
+The value of the hex display is: xxxx
