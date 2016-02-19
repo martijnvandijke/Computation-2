@@ -8,9 +8,6 @@
 // Contents: The file IO member functions of the
 //           classes tree and branch
 //
-// You'll need to complete functions in this file.
-// 
-// Skeleton functions by patrick@magma-da.com
 ////////////////////////////////////////////////////////////////
 #include "tree.h"
 

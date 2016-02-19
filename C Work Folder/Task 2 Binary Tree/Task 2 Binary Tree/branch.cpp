@@ -273,14 +273,31 @@ void branch::print_words_alphabetically() const
 //
 branch* branch::remove(string word, branch** ptr_to_branch_ptr)
 {
-	
-    //
-    // TO BE IMPLEMENTED BY YOU (optionally)
-    //
+	//pointer update ()
+	//reshuffle ()
 
-    cout << "The function branch::remove is yet to be implemented!" << endl;
-    return 0;
+	//if at the root of the tree
+	if (word.empty()) {
+		cout << "This word cannot be deleted " << endl;
+		return 0;
+	}
+	else
+	{
+
+	}
+
+
+	branch* child = (*ptr_to_branch_ptr)->find(word);
+	//branch* parent = (*ptr_to_branch_ptr)->FindParent(word);
+
+    cout << child << endl;
+    //return 0;
 }
+
+// lets find the parent of the word
+//branch* branch::FindParent(string word) {
+
+
 
 //
 // Help routine for branch::remove

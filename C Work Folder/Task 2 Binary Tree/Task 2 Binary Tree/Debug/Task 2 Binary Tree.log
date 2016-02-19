@@ -1,9 +1,14 @@
-﻿Build started 16-2-2016 19:52:34.
+﻿Build started 19-2-2016 08:14:52.
      1>Project "C:\Users\martijn\Documents\GitHub\Computation-2\C Work Folder\Task 2 Binary Tree\Task 2 Binary Tree\Task 2 Binary Tree.vcxproj" on node 2 (Build target(s)).
-     1>Link:
-         Task 2 Binary Tree.vcxproj -> C:\Users\martijn\Documents\GitHub\Computation-2\C Work Folder\Task 2 Binary Tree\Debug\Task 2 Binary Tree.exe
-     1>Done Building Project "C:\Users\martijn\Documents\GitHub\Computation-2\C Work Folder\Task 2 Binary Tree\Task 2 Binary Tree\Task 2 Binary Tree.vcxproj" (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt branch.cpp
+         branch.cpp
+     1>c:\users\martijn\documents\github\computation-2\c work folder\task 2 binary tree\task 2 binary tree\branch.cpp(279): error C2039: 'FindParent': is not a member of 'branch'
+         c:\users\martijn\documents\github\computation-2\c work folder\task 2 binary tree\task 2 binary tree\tree.h(71): note: see declaration of 'branch'
+     1>c:\users\martijn\documents\github\computation-2\c work folder\task 2 binary tree\task 2 binary tree\branch.cpp(286): error C2039: 'FindParent': is not a member of 'branch'
+         c:\users\martijn\documents\github\computation-2\c work folder\task 2 binary tree\task 2 binary tree\tree.h(71): note: see declaration of 'branch'
+     1>Done Building Project "C:\Users\martijn\Documents\GitHub\Computation-2\C Work Folder\Task 2 Binary Tree\Task 2 Binary Tree\Task 2 Binary Tree.vcxproj" (Build target(s)) -- FAILED.
 
-Build succeeded.
+Build FAILED.
 
-Time Elapsed 00:00:00.05
+Time Elapsed 00:00:00.92

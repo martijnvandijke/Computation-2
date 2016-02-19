@@ -43,7 +43,7 @@ tree::~tree(void)
 // merely a 'wrapper' around the recursive function
 // branch::add(word) that does the actual work.
 //
-void tree::add(string word)
+void tree::add(string word) 
 {
     if (!_root) {
         // this is the first branch of the tree: make _root point to it

@@ -18,7 +18,8 @@ module fsm_lock(
     );
 
 //variable declarition
-localparam STATE_Initial = 3'd0,
+localparam 
+	STATE_Initial = 3'd0,
 	STATE_1 = 3'd1,
 	STATE_2 = 3'd2,
 	STATE_3 = 3'd3,
@@ -45,8 +46,13 @@ reg [3:0]  hex_display;
 	///if(reset_in)
 		//NextState = STATE_Initial;
 //end
-
-always@(posedge clk	)begin
+
+
+initial begin
+CurrentState = STATE_Initial;
+NextState = STATE_Initial;
+end
+always@(b0_in or b1_in or reset_in)begin
 	if(reset_in)
 		NextState = STATE_Initial;
 	else
@@ -145,5 +151,11 @@ always@(posedge clk	)begin
 
 	
 end
+
+always@(posedge clk) begin
+	CurrentState = NextState;
+	end
+	
+
 
 endmodule 
