@@ -16,3 +16,4 @@ Finished circuit initialization process.
 Correctly opens using     01101
 Completed input.
 Stopped at time : 208300 ns : File "C:/Users/martijn/Documents/GitHub/Computation-2/Mips Work Folder/Assigment 1/verilog_fsm poging 2/verilog_fsm/fsm_lock_tb.v" Line 87
+The simulator has terminated in an unexpected manner.  Please review the ISim log (isim.log) for details.

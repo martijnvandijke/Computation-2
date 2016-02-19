@@ -1,14 +1,23 @@
-﻿Build started 19-2-2016 08:14:52.
+﻿Build started 19-2-2016 18:37:58.
      1>Project "C:\Users\martijn\Documents\GitHub\Computation-2\C Work Folder\Task 2 Binary Tree\Task 2 Binary Tree\Task 2 Binary Tree.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt branch.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt branch.cpp io.cpp main.cpp output.cpp tree.cpp
+         tree.cpp
+         output.cpp
+         main.cpp
+         io.cpp
          branch.cpp
-     1>c:\users\martijn\documents\github\computation-2\c work folder\task 2 binary tree\task 2 binary tree\branch.cpp(279): error C2039: 'FindParent': is not a member of 'branch'
-         c:\users\martijn\documents\github\computation-2\c work folder\task 2 binary tree\task 2 binary tree\tree.h(71): note: see declaration of 'branch'
-     1>c:\users\martijn\documents\github\computation-2\c work folder\task 2 binary tree\task 2 binary tree\branch.cpp(286): error C2039: 'FindParent': is not a member of 'branch'
-         c:\users\martijn\documents\github\computation-2\c work folder\task 2 binary tree\task 2 binary tree\tree.h(71): note: see declaration of 'branch'
-     1>Done Building Project "C:\Users\martijn\Documents\GitHub\Computation-2\C Work Folder\Task 2 Binary Tree\Task 2 Binary Tree\Task 2 Binary Tree.vcxproj" (Build target(s)) -- FAILED.
+         Generating Code...
+     1>c:\users\martijn\documents\github\computation-2\c work folder\task 2 binary tree\task 2 binary tree\branch.cpp(325): warning C4715: 'branch::FindParent': not all control paths return a value
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\martijn\Documents\GitHub\Computation-2\C Work Folder\Task 2 Binary Tree\Debug\Task 2 Binary Tree.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\martijn\Documents\GitHub\Computation-2\C Work Folder\Task 2 Binary Tree\Debug\Task 2 Binary Tree.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\martijn\Documents\GitHub\Computation-2\C Work Folder\Task 2 Binary Tree\Debug\Task 2 Binary Tree.lib" /MACHINE:X86 Debug\branch.obj
+         Debug\io.obj
+         Debug\main.obj
+         Debug\output.obj
+         Debug\tree.obj
+         Task 2 Binary Tree.vcxproj -> C:\Users\martijn\Documents\GitHub\Computation-2\C Work Folder\Task 2 Binary Tree\Debug\Task 2 Binary Tree.exe
+     1>Done Building Project "C:\Users\martijn\Documents\GitHub\Computation-2\C Work Folder\Task 2 Binary Tree\Task 2 Binary Tree\Task 2 Binary Tree.vcxproj" (Build target(s)).
 
-Build FAILED.
+Build succeeded.
 
-Time Elapsed 00:00:00.92
+Time Elapsed 00:00:02.85
