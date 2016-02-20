@@ -37,6 +37,12 @@ public:
 	//added void List::push_front(Item* item) to the class
 	void push_front(Item*);
 
+	//added void List::remove(Node* node) to the class
+	void remove(Node* node);
+
+	//added void List::put_first(Node* node) to  the class
+	void put_first(Node* node);
+
 private:
     Node* _head;
 	int highest_id();

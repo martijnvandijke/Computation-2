@@ -38,22 +38,9 @@ void List::remove(Node* node) {
 		//cout << "That id is not possible" << endl;
 	//}
 
-	Node* before = node->next ;
-	Node* after = node->prev ;
+	node = node->next ;
+	node = node->prev ;
 	node->item->print();
-
-	if (after == before) {
-		_head = nullptr;
-		return;
-	}
-	if (_head == node->item ) {
-		_head = after;
-	}
-
-	before->next = after;
-	after->prev = before;
-
-	delete node;
 }
 
 void List::put_first(Node* node) {
