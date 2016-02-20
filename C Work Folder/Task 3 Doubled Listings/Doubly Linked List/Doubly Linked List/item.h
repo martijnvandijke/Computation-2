@@ -1,3 +1,6 @@
+// Name: Martyn van Dijke
+// Student number: 0887668
+
 #ifndef _ITEM_H_
 #define _ITEM_H_
 
@@ -18,6 +21,10 @@ public:
 
 protected:
     int _id;
+
+private:
+	static int _idcounter;
+
 };
 
 #endif // _ITEM_H_ 

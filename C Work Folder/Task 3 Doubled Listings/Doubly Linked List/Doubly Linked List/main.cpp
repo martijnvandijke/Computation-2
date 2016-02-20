@@ -20,21 +20,28 @@ void main()
 {
     // Define your my_list here
 
-    cout << "-------- Ring-style linked list base class by Martyn van Dijke. --------" << endl << endl;
+	List* my_list = new List();
+	int id;
+
+    cout << "-------- Ring-style linked list base class by Martyn van Dijke. --------" << endl;
+	cout << "Command [Add|Insert|Delete|First|Print|Sort|Xdestroy|Quit] \n \n" ;
 
     char command;
     while ((command = get_command()) != 'q') {
         switch (command) {
         case 'a': // append
+			my_list->push_back(new Item() );
             // Add your code here
             break;
         case 'i': // insert
+			my_list->push_front(new Item() );
             break;
         case 'd': // delete
             break;
         case 'f': // put first
             break;
         case 'p': // print
+			my_list->print();
             break;
         case 's': // sort
             break;

@@ -1,3 +1,6 @@
+// Name: Martyn van Dijke
+// Student number: 0887668
+
 #ifndef _LIST_H_
 #define _LIST_H_
 
@@ -23,8 +26,20 @@ public:
 
     void clear();
 
+	//own functions
+	
+	//added void List::print() to the class
+	void print();
+
+	//added void List::push_back(Item* item) to the class
+	void push_back(Item*);
+
+	//added void List::push_front(Item* item) to the class
+	void push_front(Item*);
+
 private:
     Node* _head;
+	int highest_id();
 };
 
 #endif // _LIST_H_ 
