@@ -43,9 +43,11 @@ public:
 	//added void List::put_first(Node* node) to  the class
 	void put_first(Node* node);
 
+	int highest_id();
+
 private:
     Node* _head;
-	int highest_id();
+	//int highest_id();
 };
 
 #endif // _LIST_H_ 
