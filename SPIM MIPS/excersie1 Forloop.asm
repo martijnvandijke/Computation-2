@@ -3,8 +3,6 @@
 #     for (x=0, y=100;  x != y;  x++, y--);
 
 #.data
-
-.text
 main:
       li $t0, 0 #add 0 to register -> x
       li $t1, 100 #add 100 to register -> y

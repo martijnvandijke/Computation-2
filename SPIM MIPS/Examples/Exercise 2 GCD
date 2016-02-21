@@ -1,0 +1,16 @@
+# C code
+#int gcd(int a, int b) {
+#   if (b == 0)
+#      return a;
+#   else
+#      return gcd(b, a % b);   // recursive call
+}#
+#
+#
+#void main(void) {
+#   int	a, b;
+#
+#   printf("Enter a and b: ");
+#   scanf("%d%d", &a, &b);
+#   printf("gcd(%d, %d) = %d\n", a, b, gcd(a, b) );
+#}
