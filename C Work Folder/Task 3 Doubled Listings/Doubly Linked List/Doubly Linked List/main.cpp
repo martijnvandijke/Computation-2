@@ -36,6 +36,9 @@ void main()
         case 'i': // insert
 			my_list->push_front(new Item() );
             break;
+		case 't':
+				findItemById(my_list,4);
+			break;
         case 'd': // delete
 			cout << "Please input the id of the item :" << endl;
 			cin >> input;
