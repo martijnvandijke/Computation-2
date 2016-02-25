@@ -36,7 +36,7 @@ static char rcsid[] = "$Id: x86.nw,v 2.25 1998/07/02 00:26:44 drh Exp $";
 
 #define hasargs(p) (p->syms[0] && p->syms[0]->u.c.v.i > 0 ? 0 : LBURG_MAX)
 /*
-generated at Wed Nov 14 09:57:10 2007
+generated at Wed Feb 24 16:20:09 2016
 by $Id: lburg.c,v 2.8 1997/10/30 23:41:10 drh Exp $
 */
 static void _kids(NODEPTR_TYPE, int, NODEPTR_TYPE[]);

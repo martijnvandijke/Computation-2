@@ -128,6 +128,16 @@ module ALU(ctrl, a, b, r, r2, z);
                         result_hi = c[63:32];
                     end
                     
+						'h30: //clipcontrol
+						  begin
+								if (s > 255)
+									result = 255;
+								else if (s < 0 )
+									result = 0;
+								else
+									result = s;								
+						  end  
+						  
                 default: //No default case: invallid opcode! 
                     begin 
                     end

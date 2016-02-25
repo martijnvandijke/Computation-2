@@ -57,16 +57,19 @@ void sortListById(List* list) {
 	int highestId = list->highest_id();
 	//int highestid = highest_id();
 	cout << highestId << endl;
+	cout << list->head() << endl;
 
 	for (int i = highestId; i > 0; i--)
 	{
-		list->put_first(findItemById(list, i));
+		
 
-		//if (it._node != nullptr)
-		//{
-			//put_first(it);
-		//}
-
+		if ( (findItemById(list, i)) == nullptr )
+		{
+			i--;
+		}
+		else {
+			list->put_first(findItemById(list, i));
+		}
 	}
 
 
@@ -74,31 +77,44 @@ void sortListById(List* list) {
 
 void List::remove(Node* node) {
 	cout << "\n \n \n Going to remove a node" << endl;
+	
+	Node* next = node->next;
+	Node* previous = node->prev;
+	
+	
+	node->prev->next = next;
+	node->next->prev = previous;
+	//node->item->id() = nullptr;
+	free(node);
+	//delete node;
+	
+	
+	
 	//if ( node->item->id() == nullptr	) {
 		//cout << "That id is not possible" << endl;
 	//}
-
-	Node* before = node->next ;
-	Node* after = node->prev ;
-	node->item->print();
-	before->item->print();
-	after->item->print();
-
-	if (after == before) {
-		_head = nullptr;
-		cout << "Nothing to delete" << endl;
-		return;
-	}
-
-	//delete node;
-
-	before->next = after;
-	after->prev = before;
 	
-	//delete node->item;
-	cout << "Ik kom tot hiero" << endl;
-	int delId = node->item->id();
-	cout << delId << endl;
+	//Node* before = node->next ;
+	//Node* after = node->prev ;
+	//node->item->print();
+	//before->item->print();
+	//after->item->print();
+
+	//if (after == before) {
+	//	_head = nullptr;
+	//	cout << "Nothing to delete" << endl;
+	//	return;
+	//}
+
+	////delete node;
+
+	//before->next = after;
+	//after->prev = before;
+	//
+	////delete node->item;
+	//cout << "Ik kom tot hiero" << endl;
+	//int delId = node->item->id();
+	//cout << delId << endl;
 	//node->item->id()
 	//delete &delId;
 	//delete node->item = nullptr;
@@ -110,7 +126,7 @@ void List::remove(Node* node) {
 }
 
 void List::put_first(Node* node) {
-
+	
 	Node* before = node->prev;
 	Node* after = node->next;
 
@@ -145,51 +161,84 @@ void List::put_first(Node* node) {
 }
 
 Node* findItemById(List* list, int id) {
-	cout << list << " test " <<id << endl ;
+	cout << list << " the id you are looking for " <<id << endl ;
+	int count = 0;
+	cout << list << endl;
+	cout << list->head() << endl;
+	Node* listhead = list->head();	
+	if ( id > list->highest_id() ) {
+		cout << "That id is not even possible" << endl;
+		return nullptr;
+	}
+	
+	
+	cout << "jowwwW" << endl;
+	//eventueel array maken met de mogelijke id's
+	//keep the loop going till the next item you encouter is the list
+	while( (listhead->next) != listhead){
+		//if the listhead item id is the id you are looking for
+		if (listhead->item->id() == id) {
+			cout << "I have foudnd id " << listhead->item->id() << endl;
+			return*&listhead;
+		}
 
-	//cout << list->head() << endl;
-	Node* listhead = list->head();
+	listhead = listhead->next;
+		
+
+	} 
+	
+	
+	
+	 
+
+
+
 
 	//list->print();
 	//listhead->
 	//Node* node = listhead;
 	
-	cout << listhead << endl;
-	cout << listhead->item->id() << endl;
+	//cout << listhead << endl;
+	//cout << listhead->item->id() << endl;
 
-	while ((listhead->next) != listhead)
-	{
-		nextlist:
-		if (listhead->item->id() == id) {
-			int returnid = listhead->item->id();
-			cout << "Founded the item" << endl;
-			//listhead = listhead->next;
-			return* &listhead;
-		}
+	//while ((listhead->next) != listhead)
+	//{
+	//	nextlist:
+	//	if (listhead->item->id() == id) {
+	//		int returnid = listhead->item->id();
+	//		cout << "Founded the item" << endl;
+	//		//listhead = listhead->next;
+	//		return* &listhead;
 
-		//if (listhead->next->item->id() == id) {
-		//	int returnid = listhead->item->id();
-		//	cout << "Founded the item 2" << endl;
-		//	listhead = listhead->next;
-		//	return* &listhead;
 
-		//}
+	//	}
 
-		else
-		{
-			listhead = listhead->next;
-			goto nextlist;
-			cout << "Nothing Found" << endl;
-			return nullptr;
-		}
-		//listhead = listhead->next;
+	//	//if (listhead->next->item->id() == id) {
+	//	//	int returnid = listhead->item->id();
+	//	//	cout << "Founded the item 2" << endl;
+	//	//	listhead = listhead->next;
+	//	//	return* &listhead;
 
-	} 
-	if((listhead->next) == listhead)
-	{
-		cout << "Nothing Found for real" << endl;
-		return nullptr;
-	}
+	//	//}
+
+	//	//hiero klopt de logica niet 
+	//	else
+	//	{
+	//		listhead = listhead->next;
+	//		if(	listhead->prev->item->id() != id	)
+	//			{
+	//				cout << "Nothing Found for real" << endl;
+	//				return nullptr;
+	//			}
+	//		
+	//		goto nextlist;
+	//		//cout << "Nothing Found" << endl;
+	//		//return nullptr;
+	//	}
+	//	//listhead = listhead->next;
+
+	//} 
+	
 	//while ( (listhead->next) != listhead );
 
 
@@ -250,6 +299,7 @@ Node* findItemById(List* list, int id) {
 
 // function will add new item's to the list
 void List::push_back(Item* item) {
+	cout << "-> Append item id " << item->id() << endl;
 	Node* nodetoadd = new Node();
 	nodetoadd->item = item;
 
@@ -270,6 +320,7 @@ void List::push_back(Item* item) {
 
 //function will
 void List::push_front(Item* item) {
+	cout << "-> Inserted item id " << item->id() << endl;
 	Node* nodetoadd = new Node();
 	nodetoadd->item = item;
 
@@ -284,23 +335,22 @@ void List::push_front(Item* item) {
 		currentNode->next = nodetoadd;
 		nodetoadd->prev = currentNode;
 		nodetoadd->next = _head;
-		_head->prev = nodetoadd;
+		_head = nodetoadd;
 	}
 
 }
 
 void List::print() {
 	if (_head == nullptr) {
-		cout << "There is nothing to print"<< endl;
+		cout << "List contains no items"<< endl;
 		return;
 	}
 	int order = 0;
 	Node* node = _head;
 	//do the nxt function while there is no next item on the list
 	do{
-		order++;
-		cout	<< "Printing the order of the List : "
-				<< order ;
+		//order++;
+		cout << "-> item id  " << endl;
 		node->item->print(); //<< endl;
 				//<<end1;
 	} while ((node = node->next) != _head);
