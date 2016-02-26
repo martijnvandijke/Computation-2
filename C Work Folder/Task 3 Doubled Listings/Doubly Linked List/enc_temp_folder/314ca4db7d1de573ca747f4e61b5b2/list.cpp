@@ -39,7 +39,40 @@ void List::clear()
 	_head = nullptr;
 
 }
+int List::highest_id(){
+	int highestId = 0;
+	Node* node = _head;
+	do
+	{
+		if (node->item->id() > highestId)
+		{
+			highestId = node->item->id();
+		}
+	} while ((node = node->next) != _head);
+	return highestId;
+}
 
+
+void sortListById(List* list) {
+	int highestId = list->highest_id();
+	//int highestid = highest_id();
+	cout << highestId << endl;
+	cout << list->head() << endl;
+
+	for (int i = highestId; i > 0; i--)
+	{
+		
+		if ( (findItemById(list, i)) == nullptr )
+		{
+			i--;
+		}
+		else {
+			list->put_first(findItemById(list, i));
+		}
+	}
+
+
+}
 
 void List::remove(Node* node) {
 	cout << "\n \n \n Going to remove a node" << endl;
@@ -322,42 +355,5 @@ void List::print() {
 		node->item->print(); //<< endl;
 				//<<end1;
 	} while ((node = node->next) != _head);
-
-}
-
-int List::highest_id() {
-	int highestId = 0;
-	Node* node = _head;
-	do
-	{
-		if (node->item->id() > highestId)
-		{
-			highestId = node->item->id();
-		}
-	} while ((node = node->next) != _head);
-	return highestId;
-}
-
-
-void sortListById(List* list) {
-	int high_id = list->highest_id();
-	//int highestid = highest_id();
-	cout << high_id << endl;
-	cout << list->head() << endl;
-
-	for (int i = high_id; i > 0; i--)
-	{
-		// if the id of the item is not in the list
-		if ((findItemById(list, i)) == nullptr)
-		{
-			//decrement i (contui with  the loop)
-			i--;
-		}
-
-		else {
-			list->put_first(findItemById(list, i));
-		}
-	}
-
 
 }
