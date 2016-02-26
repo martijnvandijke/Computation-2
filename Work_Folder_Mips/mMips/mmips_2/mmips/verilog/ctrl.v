@@ -14,6 +14,8 @@
 // Version:
 //     (27-01-2014): initial version
 //
+//		Edidted by Martyn van Dijke
+//
 //////////////////////////////////////////////!/
 
 module CTRL(

@@ -14,6 +14,8 @@
 // Version:
 //     (27-01-2014): initial version
 //
+//		Edidted by Martyn van Dijke
+//
 //////////////////////////////////////////////!/
 
 module ALU(ctrl, a, b, r, r2, z);
@@ -127,6 +129,15 @@ module ALU(ctrl, a, b, r, r2, z);
                         result = c[31:0];
                         result_hi = c[63:32];
                     end
+				    'h14:
+							begin
+									if (s < 0)
+										result = 0;
+									if(s > 255)
+										result = 255;
+									else
+										result = s;
+							end
                     
                 default: //No default case: invallid opcode! 
                     begin 

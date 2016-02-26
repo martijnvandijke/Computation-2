@@ -14,6 +14,8 @@
 // Version:
 //     (27-01-2014): initial version
 //
+//		Edidted by Martyn van Dijke
+//
 //////////////////////////////////////////////!/
 
 module ALUCTRL(functionCode, ALUop, Shamt, ALUctrl);
@@ -103,7 +105,9 @@ module ALUCTRL(functionCode, ALUop, Shamt, ALUctrl);
                                 
                             'h2B:   //Set-on-less-than (unsigned)
                                 ALUctrl = 'h8;
-                                
+                                //image clipping operation
+									 'h30 :
+											ALUctrl = 'h14;
                             default:
                                 ALUctrl = 'h0;
                         endcase
