@@ -1,0 +1,187 @@
+Release 14.2 Map P.28xd (nt64)
+Xilinx Map Application Log File for Design 'mMIPS_sim'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc6slx45t-csg324-3 -w -logic_opt off -ol
+high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off
+-pr off -lc off -power off -o mMIPS_sim_map.ncd mMIPS_sim.ngd mMIPS_sim.pcf 
+Target Device  : xc6slx45t
+Target Package : csg324
+Target Speed   : -3
+Mapper Version : spartan6 -- $Revision: 1.55 $
+Mapped Date    : Fri Feb 26 10:37:55 2016
+
+Mapping design into LUTs...
+Running directed packing...
+Running delay-based LUT packing...
+Updating timing models...
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+Running timing-driven placement...
+Total REAL time at the beginning of Placer: 30 secs 
+Total CPU  time at the beginning of Placer: 14 secs 
+
+Phase 1.1  Initial Placement Analysis
+Phase 1.1  Initial Placement Analysis (Checksum:e0b7c36) REAL time: 32 secs 
+
+Phase 2.7  Design Feasibility Check
+INFO:Place:834 - Only a subset of IOs are locked. Out of 75 IOs, 40 are locked
+   and 35 are not locked. If you would like to print the names of these IOs,
+   please set the environment variable XIL_PAR_DESIGN_CHECK_VERBOSE to 1. 
+Phase 2.7  Design Feasibility Check (Checksum:e0b7c36) REAL time: 33 secs 
+
+Phase 3.31  Local Placement Optimization
+Phase 3.31  Local Placement Optimization (Checksum:e0b7c36) REAL time: 33 secs 
+
+Phase 4.2  Initial Placement for Architecture Specific Features
+...
+Phase 4.2  Initial Placement for Architecture Specific Features
+(Checksum:fa7fd64e) REAL time: 43 secs 
+
+Phase 5.36  Local Placement Optimization
+Phase 5.36  Local Placement Optimization (Checksum:fa7fd64e) REAL time: 43 secs 
+
+Phase 6.30  Global Clock Region Assignment
+Phase 6.30  Global Clock Region Assignment (Checksum:fa7fd64e) REAL time: 43 secs 
+
+Phase 7.3  Local Placement Optimization
+...
+Phase 7.3  Local Placement Optimization (Checksum:7f194f50) REAL time: 43 secs 
+
+Phase 8.5  Local Placement Optimization
+Phase 8.5  Local Placement Optimization (Checksum:7f194f50) REAL time: 43 secs 
+
+Phase 9.8  Global Placement
+.......................................................................
+.................................................................................................................................................................................
+............................................
+........................
+Phase 9.8  Global Placement (Checksum:ea09c305) REAL time: 59 secs 
+
+Phase 10.5  Local Placement Optimization
+Phase 10.5  Local Placement Optimization (Checksum:ea09c305) REAL time: 59 secs 
+
+Phase 11.18  Placement Optimization
+Phase 11.18  Placement Optimization (Checksum:722f15f3) REAL time: 1 mins 6 secs 
+
+Phase 12.5  Local Placement Optimization
+Phase 12.5  Local Placement Optimization (Checksum:722f15f3) REAL time: 1 mins 6 secs 
+
+Phase 13.34  Placement Validation
+Phase 13.34  Placement Validation (Checksum:c9365e23) REAL time: 1 mins 7 secs 
+
+Total REAL time to Placer completion: 1 mins 11 secs 
+Total CPU  time to Placer completion: 55 secs 
+Running post-placement packing...
+Writing output files...
+WARNING:PhysDesignRules:372 - Gated clock. Clock net mMIPS/ctrl/_n0086 is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:367 - The signal <mMIPS/registers/Mram_regs15_RAMD_D1_O>
+   is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <mMIPS/registers/Mram_regs5_RAMD_D1_O>
+   is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <mMIPS/registers/Mram_regs13_RAMD_D1_O>
+   is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <mMIPS/registers/Mram_regs3_RAMD_D1_O>
+   is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <mMIPS/registers/Mram_regs2_RAMD_D1_O>
+   is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <mMIPS/registers/Mram_regs1_RAMD_D1_O>
+   is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <mMIPS/registers/Mram_regs12_RAMD_D1_O>
+   is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <mMIPS/registers/Mram_regs11_RAMD_D1_O>
+   is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <mMIPS/registers/Mram_regs14_RAMD_D1_O>
+   is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <mMIPS/registers/Mram_regs4_RAMD_D1_O>
+   is incomplete. The signal does not drive any load pins in the design.
+
+Design Summary
+--------------
+
+Design Summary:
+Number of errors:      0
+Number of warnings:   11
+Slice Logic Utilization:
+  Number of Slice Registers:                   696 out of  54,576    1%
+    Number used as Flip Flops:                 576
+    Number used as Latches:                    120
+    Number used as Latch-thrus:                  0
+    Number used as AND/OR logics:                0
+  Number of Slice LUTs:                      2,013 out of  27,288    7%
+    Number used as logic:                    1,938 out of  27,288    7%
+      Number using O6 output only:           1,791
+      Number using O5 output only:               0
+      Number using O5 and O6:                  147
+      Number used as ROM:                        0
+    Number used as Memory:                      44 out of   6,408    1%
+      Number used as Dual Port RAM:             44
+        Number using O6 output only:             0
+        Number using O5 output only:             0
+        Number using O5 and O6:                 44
+      Number used as Single Port RAM:            0
+      Number used as Shift Register:             0
+    Number used exclusively as route-thrus:     31
+      Number with same-slice register load:      0
+      Number with same-slice carry load:        31
+      Number with other load:                    0
+
+Slice Logic Distribution:
+  Number of occupied Slices:                   809 out of   6,822   11%
+  Nummber of MUXCYs used:                      128 out of  13,644    1%
+  Number of LUT Flip Flop pairs used:        2,191
+    Number with an unused Flip Flop:         1,569 out of   2,191   71%
+    Number with an unused LUT:                 178 out of   2,191    8%
+    Number of fully used LUT-FF pairs:         444 out of   2,191   20%
+    Number of unique control sets:              11
+    Number of slice register sites lost
+      to control set restrictions:              24 out of  54,576    1%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                        75 out of     190   39%
+    Number of LOCed IOBs:                       40 out of      75   53%
+
+Specific Feature Utilization:
+  Number of RAMB16BWERs:                       112 out of     116   96%
+  Number of RAMB8BWERs:                          0 out of     232    0%
+  Number of BUFIO2/BUFIO2_2CLKs:                 0 out of      32    0%
+  Number of BUFIO2FB/BUFIO2FB_2CLKs:             0 out of      32    0%
+  Number of BUFG/BUFGMUXs:                       2 out of      16   12%
+    Number used as BUFGs:                        2
+    Number used as BUFGMUX:                      0
+  Number of DCM/DCM_CLKGENs:                     0 out of       8    0%
+  Number of ILOGIC2/ISERDES2s:                   0 out of     376    0%
+  Number of IODELAY2/IODRP2/IODRP2_MCBs:         0 out of     376    0%
+  Number of OLOGIC2/OSERDES2s:                   0 out of     376    0%
+  Number of BSCANs:                              0 out of       4    0%
+  Number of BUFHs:                               0 out of     256    0%
+  Number of BUFPLLs:                             0 out of       8    0%
+  Number of BUFPLL_MCBs:                         0 out of       4    0%
+  Number of DSP48A1s:                            4 out of      58    6%
+  Number of GTPA1_DUALs:                         0 out of       2    0%
+  Number of ICAPs:                               0 out of       1    0%
+  Number of MCBs:                                0 out of       2    0%
+  Number of PCIE_A1s:                            0 out of       1    0%
+  Number of PCILOGICSEs:                         0 out of       2    0%
+  Number of PLL_ADVs:                            0 out of       4    0%
+  Number of PMVs:                                0 out of       1    0%
+  Number of STARTUPs:                            0 out of       1    0%
+  Number of SUSPEND_SYNCs:                       0 out of       1    0%
+
+Average Fanout of Non-Clock Nets:                2.64
+
+Peak Memory Usage:  525 MB
+Total REAL time to MAP completion:  1 mins 15 secs 
+Total CPU time to MAP completion:   58 secs 
+
+Mapping completed.
+See MAP report file "mMIPS_sim_map.mrp" for details.

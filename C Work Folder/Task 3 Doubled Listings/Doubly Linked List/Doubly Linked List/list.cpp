@@ -85,7 +85,7 @@ void List::remove(Node* node) {
 	node->prev->next = next;
 	node->next->prev = previous;
 	//node->item->id() = nullptr;
-	free(node);
+	delete node;
 	//delete node;
 	
 	
@@ -161,11 +161,13 @@ void List::put_first(Node* node) {
 }
 
 Node* findItemById(List* list, int id) {
-	cout << list << " the id you are looking for " <<id << endl ;
+	cout << list << " the id you are looking for is " <<id << endl ;
 	int count = 0;
 	cout << list << endl;
 	cout << list->head() << endl;
 	Node* listhead = list->head();	
+	cout << listhead << endl;
+	cout << listhead->item->id() << endl;
 	if ( id > list->highest_id() ) {
 		cout << "That id is not even possible" << endl;
 		return nullptr;
@@ -181,9 +183,12 @@ Node* findItemById(List* list, int id) {
 			cout << "I have foudnd id " << listhead->item->id() << endl;
 			return*&listhead;
 		}
-
-	listhead = listhead->next;
-		
+		if (listhead->next != nullptr) {
+			listhead = listhead->next;
+		}
+		else {
+			return nullptr;
+		}
 
 	} 
 	
