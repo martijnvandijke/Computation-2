@@ -341,19 +341,21 @@ int List::highest_id() {
 
 void sortListById(List* list) {
 	int high_id = list->highest_id();
+	int store_i;
 	//int highestid = highest_id();
 	cout << high_id << endl;
 	cout << list->head() << endl;
 
 	for (int i = high_id; i > 0; i--)
 	{
+		cout << i << endl;
 		// if the id of the item is not in the list
 		if ((findItemById(list, i)) == nullptr)
 		{
-			//decrement i (contui with  the loop)
+			//decrement i (contine with  the loop)
 			i--;
 		}
-
+		
 		else {
 			list->put_first(findItemById(list, i));
 		}
