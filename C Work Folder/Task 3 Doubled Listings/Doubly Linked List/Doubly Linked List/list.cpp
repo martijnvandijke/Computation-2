@@ -260,6 +260,7 @@ void List::push_front(Item* item) {
 	Node* nodetoAdd = new Node();
 	nodetoAdd->item = item;
 
+	//is there are no other node's
 	if (_head == nullptr) {
 		nodetoAdd->next = nodetoAdd;
 		nodetoAdd->prev = nodetoAdd;
@@ -271,6 +272,7 @@ void List::push_front(Item* item) {
 		currentNode->next = nodetoAdd;
 		nodetoAdd->prev = currentNode;
 		nodetoAdd->next = _head;
+		nodetoAdd->prev = currentNode;
 		_head = nodetoAdd;
 	}
 
@@ -298,9 +300,9 @@ void List::put_first(Node* node) {
 	Node* next = node->next;		
 	Node* previous = node->prev;	
 	//if there is no node
-	if (node == nullptr) {
-		return;
-	}
+	//if (node == nullptr) {
+		//return;
+	//}
 
 	//if node is already the head exit the function
 	if (node == _head) {
@@ -351,7 +353,6 @@ void sortListById(List* list) {
 	int i = high_id;
 	cout << "The highest id is :"
 		 << high_id << endl;
-	cout << list->head() << endl;
 
 	for (int i = high_id; i > 0; i--)
 	{
