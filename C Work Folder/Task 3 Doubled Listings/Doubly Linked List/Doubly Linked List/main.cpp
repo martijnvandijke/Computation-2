@@ -24,7 +24,7 @@ void main()
 	//int id = 1;
 	int input;
     cout << "-------- Ring-style linked list base class by Martyn van Dijke. --------" << endl;
-	cout << "Command [Add|Insert|Delete|First|Print|Sort|Xdestroy|Quit] \n \n" ;
+	cout << "Command [Add(a)|Insert(i)|Delete(d)|First(f)|Print(p)|Sort(s)|Destroy(x)|Find(t)|Quit(q)] \n \n" ;
 
     char command;
     while ((command = get_command()) != 'q') {
@@ -37,7 +37,9 @@ void main()
 			my_list->push_front(new Item() );
             break;
 		case 't':
-				findItemById(my_list,4);
+			cout << "Please input the id of the item you want to find :" << endl;
+			cin >> input;
+			findItemById(my_list,input);
 			break;
         case 'd': // delete
 			cout << "Please input the id of the item :" << endl;

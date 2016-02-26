@@ -23,7 +23,7 @@ protected:
     int _id;
 
 private:
-	static int _idcounter;
+	static int _idNumber;
 
 };
 

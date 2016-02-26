@@ -100,7 +100,7 @@ Node* findItemById(List* list, int id) {
 	//cout << listh << endl;
 	//cout << listhead->item->id() << endl;
 	if ( id > list->highest_id() ) {
-		cout << "That id is not even possible" << endl;
+		cout << "That id is to large it is not even possible" << endl;
 		return nullptr;
 	}
 	//if the next of listhead is not eqaul to the listhead (meaning it has not reached 1 )
@@ -115,6 +115,7 @@ Node* findItemById(List* list, int id) {
 			list_needed = list_needed->next;
 			//if the list is the list to begin with (meaning it has looped around and has founded nothing)
 			if (list_needed == store_list){
+				cout << "That id is not possible , it has been deleted" << endl;
 				// i have found completly nothing 
 				return nullptr;
 			}
@@ -253,7 +254,7 @@ void List::push_back(Item* item) {
 	}
 }
 
-//function will
+//function will push a item to the front of the list
 void List::push_front(Item* item) {
 	cout << "-> Inserted item id " << item->id() << endl;
 	Node* nodetoAdd = new Node();
@@ -274,7 +275,7 @@ void List::push_front(Item* item) {
 	}
 
 }
-
+// function will print out the list
 void List::print() {
 	//if there is no head
 	if ( _head == nullptr) {
@@ -291,10 +292,28 @@ void List::print() {
 	//while the next node is not the head node excute this code
 }
 
+//function will put a node first
 void List::put_first(Node* node) {
 	//definition of the previous and next node's
-	Node* next = node->next;
-	Node* previous = node->prev;
+	Node* next = node->next;		
+	Node* previous = node->prev;	
+	//if there is no node
+	if (node == nullptr) {
+		return;
+	}
+
+	//if node is already the head exit the function
+	if (node == _head) {
+		return;
+	}
+
+	if (next == previous) {
+		_head->prev = node;
+		_head->next = node;
+		_head = node;
+		return;
+	}
+
 
 	previous->next = next;
 	next->prev = previous;
@@ -302,7 +321,8 @@ void List::put_first(Node* node) {
 	_head->prev->next = node;
 	 node->prev = _head->prev;
 	_head->prev = node;
-	//node->next = _head;
+	node->next = _head;
+
 	_head = node; //place the head of the list at the new beginning
 
 	cout << "Node with id "
@@ -333,17 +353,19 @@ void sortListById(List* list) {
 		 << high_id << endl;
 	cout << list->head() << endl;
 
-	for ( i>0; i--;)
+	for (int i = high_id; i > 0; i--)
 	{
 		cout <<" i is "
 			 <<i << endl;
 
 		// if the id of the item is not in the list
-		if ((findItemById(list, i)) == nullptr)
+		if ( (findItemById(list, i) ) == nullptr)
 		{
-			cout << "ik ben hiero " << endl;
-			//decrement i (contine with  the loop)
-			i--;
+			cout << "ik ben hiero "
+				 << i
+				 << endl;
+			//contine with  the loop)
+			continue;
 		}
 		
 		list->put_first(findItemById(list, i));
