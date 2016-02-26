@@ -89,40 +89,7 @@ void List::remove(Node* node) {
 	//delete node;
 }
 
-void List::put_first(Node* node) {
-	
-	Node* before = node->prev;
-	Node* after = node->next;
 
-	// node is at the head of the list
-	if ( node == _head)
-	{
-		return;
-	}
-
-	if (before == after)
-	{
-		_head->prev = node;
-		_head->next = node;
-		_head = node;
-		return;
-	}
-
-	before->next = after;
-	after->prev = before;
-
-	_head->prev->next = node;
-	node->prev = _head->prev;
-	_head->prev = node;
-	node->next = _head;
-
-	_head = node;
-
-	cout	<< "Node with id " 
-			<< node->item->id() 
-			<< " has been put in the front" 
-			<< endl;
-}
 
 Node* findItemById(List* list, int id) {
 	//cout << list << " the id you are looking for is " <<id << endl ;
@@ -289,76 +256,98 @@ void List::push_back(Item* item) {
 //function will
 void List::push_front(Item* item) {
 	cout << "-> Inserted item id " << item->id() << endl;
-	Node* nodetoadd = new Node();
-	nodetoadd->item = item;
+	Node* nodetoAdd = new Node();
+	nodetoAdd->item = item;
 
 	if (_head == nullptr) {
-		nodetoadd->next = nodetoadd;
-		nodetoadd->prev = nodetoadd;
-		_head = nodetoadd;
+		nodetoAdd->next = nodetoAdd;
+		nodetoAdd->prev = nodetoAdd;
+		_head = nodetoAdd;
 	}
 	else
 	{
 		Node* currentNode = _head->prev;
-		currentNode->next = nodetoadd;
-		nodetoadd->prev = currentNode;
-		nodetoadd->next = _head;
-		_head = nodetoadd;
+		currentNode->next = nodetoAdd;
+		nodetoAdd->prev = currentNode;
+		nodetoAdd->next = _head;
+		_head = nodetoAdd;
 	}
 
 }
 
 void List::print() {
-	if (_head == nullptr) {
+	//if there is no head
+	if ( _head == nullptr) {
 		cout << "List contains no items"<< endl;
 		return;
 	}
-	int order = 0;
 	Node* node = _head;
-	//do the nxt function while there is no next item on the list
+	//do the next function while there is no next item on the list
 	do{
-		//order++;
 		cout << "-> item id  " << endl;
 		node->item->print(); //<< endl;
 				//<<end1;
 	} while ((node = node->next) != _head);
+	//while the next node is not the head node excute this code
+}
 
+void List::put_first(Node* node) {
+	//definition of the previous and next node's
+	Node* next = node->next;
+	Node* previous = node->prev;
+
+	previous->next = next;
+	next->prev = previous;
+
+	_head->prev->next = node;
+	 node->prev = _head->prev;
+	_head->prev = node;
+	//node->next = _head;
+	_head = node; //place the head of the list at the new beginning
+
+	cout << "Node with id "
+		<< node->item->id()
+		<< " has been put in the front"
+		<< endl;
 }
 
 int List::highest_id() {
-	int highestId = 0;
+	int highest_id = 0;
 	Node* node = _head;
 	do
 	{
-		if (node->item->id() > highestId)
+		if (node->item->id() > highest_id)
 		{
-			highestId = node->item->id();
+			highest_id = node->item->id();
 		}
 	} while ((node = node->next) != _head);
-	return highestId;
+	return highest_id;
 }
 
 
 void sortListById(List* list) {
 	int high_id = list->highest_id();
 	int store_i;
-	//int highestid = highest_id();
-	cout << high_id << endl;
+	int i = high_id;
+	cout << "The highest id is :"
+		 << high_id << endl;
 	cout << list->head() << endl;
 
-	for (int i = high_id; i > 0; i--)
+	for ( i>0; i--;)
 	{
-		cout << i << endl;
+		cout <<" i is "
+			 <<i << endl;
+
 		// if the id of the item is not in the list
 		if ((findItemById(list, i)) == nullptr)
 		{
+			cout << "ik ben hiero " << endl;
 			//decrement i (contine with  the loop)
 			i--;
 		}
 		
-		else {
-			list->put_first(findItemById(list, i));
-		}
+		list->put_first(findItemById(list, i));
+		
 	}
 
 

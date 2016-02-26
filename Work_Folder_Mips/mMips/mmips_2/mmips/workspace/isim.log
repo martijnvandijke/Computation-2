@@ -1,14 +1,19 @@
 ISim log file
 Running: C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_2\mmips\workspace\testbench_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_2/mmips/workspace/testbench_isim_beh.wdb 
 ISim P.28xd (signature 0xa0883be4)
-WARNING: A WEBPACK license was found.
-WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
-WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
-This is a Lite version of ISim.
+----------------------------------------------------------------------
+WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue to function, but you no longer qualify for Xilinx software updates or new releases.
+
+
+----------------------------------------------------------------------
+This is a Full version of ISim.
 Time resolution is 1 ps
 # onerror resume
 # wave add /
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
-WARNING: This is a limited version of the ISim. The current design has exceeded the design size limit for this version and the performance of the simulation will be derated. Please contact your nearest sales office at http://www.xilinx.com/company/contact.htm or visit the Xilinx on-line store at http://www.xilinx.com/onlinestore/design_resources.htm if interested in purchasing the full, unlimited version of this simulator.
+# run all
+Finished in     2315926 cycles
+
+Stopped at time : 231592701 ns : File "C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_2/mmips/verilog/testbench.v" Line 132
