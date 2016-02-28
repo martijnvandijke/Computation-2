@@ -2,9 +2,11 @@
 // Student number: 0887668
 
 #include <iostream>
+#include <string>
 
 #include "list.h"
 #include "item.h"
+#include "Person.h"
 
 using namespace std;
 
@@ -23,6 +25,7 @@ void main()
 	List* my_list = new List();
 	//int id = 1;
 	int input;
+	string string_input;
     cout << "-------- Ring-style linked list base class by Martyn van Dijke. --------" << endl;
 	cout << "Command [Add(a)|Insert(i)|Delete(d)|First(f)|Print(p)|Sort(s)|Destroy(x)|Find(t)|Quit(q)] \n \n" ;
 
@@ -30,14 +33,19 @@ void main()
     while ((command = get_command()) != 'q') {
         switch (command) {
         case 'a': // append
-			my_list->push_back(new Item() );
+			cout << "-> Type character name: ";
+			cin >> string_input;
+			my_list->push_back(new Person( string_input) );
+
             // Add your code here
             break;
         case 'i': // insert
-			my_list->push_front(new Item() );
+			cout << "-> Type character name: " << endl;
+			cin >> string_input;
+			my_list->push_front(new Person( string_input) );
             break;
 		case 't':
-			cout << "Please input the id of the item you want to find :" << endl;
+			cout << "Please input the string of the item you want to find :" << endl;
 			cin >> input;
 			findItemById(my_list,input);
 			break;

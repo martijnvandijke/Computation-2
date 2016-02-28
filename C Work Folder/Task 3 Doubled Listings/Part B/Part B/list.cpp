@@ -171,7 +171,7 @@ Node* findItemById(List* list, int id) {
 
 // function will add new item's to the list
 void List::push_back(Item* item) {
-	cout << "-> Append item id " << item->id() << endl;
+	//cout << "-> Append " << item->id() << endl;
 	Node* nodetoadd = new Node();
 	nodetoadd->item = item;
 

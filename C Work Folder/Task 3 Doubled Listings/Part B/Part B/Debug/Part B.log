@@ -1,0 +1,5 @@
+﻿  main.cpp
+  list.cpp
+d:\computation-2\c work folder\task 3 doubled listings\part b\part b\list.cpp(108): warning C4101: 'store_i': unreferenced local variable
+  Generating Code...
+LINK : fatal error LNK1168: cannot open D:\Computation-2\C Work Folder\Task 3 Doubled Listings\Part B\Debug\Part B.exe for writing
