@@ -121,6 +121,7 @@
     <ClCompile Include="item.cpp" />
     <ClCompile Include="list.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="OldSource.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="item.h" />
