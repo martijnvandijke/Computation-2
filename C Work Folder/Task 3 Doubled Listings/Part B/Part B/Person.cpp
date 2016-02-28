@@ -16,5 +16,9 @@ Person::~Person()
 
 void Person::print()
 {
-	cout << " " << _name << "' (id " << _id << ")" << endl;
+	cout	<< "-> '" 
+			<< _name 
+			<< "' (id " 
+			<< _id << ") " 
+			<< endl;
 }
