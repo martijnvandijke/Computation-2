@@ -7,9 +7,8 @@ using namespace std;
 
 Item::Item()
 { 
-	_idcounter++;
-	_id = _idcounter;
-	//_id++;
+	_idNumber++;
+	_id = _idNumber;
 }
 
 Item::~Item()
@@ -20,11 +19,12 @@ int Item::id()
     return _id;
 }
 
-int Item::_idcounter = 0;
+int Item::_idNumber = 0;
 
 void Item::print()
 { 
-	cout	<< " id of the item is : "
+
+	cout	<< "-> item id : "
 			<< _id 
 			<< endl;
 

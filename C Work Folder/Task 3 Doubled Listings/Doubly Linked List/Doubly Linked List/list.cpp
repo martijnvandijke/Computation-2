@@ -42,7 +42,9 @@ void List::clear()
 
 
 void List::remove(Node* node) {
-	cout << "Going to remove a node" << endl;
+	cout	<< "-> Deleted item with id " 
+			<< node->item->id()
+			<< endl;
 
 	Node* next = node->next;
 	Node* previous = node->prev;
@@ -81,9 +83,9 @@ void List::put_first(Node* node) {
 
 	_head = node; //place the head of the list at the new beginning
 
-	cout << "Node with id "
+	cout << "-> Moved id "
 		<< node->item->id()
-		<< " has been put in the front"
+		<< " to the first spot of the list"
 		<< endl;
 }
 
@@ -127,7 +129,7 @@ void sortListById(List* list) {
 
 	}
 
-
+	cout << "-> Sorted the list" << endl;
 }
 
 Node* findItemById(List* list, int id) {
@@ -154,7 +156,7 @@ Node* findItemById(List* list, int id) {
 		list_needed = list_needed->next;
 		//if the list is the list to begin with (meaning it has looped around and has founded nothing)
 		if (list_needed == store_list) {
-			cout << "That id is not possible , it has been deleted" << endl;
+			cout << "That id is not possible , it must have been deleted" << endl;
 			// i have found completly nothing 
 			return nullptr;
 		}
