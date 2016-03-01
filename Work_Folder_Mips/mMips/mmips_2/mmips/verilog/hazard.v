@@ -27,8 +27,8 @@ module HAZARD(
         EXMEMWriteRegister,
         MEMWBWriteRegister,
         Instr,
-        BranchOpID,
-        BranchOpEX,
+        //BranchOpID,
+        //BranchOpEX,
         dmem_wait,
         imem_wait,
         PCWrite,
@@ -48,8 +48,8 @@ module HAZARD(
     input   [4:0]   EXMEMWriteRegister;
     input   [4:0]   MEMWBWriteRegister;
     input   [31:0]  Instr;
-    input   [1:0]   BranchOpID;
-    input   [1:0]   BranchOpEX;
+    //input   [1:0]   BranchOpID;
+    //input   [1:0]   BranchOpEX;
     input   dmem_wait;
     input   imem_wait;
     output  [0:0]   PCWrite;
@@ -73,8 +73,8 @@ module HAZARD(
                 IDEXRegDst or 
                 IDEXWriteRegisterRt or 
                 IDEXWriteRegisterRd or 
-                BranchOpID or 
-                BranchOpEX or 
+                //BranchOpID or 
+                //BranchOpEX or 
                 EXMEMWriteRegister or 
                 MEMWBWriteRegister or 
                 Instr or 
@@ -93,11 +93,12 @@ module HAZARD(
             
             // Check for hazards (for simplicity assume that register zero
             // can also cause a hazard)
-            if (BranchOpID != 2'b00 || BranchOpEX != 2'b00)
+            //if (BranchOpID != 2'b00) // || BranchOpEX != 2'b00)
                 // (Control) branch hazard
                 // Don't fetch a new instruction, insert a 'nop'
-                hazard = 1'b1;
-            else if (IDEXRegWrite == 1'b1 && ( 
+                //hazard = 1'b1;
+					//else if
+            if (IDEXRegWrite == 1'b1 && ( 
                         IDEXRegDst == 2'b00 && IDEXWriteRegisterRt == ifidreadregister1 ||
                         IDEXRegDst == 2'b01 && IDEXWriteRegisterRd == ifidreadregister1 ||
                         IDEXRegDst == 2'b00 && IDEXWriteRegisterRt == ifidreadregister2 ||
@@ -140,7 +141,8 @@ module HAZARD(
             else if (hazard)
             begin
                 // pre-fetch next instruction if it's branch hazard
-                if (BranchOpEX)
+                //if (BranchOpEX)
+					 //if (BranchOpID)
                 begin
                     PCWrite = 1'b1;
                     imem_en = 1'b1;

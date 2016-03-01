@@ -20,5 +20,8 @@
 <msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_2/mmips/workspace/../verilog/testbench.v" Line 33: Port <arg fmt="%s" index="1">dev_dout</arg> is not connected to this instance
 </msg>
 
+<msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_2/mmips/workspace/../verilog/mmips.v" Line 392: Port <arg fmt="%s" index="1">BranchOpEX</arg> is not connected to this instance
+</msg>
+
 </messages>
 

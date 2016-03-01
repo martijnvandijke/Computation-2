@@ -1,5 +1,6 @@
 ISim log file
 Running: C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_2\mmips\workspace\testbench_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_2/mmips/workspace/testbench_isim_beh.wdb 
+INFO: There is another simulation running in the same directory. Using database file name isim1.wdb.
 ISim P.28xd (signature 0xa0883be4)
 ----------------------------------------------------------------------
 WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue to function, but you no longer qualify for Xilinx software updates or new releases.
@@ -13,7 +14,3 @@ Time resolution is 1 ps
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
-# run all
-Finished in     2315926 cycles
-
-Stopped at time : 231592701 ns : File "C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_2/mmips/verilog/testbench.v" Line 132
