@@ -4,13 +4,13 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.12 secs
+Total CPU time to Xst completion: 0.18 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.12 secs
+Total CPU time to Xst completion: 0.18 secs
  
 --> Reading design: mMIPS_sim.prj
 
@@ -162,7 +162,6 @@ Parsing module <mMIPS_sim>.
 =========================================================================
 
 Elaborating module <mMIPS_sim>.
-WARNING:HDLCompiler:1016 - "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_3\verilog\mmips.v" Line 392: Port BranchOpEX is not connected to this instance
 
 Elaborating module <mMIPS>.
 
@@ -212,7 +211,6 @@ Elaborating module <REGISTER(WIDTH=2)>.
 
 Elaborating module <MEMDEV>.
 WARNING:HDLCompiler:634 - "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_3\verilog\mmips.v" Line 360: Net <bus_ctrl_mem_branch> does not have a driver.
-WARNING:HDLCompiler:552 - "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_3\verilog\mmips.v" Line 392: Input port BranchOpEX[1] is not connected on this instance
 
 Elaborating module <ram(RAM_BRAM=64)>.
 WARNING:HDLCompiler:91 - "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_3\verilog\ram.v" Line 120: Signal <enable> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
@@ -456,7 +454,6 @@ Unit <mMIPS_sim> synthesized.
 
 Synthesizing Unit <mMIPS>.
     Related source file is "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_3\verilog\mmips.v".
-WARNING:Xst:2898 - Port 'BranchOpEX', unconnected in block instance 'hazard', is tied to GND.
 INFO:Xst:3210 - "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_3\verilog\mmips.v" line 272: Output port <c1> of the instance <ctrl> is unconnected or connected to loadless signal.
 WARNING:Xst:653 - Signal <bus_ctrl_mem_branch> is used but never assigned. This sourceless signal will be automatically connected to value GND.
     Summary:
@@ -577,14 +574,14 @@ Unit <HAZARD_CTRL> synthesized.
 Synthesizing Unit <HAZARD>.
     Related source file is "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_3\verilog\hazard.v".
 WARNING:Xst:647 - Input <Instr<15:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-    Found 5-bit comparator equal for signal <IDEXWriteRegisterRt[4]_Instr[25]_equal_5_o> created at line 101
-    Found 5-bit comparator equal for signal <IDEXWriteRegisterRd[4]_Instr[25]_equal_7_o> created at line 102
-    Found 5-bit comparator equal for signal <IDEXWriteRegisterRt[4]_Instr[20]_equal_9_o> created at line 103
-    Found 5-bit comparator equal for signal <IDEXWriteRegisterRd[4]_Instr[20]_equal_11_o> created at line 104
-    Found 5-bit comparator equal for signal <EXMEMWriteRegister[4]_Instr[25]_equal_13_o> created at line 108
-    Found 5-bit comparator equal for signal <EXMEMWriteRegister[4]_Instr[20]_equal_14_o> created at line 109
-    Found 5-bit comparator equal for signal <MEMWBWriteRegister[4]_Instr[25]_equal_16_o> created at line 113
-    Found 5-bit comparator equal for signal <MEMWBWriteRegister[4]_Instr[20]_equal_17_o> created at line 114
+    Found 5-bit comparator equal for signal <IDEXWriteRegisterRt[4]_Instr[25]_equal_4_o> created at line 101
+    Found 5-bit comparator equal for signal <IDEXWriteRegisterRd[4]_Instr[25]_equal_6_o> created at line 102
+    Found 5-bit comparator equal for signal <IDEXWriteRegisterRt[4]_Instr[20]_equal_8_o> created at line 103
+    Found 5-bit comparator equal for signal <IDEXWriteRegisterRd[4]_Instr[20]_equal_10_o> created at line 104
+    Found 5-bit comparator equal for signal <EXMEMWriteRegister[4]_Instr[25]_equal_12_o> created at line 108
+    Found 5-bit comparator equal for signal <EXMEMWriteRegister[4]_Instr[20]_equal_13_o> created at line 109
+    Found 5-bit comparator equal for signal <MEMWBWriteRegister[4]_Instr[25]_equal_15_o> created at line 113
+    Found 5-bit comparator equal for signal <MEMWBWriteRegister[4]_Instr[20]_equal_16_o> created at line 114
     Summary:
 	inferred   8 Comparator(s).
 	inferred  11 Multiplexer(s).
@@ -1159,15 +1156,15 @@ Top Level Output File Name         : mMIPS_sim.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 2208
+# BELS                             : 2209
 #      GND                         : 1
 #      INV                         : 2
 #      LUT1                        : 28
 #      LUT2                        : 10
 #      LUT3                        : 91
 #      LUT4                        : 128
-#      LUT5                        : 238
-#      LUT6                        : 1517
+#      LUT5                        : 240
+#      LUT6                        : 1516
 #      MUXCY                       : 95
 #      MUXF7                       : 35
 #      VCC                         : 1
@@ -1200,16 +1197,16 @@ Selected Device : 6slx45tcsg324-3
 
 Slice Logic Utilization: 
  Number of Slice Registers:             618  out of  54576     1%  
- Number of Slice LUTs:                 2062  out of  27288     7%  
-    Number used as Logic:              2014  out of  27288     7%  
+ Number of Slice LUTs:                 2063  out of  27288     7%  
+    Number used as Logic:              2015  out of  27288     7%  
     Number used as Memory:               48  out of   6408     0%  
        Number used as RAM:               48
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   2253
-   Number with an unused Flip Flop:    1635  out of   2253    72%  
-   Number with an unused LUT:           191  out of   2253     8%  
-   Number of fully used LUT-FF pairs:   427  out of   2253    18%  
+ Number of LUT Flip Flop pairs used:   2254
+   Number with an unused Flip Flop:    1636  out of   2254    72%  
+   Number with an unused LUT:           191  out of   2254     8%  
+   Number of fully used LUT-FF pairs:   427  out of   2254    18%  
    Number of unique control sets:        10
 
 IO Utilization: 
@@ -1262,7 +1259,7 @@ Timing Summary:
 Speed Grade: -3
 
    Minimum period: 17.679ns (Maximum Frequency: 56.563MHz)
-   Minimum input arrival time before clock: 7.950ns
+   Minimum input arrival time before clock: 7.120ns
    Maximum output required time after clock: 20.340ns
    Maximum combinational path delay: No path found
 
@@ -1273,7 +1270,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
   Clock period: 17.679ns (frequency: 56.563MHz)
-  Total number of paths / destination ports: 239377209 / 1348
+  Total number of paths / destination ports: 239377365 / 1348
 -------------------------------------------------------------------------
 Delay:               17.679ns (Levels of Logic = 6)
   Source:            mMIPS/id_ctrl_ex_alusrc/out_0_1 (FF)
@@ -1301,7 +1298,7 @@ Delay:               17.679ns (Levels of Logic = 6)
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
   Total number of paths / destination ports: 905 / 857
 -------------------------------------------------------------------------
-Offset:              7.950ns (Levels of Logic = 4)
+Offset:              7.120ns (Levels of Logic = 4)
   Source:            en (PAD)
   Destination:       imem/ENA_47 (FF)
   Destination Clock: clk rising
@@ -1310,14 +1307,14 @@ Offset:              7.950ns (Levels of Logic = 4)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O           313   1.222   2.437  en_IBUF (en_IBUF)
-     LUT6:I0->O            1   0.203   0.808  imem/Reset_OR_DriverANDClockEnable481 (imem/Reset_OR_DriverANDClockEnable48)
-     LUT6:I3->O            1   0.205   0.924  imem/Reset_OR_DriverANDClockEnable482 (imem/Reset_OR_DriverANDClockEnable481)
-     LUT6:I1->O           48   0.203   1.519  imem/Reset_OR_DriverANDClockEnable485 (imem/Reset_OR_DriverANDClockEnable)
+     IBUF:I->O           313   1.222   2.177  en_IBUF (en_IBUF)
+     LUT6:I4->O            1   0.203   0.580  imem/Reset_OR_DriverANDClockEnable483 (imem/Reset_OR_DriverANDClockEnable482)
+     LUT5:I4->O            1   0.205   0.580  imem/Reset_OR_DriverANDClockEnable484 (imem/Reset_OR_DriverANDClockEnable483)
+     LUT6:I5->O           48   0.205   1.519  imem/Reset_OR_DriverANDClockEnable486 (imem/Reset_OR_DriverANDClockEnable)
      FDRE:R                    0.430          imem/ENA_1
     ----------------------------------------
-    Total                      7.950ns (2.263ns logic, 5.687ns route)
-                                       (28.5% logic, 71.5% route)
+    Total                      7.120ns (2.265ns logic, 4.855ns route)
+                                       (31.8% logic, 68.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
@@ -1380,14 +1377,14 @@ clk            |         |         |    3.450|         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 30.00 secs
-Total CPU time to Xst completion: 29.82 secs
+Total REAL time to Xst completion: 29.00 secs
+Total CPU time to Xst completion: 29.23 secs
  
 --> 
 
-Total memory usage is 361660 kilobytes
+Total memory usage is 330236 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  253 (   0 filtered)
+Number of warnings :  250 (   0 filtered)
 Number of infos    :   35 (   0 filtered)
 

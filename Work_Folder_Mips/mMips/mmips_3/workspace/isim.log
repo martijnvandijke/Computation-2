@@ -15,4 +15,4 @@ Time resolution is 1 ps
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
 # run all
-Stopped at time : 14268851 ns : File "C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_3/verilog/testbench.v" Line 63
+Stopped at time : 99774951 ns : File "C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_3/verilog/testbench.v" Line 63

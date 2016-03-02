@@ -17,9 +17,6 @@
 <msg type="warning" file="HDLCompiler" num="991" delta="old" >"C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_3\verilog\ram.v" Line 172: Event expressions must result in a singular type
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1016" delta="old" >"C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_3\verilog\mmips.v" Line 392: Port <arg fmt="%s" index="1">BranchOpEX</arg> is not connected to this instance
-</msg>
-
 <msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_3\verilog\mmips.v" Line 288: Assignment to <arg fmt="%s" index="1">bus_ctrl_c1</arg> ignored, since the identifier is never used
 </msg>
 
@@ -29,16 +26,10 @@
 <msg type="warning" file="HDLCompiler" num="634" delta="old" >"C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_3\verilog\mmips.v" Line 360: Net &lt;<arg fmt="%s" index="1">bus_ctrl_mem_branch</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="552" delta="old" >"C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_3\verilog\mmips.v" Line 392: Input port <arg fmt="%s" index="1">BranchOpEX[1]</arg> is not connected on this instance
-</msg>
-
 <msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_3\verilog\ram.v" Line 120: Signal &lt;<arg fmt="%s" index="1">enable</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_3\verilog\ram.v" Line 128: Signal &lt;<arg fmt="%s" index="1">ram_din</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-</msg>
-
-<msg type="warning" file="Xst" num="2898" delta="old" >Port &apos;<arg fmt="%s" index="1">BranchOpEX</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">hazard</arg>&apos;, is tied to GND.
 </msg>
 
 <msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_3\verilog\mmips.v</arg>&quot; line <arg fmt="%s" index="2">272</arg>: Output port &lt;<arg fmt="%s" index="3">c1</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ctrl</arg>&gt; is unconnected or connected to loadless signal.
