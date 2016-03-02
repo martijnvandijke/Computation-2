@@ -17,19 +17,19 @@
 <msg type="warning" file="HDLCompiler" num="991" delta="old" >"C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_3\verilog\ram.v" Line 172: Event expressions must result in a singular type
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1016" delta="new" >"C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_3\verilog\mmips.v" Line 392: Port <arg fmt="%s" index="1">BranchOpEX</arg> is not connected to this instance
+<msg type="warning" file="HDLCompiler" num="1016" delta="old" >"C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_3\verilog\mmips.v" Line 392: Port <arg fmt="%s" index="1">BranchOpEX</arg> is not connected to this instance
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_3\verilog\mmips.v" Line 288: Assignment to <arg fmt="%s" index="1">bus_ctrl_c1</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="new" >"C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_3\verilog\mmips.v" Line 360: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">BranchOp</arg>&gt;. Formal port size is <arg fmt="%d" index="2">2</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_3\verilog\mmips.v" Line 360: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">BranchOp</arg>&gt;. Formal port size is <arg fmt="%d" index="2">2</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="new" >"C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_3\verilog\mmips.v" Line 360: Net &lt;<arg fmt="%s" index="1">bus_ctrl_mem_branch</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_3\verilog\mmips.v" Line 360: Net &lt;<arg fmt="%s" index="1">bus_ctrl_mem_branch</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="552" delta="new" >"C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_3\verilog\mmips.v" Line 392: Input port <arg fmt="%s" index="1">BranchOpEX[1]</arg> is not connected on this instance
+<msg type="warning" file="HDLCompiler" num="552" delta="old" >"C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_3\verilog\mmips.v" Line 392: Input port <arg fmt="%s" index="1">BranchOpEX[1]</arg> is not connected on this instance
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_3\verilog\ram.v" Line 120: Signal &lt;<arg fmt="%s" index="1">enable</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
@@ -38,13 +38,13 @@
 <msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_3\verilog\ram.v" Line 128: Signal &lt;<arg fmt="%s" index="1">ram_din</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="Xst" num="2898" delta="new" >Port &apos;<arg fmt="%s" index="1">BranchOpEX</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">hazard</arg>&apos;, is tied to GND.
+<msg type="warning" file="Xst" num="2898" delta="old" >Port &apos;<arg fmt="%s" index="1">BranchOpEX</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">hazard</arg>&apos;, is tied to GND.
 </msg>
 
 <msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_3\verilog\mmips.v</arg>&quot; line <arg fmt="%s" index="2">272</arg>: Output port &lt;<arg fmt="%s" index="3">c1</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ctrl</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">bus_ctrl_mem_branch</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">bus_ctrl_mem_branch</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
 </msg>
 
 <msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">AluSel&lt;1&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -428,7 +428,7 @@
 <msg type="info" file="Xst" num="1767" delta="old" >HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
 </msg>
 
-<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">branch_ctrl</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">mMIPS</arg>&gt;.
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">branch_ctrl</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">mMIPS</arg>&gt;.
 It will be removed from the design.
 </msg>
 
@@ -726,139 +726,139 @@ It will be removed from the design.
 <msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">id_instr_25_0/out_26</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">mMIPS</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="2973" delta="new" >All outputs of instance &lt;<arg fmt="%s" index="1">mux5</arg>&gt; of block &lt;<arg fmt="%s" index="2">MUX3_1</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="3">mMIPS</arg>&gt;. Underlying logic will be removed.
+<msg type="warning" file="Xst" num="2973" delta="old" >All outputs of instance &lt;<arg fmt="%s" index="1">mux5</arg>&gt; of block &lt;<arg fmt="%s" index="2">MUX3_1</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="3">mMIPS</arg>&gt;. Underlying logic will be removed.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">id_pc/out_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mMIPS</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">id_pc/out_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mMIPS</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">id_pc/out_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mMIPS</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">id_pc/out_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mMIPS</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">id_pc/out_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mMIPS</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">id_pc/out_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mMIPS</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">id_pc/out_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mMIPS</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">id_pc/out_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mMIPS</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">id_pc/out_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mMIPS</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">id_pc/out_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mMIPS</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">id_pc/out_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mMIPS</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">id_pc/out_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mMIPS</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">id_pc/out_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mMIPS</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">id_pc/out_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mMIPS</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">id_pc/out_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mMIPS</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">id_pc/out_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mMIPS</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">id_pc/out_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mMIPS</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">id_pc/out_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mMIPS</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">id_pc/out_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mMIPS</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">id_pc/out_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mMIPS</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">id_pc/out_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mMIPS</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">id_pc/out_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mMIPS</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">id_pc/out_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mMIPS</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">id_pc/out_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mMIPS</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">id_pc/out_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mMIPS</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">id_pc/out_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mMIPS</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">id_pc/out_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mMIPS</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">id_pc/out_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mMIPS</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">id_pc/out_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mMIPS</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">id_pc/out_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mMIPS</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">id_pc/out_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mMIPS</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">id_pc/out_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mMIPS</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">id_pc/out_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mMIPS</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">id_pc/out_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mMIPS</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">id_pc/out_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mMIPS</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">id_pc/out_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mMIPS</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">id_pc/out_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mMIPS</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">id_pc/out_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mMIPS</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">id_pc/out_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mMIPS</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">id_pc/out_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mMIPS</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">id_pc/out_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mMIPS</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">id_pc/out_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mMIPS</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">id_pc/out_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mMIPS</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">id_pc/out_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mMIPS</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">id_pc/out_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mMIPS</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">id_pc/out_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mMIPS</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">id_pc/out_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mMIPS</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">id_pc/out_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mMIPS</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">id_pc/out_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mMIPS</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">id_pc/out_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mMIPS</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">id_pc/out_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mMIPS</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">id_pc/out_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mMIPS</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">id_pc/out_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mMIPS</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">id_pc/out_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mMIPS</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">id_pc/out_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mMIPS</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">id_pc/out_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mMIPS</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">id_pc/out_28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mMIPS</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">id_pc/out_28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mMIPS</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">id_pc/out_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mMIPS</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">id_pc/out_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mMIPS</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">id_pc/out_30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mMIPS</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">id_pc/out_30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mMIPS</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">id_pc/out_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mMIPS</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">id_pc/out_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mMIPS</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">id_instr_25_0/out_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mMIPS</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">id_instr_25_0/out_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mMIPS</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">id_instr_25_0/out_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mMIPS</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">id_instr_25_0/out_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mMIPS</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">id_instr_25_0/out_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mMIPS</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">id_instr_25_0/out_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mMIPS</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">id_instr_25_0/out_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mMIPS</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">id_instr_25_0/out_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mMIPS</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">id_instr_25_0/out_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mMIPS</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">id_instr_25_0/out_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mMIPS</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">id_ctrl_ex_target/out_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mMIPS</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">id_ctrl_ex_target/out_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mMIPS</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">id_ctrl_ex_target/out_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mMIPS</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">id_ctrl_ex_target/out_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mMIPS</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">mMIPS/id_ctrl_ex_aluop/out_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">mMIPS_sim</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">mMIPS/if_pc/out_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">mMIPS_sim</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">mMIPS/if_pc/out_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">mMIPS_sim</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">mMIPS/if_pc/out_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">mMIPS_sim</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">mMIPS/if_pc/out_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">mMIPS_sim</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">mMIPS/pc/out_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">mMIPS_sim</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">mMIPS/pc/out_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">mMIPS_sim</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">mMIPS/pc/out_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">mMIPS_sim</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">mMIPS/pc/out_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">mMIPS_sim</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">mMIPS/id_ctrl_mem_memread/out_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mMIPS_sim</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;mMIPS/id_ctrl_wb_memtoreg/out_0&gt; </arg>
