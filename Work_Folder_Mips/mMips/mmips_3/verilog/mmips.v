@@ -357,7 +357,7 @@ module mMIPS(
      * Branch control
      */
     BRANCH_CTRL branch_ctrl(
-        .BranchOp(bus_id_ctrl_mem_branch),
+        .BranchOp(bus_ctrl_mem_branch),
         .AluZero(bus_alu_zero),
         .Branch(bus_branch_ctrl));
 
@@ -600,12 +600,12 @@ module mMIPS(
         .rst(rst),
         .clk(clk));
     
-    //REGISTER #(.WIDTH(1)) ex_alu_zero(
-        //.in(bus_alu_zero),
-       // .w(bus_pipe_en),
-       // .out(bus_ex_alu_zero),
-       // .rst(rst),
-       // .clk(clk));
+//    REGISTER #(.WIDTH(1)) ex_alu_zero(
+//        .in(bus_alu_zero),
+//        .w(bus_pipe_en),
+//        .out(bus_ex_alu_zero),
+//        .rst(rst),
+//        .clk(clk));
 
     REGISTER #(.WIDTH(`AWORDREG)) ex_regdst_addr(
         .in(bus_mux4),
@@ -613,20 +613,20 @@ module mMIPS(
         .out(bus_ex_regdst_addr),
         .rst(rst),
         .clk(clk));
-    
-    //REGISTER #(.WIDTH(`DWORD)) ex_mux5(
-        //.in(bus_mux5),
-        //.w(bus_pipe_en),
-        //.out(bus_ex_mux5),
-        //.rst(rst),
-       //.clk(clk));
-    
-    //REGISTER #(.WIDTH(`W_BRANCHOP)) ex_ctrl_mem_branch(
-        //.in(bus_id_ctrl_mem_branch),
-        //.w(bus_pipe_en),
-        //.out(bus_ex_ctrl_mem_branch),
-       // .rst(rst),
-       // .clk(clk));
+//    
+//    REGISTER #(.WIDTH(`DWORD)) ex_mux5(
+//        .in(bus_mux5),
+//        .w(bus_pipe_en),
+//        .out(bus_ex_mux5),
+//        .rst(rst),
+//        .clk(clk));
+//    
+//    REGISTER #(.WIDTH(`W_BRANCHOP)) ex_ctrl_mem_branch(
+//        .in(bus_id_ctrl_mem_branch),
+//        .w(bus_pipe_en),
+//        .out(bus_ex_ctrl_mem_branch),
+//        .rst(rst),
+//        .clk(clk));
     
     REGISTER #(.WIDTH(`W_MEMTOREG)) ex_ctrl_wb_memtoreg(
         .in(bus_id_ctrl_wb_memtoreg),

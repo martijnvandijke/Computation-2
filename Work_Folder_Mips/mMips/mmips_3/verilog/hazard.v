@@ -14,7 +14,7 @@
 // Version:
 //     (27-01-2014): initial version
 //
-///////////////////////////////////////////////
+//////////////////////////////////////////////!/
 
 module HAZARD(
         enable,
@@ -93,11 +93,11 @@ module HAZARD(
             
             // Check for hazards (for simplicity assume that register zero
             // can also cause a hazard)
-            if (BranchOpID != 2'b00) // || BranchOpEX != 2'b00)
-                //(Control) branch hazard
-                 //Don't fetch a new instruction, insert a 'nop'
+            if (BranchOpID != 2'b00 || BranchOpEX != 2'b00)
+                // (Control) branch hazard
+                // Don't fetch a new instruction, insert a 'nop'
                 hazard = 1'b1;
-					else if(IDEXRegWrite == 1'b1 && ( 
+            else if (IDEXRegWrite == 1'b1 && ( 
                         IDEXRegDst == 2'b00 && IDEXWriteRegisterRt == ifidreadregister1 ||
                         IDEXRegDst == 2'b01 && IDEXWriteRegisterRd == ifidreadregister1 ||
                         IDEXRegDst == 2'b00 && IDEXWriteRegisterRt == ifidreadregister2 ||
@@ -140,8 +140,7 @@ module HAZARD(
             else if (hazard)
             begin
                 // pre-fetch next instruction if it's branch hazard
-                //if (BranchOpEX)
-					 if (BranchOpID)
+                if (BranchOpEX)
                 begin
                     PCWrite = 1'b1;
                     imem_en = 1'b1;

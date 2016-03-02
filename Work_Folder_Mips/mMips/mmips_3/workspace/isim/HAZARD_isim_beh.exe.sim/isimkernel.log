@@ -1,0 +1,28 @@
+Command line:
+   HAZARD_isim_beh.exe
+     -simmode  gui
+     -simrunnum  1
+     -socket  50780
+
+Wed Mar 02 18:01:47 2016
+
+
+ Elaboration Time: 0.046875 sec
+
+ Current Memory Usage: 1314.46 Meg
+
+ Total Signals          : 27
+ Total Nets             : 82
+ Total Signal Drivers   : 10
+ Total Blocks           : 2
+ Total Primitive Blocks : 2
+ Total Processes        : 12
+ Total Traceable Variables  : 26
+ Total Scalar Nets and Variables : 178
+
+ Total Simulation Time: 0.0625 sec
+
+ Current Memory Usage: 1314.46 Meg
+
+Wed Mar 02 18:01:51 2016
+

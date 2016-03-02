@@ -7,6 +7,7 @@ WARNING:Security:42 - Your software subscription period has lapsed. Your current
 
 ----------------------------------------------------------------------
 This is a Full version of ISim.
+WARNING: File "C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_3/verilog/mmips.v" Line 360.  For instance mMIPS/branch_ctrl/, width 2 of formal port BranchOp is not equal to width 1 of actual signal bus_ctrl_mem_branch.
 Time resolution is 1 ps
 # onerror resume
 # wave add /
