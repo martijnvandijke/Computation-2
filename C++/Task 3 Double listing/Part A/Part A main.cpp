@@ -59,6 +59,7 @@ void main()
 			sortListById( my_list );
             break;
         case 'x': // destroy list
+			my_list->clear();
             break;
         case 'q':
             break;

@@ -36,7 +36,7 @@ void main()
 			cout << "-> Type character name: ";
 			cin >> string_input;
 			my_list->push_back(new Person( string_input) );
-
+			//cout << my_list-> << endl;
             // Add your code here
             break;
         case 'i': // insert
@@ -67,6 +67,7 @@ void main()
 			sortListById( my_list );
             break;
         case 'x': // destroy list
+			my_list->clear();
             break;
         case 'q':
             break;

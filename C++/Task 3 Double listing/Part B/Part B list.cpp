@@ -25,10 +25,7 @@ Node* List::head()
 
 void List::clear()
 {
-	//there is nothing to clear
-	if (!_head) {
-		return;
-	}
+
 
 	Node* nextNode = _head;
 	do {
@@ -188,6 +185,9 @@ void List::push_back(Item* item) {
 		nodetoadd->next = _head;
 		_head->prev = nodetoadd;
 	}
+
+	
+
 }
 
 //function will push a item to the front of the list

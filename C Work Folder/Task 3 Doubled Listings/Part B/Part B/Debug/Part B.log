@@ -1,2 +1,3 @@
-﻿  Person.cpp
-  Part B.vcxproj -> D:\Computation-2\C Work Folder\Task 3 Doubled Listings\Part B\Debug\Part B.exe
+﻿  list.cpp
+c:\users\martijn\documents\github\computation-2\c work folder\task 3 doubled listings\part b\part b\list.cpp(105): warning C4101: 'store_i': unreferenced local variable
+  Part B.vcxproj -> C:\Users\martijn\Documents\GitHub\Computation-2\C Work Folder\Task 3 Doubled Listings\Part B\Debug\Part B.exe

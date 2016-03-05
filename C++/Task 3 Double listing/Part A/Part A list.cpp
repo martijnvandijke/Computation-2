@@ -25,10 +25,6 @@ Node* List::head()
 
 void List::clear()
 {
-	//there is nothing to clear
-	if (!_head) {
-		return;
-	}
 
 	Node* nextNode = _head;
 	do {
