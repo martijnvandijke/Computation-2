@@ -1,0 +1,1342 @@
+Release 14.2 - xst P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.18 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.18 secs
+ 
+--> Reading design: mMIPS_sim.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "mMIPS_sim.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "mMIPS_sim"
+Output Format                      : NGC
+Target Device                      : xc6slx45t-3-csg324
+
+---- Source Options
+Top Module Name                    : mMIPS_sim
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_4_LAB1_owninstruction\mmips\verilog\signextend.v" into library work
+Parsing module <SIGNEXTEND_BYTE>.
+Analyzing Verilog file "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_4_LAB1_owninstruction\mmips\verilog\shift.v" into library work
+Parsing module <SHIFTLEFT>.
+Analyzing Verilog file "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_4_LAB1_owninstruction\mmips\verilog\register.v" into library work
+Parsing verilog file "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_4_LAB1_owninstruction\mmips\verilog\/mmips_defines.v" included at line 18.
+Parsing module <REGISTER>.
+Analyzing Verilog file "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_4_LAB1_owninstruction\mmips\verilog\regfile16.v" into library work
+Parsing verilog file "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_4_LAB1_owninstruction\mmips\verilog\/mmips_defines.v" included at line 19.
+Parsing module <REGFILE16>.
+WARNING:HDLCompiler:991 - "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_4_LAB1_owninstruction\mmips\verilog\regfile16.v" Line 61: Event expressions must result in a singular type
+WARNING:HDLCompiler:991 - "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_4_LAB1_owninstruction\mmips\verilog\regfile16.v" Line 63: Event expressions must result in a singular type
+Analyzing Verilog file "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_4_LAB1_owninstruction\mmips\verilog\mux.v" into library work
+Parsing verilog file "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_4_LAB1_owninstruction\mmips\verilog\/mmips_defines.v" included at line 19.
+Parsing module <MUX2>.
+Parsing module <MUX3>.
+Parsing module <MUX4>.
+Analyzing Verilog file "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_4_LAB1_owninstruction\mmips\verilog\memdev.v" into library work
+Parsing module <MEMDEV>.
+Analyzing Verilog file "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_4_LAB1_owninstruction\mmips\verilog\imm2word.v" into library work
+Parsing module <IMM2WORD>.
+Analyzing Verilog file "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_4_LAB1_owninstruction\mmips\verilog\hazard_ctrl.v" into library work
+Parsing module <HAZARD_CTRL>.
+Analyzing Verilog file "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_4_LAB1_owninstruction\mmips\verilog\hazard.v" into library work
+Parsing module <HAZARD>.
+Analyzing Verilog file "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_4_LAB1_owninstruction\mmips\verilog\decoder.v" into library work
+Parsing module <DECODER>.
+Analyzing Verilog file "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_4_LAB1_owninstruction\mmips\verilog\ctrl.v" into library work
+Parsing module <CTRL>.
+Analyzing Verilog file "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_4_LAB1_owninstruction\mmips\verilog\branch_ctrl.v" into library work
+Parsing module <BRANCH_CTRL>.
+Analyzing Verilog file "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_4_LAB1_owninstruction\mmips\verilog\aluctrl.v" into library work
+Parsing module <ALUCTRL>.
+Analyzing Verilog file "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_4_LAB1_owninstruction\mmips\verilog\alu.v" into library work
+Parsing module <ALU>.
+Analyzing Verilog file "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_4_LAB1_owninstruction\mmips\verilog\add.v" into library work
+Parsing module <ADD>.
+Analyzing Verilog file "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_4_LAB1_owninstruction\mmips\verilog\rom.v" into library work
+Parsing verilog file "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_4_LAB1_owninstruction\mmips\verilog\/mmips_defines.v" included at line 19.
+Parsing module <rom>.
+WARNING:HDLCompiler:991 - "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_4_LAB1_owninstruction\mmips\verilog\rom.v" Line 114: Event expressions must result in a singular type
+Analyzing Verilog file "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_4_LAB1_owninstruction\mmips\verilog\ram.v" into library work
+Parsing verilog file "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_4_LAB1_owninstruction\mmips\verilog\/mmips_defines.v" included at line 19.
+Parsing module <ram>.
+WARNING:HDLCompiler:991 - "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_4_LAB1_owninstruction\mmips\verilog\ram.v" Line 172: Event expressions must result in a singular type
+Analyzing Verilog file "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_4_LAB1_owninstruction\mmips\verilog\mmips.v" into library work
+Parsing verilog file "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_4_LAB1_owninstruction\mmips\verilog\/mmips_defines.v" included at line 18.
+Parsing module <mMIPS>.
+Analyzing Verilog file "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_4_LAB1_owninstruction\mmips\verilog\mMIPS_sim.v" into library work
+Parsing verilog file "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_4_LAB1_owninstruction\mmips\verilog\/mmips_defines.v" included at line 20.
+Parsing module <mMIPS_sim>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <mMIPS_sim>.
+
+Elaborating module <mMIPS>.
+
+Elaborating module <MUX2>.
+
+Elaborating module <MUX3(WIDTH=32)>.
+
+Elaborating module <MUX3(WIDTH=5)>.
+
+Elaborating module <MUX4(WIDTH=32)>.
+
+Elaborating module <DECODER>.
+
+Elaborating module <CTRL>.
+WARNING:HDLCompiler:1127 - "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_4_LAB1_owninstruction\mmips\verilog\mmips.v" Line 288: Assignment to bus_ctrl_c1 ignored, since the identifier is never used
+
+Elaborating module <SHIFTLEFT>.
+
+Elaborating module <SIGNEXTEND_BYTE>.
+
+Elaborating module <IMM2WORD>.
+
+Elaborating module <ALUCTRL>.
+
+Elaborating module <ALU>.
+
+Elaborating module <REGFILE16>.
+
+Elaborating module <ADD>.
+
+Elaborating module <BRANCH_CTRL>.
+
+Elaborating module <HAZARD_CTRL>.
+
+Elaborating module <HAZARD>.
+
+Elaborating module <REGISTER(WIDTH=32)>.
+
+Elaborating module <REGISTER(WIDTH=5)>.
+
+Elaborating module <REGISTER(WIDTH=6)>.
+
+Elaborating module <REGISTER(WIDTH=1)>.
+
+Elaborating module <REGISTER(WIDTH=2)>.
+
+Elaborating module <MEMDEV>.
+
+Elaborating module <ram(RAM_BRAM=64)>.
+WARNING:HDLCompiler:91 - "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_4_LAB1_owninstruction\mmips\verilog\ram.v" Line 120: Signal <enable> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_4_LAB1_owninstruction\mmips\verilog\ram.v" Line 128: Signal <ram_din> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/ram/mips_ram00.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/ram/mips_ram01.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/ram/mips_ram02.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/ram/mips_ram03.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/ram/mips_ram04.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/ram/mips_ram05.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/ram/mips_ram06.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/ram/mips_ram07.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/ram/mips_ram08.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/ram/mips_ram09.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/ram/mips_ram10.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/ram/mips_ram11.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/ram/mips_ram12.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/ram/mips_ram13.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/ram/mips_ram14.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/ram/mips_ram15.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/ram/mips_ram16.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/ram/mips_ram17.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/ram/mips_ram18.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/ram/mips_ram19.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/ram/mips_ram20.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/ram/mips_ram21.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/ram/mips_ram22.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/ram/mips_ram23.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/ram/mips_ram24.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/ram/mips_ram25.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/ram/mips_ram26.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/ram/mips_ram27.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/ram/mips_ram28.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/ram/mips_ram29.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/ram/mips_ram30.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/ram/mips_ram31.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/ram/mips_ram32.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/ram/mips_ram33.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/ram/mips_ram34.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/ram/mips_ram35.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/ram/mips_ram36.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/ram/mips_ram37.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/ram/mips_ram38.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/ram/mips_ram39.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/ram/mips_ram40.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/ram/mips_ram41.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/ram/mips_ram42.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/ram/mips_ram43.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/ram/mips_ram44.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/ram/mips_ram45.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/ram/mips_ram46.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/ram/mips_ram47.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/ram/mips_ram48.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/ram/mips_ram49.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/ram/mips_ram50.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/ram/mips_ram51.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/ram/mips_ram52.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/ram/mips_ram53.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/ram/mips_ram54.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/ram/mips_ram55.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/ram/mips_ram56.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/ram/mips_ram57.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/ram/mips_ram58.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/ram/mips_ram59.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/ram/mips_ram60.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/ram/mips_ram61.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/ram/mips_ram62.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/ram/mips_ram63.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <rom(ROM_BRAM=48)>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/rom/mips_rom00.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/rom/mips_rom01.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/rom/mips_rom02.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/rom/mips_rom03.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/rom/mips_rom04.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/rom/mips_rom05.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/rom/mips_rom06.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/rom/mips_rom07.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/rom/mips_rom08.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/rom/mips_rom09.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/rom/mips_rom10.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/rom/mips_rom11.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/rom/mips_rom12.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/rom/mips_rom13.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/rom/mips_rom14.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/rom/mips_rom15.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/rom/mips_rom16.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/rom/mips_rom17.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/rom/mips_rom18.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/rom/mips_rom19.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/rom/mips_rom20.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/rom/mips_rom21.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/rom/mips_rom22.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/rom/mips_rom23.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/rom/mips_rom24.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/rom/mips_rom25.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/rom/mips_rom26.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/rom/mips_rom27.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/rom/mips_rom28.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/rom/mips_rom29.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/rom/mips_rom30.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/rom/mips_rom31.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/rom/mips_rom32.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/rom/mips_rom33.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/rom/mips_rom34.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/rom/mips_rom35.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/rom/mips_rom36.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/rom/mips_rom37.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/rom/mips_rom38.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/rom/mips_rom39.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/rom/mips_rom40.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/rom/mips_rom41.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/rom/mips_rom42.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/rom/mips_rom43.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/rom/mips_rom44.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/rom/mips_rom45.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/rom/mips_rom46.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+Elaborating module <RAMB16BWER(INIT_FILE="../memory/rom/mips_rom47.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <mMIPS_sim>.
+    Related source file is "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_4_LAB1_owninstruction\mmips\verilog\mMIPS_sim.v".
+    Summary:
+	no macro.
+Unit <mMIPS_sim> synthesized.
+
+Synthesizing Unit <mMIPS>.
+    Related source file is "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_4_LAB1_owninstruction\mmips\verilog\mmips.v".
+INFO:Xst:3210 - "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_4_LAB1_owninstruction\mmips\verilog\mmips.v" line 272: Output port <c1> of the instance <ctrl> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <mMIPS> synthesized.
+
+Synthesizing Unit <MUX2>.
+    Related source file is "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_4_LAB1_owninstruction\mmips\verilog\mux.v".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <MUX2> synthesized.
+
+Synthesizing Unit <MUX3_1>.
+    Related source file is "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_4_LAB1_owninstruction\mmips\verilog\mux.v".
+        WIDTH = 32
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <MUX3_1> synthesized.
+
+Synthesizing Unit <MUX3_2>.
+    Related source file is "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_4_LAB1_owninstruction\mmips\verilog\mux.v".
+        WIDTH = 5
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <MUX3_2> synthesized.
+
+Synthesizing Unit <MUX4>.
+    Related source file is "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_4_LAB1_owninstruction\mmips\verilog\mux.v".
+        WIDTH = 32
+    Found 32-bit 4-to-1 multiplexer for signal <out> created at line 68.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <MUX4> synthesized.
+
+Synthesizing Unit <DECODER>.
+    Related source file is "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_4_LAB1_owninstruction\mmips\verilog\decoder.v".
+    Summary:
+	no macro.
+Unit <DECODER> synthesized.
+
+Synthesizing Unit <CTRL>.
+    Related source file is "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_4_LAB1_owninstruction\mmips\verilog\ctrl.v".
+WARNING:Xst:737 - Found 1-bit latch for signal <AluSel<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <AluSel<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <HiLoWrite>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   3 Latch(s).
+Unit <CTRL> synthesized.
+
+Synthesizing Unit <SHIFTLEFT>.
+    Related source file is "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_4_LAB1_owninstruction\mmips\verilog\shift.v".
+WARNING:Xst:647 - Input <in<31:30>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <SHIFTLEFT> synthesized.
+
+Synthesizing Unit <SIGNEXTEND_BYTE>.
+    Related source file is "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_4_LAB1_owninstruction\mmips\verilog\signextend.v".
+WARNING:Xst:647 - Input <in<31:8>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <SIGNEXTEND_BYTE> synthesized.
+
+Synthesizing Unit <IMM2WORD>.
+    Related source file is "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_4_LAB1_owninstruction\mmips\verilog\imm2word.v".
+    Summary:
+	no macro.
+Unit <IMM2WORD> synthesized.
+
+Synthesizing Unit <ALUCTRL>.
+    Related source file is "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_4_LAB1_owninstruction\mmips\verilog\aluctrl.v".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <ALUCTRL> synthesized.
+
+Synthesizing Unit <ALU>.
+    Related source file is "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_4_LAB1_owninstruction\mmips\verilog\alu.v".
+    Found 32-bit subtractor for signal <a[31]_b[31]_sub_6_OUT> created at line 70.
+    Found 32-bit adder for signal <a[31]_b[31]_add_2_OUT> created at line 61.
+    Found 32x32-bit multiplier for signal <a[31]_b[31]_MuLt_10_OUT> created at line 128.
+    Found 32-bit 23-to-1 multiplexer for signal <_n0111> created at line 35.
+    Found 32-bit comparator greater for signal <b[31]_a[31]_LessThan_7_o> created at line 73
+    Found 32-bit comparator greater for signal <a[31]_b[31]_LessThan_9_o> created at line 79
+    Found 32-bit comparator greater for signal <GND_16_o_a[31]_LessThan_12_o> created at line 136
+    Summary:
+	inferred   1 Multiplier(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   3 Comparator(s).
+	inferred  29 Multiplexer(s).
+Unit <ALU> synthesized.
+
+Synthesizing Unit <REGFILE16>.
+    Related source file is "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_4_LAB1_owninstruction\mmips\verilog\regfile16.v".
+    Found 32x32-bit dual-port RAM <Mram_regs> for signal <regs>.
+    Summary:
+	inferred   2 RAM(s).
+Unit <REGFILE16> synthesized.
+
+Synthesizing Unit <ADD>.
+    Related source file is "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_4_LAB1_owninstruction\mmips\verilog\add.v".
+    Found 32-bit adder for signal <r> created at line 27.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <ADD> synthesized.
+
+Synthesizing Unit <BRANCH_CTRL>.
+    Related source file is "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_4_LAB1_owninstruction\mmips\verilog\branch_ctrl.v".
+    Found 1-bit 4-to-1 multiplexer for signal <Branch> created at line 26.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <BRANCH_CTRL> synthesized.
+
+Synthesizing Unit <HAZARD_CTRL>.
+    Related source file is "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_4_LAB1_owninstruction\mmips\verilog\hazard_ctrl.v".
+    Summary:
+	inferred  11 Multiplexer(s).
+Unit <HAZARD_CTRL> synthesized.
+
+Synthesizing Unit <HAZARD>.
+    Related source file is "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_4_LAB1_owninstruction\mmips\verilog\hazard.v".
+WARNING:Xst:647 - Input <Instr<15:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 5-bit comparator equal for signal <IDEXWriteRegisterRt[4]_Instr[25]_equal_5_o> created at line 101
+    Found 5-bit comparator equal for signal <IDEXWriteRegisterRd[4]_Instr[25]_equal_7_o> created at line 102
+    Found 5-bit comparator equal for signal <IDEXWriteRegisterRt[4]_Instr[20]_equal_9_o> created at line 103
+    Found 5-bit comparator equal for signal <IDEXWriteRegisterRd[4]_Instr[20]_equal_11_o> created at line 104
+    Found 5-bit comparator equal for signal <EXMEMWriteRegister[4]_Instr[25]_equal_13_o> created at line 108
+    Found 5-bit comparator equal for signal <EXMEMWriteRegister[4]_Instr[20]_equal_14_o> created at line 109
+    Found 5-bit comparator equal for signal <MEMWBWriteRegister[4]_Instr[25]_equal_16_o> created at line 113
+    Found 5-bit comparator equal for signal <MEMWBWriteRegister[4]_Instr[20]_equal_17_o> created at line 114
+    Summary:
+	inferred   8 Comparator(s).
+	inferred  11 Multiplexer(s).
+Unit <HAZARD> synthesized.
+
+Synthesizing Unit <REGISTER_1>.
+    Related source file is "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_4_LAB1_owninstruction\mmips\verilog\register.v".
+        WIDTH = 32
+    Found 32-bit register for signal <out>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <REGISTER_1> synthesized.
+
+Synthesizing Unit <REGISTER_2>.
+    Related source file is "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_4_LAB1_owninstruction\mmips\verilog\register.v".
+        WIDTH = 5
+    Found 5-bit register for signal <out>.
+    Summary:
+	inferred   5 D-type flip-flop(s).
+Unit <REGISTER_2> synthesized.
+
+Synthesizing Unit <REGISTER_3>.
+    Related source file is "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_4_LAB1_owninstruction\mmips\verilog\register.v".
+        WIDTH = 6
+    Found 6-bit register for signal <out>.
+    Summary:
+	inferred   6 D-type flip-flop(s).
+Unit <REGISTER_3> synthesized.
+
+Synthesizing Unit <REGISTER_4>.
+    Related source file is "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_4_LAB1_owninstruction\mmips\verilog\register.v".
+        WIDTH = 1
+    Found 1-bit register for signal <out>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <REGISTER_4> synthesized.
+
+Synthesizing Unit <REGISTER_5>.
+    Related source file is "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_4_LAB1_owninstruction\mmips\verilog\register.v".
+        WIDTH = 2
+    Found 2-bit register for signal <out>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <REGISTER_5> synthesized.
+
+Synthesizing Unit <MEMDEV>.
+    Related source file is "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_4_LAB1_owninstruction\mmips\verilog\memdev.v".
+WARNING:Xst:647 - Input <a_read_reg<1:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <a_read_reg<30:3>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <sending>.
+    Found 32-bit register for signal <dev_buffer>.
+    Summary:
+	inferred  33 D-type flip-flop(s).
+	inferred   4 Multiplexer(s).
+Unit <MEMDEV> synthesized.
+
+Synthesizing Unit <ram>.
+    Related source file is "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_4_LAB1_owninstruction\mmips\verilog\ram.v".
+        RAM_BRAM = 64
+    Found 1-bit register for signal <lblw>.
+    Found 2-bit register for signal <r>.
+    Found 2-bit register for signal <w>.
+    Found 2-bit register for signal <byteselect>.
+    Found 32-bit register for signal <addr>.
+    Found 4x4-bit Read Only RAM for signal <_n2944>
+    Found 32-bit 4-to-1 multiplexer for signal <byteselect[1]_GND_29_o_wide_mux_111_OUT> created at line 176.
+    Found 1-bit 4-to-1 multiplexer for signal <addr[1]_ram_din[31]_wide_mux_20_OUT[31]> created at line 137.
+    Found 1-bit 4-to-1 multiplexer for signal <addr[1]_ram_din[31]_wide_mux_20_OUT[30]> created at line 137.
+    Found 1-bit 4-to-1 multiplexer for signal <addr[1]_ram_din[31]_wide_mux_20_OUT[29]> created at line 137.
+    Found 1-bit 4-to-1 multiplexer for signal <addr[1]_ram_din[31]_wide_mux_20_OUT[28]> created at line 137.
+    Found 1-bit 4-to-1 multiplexer for signal <addr[1]_ram_din[31]_wide_mux_20_OUT[27]> created at line 137.
+    Found 1-bit 4-to-1 multiplexer for signal <addr[1]_ram_din[31]_wide_mux_20_OUT[26]> created at line 137.
+    Found 1-bit 4-to-1 multiplexer for signal <addr[1]_ram_din[31]_wide_mux_20_OUT[25]> created at line 137.
+    Found 1-bit 4-to-1 multiplexer for signal <addr[1]_ram_din[31]_wide_mux_20_OUT[24]> created at line 137.
+    Found 1-bit 4-to-1 multiplexer for signal <addr[1]_ram_din[31]_wide_mux_20_OUT[23]> created at line 137.
+    Found 1-bit 4-to-1 multiplexer for signal <addr[1]_ram_din[31]_wide_mux_20_OUT[22]> created at line 137.
+    Found 1-bit 4-to-1 multiplexer for signal <addr[1]_ram_din[31]_wide_mux_20_OUT[21]> created at line 137.
+    Found 1-bit 4-to-1 multiplexer for signal <addr[1]_ram_din[31]_wide_mux_20_OUT[20]> created at line 137.
+    Found 1-bit 4-to-1 multiplexer for signal <addr[1]_ram_din[31]_wide_mux_20_OUT[19]> created at line 137.
+    Found 1-bit 4-to-1 multiplexer for signal <addr[1]_ram_din[31]_wide_mux_20_OUT[18]> created at line 137.
+    Found 1-bit 4-to-1 multiplexer for signal <addr[1]_ram_din[31]_wide_mux_20_OUT[17]> created at line 137.
+    Found 1-bit 4-to-1 multiplexer for signal <addr[1]_ram_din[31]_wide_mux_20_OUT[16]> created at line 137.
+    Found 1-bit 3-to-1 multiplexer for signal <addr[1]_ram_din[31]_wide_mux_20_OUT[15]> created at line 137.
+    Found 1-bit 3-to-1 multiplexer for signal <addr[1]_ram_din[31]_wide_mux_20_OUT[14]> created at line 137.
+    Found 1-bit 3-to-1 multiplexer for signal <addr[1]_ram_din[31]_wide_mux_20_OUT[13]> created at line 137.
+    Found 1-bit 3-to-1 multiplexer for signal <addr[1]_ram_din[31]_wide_mux_20_OUT[12]> created at line 137.
+    Found 1-bit 3-to-1 multiplexer for signal <addr[1]_ram_din[31]_wide_mux_20_OUT[11]> created at line 137.
+    Found 1-bit 3-to-1 multiplexer for signal <addr[1]_ram_din[31]_wide_mux_20_OUT[10]> created at line 137.
+    Found 1-bit 3-to-1 multiplexer for signal <addr[1]_ram_din[31]_wide_mux_20_OUT[9]> created at line 137.
+    Found 1-bit 3-to-1 multiplexer for signal <addr[1]_ram_din[31]_wide_mux_20_OUT[8]> created at line 137.
+    Found 32-bit 64-to-1 multiplexer for signal <bramid[6]_X_28_o_wide_mux_112_OUT> created at line 184.
+    Found 8-bit 64-to-1 multiplexer for signal <bramid[6]_X_28_o_wide_mux_107_OUT> created at line 177.
+    Found 8-bit 64-to-1 multiplexer for signal <bramid[6]_X_28_o_wide_mux_108_OUT> created at line 178.
+    Found 8-bit 64-to-1 multiplexer for signal <bramid[6]_X_28_o_wide_mux_109_OUT> created at line 179.
+    Found 8-bit 64-to-1 multiplexer for signal <bramid[6]_X_28_o_wide_mux_110_OUT> created at line 180.
+WARNING:Xst:737 - Found 1-bit latch for signal <byteselect_before<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <byteselect_before<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <bramid<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <bramid<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <bramid<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <bramid<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <bramid<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <bramid<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ADDRA<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ADDRA<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ADDRA<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ADDRA<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ADDRA<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ADDRA<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ADDRA<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ADDRA<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ADDRA<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ADDRA<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DIA<31>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DIA<30>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DIA<29>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DIA<28>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DIA<27>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DIA<26>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DIA<25>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DIA<24>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DIA<23>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DIA<22>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DIA<21>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DIA<20>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DIA<19>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DIA<18>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DIA<17>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DIA<16>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DIA<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DIA<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DIA<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DIA<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DIA<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DIA<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DIA<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DIA<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DIA<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DIA<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DIA<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DIA<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DIA<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DIA<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DIA<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DIA<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <WEA<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <WEA<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <WEA<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <WEA<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ENA<63>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ENA<62>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ENA<61>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ENA<60>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ENA<59>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ENA<58>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ENA<57>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ENA<56>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ENA<55>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ENA<54>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ENA<53>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ENA<52>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ENA<51>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ENA<50>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ENA<49>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ENA<48>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ENA<47>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ENA<46>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ENA<45>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ENA<44>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ENA<43>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ENA<42>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ENA<41>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ENA<40>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ENA<39>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ENA<38>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ENA<37>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ENA<36>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ENA<35>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ENA<34>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ENA<33>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ENA<32>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ENA<31>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ENA<30>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ENA<29>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ENA<28>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ENA<27>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ENA<26>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ENA<25>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ENA<24>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ENA<23>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ENA<22>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ENA<21>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ENA<20>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ENA<19>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ENA<18>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ENA<17>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ENA<16>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ENA<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ENA<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ENA<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ENA<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ENA<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ENA<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ENA<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ENA<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ENA<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ENA<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ENA<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ENA<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ENA<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ENA<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ENA<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ENA<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 32-bit comparator greater for signal <addr[31]_GND_29_o_LessThan_17_o> created at line 121
+    Found 21-bit comparator greater for signal <addr[31]_GND_29_o_LessThan_28_o> created at line 164
+    Found 21-bit comparator lessequal for signal <n0031> created at line 165
+    Summary:
+	inferred   1 RAM(s).
+	inferred  39 D-type flip-flop(s).
+	inferred 118 Latch(s).
+	inferred   3 Comparator(s).
+	inferred 135 Multiplexer(s).
+Unit <ram> synthesized.
+
+Synthesizing Unit <rom>.
+    Related source file is "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_4_LAB1_owninstruction\mmips\verilog\rom.v".
+        ROM_BRAM = 48
+    Found 14-bit register for signal <ADDRA>.
+    Found 48-bit register for signal <ENA>.
+    Found 32-bit register for signal <bramid>.
+    Found 32-bit 48-to-1 multiplexer for signal <out> created at line 44.
+    Found 21-bit comparator greater for signal <rom_addr[31]_GND_242_o_LessThan_11_o> created at line 106
+    Found 21-bit comparator lessequal for signal <n0009> created at line 107
+    Summary:
+	inferred  94 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <rom> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 3
+ 32x32-bit dual-port RAM                               : 2
+ 4x4-bit single-port Read Only RAM                     : 1
+# Multipliers                                          : 1
+ 32x32-bit multiplier                                  : 1
+# Adders/Subtractors                                   : 3
+ 32-bit adder                                          : 2
+ 32-bit addsub                                         : 1
+# Registers                                            : 47
+ 1-bit register                                        : 8
+ 14-bit register                                       : 1
+ 2-bit register                                        : 13
+ 32-bit register                                       : 17
+ 48-bit register                                       : 1
+ 5-bit register                                        : 6
+ 6-bit register                                        : 1
+# Latches                                              : 121
+ 1-bit latch                                           : 121
+# Comparators                                          : 16
+ 21-bit comparator greater                             : 2
+ 21-bit comparator lessequal                           : 2
+ 32-bit comparator greater                             : 4
+ 5-bit comparator equal                                : 8
+# Multiplexers                                         : 199
+ 1-bit 2-to-1 multiplexer                              : 118
+ 1-bit 3-to-1 multiplexer                              : 8
+ 1-bit 4-to-1 multiplexer                              : 17
+ 2-bit 2-to-1 multiplexer                              : 9
+ 32-bit 2-to-1 multiplexer                             : 36
+ 32-bit 4-to-1 multiplexer                             : 2
+ 32-bit 48-to-1 multiplexer                            : 1
+ 32-bit 64-to-1 multiplexer                            : 1
+ 5-bit 2-to-1 multiplexer                              : 2
+ 6-bit 2-to-1 multiplexer                              : 1
+ 8-bit 64-to-1 multiplexer                             : 4
+# Xors                                                 : 1
+ 32-bit xor2                                           : 1
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+INFO:Xst:2261 - The FF/Latch <addr_22> in Unit <dmem> is equivalent to the following 9 FFs/Latches, which will be removed : <addr_23> <addr_24> <addr_25> <addr_26> <addr_27> <addr_28> <addr_29> <addr_30> <addr_31> 
+INFO:Xst:2261 - The FF/Latch <ADDRA_0> in Unit <imem> is equivalent to the following 4 FFs/Latches, which will be removed : <ADDRA_1> <ADDRA_2> <ADDRA_3> <ADDRA_4> 
+WARNING:Xst:1710 - FF/Latch <out_26> (without init value) has a constant value of 0 in block <id_instr_25_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <out_27> (without init value) has a constant value of 0 in block <id_instr_25_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <out_28> (without init value) has a constant value of 0 in block <id_instr_25_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <out_29> (without init value) has a constant value of 0 in block <id_instr_25_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <addr_22> has a constant value of 0 in block <dmem>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ADDRA_4> (without init value) has a constant value of 0 in block <dmem>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ADDRA_0> (without init value) has a constant value of 0 in block <imem>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <out_30> of sequential type is unconnected in block <id_instr_25_0>.
+WARNING:Xst:2677 - Node <out_31> of sequential type is unconnected in block <id_instr_25_0>.
+WARNING:Xst:2677 - Node <bramid_6> of sequential type is unconnected in block <imem>.
+WARNING:Xst:2677 - Node <bramid_7> of sequential type is unconnected in block <imem>.
+WARNING:Xst:2677 - Node <bramid_8> of sequential type is unconnected in block <imem>.
+WARNING:Xst:2677 - Node <bramid_9> of sequential type is unconnected in block <imem>.
+WARNING:Xst:2677 - Node <bramid_10> of sequential type is unconnected in block <imem>.
+WARNING:Xst:2677 - Node <bramid_11> of sequential type is unconnected in block <imem>.
+WARNING:Xst:2677 - Node <bramid_12> of sequential type is unconnected in block <imem>.
+WARNING:Xst:2677 - Node <bramid_13> of sequential type is unconnected in block <imem>.
+WARNING:Xst:2677 - Node <bramid_14> of sequential type is unconnected in block <imem>.
+WARNING:Xst:2677 - Node <bramid_15> of sequential type is unconnected in block <imem>.
+WARNING:Xst:2677 - Node <bramid_16> of sequential type is unconnected in block <imem>.
+WARNING:Xst:2677 - Node <bramid_17> of sequential type is unconnected in block <imem>.
+WARNING:Xst:2677 - Node <bramid_18> of sequential type is unconnected in block <imem>.
+WARNING:Xst:2677 - Node <bramid_19> of sequential type is unconnected in block <imem>.
+WARNING:Xst:2677 - Node <bramid_20> of sequential type is unconnected in block <imem>.
+WARNING:Xst:2677 - Node <bramid_21> of sequential type is unconnected in block <imem>.
+WARNING:Xst:2677 - Node <bramid_22> of sequential type is unconnected in block <imem>.
+WARNING:Xst:2677 - Node <bramid_23> of sequential type is unconnected in block <imem>.
+WARNING:Xst:2677 - Node <bramid_24> of sequential type is unconnected in block <imem>.
+WARNING:Xst:2677 - Node <bramid_25> of sequential type is unconnected in block <imem>.
+WARNING:Xst:2677 - Node <bramid_26> of sequential type is unconnected in block <imem>.
+WARNING:Xst:2677 - Node <bramid_27> of sequential type is unconnected in block <imem>.
+WARNING:Xst:2677 - Node <bramid_28> of sequential type is unconnected in block <imem>.
+WARNING:Xst:2677 - Node <bramid_29> of sequential type is unconnected in block <imem>.
+WARNING:Xst:2677 - Node <bramid_30> of sequential type is unconnected in block <imem>.
+WARNING:Xst:2677 - Node <bramid_31> of sequential type is unconnected in block <imem>.
+WARNING:Xst:2404 -  FFs/Latches <bramid<31:21>> (without init value) have a constant value of 0 in block <rom>.
+
+Synthesizing (advanced) Unit <REGFILE16>.
+INFO:Xst:3217 - HDL ADVISOR - Register <id_data_reg1/out> currently described with an asynchronous reset, could be combined with distributed RAM <Mram_regs> for implementation on block RAM resources if you made this reset synchronous instead.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <n0001_0>       | low      |
+    |     addrA          | connected to signal <w_addr_reg>    |          |
+    |     diA            | connected to signal <w_data_reg>    |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     addrB          | connected to signal <r_addr_reg1>   |          |
+    |     doB            | connected to signal <r_data_reg1>   |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3217 - HDL ADVISOR - Register <id_data_reg2/out> currently described with an asynchronous reset, could be combined with distributed RAM <Mram_regs1> for implementation on block RAM resources if you made this reset synchronous instead.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <n0001_1>       | low      |
+    |     addrA          | connected to signal <w_addr_reg>    |          |
+    |     diA            | connected to signal <w_data_reg>    |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     addrB          | connected to signal <r_addr_reg2>   |          |
+    |     doB            | connected to signal <r_data_reg2>   |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_regs> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_regs1> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+Unit <REGFILE16> synthesized (advanced).
+
+Synthesizing (advanced) Unit <ram>.
+INFO:Xst:3231 - The small RAM <Mram__n2944> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 4-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <addr<1:0>>     |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <ram> synthesized (advanced).
+WARNING:Xst:2677 - Node <bramid_6> of sequential type is unconnected in block <rom>.
+WARNING:Xst:2677 - Node <bramid_7> of sequential type is unconnected in block <rom>.
+WARNING:Xst:2677 - Node <bramid_8> of sequential type is unconnected in block <rom>.
+WARNING:Xst:2677 - Node <bramid_9> of sequential type is unconnected in block <rom>.
+WARNING:Xst:2677 - Node <bramid_10> of sequential type is unconnected in block <rom>.
+WARNING:Xst:2677 - Node <bramid_11> of sequential type is unconnected in block <rom>.
+WARNING:Xst:2677 - Node <bramid_12> of sequential type is unconnected in block <rom>.
+WARNING:Xst:2677 - Node <bramid_13> of sequential type is unconnected in block <rom>.
+WARNING:Xst:2677 - Node <bramid_14> of sequential type is unconnected in block <rom>.
+WARNING:Xst:2677 - Node <bramid_15> of sequential type is unconnected in block <rom>.
+WARNING:Xst:2677 - Node <bramid_16> of sequential type is unconnected in block <rom>.
+WARNING:Xst:2677 - Node <bramid_17> of sequential type is unconnected in block <rom>.
+WARNING:Xst:2677 - Node <bramid_18> of sequential type is unconnected in block <rom>.
+WARNING:Xst:2677 - Node <bramid_19> of sequential type is unconnected in block <rom>.
+WARNING:Xst:2677 - Node <bramid_20> of sequential type is unconnected in block <rom>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 3
+ 32x32-bit dual-port distributed RAM                   : 2
+ 4x4-bit single-port distributed Read Only RAM         : 1
+# Multipliers                                          : 1
+ 32x32-bit multiplier                                  : 1
+# Adders/Subtractors                                   : 3
+ 32-bit adder                                          : 2
+ 32-bit addsub                                         : 1
+# Registers                                            : 650
+ Flip-Flops                                            : 650
+# Comparators                                          : 16
+ 21-bit comparator greater                             : 2
+ 21-bit comparator lessequal                           : 2
+ 32-bit comparator greater                             : 4
+ 5-bit comparator equal                                : 8
+# Multiplexers                                         : 260
+ 1-bit 2-to-1 multiplexer                              : 150
+ 1-bit 3-to-1 multiplexer                              : 8
+ 1-bit 4-to-1 multiplexer                              : 48
+ 2-bit 2-to-1 multiplexer                              : 9
+ 32-bit 2-to-1 multiplexer                             : 35
+ 32-bit 4-to-1 multiplexer                             : 1
+ 32-bit 48-to-1 multiplexer                            : 1
+ 32-bit 64-to-1 multiplexer                            : 1
+ 5-bit 2-to-1 multiplexer                              : 2
+ 6-bit 2-to-1 multiplexer                              : 1
+ 8-bit 64-to-1 multiplexer                             : 4
+# Xors                                                 : 1
+ 32-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1293 - FF/Latch <addr_22> has a constant value of 0 in block <ram>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <addr_23> has a constant value of 0 in block <ram>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <addr_24> has a constant value of 0 in block <ram>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <addr_25> has a constant value of 0 in block <ram>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <addr_26> has a constant value of 0 in block <ram>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <addr_27> has a constant value of 0 in block <ram>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <addr_28> has a constant value of 0 in block <ram>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <addr_29> has a constant value of 0 in block <ram>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <addr_30> has a constant value of 0 in block <ram>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <addr_31> has a constant value of 0 in block <ram>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ADDRA_4> (without init value) has a constant value of 0 in block <ram>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ADDRA_0> (without init value) has a constant value of 0 in block <rom>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ADDRA_1> (without init value) has a constant value of 0 in block <rom>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ADDRA_2> (without init value) has a constant value of 0 in block <rom>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ADDRA_3> (without init value) has a constant value of 0 in block <rom>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ADDRA_4> (without init value) has a constant value of 0 in block <rom>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <id_instr_25_0/out_10> in Unit <mMIPS> is equivalent to the following 2 FFs/Latches, which will be removed : <id_immediate/out_10> <id_instr_10_6/out_4> 
+INFO:Xst:2261 - The FF/Latch <id_instr_25_0/out_11> in Unit <mMIPS> is equivalent to the following 2 FFs/Latches, which will be removed : <id_immediate/out_11> <id_instr_15_11/out_0> 
+INFO:Xst:2261 - The FF/Latch <id_instr_25_0/out_12> in Unit <mMIPS> is equivalent to the following 2 FFs/Latches, which will be removed : <id_immediate/out_12> <id_instr_15_11/out_1> 
+INFO:Xst:2261 - The FF/Latch <id_instr_25_0/out_13> in Unit <mMIPS> is equivalent to the following 2 FFs/Latches, which will be removed : <id_immediate/out_13> <id_instr_15_11/out_2> 
+INFO:Xst:2261 - The FF/Latch <id_instr_25_0/out_14> in Unit <mMIPS> is equivalent to the following 2 FFs/Latches, which will be removed : <id_immediate/out_14> <id_instr_15_11/out_3> 
+INFO:Xst:2261 - The FF/Latch <id_instr_25_0/out_15> in Unit <mMIPS> is equivalent to the following 2 FFs/Latches, which will be removed : <id_immediate/out_15> <id_instr_15_11/out_4> 
+INFO:Xst:2261 - The FF/Latch <id_instr_25_0/out_20> in Unit <mMIPS> is equivalent to the following FF/Latch, which will be removed : <id_instr_20_16/out_4> 
+INFO:Xst:2261 - The FF/Latch <id_instr_25_0/out_16> in Unit <mMIPS> is equivalent to the following FF/Latch, which will be removed : <id_instr_20_16/out_0> 
+INFO:Xst:2261 - The FF/Latch <id_instr_25_0/out_17> in Unit <mMIPS> is equivalent to the following FF/Latch, which will be removed : <id_instr_20_16/out_1> 
+INFO:Xst:2261 - The FF/Latch <id_instr_25_0/out_18> in Unit <mMIPS> is equivalent to the following FF/Latch, which will be removed : <id_instr_20_16/out_2> 
+INFO:Xst:2261 - The FF/Latch <id_instr_25_0/out_19> in Unit <mMIPS> is equivalent to the following FF/Latch, which will be removed : <id_instr_20_16/out_3> 
+INFO:Xst:2261 - The FF/Latch <id_instr_25_0/out_0> in Unit <mMIPS> is equivalent to the following 2 FFs/Latches, which will be removed : <id_immediate/out_0> <id_instr_5_0/out_0> 
+INFO:Xst:2261 - The FF/Latch <id_instr_25_0/out_1> in Unit <mMIPS> is equivalent to the following 2 FFs/Latches, which will be removed : <id_immediate/out_1> <id_instr_5_0/out_1> 
+INFO:Xst:2261 - The FF/Latch <id_instr_25_0/out_2> in Unit <mMIPS> is equivalent to the following 2 FFs/Latches, which will be removed : <id_immediate/out_2> <id_instr_5_0/out_2> 
+INFO:Xst:2261 - The FF/Latch <id_immediate/out_16> in Unit <mMIPS> is equivalent to the following 15 FFs/Latches, which will be removed : <id_immediate/out_17> <id_immediate/out_18> <id_immediate/out_19> <id_immediate/out_20> <id_immediate/out_21> <id_immediate/out_22> <id_immediate/out_23> <id_immediate/out_24> <id_immediate/out_25> <id_immediate/out_26> <id_immediate/out_27> <id_immediate/out_28> <id_immediate/out_29> <id_immediate/out_30> <id_immediate/out_31> 
+INFO:Xst:2261 - The FF/Latch <id_instr_25_0/out_3> in Unit <mMIPS> is equivalent to the following 2 FFs/Latches, which will be removed : <id_immediate/out_3> <id_instr_5_0/out_3> 
+INFO:Xst:2261 - The FF/Latch <id_instr_25_0/out_4> in Unit <mMIPS> is equivalent to the following 2 FFs/Latches, which will be removed : <id_immediate/out_4> <id_instr_5_0/out_4> 
+INFO:Xst:2261 - The FF/Latch <id_instr_25_0/out_5> in Unit <mMIPS> is equivalent to the following 2 FFs/Latches, which will be removed : <id_immediate/out_5> <id_instr_5_0/out_5> 
+INFO:Xst:2261 - The FF/Latch <id_instr_25_0/out_26> in Unit <mMIPS> is equivalent to the following 5 FFs/Latches, which will be removed : <id_instr_25_0/out_27> <id_instr_25_0/out_28> <id_instr_25_0/out_29> <id_instr_25_0/out_30> <id_instr_25_0/out_31> 
+INFO:Xst:2261 - The FF/Latch <id_instr_25_0/out_6> in Unit <mMIPS> is equivalent to the following 2 FFs/Latches, which will be removed : <id_immediate/out_6> <id_instr_10_6/out_0> 
+INFO:Xst:2261 - The FF/Latch <id_instr_25_0/out_7> in Unit <mMIPS> is equivalent to the following 2 FFs/Latches, which will be removed : <id_immediate/out_7> <id_instr_10_6/out_1> 
+INFO:Xst:2261 - The FF/Latch <id_instr_25_0/out_8> in Unit <mMIPS> is equivalent to the following 2 FFs/Latches, which will be removed : <id_immediate/out_8> <id_instr_10_6/out_2> 
+INFO:Xst:2261 - The FF/Latch <id_instr_25_0/out_9> in Unit <mMIPS> is equivalent to the following 2 FFs/Latches, which will be removed : <id_immediate/out_9> <id_instr_10_6/out_3> 
+WARNING:Xst:1710 - FF/Latch <id_instr_25_0/out_26> (without init value) has a constant value of 0 in block <mMIPS>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <mMIPS_sim> ...
+
+Optimizing unit <mMIPS> ...
+
+Optimizing unit <MEMDEV> ...
+
+Optimizing unit <CTRL> ...
+
+Optimizing unit <HAZARD> ...
+
+Optimizing unit <ALU> ...
+
+Optimizing unit <ram> ...
+
+Optimizing unit <rom> ...
+WARNING:Xst:1710 - FF/Latch <mMIPS/id_ctrl_ex_aluop/out_4> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <mMIPS/id_ctrl_mem_memread/out_0> in Unit <mMIPS_sim> is equivalent to the following FF/Latch, which will be removed : <mMIPS/id_ctrl_wb_memtoreg/out_0> 
+INFO:Xst:2261 - The FF/Latch <mMIPS/id_ctrl_mem_memread/out_1> in Unit <mMIPS_sim> is equivalent to the following FF/Latch, which will be removed : <mMIPS/id_ctrl_wb_memtoreg/out_1> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block mMIPS_sim, actual ratio is 10.
+FlipFlop mMIPS/id_ctrl_ex_alusrc/out_0 has been replicated 1 time(s)
+FlipFlop mMIPS/id_immediate/out_16 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 576
+ Flip-Flops                                            : 576
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : mMIPS_sim.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 2389
+#      GND                         : 1
+#      INV                         : 2
+#      LUT1                        : 30
+#      LUT2                        : 44
+#      LUT3                        : 82
+#      LUT4                        : 139
+#      LUT5                        : 327
+#      LUT6                        : 1505
+#      MUXCY                       : 126
+#      MUXF7                       : 38
+#      VCC                         : 1
+#      XORCY                       : 94
+# FlipFlops/Latches                : 696
+#      FD                          : 1
+#      FDCE                        : 451
+#      FDE                         : 76
+#      FDRE                        : 48
+#      LD                          : 3
+#      LDE                         : 117
+# RAMS                             : 126
+#      RAM32M                      : 10
+#      RAM32X1D                    : 4
+#      RAMB16BWER                  : 112
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 74
+#      IBUF                        : 37
+#      OBUF                        : 37
+# DSPs                             : 4
+#      DSP48A1                     : 4
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx45tcsg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             696  out of  54576     1%  
+ Number of Slice LUTs:                 2177  out of  27288     7%  
+    Number used as Logic:              2129  out of  27288     7%  
+    Number used as Memory:               48  out of   6408     0%  
+       Number used as RAM:               48
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   2380
+   Number with an unused Flip Flop:    1684  out of   2380    70%  
+   Number with an unused LUT:           203  out of   2380     8%  
+   Number of fully used LUT-FF pairs:   493  out of   2380    20%  
+   Number of unique control sets:        10
+
+IO Utilization: 
+ Number of IOs:                          75
+ Number of bonded IOBs:                  75  out of    190    39%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:              112  out of    116    96%  
+    Number using Block RAM only:        112
+ Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
+ Number of DSP48A1s:                      4  out of     58     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+------------------------------------+-----------------------------+-------+
+Clock Signal                        | Clock buffer(FF name)       | Load  |
+------------------------------------+-----------------------------+-------+
+clk                                 | BUFGP                       | 702   |
+mMIPS/ctrl/_n0086(mMIPS/ctrl/out1:O)| NONE(*)(mMIPS/ctrl/AluSel_0)| 3     |
+en                                  | IBUF+BUFG                   | 117   |
+mMIPS/bus_ctrl_aluop<4>             | NONE(dmem/BRAM00)           | 112   |
+------------------------------------+-----------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 17.660ns (Maximum Frequency: 56.626MHz)
+   Minimum input arrival time before clock: 7.126ns
+   Maximum output required time after clock: 20.353ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 17.660ns (frequency: 56.626MHz)
+  Total number of paths / destination ports: 242466532 / 1430
+-------------------------------------------------------------------------
+Delay:               17.660ns (Levels of Logic = 6)
+  Source:            mMIPS/id_instr_25_0/out_0 (FF)
+  Destination:       mMIPS/hi/out_31 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: mMIPS/id_instr_25_0/out_0 to mMIPS/hi/out_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            16   0.447   1.109  mMIPS/id_instr_25_0/out_0 (mMIPS/id_instr_25_0/out_0)
+     LUT3:I1->O           11   0.203   0.882  mMIPS/mux3511 (mMIPS/bus_mux2<0>)
+     DSP48A1:B0->P47      18   4.394   1.049  mMIPS/alu/Mmult_a[31]_b[31]_MuLt_10_OUT (mMIPS/alu/Mmult_a[31]_b[31]_MuLt_10_OUT_P47_to_Mmult_a[31]_b[31]_MuLt_10_OUT1)
+     DSP48A1:C30->PCOUT47    1   2.689   0.000  mMIPS/alu/Mmult_a[31]_b[31]_MuLt_10_OUT1 (mMIPS/alu/Mmult_a[31]_b[31]_MuLt_10_OUT1_PCOUT_to_Mmult_a[31]_b[31]_MuLt_10_OUT2_PCIN_47)
+     DSP48A1:PCIN47->P47   18   2.264   1.049  mMIPS/alu/Mmult_a[31]_b[31]_MuLt_10_OUT2 (mMIPS/alu/Mmult_a[31]_b[31]_MuLt_10_OUT2_P47_to_Mmult_a[31]_b[31]_MuLt_10_OUT3)
+     DSP48A1:C30->P29      1   2.687   0.580  mMIPS/alu/Mmult_a[31]_b[31]_MuLt_10_OUT3 (mMIPS/alu/a[31]_b[31]_MuLt_10_OUT<63>)
+     LUT6:I5->O            1   0.205   0.000  mMIPS/alu/Mmux_result_hi251 (mMIPS/bus_alu_result_2<31>)
+     FDCE:D                    0.102          mMIPS/hi/out_31
+    ----------------------------------------
+    Total                     17.660ns (12.991ns logic, 4.669ns route)
+                                       (73.6% logic, 26.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 1061 / 1013
+-------------------------------------------------------------------------
+Offset:              7.126ns (Levels of Logic = 4)
+  Source:            en (PAD)
+  Destination:       imem/ENA_47 (FF)
+  Destination Clock: clk rising
+
+  Data Path: en to imem/ENA_47
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           387   1.222   2.183  en_IBUF (en_IBUF)
+     LUT6:I4->O            1   0.203   0.580  imem/Reset_OR_DriverANDClockEnable483 (imem/Reset_OR_DriverANDClockEnable482)
+     LUT5:I4->O            1   0.205   0.580  imem/Reset_OR_DriverANDClockEnable484 (imem/Reset_OR_DriverANDClockEnable483)
+     LUT6:I5->O           48   0.205   1.519  imem/Reset_OR_DriverANDClockEnable486 (imem/Reset_OR_DriverANDClockEnable)
+     FDRE:R                    0.430          imem/ENA_1
+    ----------------------------------------
+    Total                      7.126ns (2.265ns logic, 4.861ns route)
+                                       (31.8% logic, 68.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 855044 / 37
+-------------------------------------------------------------------------
+Offset:              20.353ns (Levels of Logic = 9)
+  Source:            mMIPS/id_instr_25_0/out_0 (FF)
+  Destination:       dev_w (PAD)
+  Source Clock:      clk rising
+
+  Data Path: mMIPS/id_instr_25_0/out_0 to dev_w
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            16   0.447   1.109  mMIPS/id_instr_25_0/out_0 (mMIPS/id_instr_25_0/out_0)
+     LUT3:I1->O           11   0.203   0.882  mMIPS/mux3511 (mMIPS/bus_mux2<0>)
+     DSP48A1:B0->P47      18   4.394   1.049  mMIPS/alu/Mmult_a[31]_b[31]_MuLt_10_OUT (mMIPS/alu/Mmult_a[31]_b[31]_MuLt_10_OUT_P47_to_Mmult_a[31]_b[31]_MuLt_10_OUT1)
+     DSP48A1:C30->PCOUT47    1   2.689   0.000  mMIPS/alu/Mmult_a[31]_b[31]_MuLt_10_OUT1 (mMIPS/alu/Mmult_a[31]_b[31]_MuLt_10_OUT1_PCOUT_to_Mmult_a[31]_b[31]_MuLt_10_OUT2_PCIN_47)
+     DSP48A1:PCIN47->P14    1   2.264   0.580  mMIPS/alu/Mmult_a[31]_b[31]_MuLt_10_OUT2 (mMIPS/alu/a[31]_b[31]_MuLt_10_OUT<31>)
+     LUT6:I5->O            1   0.205   0.580  mMIPS/alu/Mmux_result755 (mMIPS/alu/Mmux_result754)
+     LUT4:I3->O            4   0.205   0.684  mMIPS/alu/Mmux_result756 (mMIPS/bus_alu_result<31>)
+     LUT6:I5->O           37   0.205   1.467  mMIPS/mux2711 (mMIPS/bus_mux6<31>)
+     LUT4:I2->O            2   0.203   0.616  mMIPS/memdev/dev_send_eop1 (dev_send_eop_OBUF)
+     OBUF:I->O                 2.571          dev_w_OBUF (dev_w)
+    ----------------------------------------
+    Total                     20.353ns (13.386ns logic, 6.967ns route)
+                                       (65.8% logic, 34.2% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+-----------------+---------+---------+---------+---------+
+                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock     |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------+---------+---------+---------+---------+
+clk              |   17.660|    6.894|    2.316|         |
+en               |         |    7.169|    2.487|         |
+mMIPS/ctrl/_n0086|         |    1.630|         |         |
+-----------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock en
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    6.291|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock mMIPS/ctrl/_n0086
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    3.424|         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 31.00 secs
+Total CPU time to Xst completion: 31.30 secs
+ 
+--> 
+
+Total memory usage is 360828 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  202 (   0 filtered)
+Number of infos    :   35 (   0 filtered)
+

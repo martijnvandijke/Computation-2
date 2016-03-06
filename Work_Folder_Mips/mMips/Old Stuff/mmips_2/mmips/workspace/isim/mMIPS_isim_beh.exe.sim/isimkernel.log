@@ -1,0 +1,10 @@
+Command line:
+   mMIPS_isim_beh.exe
+     -simmode  gui
+     -simrunnum  1
+     -socket  59017
+
+Tue Mar 01 20:40:30 2016
+
+
+ Elaboration Time: 0.0625 sec

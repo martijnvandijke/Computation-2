@@ -1,0 +1,84 @@
+#Temporary place holder for real output pins
+#The port numbers are fairly randomly chosen
+#All inputs are mapped to GND pins, except for clk, rst and en
+NET clk             LOC = "E6";
+NET rst             LOC = "U15";
+NET en              LOC = "G8";
+
+NET dev_dout<0>     LOC = "R11";
+NET dev_dout<1>     LOC = "T12";
+NET dev_dout<2>     LOC = "N10";
+NET dev_dout<3>     LOC = "M10";
+NET dev_dout<4>     LOC = "U11";
+NET dev_dout<5>     LOC = "M8";
+NET dev_dout<6>     LOC = "U8";
+NET dev_dout<7>     LOC = "U7";
+NET dev_dout<8>     LOC = "N7";
+NET dev_dout<9>     LOC = "T6";
+NET dev_dout<10>    LOC = "R7";
+NET dev_dout<11>    LOC = "N6";
+NET dev_dout<12>    LOC = "R5";
+NET dev_dout<13>    LOC = "U5";
+NET dev_dout<14>    LOC = "R3";
+NET dev_dout<15>    LOC = "T4";
+NET dev_dout<16>    LOC = "N5";
+NET dev_dout<17>    LOC = "N4";
+NET dev_dout<18>    LOC = "P3";
+NET dev_dout<19>    LOC = "L6";
+NET dev_dout<20>    LOC = "U2";
+NET dev_dout<21>    LOC = "T2";
+NET dev_dout<22>    LOC = "P2";
+NET dev_dout<23>    LOC = "N2";
+NET dev_dout<24>    LOC = "M3";
+NET dev_dout<25>    LOC = "L2";
+NET dev_dout<26>    LOC = "K2";
+NET dev_dout<27>    LOC = "L4";
+NET dev_dout<28>    LOC = "J3";
+NET dev_dout<29>    LOC = "L7";
+NET dev_dout<30>    LOC = "G3";
+NET dev_dout<31>    LOC = "J7";
+
+NET dev_din<0>      PULLDOWN;
+NET dev_din<1>      PULLDOWN;
+NET dev_din<2>      PULLDOWN;
+NET dev_din<3>      PULLDOWN;
+NET dev_din<4>      PULLDOWN;
+NET dev_din<5>      PULLDOWN;
+NET dev_din<6>      PULLDOWN;
+NET dev_din<7>      PULLDOWN;
+NET dev_din<8>      PULLDOWN;
+NET dev_din<9>      PULLDOWN;
+NET dev_din<10>     PULLDOWN;
+NET dev_din<11>     PULLDOWN;
+NET dev_din<12>     PULLDOWN;
+NET dev_din<13>     PULLDOWN;
+NET dev_din<14>     PULLDOWN;
+NET dev_din<15>     PULLDOWN;
+NET dev_din<16>     PULLDOWN;
+NET dev_din<17>     PULLDOWN;
+NET dev_din<18>     PULLDOWN;
+NET dev_din<19>     PULLDOWN;
+NET dev_din<20>     PULLDOWN;
+NET dev_din<21>     PULLDOWN;
+NET dev_din<22>     PULLDOWN;
+NET dev_din<23>     PULLDOWN;
+NET dev_din<24>     PULLDOWN;
+NET dev_din<25>     PULLDOWN;
+NET dev_din<26>     PULLDOWN;
+NET dev_din<27>     PULLDOWN;
+NET dev_din<28>     PULLDOWN;
+NET dev_din<29>     PULLDOWN;
+NET dev_din<30>     PULLDOWN;
+NET dev_din<31>     PULLDOWN;
+
+NET dev_r           LOC = "F2";
+NET dev_w           LOC = "H6";
+
+NET dev_rdyr        PULLDOWN;
+NET dev_rdyw        PULLDOWN;
+
+NET dev_wdata       LOC = "E3";
+NET dev_waddr       LOC = "F4";
+NET dev_send_eop    LOC = "D2";
+
+NET dev_rcv_eop     PULLDOWN;

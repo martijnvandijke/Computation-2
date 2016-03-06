@@ -1,0 +1,127 @@
+/**
+ * Define the output architecture and format
+ */
+OUTPUT_ARCH(mips)
+OUTPUT_FORMAT(binary)
+
+/**
+ * Define the memory layout of the system
+ *
+ * ROM starting at address "ROM_START_ADDR"
+ * RAM starting at address "RAM_START_ADDR"
+ */
+
+/* Values used in SECTIONS definition */
+"ROM_START_ADDR" = 0x00000; /* virtual machine address */ 
+"ROM_LENGTH" = 96K;          /* size of rom */
+"RAM_START_ADDR" = 0x400000; /* virtual machine address */
+"RAM_LENGTH" = 128K;         /* size of ram */
+
+/* The actual memory layout... */
+MEMORY 
+{
+  rom (rx)  : ORIGIN = 0x0, LENGTH = 96K
+  ram (!rx) : ORIGIN = 0x400000, LENGTH = 128K
+}
+
+/**
+ * Sections:
+ *
+ * ROM contains the text, init and fini sections.
+ * RAM contains the data and bss sections.
+ * Address and length of sections defined in MEMORY section.
+ */
+SECTIONS
+{
+    .text "ROM_START_ADDR":
+    {
+        *(.text)
+    } >rom
+
+    .init . : 
+    { 
+        *(.init)    
+    } >rom =0
+
+    .fini . : 
+    { 
+        *(.fini)    
+    } >rom =0
+
+    _etext = .;
+    PROVIDE(etext = .);
+
+    .data "RAM_START_ADDR":
+    {
+        *(.data) 
+        *(.rdata) 
+        *(.rodata) 
+        *(.sdata)
+    } >ram
+
+    _edata  =  .;
+    PROVIDE(edata = .);
+
+    _gp     = .;
+
+    .bss . :
+    {
+        *(.sbss) 
+        *(.scommon) 
+        *(.bss) 
+        *(COMMON)   
+    } >ram
+    _heap        = .;
+    _end        = "RAM_START_ADDR"+"RAM_LENGTH";
+    PROVIDE(end = .);
+}
+
+/** 
+ * Original memory layout (obsolete)
+ */
+/*
+SECTIONS
+{
+    .text 0x1fc00000:
+    {
+            *(.text)
+    }
+
+    .init . : 
+    { 
+        *(.init)    
+    } =0
+
+    .fini . : 
+    { 
+        *(.fini)    
+    } =0
+
+    _etext = .;
+    PROVIDE(etext = .);
+
+    .data ALIGN(0x400):
+    {
+            *(.data) 
+        *(.rdata) 
+        *(.rodata) 
+        *(.sdata)
+    }
+
+    _edata  =  .;
+    PROVIDE(edata = .);
+
+    _gp     = .;
+
+    .bss ALIGN(0x40):
+    {
+        *(.sbss) 
+        *(.scommon) 
+        *(.bss) 
+        *(COMMON)   
+    }
+
+    _end        = .;
+    PROVIDE(end = .);
+}
+*/
