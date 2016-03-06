@@ -30,7 +30,6 @@ Analyzing Verilog file "C:/Users/martijn/Documents/GitHub/Computation-2/Work_Fol
 Analyzing Verilog file "C:/Xilinx/14.2/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Starting static elaboration
 WARNING:HDLCompiler:1016 - "C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_3/workspace/../verilog/testbench.v" Line 33: Port dev_dout is not connected to this instance
-WARNING:HDLCompiler:189 - "C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_3/workspace/../verilog/mmips.v" Line 360: Size mismatch in connection of port <BranchOp>. Formal port size is 2-bit while actual signal size is 1-bit.
 Completed static elaboration
 Compiling module MUX2
 Compiling module MUX3
@@ -173,8 +172,8 @@ Compiling module mMIPS_sim
 Compiling module testbench
 Compiling module glbl
 Time Resolution for simulation is 1ps.
-Waiting for 56 sub-compilation(s) to finish...
+Waiting for 74 sub-compilation(s) to finish...
 Compiled 140 Verilog Units
 Built simulation executable C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_3/workspace/testbench_isim_beh.exe
-Fuse Memory Usage: 164464 KB
-Fuse CPU Usage: 47374 ms
+Fuse Memory Usage: 164644 KB
+Fuse CPU Usage: 60296 ms

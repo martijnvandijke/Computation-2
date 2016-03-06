@@ -1,0 +1,102 @@
+Where to start?
+
+	set envionment variable LCCDIR to the directory that contains
+	lcc and add $LCCDIR to PATH. Use lcc to compile your program.
+	For example: "lcc -o stanford stanford.c".
+
+What are the size of the standard data types?
+
+	* sizeof(char) = 1
+	* sizeof(short) = 4
+	* sizeof(int) = 4
+	* sizeof(long) = 4
+	* sizeof(float) = 4
+	* sizeof(double) = 4
+
+Which software is used?
+
+	* Lcc v4.1		// compiler
+	* Binutils v2.11.2	// assmbler, linker
+	* SoftFloat v2b		// floating point emulation
+	* BSD4.3 libc		// libc
+	* Oink v1.0		// MIPS simulator
+
+Which endianess is used?
+
+	Big-endian
+
+How to specify the load address?
+
+	$LCCDIR/minimips.link. See gld documentation for more information.
+	Default load address is 0x1fc00000.
+
+What is the output format of the linker?
+
+	Elf format. Commandline options --oformat=srec or --oformat=binary
+	can be used to create binaries in srecord or binary format
+	respectively.
+
+How to use custom ops?
+
+	#define sfu0(a, b)       ((a) + ((b) + *(int *) 0x12344321))
+	#define sfu1(a, b)       ((a) - ((b) + *(int *) 0x12344321))
+	#define sfu2(a, b)       ((a) + ((b) - *(int *) 0x12344321))
+	#define sfu3(a, b)       ((a) - ((b) - *(int *) 0x12344321))
+
+	The four custom ops are mapped on instructions:
+
+	msb			     lsb
+
+	000000ssssstttttddddd00000110000 /* Special 0x30 == sfu0 */
+	000000ssssstttttddddd00000110001 /* Special 0x31 == sfu1 */
+	000000ssssstttttddddd00000110010 /* Special 0x32 == sfu2 */
+	000000ssssstttttddddd00000110011 /* Special 0x33 == sfu3 */
+
+	sssss = rs, ttttt = rt, and ddddd = rd.
+
+	Modify minimips.md if you want to add more custom ops or
+	in the case you want to change the encoding.
+
+	Because .words are emited for custom ops, you don't have to
+	change the assembler.
+
+Which MIPS operations are used by lcc for MINIMIPS?
+
+	* addiu addu subu
+	* and andi or ori xor xori
+	* beq bne
+	* jal jalr jr j
+	* lb lw sb sw
+	* lui
+	* slti sltiu slt sltu
+	* sll sra srl (1, 2, 8 bits)
+
+Which linker/assembler/archiver?
+
+	GNU binutils is used. Configure it with --target=mips. Put mips-* 
+	tools in $LCCDIR.
+
+Which operations are emulated in software?
+
+	* All floating point operations
+	* Multiply, divide, modulo
+	* Variable distance shifts 
+	* Partial-word operations
+
+How to disassemle (Elf) code?
+
+	mips-objdump -d <file name>
+
+How to change the stack size and heap size?
+
+	Modify constants stack_size and heap_size in lib/crt0.s.
+	Default values are 10k and 100k, respectively.
+
+How to generate code for MIPS (in order to compare it with MINIMIPS)?
+
+	Use lcc's -target=mips/irix option.
+
+How to simulate MIPS/MINIMIPS code?
+
+	Use oink -f <file name>. Use Oink's -p 0x10c2000c option to make 
+	printf work.

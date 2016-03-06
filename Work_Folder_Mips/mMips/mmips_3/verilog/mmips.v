@@ -357,7 +357,7 @@ module mMIPS(
      * Branch control
      */
     BRANCH_CTRL branch_ctrl(
-        .BranchOp(bus_ctrl_mem_branch),
+        .BranchOp(bus_id_ctrl_mem_branch),
         .AluZero(bus_alu_zero),
         .Branch(bus_branch_ctrl));
 
