@@ -1,6 +1,0 @@
-#!/bin/sh
-
-#
-# Disassemble binary files for big-endian MIPS systems
-#
-mips-objdump -D -EB -b binary -m mips $1

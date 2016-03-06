@@ -1,7 +1,0 @@
-#!/bin/csh
-
-foreach f (`find processors softfloat`)
-	dos2ux $f > foo
-	cp foo $f
-	rm foo
-end
