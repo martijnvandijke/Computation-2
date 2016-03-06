@@ -19,7 +19,8 @@
 #include "drawtools.h"      // contains all you need to draw stuff
 
 using namespace std;
-
+//extern string keytext;
+string keytext;
 // Put your global variables here
 
 
@@ -64,6 +65,9 @@ void init()
     // Set the size of the viewport (drawing grid) in pixels
     // We are looking at the rectangle from (0,0) to (windowWidth,windowHeight)
     gluOrtho2D(0, windowWidth, 0, windowHeight);
+	glutKeyboardFunc(keyfunc);
+
+
 
     glMatrixMode(GL_MODELVIEW);
 }
@@ -127,12 +131,36 @@ void display()
         glColor3fv(color.data());           // Set color from array
         PointF point = { 200, 400 };        // A two dimensional point (see drawtools.h)
         glVertex2fv(point.data());          // Set position from array
+		int x = 200;
+		int y = 300;
+		//gettext(keytext,x,y);
 
     glEnd(); // End of the drawing block
 
     // Visualize the drawing commands
     glFlush();            // Execute all commands waiting to be executed
     glutSwapBuffers();    // Swap the backbuffer and frontbuffer
+}
+
+//---------------------------------------------------------------------------
+// Own debug keyfunction
+void keyfunc(unsigned char key, int x, int y) {
+
+	char c = key; 
+	keytext = string{ c } +", " + to_string(x) + ", " + to_string(y);
+	glutPostRedisplay();
+
+
+}
+
+void gettext(string keytext,int x,int y) {
+	cin >> keytext ;
+	glRasterPos2f(x, y);
+	for (char& c : keytext) {
+		glutBitmapCharacter(GLUT_BITMAP_HELVETICA_18, c);
+	}
+
+
 }
 
 //---------------------------------------------------------------------------
