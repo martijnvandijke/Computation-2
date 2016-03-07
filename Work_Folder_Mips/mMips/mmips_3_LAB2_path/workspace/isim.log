@@ -16,4 +16,4 @@ Finished circuit initialization process.
 # run all
 Finished in     2141162 cycles
 
-Stopped at time : 214116301 ns : File "C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_3/verilog/testbench.v" Line 132
+Stopped at time : 214116301 ns : File "C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_3_LAB2_path/verilog/testbench.v" Line 132

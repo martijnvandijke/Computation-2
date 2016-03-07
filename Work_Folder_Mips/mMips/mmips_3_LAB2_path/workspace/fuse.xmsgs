@@ -5,19 +5,19 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="991" delta="unknown" >"C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_3/workspace/../verilog/regfile16.v" Line 61: Event expressions must result in a singular type
+<msg type="warning" file="HDLCompiler" num="991" delta="unknown" >"C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_3_LAB2_path/workspace/../verilog/regfile16.v" Line 61: Event expressions must result in a singular type
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="991" delta="unknown" >"C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_3/workspace/../verilog/regfile16.v" Line 63: Event expressions must result in a singular type
+<msg type="warning" file="HDLCompiler" num="991" delta="unknown" >"C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_3_LAB2_path/workspace/../verilog/regfile16.v" Line 63: Event expressions must result in a singular type
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="991" delta="unknown" >"C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_3/workspace/../verilog/rom.v" Line 114: Event expressions must result in a singular type
+<msg type="warning" file="HDLCompiler" num="991" delta="unknown" >"C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_3_LAB2_path/workspace/../verilog/rom.v" Line 114: Event expressions must result in a singular type
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="991" delta="unknown" >"C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_3/workspace/../verilog/ram.v" Line 172: Event expressions must result in a singular type
+<msg type="warning" file="HDLCompiler" num="991" delta="unknown" >"C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_3_LAB2_path/workspace/../verilog/ram.v" Line 172: Event expressions must result in a singular type
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_3/workspace/../verilog/testbench.v" Line 33: Port <arg fmt="%s" index="1">dev_dout</arg> is not connected to this instance
+<msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_3_LAB2_path/workspace/../verilog/testbench.v" Line 33: Port <arg fmt="%s" index="1">dev_dout</arg> is not connected to this instance
 </msg>
 
 </messages>
