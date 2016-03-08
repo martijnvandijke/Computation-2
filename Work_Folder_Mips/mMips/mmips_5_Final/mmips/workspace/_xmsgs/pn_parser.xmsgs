@@ -8,12 +8,5 @@
 <!-- Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/verilog/mmips.v&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/verilog/mmips.v</arg>&quot; Line <arg fmt="%d" index="2">18</arg>. <arg fmt="%s" index="3">Include file found: &apos;C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/verilog/mmips_defines.v&apos; in file &quot;C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/verilog/mmips.v&quot; line 18
-</arg>
-</msg>
-
 </messages>
 

@@ -14,21 +14,23 @@ void main(void)
     {
         for (b = 1; b < WIDTH - 1; b++)
         {
-			result = ((
-				int a_minus = a - 1;
-				unsigned int a_plus  = a + 1;
-				int b_minus = b - 1;
-				unsigned int b_plus = b - 1;
+				int aminus = a - 1;
+				int aplus  = a + 1;
+				int bminus = b - 1;
+				int bplus = b - 1;
 
-					-7 * (int)buf_i[(a_minus) * WIDTH + b_minus] +
-					5 * (int)buf_i[(a_minus) * WIDTH + b] +
-					2 * (int)buf_i[(a_minus) * WIDTH + b_plus] +
-					-1 * (int)buf_i[a      * WIDTH + b_minus] +
+				result = ((
+				
+
+					-7 * (int)buf_i[(aminus) * WIDTH + bminus] +
+					5 * (int)buf_i[(aminus) * WIDTH + b] +
+					2 * (int)buf_i[(aminus) * WIDTH + bplus] +
+					-1 * (int)buf_i[a      * WIDTH + bminus] +
 					15 * (int)buf_i[a      * WIDTH + b] +
-					-1 * (int)buf_i[a      * WIDTH + b_plus] +
-					2 * (int)buf_i[(a_plus) * WIDTH + b_minus] +
-					5 * (int)buf_i[(a_plus) * WIDTH + b] +
-					-7 * (int)buf_i[(a_plus) * WIDTH + b_plus] +
+					-1 * (int)buf_i[a      * WIDTH + bplus] +
+					2 * (int)buf_i[(aplus) * WIDTH + bminus] +
+					5 * (int)buf_i[(aplus) * WIDTH + b] +
+					-7 * (int)buf_i[(aplus) * WIDTH + bplus] +
 					128) / 13);
 
                          /*-7*(int)buf_i[(a - 1) * WIDTH + b - 1] +

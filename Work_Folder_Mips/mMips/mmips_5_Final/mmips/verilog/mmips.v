@@ -207,10 +207,11 @@ module mMIPS(
 	 
 	 //extra forwarding muxses
 	 
-	 //delcaration of muxses
+	 //declaration of muxs in wire
 	 wire		[1:0]   	bus_mux7;
 	 wire		[1:0]		bus_mux8;
 	 
+	 //declaration of muxes wire going out
 	 wire		[31:0]	bus_out_mux7;
 	 wire		[31:0]	bus_out_mux8;
 	 
@@ -267,18 +268,19 @@ module mMIPS(
         .out(bus_mux6));
 		  
 	//extra forwarding muxses	  
-	 MUX5 #(.WIDTH(`DWORD)) mux7(
-			.in0(bus_register_1),
-			.in1(bus_mux6),
-			.in2(bus_ex_alu_result),
-			.in3(bus_mux3),
-			.out(bus_out_mux7)
-			
-			);
-		
-	 MUX6 #(.WIDTH(`DWORD)) mux8(
-			
-			);
+//	 MUX5 #(.WIDTH(`DWORD)) mux7(
+//			.in0(bus_register_1),
+//			.in1(bus_mux6),
+//			.in2(bus_ex_alu_result),
+//			.in3(bus_mux3),
+//			.out(bus_out_mux7)
+//			
+//			);
+//		
+//	 MUX6 #(.WIDTH(`DWORD)) mux8(
+//			.in0(bus_register_2)
+//			
+//			);
 
 	//end extra forwarding muxses
     /*

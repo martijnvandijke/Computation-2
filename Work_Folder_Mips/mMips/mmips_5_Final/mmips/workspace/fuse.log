@@ -1,35 +1,35 @@
-Running: C:\Xilinx\14.2\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_4_ref_own_ins/mmips/workspace/testbench_isim_beh.exe -prj C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_4_ref_own_ins/mmips/workspace/testbench_beh.prj work.testbench work.glbl 
+Running: C:\Xilinx\14.2\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/workspace/testbench_isim_beh.exe -prj C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/workspace/testbench_beh.prj work.testbench work.glbl 
 ISim P.28xd (signature 0xa0883be4)
 Number of CPUs detected in this system: 8
 Turning on mult-threading, number of parallel sub-compilation jobs: 16 
 Determining compilation order of HDL files
-Analyzing Verilog file "C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_4_ref_own_ins/mmips/workspace/../verilog/signextend.v" into library work
-Analyzing Verilog file "C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_4_ref_own_ins/mmips/workspace/../verilog/shift.v" into library work
-Analyzing Verilog file "C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_4_ref_own_ins/mmips/workspace/../verilog/register.v" into library work
-Analyzing Verilog file "C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_4_ref_own_ins/mmips/workspace/../verilog/regfile16.v" into library work
-WARNING:HDLCompiler:991 - "C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_4_ref_own_ins/mmips/workspace/../verilog/regfile16.v" Line 61: Event expressions must result in a singular type
-WARNING:HDLCompiler:991 - "C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_4_ref_own_ins/mmips/workspace/../verilog/regfile16.v" Line 63: Event expressions must result in a singular type
-Analyzing Verilog file "C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_4_ref_own_ins/mmips/workspace/../verilog/mux.v" into library work
-Analyzing Verilog file "C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_4_ref_own_ins/mmips/workspace/../verilog/memdev.v" into library work
-Analyzing Verilog file "C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_4_ref_own_ins/mmips/workspace/../verilog/imm2word.v" into library work
-Analyzing Verilog file "C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_4_ref_own_ins/mmips/workspace/../verilog/hazard_ctrl.v" into library work
-Analyzing Verilog file "C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_4_ref_own_ins/mmips/workspace/../verilog/hazard.v" into library work
-Analyzing Verilog file "C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_4_ref_own_ins/mmips/workspace/../verilog/decoder.v" into library work
-Analyzing Verilog file "C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_4_ref_own_ins/mmips/workspace/../verilog/ctrl.v" into library work
-Analyzing Verilog file "C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_4_ref_own_ins/mmips/workspace/../verilog/branch_ctrl.v" into library work
-Analyzing Verilog file "C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_4_ref_own_ins/mmips/workspace/../verilog/aluctrl.v" into library work
-Analyzing Verilog file "C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_4_ref_own_ins/mmips/workspace/../verilog/alu.v" into library work
-Analyzing Verilog file "C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_4_ref_own_ins/mmips/workspace/../verilog/add.v" into library work
-Analyzing Verilog file "C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_4_ref_own_ins/mmips/workspace/../verilog/rom.v" into library work
-WARNING:HDLCompiler:991 - "C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_4_ref_own_ins/mmips/workspace/../verilog/rom.v" Line 114: Event expressions must result in a singular type
-Analyzing Verilog file "C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_4_ref_own_ins/mmips/workspace/../verilog/ram.v" into library work
-WARNING:HDLCompiler:991 - "C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_4_ref_own_ins/mmips/workspace/../verilog/ram.v" Line 172: Event expressions must result in a singular type
-Analyzing Verilog file "C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_4_ref_own_ins/mmips/workspace/../verilog/mmips.v" into library work
-Analyzing Verilog file "C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_4_ref_own_ins/mmips/workspace/../verilog/mMIPS_sim.v" into library work
-Analyzing Verilog file "C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_4_ref_own_ins/mmips/workspace/../verilog/testbench.v" into library work
+Analyzing Verilog file "C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/workspace/../verilog/signextend.v" into library work
+Analyzing Verilog file "C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/workspace/../verilog/shift.v" into library work
+Analyzing Verilog file "C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/workspace/../verilog/register.v" into library work
+Analyzing Verilog file "C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/workspace/../verilog/regfile16.v" into library work
+WARNING:HDLCompiler:991 - "C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/workspace/../verilog/regfile16.v" Line 61: Event expressions must result in a singular type
+WARNING:HDLCompiler:991 - "C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/workspace/../verilog/regfile16.v" Line 63: Event expressions must result in a singular type
+Analyzing Verilog file "C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/workspace/../verilog/mux.v" into library work
+Analyzing Verilog file "C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/workspace/../verilog/memdev.v" into library work
+Analyzing Verilog file "C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/workspace/../verilog/imm2word.v" into library work
+Analyzing Verilog file "C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/workspace/../verilog/hazard_ctrl.v" into library work
+Analyzing Verilog file "C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/workspace/../verilog/hazard.v" into library work
+Analyzing Verilog file "C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/workspace/../verilog/decoder.v" into library work
+Analyzing Verilog file "C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/workspace/../verilog/ctrl.v" into library work
+Analyzing Verilog file "C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/workspace/../verilog/branch_ctrl.v" into library work
+Analyzing Verilog file "C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/workspace/../verilog/aluctrl.v" into library work
+Analyzing Verilog file "C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/workspace/../verilog/alu.v" into library work
+Analyzing Verilog file "C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/workspace/../verilog/add.v" into library work
+Analyzing Verilog file "C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/workspace/../verilog/rom.v" into library work
+WARNING:HDLCompiler:991 - "C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/workspace/../verilog/rom.v" Line 114: Event expressions must result in a singular type
+Analyzing Verilog file "C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/workspace/../verilog/ram.v" into library work
+WARNING:HDLCompiler:991 - "C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/workspace/../verilog/ram.v" Line 172: Event expressions must result in a singular type
+Analyzing Verilog file "C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/workspace/../verilog/mmips.v" into library work
+Analyzing Verilog file "C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/workspace/../verilog/mMIPS_sim.v" into library work
+Analyzing Verilog file "C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/workspace/../verilog/testbench.v" into library work
 Analyzing Verilog file "C:/Xilinx/14.2/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Starting static elaboration
-WARNING:HDLCompiler:1016 - "C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_4_ref_own_ins/mmips/workspace/../verilog/testbench.v" Line 33: Port dev_dout is not connected to this instance
+WARNING:HDLCompiler:1016 - "C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/workspace/../verilog/testbench.v" Line 33: Port dev_dout is not connected to this instance
 Completed static elaboration
 Compiling module MUX2
 Compiling module MUX3
@@ -172,8 +172,8 @@ Compiling module mMIPS_sim
 Compiling module testbench
 Compiling module glbl
 Time Resolution for simulation is 1ps.
-Waiting for 70 sub-compilation(s) to finish...
+Waiting for 75 sub-compilation(s) to finish...
 Compiled 140 Verilog Units
-Built simulation executable C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_4_ref_own_ins/mmips/workspace/testbench_isim_beh.exe
-Fuse Memory Usage: 164592 KB
-Fuse CPU Usage: 58312 ms
+Built simulation executable C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/workspace/testbench_isim_beh.exe
+Fuse Memory Usage: 165144 KB
+Fuse CPU Usage: 47031 ms
