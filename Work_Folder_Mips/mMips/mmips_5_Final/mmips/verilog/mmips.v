@@ -204,6 +204,19 @@ module mMIPS(
     wire    [1:0]   bus_mem_ctrl_wb_memtoreg;
     wire    [0:0]   bus_mem_ctrl_wb_regwrite;
     
+	 
+	 //extra forwarding muxses
+	 
+	 //delcaration of muxses
+	 wire		[1:0]   	bus_mux7;
+	 wire		[1:0]		bus_mux8;
+	 
+	 wire		[31:0]	bus_out_mux7;
+	 wire		[31:0]	bus_out_mux8;
+	 
+	 
+	 
+	 
     /*
      * Module instantiation
      */
@@ -255,8 +268,11 @@ module mMIPS(
 		  
 	//extra forwarding muxses	  
 	 MUX5 #(.WIDTH(`DWORD)) mux7(
-			.in0(bus_data_reg),
-			.out(id_data_reg1)
+			.in0(bus_register_1),
+			.in1(bus_mux6),
+			.in2(bus_ex_alu_result),
+			.in3(bus_mux3),
+			.out(bus_out_mux7)
 			
 			);
 		
