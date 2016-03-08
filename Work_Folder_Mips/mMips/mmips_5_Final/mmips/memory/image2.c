@@ -6,7 +6,7 @@
 void main(void)
 {
     int a, b, result;
-    int max = 255;
+	unsigned int max = 255;
 	int var;
     char *buf_i = (char*)0x401000, *buf_o = (char*)0x402000;
     
