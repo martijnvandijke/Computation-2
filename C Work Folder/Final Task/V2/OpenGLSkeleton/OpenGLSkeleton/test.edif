@@ -1,0 +1,27 @@
+.drawing "The C++ example drawing"
+.line 250 600 200 600 0.0 0.0 1.0 1.5
+.line 200 600 135 550 0.0 0.0 1.0 1.0
+.line 135 550 135 450 0.0 0.0 1.0 1.5
+.line 135 450 200 400 0.0 0.0 1.0 1.0
+.line 200 400 250 400 0.0 0.0 1.0 1.5
+
+
+.line 450 600 450 400 1.0 0.0 0.0 2.0
+.line 350 500 550 500 1.0 0.0 0.0 2.0
+
+.line 700 600 700 400 0.0 1.0 0.0 2.0
+.line 600 500 800 500 0.0 1.0 0.0 2.0
+
+// Some random pixels
+.pixel 500 500 0.0 1.0 1.0
+.pixel 50 50 1.0 0.0 1.0
+.pixel 49 50 1.0 0.0 1.0
+.pixel 50 49 1.0 0.0 1.0
+.pixel 49 49 1.0 0.0 1.0
+
+
+.text 100 100 0.4 0.8 0.0 "If you can succesfully parse this file, you now know how to:"
+.text 100 80 0.4 0.8 0.0 "- Use OpenGL and glut to draw basic shapes and text to the screen"
+.text 100 60 0.4 0.8 0.0 "- Use Callbacks to create timers and read keyboard input"
+.text 100 40 0.4 0.8 0.0 "- Read EDIF++ files and parse their content"
+.text 100 20 0.4 0.8 0.0 "- Use a linked list to keep track of the things you want to draw."
