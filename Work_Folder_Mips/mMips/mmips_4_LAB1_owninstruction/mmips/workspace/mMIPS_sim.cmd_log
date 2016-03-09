@@ -1,1 +1,2 @@
 xst -intstyle ise -ifn "C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_4_LAB1_owninstruction/mmips/workspace/mMIPS_sim.xst" -ofn "C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_4_LAB1_owninstruction/mmips/workspace/mMIPS_sim.syr" 
+xst -intstyle ise -ifn "C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_4_LAB1_owninstruction/mmips/workspace/mMIPS_sim.xst" -ofn "C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_4_LAB1_owninstruction/mmips/workspace/mMIPS_sim.syr" 

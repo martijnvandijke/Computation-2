@@ -189,11 +189,11 @@ module mMIPS(
     
     // Execution -> Memory stage
     wire    [31:0]  bus_ex_alu_result;
-    wire    [0:0]   bus_ex_alu_zero;
-    wire    [31:0]  bus_ex_mux5;
+    //wire    [0:0]   bus_ex_alu_zero;
+    //wire    [31:0]  bus_ex_mux5;
     wire    [4:0]   bus_ex_regdst_addr;
     
-    wire    [1:0]   bus_ex_ctrl_mem_branch;
+    //wire    [1:0]   bus_ex_ctrl_mem_branch;
     wire    [0:0]   bus_ex_ctrl_wb_regwrite;
     wire    [1:0]   bus_ex_ctrl_wb_memtoreg;
     
@@ -214,7 +214,7 @@ module mMIPS(
      */
     MUX2 mux1(
         .in0(bus_add1),
-        .in1(bus_ex_mux5),
+        .in1(bus_mux5),
         .sel(bus_branch_ctrl),
         .out(rom_addr));
     
@@ -357,8 +357,8 @@ module mMIPS(
      * Branch control
      */
     BRANCH_CTRL branch_ctrl(
-        .BranchOp(bus_ex_ctrl_mem_branch),
-        .AluZero(bus_ex_alu_zero),
+        .BranchOp(bus_id_ctrl_mem_branch),
+        .AluZero(bus_alu_zero),
         .Branch(bus_branch_ctrl));
 
     /*
@@ -401,7 +401,7 @@ module mMIPS(
         .MEMWBWriteRegister(bus_mem_regdst_addr),
         .Instr(bus_if_instr),
         .BranchOpID(bus_id_ctrl_mem_branch),
-        .BranchOpEX(bus_ex_ctrl_mem_branch),
+        //.BranchOpEX(bus_ex_ctrl_mem_branch),
         .dmem_wait(bus_dmem_wait),
         .imem_wait(rom_wait),
         .PCWrite(bus_hazard_pcwrite),
@@ -600,12 +600,12 @@ module mMIPS(
         .rst(rst),
         .clk(clk));
     
-    REGISTER #(.WIDTH(1)) ex_alu_zero(
-        .in(bus_alu_zero),
-        .w(bus_pipe_en),
-        .out(bus_ex_alu_zero),
-        .rst(rst),
-        .clk(clk));
+//    REGISTER #(.WIDTH(1)) ex_alu_zero(
+//        .in(bus_alu_zero),
+//        .w(bus_pipe_en),
+//        .out(bus_ex_alu_zero),
+//        .rst(rst),
+//        .clk(clk));
 
     REGISTER #(.WIDTH(`AWORDREG)) ex_regdst_addr(
         .in(bus_mux4),
@@ -613,20 +613,20 @@ module mMIPS(
         .out(bus_ex_regdst_addr),
         .rst(rst),
         .clk(clk));
-    
-    REGISTER #(.WIDTH(`DWORD)) ex_mux5(
-        .in(bus_mux5),
-        .w(bus_pipe_en),
-        .out(bus_ex_mux5),
-        .rst(rst),
-        .clk(clk));
-    
-    REGISTER #(.WIDTH(`W_BRANCHOP)) ex_ctrl_mem_branch(
-        .in(bus_id_ctrl_mem_branch),
-        .w(bus_pipe_en),
-        .out(bus_ex_ctrl_mem_branch),
-        .rst(rst),
-        .clk(clk));
+//    
+//    REGISTER #(.WIDTH(`DWORD)) ex_mux5(
+//        .in(bus_mux5),
+//        .w(bus_pipe_en),
+//        .out(bus_ex_mux5),
+//        .rst(rst),
+//        .clk(clk));
+//    
+//    REGISTER #(.WIDTH(`W_BRANCHOP)) ex_ctrl_mem_branch(
+//        .in(bus_id_ctrl_mem_branch),
+//        .w(bus_pipe_en),
+//        .out(bus_ex_ctrl_mem_branch),
+//        .rst(rst),
+//        .clk(clk));
     
     REGISTER #(.WIDTH(`W_MEMTOREG)) ex_ctrl_wb_memtoreg(
         .in(bus_id_ctrl_wb_memtoreg),

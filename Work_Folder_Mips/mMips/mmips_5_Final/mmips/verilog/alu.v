@@ -58,7 +58,13 @@ module ALU(ctrl, a, b, r, r2, z);
                     result = s | t;
                     
                 'h2:    // Add signed
+					 begin
                     result = s_int + t_int;
+						  if(result == 0)
+								zero = 1;
+						  else
+								zero = 0;
+					 end
                     
                 'h3:    // Add unsigned
                     result = s + t;
@@ -67,20 +73,37 @@ module ALU(ctrl, a, b, r, r2, z);
                     result = s ^ t;
                     
                 'h6:    // Substract signed
+					 begin
                     result = s - t;
-                    
+						  if(result == 0)
+								zero = 1;
+						  else
+								zero = 0;
+                end   
                 'h7:    // Set-on-less-than
+					 begin
                     if (s_int < t_int)
                         result = 1;
                     else
                         result = 0;
-                        
+						 if(result == 0)
+								zero = 1;
+						  else
+								zero = 0;	
+
+                end       
                 'h8:    // Set-on-less-than unsigned
+					 begin
                     if (s < t)
                         result = 1;
                     else
                         result = 0;
-                        
+								
+							if(result == 0)
+								zero = 1;
+						  else
+								zero = 0;								
+                end   
                 'h9:    // Load upper immediate
                     result = (t << 16);
                     
@@ -101,6 +124,7 @@ module ALU(ctrl, a, b, r, r2, z);
                     
                 'hF:    // SRL (8 bit)
                     result = (t >> 8);
+						  
                     
                 'h10:   // SRA (1 bit)
                     begin
@@ -145,10 +169,10 @@ module ALU(ctrl, a, b, r, r2, z);
             endcase
             
             // Calculate zero output
-            if (result == 0)
-                zero = 1;
-            else
-                zero = 0;
+//            if (result == 0)
+//                zero = 1;
+//            else
+//                zero = 0;
             
             // Write results to output
             r = result;

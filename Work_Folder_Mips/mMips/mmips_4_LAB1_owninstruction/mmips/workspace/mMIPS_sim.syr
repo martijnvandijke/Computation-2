@@ -3,14 +3,14 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.18 secs
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 4.10 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.18 secs
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 4.10 secs
  
 --> Reading design: mMIPS_sim.prj
 
@@ -528,18 +528,20 @@ Unit <ALUCTRL> synthesized.
 
 Synthesizing Unit <ALU>.
     Related source file is "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_4_LAB1_owninstruction\mmips\verilog\alu.v".
-    Found 32-bit subtractor for signal <a[31]_b[31]_sub_6_OUT> created at line 70.
-    Found 32-bit adder for signal <a[31]_b[31]_add_2_OUT> created at line 61.
-    Found 32x32-bit multiplier for signal <a[31]_b[31]_MuLt_10_OUT> created at line 128.
-    Found 32-bit 23-to-1 multiplexer for signal <_n0111> created at line 35.
-    Found 32-bit comparator greater for signal <b[31]_a[31]_LessThan_7_o> created at line 73
-    Found 32-bit comparator greater for signal <a[31]_b[31]_LessThan_9_o> created at line 79
-    Found 32-bit comparator greater for signal <GND_16_o_a[31]_LessThan_12_o> created at line 136
+    Found 32-bit subtractor for signal <a[31]_b[31]_sub_7_OUT> created at line 77.
+    Found 32-bit adder for signal <a[31]_b[31]_add_2_OUT> created at line 62.
+    Found 32x32-bit multiplier for signal <a[31]_b[31]_MuLt_14_OUT> created at line 152.
+    Found 32-bit 23-to-1 multiplexer for signal <_n0119> created at line 35.
+WARNING:Xst:737 - Found 1-bit latch for signal <zero>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 32-bit comparator greater for signal <b[31]_a[31]_LessThan_9_o> created at line 85
+    Found 32-bit comparator greater for signal <a[31]_b[31]_LessThan_12_o> created at line 97
+    Found 32-bit comparator greater for signal <GND_16_o_a[31]_LessThan_16_o> created at line 160
     Summary:
 	inferred   1 Multiplier(s).
-	inferred   1 Adder/Subtractor(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred   1 Latch(s).
 	inferred   3 Comparator(s).
-	inferred  29 Multiplexer(s).
+	inferred   4 Multiplexer(s).
 Unit <ALU> synthesized.
 
 Synthesizing Unit <REGFILE16>.
@@ -572,14 +574,14 @@ Unit <HAZARD_CTRL> synthesized.
 Synthesizing Unit <HAZARD>.
     Related source file is "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_4_LAB1_owninstruction\mmips\verilog\hazard.v".
 WARNING:Xst:647 - Input <Instr<15:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-    Found 5-bit comparator equal for signal <IDEXWriteRegisterRt[4]_Instr[25]_equal_5_o> created at line 101
-    Found 5-bit comparator equal for signal <IDEXWriteRegisterRd[4]_Instr[25]_equal_7_o> created at line 102
-    Found 5-bit comparator equal for signal <IDEXWriteRegisterRt[4]_Instr[20]_equal_9_o> created at line 103
-    Found 5-bit comparator equal for signal <IDEXWriteRegisterRd[4]_Instr[20]_equal_11_o> created at line 104
-    Found 5-bit comparator equal for signal <EXMEMWriteRegister[4]_Instr[25]_equal_13_o> created at line 108
-    Found 5-bit comparator equal for signal <EXMEMWriteRegister[4]_Instr[20]_equal_14_o> created at line 109
-    Found 5-bit comparator equal for signal <MEMWBWriteRegister[4]_Instr[25]_equal_16_o> created at line 113
-    Found 5-bit comparator equal for signal <MEMWBWriteRegister[4]_Instr[20]_equal_17_o> created at line 114
+    Found 5-bit comparator equal for signal <IDEXWriteRegisterRt[4]_Instr[25]_equal_4_o> created at line 101
+    Found 5-bit comparator equal for signal <IDEXWriteRegisterRd[4]_Instr[25]_equal_6_o> created at line 102
+    Found 5-bit comparator equal for signal <IDEXWriteRegisterRt[4]_Instr[20]_equal_8_o> created at line 103
+    Found 5-bit comparator equal for signal <IDEXWriteRegisterRd[4]_Instr[20]_equal_10_o> created at line 104
+    Found 5-bit comparator equal for signal <EXMEMWriteRegister[4]_Instr[25]_equal_12_o> created at line 108
+    Found 5-bit comparator equal for signal <EXMEMWriteRegister[4]_Instr[20]_equal_13_o> created at line 109
+    Found 5-bit comparator equal for signal <MEMWBWriteRegister[4]_Instr[25]_equal_15_o> created at line 113
+    Found 5-bit comparator equal for signal <MEMWBWriteRegister[4]_Instr[20]_equal_16_o> created at line 114
     Summary:
 	inferred   8 Comparator(s).
 	inferred  11 Multiplexer(s).
@@ -645,7 +647,7 @@ Synthesizing Unit <ram>.
     Found 2-bit register for signal <byteselect>.
     Found 32-bit register for signal <addr>.
     Found 4x4-bit Read Only RAM for signal <_n2944>
-    Found 32-bit 4-to-1 multiplexer for signal <byteselect[1]_GND_29_o_wide_mux_111_OUT> created at line 176.
+    Found 32-bit 4-to-1 multiplexer for signal <byteselect[1]_GND_30_o_wide_mux_111_OUT> created at line 176.
     Found 1-bit 4-to-1 multiplexer for signal <addr[1]_ram_din[31]_wide_mux_20_OUT[31]> created at line 137.
     Found 1-bit 4-to-1 multiplexer for signal <addr[1]_ram_din[31]_wide_mux_20_OUT[30]> created at line 137.
     Found 1-bit 4-to-1 multiplexer for signal <addr[1]_ram_din[31]_wide_mux_20_OUT[29]> created at line 137.
@@ -670,11 +672,11 @@ Synthesizing Unit <ram>.
     Found 1-bit 3-to-1 multiplexer for signal <addr[1]_ram_din[31]_wide_mux_20_OUT[10]> created at line 137.
     Found 1-bit 3-to-1 multiplexer for signal <addr[1]_ram_din[31]_wide_mux_20_OUT[9]> created at line 137.
     Found 1-bit 3-to-1 multiplexer for signal <addr[1]_ram_din[31]_wide_mux_20_OUT[8]> created at line 137.
-    Found 32-bit 64-to-1 multiplexer for signal <bramid[6]_X_28_o_wide_mux_112_OUT> created at line 184.
-    Found 8-bit 64-to-1 multiplexer for signal <bramid[6]_X_28_o_wide_mux_107_OUT> created at line 177.
-    Found 8-bit 64-to-1 multiplexer for signal <bramid[6]_X_28_o_wide_mux_108_OUT> created at line 178.
-    Found 8-bit 64-to-1 multiplexer for signal <bramid[6]_X_28_o_wide_mux_109_OUT> created at line 179.
-    Found 8-bit 64-to-1 multiplexer for signal <bramid[6]_X_28_o_wide_mux_110_OUT> created at line 180.
+    Found 32-bit 64-to-1 multiplexer for signal <bramid[6]_X_29_o_wide_mux_112_OUT> created at line 184.
+    Found 8-bit 64-to-1 multiplexer for signal <bramid[6]_X_29_o_wide_mux_107_OUT> created at line 177.
+    Found 8-bit 64-to-1 multiplexer for signal <bramid[6]_X_29_o_wide_mux_108_OUT> created at line 178.
+    Found 8-bit 64-to-1 multiplexer for signal <bramid[6]_X_29_o_wide_mux_109_OUT> created at line 179.
+    Found 8-bit 64-to-1 multiplexer for signal <bramid[6]_X_29_o_wide_mux_110_OUT> created at line 180.
 WARNING:Xst:737 - Found 1-bit latch for signal <byteselect_before<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <byteselect_before<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <bramid<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -793,8 +795,8 @@ WARNING:Xst:737 - Found 1-bit latch for signal <ENA<3>>. Latches may be generate
 WARNING:Xst:737 - Found 1-bit latch for signal <ENA<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <ENA<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <ENA<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-    Found 32-bit comparator greater for signal <addr[31]_GND_29_o_LessThan_17_o> created at line 121
-    Found 21-bit comparator greater for signal <addr[31]_GND_29_o_LessThan_28_o> created at line 164
+    Found 32-bit comparator greater for signal <addr[31]_GND_30_o_LessThan_17_o> created at line 121
+    Found 21-bit comparator greater for signal <addr[31]_GND_30_o_LessThan_28_o> created at line 164
     Found 21-bit comparator lessequal for signal <n0031> created at line 165
     Summary:
 	inferred   1 RAM(s).
@@ -811,7 +813,7 @@ Synthesizing Unit <rom>.
     Found 48-bit register for signal <ENA>.
     Found 32-bit register for signal <bramid>.
     Found 32-bit 48-to-1 multiplexer for signal <out> created at line 44.
-    Found 21-bit comparator greater for signal <rom_addr[31]_GND_242_o_LessThan_11_o> created at line 106
+    Found 21-bit comparator greater for signal <rom_addr[31]_GND_243_o_LessThan_11_o> created at line 106
     Found 21-bit comparator lessequal for signal <n0009> created at line 107
     Summary:
 	inferred  94 D-type flip-flop(s).
@@ -828,30 +830,31 @@ Macro Statistics
  4x4-bit single-port Read Only RAM                     : 1
 # Multipliers                                          : 1
  32x32-bit multiplier                                  : 1
-# Adders/Subtractors                                   : 3
- 32-bit adder                                          : 2
- 32-bit addsub                                         : 1
-# Registers                                            : 47
- 1-bit register                                        : 8
+# Adders/Subtractors                                   : 4
+ 32-bit adder                                          : 3
+ 32-bit subtractor                                     : 1
+# Registers                                            : 44
+ 1-bit register                                        : 7
  14-bit register                                       : 1
- 2-bit register                                        : 13
- 32-bit register                                       : 17
+ 2-bit register                                        : 12
+ 32-bit register                                       : 16
  48-bit register                                       : 1
  5-bit register                                        : 6
  6-bit register                                        : 1
-# Latches                                              : 121
- 1-bit latch                                           : 121
+# Latches                                              : 122
+ 1-bit latch                                           : 122
 # Comparators                                          : 16
  21-bit comparator greater                             : 2
  21-bit comparator lessequal                           : 2
  32-bit comparator greater                             : 4
  5-bit comparator equal                                : 8
-# Multiplexers                                         : 199
+# Multiplexers                                         : 174
  1-bit 2-to-1 multiplexer                              : 118
  1-bit 3-to-1 multiplexer                              : 8
  1-bit 4-to-1 multiplexer                              : 17
  2-bit 2-to-1 multiplexer                              : 9
- 32-bit 2-to-1 multiplexer                             : 36
+ 32-bit 2-to-1 multiplexer                             : 10
+ 32-bit 23-to-1 multiplexer                            : 1
  32-bit 4-to-1 multiplexer                             : 2
  32-bit 48-to-1 multiplexer                            : 1
  32-bit 64-to-1 multiplexer                            : 1
@@ -862,7 +865,6 @@ Macro Statistics
  32-bit xor2                                           : 1
 
 =========================================================================
-INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
 
 =========================================================================
 *                       Advanced HDL Synthesis                          *
@@ -982,22 +984,23 @@ Macro Statistics
  4x4-bit single-port distributed Read Only RAM         : 1
 # Multipliers                                          : 1
  32x32-bit multiplier                                  : 1
-# Adders/Subtractors                                   : 3
- 32-bit adder                                          : 2
- 32-bit addsub                                         : 1
-# Registers                                            : 650
- Flip-Flops                                            : 650
+# Adders/Subtractors                                   : 4
+ 32-bit adder                                          : 3
+ 32-bit subtractor                                     : 1
+# Registers                                            : 615
+ Flip-Flops                                            : 615
 # Comparators                                          : 16
  21-bit comparator greater                             : 2
  21-bit comparator lessequal                           : 2
  32-bit comparator greater                             : 4
  5-bit comparator equal                                : 8
-# Multiplexers                                         : 260
+# Multiplexers                                         : 235
  1-bit 2-to-1 multiplexer                              : 150
  1-bit 3-to-1 multiplexer                              : 8
  1-bit 4-to-1 multiplexer                              : 48
  2-bit 2-to-1 multiplexer                              : 9
- 32-bit 2-to-1 multiplexer                             : 35
+ 32-bit 2-to-1 multiplexer                             : 9
+ 32-bit 23-to-1 multiplexer                            : 1
  32-bit 4-to-1 multiplexer                             : 1
  32-bit 48-to-1 multiplexer                            : 1
  32-bit 64-to-1 multiplexer                            : 1
@@ -1084,8 +1087,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 576
- Flip-Flops                                            : 576
+# Registers                                            : 541
+ Flip-Flops                                            : 541
 
 =========================================================================
 
@@ -1108,25 +1111,25 @@ Top Level Output File Name         : mMIPS_sim.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 2389
+# BELS                             : 2514
 #      GND                         : 1
 #      INV                         : 2
 #      LUT1                        : 30
 #      LUT2                        : 44
-#      LUT3                        : 82
-#      LUT4                        : 139
-#      LUT5                        : 327
-#      LUT6                        : 1505
-#      MUXCY                       : 126
-#      MUXF7                       : 38
+#      LUT3                        : 95
+#      LUT4                        : 191
+#      LUT5                        : 303
+#      LUT6                        : 1525
+#      MUXCY                       : 157
+#      MUXF7                       : 39
 #      VCC                         : 1
-#      XORCY                       : 94
-# FlipFlops/Latches                : 696
+#      XORCY                       : 126
+# FlipFlops/Latches                : 662
 #      FD                          : 1
-#      FDCE                        : 451
+#      FDCE                        : 416
 #      FDE                         : 76
 #      FDRE                        : 48
-#      LD                          : 3
+#      LD                          : 4
 #      LDE                         : 117
 # RAMS                             : 126
 #      RAM32M                      : 10
@@ -1148,18 +1151,18 @@ Selected Device : 6slx45tcsg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             696  out of  54576     1%  
- Number of Slice LUTs:                 2177  out of  27288     7%  
-    Number used as Logic:              2129  out of  27288     7%  
+ Number of Slice Registers:             662  out of  54576     1%  
+ Number of Slice LUTs:                 2238  out of  27288     8%  
+    Number used as Logic:              2190  out of  27288     8%  
     Number used as Memory:               48  out of   6408     0%  
        Number used as RAM:               48
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   2380
-   Number with an unused Flip Flop:    1684  out of   2380    70%  
-   Number with an unused LUT:           203  out of   2380     8%  
-   Number of fully used LUT-FF pairs:   493  out of   2380    20%  
-   Number of unique control sets:        10
+ Number of LUT Flip Flop pairs used:   2435
+   Number with an unused Flip Flop:    1773  out of   2435    72%  
+   Number with an unused LUT:           197  out of   2435     8%  
+   Number of fully used LUT-FF pairs:   465  out of   2435    19%  
+   Number of unique control sets:        11
 
 IO Utilization: 
  Number of IOs:                          75
@@ -1189,15 +1192,16 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
-------------------------------------+-----------------------------+-------+
-Clock Signal                        | Clock buffer(FF name)       | Load  |
-------------------------------------+-----------------------------+-------+
-clk                                 | BUFGP                       | 702   |
-mMIPS/ctrl/_n0086(mMIPS/ctrl/out1:O)| NONE(*)(mMIPS/ctrl/AluSel_0)| 3     |
-en                                  | IBUF+BUFG                   | 117   |
-mMIPS/bus_ctrl_aluop<4>             | NONE(dmem/BRAM00)           | 112   |
-------------------------------------+-----------------------------+-------+
-(*) This 1 clock signal(s) are generated by combinatorial logic,
+-------------------------------------+-----------------------------+-------+
+Clock Signal                         | Clock buffer(FF name)       | Load  |
+-------------------------------------+-----------------------------+-------+
+clk                                  | BUFGP                       | 667   |
+mMIPS/ctrl/_n0086(mMIPS/ctrl/out1:O) | NONE(*)(mMIPS/ctrl/AluSel_0)| 3     |
+mMIPS/alu/_n0122(mMIPS/alu/_n01221:O)| NONE(*)(mMIPS/alu/zero)     | 1     |
+en                                   | IBUF+BUFG                   | 117   |
+mMIPS/bus_ctrl_aluop<4>              | NONE(dmem/BRAM00)           | 112   |
+-------------------------------------+-----------------------------+-------+
+(*) These 2 clock signal(s) are generated by combinatorial logic,
 and XST is not able to identify which are the primary clock signals.
 Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
@@ -1210,9 +1214,9 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 17.660ns (Maximum Frequency: 56.626MHz)
-   Minimum input arrival time before clock: 7.126ns
-   Maximum output required time after clock: 20.353ns
+   Minimum period: 17.683ns (Maximum Frequency: 56.552MHz)
+   Minimum input arrival time before clock: 7.485ns
+   Maximum output required time after clock: 20.381ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -1221,36 +1225,36 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 17.660ns (frequency: 56.626MHz)
-  Total number of paths / destination ports: 242466532 / 1430
+  Clock period: 17.683ns (frequency: 56.552MHz)
+  Total number of paths / destination ports: 246513036 / 1395
 -------------------------------------------------------------------------
-Delay:               17.660ns (Levels of Logic = 6)
-  Source:            mMIPS/id_instr_25_0/out_0 (FF)
+Delay:               17.683ns (Levels of Logic = 6)
+  Source:            mMIPS/id_instr_25_0/out_5 (FF)
   Destination:       mMIPS/hi/out_31 (FF)
   Source Clock:      clk rising
   Destination Clock: clk rising
 
-  Data Path: mMIPS/id_instr_25_0/out_0 to mMIPS/hi/out_31
+  Data Path: mMIPS/id_instr_25_0/out_5 to mMIPS/hi/out_31
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q            16   0.447   1.109  mMIPS/id_instr_25_0/out_0 (mMIPS/id_instr_25_0/out_0)
-     LUT3:I1->O           11   0.203   0.882  mMIPS/mux3511 (mMIPS/bus_mux2<0>)
-     DSP48A1:B0->P47      18   4.394   1.049  mMIPS/alu/Mmult_a[31]_b[31]_MuLt_10_OUT (mMIPS/alu/Mmult_a[31]_b[31]_MuLt_10_OUT_P47_to_Mmult_a[31]_b[31]_MuLt_10_OUT1)
-     DSP48A1:C30->PCOUT47    1   2.689   0.000  mMIPS/alu/Mmult_a[31]_b[31]_MuLt_10_OUT1 (mMIPS/alu/Mmult_a[31]_b[31]_MuLt_10_OUT1_PCOUT_to_Mmult_a[31]_b[31]_MuLt_10_OUT2_PCIN_47)
-     DSP48A1:PCIN47->P47   18   2.264   1.049  mMIPS/alu/Mmult_a[31]_b[31]_MuLt_10_OUT2 (mMIPS/alu/Mmult_a[31]_b[31]_MuLt_10_OUT2_P47_to_Mmult_a[31]_b[31]_MuLt_10_OUT3)
-     DSP48A1:C30->P29      1   2.687   0.580  mMIPS/alu/Mmult_a[31]_b[31]_MuLt_10_OUT3 (mMIPS/alu/a[31]_b[31]_MuLt_10_OUT<63>)
+     FDCE:C->Q            17   0.447   1.132  mMIPS/id_instr_25_0/out_5 (mMIPS/id_instr_25_0/out_5)
+     LUT3:I1->O           11   0.203   0.882  mMIPS/mux6211 (mMIPS/bus_mux2<5>)
+     DSP48A1:B5->P47      18   4.394   1.049  mMIPS/alu/Mmult_a[31]_b[31]_MuLt_14_OUT (mMIPS/alu/Mmult_a[31]_b[31]_MuLt_14_OUT_P47_to_Mmult_a[31]_b[31]_MuLt_14_OUT1)
+     DSP48A1:C30->PCOUT47    1   2.689   0.000  mMIPS/alu/Mmult_a[31]_b[31]_MuLt_14_OUT1 (mMIPS/alu/Mmult_a[31]_b[31]_MuLt_14_OUT1_PCOUT_to_Mmult_a[31]_b[31]_MuLt_14_OUT2_PCIN_47)
+     DSP48A1:PCIN47->P47   18   2.264   1.049  mMIPS/alu/Mmult_a[31]_b[31]_MuLt_14_OUT2 (mMIPS/alu/Mmult_a[31]_b[31]_MuLt_14_OUT2_P47_to_Mmult_a[31]_b[31]_MuLt_14_OUT3)
+     DSP48A1:C30->P29      1   2.687   0.580  mMIPS/alu/Mmult_a[31]_b[31]_MuLt_14_OUT3 (mMIPS/alu/a[31]_b[31]_MuLt_14_OUT<63>)
      LUT6:I5->O            1   0.205   0.000  mMIPS/alu/Mmux_result_hi251 (mMIPS/bus_alu_result_2<31>)
      FDCE:D                    0.102          mMIPS/hi/out_31
     ----------------------------------------
-    Total                     17.660ns (12.991ns logic, 4.669ns route)
-                                       (73.6% logic, 26.4% route)
+    Total                     17.683ns (12.991ns logic, 4.692ns route)
+                                       (73.5% logic, 26.5% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 1061 / 1013
+  Total number of paths / destination ports: 991 / 943
 -------------------------------------------------------------------------
-Offset:              7.126ns (Levels of Logic = 4)
+Offset:              7.485ns (Levels of Logic = 4)
   Source:            en (PAD)
   Destination:       imem/ENA_47 (FF)
   Destination Clock: clk rising
@@ -1259,41 +1263,41 @@ Offset:              7.126ns (Levels of Logic = 4)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O           387   1.222   2.183  en_IBUF (en_IBUF)
-     LUT6:I4->O            1   0.203   0.580  imem/Reset_OR_DriverANDClockEnable483 (imem/Reset_OR_DriverANDClockEnable482)
-     LUT5:I4->O            1   0.205   0.580  imem/Reset_OR_DriverANDClockEnable484 (imem/Reset_OR_DriverANDClockEnable483)
-     LUT6:I5->O           48   0.205   1.519  imem/Reset_OR_DriverANDClockEnable486 (imem/Reset_OR_DriverANDClockEnable)
+     IBUF:I->O           352   1.222   2.180  en_IBUF (en_IBUF)
+     LUT6:I4->O            1   0.203   0.944  imem/Reset_OR_DriverANDClockEnable483 (imem/Reset_OR_DriverANDClockEnable482)
+     LUT6:I0->O            1   0.203   0.580  imem/Reset_OR_DriverANDClockEnable484 (imem/Reset_OR_DriverANDClockEnable483)
+     LUT4:I3->O           48   0.205   1.519  imem/Reset_OR_DriverANDClockEnable486 (imem/Reset_OR_DriverANDClockEnable)
      FDRE:R                    0.430          imem/ENA_1
     ----------------------------------------
-    Total                      7.126ns (2.265ns logic, 4.861ns route)
-                                       (31.8% logic, 68.2% route)
+    Total                      7.485ns (2.263ns logic, 5.222ns route)
+                                       (30.2% logic, 69.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 855044 / 37
+  Total number of paths / destination ports: 800869 / 37
 -------------------------------------------------------------------------
-Offset:              20.353ns (Levels of Logic = 9)
-  Source:            mMIPS/id_instr_25_0/out_0 (FF)
+Offset:              20.381ns (Levels of Logic = 9)
+  Source:            mMIPS/id_instr_25_0/out_5 (FF)
   Destination:       dev_w (PAD)
   Source Clock:      clk rising
 
-  Data Path: mMIPS/id_instr_25_0/out_0 to dev_w
+  Data Path: mMIPS/id_instr_25_0/out_5 to dev_w
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q            16   0.447   1.109  mMIPS/id_instr_25_0/out_0 (mMIPS/id_instr_25_0/out_0)
-     LUT3:I1->O           11   0.203   0.882  mMIPS/mux3511 (mMIPS/bus_mux2<0>)
-     DSP48A1:B0->P47      18   4.394   1.049  mMIPS/alu/Mmult_a[31]_b[31]_MuLt_10_OUT (mMIPS/alu/Mmult_a[31]_b[31]_MuLt_10_OUT_P47_to_Mmult_a[31]_b[31]_MuLt_10_OUT1)
-     DSP48A1:C30->PCOUT47    1   2.689   0.000  mMIPS/alu/Mmult_a[31]_b[31]_MuLt_10_OUT1 (mMIPS/alu/Mmult_a[31]_b[31]_MuLt_10_OUT1_PCOUT_to_Mmult_a[31]_b[31]_MuLt_10_OUT2_PCIN_47)
-     DSP48A1:PCIN47->P14    1   2.264   0.580  mMIPS/alu/Mmult_a[31]_b[31]_MuLt_10_OUT2 (mMIPS/alu/a[31]_b[31]_MuLt_10_OUT<31>)
-     LUT6:I5->O            1   0.205   0.580  mMIPS/alu/Mmux_result755 (mMIPS/alu/Mmux_result754)
-     LUT4:I3->O            4   0.205   0.684  mMIPS/alu/Mmux_result756 (mMIPS/bus_alu_result<31>)
-     LUT6:I5->O           37   0.205   1.467  mMIPS/mux2711 (mMIPS/bus_mux6<31>)
+     FDCE:C->Q            17   0.447   1.132  mMIPS/id_instr_25_0/out_5 (mMIPS/id_instr_25_0/out_5)
+     LUT3:I1->O           11   0.203   0.882  mMIPS/mux6211 (mMIPS/bus_mux2<5>)
+     DSP48A1:B5->P47      18   4.394   1.049  mMIPS/alu/Mmult_a[31]_b[31]_MuLt_14_OUT (mMIPS/alu/Mmult_a[31]_b[31]_MuLt_14_OUT_P47_to_Mmult_a[31]_b[31]_MuLt_14_OUT1)
+     DSP48A1:C30->PCOUT47    1   2.689   0.000  mMIPS/alu/Mmult_a[31]_b[31]_MuLt_14_OUT1 (mMIPS/alu/Mmult_a[31]_b[31]_MuLt_14_OUT1_PCOUT_to_Mmult_a[31]_b[31]_MuLt_14_OUT2_PCIN_47)
+     DSP48A1:PCIN47->P14    1   2.264   0.580  mMIPS/alu/Mmult_a[31]_b[31]_MuLt_14_OUT2 (mMIPS/alu/a[31]_b[31]_MuLt_14_OUT<31>)
+     LUT6:I5->O            1   0.205   0.580  mMIPS/alu/Mmux_result259 (mMIPS/alu/Mmux_result258)
+     LUT6:I5->O            2   0.205   0.617  mMIPS/alu/Mmux_result2510 (mMIPS/bus_alu_result<31>)
+     LUT6:I5->O           42   0.205   1.538  mMIPS/mux2711 (mMIPS/bus_mux6<31>)
      LUT4:I2->O            2   0.203   0.616  mMIPS/memdev/dev_send_eop1 (dev_send_eop_OBUF)
      OBUF:I->O                 2.571          dev_w_OBUF (dev_w)
     ----------------------------------------
-    Total                     20.353ns (13.386ns logic, 6.967ns route)
-                                       (65.8% logic, 34.2% route)
+    Total                     20.381ns (13.386ns logic, 6.995ns route)
+                                       (65.7% logic, 34.3% route)
 
 =========================================================================
 
@@ -1305,9 +1309,10 @@ Clock to Setup on destination clock clk
                  | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock     |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -----------------+---------+---------+---------+---------+
-clk              |   17.660|    6.894|    2.316|         |
+clk              |   17.683|    6.894|    2.316|         |
 en               |         |    7.169|    2.487|         |
-mMIPS/ctrl/_n0086|         |    1.630|         |         |
+mMIPS/alu/_n0122 |         |    7.821|         |         |
+mMIPS/ctrl/_n0086|         |    1.613|         |         |
 -----------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock en
@@ -1318,25 +1323,33 @@ Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 clk            |         |         |    6.291|         |
 ---------------+---------+---------+---------+---------+
 
+Clock to Setup on destination clock mMIPS/alu/_n0122
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    8.779|         |
+---------------+---------+---------+---------+---------+
+
 Clock to Setup on destination clock mMIPS/ctrl/_n0086
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |         |         |    3.424|         |
+clk            |         |         |    3.428|         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 31.00 secs
-Total CPU time to Xst completion: 31.30 secs
+Total REAL time to Xst completion: 38.00 secs
+Total CPU time to Xst completion: 38.14 secs
  
 --> 
 
-Total memory usage is 360828 kilobytes
+Total memory usage is 359368 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  202 (   0 filtered)
-Number of infos    :   35 (   0 filtered)
+Number of warnings :  203 (   0 filtered)
+Number of infos    :   34 (   0 filtered)
 
