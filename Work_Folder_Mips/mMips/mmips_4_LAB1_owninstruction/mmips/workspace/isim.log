@@ -17,3 +17,4 @@ Finished circuit initialization process.
 Finished in     2108766 cycles
 
 Stopped at time : 210876701 ns : File "C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_4_LAB1_owninstruction/mmips/verilog/testbench.v" Line 132
+The simulator has terminated in an unexpected manner.  Please review the ISim log (isim.log) for details.
