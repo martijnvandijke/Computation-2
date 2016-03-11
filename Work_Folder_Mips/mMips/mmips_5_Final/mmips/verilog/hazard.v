@@ -35,7 +35,10 @@ module HAZARD(
         IFIDWrite,
         Hazard,
         pipe_en,
-        imem_en
+        imem_en,
+		  //extra forwarding modules
+		  forward1,
+		  forward2
     );
 
     input   [0:0]   enable;
@@ -65,6 +68,11 @@ module HAZARD(
     reg     [0:0]   hazard;
     reg     [4:0]   ifidreadregister1;
     reg     [4:0]   ifidreadregister2;
+	 //extra forwarding inputs and outputs
+	 reg		[1:0]		forward1;
+	 reg		[1:0]		forward2;
+	 output	[1:0]		forward1;
+	 output	[1:0]		forward2;
 
     
     always @(MEMWBRegWrite or 
@@ -90,7 +98,9 @@ module HAZARD(
             // Enable the pipeline and instruction memory
             imem_en = 1'b1;
             pipe_en = 1'b1;
-            
+            forward1 = 0;
+				forward2 = 0;
+				
             // Check for hazards (for simplicity assume that register zero
             // can also cause a hazard)
             if (BranchOpID != 2'b00)// || BranchOpEX != 2'b00)

@@ -252,6 +252,25 @@ module mMIPS(
         .in3(bus_if_pc),
         .sel(bus_id_ctrl_ex_alusel),
         .out(bus_mux6));
+		  
+		  //extra muxes for forwarding
+	MUX4 #(.WIDTH(`DWORD)) mux7(
+	 .in0(bus_registers_1), //normal id inpu
+	 .in1(bus_mux6), //output from EX
+	 .in2(bus_ex_alu_result), //output from MEM
+	 .in3(bus_mux3), //output from WB
+	 .sel(bus_sel_fw1),
+	 .out(bus_out_fw1)
+	);
+		  
+	MUX4 #(.WIDTH(`DWORD)) mux8(
+	 .in0(bus_registers_2), //normal id inpu
+	 .in1(bus_mux6), //output from EX
+	 .in2(bus_ex_alu_result), //output from MEM
+	 .in3(bus_mux3), //output from WB
+	 .sel(bus_sel_fw2),
+	 .out(bus_out_fw2)
+	);	  
 
     /*
      * instruction decoder
