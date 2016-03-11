@@ -107,21 +107,30 @@ module HAZARD(
                 // (Control) branch hazard
                 // Don't fetch a new instruction, insert a 'nop'
                 hazard = 1'b1;
-            else if (IDEXRegWrite == 1'b1 && ( 
-                        IDEXRegDst == 2'b00 && IDEXWriteRegisterRt == ifidreadregister1 ||
-                        IDEXRegDst == 2'b01 && IDEXWriteRegisterRd == ifidreadregister1 ||
-                        IDEXRegDst == 2'b00 && IDEXWriteRegisterRt == ifidreadregister2 ||
-                        IDEXRegDst == 2'b01 && IDEXWriteRegisterRd == ifidreadregister2))
-                // EX hazard
-                hazard = 1'b1;
-            else if (EXMEMRegWrite == 1'b1 && (
+            else 
+				//strat the forwarding 
+				begin
+				
+//				if (IDEXRegWrite == 1'b1 && ( 
+//                        IDEXRegDst == 2'b00 && IDEXWriteRegisterRt == ifidreadregister1 ||
+//                        IDEXRegDst == 2'b01 && IDEXWriteRegisterRd == ifidreadregister1 ||
+//                        IDEXRegDst == 2'b00 && IDEXWriteRegisterRt == ifidreadregister2 ||
+//                        IDEXRegDst == 2'b01 && IDEXWriteRegisterRd == ifidreadregister2))
+//                // EX hazard
+//                hazard = 1'b1;
+//            else 
+			if 
+
+			if (EXMEMRegWrite == 1'b1 && (
                         EXMEMWriteRegister == ifidreadregister1 ||
                         EXMEMWriteRegister == ifidreadregister2))
                 // MEM hazard
                 hazard = 1'b1;
             else if (MEMWBRegWrite == 1'b1 && (
                         MEMWBWriteRegister == ifidreadregister1 ||
-                        MEMWBWriteRegister == ifidreadregister2))
+                        MEMWBWriteRegister != 0)
+								begin forward1 = 3;
+								end
                 // WB hazard
                 hazard = 1'b1;
             else
