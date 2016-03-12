@@ -37,8 +37,8 @@ module HAZARD(
         pipe_en,
         imem_en,
 		  //extra forwarding modules
-		  forward1,
-		  forward2
+		  forwarding1,
+		  forwarding2
     );
 
     input   [0:0]   enable;
@@ -69,10 +69,10 @@ module HAZARD(
     reg     [4:0]   ifidreadregister1;
     reg     [4:0]   ifidreadregister2;
 	 //extra forwarding inputs and outputs
-	 reg		[1:0]		forward1;
-	 reg		[1:0]		forward2;
-	 output	[1:0]		forward1;
-	 output	[1:0]		forward2;
+	 reg		[1:0]		forwarding1;
+	 reg		[1:0]		forwarding2;
+	 output	[1:0]		forwarding1;
+	 output	[1:0]		forwarding2;
 
     
     always @(MEMWBRegWrite or 
@@ -91,6 +91,18 @@ module HAZARD(
                 imem_wait)
         
         begin
+		  
+		  //old verilog code
+		  //				if (IDEXRegWrite == 1'b1 && ( 
+//                        IDEXRegDst == 2'b00 && IDEXWriteRegisterRt == ifidreadregister1 ||
+//                        IDEXRegDst == 2'b01 && IDEXWriteRegisterRd == ifidreadregister1 ||
+//                        IDEXRegDst == 2'b00 && IDEXWriteRegisterRt == ifidreadregister2 ||
+//                        IDEXRegDst == 2'b01 && IDEXWriteRegisterRd == ifidreadregister2))
+//                // EX hazard
+//                hazard = 1'b1;
+//            else 
+		  
+		  
             //Read registers
             ifidreadregister1 = Instr[25:21];
             ifidreadregister2 = Instr[20:16];
@@ -98,8 +110,9 @@ module HAZARD(
             // Enable the pipeline and instruction memory
             imem_en = 1'b1;
             pipe_en = 1'b1;
-            forward1 = 0;
-				forward2 = 0;
+				//set the forward declerations to zeros
+            forwarding1 = 0;
+				forwarding2 = 0;
 				
             // Check for hazards (for simplicity assume that register zero
             // can also cause a hazard)
@@ -110,33 +123,52 @@ module HAZARD(
             else 
 				//strat the forwarding 
 				begin
-				
-//				if (IDEXRegWrite == 1'b1 && ( 
-//                        IDEXRegDst == 2'b00 && IDEXWriteRegisterRt == ifidreadregister1 ||
-//                        IDEXRegDst == 2'b01 && IDEXWriteRegisterRd == ifidreadregister1 ||
-//                        IDEXRegDst == 2'b00 && IDEXWriteRegisterRt == ifidreadregister2 ||
-//                        IDEXRegDst == 2'b01 && IDEXWriteRegisterRd == ifidreadregister2))
-//                // EX hazard
-//                hazard = 1'b1;
-//            else 
-			if 
+				//Write back stage
+						if(MEMWBRegWrite == 1'b1 &&
+								MEMWBWriteRegister == ifidreadregister1 &&
+								MEMWBWriteRegister != 0)
+							begin
+									forwarding1 = 3;
+							end
+						if(MEMWBRegWrite == 1'b1 &&
+								MEMWBWriteRegister == ifidreadregister2 &&
+								MEMWBWriteRegister != 0)
+							begin
+									forwarding2 = 3;
+							end	
 
-			if (EXMEMRegWrite == 1'b1 && (
-                        EXMEMWriteRegister == ifidreadregister1 ||
-                        EXMEMWriteRegister == ifidreadregister2))
-                // MEM hazard
-                hazard = 1'b1;
-            else if (MEMWBRegWrite == 1'b1 && (
-                        MEMWBWriteRegister == ifidreadregister1 ||
-                        MEMWBWriteRegister != 0)
-								begin forward1 = 3;
-								end
-                // WB hazard
-                hazard = 1'b1;
-            else
-                // No hazard
-                hazard = 1'b0;
-            
+						//Memory stage
+						if (EXMEMRegWrite == 1'b1 && 
+										EXMEMWriteRegister == ifidreadregister1 &&
+										EXMEMWriteRegister !=  0)
+										
+								begin
+										if (CtrlMemMemread != 0)
+											begin
+													hazard = 1;
+											end
+										else
+											begin
+													forward1 = 2;
+											end
+										end
+										
+										
+							 // MEM hazard 
+							 hazard = 1'b1;
+						else if (MEMWBRegWrite == 1'b1 && (
+										MEMWBWriteRegister == ifidreadregister1 ||
+										MEMWBWriteRegister == ifidreadregister2))
+										//begin forward1 = 3;
+										//forward A from Write back stage
+										//end
+							 // WB hazard
+							 hazard = 1'b1;
+						else
+							 // No hazard
+							 hazard = 1'b0;
+				end
+				//end
             // Write output
             if (enable[1'b0] == 0)
             begin

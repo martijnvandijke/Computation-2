@@ -1,0 +1,1422 @@
+SyncTeX Version:1
+Input:1:D:/Computation-2\Report\test.tex
+Input:2:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article.cls
+Input:3:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size10.clo
+Input:4:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphicx.sty
+Input:5:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\keyval.sty
+Input:6:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphics.sty
+Input:7:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\trig.sty
+Input:8:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg
+Input:9:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def
+Input:10:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty
+Input:11:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty
+Input:12:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty
+Input:13:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\00miktex\color.cfg
+Input:14:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\booktabs\booktabs.sty
+Input:15:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.sty
+Input:16:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\00miktex\bblopts.cfg
+Input:17:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\babel-english\english.ldf
+Input:18:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.def
+Input:19:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.sty
+Input:20:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty
+Input:21:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty
+Input:22:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty
+Input:23:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.cfg
+Input:24:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption.sty
+Input:25:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption3.sty
+Input:26:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\textcomp.sty
+Input:27:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1enc.def
+Input:28:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\float\float.sty
+Input:29:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\longtable.sty
+Input:30:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\needspace\needspace.sty
+Input:31:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\listings.sty
+Input:32:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstmisc.sty
+Input:33:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\listings.cfg
+Input:34:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\paralist\paralist.sty
+Input:35:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\placeins\placeins.sty
+Input:36:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pdfpages\pdfpages.sty
+Input:37:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ifthen.sty
+Input:38:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\calc.sty
+Input:39:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\eso-pic\eso-pic.sty
+Input:40:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\atbegshi.sty
+Input:41:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pdfpages\pppdftex.def
+Input:42:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\subfig\subfig.sty
+Input:43:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lastpage\lastpage.sty
+Input:44:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\todonotes\todonotes.sty
+Input:45:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.sty
+Input:46:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xkeyval\xkeyval.tex
+Input:47:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xkeyval\xkvutils.tex
+Input:48:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\frontendlayer\tikz.sty
+Input:49:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgf.sty
+Input:50:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\utilities\pgfrcs.sty
+Input:51:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-common.tex
+Input:52:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-common-lists.tex
+Input:53:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-latex.def
+Input:54:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ms\everyshi.sty
+Input:55:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pgfrcs.code.tex
+Input:56:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgfcore.sty
+Input:57:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\systemlayer\pgfsys.sty
+Input:58:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsys.code.tex
+Input:59:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pgfkeys.code.tex
+Input:60:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pgfkeysfiltered.code.tex
+Input:61:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgf.cfg
+Input:62:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsys-pdftex.def
+Input:63:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsys-common-pdf.def
+Input:64:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsyssoftpath.code.tex
+Input:65:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsysprotocol.code.tex
+Input:66:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcore.code.tex
+Input:67:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath.code.tex
+Input:68:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmathcalc.code.tex
+Input:69:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmathutil.code.tex
+Input:70:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmathparser.code.tex
+Input:71:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.code.tex
+Input:72:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.basic.code.tex
+Input:73:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.trigonometric.code.tex
+Input:74:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.random.code.tex
+Input:75:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.comparison.code.tex
+Input:76:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.base.code.tex
+Input:77:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.round.code.tex
+Input:78:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.misc.code.tex
+Input:79:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.integerarithmetics.code.tex
+Input:80:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfloat.code.tex
+Input:81:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepoints.code.tex
+Input:82:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepathconstruct.code.tex
+Input:83:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepathusage.code.tex
+Input:84:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorescopes.code.tex
+Input:85:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoregraphicstate.code.tex
+Input:86:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoretransformations.code.tex
+Input:87:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorequick.code.tex
+Input:88:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreobjects.code.tex
+Input:89:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepathprocessing.code.tex
+Input:90:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorearrows.code.tex
+Input:91:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreshade.code.tex
+Input:92:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreimage.code.tex
+Input:93:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreexternal.code.tex
+Input:94:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorelayers.code.tex
+Input:95:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoretransparency.code.tex
+Input:96:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepatterns.code.tex
+Input:97:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules\pgfmoduleshapes.code.tex
+Input:98:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules\pgfmoduleplot.code.tex
+Input:99:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\compatibility\pgfcomp-version-0-65.sty
+Input:100:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\compatibility\pgfcomp-version-1-18.sty
+Input:101:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\utilities\pgffor.sty
+Input:102:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\utilities\pgfkeys.sty
+Input:103:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pgfkeys.code.tex
+Input:104:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\math\pgfmath.sty
+Input:105:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath.code.tex
+Input:106:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pgffor.code.tex
+Input:107:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath.code.tex
+Input:108:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\tikz.code.tex
+Input:109:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\pgflibraryplothandlers.code.tex
+Input:110:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules\pgfmodulematrix.code.tex
+Input:111:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarytopaths.code.tex
+Input:112:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarypositioning.code.tex
+Input:113:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty
+Input:114:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amstext.sty
+Input:115:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty
+Input:116:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty
+Input:117:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty
+Input:118:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amscls\amsthm.sty
+Input:119:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty
+Input:120:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty
+Input:121:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\multicol.sty
+Input:122:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\titlesec\titleps.sty
+Input:123:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\titlesec\ttlps.def
+Input:124:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\kantlipsum\kantlipsum.sty
+Input:125:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3kernel\expl3.sty
+Input:126:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3kernel\expl3-code.tex
+Input:127:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3kernel\l3pdfmode.def
+Input:128:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3packages\xparse\xparse.sty
+Input:129:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty
+Input:130:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty
+Input:131:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty
+Input:132:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty
+Input:133:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty
+Input:134:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def
+Input:135:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg
+Input:136:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\url\url.sty
+Input:137:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def
+Input:138:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty
+Input:139:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\jknappen\mathrsfs.sty
+Input:140:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amscd.sty
+Input:141:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xypic\xy.sty
+Input:142:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xypic\xy.tex
+Input:143:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xypic\xyrecat.tex
+Input:144:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xypic\xyidioms.tex
+Input:145:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xypic\xycmtip.tex
+Input:146:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xypic\xytips.tex
+Input:147:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xypic\xyall.tex
+Input:148:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xypic\xycurve.tex
+Input:149:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xypic\xyframe.tex
+Input:150:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xypic\xyline.tex
+Input:151:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xypic\xyrotate.tex
+Input:152:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xypic\xycolor.tex
+Input:153:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xypic\xymatrix.tex
+Input:154:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xypic\xyarrow.tex
+Input:155:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xypic\xygraph.tex
+Input:156:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xypic\xypdf.tex
+Input:157:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xypic\xypdf-co.tex
+Input:158:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xypic\xypdf-cu.tex
+Input:159:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xypic\xypdf-fr.tex
+Input:160:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xypic\xypdf-li.tex
+Input:161:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xypic\xypdf-ro.tex
+Input:162:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\bbm\bbm.sty
+Input:163:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\pdflscape.sty
+Input:164:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\lscape.sty
+Input:165:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.sty
+Input:166:D:\Computation-2\Report\test.aux
+Input:167:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1cmr.fd
+Input:168:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mkii
+Input:169:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\ltcaption.sty
+Input:170:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\nameref.sty
+Input:171:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty
+Input:172:D:\Computation-2\Report\test.out
+Input:173:D:\Computation-2\Report\test.out
+Input:174:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd
+Input:175:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd
+Input:176:C:\Users\Martyn\AppData\Local\Programs\MiKTeX 2.9\tex\latex\jknappen\ursfs.fd
+Output:pdf
+Magnification:1000
+Unit:1
+X Offset:0
+Y Offset:0
+Content:
+!16870
+{1
+[1,74:4736286,53188833:30692629,48452547,0
+h1,74:4736286,4736286:0,0,0
+[1,74:4736286,4736286:0,0,0
+(1,74:4736286,2171086:0,0,0
+k1,74:4736286,2171086:1072708
+)
+]
+[1,74:4736286,53188833:30692629,48452547,0
+(1,74:4736286,4736286:0,0,0
+[1,74:0,4736286:31699556,0,0
+(1,74:0,0:31699556,0,0
+h1,74:0,0:0,0,0
+(1,74:0,0:0,0,0
+(1,74:0,0:0,0,0
+g1,74:0,0
+(1,74:0,0:0,0,55380990
+(1,74:0,55380990:0,0,0
+g1,74:0,55380990
+)
+)
+g1,74:0,0
+)
+)
+k1,74:31699556,0:31699556
+g1,74:31699556,0
+)
+]
+)
+h1,74:4736286,4736286:0,0,0
+[1,74:3729359,53188833:31699556,50951966,0
+[1,74:3729359,3023299:31699556,786432,0
+(1,74:3729359,3023299:31699556,0,0
+h1,74:3729359,3023299:31699556,0,0
+)
+]
+[1,74:3729359,51222753:31699556,46561054,0
+(1,47:3729359,10255609:31699556,5593910,0
+h1,45:3729359,10255609:983040,0,0
+g1,45:5644738,10255609
+g1,45:5863191,10255609
+(1,46:5863191,10255609:22376053,5593910,0
+(1,46:5863191,10255609:22376107,5593923,0
+(1,46:5863191,10255609:22376107,5593923,0
+(1,46:5863191,10255609:0,27957248,0
+(1,46:5863191,10255609:131366175,27957248,0
+)
+k1,46:5863190,10255609:-131366176
+)
+)
+)
+)
+k1,47:35428915,10255609:7189671
+g1,47:35428915,10255609
+)
+(1,74:3729359,29918215:31699556,18810638,18482958
+h1,50:3729359,29918215:983040,0,0
+k1,50:12171118,29918215:7458719
+k1,50:12316753,29918215:145635
+$1,54:12316753,29918215
+[1,54:12316753,29918215:1864679,18810638,18482958
+(1,54:12316753,48401173:1864679,37293596,0
+h1,53:12316753,48401173:0,0,0
+(1,53:12316753,48401173:65536,37293596,0
+r1,53:12382289,48401173:65536,37293596,0
+)
+k1,54:14181432,48401173:1799143
+g1,54:14181432,48401173
+)
+]
+$1,54:14181432,29918215
+k1,54:14327067,29918215:145635
+$1,73:14327067,29918215
+[1,73:14327067,29918215:24800241,11296413,10968732
+(1,60:14327067,23483476:24800241,1132315,317047
+h1,59:14327067,23483476:0,0,0
+x1,59:19847868,23483476
+g1,59:20459319,23483476
+x1,59:30983253,23483476
+g1,59:31594704,23483476
+x1,59:34818978,23483476
+x1,59:37249684,23483476
+k1,60:39127308,23483476:1877624
+g1,60:39127308,23483476
+)
+(1,65:14327067,32908275:24800241,1132315,317047
+h1,63:14327067,32908275:0,0,0
+x1,63:18121119,32908275
+g1,63:18691811,32908275
+x1,63:20200071,32908275
+g1,63:20770763,32908275
+x1,63:21259928,32908275
+k1,64:39127308,32908275:17775662
+g1,65:39127308,32908275
+)
+(1,65:14327067,34874355:24800241,1132317,317153
+x1,65:17615733,34874355
+x1,64:19196504,34874355
+g1,64:19688742,34874355
+x1,64:20479128,34874355
+x1,64:21974715,34874355
+g1,64:22466953,34874355
+x1,64:25266132,34874355
+x1,64:25886146,34874355
+k1,65:39127308,34874355:13241162
+g1,65:39127308,34874355
+)
+(1,73:14327067,40569794:24800241,1132317,317153
+h1,69:14327067,40569794:0,0,0
+x1,69:17700919,40569794
+x1,69:18491304,40569794
+g1,69:18983542,40569794
+x1,69:20886180,40569794
+g1,69:21378418,40569794
+x1,69:24369590,40569794
+g1,70:29963629,40569794
+g1,70:30455867,40569794
+k1,73:39127308,40569794:8671441
+g1,73:39127308,40569794
+)
+]
+$1,73:39127308,29918215
+k1,74:39127308,29918215:0
+k1,74:39127308,29918215:0
+)
+]
+(1,74:3729359,53188833:31699556,0,0
+h1,74:3729359,53188833:31699556,0,0
+)
+]
+(1,74:4736286,4736286:0,0,0
+[1,74:0,4736286:31699556,0,0
+(1,74:0,0:31699556,0,0
+h1,74:0,0:0,0,0
+(1,74:0,0:0,0,0
+(1,74:0,0:0,0,0
+g1,74:0,0
+(1,74:0,0:0,0,55380990
+(1,74:0,55380990:0,0,0
+g1,74:0,55380990
+)
+)
+g1,74:0,0
+)
+)
+k1,74:31699556,0:31699556
+g1,74:31699556,0
+)
+]
+)
+]
+]
+!3302
+}1
+!9
+{2
+[1,80:4736286,53188833:30692629,48452547,0
+[1,80:4736286,4736286:0,0,0
+(1,80:4736286,2171086:0,0,0
+k1,80:4736286,2171086:1072708
+)
+]
+[1,80:4736286,53188833:30692629,48452547,0
+(1,80:4736286,4736286:0,0,0
+[1,80:0,4736286:31699556,0,0
+(1,80:0,0:31699556,0,0
+h1,80:0,0:0,0,0
+(1,80:0,0:0,0,0
+(1,80:0,0:0,0,0
+g1,80:0,0
+(1,80:0,0:0,0,55380990
+(1,80:0,55380990:0,0,0
+g1,80:0,55380990
+)
+)
+g1,80:0,0
+)
+)
+k1,80:31699556,0:31699556
+g1,80:31699556,0
+)
+]
+)
+h1,80:4736286,4736286:0,0,0
+[1,80:3729359,53188833:31699556,50951966,0
+[1,80:3729359,3023299:31699556,786432,0
+(1,80:3729359,3023299:31699556,0,0
+h1,80:3729359,3023299:31699556,0,0
+)
+]
+[1,80:3729359,51222753:31699556,46561054,0
+(1,78:3729359,5317059:31699556,647495,0
+(1,78:3729359,5317059:1592523,608173,0
+g1,78:3729359,5317059
+x1,78:4260200,5317059
+g1,78:5321882,5317059
+)
+x1,78:6965197,5317059
+g1,78:7319091,5317059
+x1,78:7986465,5317059
+x1,78:9370365,5317059
+k1,78:35428915,5317059:26058550
+g1,78:35428915,5317059
+)
+]
+(1,80:3729359,53188833:31699556,422343,0
+(1,80:3729359,53188833:31699556,422343,0
+k1,80:19415297,53188833:15685938
+x1,80:19742978,53188833
+k1,80:35428916,53188833:15685938
+)
+)
+]
+(1,80:4736286,4736286:0,0,0
+[1,80:0,4736286:31699556,0,0
+(1,80:0,0:31699556,0,0
+h1,80:0,0:0,0,0
+(1,80:0,0:0,0,0
+(1,80:0,0:0,0,0
+g1,80:0,0
+(1,80:0,0:0,0,55380990
+(1,80:0,55380990:0,0,0
+g1,80:0,55380990
+)
+)
+g1,80:0,0
+)
+)
+k1,80:31699556,0:31699556
+g1,80:31699556,0
+)
+]
+)
+]
+]
+!1422
+}2
+Input:177:D:\Computation-2\Report\test.toc
+!52
+{3
+[1,84:4736286,53188833:30692629,48452547,0
+[1,84:4736286,4736286:0,0,0
+(1,84:4736286,2171086:0,0,0
+k1,84:4736286,2171086:1072708
+)
+]
+[1,84:4736286,53188833:30692629,48452547,0
+(1,84:4736286,4736286:0,0,0
+[1,84:0,4736286:31699556,0,0
+(1,84:0,0:31699556,0,0
+h1,84:0,0:0,0,0
+(1,84:0,0:0,0,0
+(1,84:0,0:0,0,0
+g1,84:0,0
+(1,84:0,0:0,0,55380990
+(1,84:0,55380990:0,0,0
+g1,84:0,55380990
+)
+)
+g1,84:0,0
+)
+)
+k1,84:31699556,0:31699556
+g1,84:31699556,0
+)
+]
+)
+h1,84:4736286,4736286:0,0,0
+[1,84:3729359,53188833:31699556,50951966,0
+[1,84:3729359,3023299:31699556,786432,0
+(1,84:3729359,3023299:31699556,0,0
+h1,84:3729359,3023299:31699556,0,0
+)
+]
+[1,84:3729359,51222753:31699556,46561054,0
+(1,82:3729359,5317059:31699556,647495,0
+(1,82:3729359,5317059:0,0,0
+g1,82:3729359,5317059
+)
+(1,82:3729359,5317059:0,0,0
+(1,82:3729359,5317059:0,0,0
+(1,82:3729359,4137411:0,0,0
+)
+)
+g1,82:3729359,5317059
+)
+x1,82:5616793,5317059
+x1,82:7074420,5317059
+x1,82:7876580,5317059
+k1,82:35428916,5317059:27552336
+g1,82:35428916,5317059
+)
+(177,2:3729359,6758852:31699556,449650,0
+g177,2:4712400,6758852
+g177,2:3729359,6758852
+(177,2:3729359,6758852:983041,422343,0
+x177,2:4106189,6758852
+k177,2:4712400,6758852:606211
+)
+x177,2:5883396,6758852
+g177,2:6134616,6758852
+x177,2:6608839,6758852
+x177,2:7592783,6758852
+k177,2:34260739,6758852:26667956
+(177,2:34260739,6758852:1168175,422343,0
+k177,2:35052084,6758852:791345
+x177,2:35428914,6758852
+)
+g177,2:34413103,6758852
+g177,2:35428914,6758852
+)
+(177,3:3729359,8200645:31699556,455111,0
+g177,3:4712400,8200645
+h177,3:4712400,8200645:0,0,0
+g177,3:3729359,8200645
+(177,3:3729359,8200645:983041,422343,0
+x177,3:4106189,8200645
+k177,3:4712400,8200645:606211
+)
+x177,3:5883396,8200645
+g177,3:6134616,8200645
+x177,3:7812600,8200645
+g177,3:8063820,8200645
+x177,3:8588105,8200645
+x177,3:9586702,8200645
+k177,3:34260740,8200645:24674038
+(177,3:34260740,8200645:1168175,422343,0
+k177,3:35052085,8200645:791345
+x177,3:35428915,8200645
+)
+g177,3:34413104,8200645
+g177,3:35428915,8200645
+)
+(177,4:3729359,9642438:31699556,455111,0
+g177,4:4712400,9642438
+h177,4:4712400,9642438:0,0,0
+g177,4:3729359,9642438
+(177,4:3729359,9642438:983041,422343,0
+x177,4:4106189,9642438
+k177,4:4712400,9642438:606211
+)
+x177,4:6390384,9642438
+g177,4:6641604,9642438
+x177,4:7165889,9642438
+x177,4:8164486,9642438
+k177,4:34260740,9642438:26096254
+(177,4:34260740,9642438:1168175,422343,0
+k177,4:35052085,9642438:791345
+x177,4:35428915,9642438
+)
+g177,4:34413104,9642438
+g177,4:35428915,9642438
+)
+(177,5:3729359,11084231:31699556,449650,127431
+g177,5:4712400,11084231
+h177,5:4712400,11084231:0,0,0
+g177,5:3729359,11084231
+(177,5:3729359,11084231:983041,422343,0
+x177,5:4106189,11084231
+k177,5:4712400,11084231:606211
+)
+x177,5:7880411,11084231
+k177,5:34260739,11084231:26380328
+(177,5:34260739,11084231:1168175,422343,0
+k177,5:35052084,11084231:791345
+x177,5:35428914,11084231
+)
+g177,5:34413103,11084231
+g177,5:35428914,11084231
+)
+(177,6:3729359,12526024:31699556,455111,0
+g177,6:4712400,12526024
+h177,6:4712400,12526024:0,0,0
+g177,6:3729359,12526024
+(177,6:3729359,12526024:983041,422343,0
+x177,6:4106189,12526024
+k177,6:4712400,12526024:606211
+)
+x177,6:8317406,12526024
+k177,6:34260740,12526024:25943334
+(177,6:34260740,12526024:1168175,422343,0
+k177,6:35052085,12526024:791345
+x177,6:35428915,12526024
+)
+g177,6:34413104,12526024
+g177,6:35428915,12526024
+)
+(177,7:3729359,13967817:31699556,455111,0
+g177,7:4712400,13967817
+h177,7:4712400,13967817:0,0,0
+g177,7:3729359,13967817
+(177,7:3729359,13967817:983041,422343,0
+x177,7:4106189,13967817
+k177,7:4712400,13967817:606211
+)
+x177,7:8250963,13967817
+k177,7:34260739,13967817:26009776
+(177,7:34260739,13967817:1168175,422343,0
+k177,7:35052084,13967817:791345
+x177,7:35428914,13967817
+)
+g177,7:34413103,13967817
+g177,7:35428914,13967817
+)
+]
+(1,84:3729359,53188833:31699556,422343,0
+(1,84:3729359,53188833:31699556,422343,0
+k1,84:19415297,53188833:15685938
+x1,84:19742978,53188833
+k1,84:35428916,53188833:15685938
+)
+)
+]
+(1,84:4736286,4736286:0,0,0
+[1,84:0,4736286:31699556,0,0
+(1,84:0,0:31699556,0,0
+h1,84:0,0:0,0,0
+(1,84:0,0:0,0,0
+(1,84:0,0:0,0,0
+g1,84:0,0
+(1,84:0,0:0,0,55380990
+(1,84:0,55380990:0,0,0
+g1,84:0,55380990
+)
+)
+g1,84:0,0
+)
+)
+k1,84:31699556,0:31699556
+g1,84:31699556,0
+)
+]
+)
+]
+]
+!4213
+}3
+!9
+{4
+[1,145:4736286,53188833:30692629,48452547,235932
+[1,145:4736286,4736286:0,0,0
+(1,145:4736286,2171086:0,0,0
+k1,145:4736286,2171086:1072708
+)
+]
+[1,145:4736286,53188833:30692629,48452547,235932
+(1,145:4736286,4736286:0,0,0
+[1,145:0,4736286:31699556,0,0
+(1,145:0,0:31699556,0,0
+h1,145:0,0:0,0,0
+(1,145:0,0:0,0,0
+(1,145:0,0:0,0,0
+g1,145:0,0
+(1,145:0,0:0,0,55380990
+(1,145:0,55380990:0,0,0
+g1,145:0,55380990
+)
+)
+g1,145:0,0
+)
+)
+k1,145:31699556,0:31699556
+g1,145:31699556,0
+)
+]
+)
+h1,145:4736286,4736286:0,0,0
+[1,145:3729359,53188833:31699556,50951966,235932
+[1,145:3729359,3023299:31699556,786432,0
+(1,145:3729359,3023299:31699556,786432,0
+(1,145:3729359,3023299:31699556,786432,0
+(1,145:3729359,3023299:31699556,786432,0
+[1,145:3729359,3023299:31699556,786432,0
+(1,145:3729359,2787367:31699556,550500,235932
+(1,145:3729359,2787367:0,550500,235932
+[1,145:3729359,2787367:31699556,550500,235932
+(1,145:3729359,2787367:31699556,550500,235932
+h1,145:3729359,2787367:0,0,0
+x1,145:4057040,2787367
+g1,145:4712401,2787367
+x1,145:7730700,2787367
+r1,145:7730700,2787367:0,786432,235932
+k1,145:21579808,2787367:13849108
+k1,145:35428916,2787367:13849108
+)
+]
+k1,145:3729359,2787367:-31699556
+)
+g1,145:3729359,2787367
+[1,145:3729359,2787367:31699556,550500,235932
+(1,145:3729359,2787367:31699556,550500,235932
+k1,145:19579137,2787367:15849778
+h1,145:19579137,2787367:0,0,0
+r1,145:19579137,2787367:0,786432,235932
+g1,145:19579137,2787367
+k1,145:35428915,2787367:15849778
+)
+]
+g1,145:35428915,2787367
+(1,145:35428915,2787367:0,550500,235932
+k1,145:3729359,2787367:-31699556
+[1,145:3729359,2787367:31699556,550500,235932
+(1,145:3729359,2787367:31699556,550500,235932
+k1,145:35428915,2787367:31699556
+h1,145:35428915,2787367:0,0,0
+r1,145:35428915,2787367:0,786432,235932
+g1,145:35428915,2787367
+g1,145:35428915,2787367
+)
+]
+)
+)
+]
+)
+g1,145:35428915,3023299
+)
+)
+]
+[1,145:3729359,51222753:31699556,46561054,0
+(1,86:3729359,5317059:31699556,655359,0
+(1,86:3729359,5317059:1592523,608173,0
+g1,86:3729359,5317059
+x1,86:4260200,5317059
+g1,86:5321882,5317059
+)
+x1,86:6965197,5317059
+g1,86:7319091,5317059
+x1,86:9682205,5317059
+g1,86:10036099,5317059
+x1,86:10774470,5317059
+x1,86:12181199,5317059
+k1,86:35428915,5317059:23247716
+g1,86:35428915,5317059
+)
+(1,100:3729359,7145694:31699556,655359,0
+(1,100:3729359,7145694:1592523,608173,0
+g1,100:3729359,7145694
+x1,100:4260200,7145694
+g1,100:5321882,7145694
+)
+x1,100:7684996,7145694
+g1,100:8038890,7145694
+x1,100:8777261,7145694
+x1,100:10183990,7145694
+k1,100:35428914,7145694:25244924
+g1,100:35428914,7145694
+)
+(1,104:18568954,8751401:16859961,891184,576976
+(1,104:18568954,8751401:2020367,891184,576976
+(1,102:18568954,8751401:0,0,0
+$1,102:18568954,8751401
+(1,102:18568954,7964969:0,0,0
+)
+$1,102:18568954,8751401
+)
+x1,102:18951930,8751401
+k1,104:18568954,8751401:91023
+g1,104:19224993,8751401
+x1,104:19734719,8751401
+g1,104:19916759,8751401
+(1,104:19916759,8751401:672562,891184,576976
+(1,104:19916759,8751401:672562,891184,576976
+h1,104:19916759,8751401:78643,0,0
+[1,104:19995402,8751401:515276,891184,576976
+(1,104:19995402,8308045:515276,447828,0
+x1,104:20463802,8308045
+)
+(1,104:19995402,9200945:515276,455111,127431
+k1,104:20057341,9200945:61939
+x1,104:20378196,9200945
+k1,104:20510678,9200945:61939
+)
+]
+h1,104:20510678,8751401:78643,0,0
+)
+)
+)
+(1,104:34591508,8751401:837407,491520,163840
+(1,104:34591508,8751401:837407,491520,163840
+x1,104:35174052,8751401
+x1,104:35428915,8751401
+)
+)
+)
+(1,106:3729359,9931049:31699556,0,0
+h1,106:3729359,9931049:983040,0,0
+k1,106:35428915,9931049:30716516
+g1,106:35428915,9931049
+)
+(1,108:15991477,10887769:19437438,891184,637049
+(1,108:15991477,10887769:7175320,891184,637049
+(1,106:15991477,10887769:0,0,0
+$1,106:15991477,10887769
+(1,106:15991477,10101337:0,0,0
+)
+$1,106:15991477,10887769
+)
+x1,106:16506753,10887769
+g1,108:16688793,10887769
+x1,108:17198519,10887769
+g1,108:17380559,10887769
+(1,108:17380559,10887769:3783751,891184,637049
+(1,108:17380559,10887769:3783751,891184,637049
+h1,108:17380559,10887769:78643,0,0
+[1,108:17459202,10887769:3626465,891184,637049
+(1,108:17459202,10444413:3626465,447828,187504
+x1,108:17842178,10444413
+(1,108:17842178,10542716:1968500,318577,89201
+x1,108:18344197,10542716
+x1,108:18799400,10542716
+x1,108:19775254,10542716
+)
+g1,108:19956310,10444413
+x1,108:20466036,10444413
+g1,108:20611668,10444413
+x1,108:20994644,10444413
+)
+(1,108:17459202,11337313:3626465,447828,187504
+k1,108:18096697,11337313:637495
+x1,108:18479673,11337313
+(1,108:18479673,11435616:1968500,318577,89201
+x1,108:18981692,11435616
+x1,108:19436895,11435616
+x1,108:20412749,11435616
+)
+k1,108:21085667,11337313:637494
+)
+]
+h1,108:21085667,10887769:78643,0,0
+)
+)
+g1,108:21309942,10887769
+x1,108:21491987,10887769
+g1,108:21637619,10887769
+x1,108:23166797,10887769
+)
+(1,108:34591508,10887769:837407,491520,163840
+(1,108:34591508,10887769:837407,491520,163840
+x1,108:35174052,10887769
+x1,108:35428915,10887769
+)
+)
+)
+(1,112:3729359,12438681:31699556,455111,127431
+h1,110:3729359,12438681:983040,0,0
+x1,110:6682124,12438681
+g1,110:6900577,12438681
+x1,110:7483121,12438681
+g1,110:7701574,12438681
+x1,110:9378208,12438681
+x1,110:9705889,12438681
+x1,110:9978955,12438681
+g1,110:10197408,12438681
+x1,110:10889179,12438681
+g1,110:11107632,12438681
+x1,110:12017856,12438681
+g1,110:12236309,12438681
+x1,110:14133217,12438681
+k1,112:35428915,12438681:21295698
+g1,112:35428915,12438681
+)
+(1,113:5367761,13749401:30061154,455111,127431
+(1,112:5367761,13749401:0,422343,0
+g1,112:5367761,13749401
+g1,112:4057039,13749401
+g1,112:3729359,13749401
+(1,112:3729359,13749401:1310722,422343,0
+k1,112:4530355,13749401:800996
+x1,112:5040081,13749401
+)
+g1,112:5367761,13749401
+)
+x1,112:5795567,13749401
+x1,112:6798633,13749401
+x1,112:8602698,13749401
+k1,113:35428914,13749401:26826216
+g1,113:35428914,13749401
+)
+(1,114:5367761,15060121:30061154,455111,127431
+(1,113:5367761,15060121:0,422343,0
+g1,113:5367761,15060121
+g1,113:4057039,15060121
+g1,113:3729359,15060121
+(1,113:3729359,15060121:1310722,422343,0
+k1,113:4530355,15060121:800996
+x1,113:5040081,15060121
+)
+g1,113:5367761,15060121
+)
+x1,113:9154296,15060121
+g1,113:9372749,15060121
+x1,113:9900680,15060121
+g1,113:10119133,15060121
+x1,113:11029357,15060121
+g1,113:11247810,15060121
+x1,113:11721126,15060121
+g1,113:11939579,15060121
+x1,113:12558531,15060121
+x1,113:13232097,15060121
+k1,114:35428915,15060121:22196818
+g1,114:35428915,15060121
+)
+(1,115:5367761,16370841:30061154,455111,127431
+(1,114:5367761,16370841:0,422343,0
+g1,114:5367761,16370841
+g1,114:4057039,16370841
+g1,114:3729359,16370841
+(1,114:3729359,16370841:1310722,422343,0
+k1,114:4530355,16370841:800996
+x1,114:5040081,16370841
+)
+g1,114:5367761,16370841
+)
+x1,114:5968509,16370841
+x1,114:7852669,16370841
+g1,114:8071122,16370841
+x1,114:9148828,16370841
+g1,114:9367281,16370841
+x1,114:9713167,16370841
+x1,114:10368529,16370841
+g1,114:10586982,16370841
+x1,114:12338253,16370841
+k1,115:35428915,16370841:23090662
+g1,115:35428915,16370841
+)
+(1,116:5367761,17681561:30061154,491520,163840
+(1,115:5367761,17681561:0,422343,0
+g1,115:5367761,17681561
+g1,115:4057039,17681561
+g1,115:3729359,17681561
+(1,115:3729359,17681561:1310722,422343,0
+k1,115:4530355,17681561:800996
+x1,115:5040081,17681561
+)
+g1,115:5367761,17681561
+)
+x1,115:7916389,17681561
+x1,115:9065092,17681561
+g1,115:9283545,17681561
+x1,115:9611226,17681561
+g1,115:9829679,17681561
+x1,115:12644090,17681561
+g1,115:12862543,17681561
+x1,115:13208429,17681561
+x1,115:13517905,17681561
+x1,115:14120474,17681561
+g1,115:14338927,17681561
+x1,115:14994288,17681561
+g1,115:15212741,17681561
+x1,115:16605384,17681561
+k1,116:35428916,17681561:18823532
+g1,116:35428916,17681561
+)
+(1,117:5367761,18992281:30061154,455111,127431
+(1,116:5367761,18992281:0,422343,0
+g1,116:5367761,18992281
+g1,116:4057039,18992281
+g1,116:3729359,18992281
+(1,116:3729359,18992281:1310722,422343,0
+k1,116:4530355,18992281:800996
+x1,116:5040081,18992281
+)
+g1,116:5367761,18992281
+)
+x1,116:7537734,18992281
+g1,116:7756187,18992281
+x1,116:9545688,18992281
+g1,116:9764141,18992281
+x1,116:10710773,18992281
+g1,116:10929226,18992281
+x1,116:11420747,18992281
+g1,116:11639200,18992281
+x1,116:12731469,18992281
+g1,116:12949922,18992281
+x1,116:14588325,18992281
+k1,117:35428915,18992281:20840590
+g1,117:35428915,18992281
+)
+(1,118:5367761,20303001:30061154,491520,163840
+(1,117:5367761,20303001:0,422343,0
+g1,117:5367761,20303001
+g1,117:4057039,20303001
+g1,117:3729359,20303001
+(1,117:3729359,20303001:1310722,422343,0
+k1,117:4530355,20303001:800996
+x1,117:5040081,20303001
+)
+g1,117:5367761,20303001
+)
+x1,117:6077737,20303001
+g1,117:6296190,20303001
+x1,117:6951551,20303001
+g1,117:7170004,20303001
+x1,117:8298681,20303001
+x1,117:8954042,20303001
+x1,117:10048131,20303001
+g1,117:10266584,20303001
+x1,117:11213216,20303001
+g1,117:11431669,20303001
+x1,117:12853439,20303001
+g1,117:13071892,20303001
+x1,117:13800072,20303001
+g1,117:14018525,20303001
+x1,117:14459073,20303001
+g1,117:14677526,20303001
+x1,117:15205457,20303001
+g1,117:15423910,20303001
+x1,117:16516179,20303001
+g1,117:16734632,20303001
+x1,117:17921564,20303001
+g1,117:18140017,20303001
+x1,117:19050241,20303001
+g1,117:19268694,20303001
+x1,117:20215326,20303001
+g1,117:20433779,20303001
+x1,117:21671685,20303001
+g1,117:21890138,20303001
+x1,117:22527295,20303001
+x1,117:23164451,20303001
+x1,117:23455722,20303001
+x1,117:24657218,20303001
+x1,117:24893876,20303001
+g1,117:25112329,20303001
+x1,117:25585645,20303001
+x1,117:27207665,20303001
+k1,118:35428915,20303001:8221250
+g1,118:35428915,20303001
+)
+(1,118:5367761,21089433:30061154,0,0
+g1,118:5367761,21089433
+)
+[1,136:3729359,30142679:31699556,7676990,0
+[1,136:3729359,30142679:31699556,7676990,0
+(1,123:3729359,23016189:31699556,550500,235932
+h1,123:3729359,23016189:0,0,0
+g1,123:3729359,23016189
+[1,123:3729359,23016189:31699556,550500,235932
+(1,123:3729359,23016189:31699556,550500,235932
+k1,123:14249777,23016189:10520418
+h1,123:14249777,23016189:0,0,0
+x1,123:14723093,23016189
+x1,123:15833566,23016189
+g1,123:16052019,23016189
+x1,123:16561745,23016189
+g1,123:16853016,23016189
+r1,123:16853016,23016189:0,786432,235932
+g1,123:16853016,23016189
+x1,123:17581196,23016189
+x1,123:18546033,23016189
+g1,123:18764486,23016189
+x1,123:20441120,23016189
+x1,123:20768801,23016189
+x1,123:22243363,23016189
+x1,123:22738524,23016189
+g1,123:22956977,23016189
+x1,123:24908498,23016189
+r1,123:24908498,23016189:0,235932,235932
+g1,123:24908498,23016189
+k1,123:35428916,23016189:10520418
+)
+]
+g1,123:35428915,23016189
+g1,123:35428915,23016189
+)
+(1,136:3729359,27188920:31699556,3281439,2953759
+k1,136:8118053,27188920:4388694
+h1,125:8118053,27188920:0,0,0
+(1,135:8118053,27188920:22922168,3281439,2953759
+$1,135:8118053,27188920
+[1,135:8118053,27188920:22922168,3281439,2953759
+(1,127:8118053,24693818:22922168,550500,235932
+g1,127:8118053,24693818
+(1,127:8118053,24693818:2541346,550500,235932
+r1,127:8118053,24693818:0,786432,235932
+g1,127:8118054,24693818
+x1,127:10266183,24693818
+g1,127:10266183,24693818
+g1,127:10659399,24693818
+)
+g1,127:10659399,24693818
+(1,127:10659399,24693818:5725307,550500,235932
+g1,127:11052615,24693818
+g1,127:11052616,24693818
+x1,127:12454362,24693818
+x1,127:12800247,24693818
+x1,127:13366406,24693818
+g1,127:13584859,24693818
+x1,127:14112790,24693818
+g1,127:14331243,24693818
+x1,127:15991490,24693818
+g1,127:15991490,24693818
+g1,127:16384706,24693818
+)
+g1,127:16384706,24693818
+(1,127:16384706,24693818:3710072,550500,235932
+g1,127:16777922,24693818
+g1,127:16777923,24693818
+x1,127:17205729,24693818
+x1,127:19701562,24693818
+g1,127:19701562,24693818
+g1,127:20094778,24693818
+)
+g1,127:20094778,24693818
+(1,127:20094778,24693818:5364860,550500,235932
+g1,127:20487994,24693818
+g1,127:20487995,24693818
+x1,127:23355202,24693818
+g1,127:23573655,24693818
+x1,127:25066422,24693818
+g1,127:25066422,24693818
+g1,127:25459638,24693818
+)
+g1,127:25459638,24693818
+(1,127:25459638,24693818:5580583,550500,235932
+g1,127:25852854,24693818
+g1,127:25852855,24693818
+x1,127:26298865,24693818
+x1,127:29433676,24693818
+g1,127:29652129,24693818
+x1,127:31040221,24693818
+g1,127:31040221,24693818
+)
+g1,127:31040221,24693818
+)
+(1,129:8118053,25809292:22922168,550500,235932
+g1,128:8118053,25809292
+(1,128:8118053,25809292:2541346,550500,235932
+r1,128:8118053,25809292:0,786432,235932
+k1,128:10266183,25809292:2148130
+g1,128:10659399,25809292
+)
+g1,128:10659399,25809292
+(1,128:10659399,25809292:5725307,550500,235932
+g1,128:11052615,25809292
+k1,128:15991490,25809292:4938875
+g1,128:16384706,25809292
+)
+g1,128:16384706,25809292
+(1,128:16384706,25809292:3710072,550500,235932
+g1,128:16777922,25809292
+k1,128:19701562,25809292:2923640
+g1,128:20094778,25809292
+)
+g1,128:20094778,25809292
+(1,128:20094778,25809292:5364860,550500,235932
+g1,128:20487994,25809292
+k1,128:25066422,25809292:4578428
+g1,128:25459638,25809292
+)
+g1,128:25459638,25809292
+(1,129:25459638,25809292:5580583,550500,235932
+g1,128:25852854,25809292
+k1,129:31040221,25809292:5187367
+)
+g1,129:31040221,25809292
+)
+(1,130:8118053,26595724:22922168,550500,235932
+g1,129:8118053,26595724
+(1,129:8118053,26595724:2541346,550500,235932
+r1,129:8118053,26595724:0,786432,235932
+k1,129:10266183,26595724:2148130
+g1,129:10659399,26595724
+)
+g1,129:10659399,26595724
+(1,129:10659399,26595724:5725307,550500,235932
+g1,129:11052615,26595724
+k1,129:15991490,26595724:4938875
+g1,129:16384706,26595724
+)
+g1,129:16384706,26595724
+(1,129:16384706,26595724:3710072,550500,235932
+g1,129:16777922,26595724
+k1,129:19701562,26595724:2923640
+g1,129:20094778,26595724
+)
+g1,129:20094778,26595724
+(1,129:20094778,26595724:5364860,550500,235932
+g1,129:20487994,26595724
+k1,129:25066422,26595724:4578428
+g1,129:25459638,26595724
+)
+g1,129:25459638,26595724
+(1,130:25459638,26595724:5580583,550500,235932
+g1,129:25852854,26595724
+k1,130:31040221,26595724:5187367
+)
+g1,130:31040221,26595724
+)
+(1,131:8118053,27382156:22922168,550500,235932
+g1,130:8118053,27382156
+(1,130:8118053,27382156:2541346,550500,235932
+r1,130:8118053,27382156:0,786432,235932
+k1,130:10266183,27382156:2148130
+g1,130:10659399,27382156
+)
+g1,130:10659399,27382156
+(1,130:10659399,27382156:5725307,550500,235932
+g1,130:11052615,27382156
+k1,130:15991490,27382156:4938875
+g1,130:16384706,27382156
+)
+g1,130:16384706,27382156
+(1,130:16384706,27382156:3710072,550500,235932
+g1,130:16777922,27382156
+k1,130:19701562,27382156:2923640
+g1,130:20094778,27382156
+)
+g1,130:20094778,27382156
+(1,130:20094778,27382156:5364860,550500,235932
+g1,130:20487994,27382156
+k1,130:25066422,27382156:4578428
+g1,130:25459638,27382156
+)
+g1,130:25459638,27382156
+(1,131:25459638,27382156:5580583,550500,235932
+g1,130:25852854,27382156
+k1,131:31040221,27382156:5187367
+)
+g1,131:31040221,27382156
+)
+(1,132:8118053,28168588:22922168,550500,235932
+g1,131:8118053,28168588
+(1,131:8118053,28168588:2541346,550500,235932
+r1,131:8118053,28168588:0,786432,235932
+k1,131:10266183,28168588:2148130
+g1,131:10659399,28168588
+)
+g1,131:10659399,28168588
+(1,131:10659399,28168588:5725307,550500,235932
+g1,131:11052615,28168588
+k1,131:15991490,28168588:4938875
+g1,131:16384706,28168588
+)
+g1,131:16384706,28168588
+(1,131:16384706,28168588:3710072,550500,235932
+g1,131:16777922,28168588
+k1,131:19701562,28168588:2923640
+g1,131:20094778,28168588
+)
+g1,131:20094778,28168588
+(1,131:20094778,28168588:5364860,550500,235932
+g1,131:20487994,28168588
+k1,131:25066422,28168588:4578428
+g1,131:25459638,28168588
+)
+g1,131:25459638,28168588
+(1,132:25459638,28168588:5580583,550500,235932
+g1,131:25852854,28168588
+k1,132:31040221,28168588:5187367
+)
+g1,132:31040221,28168588
+)
+(1,133:8118053,28955020:22922168,550500,235932
+g1,132:8118053,28955020
+(1,132:8118053,28955020:2541346,550500,235932
+r1,132:8118053,28955020:0,786432,235932
+k1,132:10266183,28955020:2148130
+g1,132:10659399,28955020
+)
+g1,132:10659399,28955020
+(1,132:10659399,28955020:5725307,550500,235932
+g1,132:11052615,28955020
+k1,132:15991490,28955020:4938875
+g1,132:16384706,28955020
+)
+g1,132:16384706,28955020
+(1,132:16384706,28955020:3710072,550500,235932
+g1,132:16777922,28955020
+k1,132:19701562,28955020:2923640
+g1,132:20094778,28955020
+)
+g1,132:20094778,28955020
+(1,132:20094778,28955020:5364860,550500,235932
+g1,132:20487994,28955020
+k1,132:25066422,28955020:4578428
+g1,132:25459638,28955020
+)
+g1,132:25459638,28955020
+(1,133:25459638,28955020:5580583,550500,235932
+g1,132:25852854,28955020
+k1,133:31040221,28955020:5187367
+)
+g1,133:31040221,28955020
+)
+(1,134:8118053,29741452:22922168,550500,235932
+g1,133:8118053,29741452
+(1,133:8118053,29741452:2541346,550500,235932
+r1,133:8118053,29741452:0,786432,235932
+k1,133:10266183,29741452:2148130
+g1,133:10659399,29741452
+)
+g1,133:10659399,29741452
+(1,133:10659399,29741452:5725307,550500,235932
+g1,133:11052615,29741452
+k1,133:15991490,29741452:4938875
+g1,133:16384706,29741452
+)
+g1,133:16384706,29741452
+(1,133:16384706,29741452:3710072,550500,235932
+g1,133:16777922,29741452
+k1,133:19701562,29741452:2923640
+g1,133:20094778,29741452
+)
+g1,133:20094778,29741452
+(1,133:20094778,29741452:5364860,550500,235932
+g1,133:20487994,29741452
+k1,133:25066422,29741452:4578428
+g1,133:25459638,29741452
+)
+g1,133:25459638,29741452
+(1,134:25459638,29741452:5580583,550500,235932
+g1,133:25852854,29741452
+k1,134:31040221,29741452:5187367
+)
+g1,134:31040221,29741452
+)
+]
+$1,135:31040221,27188920
+)
+g1,136:31040221,27188920
+k1,136:35428915,27188920:4388694
+)
+]
+]
+(1,139:3729359,33096347:31699556,647495,183500
+(1,139:3729359,33096347:1592523,608173,0
+g1,139:3729359,33096347
+x1,139:4260200,33096347
+g1,139:5321882,33096347
+)
+x1,139:9781055,33096347
+k1,139:35428915,33096347:25647860
+g1,139:35428915,33096347
+)
+(1,141:3729359,34924982:31699556,655359,0
+(1,141:3729359,34924982:1592523,608173,0
+g1,141:3729359,34924982
+x1,141:4260200,34924982
+g1,141:5321882,34924982
+)
+x1,141:10400260,34924982
+k1,141:35428916,34924982:25028656
+g1,141:35428916,34924982
+)
+(1,143:3729359,36753617:31699556,655359,0
+(1,143:3729359,36753617:1592523,608173,0
+g1,143:3729359,36753617
+x1,143:4260200,36753617
+g1,143:5321882,36753617
+)
+x1,143:10289947,36753617
+k1,143:35428915,36753617:25138968
+g1,143:35428915,36753617
+)
+]
+(1,145:3729359,53188833:31699556,550500,235932
+(1,145:3729359,53188833:31699556,550500,235932
+(1,145:3729359,53188833:31699556,550500,235932
+[1,145:3729359,53188833:31699556,550500,235932
+(1,145:3729359,53188833:31699556,550500,235932
+(1,145:3729359,53188833:0,0,0
+[1,145:3729359,53188833:31699556,0,0
+(1,145:3729359,53188833:31699556,0,0
+h1,145:3729359,53188833:0,0,0
+k1,145:19579137,53188833:15849778
+k1,145:35428915,53188833:15849778
+)
+]
+k1,145:3729359,53188833:-31699556
+)
+g1,145:3729359,53188833
+[1,145:3729359,53188833:31699556,0,0
+(1,145:3729359,53188833:31699556,0,0
+k1,145:19579137,53188833:15849778
+h1,145:19579137,53188833:0,0,0
+g1,145:19579137,53188833
+k1,145:35428915,53188833:15849778
+)
+]
+g1,145:35428915,53188833
+(1,145:35428915,53188833:0,550500,235932
+k1,145:3729359,53188833:-31699556
+[1,145:3729359,53188833:31699556,550500,235932
+(1,145:3729359,53188833:31699556,550500,235932
+k1,145:31997371,53188833:28268012
+h1,145:31997371,53188833:0,0,0
+x1,145:32443381,53188833
+x1,145:33371809,53188833
+g1,145:33590262,53188833
+x1,145:33917943,53188833
+g1,145:34136396,53188833
+x1,145:34664327,53188833
+g1,145:34882780,53188833
+x1,145:35210461,53188833
+g1,145:35428914,53188833
+r1,145:35428914,53188833:0,786432,235932
+g1,145:35428914,53188833
+g1,145:35428914,53188833
+)
+]
+)
+)
+]
+)
+g1,145:35428915,53188833
+)
+)
+]
+(1,145:4736286,4736286:0,0,0
+[1,145:0,4736286:31699556,0,0
+(1,145:0,0:31699556,0,0
+h1,145:0,0:0,0,0
+(1,145:0,0:0,0,0
+(1,145:0,0:0,0,0
+g1,145:0,0
+(1,145:0,0:0,0,55380990
+(1,145:0,55380990:0,0,0
+g1,145:0,55380990
+)
+)
+g1,145:0,0
+)
+)
+k1,145:31699556,0:31699556
+g1,145:31699556,0
+)
+]
+)
+]
+]
+!19504
+}4
+Input:178:D:\Computation-2\Report\test.aux
+!53
+Postamble:
+Count:1001
+!26
+Post scriptum:

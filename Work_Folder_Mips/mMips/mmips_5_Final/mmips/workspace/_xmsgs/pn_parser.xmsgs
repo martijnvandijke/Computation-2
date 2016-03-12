@@ -8,101 +8,10 @@
 <!-- Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/verilog/add.v&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/verilog/alu.v&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/verilog/aluctrl.v&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/verilog/branch_ctrl.v&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/verilog/ctrl.v&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/verilog/decoder.v&quot; into library work</arg>
-</msg>
-
 <msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/verilog/hazard.v&quot; into library work</arg>
 </msg>
 
-<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/verilog/hazard.v</arg>&quot; Line <arg fmt="%d" index="2">124</arg>. <arg fmt="%s" index="3">Syntax error near &quot;if&quot;.</arg>
-</msg>
-
-<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/verilog/hazard.v</arg>&quot; Line <arg fmt="%d" index="2">132</arg>. <arg fmt="%s" index="3">Syntax error near &quot;begin&quot;.</arg>
-</msg>
-
-<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/verilog/hazard.v</arg>&quot; Line <arg fmt="%d" index="2">136</arg>. <arg fmt="%s" index="3">Syntax error near &quot;else&quot;.</arg>
-</msg>
-
-<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/verilog/hazard.v</arg>&quot; Line <arg fmt="%d" index="2">196</arg>. <arg fmt="%s" index="3">Syntax error near &quot;endmodule&quot;.</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/verilog/hazard_ctrl.v&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/verilog/imm2word.v&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/verilog/mMIPS_sim.v&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">D:/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/verilog/mMIPS_sim.v</arg>&quot; Line <arg fmt="%d" index="2">20</arg>. <arg fmt="%s" index="3">Include file found: &apos;D:/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/verilog/mmips_defines.v&apos; in file &quot;D:/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/verilog/mMIPS_sim.v&quot; line 20
-</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/verilog/memdev.v&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/verilog/mmips.v&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">D:/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/verilog/mmips.v</arg>&quot; Line <arg fmt="%d" index="2">18</arg>. <arg fmt="%s" index="3">Include file found: &apos;D:/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/verilog/mmips_defines.v&apos; in file &quot;D:/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/verilog/mmips.v&quot; line 18
-</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/verilog/mux.v&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">D:/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/verilog/mux.v</arg>&quot; Line <arg fmt="%d" index="2">19</arg>. <arg fmt="%s" index="3">Include file found: &apos;D:/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/verilog/mmips_defines.v&apos; in file &quot;D:/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/verilog/mux.v&quot; line 19
-</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/verilog/ram.v&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">D:/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/verilog/ram.v</arg>&quot; Line <arg fmt="%d" index="2">19</arg>. <arg fmt="%s" index="3">Include file found: &apos;D:/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/verilog/mmips_defines.v&apos; in file &quot;D:/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/verilog/ram.v&quot; line 19
-</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/verilog/regfile16.v&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">D:/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/verilog/regfile16.v</arg>&quot; Line <arg fmt="%d" index="2">19</arg>. <arg fmt="%s" index="3">Include file found: &apos;D:/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/verilog/mmips_defines.v&apos; in file &quot;D:/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/verilog/regfile16.v&quot; line 19
-</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/verilog/register.v&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">D:/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/verilog/register.v</arg>&quot; Line <arg fmt="%d" index="2">18</arg>. <arg fmt="%s" index="3">Include file found: &apos;D:/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/verilog/mmips_defines.v&apos; in file &quot;D:/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/verilog/register.v&quot; line 18
-</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/verilog/rom.v&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">D:/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/verilog/rom.v</arg>&quot; Line <arg fmt="%d" index="2">19</arg>. <arg fmt="%s" index="3">Include file found: &apos;D:/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/verilog/mmips_defines.v&apos; in file &quot;D:/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/verilog/rom.v&quot; line 19
-</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/verilog/shift.v&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/verilog/signextend.v&quot; into library work</arg>
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/verilog/hazard.v</arg>&quot; Line <arg fmt="%d" index="2">159</arg>. <arg fmt="%s" index="3">Syntax error near &quot;else&quot;.</arg>
 </msg>
 
 </messages>
