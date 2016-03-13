@@ -30,8 +30,11 @@ module BRANCH_CTRL(BranchOp, AluZero, Branch);
                 
             1:  // Branch on equal
                 begin
-					 //always branch
+					 //if previous branch was taken then branch
+						 if( Branch_previous != 0 )
 							Branch = 1'b1;
+							
+							//old code
                     if (AluZero == 1)
                         Branch = 1'b1;
                     else
@@ -40,6 +43,7 @@ module BRANCH_CTRL(BranchOp, AluZero, Branch);
                 
             2:  // Branch on non equal
                 begin
+					 
 							Branch = 1'b1;
                     if (AluZero != 1'b1)
                         Branch = 1'b1;

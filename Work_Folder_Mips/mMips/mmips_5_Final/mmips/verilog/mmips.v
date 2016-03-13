@@ -206,9 +206,9 @@ module mMIPS(
 	 
 	 //forwarding wires
 	 
-	 wire 	[2:0]	 bus_forwarding1;
+	 wire 	[1:0]	 bus_sel_forwarding1;
 	 wire		[31:0]	 bus_forwarding1_out;
-	 wire		[2:0]	 bus_forwarding2;
+	 wire		[1:0]	 bus_sel_forwarding2;
 	 wire		[31:0]	 bus_forwarding2_out;
 	 
     
@@ -262,21 +262,21 @@ module mMIPS(
         .out(bus_mux6));
 		  
 		  //extra muxes for forwarding
-	MUX4 #(.WIDTH(`DWORD)) mux7(
+	MUX4 #(.WIDTH(`DWORD)) fw1(
 		 .in0(bus_registers_1), 
 		 .in1(bus_mux6), 
 		 .in2(bus_ex_alu_result), 
 		 .in3(bus_mux3), 
-		 .sel(bus_forwarding1),
+		 .sel(bus_sel_forwarding1),
 		 .out(bus_forwarding1_out)
 		);
 			  
-	MUX4 #(.WIDTH(`DWORD)) mux8(
+	MUX4 #(.WIDTH(`DWORD)) fw2(
 		 .in0(bus_registers_2), 
 		 .in1(bus_mux6), 
 		 .in2(bus_ex_alu_result), 
 		 .in3(bus_mux3), 
-		 .sel(bus_forwarding2),
+		 .sel(bus_sel_forwarding2),
 		 .out(bus_forwarding2_out)
 		);	  
 
@@ -437,8 +437,8 @@ module mMIPS(
         .pipe_en(bus_pipe_en),
         .imem_en(rom_r),
 		  //extra forwarding inputs
-		  .forwarding1(bus_forwarding1),
-		  .forwarding2(bus_forwarding2));
+		  .forwarding1(bus_sel_forwarding1),
+		  .forwarding2(bus_sel_forwarding2));
 		  //.CtrlMemMemread(bus_ex_ctrl_mem_memread),
 		  //.CtrlEXMemread(bus_id_ctrl_mem_memread));
 		 // );

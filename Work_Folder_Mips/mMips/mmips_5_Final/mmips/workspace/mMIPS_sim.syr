@@ -4,13 +4,13 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.14 secs
+Total CPU time to Xst completion: 0.12 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.14 secs
+Total CPU time to Xst completion: 0.12 secs
  
 --> Reading design: mMIPS_sim.prj
 
@@ -105,56 +105,56 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\signextend.v" into library work
+Analyzing Verilog file "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\signextend.v" into library work
 Parsing module <SIGNEXTEND_BYTE>.
-Analyzing Verilog file "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\shift.v" into library work
+Analyzing Verilog file "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\shift.v" into library work
 Parsing module <SHIFTLEFT>.
-Analyzing Verilog file "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\register.v" into library work
-Parsing verilog file "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\/mmips_defines.v" included at line 18.
+Analyzing Verilog file "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\register.v" into library work
+Parsing verilog file "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\/mmips_defines.v" included at line 18.
 Parsing module <REGISTER>.
-Analyzing Verilog file "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\regfile16.v" into library work
-Parsing verilog file "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\/mmips_defines.v" included at line 19.
+Analyzing Verilog file "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\regfile16.v" into library work
+Parsing verilog file "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\/mmips_defines.v" included at line 19.
 Parsing module <REGFILE16>.
-WARNING:HDLCompiler:991 - "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\regfile16.v" Line 61: Event expressions must result in a singular type
-WARNING:HDLCompiler:991 - "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\regfile16.v" Line 63: Event expressions must result in a singular type
-Analyzing Verilog file "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\mux.v" into library work
-Parsing verilog file "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\/mmips_defines.v" included at line 19.
+WARNING:HDLCompiler:991 - "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\regfile16.v" Line 61: Event expressions must result in a singular type
+WARNING:HDLCompiler:991 - "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\regfile16.v" Line 63: Event expressions must result in a singular type
+Analyzing Verilog file "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\mux.v" into library work
+Parsing verilog file "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\/mmips_defines.v" included at line 19.
 Parsing module <MUX2>.
 Parsing module <MUX3>.
 Parsing module <MUX4>.
-Analyzing Verilog file "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\memdev.v" into library work
+Analyzing Verilog file "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\memdev.v" into library work
 Parsing module <MEMDEV>.
-Analyzing Verilog file "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\imm2word.v" into library work
+Analyzing Verilog file "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\imm2word.v" into library work
 Parsing module <IMM2WORD>.
-Analyzing Verilog file "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\hazard_ctrl.v" into library work
+Analyzing Verilog file "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\hazard_ctrl.v" into library work
 Parsing module <HAZARD_CTRL>.
-Analyzing Verilog file "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\hazard.v" into library work
+Analyzing Verilog file "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\hazard.v" into library work
 Parsing module <HAZARD>.
-Analyzing Verilog file "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\decoder.v" into library work
+Analyzing Verilog file "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\decoder.v" into library work
 Parsing module <DECODER>.
-Analyzing Verilog file "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\ctrl.v" into library work
+Analyzing Verilog file "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\ctrl.v" into library work
 Parsing module <CTRL>.
-Analyzing Verilog file "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\branch_ctrl.v" into library work
+Analyzing Verilog file "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\branch_ctrl.v" into library work
 Parsing module <BRANCH_CTRL>.
-Analyzing Verilog file "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\aluctrl.v" into library work
+Analyzing Verilog file "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\aluctrl.v" into library work
 Parsing module <ALUCTRL>.
-Analyzing Verilog file "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\alu.v" into library work
+Analyzing Verilog file "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\alu.v" into library work
 Parsing module <ALU>.
-Analyzing Verilog file "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\add.v" into library work
+Analyzing Verilog file "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\add.v" into library work
 Parsing module <ADD>.
-Analyzing Verilog file "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\rom.v" into library work
-Parsing verilog file "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\/mmips_defines.v" included at line 19.
+Analyzing Verilog file "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\rom.v" into library work
+Parsing verilog file "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\/mmips_defines.v" included at line 19.
 Parsing module <rom>.
-WARNING:HDLCompiler:991 - "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\rom.v" Line 114: Event expressions must result in a singular type
-Analyzing Verilog file "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\ram.v" into library work
-Parsing verilog file "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\/mmips_defines.v" included at line 19.
+WARNING:HDLCompiler:991 - "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\rom.v" Line 114: Event expressions must result in a singular type
+Analyzing Verilog file "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\ram.v" into library work
+Parsing verilog file "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\/mmips_defines.v" included at line 19.
 Parsing module <ram>.
-WARNING:HDLCompiler:991 - "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\ram.v" Line 172: Event expressions must result in a singular type
-Analyzing Verilog file "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\mmips.v" into library work
-Parsing verilog file "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\/mmips_defines.v" included at line 18.
+WARNING:HDLCompiler:991 - "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\ram.v" Line 172: Event expressions must result in a singular type
+Analyzing Verilog file "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\mmips.v" into library work
+Parsing verilog file "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\/mmips_defines.v" included at line 18.
 Parsing module <mMIPS>.
-Analyzing Verilog file "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\mMIPS_sim.v" into library work
-Parsing verilog file "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\/mmips_defines.v" included at line 20.
+Analyzing Verilog file "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\mMIPS_sim.v" into library work
+Parsing verilog file "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\/mmips_defines.v" included at line 20.
 Parsing module <mMIPS_sim>.
 
 =========================================================================
@@ -172,11 +172,13 @@ Elaborating module <MUX3(WIDTH=32)>.
 Elaborating module <MUX3(WIDTH=5)>.
 
 Elaborating module <MUX4(WIDTH=32)>.
+WARNING:HDLCompiler:189 - "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\mmips.v" Line 270: Size mismatch in connection of port <sel>. Formal port size is 2-bit while actual signal size is 3-bit.
+WARNING:HDLCompiler:189 - "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\mmips.v" Line 279: Size mismatch in connection of port <sel>. Formal port size is 2-bit while actual signal size is 3-bit.
 
 Elaborating module <DECODER>.
 
 Elaborating module <CTRL>.
-WARNING:HDLCompiler:1127 - "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\mmips.v" Line 288: Assignment to bus_ctrl_c1 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\mmips.v" Line 315: Assignment to bus_ctrl_c1 ignored, since the identifier is never used
 
 Elaborating module <SHIFTLEFT>.
 
@@ -197,6 +199,10 @@ Elaborating module <BRANCH_CTRL>.
 Elaborating module <HAZARD_CTRL>.
 
 Elaborating module <HAZARD>.
+WARNING:HDLCompiler:189 - "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\mmips.v" Line 440: Size mismatch in connection of port <forwarding1>. Formal port size is 2-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:1127 - "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\mmips.v" Line 440: Assignment to bus_forwarding1 ignored, since the identifier is never used
+WARNING:HDLCompiler:189 - "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\mmips.v" Line 441: Size mismatch in connection of port <forwarding2>. Formal port size is 2-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:1127 - "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\mmips.v" Line 441: Assignment to bus_forwarding2 ignored, since the identifier is never used
 
 Elaborating module <REGISTER(WIDTH=32)>.
 
@@ -209,10 +215,12 @@ Elaborating module <REGISTER(WIDTH=1)>.
 Elaborating module <REGISTER(WIDTH=2)>.
 
 Elaborating module <MEMDEV>.
+WARNING:HDLCompiler:634 - "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\mmips.v" Line 209: Net <bus_sel_forwarding1[1]> does not have a driver.
+WARNING:HDLCompiler:634 - "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\mmips.v" Line 211: Net <bus_sel_forwarding2[1]> does not have a driver.
 
 Elaborating module <ram(RAM_BRAM=64)>.
-WARNING:HDLCompiler:91 - "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\ram.v" Line 120: Signal <enable> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\ram.v" Line 128: Signal <ram_din> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\ram.v" Line 120: Signal <enable> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\ram.v" Line 128: Signal <ram_din> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 
 Elaborating module <RAMB16BWER(INIT_FILE="../memory/ram/mips_ram00.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
 
@@ -445,40 +453,44 @@ Elaborating module <RAMB16BWER(INIT_FILE="../memory/rom/mips_rom47.hex",SIM_DEVI
 =========================================================================
 
 Synthesizing Unit <mMIPS_sim>.
-    Related source file is "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\mMIPS_sim.v".
+    Related source file is "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\mMIPS_sim.v".
     Summary:
 	no macro.
 Unit <mMIPS_sim> synthesized.
 
 Synthesizing Unit <mMIPS>.
-    Related source file is "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\mmips.v".
-INFO:Xst:3210 - "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\mmips.v" line 272: Output port <c1> of the instance <ctrl> is unconnected or connected to loadless signal.
+    Related source file is "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\mmips.v".
+INFO:Xst:3210 - "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\mmips.v" line 299: Output port <c1> of the instance <ctrl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\mmips.v" line 419: Output port <forwarding1> of the instance <hazard> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\mmips.v" line 419: Output port <forwarding2> of the instance <hazard> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <bus_sel_forwarding1<1:0>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <bus_sel_forwarding2<1:0>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
     Summary:
 	no macro.
 Unit <mMIPS> synthesized.
 
 Synthesizing Unit <MUX2>.
-    Related source file is "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\mux.v".
+    Related source file is "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\mux.v".
     Summary:
 	inferred   1 Multiplexer(s).
 Unit <MUX2> synthesized.
 
 Synthesizing Unit <MUX3_1>.
-    Related source file is "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\mux.v".
+    Related source file is "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\mux.v".
         WIDTH = 32
     Summary:
 	inferred   1 Multiplexer(s).
 Unit <MUX3_1> synthesized.
 
 Synthesizing Unit <MUX3_2>.
-    Related source file is "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\mux.v".
+    Related source file is "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\mux.v".
         WIDTH = 5
     Summary:
 	inferred   1 Multiplexer(s).
 Unit <MUX3_2> synthesized.
 
 Synthesizing Unit <MUX4>.
-    Related source file is "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\mux.v".
+    Related source file is "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\mux.v".
         WIDTH = 32
     Found 32-bit 4-to-1 multiplexer for signal <out> created at line 68.
     Summary:
@@ -486,13 +498,13 @@ Synthesizing Unit <MUX4>.
 Unit <MUX4> synthesized.
 
 Synthesizing Unit <DECODER>.
-    Related source file is "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\decoder.v".
+    Related source file is "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\decoder.v".
     Summary:
 	no macro.
 Unit <DECODER> synthesized.
 
 Synthesizing Unit <CTRL>.
-    Related source file is "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\ctrl.v".
+    Related source file is "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\ctrl.v".
 WARNING:Xst:737 - Found 1-bit latch for signal <AluSel<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <AluSel<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <HiLoWrite>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -501,92 +513,96 @@ WARNING:Xst:737 - Found 1-bit latch for signal <HiLoWrite>. Latches may be gener
 Unit <CTRL> synthesized.
 
 Synthesizing Unit <SHIFTLEFT>.
-    Related source file is "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\shift.v".
+    Related source file is "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\shift.v".
 WARNING:Xst:647 - Input <in<31:30>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Summary:
 	no macro.
 Unit <SHIFTLEFT> synthesized.
 
 Synthesizing Unit <SIGNEXTEND_BYTE>.
-    Related source file is "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\signextend.v".
+    Related source file is "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\signextend.v".
 WARNING:Xst:647 - Input <in<31:8>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Summary:
 	no macro.
 Unit <SIGNEXTEND_BYTE> synthesized.
 
 Synthesizing Unit <IMM2WORD>.
-    Related source file is "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\imm2word.v".
+    Related source file is "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\imm2word.v".
     Summary:
 	no macro.
 Unit <IMM2WORD> synthesized.
 
 Synthesizing Unit <ALUCTRL>.
-    Related source file is "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\aluctrl.v".
+    Related source file is "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\aluctrl.v".
     Summary:
 	inferred   1 Multiplexer(s).
 Unit <ALUCTRL> synthesized.
 
 Synthesizing Unit <ALU>.
-    Related source file is "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\alu.v".
-    Found 32-bit subtractor for signal <a[31]_b[31]_sub_6_OUT> created at line 70.
-    Found 32-bit adder for signal <a[31]_b[31]_add_2_OUT> created at line 61.
-    Found 32x32-bit multiplier for signal <a[31]_b[31]_MuLt_10_OUT> created at line 128.
-    Found 32-bit 23-to-1 multiplexer for signal <_n0111> created at line 35.
-    Found 32-bit comparator greater for signal <b[31]_a[31]_LessThan_7_o> created at line 73
-    Found 32-bit comparator greater for signal <a[31]_b[31]_LessThan_9_o> created at line 79
-    Found 32-bit comparator greater for signal <GND_16_o_a[31]_LessThan_12_o> created at line 136
+    Related source file is "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\alu.v".
+    Found 32-bit subtractor for signal <a[31]_b[31]_sub_7_OUT> created at line 77.
+    Found 32-bit adder for signal <a[31]_b[31]_add_2_OUT> created at line 62.
+    Found 32x32-bit multiplier for signal <a[31]_b[31]_MuLt_14_OUT> created at line 152.
+    Found 32-bit 23-to-1 multiplexer for signal <_n0119> created at line 35.
+WARNING:Xst:737 - Found 1-bit latch for signal <zero>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 32-bit comparator greater for signal <b[31]_a[31]_LessThan_9_o> created at line 85
+    Found 32-bit comparator greater for signal <a[31]_b[31]_LessThan_12_o> created at line 97
+    Found 32-bit comparator greater for signal <GND_16_o_a[31]_LessThan_16_o> created at line 160
     Summary:
 	inferred   1 Multiplier(s).
-	inferred   1 Adder/Subtractor(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred   1 Latch(s).
 	inferred   3 Comparator(s).
-	inferred  29 Multiplexer(s).
+	inferred   4 Multiplexer(s).
 Unit <ALU> synthesized.
 
 Synthesizing Unit <REGFILE16>.
-    Related source file is "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\regfile16.v".
+    Related source file is "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\regfile16.v".
     Found 32x32-bit dual-port RAM <Mram_regs> for signal <regs>.
     Summary:
 	inferred   2 RAM(s).
 Unit <REGFILE16> synthesized.
 
 Synthesizing Unit <ADD>.
-    Related source file is "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\add.v".
+    Related source file is "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\add.v".
     Found 32-bit adder for signal <r> created at line 27.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 Unit <ADD> synthesized.
 
 Synthesizing Unit <BRANCH_CTRL>.
-    Related source file is "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\branch_ctrl.v".
+    Related source file is "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\branch_ctrl.v".
     Found 1-bit 4-to-1 multiplexer for signal <Branch> created at line 26.
     Summary:
 	inferred   1 Multiplexer(s).
 Unit <BRANCH_CTRL> synthesized.
 
 Synthesizing Unit <HAZARD_CTRL>.
-    Related source file is "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\hazard_ctrl.v".
+    Related source file is "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\hazard_ctrl.v".
     Summary:
 	inferred  11 Multiplexer(s).
 Unit <HAZARD_CTRL> synthesized.
 
 Synthesizing Unit <HAZARD>.
-    Related source file is "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\hazard.v".
+    Related source file is "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\hazard.v".
 WARNING:Xst:647 - Input <Instr<15:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-    Found 5-bit comparator equal for signal <IDEXWriteRegisterRt[4]_Instr[25]_equal_5_o> created at line 101
-    Found 5-bit comparator equal for signal <IDEXWriteRegisterRd[4]_Instr[25]_equal_7_o> created at line 102
-    Found 5-bit comparator equal for signal <IDEXWriteRegisterRt[4]_Instr[20]_equal_9_o> created at line 103
-    Found 5-bit comparator equal for signal <IDEXWriteRegisterRd[4]_Instr[20]_equal_11_o> created at line 104
-    Found 5-bit comparator equal for signal <EXMEMWriteRegister[4]_Instr[25]_equal_13_o> created at line 108
-    Found 5-bit comparator equal for signal <EXMEMWriteRegister[4]_Instr[20]_equal_14_o> created at line 109
-    Found 5-bit comparator equal for signal <MEMWBWriteRegister[4]_Instr[25]_equal_16_o> created at line 113
-    Found 5-bit comparator equal for signal <MEMWBWriteRegister[4]_Instr[20]_equal_17_o> created at line 114
+WARNING:Xst:737 - Found 1-bit latch for signal <hazard>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 5-bit comparator equal for signal <MEMWBWriteRegister[4]_Instr[25]_equal_3_o> created at line 138
+    Found 5-bit comparator equal for signal <MEMWBWriteRegister[4]_Instr[20]_equal_7_o> created at line 145
+    Found 5-bit comparator equal for signal <EXMEMWriteRegister[4]_Instr[25]_equal_11_o> created at line 150
+    Found 5-bit comparator equal for signal <EXMEMWriteRegister[4]_Instr[20]_equal_15_o> created at line 155
+    Found 5-bit comparator equal for signal <IDEXWriteRegisterRt[4]_Instr[25]_equal_20_o> created at line 161
+    Found 5-bit comparator equal for signal <IDEXWriteRegisterRd[4]_Instr[25]_equal_22_o> created at line 162
+    Found 5-bit comparator equal for signal <IDEXWriteRegisterRt[4]_Instr[20]_equal_25_o> created at line 165
+    Found 5-bit comparator equal for signal <IDEXWriteRegisterRd[4]_Instr[20]_equal_27_o> created at line 166
     Summary:
+	inferred   1 Latch(s).
 	inferred   8 Comparator(s).
-	inferred  11 Multiplexer(s).
+	inferred  17 Multiplexer(s).
 Unit <HAZARD> synthesized.
 
 Synthesizing Unit <REGISTER_1>.
-    Related source file is "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\register.v".
+    Related source file is "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\register.v".
         WIDTH = 32
     Found 32-bit register for signal <out>.
     Summary:
@@ -594,7 +610,7 @@ Synthesizing Unit <REGISTER_1>.
 Unit <REGISTER_1> synthesized.
 
 Synthesizing Unit <REGISTER_2>.
-    Related source file is "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\register.v".
+    Related source file is "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\register.v".
         WIDTH = 5
     Found 5-bit register for signal <out>.
     Summary:
@@ -602,7 +618,7 @@ Synthesizing Unit <REGISTER_2>.
 Unit <REGISTER_2> synthesized.
 
 Synthesizing Unit <REGISTER_3>.
-    Related source file is "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\register.v".
+    Related source file is "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\register.v".
         WIDTH = 6
     Found 6-bit register for signal <out>.
     Summary:
@@ -610,7 +626,7 @@ Synthesizing Unit <REGISTER_3>.
 Unit <REGISTER_3> synthesized.
 
 Synthesizing Unit <REGISTER_4>.
-    Related source file is "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\register.v".
+    Related source file is "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\register.v".
         WIDTH = 1
     Found 1-bit register for signal <out>.
     Summary:
@@ -618,7 +634,7 @@ Synthesizing Unit <REGISTER_4>.
 Unit <REGISTER_4> synthesized.
 
 Synthesizing Unit <REGISTER_5>.
-    Related source file is "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\register.v".
+    Related source file is "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\register.v".
         WIDTH = 2
     Found 2-bit register for signal <out>.
     Summary:
@@ -626,7 +642,7 @@ Synthesizing Unit <REGISTER_5>.
 Unit <REGISTER_5> synthesized.
 
 Synthesizing Unit <MEMDEV>.
-    Related source file is "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\memdev.v".
+    Related source file is "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\memdev.v".
 WARNING:Xst:647 - Input <a_read_reg<1:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <a_read_reg<30:3>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 1-bit register for signal <sending>.
@@ -637,7 +653,7 @@ WARNING:Xst:647 - Input <a_read_reg<30:3>> is never used. This port will be pres
 Unit <MEMDEV> synthesized.
 
 Synthesizing Unit <ram>.
-    Related source file is "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\ram.v".
+    Related source file is "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\ram.v".
         RAM_BRAM = 64
     Found 1-bit register for signal <lblw>.
     Found 2-bit register for signal <r>.
@@ -645,7 +661,7 @@ Synthesizing Unit <ram>.
     Found 2-bit register for signal <byteselect>.
     Found 32-bit register for signal <addr>.
     Found 4x4-bit Read Only RAM for signal <_n2944>
-    Found 32-bit 4-to-1 multiplexer for signal <byteselect[1]_GND_29_o_wide_mux_111_OUT> created at line 176.
+    Found 32-bit 4-to-1 multiplexer for signal <byteselect[1]_GND_31_o_wide_mux_111_OUT> created at line 176.
     Found 1-bit 4-to-1 multiplexer for signal <addr[1]_ram_din[31]_wide_mux_20_OUT[31]> created at line 137.
     Found 1-bit 4-to-1 multiplexer for signal <addr[1]_ram_din[31]_wide_mux_20_OUT[30]> created at line 137.
     Found 1-bit 4-to-1 multiplexer for signal <addr[1]_ram_din[31]_wide_mux_20_OUT[29]> created at line 137.
@@ -670,11 +686,11 @@ Synthesizing Unit <ram>.
     Found 1-bit 3-to-1 multiplexer for signal <addr[1]_ram_din[31]_wide_mux_20_OUT[10]> created at line 137.
     Found 1-bit 3-to-1 multiplexer for signal <addr[1]_ram_din[31]_wide_mux_20_OUT[9]> created at line 137.
     Found 1-bit 3-to-1 multiplexer for signal <addr[1]_ram_din[31]_wide_mux_20_OUT[8]> created at line 137.
-    Found 32-bit 64-to-1 multiplexer for signal <bramid[6]_X_28_o_wide_mux_112_OUT> created at line 184.
-    Found 8-bit 64-to-1 multiplexer for signal <bramid[6]_X_28_o_wide_mux_107_OUT> created at line 177.
-    Found 8-bit 64-to-1 multiplexer for signal <bramid[6]_X_28_o_wide_mux_108_OUT> created at line 178.
-    Found 8-bit 64-to-1 multiplexer for signal <bramid[6]_X_28_o_wide_mux_109_OUT> created at line 179.
-    Found 8-bit 64-to-1 multiplexer for signal <bramid[6]_X_28_o_wide_mux_110_OUT> created at line 180.
+    Found 32-bit 64-to-1 multiplexer for signal <bramid[6]_X_30_o_wide_mux_112_OUT> created at line 184.
+    Found 8-bit 64-to-1 multiplexer for signal <bramid[6]_X_30_o_wide_mux_107_OUT> created at line 177.
+    Found 8-bit 64-to-1 multiplexer for signal <bramid[6]_X_30_o_wide_mux_108_OUT> created at line 178.
+    Found 8-bit 64-to-1 multiplexer for signal <bramid[6]_X_30_o_wide_mux_109_OUT> created at line 179.
+    Found 8-bit 64-to-1 multiplexer for signal <bramid[6]_X_30_o_wide_mux_110_OUT> created at line 180.
 WARNING:Xst:737 - Found 1-bit latch for signal <byteselect_before<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <byteselect_before<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <bramid<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -793,8 +809,8 @@ WARNING:Xst:737 - Found 1-bit latch for signal <ENA<3>>. Latches may be generate
 WARNING:Xst:737 - Found 1-bit latch for signal <ENA<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <ENA<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <ENA<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-    Found 32-bit comparator greater for signal <addr[31]_GND_29_o_LessThan_17_o> created at line 121
-    Found 21-bit comparator greater for signal <addr[31]_GND_29_o_LessThan_28_o> created at line 164
+    Found 32-bit comparator greater for signal <addr[31]_GND_31_o_LessThan_17_o> created at line 121
+    Found 21-bit comparator greater for signal <addr[31]_GND_31_o_LessThan_28_o> created at line 164
     Found 21-bit comparator lessequal for signal <n0031> created at line 165
     Summary:
 	inferred   1 RAM(s).
@@ -805,13 +821,13 @@ WARNING:Xst:737 - Found 1-bit latch for signal <ENA<0>>. Latches may be generate
 Unit <ram> synthesized.
 
 Synthesizing Unit <rom>.
-    Related source file is "C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\rom.v".
+    Related source file is "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\rom.v".
         ROM_BRAM = 48
     Found 14-bit register for signal <ADDRA>.
     Found 48-bit register for signal <ENA>.
     Found 32-bit register for signal <bramid>.
     Found 32-bit 48-to-1 multiplexer for signal <out> created at line 44.
-    Found 21-bit comparator greater for signal <rom_addr[31]_GND_242_o_LessThan_11_o> created at line 106
+    Found 21-bit comparator greater for signal <rom_addr[31]_GND_244_o_LessThan_11_o> created at line 106
     Found 21-bit comparator lessequal for signal <n0009> created at line 107
     Summary:
 	inferred  94 D-type flip-flop(s).
@@ -828,31 +844,32 @@ Macro Statistics
  4x4-bit single-port Read Only RAM                     : 1
 # Multipliers                                          : 1
  32x32-bit multiplier                                  : 1
-# Adders/Subtractors                                   : 3
- 32-bit adder                                          : 2
- 32-bit addsub                                         : 1
-# Registers                                            : 47
- 1-bit register                                        : 8
+# Adders/Subtractors                                   : 4
+ 32-bit adder                                          : 3
+ 32-bit subtractor                                     : 1
+# Registers                                            : 44
+ 1-bit register                                        : 7
  14-bit register                                       : 1
- 2-bit register                                        : 13
- 32-bit register                                       : 17
+ 2-bit register                                        : 12
+ 32-bit register                                       : 16
  48-bit register                                       : 1
  5-bit register                                        : 6
  6-bit register                                        : 1
-# Latches                                              : 121
- 1-bit latch                                           : 121
+# Latches                                              : 123
+ 1-bit latch                                           : 123
 # Comparators                                          : 16
  21-bit comparator greater                             : 2
  21-bit comparator lessequal                           : 2
  32-bit comparator greater                             : 4
  5-bit comparator equal                                : 8
-# Multiplexers                                         : 199
- 1-bit 2-to-1 multiplexer                              : 118
+# Multiplexers                                         : 182
+ 1-bit 2-to-1 multiplexer                              : 116
  1-bit 3-to-1 multiplexer                              : 8
  1-bit 4-to-1 multiplexer                              : 17
- 2-bit 2-to-1 multiplexer                              : 9
- 32-bit 2-to-1 multiplexer                             : 36
- 32-bit 4-to-1 multiplexer                             : 2
+ 2-bit 2-to-1 multiplexer                              : 17
+ 32-bit 2-to-1 multiplexer                             : 10
+ 32-bit 23-to-1 multiplexer                            : 1
+ 32-bit 4-to-1 multiplexer                             : 4
  32-bit 48-to-1 multiplexer                            : 1
  32-bit 64-to-1 multiplexer                            : 1
  5-bit 2-to-1 multiplexer                              : 2
@@ -862,7 +879,6 @@ Macro Statistics
  32-bit xor2                                           : 1
 
 =========================================================================
-INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
 
 =========================================================================
 *                       Advanced HDL Synthesis                          *
@@ -874,6 +890,7 @@ WARNING:Xst:1710 - FF/Latch <out_26> (without init value) has a constant value o
 WARNING:Xst:1710 - FF/Latch <out_27> (without init value) has a constant value of 0 in block <id_instr_25_0>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <out_28> (without init value) has a constant value of 0 in block <id_instr_25_0>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <out_29> (without init value) has a constant value of 0 in block <id_instr_25_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hazard> (without init value) has a constant value of 1 in block <hazard>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <addr_22> has a constant value of 0 in block <dmem>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <ADDRA_4> (without init value) has a constant value of 0 in block <dmem>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <ADDRA_0> (without init value) has a constant value of 0 in block <imem>. This FF/Latch will be trimmed during the optimization process.
@@ -908,7 +925,7 @@ WARNING:Xst:2677 - Node <bramid_31> of sequential type is unconnected in block <
 WARNING:Xst:2404 -  FFs/Latches <bramid<31:21>> (without init value) have a constant value of 0 in block <rom>.
 
 Synthesizing (advanced) Unit <REGFILE16>.
-INFO:Xst:3217 - HDL ADVISOR - Register <id_data_reg1/out> currently described with an asynchronous reset, could be combined with distributed RAM <Mram_regs> for implementation on block RAM resources if you made this reset synchronous instead.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_regs> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
     -----------------------------------------------------------------------
     | ram_type           | Distributed                         |          |
     -----------------------------------------------------------------------
@@ -924,7 +941,7 @@ INFO:Xst:3217 - HDL ADVISOR - Register <id_data_reg1/out> currently described wi
     |     addrB          | connected to signal <r_addr_reg1>   |          |
     |     doB            | connected to signal <r_data_reg1>   |          |
     -----------------------------------------------------------------------
-INFO:Xst:3217 - HDL ADVISOR - Register <id_data_reg2/out> currently described with an asynchronous reset, could be combined with distributed RAM <Mram_regs1> for implementation on block RAM resources if you made this reset synchronous instead.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_regs1> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
     -----------------------------------------------------------------------
     | ram_type           | Distributed                         |          |
     -----------------------------------------------------------------------
@@ -940,8 +957,6 @@ INFO:Xst:3217 - HDL ADVISOR - Register <id_data_reg2/out> currently described wi
     |     addrB          | connected to signal <r_addr_reg2>   |          |
     |     doB            | connected to signal <r_data_reg2>   |          |
     -----------------------------------------------------------------------
-INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_regs> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
-INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_regs1> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
 Unit <REGFILE16> synthesized (advanced).
 
 Synthesizing (advanced) Unit <ram>.
@@ -982,23 +997,24 @@ Macro Statistics
  4x4-bit single-port distributed Read Only RAM         : 1
 # Multipliers                                          : 1
  32x32-bit multiplier                                  : 1
-# Adders/Subtractors                                   : 3
- 32-bit adder                                          : 2
- 32-bit addsub                                         : 1
-# Registers                                            : 650
- Flip-Flops                                            : 650
+# Adders/Subtractors                                   : 4
+ 32-bit adder                                          : 3
+ 32-bit subtractor                                     : 1
+# Registers                                            : 615
+ Flip-Flops                                            : 615
 # Comparators                                          : 16
  21-bit comparator greater                             : 2
  21-bit comparator lessequal                           : 2
  32-bit comparator greater                             : 4
  5-bit comparator equal                                : 8
-# Multiplexers                                         : 260
- 1-bit 2-to-1 multiplexer                              : 150
+# Multiplexers                                         : 243
+ 1-bit 2-to-1 multiplexer                              : 148
  1-bit 3-to-1 multiplexer                              : 8
  1-bit 4-to-1 multiplexer                              : 48
- 2-bit 2-to-1 multiplexer                              : 9
- 32-bit 2-to-1 multiplexer                             : 35
- 32-bit 4-to-1 multiplexer                             : 1
+ 2-bit 2-to-1 multiplexer                              : 17
+ 32-bit 2-to-1 multiplexer                             : 9
+ 32-bit 23-to-1 multiplexer                            : 1
+ 32-bit 4-to-1 multiplexer                             : 3
  32-bit 48-to-1 multiplexer                            : 1
  32-bit 64-to-1 multiplexer                            : 1
  5-bit 2-to-1 multiplexer                              : 2
@@ -1012,6 +1028,7 @@ Macro Statistics
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
+WARNING:Xst:1710 - FF/Latch <hazard> (without init value) has a constant value of 1 in block <HAZARD>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <addr_22> has a constant value of 0 in block <ram>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <addr_23> has a constant value of 0 in block <ram>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <addr_24> has a constant value of 0 in block <ram>. This FF/Latch will be trimmed during the optimization process.
@@ -1028,6 +1045,7 @@ WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ADDRA_1> (without i
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ADDRA_2> (without init value) has a constant value of 0 in block <rom>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ADDRA_3> (without init value) has a constant value of 0 in block <rom>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ADDRA_4> (without init value) has a constant value of 0 in block <rom>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <id_instr_25_0/out_26> in Unit <mMIPS> is equivalent to the following 5 FFs/Latches, which will be removed : <id_instr_25_0/out_27> <id_instr_25_0/out_28> <id_instr_25_0/out_29> <id_instr_25_0/out_30> <id_instr_25_0/out_31> 
 INFO:Xst:2261 - The FF/Latch <id_instr_25_0/out_10> in Unit <mMIPS> is equivalent to the following 2 FFs/Latches, which will be removed : <id_immediate/out_10> <id_instr_10_6/out_4> 
 INFO:Xst:2261 - The FF/Latch <id_instr_25_0/out_11> in Unit <mMIPS> is equivalent to the following 2 FFs/Latches, which will be removed : <id_immediate/out_11> <id_instr_15_11/out_0> 
 INFO:Xst:2261 - The FF/Latch <id_instr_25_0/out_12> in Unit <mMIPS> is equivalent to the following 2 FFs/Latches, which will be removed : <id_immediate/out_12> <id_instr_15_11/out_1> 
@@ -1046,7 +1064,6 @@ INFO:Xst:2261 - The FF/Latch <id_immediate/out_16> in Unit <mMIPS> is equivalent
 INFO:Xst:2261 - The FF/Latch <id_instr_25_0/out_3> in Unit <mMIPS> is equivalent to the following 2 FFs/Latches, which will be removed : <id_immediate/out_3> <id_instr_5_0/out_3> 
 INFO:Xst:2261 - The FF/Latch <id_instr_25_0/out_4> in Unit <mMIPS> is equivalent to the following 2 FFs/Latches, which will be removed : <id_immediate/out_4> <id_instr_5_0/out_4> 
 INFO:Xst:2261 - The FF/Latch <id_instr_25_0/out_5> in Unit <mMIPS> is equivalent to the following 2 FFs/Latches, which will be removed : <id_immediate/out_5> <id_instr_5_0/out_5> 
-INFO:Xst:2261 - The FF/Latch <id_instr_25_0/out_26> in Unit <mMIPS> is equivalent to the following 5 FFs/Latches, which will be removed : <id_instr_25_0/out_27> <id_instr_25_0/out_28> <id_instr_25_0/out_29> <id_instr_25_0/out_30> <id_instr_25_0/out_31> 
 INFO:Xst:2261 - The FF/Latch <id_instr_25_0/out_6> in Unit <mMIPS> is equivalent to the following 2 FFs/Latches, which will be removed : <id_immediate/out_6> <id_instr_10_6/out_0> 
 INFO:Xst:2261 - The FF/Latch <id_instr_25_0/out_7> in Unit <mMIPS> is equivalent to the following 2 FFs/Latches, which will be removed : <id_immediate/out_7> <id_instr_10_6/out_1> 
 INFO:Xst:2261 - The FF/Latch <id_instr_25_0/out_8> in Unit <mMIPS> is equivalent to the following 2 FFs/Latches, which will be removed : <id_immediate/out_8> <id_instr_10_6/out_2> 
@@ -1068,15 +1085,535 @@ Optimizing unit <ALU> ...
 Optimizing unit <ram> ...
 
 Optimizing unit <rom> ...
-WARNING:Xst:1710 - FF/Latch <mMIPS/id_ctrl_ex_aluop/out_4> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
-INFO:Xst:2261 - The FF/Latch <mMIPS/id_ctrl_mem_memread/out_0> in Unit <mMIPS_sim> is equivalent to the following FF/Latch, which will be removed : <mMIPS/id_ctrl_wb_memtoreg/out_0> 
-INFO:Xst:2261 - The FF/Latch <mMIPS/id_ctrl_mem_memread/out_1> in Unit <mMIPS_sim> is equivalent to the following FF/Latch, which will be removed : <mMIPS/id_ctrl_wb_memtoreg/out_1> 
+WARNING:Xst:1710 - FF/Latch <mMIPS/ctrl/AluSel_0> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <mMIPS/ctrl/HiLoWrite> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/if_instr/out_5> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/if_instr/out_4> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/if_instr/out_3> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/if_instr/out_2> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/if_instr/out_1> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/if_instr/out_0> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/memdev/sending> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dmem/ENA_0> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dmem/ENA_1> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dmem/ENA_3> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dmem/ENA_4> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dmem/ENA_2> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dmem/ENA_5> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dmem/ENA_6> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dmem/ENA_8> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dmem/ENA_9> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dmem/ENA_7> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dmem/ENA_10> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dmem/ENA_11> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dmem/ENA_13> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dmem/ENA_14> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dmem/ENA_12> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dmem/ENA_15> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dmem/ENA_16> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dmem/ENA_18> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/id_immediate/out_16> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/if_instr/out_31> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/if_instr/out_30> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/if_instr/out_29> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/if_instr/out_28> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/if_instr/out_27> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/if_instr/out_26> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/if_instr/out_25> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/if_instr/out_24> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/if_instr/out_23> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/if_instr/out_22> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/if_instr/out_21> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/if_instr/out_20> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/if_instr/out_19> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/if_instr/out_18> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/if_instr/out_17> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/if_instr/out_16> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/if_instr/out_15> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/if_instr/out_14> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/if_instr/out_13> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/if_instr/out_12> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/if_instr/out_11> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/if_instr/out_10> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/if_instr/out_9> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/if_instr/out_8> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/if_instr/out_7> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/if_instr/out_6> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dmem/ENA_46> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dmem/ENA_47> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dmem/ENA_49> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dmem/ENA_50> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dmem/ENA_48> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dmem/ENA_51> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dmem/ENA_52> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dmem/ENA_54> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dmem/ENA_55> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dmem/ENA_53> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dmem/ENA_56> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dmem/ENA_57> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dmem/ENA_59> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dmem/ENA_60> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dmem/ENA_58> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dmem/ENA_61> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dmem/ENA_62> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dmem/WEA_0> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dmem/WEA_1> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dmem/ENA_63> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dmem/WEA_2> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dmem/WEA_3> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dmem/w_1> has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dmem/w_0> has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dmem/r_1> has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dmem/r_0> has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dmem/lblw> has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dmem/ENA_19> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dmem/ENA_17> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dmem/ENA_20> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dmem/ENA_21> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dmem/ENA_23> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dmem/ENA_24> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dmem/ENA_22> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dmem/ENA_25> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dmem/ENA_26> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dmem/ENA_28> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dmem/ENA_29> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dmem/ENA_27> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dmem/ENA_30> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dmem/ENA_31> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dmem/ENA_33> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dmem/ENA_34> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dmem/ENA_32> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dmem/ENA_36> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dmem/ENA_37> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dmem/ENA_35> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dmem/ENA_39> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dmem/ENA_40> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dmem/ENA_38> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dmem/ENA_41> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dmem/ENA_42> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dmem/ENA_44> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dmem/ENA_45> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dmem/ENA_43> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/if_pc/out_31> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/if_pc/out_30> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/if_pc/out_29> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/if_pc/out_28> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/if_pc/out_27> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/if_pc/out_26> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/if_pc/out_25> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/if_pc/out_24> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/if_pc/out_23> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/if_pc/out_22> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/if_pc/out_21> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/if_pc/out_20> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/if_pc/out_19> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/if_pc/out_18> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/if_pc/out_17> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/if_pc/out_16> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/pc/out_0> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/if_pc/out_0> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/if_pc/out_1> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/if_pc/out_2> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/if_pc/out_3> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/if_pc/out_4> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/if_pc/out_5> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/if_pc/out_6> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/if_pc/out_7> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/if_pc/out_8> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/if_pc/out_9> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/if_pc/out_10> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/if_pc/out_11> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/if_pc/out_12> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/if_pc/out_13> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/if_pc/out_14> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/if_pc/out_15> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/id_ctrl_ex_regdst/out_0> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/id_ctrl_ex_regdst/out_1> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/id_ctrl_ex_target/out_0> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/id_ctrl_ex_target/out_1> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/id_ctrl_ex_alusel/out_0> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/id_ctrl_ex_alusel/out_1> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/id_ctrl_mem_branch/out_0> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/id_ctrl_mem_branch/out_1> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/id_ctrl_mem_memread/out_0> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/id_ctrl_mem_memread/out_1> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/id_ctrl_mem_memwrite/out_0> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/id_ctrl_mem_memwrite/out_1> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/id_ctrl_wb_memtoreg/out_0> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/id_ctrl_wb_memtoreg/out_1> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/id_ctrl_ex_alusrc/out_0> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/id_ctrl_ex_hilo_write/out_0> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/ex_regdst_addr/out_4> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/ex_regdst_addr/out_3> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/ex_regdst_addr/out_2> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/ex_regdst_addr/out_1> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/ex_regdst_addr/out_0> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/id_ctrl_ex_aluop/out_4> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/id_ctrl_ex_aluop/out_3> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/id_ctrl_ex_aluop/out_2> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/id_ctrl_ex_aluop/out_1> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/id_ctrl_ex_aluop/out_0> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/id_ctrl_wb_regwrite/out_0> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/id_pc/out_11> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/id_pc/out_10> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/id_pc/out_9> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/id_pc/out_8> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/id_pc/out_7> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/id_pc/out_6> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/id_pc/out_5> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/id_pc/out_4> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/id_pc/out_12> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/id_pc/out_13> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/id_pc/out_14> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/id_pc/out_15> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/id_pc/out_16> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/id_pc/out_17> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/id_pc/out_18> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/id_pc/out_20> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/id_pc/out_3> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/id_pc/out_2> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/id_pc/out_0> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/lo/out_27> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/lo/out_28> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/lo/out_29> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/lo/out_30> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/lo/out_31> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/ex_ctrl_wb_memtoreg/out_0> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/ex_ctrl_wb_memtoreg/out_1> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/ex_ctrl_wb_regwrite/out_0> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/mem_regdst_addr/out_0> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/mem_regdst_addr/out_1> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/mem_regdst_addr/out_2> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/mem_regdst_addr/out_4> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/mem_regdst_addr/out_3> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/hi/out_2> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/hi/out_1> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/hi/out_0> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/hi/out_26> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/id_instr_25_0/out_25> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/id_instr_25_0/out_24> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/id_instr_25_0/out_23> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/id_instr_25_0/out_22> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/id_instr_25_0/out_21> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/id_instr_25_0/out_20> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/id_instr_25_0/out_19> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/id_instr_25_0/out_18> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/id_instr_25_0/out_17> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/id_instr_25_0/out_16> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/id_instr_25_0/out_15> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/id_instr_25_0/out_14> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/id_instr_25_0/out_13> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/id_instr_25_0/out_12> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/id_instr_25_0/out_11> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/id_instr_25_0/out_10> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/id_instr_25_0/out_9> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/id_instr_25_0/out_8> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/id_instr_25_0/out_7> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/hi/out_25> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/hi/out_24> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/hi/out_23> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/hi/out_22> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/hi/out_21> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/hi/out_20> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/hi/out_19> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/hi/out_18> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/hi/out_17> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/hi/out_16> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/hi/out_15> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/hi/out_14> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/hi/out_13> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/hi/out_12> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/hi/out_11> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/hi/out_10> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/hi/out_9> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/hi/out_8> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/hi/out_7> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/hi/out_6> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/hi/out_5> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/hi/out_4> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/hi/out_3> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/lo/out_13> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/lo/out_14> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/lo/out_15> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/lo/out_16> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/lo/out_17> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/lo/out_18> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/lo/out_19> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/lo/out_20> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/lo/out_21> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/lo/out_22> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/lo/out_23> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/lo/out_24> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/lo/out_25> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/lo/out_26> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/id_pc/out_31> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/id_pc/out_29> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/id_pc/out_28> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/id_pc/out_27> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/id_pc/out_26> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/id_pc/out_24> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/id_pc/out_23> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/id_pc/out_22> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/id_pc/out_21> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/id_instr_25_0/out_6> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/id_instr_25_0/out_5> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/id_instr_25_0/out_3> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/id_instr_25_0/out_2> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/id_instr_25_0/out_1> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/id_instr_25_0/out_0> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/hi/out_27> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/hi/out_28> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/hi/out_29> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/hi/out_30> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/hi/out_31> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/lo/out_0> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/lo/out_1> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/lo/out_2> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/lo/out_3> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/lo/out_4> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/lo/out_5> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/lo/out_6> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/lo/out_7> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/lo/out_8> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/lo/out_9> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/lo/out_10> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/lo/out_11> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/lo/out_12> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/mem_ctrl_wb_memtoreg/out_0> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/mem_ctrl_wb_memtoreg/out_1> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/mem_ctrl_wb_regwrite/out_0> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <mMIPS/ctrl/AluSel_1> is unconnected in block <mMIPS_sim>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <mMIPS/alu/Mmult_a[31]_b[31]_MuLt_14_OUT3> is unconnected in block <mMIPS_sim>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <mMIPS/alu/Mmult_a[31]_b[31]_MuLt_14_OUT> is unconnected in block <mMIPS_sim>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <mMIPS/alu/Mmult_a[31]_b[31]_MuLt_14_OUT1> is unconnected in block <mMIPS_sim>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <mMIPS/alu/Mmult_a[31]_b[31]_MuLt_14_OUT2> is unconnected in block <mMIPS_sim>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <imem/bramid_5> is unconnected in block <mMIPS_sim>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <imem/bramid_4> is unconnected in block <mMIPS_sim>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <imem/bramid_2> is unconnected in block <mMIPS_sim>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <imem/bramid_3> is unconnected in block <mMIPS_sim>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <imem/bramid_1> is unconnected in block <mMIPS_sim>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <imem/bramid_0> is unconnected in block <mMIPS_sim>.
+WARNING:Xst:1294 - Latch <mMIPS/alu/zero> is equivalent to a wire in block <mMIPS_sim>.
+WARNING:Xst:1710 - FF/Latch <imem/ENA_33> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <imem/ENA_34> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <imem/ENA_35> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <imem/ENA_36> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <imem/ENA_37> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <imem/ENA_38> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <imem/ENA_39> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <imem/ENA_40> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <imem/ENA_41> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <imem/ENA_42> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <imem/ENA_43> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <imem/ENA_44> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <imem/ENA_45> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <imem/ENA_46> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <imem/ENA_47> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/id_pc/out_1> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/id_pc/out_19> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <imem/ENA_8> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <imem/ENA_9> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <imem/ENA_10> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <imem/ENA_11> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <imem/ENA_12> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <imem/ENA_13> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <imem/ENA_14> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <imem/ENA_15> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <imem/ENA_24> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <imem/ENA_25> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <imem/ENA_26> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <imem/ENA_27> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <imem/ENA_28> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <imem/ENA_29> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <imem/ENA_30> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <imem/ENA_31> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <imem/ENA_32> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/pc/out_15> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/pc/out_16> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/pc/out_17> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/pc/out_18> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/pc/out_19> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/pc/out_20> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/pc/out_21> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/pc/out_22> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/pc/out_23> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/pc/out_24> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/pc/out_25> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/pc/out_26> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/pc/out_27> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/pc/out_28> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/pc/out_29> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/pc/out_30> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/pc/out_31> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/id_pc/out_25> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/id_pc/out_30> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/id_instr_25_0/out_4> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/pc/out_1> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/pc/out_2> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/pc/out_3> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/pc/out_4> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/pc/out_5> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/pc/out_6> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/pc/out_7> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/pc/out_8> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/pc/out_9> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/pc/out_10> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/pc/out_11> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/pc/out_12> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/pc/out_13> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/pc/out_14> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <mMIPS/mem_dmem_data/out_31> of sequential type is unconnected in block <mMIPS_sim>.
+WARNING:Xst:2677 - Node <mMIPS/mem_dmem_data/out_30> of sequential type is unconnected in block <mMIPS_sim>.
+WARNING:Xst:2677 - Node <mMIPS/mem_dmem_data/out_29> of sequential type is unconnected in block <mMIPS_sim>.
+WARNING:Xst:2677 - Node <mMIPS/mem_dmem_data/out_28> of sequential type is unconnected in block <mMIPS_sim>.
+WARNING:Xst:2677 - Node <mMIPS/mem_dmem_data/out_27> of sequential type is unconnected in block <mMIPS_sim>.
+WARNING:Xst:2677 - Node <mMIPS/mem_dmem_data/out_26> of sequential type is unconnected in block <mMIPS_sim>.
+WARNING:Xst:2677 - Node <mMIPS/mem_dmem_data/out_25> of sequential type is unconnected in block <mMIPS_sim>.
+WARNING:Xst:2677 - Node <mMIPS/mem_dmem_data/out_24> of sequential type is unconnected in block <mMIPS_sim>.
+WARNING:Xst:2677 - Node <mMIPS/mem_dmem_data/out_23> of sequential type is unconnected in block <mMIPS_sim>.
+WARNING:Xst:2677 - Node <mMIPS/mem_dmem_data/out_22> of sequential type is unconnected in block <mMIPS_sim>.
+WARNING:Xst:2677 - Node <mMIPS/mem_dmem_data/out_21> of sequential type is unconnected in block <mMIPS_sim>.
+WARNING:Xst:2677 - Node <mMIPS/mem_dmem_data/out_20> of sequential type is unconnected in block <mMIPS_sim>.
+WARNING:Xst:2677 - Node <mMIPS/mem_dmem_data/out_19> of sequential type is unconnected in block <mMIPS_sim>.
+WARNING:Xst:2677 - Node <mMIPS/mem_dmem_data/out_18> of sequential type is unconnected in block <mMIPS_sim>.
+WARNING:Xst:2677 - Node <mMIPS/mem_dmem_data/out_17> of sequential type is unconnected in block <mMIPS_sim>.
+WARNING:Xst:2677 - Node <mMIPS/mem_dmem_data/out_16> of sequential type is unconnected in block <mMIPS_sim>.
+WARNING:Xst:2677 - Node <mMIPS/mem_dmem_data/out_15> of sequential type is unconnected in block <mMIPS_sim>.
+WARNING:Xst:2677 - Node <mMIPS/mem_dmem_data/out_14> of sequential type is unconnected in block <mMIPS_sim>.
+WARNING:Xst:2677 - Node <mMIPS/mem_dmem_data/out_13> of sequential type is unconnected in block <mMIPS_sim>.
+WARNING:Xst:2677 - Node <mMIPS/mem_dmem_data/out_12> of sequential type is unconnected in block <mMIPS_sim>.
+WARNING:Xst:2677 - Node <mMIPS/mem_dmem_data/out_11> of sequential type is unconnected in block <mMIPS_sim>.
+WARNING:Xst:2677 - Node <mMIPS/mem_dmem_data/out_10> of sequential type is unconnected in block <mMIPS_sim>.
+WARNING:Xst:2677 - Node <mMIPS/mem_dmem_data/out_9> of sequential type is unconnected in block <mMIPS_sim>.
+WARNING:Xst:2677 - Node <mMIPS/mem_dmem_data/out_8> of sequential type is unconnected in block <mMIPS_sim>.
+WARNING:Xst:2677 - Node <mMIPS/memdev/dev_buffer_31> of sequential type is unconnected in block <mMIPS_sim>.
+WARNING:Xst:2677 - Node <mMIPS/memdev/dev_buffer_30> of sequential type is unconnected in block <mMIPS_sim>.
+WARNING:Xst:2677 - Node <mMIPS/memdev/dev_buffer_29> of sequential type is unconnected in block <mMIPS_sim>.
+WARNING:Xst:2677 - Node <mMIPS/memdev/dev_buffer_28> of sequential type is unconnected in block <mMIPS_sim>.
+WARNING:Xst:2677 - Node <mMIPS/memdev/dev_buffer_27> of sequential type is unconnected in block <mMIPS_sim>.
+WARNING:Xst:2677 - Node <mMIPS/memdev/dev_buffer_26> of sequential type is unconnected in block <mMIPS_sim>.
+WARNING:Xst:2677 - Node <mMIPS/memdev/dev_buffer_25> of sequential type is unconnected in block <mMIPS_sim>.
+WARNING:Xst:2677 - Node <mMIPS/memdev/dev_buffer_24> of sequential type is unconnected in block <mMIPS_sim>.
+WARNING:Xst:2677 - Node <mMIPS/memdev/dev_buffer_23> of sequential type is unconnected in block <mMIPS_sim>.
+WARNING:Xst:2677 - Node <mMIPS/memdev/dev_buffer_22> of sequential type is unconnected in block <mMIPS_sim>.
+WARNING:Xst:2677 - Node <mMIPS/memdev/dev_buffer_21> of sequential type is unconnected in block <mMIPS_sim>.
+WARNING:Xst:2677 - Node <mMIPS/memdev/dev_buffer_20> of sequential type is unconnected in block <mMIPS_sim>.
+WARNING:Xst:2677 - Node <mMIPS/memdev/dev_buffer_19> of sequential type is unconnected in block <mMIPS_sim>.
+WARNING:Xst:2677 - Node <mMIPS/memdev/dev_buffer_18> of sequential type is unconnected in block <mMIPS_sim>.
+WARNING:Xst:2677 - Node <mMIPS/memdev/dev_buffer_17> of sequential type is unconnected in block <mMIPS_sim>.
+WARNING:Xst:2677 - Node <mMIPS/memdev/dev_buffer_16> of sequential type is unconnected in block <mMIPS_sim>.
+WARNING:Xst:2677 - Node <mMIPS/memdev/dev_buffer_15> of sequential type is unconnected in block <mMIPS_sim>.
+WARNING:Xst:2677 - Node <mMIPS/memdev/dev_buffer_14> of sequential type is unconnected in block <mMIPS_sim>.
+WARNING:Xst:2677 - Node <mMIPS/memdev/dev_buffer_13> of sequential type is unconnected in block <mMIPS_sim>.
+WARNING:Xst:2677 - Node <mMIPS/memdev/dev_buffer_12> of sequential type is unconnected in block <mMIPS_sim>.
+WARNING:Xst:2677 - Node <mMIPS/memdev/dev_buffer_11> of sequential type is unconnected in block <mMIPS_sim>.
+WARNING:Xst:2677 - Node <mMIPS/memdev/dev_buffer_10> of sequential type is unconnected in block <mMIPS_sim>.
+WARNING:Xst:2677 - Node <mMIPS/memdev/dev_buffer_9> of sequential type is unconnected in block <mMIPS_sim>.
+WARNING:Xst:2677 - Node <mMIPS/memdev/dev_buffer_8> of sequential type is unconnected in block <mMIPS_sim>.
+WARNING:Xst:2677 - Node <dmem/byteselect_1> of sequential type is unconnected in block <mMIPS_sim>.
+WARNING:Xst:2677 - Node <dmem/byteselect_0> of sequential type is unconnected in block <mMIPS_sim>.
+WARNING:Xst:2677 - Node <dmem/byteselect_before_0> of sequential type is unconnected in block <mMIPS_sim>.
+WARNING:Xst:2677 - Node <dmem/byteselect_before_1> of sequential type is unconnected in block <mMIPS_sim>.
+WARNING:Xst:2677 - Node <dmem/addr_1> of sequential type is unconnected in block <mMIPS_sim>.
+WARNING:Xst:2677 - Node <dmem/addr_0> of sequential type is unconnected in block <mMIPS_sim>.
+WARNING:Xst:1710 - FF/Latch <imem/ADDRA_5> (without init value) has a constant value of 1 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <imem/ADDRA_6> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <imem/ADDRA_7> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <imem/ADDRA_8> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <imem/ADDRA_9> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <imem/ADDRA_10> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <imem/ADDRA_11> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <imem/ADDRA_12> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <imem/ADDRA_13> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <imem/ENA_1> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <imem/ENA_2> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <imem/ENA_3> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <imem/ENA_4> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <imem/ENA_5> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <imem/ENA_6> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <imem/ENA_7> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <imem/ENA_16> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <imem/ENA_17> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <imem/ENA_18> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <imem/ENA_19> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <imem/ENA_20> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <imem/ENA_21> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <imem/ENA_22> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <imem/ENA_23> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <mMIPS/mem_dmem_data/out_7> of sequential type is unconnected in block <mMIPS_sim>.
+WARNING:Xst:2677 - Node <mMIPS/mem_dmem_data/out_6> of sequential type is unconnected in block <mMIPS_sim>.
+WARNING:Xst:2677 - Node <mMIPS/mem_dmem_data/out_5> of sequential type is unconnected in block <mMIPS_sim>.
+WARNING:Xst:2677 - Node <mMIPS/mem_dmem_data/out_4> of sequential type is unconnected in block <mMIPS_sim>.
+WARNING:Xst:2677 - Node <mMIPS/mem_dmem_data/out_3> of sequential type is unconnected in block <mMIPS_sim>.
+WARNING:Xst:2677 - Node <mMIPS/mem_dmem_data/out_2> of sequential type is unconnected in block <mMIPS_sim>.
+WARNING:Xst:2677 - Node <mMIPS/mem_dmem_data/out_1> of sequential type is unconnected in block <mMIPS_sim>.
+WARNING:Xst:2677 - Node <mMIPS/mem_dmem_data/out_0> of sequential type is unconnected in block <mMIPS_sim>.
+WARNING:Xst:2677 - Node <mMIPS/memdev/dev_buffer_7> of sequential type is unconnected in block <mMIPS_sim>.
+WARNING:Xst:2677 - Node <mMIPS/memdev/dev_buffer_6> of sequential type is unconnected in block <mMIPS_sim>.
+WARNING:Xst:2677 - Node <mMIPS/memdev/dev_buffer_5> of sequential type is unconnected in block <mMIPS_sim>.
+WARNING:Xst:2677 - Node <mMIPS/memdev/dev_buffer_4> of sequential type is unconnected in block <mMIPS_sim>.
+WARNING:Xst:2677 - Node <mMIPS/memdev/dev_buffer_3> of sequential type is unconnected in block <mMIPS_sim>.
+WARNING:Xst:2677 - Node <mMIPS/memdev/dev_buffer_2> of sequential type is unconnected in block <mMIPS_sim>.
+WARNING:Xst:2677 - Node <mMIPS/memdev/dev_buffer_1> of sequential type is unconnected in block <mMIPS_sim>.
+WARNING:Xst:2677 - Node <mMIPS/memdev/dev_buffer_0> of sequential type is unconnected in block <mMIPS_sim>.
+WARNING:Xst:2677 - Node <dmem/bramid_0> of sequential type is unconnected in block <mMIPS_sim>.
+WARNING:Xst:2677 - Node <dmem/bramid_1> of sequential type is unconnected in block <mMIPS_sim>.
+WARNING:Xst:2677 - Node <dmem/bramid_2> of sequential type is unconnected in block <mMIPS_sim>.
+WARNING:Xst:2677 - Node <dmem/bramid_3> of sequential type is unconnected in block <mMIPS_sim>.
+WARNING:Xst:2677 - Node <dmem/bramid_5> of sequential type is unconnected in block <mMIPS_sim>.
+WARNING:Xst:2677 - Node <dmem/bramid_4> of sequential type is unconnected in block <mMIPS_sim>.
+WARNING:Xst:2677 - Node <dmem/addr_16> of sequential type is unconnected in block <mMIPS_sim>.
+WARNING:Xst:2677 - Node <dmem/addr_15> of sequential type is unconnected in block <mMIPS_sim>.
+WARNING:Xst:2677 - Node <dmem/addr_14> of sequential type is unconnected in block <mMIPS_sim>.
+WARNING:Xst:2677 - Node <dmem/addr_13> of sequential type is unconnected in block <mMIPS_sim>.
+WARNING:Xst:2677 - Node <dmem/addr_12> of sequential type is unconnected in block <mMIPS_sim>.
+WARNING:Xst:2677 - Node <dmem/addr_11> of sequential type is unconnected in block <mMIPS_sim>.
+INFO:Xst:2399 - RAMs <mMIPS/registers/Mram_regs62>, <mMIPS/registers/Mram_regs162> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <mMIPS/registers/Mram_regs61>, <mMIPS/registers/Mram_regs161> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <mMIPS/registers/Mram_regs5>, <mMIPS/registers/Mram_regs15> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <mMIPS/registers/Mram_regs3>, <mMIPS/registers/Mram_regs13> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <mMIPS/registers/Mram_regs2>, <mMIPS/registers/Mram_regs12> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <mMIPS/registers/Mram_regs4>, <mMIPS/registers/Mram_regs14> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <mMIPS/registers/Mram_regs1>, <mMIPS/registers/Mram_regs11> are equivalent, second RAM is removed
+WARNING:Xst:1710 - FF/Latch <mMIPS/ex_alu_result/out_0> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <imem/ENA_0> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mMIPS/mem_alu_result/out_0> (without init value) has a constant value of 0 in block <mMIPS_sim>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <mMIPS/id_data_reg1/out_10> in Unit <mMIPS_sim> is equivalent to the following FF/Latch, which will be removed : <mMIPS/id_data_reg2/out_10> 
+INFO:Xst:2261 - The FF/Latch <mMIPS/id_data_reg1/out_11> in Unit <mMIPS_sim> is equivalent to the following FF/Latch, which will be removed : <mMIPS/id_data_reg2/out_11> 
+INFO:Xst:2261 - The FF/Latch <mMIPS/id_data_reg1/out_12> in Unit <mMIPS_sim> is equivalent to the following FF/Latch, which will be removed : <mMIPS/id_data_reg2/out_12> 
+INFO:Xst:2261 - The FF/Latch <mMIPS/id_data_reg1/out_13> in Unit <mMIPS_sim> is equivalent to the following FF/Latch, which will be removed : <mMIPS/id_data_reg2/out_13> 
+INFO:Xst:2261 - The FF/Latch <mMIPS/id_data_reg1/out_14> in Unit <mMIPS_sim> is equivalent to the following FF/Latch, which will be removed : <mMIPS/id_data_reg2/out_14> 
+INFO:Xst:2261 - The FF/Latch <mMIPS/id_data_reg1/out_20> in Unit <mMIPS_sim> is equivalent to the following FF/Latch, which will be removed : <mMIPS/id_data_reg2/out_20> 
+INFO:Xst:2261 - The FF/Latch <mMIPS/id_data_reg1/out_15> in Unit <mMIPS_sim> is equivalent to the following FF/Latch, which will be removed : <mMIPS/id_data_reg2/out_15> 
+INFO:Xst:2261 - The FF/Latch <mMIPS/id_data_reg1/out_21> in Unit <mMIPS_sim> is equivalent to the following FF/Latch, which will be removed : <mMIPS/id_data_reg2/out_21> 
+INFO:Xst:2261 - The FF/Latch <mMIPS/id_data_reg1/out_16> in Unit <mMIPS_sim> is equivalent to the following FF/Latch, which will be removed : <mMIPS/id_data_reg2/out_16> 
+INFO:Xst:2261 - The FF/Latch <mMIPS/id_data_reg1/out_22> in Unit <mMIPS_sim> is equivalent to the following FF/Latch, which will be removed : <mMIPS/id_data_reg2/out_22> 
+INFO:Xst:2261 - The FF/Latch <mMIPS/id_data_reg1/out_17> in Unit <mMIPS_sim> is equivalent to the following FF/Latch, which will be removed : <mMIPS/id_data_reg2/out_17> 
+INFO:Xst:2261 - The FF/Latch <mMIPS/id_data_reg1/out_23> in Unit <mMIPS_sim> is equivalent to the following FF/Latch, which will be removed : <mMIPS/id_data_reg2/out_23> 
+INFO:Xst:2261 - The FF/Latch <mMIPS/id_data_reg1/out_18> in Unit <mMIPS_sim> is equivalent to the following FF/Latch, which will be removed : <mMIPS/id_data_reg2/out_18> 
+INFO:Xst:2261 - The FF/Latch <mMIPS/id_data_reg1/out_24> in Unit <mMIPS_sim> is equivalent to the following FF/Latch, which will be removed : <mMIPS/id_data_reg2/out_24> 
+INFO:Xst:2261 - The FF/Latch <mMIPS/id_data_reg1/out_19> in Unit <mMIPS_sim> is equivalent to the following FF/Latch, which will be removed : <mMIPS/id_data_reg2/out_19> 
+INFO:Xst:2261 - The FF/Latch <mMIPS/id_data_reg1/out_30> in Unit <mMIPS_sim> is equivalent to the following FF/Latch, which will be removed : <mMIPS/id_data_reg2/out_30> 
+INFO:Xst:2261 - The FF/Latch <mMIPS/id_data_reg1/out_25> in Unit <mMIPS_sim> is equivalent to the following FF/Latch, which will be removed : <mMIPS/id_data_reg2/out_25> 
+INFO:Xst:2261 - The FF/Latch <mMIPS/id_data_reg1/out_31> in Unit <mMIPS_sim> is equivalent to the following FF/Latch, which will be removed : <mMIPS/id_data_reg2/out_31> 
+INFO:Xst:2261 - The FF/Latch <mMIPS/id_data_reg1/out_26> in Unit <mMIPS_sim> is equivalent to the following FF/Latch, which will be removed : <mMIPS/id_data_reg2/out_26> 
+INFO:Xst:2261 - The FF/Latch <mMIPS/id_data_reg1/out_27> in Unit <mMIPS_sim> is equivalent to the following FF/Latch, which will be removed : <mMIPS/id_data_reg2/out_27> 
+INFO:Xst:2261 - The FF/Latch <mMIPS/id_data_reg1/out_28> in Unit <mMIPS_sim> is equivalent to the following FF/Latch, which will be removed : <mMIPS/id_data_reg2/out_28> 
+INFO:Xst:2261 - The FF/Latch <mMIPS/id_data_reg1/out_29> in Unit <mMIPS_sim> is equivalent to the following FF/Latch, which will be removed : <mMIPS/id_data_reg2/out_29> 
+INFO:Xst:2261 - The FF/Latch <mMIPS/id_data_reg1/out_0> in Unit <mMIPS_sim> is equivalent to the following FF/Latch, which will be removed : <mMIPS/id_data_reg2/out_0> 
+INFO:Xst:2261 - The FF/Latch <mMIPS/id_data_reg1/out_1> in Unit <mMIPS_sim> is equivalent to the following FF/Latch, which will be removed : <mMIPS/id_data_reg2/out_1> 
+INFO:Xst:2261 - The FF/Latch <mMIPS/id_data_reg1/out_2> in Unit <mMIPS_sim> is equivalent to the following FF/Latch, which will be removed : <mMIPS/id_data_reg2/out_2> 
+INFO:Xst:2261 - The FF/Latch <mMIPS/id_data_reg1/out_3> in Unit <mMIPS_sim> is equivalent to the following FF/Latch, which will be removed : <mMIPS/id_data_reg2/out_3> 
+INFO:Xst:2261 - The FF/Latch <mMIPS/id_data_reg1/out_4> in Unit <mMIPS_sim> is equivalent to the following FF/Latch, which will be removed : <mMIPS/id_data_reg2/out_4> 
+INFO:Xst:2261 - The FF/Latch <mMIPS/id_data_reg1/out_5> in Unit <mMIPS_sim> is equivalent to the following FF/Latch, which will be removed : <mMIPS/id_data_reg2/out_5> 
+INFO:Xst:2261 - The FF/Latch <mMIPS/id_data_reg1/out_6> in Unit <mMIPS_sim> is equivalent to the following FF/Latch, which will be removed : <mMIPS/id_data_reg2/out_6> 
+INFO:Xst:2261 - The FF/Latch <mMIPS/id_data_reg1/out_7> in Unit <mMIPS_sim> is equivalent to the following FF/Latch, which will be removed : <mMIPS/id_data_reg2/out_7> 
+INFO:Xst:2261 - The FF/Latch <mMIPS/id_data_reg1/out_8> in Unit <mMIPS_sim> is equivalent to the following FF/Latch, which will be removed : <mMIPS/id_data_reg2/out_8> 
+INFO:Xst:2261 - The FF/Latch <mMIPS/id_data_reg1/out_9> in Unit <mMIPS_sim> is equivalent to the following FF/Latch, which will be removed : <mMIPS/id_data_reg2/out_9> 
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block mMIPS_sim, actual ratio is 10.
-FlipFlop mMIPS/id_ctrl_ex_alusrc/out_0 has been replicated 1 time(s)
-FlipFlop mMIPS/id_immediate/out_16 has been replicated 1 time(s)
+Found area constraint ratio of 100 (+ 5) on block mMIPS_sim, actual ratio is 0.
 
 Final Macro Processing ...
 
@@ -1084,8 +1621,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 576
- Flip-Flops                                            : 576
+# Registers                                            : 108
+ Flip-Flops                                            : 108
 
 =========================================================================
 
@@ -1108,38 +1645,27 @@ Top Level Output File Name         : mMIPS_sim.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 2389
+# BELS                             : 66
 #      GND                         : 1
-#      INV                         : 2
-#      LUT1                        : 30
-#      LUT2                        : 44
-#      LUT3                        : 82
-#      LUT4                        : 139
-#      LUT5                        : 327
-#      LUT6                        : 1505
-#      MUXCY                       : 126
-#      MUXF7                       : 38
+#      INV                         : 1
+#      LUT5                        : 1
+#      MUXCY                       : 31
 #      VCC                         : 1
-#      XORCY                       : 94
-# FlipFlops/Latches                : 696
-#      FD                          : 1
-#      FDCE                        : 451
-#      FDE                         : 76
-#      FDRE                        : 48
-#      LD                          : 3
-#      LDE                         : 117
-# RAMS                             : 126
-#      RAM32M                      : 10
-#      RAM32X1D                    : 4
+#      XORCY                       : 31
+# FlipFlops/Latches                : 149
+#      FDCE                        : 94
+#      FDE                         : 14
+#      LDE                         : 41
+# RAMS                             : 119
+#      RAM32M                      : 5
+#      RAM32X1D                    : 2
 #      RAMB16BWER                  : 112
 # Clock Buffers                    : 2
 #      BUFG                        : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 74
-#      IBUF                        : 37
+# IO Buffers                       : 39
+#      IBUF                        : 2
 #      OBUF                        : 37
-# DSPs                             : 4
-#      DSP48A1                     : 4
 
 Device utilization summary:
 ---------------------------
@@ -1148,28 +1674,27 @@ Selected Device : 6slx45tcsg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             696  out of  54576     1%  
- Number of Slice LUTs:                 2177  out of  27288     7%  
-    Number used as Logic:              2129  out of  27288     7%  
-    Number used as Memory:               48  out of   6408     0%  
-       Number used as RAM:               48
+ Number of Slice Registers:             149  out of  54576     0%  
+ Number of Slice LUTs:                   26  out of  27288     0%  
+    Number used as Logic:                 2  out of  27288     0%  
+    Number used as Memory:               24  out of   6408     0%  
+       Number used as RAM:               24
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   2380
-   Number with an unused Flip Flop:    1684  out of   2380    70%  
-   Number with an unused LUT:           203  out of   2380     8%  
-   Number of fully used LUT-FF pairs:   493  out of   2380    20%  
-   Number of unique control sets:        10
+ Number of LUT Flip Flop pairs used:    167
+   Number with an unused Flip Flop:      18  out of    167    10%  
+   Number with an unused LUT:           141  out of    167    84%  
+   Number of fully used LUT-FF pairs:     8  out of    167     4%  
+   Number of unique control sets:         3
 
 IO Utilization: 
  Number of IOs:                          75
- Number of bonded IOBs:                  75  out of    190    39%  
+ Number of bonded IOBs:                  40  out of    190    21%  
 
 Specific Feature Utilization:
  Number of Block RAM/FIFO:              112  out of    116    96%  
     Number using Block RAM only:        112
  Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
- Number of DSP48A1s:                      4  out of     58     6%  
 
 ---------------------------
 Partition Resource Summary:
@@ -1189,17 +1714,13 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
-------------------------------------+-----------------------------+-------+
-Clock Signal                        | Clock buffer(FF name)       | Load  |
-------------------------------------+-----------------------------+-------+
-clk                                 | BUFGP                       | 702   |
-mMIPS/ctrl/_n0086(mMIPS/ctrl/out1:O)| NONE(*)(mMIPS/ctrl/AluSel_0)| 3     |
-en                                  | IBUF+BUFG                   | 117   |
-mMIPS/bus_ctrl_aluop<4>             | NONE(dmem/BRAM00)           | 112   |
-------------------------------------+-----------------------------+-------+
-(*) This 1 clock signal(s) are generated by combinatorial logic,
-and XST is not able to identify which are the primary clock signals.
-Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+-------------------------------------------+------------------------+-------+
+Clock Signal                               | Clock buffer(FF name)  | Load  |
+-------------------------------------------+------------------------+-------+
+clk                                        | BUFGP                  | 227   |
+en                                         | IBUF+BUFG              | 41    |
+mMIPS/alu/Madd_a[31]_b[31]_add_2_OUT_lut<0>| NONE(imem/BRAM00)      | 112   |
+-------------------------------------------+------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
 Asynchronous Control Signals Information:
@@ -1210,9 +1731,9 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 17.660ns (Maximum Frequency: 56.626MHz)
-   Minimum input arrival time before clock: 7.126ns
-   Maximum output required time after clock: 20.353ns
+   Minimum period: 2.060ns (Maximum Frequency: 485.378MHz)
+   Minimum input arrival time before clock: 3.489ns
+   Maximum output required time after clock: 3.634ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -1221,79 +1742,94 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 17.660ns (frequency: 56.626MHz)
-  Total number of paths / destination ports: 242466532 / 1430
+  Clock period: 2.060ns (frequency: 485.378MHz)
+  Total number of paths / destination ports: 739 / 139
 -------------------------------------------------------------------------
-Delay:               17.660ns (Levels of Logic = 6)
-  Source:            mMIPS/id_instr_25_0/out_0 (FF)
-  Destination:       mMIPS/hi/out_31 (FF)
+Delay:               2.060ns (Levels of Logic = 32)
+  Source:            mMIPS/id_data_reg1/out_0 (FF)
+  Destination:       mMIPS/ex_alu_result/out_31 (FF)
   Source Clock:      clk rising
   Destination Clock: clk rising
 
-  Data Path: mMIPS/id_instr_25_0/out_0 to mMIPS/hi/out_31
+  Data Path: mMIPS/id_data_reg1/out_0 to mMIPS/ex_alu_result/out_31
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q            16   0.447   1.109  mMIPS/id_instr_25_0/out_0 (mMIPS/id_instr_25_0/out_0)
-     LUT3:I1->O           11   0.203   0.882  mMIPS/mux3511 (mMIPS/bus_mux2<0>)
-     DSP48A1:B0->P47      18   4.394   1.049  mMIPS/alu/Mmult_a[31]_b[31]_MuLt_10_OUT (mMIPS/alu/Mmult_a[31]_b[31]_MuLt_10_OUT_P47_to_Mmult_a[31]_b[31]_MuLt_10_OUT1)
-     DSP48A1:C30->PCOUT47    1   2.689   0.000  mMIPS/alu/Mmult_a[31]_b[31]_MuLt_10_OUT1 (mMIPS/alu/Mmult_a[31]_b[31]_MuLt_10_OUT1_PCOUT_to_Mmult_a[31]_b[31]_MuLt_10_OUT2_PCIN_47)
-     DSP48A1:PCIN47->P47   18   2.264   1.049  mMIPS/alu/Mmult_a[31]_b[31]_MuLt_10_OUT2 (mMIPS/alu/Mmult_a[31]_b[31]_MuLt_10_OUT2_P47_to_Mmult_a[31]_b[31]_MuLt_10_OUT3)
-     DSP48A1:C30->P29      1   2.687   0.580  mMIPS/alu/Mmult_a[31]_b[31]_MuLt_10_OUT3 (mMIPS/alu/a[31]_b[31]_MuLt_10_OUT<63>)
-     LUT6:I5->O            1   0.205   0.000  mMIPS/alu/Mmux_result_hi251 (mMIPS/bus_alu_result_2<31>)
-     FDCE:D                    0.102          mMIPS/hi/out_31
+     FDCE:C->Q             2   0.447   0.616  mMIPS/id_data_reg1/out_0 (mMIPS/id_data_reg1/out_0)
+     MUXCY:DI->O           1   0.145   0.000  mMIPS/alu/Madd_a[31]_b[31]_add_2_OUT_cy<0> (mMIPS/alu/Madd_a[31]_b[31]_add_2_OUT_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  mMIPS/alu/Madd_a[31]_b[31]_add_2_OUT_cy<1> (mMIPS/alu/Madd_a[31]_b[31]_add_2_OUT_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  mMIPS/alu/Madd_a[31]_b[31]_add_2_OUT_cy<2> (mMIPS/alu/Madd_a[31]_b[31]_add_2_OUT_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  mMIPS/alu/Madd_a[31]_b[31]_add_2_OUT_cy<3> (mMIPS/alu/Madd_a[31]_b[31]_add_2_OUT_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  mMIPS/alu/Madd_a[31]_b[31]_add_2_OUT_cy<4> (mMIPS/alu/Madd_a[31]_b[31]_add_2_OUT_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  mMIPS/alu/Madd_a[31]_b[31]_add_2_OUT_cy<5> (mMIPS/alu/Madd_a[31]_b[31]_add_2_OUT_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  mMIPS/alu/Madd_a[31]_b[31]_add_2_OUT_cy<6> (mMIPS/alu/Madd_a[31]_b[31]_add_2_OUT_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  mMIPS/alu/Madd_a[31]_b[31]_add_2_OUT_cy<7> (mMIPS/alu/Madd_a[31]_b[31]_add_2_OUT_cy<7>)
+     MUXCY:CI->O           1   0.019   0.000  mMIPS/alu/Madd_a[31]_b[31]_add_2_OUT_cy<8> (mMIPS/alu/Madd_a[31]_b[31]_add_2_OUT_cy<8>)
+     MUXCY:CI->O           1   0.019   0.000  mMIPS/alu/Madd_a[31]_b[31]_add_2_OUT_cy<9> (mMIPS/alu/Madd_a[31]_b[31]_add_2_OUT_cy<9>)
+     MUXCY:CI->O           1   0.019   0.000  mMIPS/alu/Madd_a[31]_b[31]_add_2_OUT_cy<10> (mMIPS/alu/Madd_a[31]_b[31]_add_2_OUT_cy<10>)
+     MUXCY:CI->O           1   0.019   0.000  mMIPS/alu/Madd_a[31]_b[31]_add_2_OUT_cy<11> (mMIPS/alu/Madd_a[31]_b[31]_add_2_OUT_cy<11>)
+     MUXCY:CI->O           1   0.019   0.000  mMIPS/alu/Madd_a[31]_b[31]_add_2_OUT_cy<12> (mMIPS/alu/Madd_a[31]_b[31]_add_2_OUT_cy<12>)
+     MUXCY:CI->O           1   0.019   0.000  mMIPS/alu/Madd_a[31]_b[31]_add_2_OUT_cy<13> (mMIPS/alu/Madd_a[31]_b[31]_add_2_OUT_cy<13>)
+     MUXCY:CI->O           1   0.019   0.000  mMIPS/alu/Madd_a[31]_b[31]_add_2_OUT_cy<14> (mMIPS/alu/Madd_a[31]_b[31]_add_2_OUT_cy<14>)
+     MUXCY:CI->O           1   0.019   0.000  mMIPS/alu/Madd_a[31]_b[31]_add_2_OUT_cy<15> (mMIPS/alu/Madd_a[31]_b[31]_add_2_OUT_cy<15>)
+     MUXCY:CI->O           1   0.019   0.000  mMIPS/alu/Madd_a[31]_b[31]_add_2_OUT_cy<16> (mMIPS/alu/Madd_a[31]_b[31]_add_2_OUT_cy<16>)
+     MUXCY:CI->O           1   0.019   0.000  mMIPS/alu/Madd_a[31]_b[31]_add_2_OUT_cy<17> (mMIPS/alu/Madd_a[31]_b[31]_add_2_OUT_cy<17>)
+     MUXCY:CI->O           1   0.019   0.000  mMIPS/alu/Madd_a[31]_b[31]_add_2_OUT_cy<18> (mMIPS/alu/Madd_a[31]_b[31]_add_2_OUT_cy<18>)
+     MUXCY:CI->O           1   0.019   0.000  mMIPS/alu/Madd_a[31]_b[31]_add_2_OUT_cy<19> (mMIPS/alu/Madd_a[31]_b[31]_add_2_OUT_cy<19>)
+     MUXCY:CI->O           1   0.019   0.000  mMIPS/alu/Madd_a[31]_b[31]_add_2_OUT_cy<20> (mMIPS/alu/Madd_a[31]_b[31]_add_2_OUT_cy<20>)
+     MUXCY:CI->O           1   0.019   0.000  mMIPS/alu/Madd_a[31]_b[31]_add_2_OUT_cy<21> (mMIPS/alu/Madd_a[31]_b[31]_add_2_OUT_cy<21>)
+     MUXCY:CI->O           1   0.019   0.000  mMIPS/alu/Madd_a[31]_b[31]_add_2_OUT_cy<22> (mMIPS/alu/Madd_a[31]_b[31]_add_2_OUT_cy<22>)
+     MUXCY:CI->O           1   0.019   0.000  mMIPS/alu/Madd_a[31]_b[31]_add_2_OUT_cy<23> (mMIPS/alu/Madd_a[31]_b[31]_add_2_OUT_cy<23>)
+     MUXCY:CI->O           1   0.019   0.000  mMIPS/alu/Madd_a[31]_b[31]_add_2_OUT_cy<24> (mMIPS/alu/Madd_a[31]_b[31]_add_2_OUT_cy<24>)
+     MUXCY:CI->O           1   0.019   0.000  mMIPS/alu/Madd_a[31]_b[31]_add_2_OUT_cy<25> (mMIPS/alu/Madd_a[31]_b[31]_add_2_OUT_cy<25>)
+     MUXCY:CI->O           1   0.019   0.000  mMIPS/alu/Madd_a[31]_b[31]_add_2_OUT_cy<26> (mMIPS/alu/Madd_a[31]_b[31]_add_2_OUT_cy<26>)
+     MUXCY:CI->O           1   0.019   0.000  mMIPS/alu/Madd_a[31]_b[31]_add_2_OUT_cy<27> (mMIPS/alu/Madd_a[31]_b[31]_add_2_OUT_cy<27>)
+     MUXCY:CI->O           1   0.019   0.000  mMIPS/alu/Madd_a[31]_b[31]_add_2_OUT_cy<28> (mMIPS/alu/Madd_a[31]_b[31]_add_2_OUT_cy<28>)
+     MUXCY:CI->O           1   0.019   0.000  mMIPS/alu/Madd_a[31]_b[31]_add_2_OUT_cy<29> (mMIPS/alu/Madd_a[31]_b[31]_add_2_OUT_cy<29>)
+     MUXCY:CI->O           0   0.019   0.000  mMIPS/alu/Madd_a[31]_b[31]_add_2_OUT_cy<30> (mMIPS/alu/Madd_a[31]_b[31]_add_2_OUT_cy<30>)
+     XORCY:CI->O           1   0.180   0.000  mMIPS/alu/Madd_a[31]_b[31]_add_2_OUT_xor<31> (mMIPS/bus_alu_result<31>)
+     FDCE:D                    0.102          mMIPS/ex_alu_result/out_31
     ----------------------------------------
-    Total                     17.660ns (12.991ns logic, 4.669ns route)
-                                       (73.6% logic, 26.4% route)
+    Total                      2.060ns (1.444ns logic, 0.616ns route)
+                                       (70.1% logic, 29.9% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 1061 / 1013
+  Total number of paths / destination ports: 202 / 202
 -------------------------------------------------------------------------
-Offset:              7.126ns (Levels of Logic = 4)
-  Source:            en (PAD)
-  Destination:       imem/ENA_47 (FF)
+Offset:              3.489ns (Levels of Logic = 1)
+  Source:            rst (PAD)
+  Destination:       mMIPS/id_data_reg1/out_31 (FF)
   Destination Clock: clk rising
 
-  Data Path: en to imem/ENA_47
+  Data Path: rst to mMIPS/id_data_reg1/out_31
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O           387   1.222   2.183  en_IBUF (en_IBUF)
-     LUT6:I4->O            1   0.203   0.580  imem/Reset_OR_DriverANDClockEnable483 (imem/Reset_OR_DriverANDClockEnable482)
-     LUT5:I4->O            1   0.205   0.580  imem/Reset_OR_DriverANDClockEnable484 (imem/Reset_OR_DriverANDClockEnable483)
-     LUT6:I5->O           48   0.205   1.519  imem/Reset_OR_DriverANDClockEnable486 (imem/Reset_OR_DriverANDClockEnable)
-     FDRE:R                    0.430          imem/ENA_1
+     IBUF:I->O            94   1.222   1.837  rst_IBUF (rst_IBUF)
+     FDCE:CLR                  0.430          mMIPS/ex_alu_result/out_1
     ----------------------------------------
-    Total                      7.126ns (2.265ns logic, 4.861ns route)
-                                       (31.8% logic, 68.2% route)
+    Total                      3.489ns (1.652ns logic, 1.837ns route)
+                                       (47.3% logic, 52.7% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 855044 / 37
+  Total number of paths / destination ports: 32 / 32
 -------------------------------------------------------------------------
-Offset:              20.353ns (Levels of Logic = 9)
-  Source:            mMIPS/id_instr_25_0/out_0 (FF)
-  Destination:       dev_w (PAD)
+Offset:              3.634ns (Levels of Logic = 1)
+  Source:            mMIPS/id_data_reg1/out_31 (FF)
+  Destination:       dev_dout<31> (PAD)
   Source Clock:      clk rising
 
-  Data Path: mMIPS/id_instr_25_0/out_0 to dev_w
+  Data Path: mMIPS/id_data_reg1/out_31 to dev_dout<31>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q            16   0.447   1.109  mMIPS/id_instr_25_0/out_0 (mMIPS/id_instr_25_0/out_0)
-     LUT3:I1->O           11   0.203   0.882  mMIPS/mux3511 (mMIPS/bus_mux2<0>)
-     DSP48A1:B0->P47      18   4.394   1.049  mMIPS/alu/Mmult_a[31]_b[31]_MuLt_10_OUT (mMIPS/alu/Mmult_a[31]_b[31]_MuLt_10_OUT_P47_to_Mmult_a[31]_b[31]_MuLt_10_OUT1)
-     DSP48A1:C30->PCOUT47    1   2.689   0.000  mMIPS/alu/Mmult_a[31]_b[31]_MuLt_10_OUT1 (mMIPS/alu/Mmult_a[31]_b[31]_MuLt_10_OUT1_PCOUT_to_Mmult_a[31]_b[31]_MuLt_10_OUT2_PCIN_47)
-     DSP48A1:PCIN47->P14    1   2.264   0.580  mMIPS/alu/Mmult_a[31]_b[31]_MuLt_10_OUT2 (mMIPS/alu/a[31]_b[31]_MuLt_10_OUT<31>)
-     LUT6:I5->O            1   0.205   0.580  mMIPS/alu/Mmux_result755 (mMIPS/alu/Mmux_result754)
-     LUT4:I3->O            4   0.205   0.684  mMIPS/alu/Mmux_result756 (mMIPS/bus_alu_result<31>)
-     LUT6:I5->O           37   0.205   1.467  mMIPS/mux2711 (mMIPS/bus_mux6<31>)
-     LUT4:I2->O            2   0.203   0.616  mMIPS/memdev/dev_send_eop1 (dev_send_eop_OBUF)
-     OBUF:I->O                 2.571          dev_w_OBUF (dev_w)
+     FDCE:C->Q             2   0.447   0.616  mMIPS/id_data_reg1/out_31 (mMIPS/id_data_reg1/out_31)
+     OBUF:I->O                 2.571          dev_dout_31_OBUF (dev_dout<31>)
     ----------------------------------------
-    Total                     20.353ns (13.386ns logic, 6.967ns route)
-                                       (65.8% logic, 34.2% route)
+    Total                      3.634ns (3.018ns logic, 0.616ns route)
+                                       (83.0% logic, 17.0% route)
 
 =========================================================================
 
@@ -1301,42 +1837,33 @@ Cross Clock Domains Report:
 --------------------------
 
 Clock to Setup on destination clock clk
------------------+---------+---------+---------+---------+
-                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock     |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
------------------+---------+---------+---------+---------+
-clk              |   17.660|    6.894|    2.316|         |
-en               |         |    7.169|    2.487|         |
-mMIPS/ctrl/_n0086|         |    1.630|         |         |
------------------+---------+---------+---------+---------+
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    2.060|         |         |         |
+en             |         |         |    2.487|         |
+---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock en
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |         |         |    6.291|         |
----------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock mMIPS/ctrl/_n0086
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-clk            |         |         |    3.424|         |
+clk            |         |         |    3.315|         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 33.00 secs
-Total CPU time to Xst completion: 32.72 secs
+Total REAL time to Xst completion: 34.00 secs
+Total CPU time to Xst completion: 34.88 secs
  
 --> 
 
-Total memory usage is 366192 kilobytes
+Total memory usage is 342652 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  202 (   0 filtered)
-Number of infos    :   35 (   0 filtered)
+Number of warnings :  701 (   0 filtered)
+Number of infos    :   71 (   0 filtered)
 
