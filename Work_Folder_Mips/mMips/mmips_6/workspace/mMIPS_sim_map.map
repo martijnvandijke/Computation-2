@@ -1,0 +1,56 @@
+Release 14.2 Map P.28xd (nt64)
+Xilinx Map Application Log File for Design 'mMIPS_sim'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc6slx45t-csg324-3 -w -logic_opt off -ol
+high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off
+-pr off -lc off -power off -o mMIPS_sim_map.ncd mMIPS_sim.ngd mMIPS_sim.pcf 
+Target Device  : xc6slx45t
+Target Package : csg324
+Target Speed   : -3
+Mapper Version : spartan6 -- $Revision: 1.55 $
+Mapped Date    : Wed Mar 02 20:07:34 2016
+
+Mapping design into LUTs...
+Running directed packing...
+Running delay-based LUT packing...
+Updating timing models...
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+Running timing-driven placement...
+Total REAL time at the beginning of Placer: 13 secs 
+Total CPU  time at the beginning of Placer: 10 secs 
+
+Phase 1.1  Initial Placement Analysis
+Phase 1.1  Initial Placement Analysis (Checksum:754bbcdf) REAL time: 15 secs 
+
+Phase 2.7  Design Feasibility Check
+INFO:Place:834 - Only a subset of IOs are locked. Out of 75 IOs, 40 are locked
+   and 35 are not locked. If you would like to print the names of these IOs,
+   please set the environment variable XIL_PAR_DESIGN_CHECK_VERBOSE to 1. 
+Phase 2.7  Design Feasibility Check (Checksum:754bbcdf) REAL time: 16 secs 
+
+Phase 3.31  Local Placement Optimization
+Phase 3.31  Local Placement Optimization (Checksum:754bbcdf) REAL time: 16 secs 
+
+Phase 4.2  Initial Placement for Architecture Specific Features
+...
+Phase 4.2  Initial Placement for Architecture Specific Features
+(Checksum:b718d0a7) REAL time: 23 secs 
+
+Phase 5.36  Local Placement Optimization
+Phase 5.36  Local Placement Optimization (Checksum:b718d0a7) REAL time: 23 secs 
+
+Phase 6.30  Global Clock Region Assignment
+Phase 6.30  Global Clock Region Assignment (Checksum:b718d0a7) REAL time: 23 secs 
+
+Phase 7.3  Local Placement Optimization
+...
+Phase 7.3  Local Placement Optimization (Checksum:bb2d8691) REAL time: 23 secs 
+
+Phase 8.5  Local Placement Optimization
+Phase 8.5  Local Placement Optimization (Checksum:bb2d8691) REAL time: 23 secs 
+
+Phase 9.8  Global Placement
+................................................................
