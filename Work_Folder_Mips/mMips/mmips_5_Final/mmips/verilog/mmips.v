@@ -207,9 +207,9 @@ module mMIPS(
 	 //forwarding wires
 	 
 	 wire 	[1:0]	 bus_forwarding1;
-	 wire		[1:0]	 bus_forwarding1_out;
+	 wire		[31:0]	 bus_forwarding1_out;
 	 wire		[1:0]	 bus_forwarding2;
-	 wire		[1:0]	 bus_forwarding2_out;
+	 wire		[31:0]	 bus_forwarding2_out;
 	 
     
     /*
@@ -439,6 +439,9 @@ module mMIPS(
 		  //extra forwarding inputs
 		  .forwarding1(bus_forwarding1),
 		  .forwarding2(bus_forwarding2));
+		  //.CtrlMemMemread(bus_ex_ctrl_mem_memread),
+		  //.CtrlEXMemread(bus_id_ctrl_mem_memread));
+		 // );
 
     /*
      * Pipeline registers
@@ -490,14 +493,14 @@ module mMIPS(
         .clk(clk));
     
     REGISTER #(.WIDTH(`DWORD))  id_data_reg1(
-        .in(bus_registers_1),
+        .in(bus_forwarding1_out),
         .w(bus_pipe_en),
         .out(bus_id_data_reg1),
         .rst(rst),
         .clk(clk));
 
     REGISTER #(.WIDTH(`DWORD))  id_data_reg2(
-        .in(bus_registers_2),
+        .in(bus_forwarding2_out),
         .w(bus_pipe_en),
         .out(bus_id_data_reg2),
         .rst(rst),
