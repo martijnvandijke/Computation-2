@@ -262,7 +262,7 @@ module mMIPS(
         .out(bus_mux6));
 		  
 		  //extra muxes for forwarding
-		MUX4 #(.WIDTH(`DWORD)) mux7(
+	MUX4 #(.WIDTH(`DWORD)) mux7(
 		 .in0(bus_registers_1), //normal id inpu
 		 .in1(bus_mux6), //output from EX
 		 .in2(bus_ex_alu_result), //output from MEM
@@ -271,7 +271,7 @@ module mMIPS(
 		 .out(bus_forwarding1_out)
 		);
 			  
-		MUX4 #(.WIDTH(`DWORD)) mux8(
+	MUX4 #(.WIDTH(`DWORD)) mux8(
 		 .in0(bus_registers_2), //normal id inpu
 		 .in1(bus_mux6), //output from EX
 		 .in2(bus_ex_alu_result), //output from MEM
