@@ -12,11 +12,14 @@
 #include <string>
 #include "glut.h"           // glut header file. Never include glut before stdlib.h!
 
+
 #define _USE_MATH_DEFINES   // Signal math.h that we would like defines like M_PI
 #include <math.h>           // Might come in usefull for cosine functions and stuff like that
 
 #include "main.h"           // Function declarations and some definitions
 #include "drawtools.h"      // contains all you need to draw stuff
+
+
 
 using namespace std;
 
@@ -25,6 +28,11 @@ std::string keytext;
 
 DrawList drawList;
 
+int number_enemys = 0;
+int health[] = {20,40,50};
+int posx[] = { 40,500,30 };
+int posy[] = {800,60,20};
+int speed[];
 
 //---------------------------------------------------------------------------
 // void init(void)
@@ -113,6 +121,8 @@ void idle( int value) {
 	Lines(point5, point6, colors, line_width);
 
 	circle(10, 30, 20,  12);
+	
+	Enemys(0, 3);
 
 	//glFlush();
 	//glFlush();            // Execute all commands waiting to be executed
@@ -121,7 +131,29 @@ void idle( int value) {
 }
 
 
+void Enemys(int type, int number) {
 
+	//draw enemys if type 1
+	if (type == 0) {
+		//draw number of eneyms on screen
+		for (int i = 0; i < number; i++) {
+			//if the enemy still has health
+			if (health[i] != 0) {
+				
+				//draw the enemy
+				circle(posx[i],posy[i], 20, 12);
+				
+
+			}
+			//delete the helath on that plcae
+			/*else{
+				health[i] = health[i + 1];*/
+
+		}
+
+	}
+
+}
 
 
 //---------------------------------------------------------------------------

@@ -29,11 +29,11 @@ void main(void)
                          -7*(int)buf_i[(aminus) * bminus] +
                           5*(int)buf_i[(aminus) * b_width ] +
                           2*(int)buf_i[(aminus) * bplus ] +
-                         -1*(int)buf_i[ a      * bminus] +
-                         15*(int)buf_i[ a      * b_width   ] +
+                         -1*(int)buf_i[ a      * bminus ] +
+                         15*(int)buf_i[ a      * b_width ] +
                          -1*(int)buf_i[ a      * bplus] +
-                          2*(int)buf_i[(a + 1) * bminus] +
-                          5*(int)buf_i[(a + 1) * b_width    ] +
+                          2*(int)buf_i[(a + 1) * bminus ] +
+                          5*(int)buf_i[(a + 1) * b_width ] +
                          -7*(int)buf_i[(a + 1) * bplus] +  rest );
 
 			var = sfu0(result, max_int);

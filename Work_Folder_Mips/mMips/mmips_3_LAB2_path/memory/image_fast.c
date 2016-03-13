@@ -1,5 +1,5 @@
-#define WIDTH   31
-#define HEIGHT  31
+#define WIDTH   32
+#define HEIGHT  32
 #define max_int 255
 #define sfu0(a, b) ((a) - ((b) + *(int *) 0x12344321))
 
@@ -9,23 +9,34 @@ void main(void)
     int max = 255;
 	int var;
     char *buf_i = (char*)0x401000, *buf_o = (char*)0x402000;
-    
-    for (a = 1; a < HEIGHT ; a++)
+	int unsigned height_min = HEIGHT - 1;
+	int unsigned width_min = WIDTH - 1;
+
+    for (a = 1; a < height_min ; a++)
     {
-        for (b = 1; b < WIDTH ; b++)
+        for (b = 1; b < width_min ; b++)
         {
+			int aminus = a - 1 ;
+			int unsigned aplus = a + 1;
+			
+			int unsigned b_width = WIDTH + b;
+			int unsigned bplus = b_width + 1 ;
+			int bminus = b_width -1 ;
+			int unsigned rest = 128 / 13;
+			
+			//int unsigned 5_plus = 5;
+			//int unsigned 2_plus = 2;
 
             result=((
-                         -7*(int)buf_i[(a - 1) * WIDTH + b - 1] +
-                          5*(int)buf_i[(a - 1) * WIDTH + b    ] +
-                          2*(int)buf_i[(a - 1) * WIDTH + b + 1] +
-                         -1*(int)buf_i[ a      * WIDTH + b - 1] +
-                         15*(int)buf_i[ a      * WIDTH + b    ] +
-                         -1*(int)buf_i[ a      * WIDTH + b + 1] +
-                          2*(int)buf_i[(a + 1) * WIDTH + b - 1] +
-                          5*(int)buf_i[(a + 1) * WIDTH + b    ] +
-                         -7*(int)buf_i[(a + 1) * WIDTH + b + 1] +
-                        128) / 13);
+                         -7*(int)buf_i[(aminus) * bminus] +
+                          5*(int)buf_i[(aminus) * b_width ] +
+                          2*(int)buf_i[(aminus) * bplus ] +
+                         -1*(int)buf_i[ a      * bminus ] +
+                         15*(int)buf_i[ a      * b_width ] +
+                         -1*(int)buf_i[ a      * bplus] +
+                          2*(int)buf_i[(a + 1) * bminus ] +
+                          5*(int)buf_i[(a + 1) * b_width ] +
+                         -7*(int)buf_i[(a + 1) * bplus] + 128  ) /13 );
 
 			var = sfu0(result, max_int);
             /* Clipping */
