@@ -206,9 +206,9 @@ module mMIPS(
 	 
 	 //forwarding wires
 	 
-	 wire 	[1:0]	 bus_forwarding1;
+	 wire 	[2:0]	 bus_forwarding1;
 	 wire		[31:0]	 bus_forwarding1_out;
-	 wire		[1:0]	 bus_forwarding2;
+	 wire		[2:0]	 bus_forwarding2;
 	 wire		[31:0]	 bus_forwarding2_out;
 	 
     
@@ -263,19 +263,19 @@ module mMIPS(
 		  
 		  //extra muxes for forwarding
 	MUX4 #(.WIDTH(`DWORD)) mux7(
-		 .in0(bus_registers_1), //normal id inpu
-		 .in1(bus_mux6), //output from EX
-		 .in2(bus_ex_alu_result), //output from MEM
-		 .in3(bus_mux3), //output from WB
+		 .in0(bus_registers_1), 
+		 .in1(bus_mux6), 
+		 .in2(bus_ex_alu_result), 
+		 .in3(bus_mux3), 
 		 .sel(bus_forwarding1),
 		 .out(bus_forwarding1_out)
 		);
 			  
 	MUX4 #(.WIDTH(`DWORD)) mux8(
-		 .in0(bus_registers_2), //normal id inpu
-		 .in1(bus_mux6), //output from EX
-		 .in2(bus_ex_alu_result), //output from MEM
-		 .in3(bus_mux3), //output from WB
+		 .in0(bus_registers_2), 
+		 .in1(bus_mux6), 
+		 .in2(bus_ex_alu_result), 
+		 .in3(bus_mux3), 
 		 .sel(bus_forwarding2),
 		 .out(bus_forwarding2_out)
 		);	  

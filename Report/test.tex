@@ -1,0 +1,170 @@
+\documentclass[10pt]{article}
+\usepackage{graphicx,xcolor}
+%\usepackage[pass]{geometry}
+\usepackage{booktabs}
+\usepackage[english]{babel}
+\usepackage{booktabs}
+\usepackage[a4paper,top=25mm,left=20mm,textwidth=170mm,textheight=249.7mm]{geometry}
+\usepackage{color}
+\usepackage[justification=centering]{caption}
+\usepackage{textcomp}
+\usepackage{float}
+\usepackage{longtable,needspace}
+\usepackage{listings}
+%\usepackage{minted}
+\usepackage{paralist}
+\usepackage{placeins}
+\usepackage{pdfpages}
+%\usepackage{atbegshi}%
+%\AtBeginDocument{\AtBeginShipoutNext{\AtBeginShipoutDiscard}}		%%fixte de overtollige pagina voor de titel pagina :)
+\usepackage{subfig}
+\usepackage{lastpage}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{amsmath} % AMS Math Package
+\usepackage{amsthm} % Theorem Formatting (want het is een wiskundig bewijsstuk)
+\usepackage{amssymb} % Math symbols such as \mathbb
+\usepackage{graphicx} % Allows for eps images
+\usepackage{multicol} % Allows for multiple columns
+%\usepackage[dvips,letterpaper,margin=1in,bottom=1in]{geometry}
+\usepackage{titleps,kantlipsum}
+\usepackage{hyperref}
+\usepackage{mathrsfs}
+\usepackage{amsmath,amscd}
+\usepackage{hyperref}
+\usepackage[all,cmtip]{xy}
+\usepackage{bbm}
+\usepackage{booktabs}
+\usepackage{pdflscape}
+\usepackage{fancyhdr}
+%\usepackage{fontspec}
+%\usepackage[demo]{adjustbox}
+
+\begin{document}
+\begin{titlepage}
+    \color[rgb]{.1,.1,1}
+    \hspace{5mm}
+    \includegraphics[width=12cm,height=3cm]{tue.png}
+
+    \bigskip
+
+    \hspace{40mm}
+    \begin{minipage}{10mm}
+        \color[rgb]{.0,.0,0.0}
+        \rule{1pt}{200mm}
+    \end{minipage}
+    \begin{minipage}{133mm}
+        \vspace{20mm}
+        \color{black}
+        %\sffamily
+        \Huge{\bfseries {mMips Optimization Report}}
+
+        \vspace{40mm}
+
+        \textit{Made by :}\\
+        Martyn van Dijke
+
+
+        \vspace{20mm}
+
+        \today
+        \hspace{30mm} % or \hfill, if you want the square sticked
+        \color[rgb]{.4,.4,1} %                        to the right margin
+        %\includegraphics[width=3cm,height=3cm]{../my_image2.jpg}
+    \end{minipage}
+\end{titlepage}
+
+\restoregeometry
+\clearpage
+
+
+
+\tableofcontents
+
+\clearpage
+
+%vanaf hier krijg je fancy page headers
+\pagestyle{fancy}
+\lhead{ \nouppercase \leftmark }
+\chead{  }
+\rhead{    }
+\renewcommand{\headrulewidth}{0.4pt}
+\lfoot{}
+\cfoot{}
+\rfoot{ Page \thepage\ of  \pageref{LastPage} }
+
+\section{Problem context}
+
+
+%\section{Pre Final Task}
+
+
+
+
+
+\section{Possible architecture  optimizations }
+
+Although the mips processor is relatively fast because of the RISC idea, improvements can be made to the architecture of the mips processor next to  the architecture improvements, improvements in the compiler itself and the complication of the C code.\\
+All the possible improvements that can be made to the processor are listed below 
+\begin{enumerate}
+  \item Adding clipping instruction
+  \item Changing the critical path
+  \item Forwarding
+  \item Optimization of the C code
+  \item Branch prediction
+  \item Compiler optimizations
+  \item Multi issue
+  \item Multi core
+  \item 64-bit architecture
+  \item Scalar processing
+\end{enumerate}
+
+
+\subsection{Theoretical speed-up}
+
+In order to measure the speed up of the processor an equation is need that relates the the number of cycles $C$ to the total execution time $T$ and the frequency $f$ of the processor. 
+This equation is given by 
+\begin{equation}\label{time}
+  T = \frac{C}{f}
+\end{equation}
+
+In order measure the the performance gain of each change in the architecture a equation is needed that relates the relative gain in execution time $T$ this gain $G$ is given by
+\begin{equation}\label{gain}
+  G = \frac{T_{original} - T}{T_{original}} \cdot 100 \%
+\end{equation}
+
+With the equations (\ref{gain}) and (\ref{time}) it is possible to measure the improvement of the processor. 
+
+\section{Description of improvements}
+
+\section{Testing}
+
+
+
+
+\section{Results}
+
+
+\begin{table}[H]
+\centering
+\caption{Speed improvements mMips}
+\label{tab:speedimp}
+\begin{tabular}{@{}lllll@{}}
+\toprule
+Change to the architecture  &Number of cycles & Frequency [Hz]  & Execution Time [s] & Performance Gain [\%]\\ \midrule
+Reference &2350122 & 56625000  & 0.041503258278146 & - \\
+Adding own instruction &2315926 & 56625000 & 0.040899355408389 & 1.455073396189640 \\
+Changing the critical path &2108766 & 56626000 &0.037240242997916 & 8.94662611167187 \\
+ & &  & & \\
+ & &  & & \\
+ & &  & & \\
+ \bottomrule
+\end{tabular}
+\end{table}
+
+
+
+\section{Conclusion}
+
+\section{References}
+
+\end{document} 

@@ -67,10 +67,10 @@ module HAZARD(
     reg     [0:0]   hazard;
     reg     [4:0]   ifidreadregister1;
     reg     [4:0]   ifidreadregister2;
-	output	[1:0] forwarding1;
-	output	[1:0]	forwarding2;
-	reg 		[1:0]	forwarding1;
-	reg		[1:0]	forwarding2;
+	output	[2:0] forwarding1;
+	output	[2:0]	forwarding2;
+	reg 		[2:0]	forwarding1;
+	reg		[2:0]	forwarding2;
 
     
     always @(MEMWBRegWrite or 
@@ -96,8 +96,8 @@ module HAZARD(
             // Enable the pipeline and instruction memory
             imem_en = 1'b1;
             pipe_en = 1'b1;
-				forwarding1 = 0;
-				forwarding2 = 0;
+				forwarding1 = 0'b0;
+				forwarding2 = 0'b0;
             
             // Check for hazards (for simplicity assume that register zero
             // can also cause a hazard)
@@ -138,33 +138,33 @@ module HAZARD(
 									MEMWBWriteRegister == ifidreadregister1 &&
 									MEMWBWriteRegister != 0)
 							// Forward A from WB
-							forwarding1 = 3;
+							forwarding1 = 2'b11;
 							
 							
 						if (MEMWBRegWrite == 1'b1 &&
 									MEMWBWriteRegister == ifidreadregister2 &&
 									MEMWBWriteRegister != 0)
-							forwarding2 = 3;
+							forwarding2 = 2'b11;
 				
 						if (EXMEMRegWrite == 1'b1 &&
 									EXMEMWriteRegister == ifidreadregister1 &&
 									EXMEMWriteRegister != 0)
-							forwarding1 = 2;
+							forwarding1 = 2'b10;
 						
 						if(EXMEMRegWrite == 1'b1 &&
 									EXMEMWriteRegister == ifidreadregister2 &&
 									EXMEMWriteRegister != 0)
-							forwarding2 =1;
+							forwarding2 =2'b10;
 				
 						if (IDEXRegWrite == 1)
 							begin
 								if (IDEXRegDst == 2'b00 && IDEXWriteRegisterRt == ifidreadregister1 ||
 											IDEXRegDst == 2'b01 && IDEXWriteRegisterRd == ifidreadregister1)
-										forwarding1 = 1;
+										forwarding1 = 1'b01;
 								
 								if (IDEXRegDst == 2'b00 && IDEXWriteRegisterRt == ifidreadregister2 ||
 											IDEXRegDst == 2'b01 && IDEXWriteRegisterRd == ifidreadregister2)
-										forwarding2 = 1;
+										forwarding2 = 1'b01;
 										
 							end
 					

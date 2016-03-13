@@ -1,5 +1,5 @@
-#define WIDTH   8
-#define HEIGHT  8
+#define WIDTH   32
+#define HEIGHT  32
 #define max_int 255
 #define sfu0(a, b) ((a) - ((b) + *(int *) 0x12344321))
 

@@ -1,6 +1,5 @@
 ﻿  main.cpp
 d:\computation-2\c work folder\final task\v2\openglskeleton\openglskeleton\main.cpp(81): warning C4838: conversion from 'double' to 'float' requires a narrowing conversion
-  drawtools.cpp
-  drawlist.cpp
-  Generating Code...
+d:\computation-2\c work folder\final task\v2\openglskeleton\openglskeleton\main.cpp(90): warning C4838: conversion from 'double' to 'float' requires a narrowing conversion
+d:\computation-2\c work folder\final task\v2\openglskeleton\openglskeleton\main.cpp(102): warning C4838: conversion from 'double' to 'float' requires a narrowing conversion
   OpenGLSkeleton.vcxproj -> D:\Computation-2\C Work Folder\Final Task\V2\OpenGLSkeleton\Debug\OpenGLSkeleton.exe
