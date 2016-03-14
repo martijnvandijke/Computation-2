@@ -1,7 +1,7 @@
 #define WIDTH   32
 #define HEIGHT  32
 #define max_int 255
-#define sfu0(a, b) ((a) - ((b) + *(int *) 0x12344321))
+#define sfu0(a, b) ((a) + ((b) + *(int *) 0x12344321))
 
 void main(void)
 {
@@ -28,6 +28,8 @@ void main(void)
 			int unsigned tweeplus = 2;
 			int unsigned vijftien = 15;
 			int unsigned dertiende = 1 / 13;
+			int min7 = -7;
+			int min1 = -1;
 
             result=((
                          -7*(int)buf_i[(aminus) * bminus] +
@@ -40,11 +42,11 @@ void main(void)
 						vijfplus*(int)buf_i[(a + 1) * b_width ] +
                          -7*(int)buf_i[(a + 1) * bplus] + 128  ) * dertiende );
 
-			var = sfu0(result, max_int);
+			//var = sfu0(result, max_int);
             /* Clipping */
-            //if(result<0) buf_o[a * WIDTH + b] = 0;
-            //else if (result > 255) buf_o[a * WIDTH + b] = (char)255;
-            //else buf_o[a * WIDTH + b] = result;
+            if(result<0) buf_o[a * WIDTH + b] = 0;
+            else if (result > 255) buf_o[a * WIDTH + b] = (char)255;
+            else buf_o[a * WIDTH + b] = result;
         }
     }
 }

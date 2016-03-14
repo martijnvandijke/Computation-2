@@ -106,8 +106,10 @@ module ALUCTRL(functionCode, ALUop, Shamt, ALUctrl);
                             'h2B:   //Set-on-less-than (unsigned)
                                 ALUctrl = 'h8;
                                 //image clipping operation
-									 'h30 :
-											ALUctrl = 'h14;
+									'h30 :
+											ALUctrl = 'h30;  
+									 'h34 :
+											ALUctrl = 'h34;
                             default:
                                 ALUctrl = 'h0;
                         endcase

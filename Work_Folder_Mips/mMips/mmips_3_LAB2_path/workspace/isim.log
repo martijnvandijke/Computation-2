@@ -1,5 +1,6 @@
 ISim log file
 Running: D:\Computation-2\Work_Folder_Mips\mMips\mmips_3_LAB2_path\workspace\testbench_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/Computation-2/Work_Folder_Mips/mMips/mmips_3_LAB2_path/workspace/testbench_isim_beh.wdb 
+INFO: There is another simulation running in the same directory. Using database file name isim1.wdb.
 ISim P.28xd (signature 0xa0883be4)
 ----------------------------------------------------------------------
 INFO:Security:50 - The XILINXD_LICENSE_FILE environment variable is set to '2100@tuelicense.campus.tue.nl'.
@@ -21,3 +22,6 @@ Time resolution is 1 ps
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
 # run all
+Finished in      498081 cycles
+
+Stopped at time : 49808201 ns : File "D:/Computation-2/Work_Folder_Mips/mMips/mmips_3_LAB2_path/verilog/testbench.v" Line 132
