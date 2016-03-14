@@ -21,6 +21,4 @@ Time resolution is 1 ps
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
 # run all
-Finished in     2040848 cycles
-
-Stopped at time : 204084901 ns : File "C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_3_LAB2_path/verilog/testbench.v" Line 132
+The simulator has terminated in an unexpected manner.  Please review the ISim log (isim.log) for details.

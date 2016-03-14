@@ -60,10 +60,10 @@ module ALU(ctrl, a, b, r, r2, z);
                 'h2:    // Add signed
 					 begin
                     result = s_int + t_int;
-						  if(result == 0)
-								zero = 1;
-						  else
-								zero = 0;
+//						  if(result == 0)
+//								zero = 1;
+//						  else
+//								zero = 0;
 					 end
                     
                 'h3:    // Add unsigned
@@ -86,10 +86,10 @@ module ALU(ctrl, a, b, r, r2, z);
                         result = 1;
                     else
                         result = 0;
-						 if(result == 0)
-								zero = 1;
-						  else
-								zero = 0;	
+//						 if(result == 0)
+//								zero = 1;
+//						  else
+//								zero = 0;	
 
                 end       
                 'h8:    // Set-on-less-than unsigned
@@ -99,10 +99,10 @@ module ALU(ctrl, a, b, r, r2, z);
                     else
                         result = 0;
 								
-							if(result == 0)
-								zero = 1;
-						  else
-								zero = 0;								
+//							if(result == 0)
+//								zero = 1;
+//						  else
+//								zero = 0;								
                 end   
                 'h9:    // Load upper immediate
                     result = (t << 16);
