@@ -137,11 +137,9 @@
       <outfile xil_pn:name="testbench_isim_beh.exe"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1457885603" xil_pn:in_ck="-8305841726472852940" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="3254652840144843728" xil_pn:start_ts="1457885602">
+    <transform xil_pn:end_ts="1457969760" xil_pn:in_ck="-8305841726472852940" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="3254652840144843728" xil_pn:start_ts="1457969758">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="testbench_isim_beh.wdb"/>

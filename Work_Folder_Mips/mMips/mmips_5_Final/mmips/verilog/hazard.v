@@ -35,9 +35,7 @@ module HAZARD(
         IFIDWrite,
         Hazard,
         pipe_en,
-        imem_en,
-		  forwarding1,
-		  forwarding2
+        imem_en
     );
 
     input   [0:0]   enable;
@@ -67,10 +65,6 @@ module HAZARD(
     reg     [0:0]   hazard;
     reg     [4:0]   ifidreadregister1;
     reg     [4:0]   ifidreadregister2;
-	output	[1:0] forwarding1;
-	output	[1:0]	forwarding2;
-	reg 		[1:0]	forwarding1;
-	reg		[1:0]	forwarding2;
 
     
     always @(MEMWBRegWrite or 
@@ -96,20 +90,14 @@ module HAZARD(
             // Enable the pipeline and instruction memory
             imem_en = 1'b1;
             pipe_en = 1'b1;
-				forwarding1 = 0; //3'b000;
-				forwarding2 = 0; //3'b000;
             
             // Check for hazards (for simplicity assume that register zero
             // can also cause a hazard)
-				
-				//nothing you can do about this
             if (BranchOpID != 2'b00)// || BranchOpEX != 2'b00)
                 // (Control) branch hazard
                 // Don't fetch a new instruction, insert a 'nop'
                 hazard = 1'b1;
-					 
-					 //old code
-            /*else if (IDEXRegWrite == 1'b1 && ( 
+            else if (IDEXRegWrite == 1'b1 && ( 
                         IDEXRegDst == 2'b00 && IDEXWriteRegisterRt == ifidreadregister1 ||
                         IDEXRegDst == 2'b01 && IDEXWriteRegisterRd == ifidreadregister1 ||
                         IDEXRegDst == 2'b00 && IDEXWriteRegisterRt == ifidreadregister2 ||
@@ -128,58 +116,8 @@ module HAZARD(
                 hazard = 1'b1;
             else
                 // No hazard
-                hazard = 1'b0;*/
+                hazard = 1'b0;
             
-				else
-				//begin the forwarding
-				begin
-				
-						if (MEMWBRegWrite == 1'b1 &&
-									MEMWBWriteRegister == ifidreadregister1 &&
-									MEMWBWriteRegister != 0)
-							// Forward A from WB
-							forwarding1 = 3; //3'b011;
-							
-							
-						if (MEMWBRegWrite == 1'b1 &&
-									MEMWBWriteRegister == ifidreadregister2 &&
-									MEMWBWriteRegister != 0)
-							forwarding2 = 3; //'b011;
-				
-						if (EXMEMRegWrite == 1'b1 &&
-									EXMEMWriteRegister == ifidreadregister1 &&
-									EXMEMWriteRegister != 0)
-							forwarding1 = 2; //'b010;
-						
-						if(EXMEMRegWrite == 1'b1 &&
-									EXMEMWriteRegister == ifidreadregister2 &&
-									EXMEMWriteRegister != 0)
-							forwarding2 = 2; //'b010;
-				
-						if (IDEXRegWrite == 1)
-							begin
-								if (IDEXRegDst == 2'b00 && IDEXWriteRegisterRt == ifidreadregister1 ||
-											IDEXRegDst == 2'b01 && IDEXWriteRegisterRd == ifidreadregister1)
-										forwarding1 = 1; //3'b001;
-								
-								if (IDEXRegDst == 2'b00 && IDEXWriteRegisterRt == ifidreadregister2 ||
-											IDEXRegDst == 2'b01 && IDEXWriteRegisterRd == ifidreadregister2)
-										forwarding2 = 1; //3'b001;
-										
-							end
-					
-				
-				
-				
-				
-				end
-				
-				
-				
-				
-				
-				
-				
             // Write output
             if (enable[1'b0] == 0)
             begin
