@@ -21,4 +21,3 @@ Time resolution is 1 ps
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
 # run all
-The simulator has terminated in an unexpected manner.  Please review the ISim log (isim.log) for details.

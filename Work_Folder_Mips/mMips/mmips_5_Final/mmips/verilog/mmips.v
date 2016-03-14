@@ -203,6 +203,14 @@ module mMIPS(
     wire    [31:0]  bus_mem_dmem_data;
     wire    [1:0]   bus_mem_ctrl_wb_memtoreg;
     wire    [0:0]   bus_mem_ctrl_wb_regwrite;
+	 
+	 //forwarding wires
+	 
+	 wire 	[1:0]	 bus_sel_forwarding1;
+	 wire		[31:0]	 bus_forwarding1_out;
+	 wire		[1:0]	 bus_sel_forwarding2;
+	 wire		[31:0]	 bus_forwarding2_out;
+	 
     
     /*
      * Module instantiation
@@ -252,6 +260,25 @@ module mMIPS(
         .in3(bus_if_pc),
         .sel(bus_id_ctrl_ex_alusel),
         .out(bus_mux6));
+		  
+		  //extra muxes for forwarding
+	MUX4 #(.WIDTH(`DWORD)) fw1(
+		 .in0(bus_registers_1), 
+		 .in1(bus_mux6), 
+		 .in2(bus_ex_alu_result), 
+		 .in3(bus_mux3), 
+		 .sel(bus_sel_forwarding1),
+		 .out(bus_forwarding1_out)
+		);
+			  
+	MUX4 #(.WIDTH(`DWORD)) fw2(
+		 .in0(bus_registers_2), 
+		 .in1(bus_mux6), 
+		 .in2(bus_ex_alu_result), 
+		 .in3(bus_mux3), 
+		 .sel(bus_sel_forwarding2),
+		 .out(bus_forwarding2_out)
+		);	  
 
     /*
      * instruction decoder
@@ -408,7 +435,13 @@ module mMIPS(
         .IFIDWrite(bus_hazard_ifidwrite),
         .Hazard(bus_hazard_hazard),
         .pipe_en(bus_pipe_en),
-        .imem_en(rom_r));
+        .imem_en(rom_r),
+		  //extra forwarding inputs
+		  .forwarding1(bus_sel_forwarding1),
+		  .forwarding2(bus_sel_forwarding2));
+		  //.CtrlMemMemread(bus_ex_ctrl_mem_memread),
+		  //.CtrlEXMemread(bus_id_ctrl_mem_memread));
+		 // );
 
     /*
      * Pipeline registers
@@ -460,14 +493,14 @@ module mMIPS(
         .clk(clk));
     
     REGISTER #(.WIDTH(`DWORD))  id_data_reg1(
-        .in(bus_registers_1),
+        .in(bus_forwarding1_out),
         .w(bus_pipe_en),
         .out(bus_id_data_reg1),
         .rst(rst),
         .clk(clk));
 
     REGISTER #(.WIDTH(`DWORD))  id_data_reg2(
-        .in(bus_registers_2),
+        .in(bus_forwarding2_out),
         .w(bus_pipe_en),
         .out(bus_id_data_reg2),
         .rst(rst),

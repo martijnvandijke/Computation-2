@@ -24,19 +24,21 @@ void main(void)
 			int bminus = b_width -1 ;
 			int unsigned rest = 128 / 13;
 			
-			//int unsigned 5_plus = 5;
-			//int unsigned 2_plus = 2;
+			int unsigned vijfplus = 5;
+			int unsigned tweeplus = 2;
+			int unsigned vijftien = 15;
+			int unsigned dertiende = 1 / 13;
 
             result=((
                          -7*(int)buf_i[(aminus) * bminus] +
-                          5*(int)buf_i[(aminus) * b_width ] +
-                          2*(int)buf_i[(aminus) * bplus ] +
+                        vijfplus*(int)buf_i[(aminus) * b_width ] +
+						tweeplus*(int)buf_i[(aminus) * bplus ] +
                          -1*(int)buf_i[ a      * bminus ] +
                          15*(int)buf_i[ a      * b_width ] +
                          -1*(int)buf_i[ a      * bplus] +
-                          2*(int)buf_i[(a + 1) * bminus ] +
-                          5*(int)buf_i[(a + 1) * b_width ] +
-                         -7*(int)buf_i[(a + 1) * bplus] + 128  ) /13 );
+						tweeplus*(int)buf_i[(a + 1) * bminus ] +
+						vijfplus*(int)buf_i[(a + 1) * b_width ] +
+                         -7*(int)buf_i[(a + 1) * bplus] + 128  ) * dertiende );
 
 			var = sfu0(result, max_int);
             /* Clipping */
