@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2016-03-06T13:11:58</DateModified>
+  <DateModified>2016-03-15T09:33:33</DateModified>
   <ModuleName>mMIPS_sim</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_Source_Files/iseconfig/mMIPS_sim.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_Source_Files/workspace</ImplementationReportsDirectory>
+  <SavedFilePath>D:/Computation-2/Work_Folder_Mips/mMips/mmips_Source_Files/iseconfig/mMIPS_sim.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>D:/Computation-2/Work_Folder_Mips/mMips/mmips_Source_Files/workspace\</ImplementationReportsDirectory>
   <DateInitialized>2016-03-06T13:11:58</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

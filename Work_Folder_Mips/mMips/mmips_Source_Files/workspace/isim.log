@@ -1,19 +1,8 @@
 ISim log file
-Running: C:\Users\martijn\Documents\GitHub\Computation-2\Work_Folder_Mips\mMips\mmips_Source_Files\workspace\testbench_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_Source_Files/workspace/testbench_isim_beh.wdb 
-ISim P.28xd (signature 0xa0883be4)
-----------------------------------------------------------------------
-WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue to function, but you no longer qualify for Xilinx software updates or new releases.
-
-
-----------------------------------------------------------------------
-This is a Full version of ISim.
-Time resolution is 1 ps
+Running: D:\Computation-2\Work_Folder_Mips\mMips\mmips_Source_Files\workspace\testbench_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/Computation-2/Work_Folder_Mips/mMips/mmips_Source_Files/workspace/testbench_isim_beh.wdb 
+Time resolution is 1 fs
 # onerror resume
 # wave add /
+No active Database
 # run 1000 ns
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
-# run all
-Finished in     2350122 cycles
-
-Stopped at time : 235012301 ns : File "C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_Source_Files/verilog/testbench.v" Line 132
+Unable to execute live simulation command.

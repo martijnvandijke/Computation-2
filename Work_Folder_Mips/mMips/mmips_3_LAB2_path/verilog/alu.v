@@ -153,6 +153,14 @@ module ALU(ctrl, a, b, r, r2, z);
                         result = c[31:0];
                         result_hi = c[63:32];
                     end
+						  //division
+						'h14:	
+						begin
+					
+					
+						end
+						
+					
 				    'h30:
 							begin
 									if (s < 0)

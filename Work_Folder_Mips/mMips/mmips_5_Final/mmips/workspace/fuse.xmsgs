@@ -11,6 +11,9 @@
 <msg type="warning" file="HDLCompiler" num="991" delta="unknown" >"D:/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/workspace/../verilog/regfile16.v" Line 63: Event expressions must result in a singular type
 </msg>
 
+<msg type="warning" file="HDLCompiler" num="1818" delta="unknown" >"D:/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/workspace/../verilog/hazard.v" Line 149: Invalid size of integer constant literal
+</msg>
+
 <msg type="warning" file="HDLCompiler" num="991" delta="unknown" >"D:/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/workspace/../verilog/rom.v" Line 114: Event expressions must result in a singular type
 </msg>
 
@@ -18,6 +21,9 @@
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"D:/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/workspace/../verilog/testbench.v" Line 33: Port <arg fmt="%s" index="1">dev_dout</arg> is not connected to this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"D:/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/workspace/../verilog/mmips.v" Line 252: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">in2</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
 </messages>

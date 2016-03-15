@@ -132,7 +132,22 @@ module HAZARD(
             
 				else
 				//begin the forwarding
+				
+						if (IDEXRegWrite == 1'b1 && ( 
+                        IDEXRegDst == 2'b00 && IDEXWriteRegisterRt == ifidreadregister1 ||
+                        IDEXRegDst == 2'b01 && IDEXWriteRegisterRd == ifidreadregister1 ||
+                        IDEXRegDst == 2'b00 && IDEXWriteRegisterRt == ifidreadregister2 ||
+                        IDEXRegDst == 2'b01 && IDEXWriteRegisterRd == ifidreadregister2))
+                // EX hazard
+                hazard = 1'b1;
+
+
 				begin
+				
+				forwarding1 =0;
+				forwarding2 =0;
+				hazard = 0'b0;
+						
 				
 						if (MEMWBRegWrite == 1'b1 &&
 									MEMWBWriteRegister == ifidreadregister1 &&
@@ -141,32 +156,23 @@ module HAZARD(
 							forwarding1 = 3; //3'b011;
 							
 							
-						if (MEMWBRegWrite == 1'b1 &&
+						else if (MEMWBRegWrite == 1'b1 &&
 									MEMWBWriteRegister == ifidreadregister2 &&
 									MEMWBWriteRegister != 0)
 							forwarding2 = 3; //'b011;
 				
-						if (EXMEMRegWrite == 1'b1 &&
+						else if (EXMEMRegWrite == 1'b1 &&
 									EXMEMWriteRegister == ifidreadregister1 &&
 									EXMEMWriteRegister != 0)
 							forwarding1 = 2; //'b010;
 						
-						if(EXMEMRegWrite == 1'b1 &&
+						else if(EXMEMRegWrite == 1'b1 &&
 									EXMEMWriteRegister == ifidreadregister2 &&
 									EXMEMWriteRegister != 0)
 							forwarding2 = 2; //'b010;
 				
-						if (IDEXRegWrite == 1)
-							begin
-								if (IDEXRegDst == 2'b00 && IDEXWriteRegisterRt == ifidreadregister1 ||
-											IDEXRegDst == 2'b01 && IDEXWriteRegisterRd == ifidreadregister1)
-										forwarding1 = 1; //3'b001;
-								
-								if (IDEXRegDst == 2'b00 && IDEXWriteRegisterRt == ifidreadregister2 ||
-											IDEXRegDst == 2'b01 && IDEXWriteRegisterRd == ifidreadregister2)
-										forwarding2 = 1; //3'b001;
-										
-							end
+						
+							
 					
 				
 				
