@@ -107,7 +107,8 @@ module HAZARD(
                 // (Control) branch hazard
                 // Don't fetch a new instruction, insert a 'nop'
                 hazard = 1'b1;
-				 
+				else 
+				
 				begin
             
 					if (MEMWBRegWrite == 1'b1 &&

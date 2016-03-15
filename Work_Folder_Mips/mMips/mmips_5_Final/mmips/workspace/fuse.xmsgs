@@ -20,5 +20,8 @@
 <msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"D:/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/workspace/../verilog/testbench.v" Line 33: Port <arg fmt="%s" index="1">dev_dout</arg> is not connected to this instance
 </msg>
 
+<msg type="fatal" file="Simulator" num="0" delta="unknown" srcfile="../src/Fuse.cpp" srcline="209" srcrcs="1.133" >Failed to compile one of the generated C files.
+Please recompile with -mt off -v 1 switch to identify which design unit failed.</msg>
+
 </messages>
 
