@@ -60,11 +60,11 @@
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
-    <transform xil_pn:end_ts="1457971011" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1457971011">
+    <transform xil_pn:end_ts="1458067785" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1458067785">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1458033183" xil_pn:in_ck="-4052293083730513203" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1458033183">
+    <transform xil_pn:end_ts="1458070226" xil_pn:in_ck="-4052293083730513203" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1458070226">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="../verilog/add.v"/>
@@ -89,19 +89,19 @@
       <outfile xil_pn:name="../verilog/signextend.v"/>
       <outfile xil_pn:name="../verilog/testbench.v"/>
     </transform>
-    <transform xil_pn:end_ts="1458031733" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="1854889385420917559" xil_pn:start_ts="1458031733">
+    <transform xil_pn:end_ts="1458067785" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="1854889385420917559" xil_pn:start_ts="1458067785">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1458031733" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-4440119131342655243" xil_pn:start_ts="1458031733">
+    <transform xil_pn:end_ts="1458067785" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-4440119131342655243" xil_pn:start_ts="1458067785">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1457971011" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-516947113580470456" xil_pn:start_ts="1457971011">
+    <transform xil_pn:end_ts="1458067785" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-516947113580470456" xil_pn:start_ts="1458067785">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1458033183" xil_pn:in_ck="-4052293083730513203" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1458033183">
+    <transform xil_pn:end_ts="1458070226" xil_pn:in_ck="-4052293083730513203" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1458070226">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="../verilog/add.v"/>
@@ -126,11 +126,9 @@
       <outfile xil_pn:name="../verilog/signextend.v"/>
       <outfile xil_pn:name="../verilog/testbench.v"/>
     </transform>
-    <transform xil_pn:end_ts="1458033407" xil_pn:in_ck="-4052293083730513203" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-4369301261354119187" xil_pn:start_ts="1458033183">
+    <transform xil_pn:end_ts="1458070481" xil_pn:in_ck="-4052293083730513203" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-4369301261354119187" xil_pn:start_ts="1458070226">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
       <outfile xil_pn:name="isim.log"/>
@@ -138,11 +136,9 @@
       <outfile xil_pn:name="testbench_isim_beh.exe"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1458033407" xil_pn:in_ck="9093891288854945735" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="3254652840144843728" xil_pn:start_ts="1458033407">
+    <transform xil_pn:end_ts="1458070483" xil_pn:in_ck="9093891288854945735" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="3254652840144843728" xil_pn:start_ts="1458070481">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="testbench_isim_beh.wdb"/>

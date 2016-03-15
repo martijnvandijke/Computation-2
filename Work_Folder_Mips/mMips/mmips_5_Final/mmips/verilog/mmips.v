@@ -249,7 +249,7 @@ module mMIPS(
     MUX3 #(.WIDTH(`DWORD)) mux5 (
         .in0(bus_add2),
         .in1(bus_shiftleft_jmp),
-        .in2(bus_forwadring1_out),
+        .in2(bus_id_data_reg1),
         .sel(bus_id_ctrl_ex_target),
         .out(bus_mux5));
     
@@ -270,7 +270,7 @@ module mMIPS(
 		 .sel(bus_sel_forwarding1),
 		 .out(bus_forwarding1_out)
 		);
-			  //bus_id_data_reg2
+			  
 	MUX4 #(.WIDTH(`DWORD)) forwarding2(
 		 .in0(bus_registers_2), 
 		 .in1(bus_mux6), 
@@ -439,8 +439,7 @@ module mMIPS(
 		  //extra forwarding inputs
 		  .forwarding1(bus_sel_forwarding1),
 		  .forwarding2(bus_sel_forwarding2));
-		  //.CtrlMemMemread(bus_ex_ctrl_mem_memread),
-		  //.CtrlEXMemread(bus_id_ctrl_mem_memread));
+		  
 		 // );
 
     /*

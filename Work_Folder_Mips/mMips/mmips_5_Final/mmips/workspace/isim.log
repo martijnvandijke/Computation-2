@@ -14,7 +14,6 @@ WARNING:Security:42 - Your software subscription period has lapsed. Your current
 
 ----------------------------------------------------------------------
 This is a Full version of ISim.
-WARNING: File "D:/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/verilog/mmips.v" Line 252.  For instance mMIPS/mux5/, width 32 of formal port in2 is not equal to width 1 of actual signal bus_forwadring1_out.
 Time resolution is 1 ps
 # onerror resume
 # wave add /
@@ -22,5 +21,6 @@ Time resolution is 1 ps
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
 # run all
-Stopped at time : 41299701100 ps : File "D:/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/verilog/rom.v" Line 115
-The simulator has terminated in an unexpected manner.  Please review the ISim log (isim.log) for details.
+Finished in       48506 cycles
+
+Stopped at time : 4850701 ns : File "D:/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/verilog/testbench.v" Line 132

@@ -14,7 +14,6 @@ Analyzing Verilog file "D:/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mm
 Analyzing Verilog file "D:/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/workspace/../verilog/imm2word.v" into library work
 Analyzing Verilog file "D:/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/workspace/../verilog/hazard_ctrl.v" into library work
 Analyzing Verilog file "D:/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/workspace/../verilog/hazard.v" into library work
-WARNING:HDLCompiler:1818 - "D:/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/workspace/../verilog/hazard.v" Line 149: Invalid size of integer constant literal
 Analyzing Verilog file "D:/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/workspace/../verilog/decoder.v" into library work
 Analyzing Verilog file "D:/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/workspace/../verilog/ctrl.v" into library work
 Analyzing Verilog file "D:/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/workspace/../verilog/branch_ctrl.v" into library work
@@ -31,7 +30,6 @@ Analyzing Verilog file "D:/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mm
 Analyzing Verilog file "C:/Xilinx/14.2/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Starting static elaboration
 WARNING:HDLCompiler:1016 - "D:/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/workspace/../verilog/testbench.v" Line 33: Port dev_dout is not connected to this instance
-WARNING:HDLCompiler:189 - "D:/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/workspace/../verilog/mmips.v" Line 252: Size mismatch in connection of port <in2>. Formal port size is 32-bit while actual signal size is 1-bit.
 Completed static elaboration
 Compiling module MUX2
 Compiling module MUX3
@@ -174,8 +172,8 @@ Compiling module mMIPS_sim
 Compiling module testbench
 Compiling module glbl
 Time Resolution for simulation is 1ps.
-Waiting for 61 sub-compilation(s) to finish...
+Waiting for 86 sub-compilation(s) to finish...
 Compiled 140 Verilog Units
 Built simulation executable D:/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/workspace/testbench_isim_beh.exe
-Fuse Memory Usage: 165420 KB
-Fuse CPU Usage: 46218 ms
+Fuse Memory Usage: 165388 KB
+Fuse CPU Usage: 41109 ms

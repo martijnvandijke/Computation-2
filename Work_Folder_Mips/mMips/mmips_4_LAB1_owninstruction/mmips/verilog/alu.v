@@ -131,10 +131,12 @@ module ALU(ctrl, a, b, r, r2, z);
                     end
 				    'h14:
 							begin
-									if (s < 0)
-										result = 0;
+								//image clipping verilog implementation
 									if(s > 255)
 										result = 255;
+									else if (s <0)
+										result =0;
+										
 									else
 										result = s;
 							end
