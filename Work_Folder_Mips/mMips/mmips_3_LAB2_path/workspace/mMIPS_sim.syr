@@ -4,13 +4,13 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.21 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.21 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Reading design: mMIPS_sim.prj
 
@@ -193,7 +193,6 @@ Elaborating module <IMM2WORD>.
 Elaborating module <ALUCTRL>.
 
 Elaborating module <ALU>.
-"D:\Computation-2\Work_Folder_Mips\mMips\mmips_3_LAB2_path\verilog\alu.v" Line 176. $display Het werkt ik kom heiro
 
 Elaborating module <REGFILE16>.
 
@@ -1302,7 +1301,7 @@ Offset:              19.586ns (Levels of Logic = 8)
      DSP48A1:B5->P47      18   4.394   1.049  mMIPS/alu/Mmult_a[31]_b[31]_MuLt_11_OUT (mMIPS/alu/Mmult_a[31]_b[31]_MuLt_11_OUT_P47_to_Mmult_a[31]_b[31]_MuLt_11_OUT1)
      DSP48A1:C30->PCOUT47    1   2.689   0.000  mMIPS/alu/Mmult_a[31]_b[31]_MuLt_11_OUT1 (mMIPS/alu/Mmult_a[31]_b[31]_MuLt_11_OUT1_PCOUT_to_Mmult_a[31]_b[31]_MuLt_11_OUT2_PCIN_47)
      DSP48A1:PCIN47->P14    1   2.264   0.580  mMIPS/alu/Mmult_a[31]_b[31]_MuLt_11_OUT2 (mMIPS/alu/a[31]_b[31]_MuLt_11_OUT<31>)
-     LUT5:I4->O            3   0.205   0.651  mMIPS/alu/_n0266<31>6 (mMIPS/bus_alu_result<31>)
+     LUT5:I4->O            3   0.205   0.651  mMIPS/alu/_n0265<31>6 (mMIPS/bus_alu_result<31>)
      LUT6:I5->O           37   0.205   1.467  mMIPS/mux2711 (mMIPS/bus_mux6<31>)
      LUT4:I2->O            2   0.203   0.616  mMIPS/memdev/dev_send_eop1 (dev_send_eop_OBUF)
      OBUF:I->O                 2.571          dev_w_OBUF (dev_w)
@@ -1353,12 +1352,12 @@ clk            |         |         |    3.450|         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 29.00 secs
-Total CPU time to Xst completion: 29.01 secs
+Total REAL time to Xst completion: 27.00 secs
+Total CPU time to Xst completion: 27.58 secs
  
 --> 
 
-Total memory usage is 332096 kilobytes
+Total memory usage is 329984 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  215 (   0 filtered)

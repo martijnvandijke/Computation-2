@@ -171,12 +171,12 @@ module ALU(ctrl, a, b, r, r2, z);
 										result = s;
 							end
 							
-						 'h34:
-							begin
-										$display("Het werkt ik kom heiro");
-										result = result * (1/13);
-									
-							end
+//						 'h34:
+//							begin
+//										$display("Het werkt ik kom heiro");
+//										result = result * (1/13);
+//									
+//							end
                     
                 default: //No default case: invallid opcode! 
                     begin 

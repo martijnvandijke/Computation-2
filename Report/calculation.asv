@@ -19,13 +19,6 @@ for i = 1 : 6
         %end
       
 end
-close all;
-figure();
-somenames = {'Reference output','Clip instruction','Changing the path', 'Forwarding' ,'Division', 'LCC optimizations ' };
-barh(Cycles);
-xlabel('Number of cycles');
-set(gca,'yticklabel',somenames);
-figure();
-barh(T);
-xlabel('Excution time [s] ');
+somename = {'test','tests22'};
+barh();
 set(gca,'yticklabel',somenames);

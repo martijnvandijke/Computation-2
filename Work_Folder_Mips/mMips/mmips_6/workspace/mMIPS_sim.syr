@@ -4,13 +4,13 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Reading design: mMIPS_sim.prj
 
@@ -447,7 +447,7 @@ Elaborating module <RAMB16BWER(INIT_FILE="../memory/rom/mips_rom46.hex",SIM_DEVI
 Elaborating module <RAMB16BWER(INIT_FILE="../memory/rom/mips_rom47.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
 --> 
 
-Total memory usage is 266032 kilobytes
+Total memory usage is 266224 kilobytes
 
 Number of errors   :    1 (   0 filtered)
 Number of warnings :    8 (   0 filtered)
