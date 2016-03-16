@@ -173,13 +173,8 @@ module ALU(ctrl, a, b, r, r2, z);
 							
 						 'h34:
 							begin
-									if (s > 255)
-									result = 255;
-									else if (s < 0 )
-									result = 0;
-									else
-									result = s;	
-									
+										$display("Het werkt ik kom heiro");
+										result = result * (1/13);
 									
 							end
                     

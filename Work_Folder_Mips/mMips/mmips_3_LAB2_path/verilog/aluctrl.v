@@ -108,7 +108,8 @@ module ALUCTRL(functionCode, ALUop, Shamt, ALUctrl);
                                 //image clipping operation
 									'h30 :
 											ALUctrl = 'h30;  
-									 'h34 :
+											//hardware div
+									'h34 :
 											ALUctrl = 'h34;
                             default:
                                 ALUctrl = 'h0;

@@ -20,7 +20,6 @@ module BRANCH_CTRL(BranchOp, AluZero, Branch);
     input   [0:0]   AluZero;
     output  [0:0]   Branch;
     reg     [0:0]   Branch;
-	 reg 		[2:0]	  Branch_previous;
     
     always @(BranchOp or AluZero)
         begin : branch_ctrl_thread
@@ -30,11 +29,6 @@ module BRANCH_CTRL(BranchOp, AluZero, Branch);
                 
             1:  // Branch on equal
                 begin
-					 //if previous branch was taken then branch
-						 if( Branch_previous != 0 )
-							Branch = 1'b1;
-							
-							//old code
                     if (AluZero == 1)
                         Branch = 1'b1;
                     else
@@ -43,8 +37,6 @@ module BRANCH_CTRL(BranchOp, AluZero, Branch);
                 
             2:  // Branch on non equal
                 begin
-					 
-							Branch = 1'b1;
                     if (AluZero != 1'b1)
                         Branch = 1'b1;
                     else

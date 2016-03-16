@@ -17,7 +17,31 @@
 <msg type="warning" file="HDLCompiler" num="991" delta="old" >"D:\Computation-2\Work_Folder_Mips\mMips\mmips_3_LAB2_path\verilog\ram.v" Line 172: Event expressions must result in a singular type
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\Computation-2\Work_Folder_Mips\mMips\mmips_3_LAB2_path\verilog\mmips.v" Line 288: Assignment to <arg fmt="%s" index="1">bus_ctrl_c1</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="189" delta="new" >"D:\Computation-2\Work_Folder_Mips\mMips\mmips_3_LAB2_path\verilog\mmips.v" Line 261: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">sel</arg>&gt;. Formal port size is <arg fmt="%d" index="2">2</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="new" >"D:\Computation-2\Work_Folder_Mips\mMips\mmips_3_LAB2_path\verilog\mmips.v" Line 262: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">out</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\Computation-2\Work_Folder_Mips\mMips\mmips_3_LAB2_path\verilog\mmips.v" Line 262: Assignment to <arg fmt="%s" index="1">bus_forwarding1_out</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="new" >"D:\Computation-2\Work_Folder_Mips\mMips\mmips_3_LAB2_path\verilog\mmips.v" Line 270: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">sel</arg>&gt;. Formal port size is <arg fmt="%d" index="2">2</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="new" >"D:\Computation-2\Work_Folder_Mips\mMips\mmips_3_LAB2_path\verilog\mmips.v" Line 271: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">out</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\Computation-2\Work_Folder_Mips\mMips\mmips_3_LAB2_path\verilog\mmips.v" Line 271: Assignment to <arg fmt="%s" index="1">bus_forwarding2_out</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\Computation-2\Work_Folder_Mips\mMips\mmips_3_LAB2_path\verilog\mmips.v" Line 306: Assignment to <arg fmt="%s" index="1">bus_ctrl_c1</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"D:\Computation-2\Work_Folder_Mips\mMips\mmips_3_LAB2_path\verilog\mmips.v" Line 261: Net &lt;<arg fmt="%s" index="1">bus_sel_forwarding1</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"D:\Computation-2\Work_Folder_Mips\mMips\mmips_3_LAB2_path\verilog\mmips.v" Line 270: Net &lt;<arg fmt="%s" index="1">bus_sel_forwarding2</arg>&gt; does not have a driver.
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\Computation-2\Work_Folder_Mips\mMips\mmips_3_LAB2_path\verilog\ram.v" Line 120: Signal &lt;<arg fmt="%s" index="1">enable</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
@@ -26,7 +50,25 @@
 <msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\Computation-2\Work_Folder_Mips\mMips\mmips_3_LAB2_path\verilog\ram.v" Line 128: Signal &lt;<arg fmt="%s" index="1">ram_din</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\Computation-2\Work_Folder_Mips\mMips\mmips_3_LAB2_path\verilog\mmips.v</arg>&quot; line <arg fmt="%s" index="2">272</arg>: Output port &lt;<arg fmt="%s" index="3">c1</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ctrl</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">D:\Computation-2\Work_Folder_Mips\mMips\mmips_3_LAB2_path\verilog\mmips.v</arg>&quot; line <arg fmt="%d" index="2">256</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">forward1</arg>&gt; of block &lt;<arg fmt="%s" index="4">MUX4</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">mMIPS</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">D:\Computation-2\Work_Folder_Mips\mMips\mmips_3_LAB2_path\verilog\mmips.v</arg>&quot; line <arg fmt="%d" index="2">265</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">forward2</arg>&gt; of block &lt;<arg fmt="%s" index="4">MUX4</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">mMIPS</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\Computation-2\Work_Folder_Mips\mMips\mmips_3_LAB2_path\verilog\mmips.v</arg>&quot; line <arg fmt="%s" index="2">256</arg>: Output port &lt;<arg fmt="%s" index="3">out</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">forward1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\Computation-2\Work_Folder_Mips\mMips\mmips_3_LAB2_path\verilog\mmips.v</arg>&quot; line <arg fmt="%s" index="2">265</arg>: Output port &lt;<arg fmt="%s" index="3">out</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">forward2</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\Computation-2\Work_Folder_Mips\mMips\mmips_3_LAB2_path\verilog\mmips.v</arg>&quot; line <arg fmt="%s" index="2">290</arg>: Output port &lt;<arg fmt="%s" index="3">c1</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ctrl</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">bus_sel_forwarding1</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">bus_sel_forwarding2</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
 </msg>
 
 <msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">AluSel&lt;1&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -408,9 +450,6 @@
 </msg>
 
 <msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">ENA&lt;0&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-</msg>
-
-<msg type="info" file="Xst" num="1767" delta="new" >HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
 </msg>
 
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">addr_22</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">dmem</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">9 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;addr_23&gt; &lt;addr_24&gt; &lt;addr_25&gt; &lt;addr_26&gt; &lt;addr_27&gt; &lt;addr_28&gt; &lt;addr_29&gt; &lt;addr_30&gt; &lt;addr_31&gt; </arg>

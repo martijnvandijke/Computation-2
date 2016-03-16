@@ -14,8 +14,6 @@
 // Version:
 //     (27-01-2014): initial version
 //
-//		Edidted by Martyn van Dijke
-//
 //////////////////////////////////////////////!/
 
 module ALU(ctrl, a, b, r, r2, z);
@@ -58,13 +56,7 @@ module ALU(ctrl, a, b, r, r2, z);
                     result = s | t;
                     
                 'h2:    // Add signed
-					 begin
                     result = s_int + t_int;
-						  if(result == 0)
-								zero = 1;
-						  else
-								zero = 0;
-					 end
                     
                 'h3:    // Add unsigned
                     result = s + t;
@@ -73,37 +65,20 @@ module ALU(ctrl, a, b, r, r2, z);
                     result = s ^ t;
                     
                 'h6:    // Substract signed
-					 begin
                     result = s - t;
-						  if(result == 0)
-								zero = 1;
-						  else
-								zero = 0;
-                end   
+                    
                 'h7:    // Set-on-less-than
-					 begin
                     if (s_int < t_int)
                         result = 1;
                     else
                         result = 0;
-						 if(result == 0)
-								zero = 1;
-						  else
-								zero = 0;	
-
-                end       
+                        
                 'h8:    // Set-on-less-than unsigned
-					 begin
                     if (s < t)
                         result = 1;
                     else
                         result = 0;
-								
-							if(result == 0)
-								zero = 1;
-						  else
-								zero = 0;								
-                end   
+                        
                 'h9:    // Load upper immediate
                     result = (t << 16);
                     
@@ -124,7 +99,6 @@ module ALU(ctrl, a, b, r, r2, z);
                     
                 'hF:    // SRL (8 bit)
                     result = (t >> 8);
-						  
                     
                 'h10:   // SRA (1 bit)
                     begin
@@ -153,15 +127,25 @@ module ALU(ctrl, a, b, r, r2, z);
                         result = c[31:0];
                         result_hi = c[63:32];
                     end
-				    'h14:
-							begin
-									if (s < 0)
-										result = 0;
-									if(s > 255)
-										result = 255;
-									else
-										result = s;
-							end
+									
+						'h30: //clipcontrol
+						  begin
+								if (s > 255)
+									result = 255;
+								else if (s < 0 )
+									result = 0;
+								else
+									result = s;								
+						  end			
+
+						 
+						'h34:
+						begin
+									$display("Het werkt ik kom heiro");
+										result = result * (1/13);
+									
+							
+						end
                     
                 default: //No default case: invallid opcode! 
                     begin 
@@ -169,10 +153,10 @@ module ALU(ctrl, a, b, r, r2, z);
             endcase
             
             // Calculate zero output
-//            if (result == 0)
-//                zero = 1;
-//            else
-//                zero = 0;
+            if (result == 0)
+                zero = 1;
+            else
+                zero = 0;
             
             // Write results to output
             r = result;

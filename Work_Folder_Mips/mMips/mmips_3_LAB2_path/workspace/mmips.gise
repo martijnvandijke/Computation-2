@@ -59,17 +59,13 @@
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
-    <transform xil_pn:end_ts="1457983612" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1457983612">
+    <transform xil_pn:end_ts="1458123537" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1458123537">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1457984659" xil_pn:in_ck="-4052293083730513203" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1457984659">
+    <transform xil_pn:end_ts="1458123537" xil_pn:in_ck="-4052293083730513203" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1458123537">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="../verilog/add.v"/>
       <outfile xil_pn:name="../verilog/alu.v"/>
       <outfile xil_pn:name="../verilog/aluctrl.v"/>
@@ -92,26 +88,21 @@
       <outfile xil_pn:name="../verilog/signextend.v"/>
       <outfile xil_pn:name="../verilog/testbench.v"/>
     </transform>
-    <transform xil_pn:end_ts="1457983612" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="1854889385420917559" xil_pn:start_ts="1457983612">
+    <transform xil_pn:end_ts="1458123537" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="1854889385420917559" xil_pn:start_ts="1458123537">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1457983612" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-4440119131342655243" xil_pn:start_ts="1457983612">
+    <transform xil_pn:end_ts="1458123537" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-4440119131342655243" xil_pn:start_ts="1458123537">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1457983612" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-516947113580470456" xil_pn:start_ts="1457983612">
+    <transform xil_pn:end_ts="1458123537" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-516947113580470456" xil_pn:start_ts="1458123537">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1457984659" xil_pn:in_ck="-4052293083730513203" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1457984659">
+    <transform xil_pn:end_ts="1458123537" xil_pn:in_ck="-4052293083730513203" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1458123537">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="../verilog/add.v"/>
       <outfile xil_pn:name="../verilog/alu.v"/>
       <outfile xil_pn:name="../verilog/aluctrl.v"/>
@@ -134,28 +125,21 @@
       <outfile xil_pn:name="../verilog/signextend.v"/>
       <outfile xil_pn:name="../verilog/testbench.v"/>
     </transform>
-    <transform xil_pn:end_ts="1457984975" xil_pn:in_ck="-4052293083730513203" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-4369301261354119187" xil_pn:start_ts="1457984728">
+    <transform xil_pn:end_ts="1458123781" xil_pn:in_ck="-4052293083730513203" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-4369301261354119187" xil_pn:start_ts="1458123537">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="testbench_beh.prj"/>
       <outfile xil_pn:name="testbench_isim_beh.exe"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1457985596" xil_pn:in_ck="-8305841726472852940" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="3254652840144843728" xil_pn:start_ts="1457985595">
+    <transform xil_pn:end_ts="1458136447" xil_pn:in_ck="-8305841726472852940" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="3254652840144843728" xil_pn:start_ts="1458136446">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="testbench_isim_beh.wdb"/>
@@ -188,12 +172,10 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1457887196" xil_pn:in_ck="-3062540204235501214" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="4601500471526509090" xil_pn:start_ts="1457887152">
+    <transform xil_pn:end_ts="1458125381" xil_pn:in_ck="-3062540204235501214" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="4601500471526509090" xil_pn:start_ts="1458125346">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="mMIPS_sim.lso"/>
       <outfile xil_pn:name="mMIPS_sim.ngc"/>
@@ -214,7 +196,6 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>

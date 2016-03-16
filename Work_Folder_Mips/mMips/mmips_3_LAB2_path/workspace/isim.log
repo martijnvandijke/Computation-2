@@ -1,6 +1,5 @@
 ISim log file
 Running: D:\Computation-2\Work_Folder_Mips\mMips\mmips_3_LAB2_path\workspace\testbench_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/Computation-2/Work_Folder_Mips/mMips/mmips_3_LAB2_path/workspace/testbench_isim_beh.wdb 
-INFO: There is another simulation running in the same directory. Using database file name isim1.wdb.
 ISim P.28xd (signature 0xa0883be4)
 ----------------------------------------------------------------------
 INFO:Security:50 - The XILINXD_LICENSE_FILE environment variable is set to '2100@tuelicense.campus.tue.nl'.
@@ -15,6 +14,10 @@ WARNING:Security:42 - Your software subscription period has lapsed. Your current
 
 ----------------------------------------------------------------------
 This is a Full version of ISim.
+WARNING: File "D:/Computation-2/Work_Folder_Mips/mMips/mmips_3_LAB2_path/verilog/mmips.v" Line 261.  For instance mMIPS/forward1/, width 2 of formal port sel is not equal to width 1 of actual signal bus_sel_forwarding1.
+WARNING: File "D:/Computation-2/Work_Folder_Mips/mMips/mmips_3_LAB2_path/verilog/mmips.v" Line 262.  For instance mMIPS/forward1/, width 32 of formal port out is not equal to width 1 of actual signal bus_forwarding1_out.
+WARNING: File "D:/Computation-2/Work_Folder_Mips/mMips/mmips_3_LAB2_path/verilog/mmips.v" Line 270.  For instance mMIPS/forward2/, width 2 of formal port sel is not equal to width 1 of actual signal bus_sel_forwarding2.
+WARNING: File "D:/Computation-2/Work_Folder_Mips/mMips/mmips_3_LAB2_path/verilog/mmips.v" Line 271.  For instance mMIPS/forward2/, width 32 of formal port out is not equal to width 1 of actual signal bus_forwarding2_out.
 Time resolution is 1 ps
 # onerror resume
 # wave add /
@@ -22,7 +25,10 @@ Time resolution is 1 ps
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
 # run all
-Finished in      498081 cycles
+Finished in      481254 cycles
 
-Stopped at time : 49808201 ns : File "D:/Computation-2/Work_Folder_Mips/mMips/mmips_3_LAB2_path/verilog/testbench.v" Line 132
-The simulator has terminated in an unexpected manner.  Please review the ISim log (isim.log) for details.
+Stopped at time : 48125501 ns : File "D:/Computation-2/Work_Folder_Mips/mMips/mmips_3_LAB2_path/verilog/testbench.v" Line 132
+# run all
+Finished in      481254 cycles
+
+Stopped at time : 48125551 ns : File "D:/Computation-2/Work_Folder_Mips/mMips/mmips_3_LAB2_path/verilog/testbench.v" Line 132
