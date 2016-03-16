@@ -130,6 +130,7 @@ module ALU(ctrl, a, b, r, r2, z);
 									
 						'h30: //clipcontrol
 						  begin
+						  $display("Clip control hardware");
 								if (s > 255)
 									result = 255;
 								else if (s < 0 )
@@ -141,9 +142,10 @@ module ALU(ctrl, a, b, r, r2, z);
 						 
 						'h34:
 						begin
-									$display("Het werkt ik kom heiro");
-										result = result * (1/13);
-									
+									$display("Going to apply the trick");
+										$display(s);
+										result = 1.23 *s * 0.0625 ;
+									$display(result);
 							
 						end
                     

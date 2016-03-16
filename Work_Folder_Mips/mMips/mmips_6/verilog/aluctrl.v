@@ -103,10 +103,11 @@ module ALUCTRL(functionCode, ALUop, Shamt, ALUctrl);
                                 
                             'h2B:   //Set-on-less-than (unsigned)
                                 ALUctrl = 'h8;
-                             'h30: //clip operation
-										  ALUctrl = 'h30;   
+                             'h30: //divide operation
+										  ALUctrl = 'h34;   
+										  //clip operation
 										'h34 :
-											ALUctrl = 'h34;
+											ALUctrl = 'h30;
                             default:
                                 ALUctrl = 'h0;
                         endcase

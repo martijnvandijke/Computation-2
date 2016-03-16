@@ -16,7 +16,7 @@ void main(void)
     {
         for (b = 1; b < WIDTH - 1; b++)
         {
-			result = (
+			result = ((
 				-7 * (int)buf_i[(a - 1) * WIDTH + b - 1] +
 				5 * (int)buf_i[(a - 1) * WIDTH + b] +
 				2 * (int)buf_i[(a - 1) * WIDTH + b + 1] +
@@ -26,13 +26,13 @@ void main(void)
 				2 * (int)buf_i[(a + 1) * WIDTH + b - 1] +
 				5 * (int)buf_i[(a + 1) * WIDTH + b] +
 				-7 * (int)buf_i[(a + 1) * WIDTH + b + 1] +
-				128);
+				128)/13);
 			
 
-			result = sfu0(result, low_int);
+			//result = sfu0(result, low_int);
 			//var = sfu1(result);
 
-			buf_o[a * WIDTH + b] = ((result)+((max_int)+*(int *)0x12344321));
+			//buf_o[a * WIDTH + b] = ((result)+((max_int)+*(int *)0x12344321));
 
 
 			//var = sfu0(result, max_int);
