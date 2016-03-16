@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2016-03-16T18:36:48</DateModified>
+  <DateModified>2016-03-16T19:47:28</DateModified>
   <ModuleName>mMIPS_sim</ModuleName>
-  <SummaryTimeStamp>Unknown</SummaryTimeStamp>
+  <SummaryTimeStamp>2016-03-16T19:44:06</SummaryTimeStamp>
   <SavedFilePath>D:/Computation-2/Work_Folder_Mips/mMips/mmips_6/iseconfig/mMIPS_sim.xreport</SavedFilePath>
   <ImplementationReportsDirectory>D:/Computation-2/Work_Folder_Mips/mMips/mmips_6/workspace\</ImplementationReportsDirectory>
   <DateInitialized>2016-03-06T13:11:58</DateInitialized>
