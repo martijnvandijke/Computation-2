@@ -151,7 +151,7 @@ module ALU(ctrl, a, b, r, r2, z);
 							end
 						else 
 						begin
-						result = 1;
+							result = 1;
 						end
 						end
 						

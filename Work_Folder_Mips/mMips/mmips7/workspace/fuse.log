@@ -172,6 +172,8 @@ Compiling module mMIPS_sim
 Compiling module testbench
 Compiling module glbl
 Time Resolution for simulation is 1ps.
-Waiting for 77 sub-compilation(s) to finish...
-ERROR:Simulator:904 - Unable to remove previous simulation file isim/testbench_isim_beh.exe.sim/testbench_isim_beh.exe. Please check if you have another instance of this simulation running on your system, terminate it and then recompile your design. System Error Message: boost::filesystem::remove: Toegang geweigerd: "isim\testbench_isim_beh.exe.sim\testbench_isim_beh.exe"
-ERROR:Simulator:861 - Failed to link the design
+Waiting for 73 sub-compilation(s) to finish...
+Compiled 140 Verilog Units
+Built simulation executable D:/Computation-2/Work_Folder_Mips/mMips/mmips7/workspace/testbench_isim_beh.exe
+Fuse Memory Usage: 165168 KB
+Fuse CPU Usage: 45265 ms

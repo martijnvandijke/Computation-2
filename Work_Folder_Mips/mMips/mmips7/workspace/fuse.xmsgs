@@ -20,11 +20,5 @@
 <msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"D:/Computation-2/Work_Folder_Mips/mMips/mmips7/workspace/../verilog/testbench.v" Line 33: Port <arg fmt="%s" index="1">dev_dout</arg> is not connected to this instance
 </msg>
 
-<msg type="error" file="Simulator" num="904" delta="unknown" >Unable to remove previous simulation file <arg fmt="%s" index="1">isim/testbench_isim_beh.exe.sim/testbench_isim_beh.exe</arg>. Please check if you have another instance of this simulation running on your system, terminate it and then recompile your design. System Error Message: <arg fmt="%s" index="2">boost::filesystem::remove: Toegang geweigerd: &quot;isim\testbench_isim_beh.exe.sim\testbench_isim_beh.exe&quot;</arg>
-</msg>
-
-<msg type="error" file="Simulator" num="861" delta="unknown" >Failed to link the design
-</msg>
-
 </messages>
 

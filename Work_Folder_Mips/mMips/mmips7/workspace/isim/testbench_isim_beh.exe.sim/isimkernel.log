@@ -2,9 +2,9 @@ Command line:
    testbench_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  64573
+     -socket  65039
 
-Fri Mar 18 19:58:44 2016
+Fri Mar 18 20:48:47 2016
 
 
- Elaboration Time: 0.265625 sec
+ Elaboration Time: 0.28125 sec
