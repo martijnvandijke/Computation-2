@@ -471,7 +471,7 @@ LAB62:    xsi_set_current_line(107, ng0);
     goto LAB68;
 
 LAB64:    xsi_set_current_line(110, ng0);
-    t3 = ((char*)((ng31)));
+    t3 = ((char*)((ng32)));
     t10 = (t0 + 2064);
     xsi_vlogvar_assign_value(t10, t3, 0, 0, 6);
     goto LAB68;

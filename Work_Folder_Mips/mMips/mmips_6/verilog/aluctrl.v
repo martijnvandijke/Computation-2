@@ -107,7 +107,7 @@ module ALUCTRL(functionCode, ALUop, Shamt, ALUctrl);
 										  ALUctrl = 'h34;   
 										  //clip operation
 										'h34 :
-											ALUctrl = 'h30;
+											ALUctrl = 'h34;
                             default:
                                 ALUctrl = 'h0;
                         endcase

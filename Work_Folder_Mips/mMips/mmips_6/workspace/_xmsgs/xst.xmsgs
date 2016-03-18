@@ -20,7 +20,10 @@
 <msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\Computation-2\Work_Folder_Mips\mMips\mmips_6\verilog\mmips.v" Line 288: Assignment to <arg fmt="%s" index="1">bus_ctrl_c1</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="error" file="HDLCompiler" num="499" delta="old" >"D:\Computation-2\Work_Folder_Mips\mMips\mmips_6\verilog\alu.v" Line 147: Illegal operation with real number.
+<msg type="error" file="HDLCompiler" num="499" delta="old" >"D:\Computation-2\Work_Folder_Mips\mMips\mmips_6\verilog\alu.v" Line 148: Illegal operation with real number.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\Computation-2\Work_Folder_Mips\mMips\mmips_6\verilog\alu.v" Line 39: Assignment to <arg fmt="%s" index="1">divvar</arg> ignored, since the identifier is never used
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="1499" delta="old" >"D:\Computation-2\Work_Folder_Mips\mMips\mmips_6\verilog\alu.v" Line 19: Empty module &lt;<arg fmt="%s" index="1">ALU</arg>&gt; remains a black box.

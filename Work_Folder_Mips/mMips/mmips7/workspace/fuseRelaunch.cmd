@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/Computation-2/Work_Folder_Mips/mMips/mmips7/workspace/testbench_isim_beh.exe" -prj "D:/Computation-2/Work_Folder_Mips/mMips/mmips7/workspace/testbench_beh.prj" "work.testbench" "work.glbl" 

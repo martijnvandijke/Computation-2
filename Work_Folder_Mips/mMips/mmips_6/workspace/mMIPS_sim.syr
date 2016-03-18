@@ -190,7 +190,8 @@ Elaborating module <ALU>.
 "D:\Computation-2\Work_Folder_Mips\mMips\mmips_6\verilog\alu.v" Line 133. $display Clip control hardware
 "D:\Computation-2\Work_Folder_Mips\mMips\mmips_6\verilog\alu.v" Line 145. $display Going to apply the trick
 "D:\Computation-2\Work_Folder_Mips\mMips\mmips_6\verilog\alu.v" Line 146. $display  $s
-ERROR:HDLCompiler:499 - "D:\Computation-2\Work_Folder_Mips\mMips\mmips_6\verilog\alu.v" Line 147: Illegal operation with real number.
+ERROR:HDLCompiler:499 - "D:\Computation-2\Work_Folder_Mips\mMips\mmips_6\verilog\alu.v" Line 148: Illegal operation with real number.
+WARNING:HDLCompiler:1127 - "D:\Computation-2\Work_Folder_Mips\mMips\mmips_6\verilog\alu.v" Line 39: Assignment to divvar ignored, since the identifier is never used
 Module ALU remains a blackbox, due to errors in its contents
 WARNING:HDLCompiler:1499 - "D:\Computation-2\Work_Folder_Mips\mMips\mmips_6\verilog\alu.v" Line 19: Empty module <ALU> remains a black box.
 
@@ -447,9 +448,9 @@ Elaborating module <RAMB16BWER(INIT_FILE="../memory/rom/mips_rom46.hex",SIM_DEVI
 Elaborating module <RAMB16BWER(INIT_FILE="../memory/rom/mips_rom47.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
 --> 
 
-Total memory usage is 266224 kilobytes
+Total memory usage is 266800 kilobytes
 
 Number of errors   :    1 (   0 filtered)
-Number of warnings :    8 (   0 filtered)
+Number of warnings :    9 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

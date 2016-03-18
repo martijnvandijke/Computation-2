@@ -34,7 +34,7 @@ void main(void)
 
 			result = ((result)+((low)+*(int *)0x12344321));
 
-			buf_o[a * WIDTH + b] = ((result)-((max_int)+*(int *)0x12344321));
+			//buf_o[a * WIDTH + b] = ((result)-((max_int)+*(int *)0x12344321));
 
 			//var = sfu0(result, max_int);
             /* Clipping */

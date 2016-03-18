@@ -35,7 +35,7 @@ module ALU(ctrl, a, b, r, r2, z);
     reg         [0:0]   sign;
     reg signed  [63:0]  c;
     reg         [0:0]   zero;
-    
+    reg 			[31:0] divvar;
     always @(ctrl or a or b)
         begin : alu_thread
         
@@ -46,7 +46,7 @@ module ALU(ctrl, a, b, r, r2, z);
             t_int       = t;
             result      = 0;
             result_hi   = 0;
-            
+            divvar = 1/13;
             // Calculate result using selected operation
             case (ctrl)
                 'h0:    // And
@@ -128,23 +128,24 @@ module ALU(ctrl, a, b, r, r2, z);
                         result_hi = c[63:32];
                     end
 									
-						'h30: //clipcontrol
-						  begin
-						  $display("Clip control hardware");
-								if (s > 255)
-									result = 255;
-								else if (s < 0 )
-									result = 0;
-								else
-									result = s;								
-						  end			
+//						'h30: //clipcontrol
+//						  begin
+//						  $display("Clip control hardware");
+//								if (s > 255)
+//									result = 255;
+//								else if (s < 0 )
+//									result = 0;
+//								else
+//									result = s;								
+//						  end			
 
 						 
 						'h34:
 						begin
 									$display("Going to apply the trick");
 										$display(s);
-										result = 1.23 *s * 0.0625 ;
+										//result = 1.23 *s * 0.0625 ;
+										result = s * 0.076923076;//923076923076923076923076923076923076923076923076 ;
 									$display(result);
 							
 						end

@@ -19,3 +19,6 @@ xst -intstyle ise -ifn "D:/Computation-2/Work_Folder_Mips/mMips/mmips_6/workspac
 xst -intstyle ise -ifn "D:/Computation-2/Work_Folder_Mips/mMips/mmips_6/workspace/mMIPS_sim.xst" -ofn "D:/Computation-2/Work_Folder_Mips/mMips/mmips_6/workspace/mMIPS_sim.syr" 
 xst -intstyle ise -ifn "D:/Computation-2/Work_Folder_Mips/mMips/mmips_6/workspace/mMIPS_sim.xst" -ofn "D:/Computation-2/Work_Folder_Mips/mMips/mmips_6/workspace/mMIPS_sim.syr" 
 xst -intstyle ise -ifn "D:/Computation-2/Work_Folder_Mips/mMips/mmips_6/workspace/mMIPS_sim.xst" -ofn "D:/Computation-2/Work_Folder_Mips/mMips/mmips_6/workspace/mMIPS_sim.syr" 
+xst -intstyle ise -ifn "D:/Computation-2/Work_Folder_Mips/mMips/mmips_6/workspace/mMIPS_sim.xst" -ofn "D:/Computation-2/Work_Folder_Mips/mMips/mmips_6/workspace/mMIPS_sim.syr" 
+xst -intstyle ise -ifn "D:/Computation-2/Work_Folder_Mips/mMips/mmips_6/workspace/mMIPS_sim.xst" -ofn "D:/Computation-2/Work_Folder_Mips/mMips/mmips_6/workspace/mMIPS_sim.syr" 
+xst -intstyle ise -ifn "D:/Computation-2/Work_Folder_Mips/mMips/mmips_6/workspace/mMIPS_sim.xst" -ofn "D:/Computation-2/Work_Folder_Mips/mMips/mmips_6/workspace/mMIPS_sim.syr" 
