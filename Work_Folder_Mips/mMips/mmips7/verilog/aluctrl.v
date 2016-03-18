@@ -110,7 +110,11 @@ module ALUCTRL(functionCode, ALUop, Shamt, ALUctrl);
 										$display("Recieved opcode 0x30");
 										  ALUctrl = 'h30;
 										end
-                                
+                            'h31:
+										begin
+											$display("Recieved opcode 0x31");
+											ALUctrl = 'h31;
+										end									 
                             default:
                                 ALUctrl = 'h0;
                         endcase

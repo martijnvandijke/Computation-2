@@ -35,7 +35,7 @@ module ALU(ctrl, a, b, r, r2, z);
     reg         [0:0]   sign;
     reg signed  [63:0]  c;
     reg         [0:0]   zero;
-    
+    reg			[255:0]   var;
     always @(ctrl or a or b)
         begin : alu_thread
         
@@ -129,14 +129,43 @@ module ALU(ctrl, a, b, r, r2, z);
                     end
 					'h30:
 						begin
-							$display("going to divide by the inverse");
+							if( s > 25)
+							begin
+							$display("Going to divide");
+							$display("input :");
 							$display(s);
-							result = s * 0.0769230769230769;
+							//result = s * 0.0769230769230769;
+							var = ((s * 'd1321528399));
+							$display("var : ");
+							$display(var);
+							result = (var >> 'd34);
+							$display("result :");
+							//result
 							//this can maybe result in round of errors
 							//to fix this maybe use magic division numbers
 							$display(result);
-						
+							end
+						else if (s < 12)
+							begin
+							result = 0;
+							end
+						else 
+						begin
+						result = 1;
 						end
+						end
+						
+				'h31:
+				begin
+				$display("hardware clipping");
+				   if (s < 0)
+						result = 0;
+					if(s > 255)
+						result = 255;
+					else
+						result = s;
+				
+				end
                     
                 default: //No default case: invallid opcode! 
                     begin 
