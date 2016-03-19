@@ -172,8 +172,8 @@ Compiling module mMIPS_sim
 Compiling module testbench
 Compiling module glbl
 Time Resolution for simulation is 1ps.
-Waiting for 82 sub-compilation(s) to finish...
+Waiting for 70 sub-compilation(s) to finish...
 Compiled 140 Verilog Units
 Built simulation executable D:/Computation-2/Work_Folder_Mips/mMips/mmips7/workspace/testbench_isim_beh.exe
-Fuse Memory Usage: 164712 KB
-Fuse CPU Usage: 45765 ms
+Fuse Memory Usage: 165200 KB
+Fuse CPU Usage: 45499 ms

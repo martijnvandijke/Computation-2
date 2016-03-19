@@ -4,13 +4,13 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.25 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.25 secs
  
 --> Reading design: mMIPS_sim.prj
 
@@ -185,10 +185,8 @@ Elaborating module <SIGNEXTEND_BYTE>.
 Elaborating module <IMM2WORD>.
 
 Elaborating module <ALUCTRL>.
-"D:\Computation-2\Work_Folder_Mips\mMips\mmips7\verilog\aluctrl.v" Line 118. $display Recieved opcode 0x31
 
 Elaborating module <ALU>.
-"D:\Computation-2\Work_Folder_Mips\mMips\mmips7\verilog\alu.v" Line 160. $display hardware clipping
 
 Elaborating module <REGFILE16>.
 
@@ -533,14 +531,14 @@ Synthesizing Unit <ALU>.
     Found 32-bit subtractor for signal <a[31]_b[31]_sub_6_OUT> created at line 68.
     Found 32-bit adder for signal <a[31]_b[31]_add_2_OUT> created at line 59.
     Found 32x32-bit multiplier for signal <a[31]_b[31]_MuLt_10_OUT> created at line 126.
+    Found 32-bit 21-to-1 multiplexer for signal <_n0105> created at line 33.
     Found 32-bit comparator greater for signal <b[31]_a[31]_LessThan_7_o> created at line 71
     Found 32-bit comparator greater for signal <a[31]_b[31]_LessThan_9_o> created at line 77
-    Found 32-bit comparator greater for signal <GND_16_o_a[31]_LessThan_12_o> created at line 163
     Summary:
 	inferred   1 Multiplier(s).
-	inferred   2 Adder/Subtractor(s).
-	inferred   3 Comparator(s).
-	inferred   2 Multiplexer(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+	inferred  26 Multiplexer(s).
 Unit <ALU> synthesized.
 
 Synthesizing Unit <REGFILE16>.
@@ -829,9 +827,9 @@ Macro Statistics
  4x4-bit single-port Read Only RAM                     : 1
 # Multipliers                                          : 1
  32x32-bit multiplier                                  : 1
-# Adders/Subtractors                                   : 4
- 32-bit adder                                          : 3
- 32-bit subtractor                                     : 1
+# Adders/Subtractors                                   : 3
+ 32-bit adder                                          : 2
+ 32-bit addsub                                         : 1
 # Registers                                            : 47
  1-bit register                                        : 8
  14-bit register                                       : 1
@@ -842,17 +840,17 @@ Macro Statistics
  6-bit register                                        : 1
 # Latches                                              : 121
  1-bit latch                                           : 121
-# Comparators                                          : 16
+# Comparators                                          : 15
  21-bit comparator greater                             : 2
  21-bit comparator lessequal                           : 2
- 32-bit comparator greater                             : 4
+ 32-bit comparator greater                             : 3
  5-bit comparator equal                                : 8
-# Multiplexers                                         : 172
+# Multiplexers                                         : 196
  1-bit 2-to-1 multiplexer                              : 118
  1-bit 3-to-1 multiplexer                              : 8
  1-bit 4-to-1 multiplexer                              : 17
  2-bit 2-to-1 multiplexer                              : 9
- 32-bit 2-to-1 multiplexer                             : 9
+ 32-bit 2-to-1 multiplexer                             : 33
  32-bit 4-to-1 multiplexer                             : 2
  32-bit 48-to-1 multiplexer                            : 1
  32-bit 64-to-1 multiplexer                            : 1
@@ -863,6 +861,7 @@ Macro Statistics
  32-bit xor2                                           : 1
 
 =========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
 
 =========================================================================
 *                       Advanced HDL Synthesis                          *
@@ -982,22 +981,22 @@ Macro Statistics
  4x4-bit single-port distributed Read Only RAM         : 1
 # Multipliers                                          : 1
  32x32-bit multiplier                                  : 1
-# Adders/Subtractors                                   : 4
- 32-bit adder                                          : 3
- 32-bit subtractor                                     : 1
+# Adders/Subtractors                                   : 3
+ 32-bit adder                                          : 2
+ 32-bit addsub                                         : 1
 # Registers                                            : 650
  Flip-Flops                                            : 650
-# Comparators                                          : 16
+# Comparators                                          : 15
  21-bit comparator greater                             : 2
  21-bit comparator lessequal                           : 2
- 32-bit comparator greater                             : 4
+ 32-bit comparator greater                             : 3
  5-bit comparator equal                                : 8
-# Multiplexers                                         : 233
+# Multiplexers                                         : 257
  1-bit 2-to-1 multiplexer                              : 150
  1-bit 3-to-1 multiplexer                              : 8
  1-bit 4-to-1 multiplexer                              : 48
  2-bit 2-to-1 multiplexer                              : 9
- 32-bit 2-to-1 multiplexer                             : 8
+ 32-bit 2-to-1 multiplexer                             : 32
  32-bit 4-to-1 multiplexer                             : 1
  32-bit 48-to-1 multiplexer                            : 1
  32-bit 64-to-1 multiplexer                            : 1
@@ -1108,19 +1107,19 @@ Top Level Output File Name         : mMIPS_sim.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 2533
+# BELS                             : 2375
 #      GND                         : 1
 #      INV                         : 2
 #      LUT1                        : 30
-#      LUT2                        : 41
-#      LUT3                        : 114
-#      LUT4                        : 198
+#      LUT2                        : 39
+#      LUT3                        : 87
+#      LUT4                        : 127
 #      LUT5                        : 322
-#      LUT6                        : 1508
-#      MUXCY                       : 157
-#      MUXF7                       : 33
+#      LUT6                        : 1509
+#      MUXCY                       : 121
+#      MUXF7                       : 42
 #      VCC                         : 1
-#      XORCY                       : 126
+#      XORCY                       : 94
 # FlipFlops/Latches                : 696
 #      FD                          : 1
 #      FDCE                        : 451
@@ -1149,16 +1148,16 @@ Selected Device : 6slx45tcsg324-3
 
 Slice Logic Utilization: 
  Number of Slice Registers:             696  out of  54576     1%  
- Number of Slice LUTs:                 2263  out of  27288     8%  
-    Number used as Logic:              2215  out of  27288     8%  
+ Number of Slice LUTs:                 2164  out of  27288     7%  
+    Number used as Logic:              2116  out of  27288     7%  
     Number used as Memory:               48  out of   6408     0%  
        Number used as RAM:               48
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   2467
-   Number with an unused Flip Flop:    1771  out of   2467    71%  
-   Number with an unused LUT:           204  out of   2467     8%  
-   Number of fully used LUT-FF pairs:   492  out of   2467    19%  
+ Number of LUT Flip Flop pairs used:   2368
+   Number with an unused Flip Flop:    1672  out of   2368    70%  
+   Number with an unused LUT:           204  out of   2368     8%  
+   Number of fully used LUT-FF pairs:   492  out of   2368    20%  
    Number of unique control sets:        10
 
 IO Utilization: 
@@ -1210,9 +1209,9 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 17.708ns (Maximum Frequency: 56.471MHz)
+   Minimum period: 17.679ns (Maximum Frequency: 56.563MHz)
    Minimum input arrival time before clock: 7.126ns
-   Maximum output required time after clock: 19.616ns
+   Maximum output required time after clock: 20.512ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -1221,30 +1220,30 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 17.708ns (frequency: 56.471MHz)
-  Total number of paths / destination ports: 241273383 / 1430
+  Clock period: 17.679ns (frequency: 56.563MHz)
+  Total number of paths / destination ports: 248767583 / 1430
 -------------------------------------------------------------------------
-Delay:               17.708ns (Levels of Logic = 6)
-  Source:            mMIPS/id_instr_25_0/out_5 (FF)
+Delay:               17.679ns (Levels of Logic = 6)
+  Source:            mMIPS/id_ctrl_ex_alusrc/out_0_1 (FF)
   Destination:       mMIPS/hi/out_31 (FF)
   Source Clock:      clk rising
   Destination Clock: clk rising
 
-  Data Path: mMIPS/id_instr_25_0/out_5 to mMIPS/hi/out_31
+  Data Path: mMIPS/id_ctrl_ex_alusrc/out_0_1 to mMIPS/hi/out_31
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q            17   0.447   1.132  mMIPS/id_instr_25_0/out_5 (mMIPS/id_instr_25_0/out_5)
-     LUT3:I1->O           12   0.203   0.908  mMIPS/mux6211 (mMIPS/bus_mux2<5>)
-     DSP48A1:B5->P47      18   4.394   1.049  mMIPS/alu/Mmult_a[31]_b[31]_MuLt_10_OUT (mMIPS/alu/Mmult_a[31]_b[31]_MuLt_10_OUT_P47_to_Mmult_a[31]_b[31]_MuLt_10_OUT1)
+     FDCE:C->Q            17   0.447   1.028  mMIPS/id_ctrl_ex_alusrc/out_0_1 (mMIPS/id_ctrl_ex_alusrc/out_0_1)
+     LUT3:I2->O           15   0.205   0.981  mMIPS/mux3811 (mMIPS/bus_mux2<12>)
+     DSP48A1:B12->P47     18   4.394   1.049  mMIPS/alu/Mmult_a[31]_b[31]_MuLt_10_OUT (mMIPS/alu/Mmult_a[31]_b[31]_MuLt_10_OUT_P47_to_Mmult_a[31]_b[31]_MuLt_10_OUT1)
      DSP48A1:C30->PCOUT47    1   2.689   0.000  mMIPS/alu/Mmult_a[31]_b[31]_MuLt_10_OUT1 (mMIPS/alu/Mmult_a[31]_b[31]_MuLt_10_OUT1_PCOUT_to_Mmult_a[31]_b[31]_MuLt_10_OUT2_PCIN_47)
      DSP48A1:PCIN47->P47   18   2.264   1.049  mMIPS/alu/Mmult_a[31]_b[31]_MuLt_10_OUT2 (mMIPS/alu/Mmult_a[31]_b[31]_MuLt_10_OUT2_P47_to_Mmult_a[31]_b[31]_MuLt_10_OUT3)
      DSP48A1:C30->P29      1   2.687   0.580  mMIPS/alu/Mmult_a[31]_b[31]_MuLt_10_OUT3 (mMIPS/alu/a[31]_b[31]_MuLt_10_OUT<63>)
-     LUT3:I2->O            1   0.205   0.000  mMIPS/alu/Mmux_result_hi251 (mMIPS/bus_alu_result_2<31>)
+     LUT6:I5->O            1   0.205   0.000  mMIPS/alu/Mmux_result_hi251 (mMIPS/bus_alu_result_2<31>)
      FDCE:D                    0.102          mMIPS/hi/out_31
     ----------------------------------------
-    Total                     17.708ns (12.991ns logic, 4.717ns route)
-                                       (73.4% logic, 26.6% route)
+    Total                     17.679ns (12.993ns logic, 4.686ns route)
+                                       (73.5% logic, 26.5% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
@@ -1270,29 +1269,30 @@ Offset:              7.126ns (Levels of Logic = 4)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 814219 / 37
+  Total number of paths / destination ports: 1643124 / 37
 -------------------------------------------------------------------------
-Offset:              19.616ns (Levels of Logic = 8)
-  Source:            mMIPS/id_instr_25_0/out_5 (FF)
+Offset:              20.512ns (Levels of Logic = 9)
+  Source:            mMIPS/id_ctrl_ex_alusrc/out_0_1 (FF)
   Destination:       dev_w (PAD)
   Source Clock:      clk rising
 
-  Data Path: mMIPS/id_instr_25_0/out_5 to dev_w
+  Data Path: mMIPS/id_ctrl_ex_alusrc/out_0_1 to dev_w
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q            17   0.447   1.132  mMIPS/id_instr_25_0/out_5 (mMIPS/id_instr_25_0/out_5)
-     LUT3:I1->O           12   0.203   0.908  mMIPS/mux6211 (mMIPS/bus_mux2<5>)
-     DSP48A1:B5->P47      18   4.394   1.049  mMIPS/alu/Mmult_a[31]_b[31]_MuLt_10_OUT (mMIPS/alu/Mmult_a[31]_b[31]_MuLt_10_OUT_P47_to_Mmult_a[31]_b[31]_MuLt_10_OUT1)
+     FDCE:C->Q            17   0.447   1.028  mMIPS/id_ctrl_ex_alusrc/out_0_1 (mMIPS/id_ctrl_ex_alusrc/out_0_1)
+     LUT3:I2->O           15   0.205   0.981  mMIPS/mux3811 (mMIPS/bus_mux2<12>)
+     DSP48A1:B12->P47     18   4.394   1.049  mMIPS/alu/Mmult_a[31]_b[31]_MuLt_10_OUT (mMIPS/alu/Mmult_a[31]_b[31]_MuLt_10_OUT_P47_to_Mmult_a[31]_b[31]_MuLt_10_OUT1)
      DSP48A1:C30->PCOUT47    1   2.689   0.000  mMIPS/alu/Mmult_a[31]_b[31]_MuLt_10_OUT1 (mMIPS/alu/Mmult_a[31]_b[31]_MuLt_10_OUT1_PCOUT_to_Mmult_a[31]_b[31]_MuLt_10_OUT2_PCIN_47)
-     DSP48A1:PCIN47->P14    1   2.264   0.580  mMIPS/alu/Mmult_a[31]_b[31]_MuLt_10_OUT2 (mMIPS/alu/a[31]_b[31]_MuLt_10_OUT<31>)
-     LUT6:I5->O            4   0.205   0.684  mMIPS/alu/_n0261<31>7 (mMIPS/bus_alu_result<31>)
+     DSP48A1:PCIN47->P14    2   2.264   0.617  mMIPS/alu/Mmult_a[31]_b[31]_MuLt_10_OUT2 (mMIPS/alu/a[31]_b[31]_MuLt_10_OUT<31>)
+     LUT6:I5->O            1   0.205   0.684  mMIPS/alu/Mmux_result752 (mMIPS/alu/Mmux_result751)
+     LUT6:I4->O            4   0.203   0.684  mMIPS/alu/Mmux_result758 (mMIPS/bus_alu_result<31>)
      LUT6:I5->O           37   0.205   1.467  mMIPS/mux2711 (mMIPS/bus_mux6<31>)
      LUT4:I2->O            2   0.203   0.616  mMIPS/memdev/dev_send_eop1 (dev_send_eop_OBUF)
      OBUF:I->O                 2.571          dev_w_OBUF (dev_w)
     ----------------------------------------
-    Total                     19.616ns (13.181ns logic, 6.435ns route)
-                                       (67.2% logic, 32.8% route)
+    Total                     20.512ns (13.386ns logic, 7.126ns route)
+                                       (65.3% logic, 34.7% route)
 
 =========================================================================
 
@@ -1304,7 +1304,7 @@ Clock to Setup on destination clock clk
                  | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock     |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -----------------+---------+---------+---------+---------+
-clk              |   17.708|    6.894|    2.316|         |
+clk              |   17.679|    6.894|    2.316|         |
 en               |         |    7.169|    2.487|         |
 mMIPS/ctrl/_n0086|         |    1.630|         |         |
 -----------------+---------+---------+---------+---------+
@@ -1322,20 +1322,20 @@ Clock to Setup on destination clock mMIPS/ctrl/_n0086
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |         |         |    3.424|         |
+clk            |         |         |    3.444|         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
 Total REAL time to Xst completion: 28.00 secs
-Total CPU time to Xst completion: 27.98 secs
+Total CPU time to Xst completion: 27.93 secs
  
 --> 
 
-Total memory usage is 332736 kilobytes
+Total memory usage is 334336 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  202 (   0 filtered)
-Number of infos    :   34 (   0 filtered)
+Number of infos    :   35 (   0 filtered)
 

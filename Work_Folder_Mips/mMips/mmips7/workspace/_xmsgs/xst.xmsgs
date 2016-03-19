@@ -407,6 +407,9 @@
 <msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">ENA&lt;0&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 </msg>
 
+<msg type="info" file="Xst" num="1767" delta="new" >HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+</msg>
+
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">addr_22</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">dmem</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">9 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;addr_23&gt; &lt;addr_24&gt; &lt;addr_25&gt; &lt;addr_26&gt; &lt;addr_27&gt; &lt;addr_28&gt; &lt;addr_29&gt; &lt;addr_30&gt; &lt;addr_31&gt; </arg>
 </msg>
 

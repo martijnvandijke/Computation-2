@@ -3,3 +3,4 @@ xst -intstyle ise -ifn "D:/Computation-2/Work_Folder_Mips/mMips/mmips7/workspace
 xst -intstyle ise -ifn "D:/Computation-2/Work_Folder_Mips/mMips/mmips7/workspace/mMIPS_sim.xst" -ofn "D:/Computation-2/Work_Folder_Mips/mMips/mmips7/workspace/mMIPS_sim.syr" 
 xst -intstyle ise -ifn "D:/Computation-2/Work_Folder_Mips/mMips/mmips7/workspace/mMIPS_sim.xst" -ofn "D:/Computation-2/Work_Folder_Mips/mMips/mmips7/workspace/mMIPS_sim.syr" 
 xst -intstyle ise -ifn "D:/Computation-2/Work_Folder_Mips/mMips/mmips7/workspace/mMIPS_sim.xst" -ofn "D:/Computation-2/Work_Folder_Mips/mMips/mmips7/workspace/mMIPS_sim.syr" 
+xst -intstyle ise -ifn "D:/Computation-2/Work_Folder_Mips/mMips/mmips7/workspace/mMIPS_sim.xst" -ofn "D:/Computation-2/Work_Folder_Mips/mMips/mmips7/workspace/mMIPS_sim.syr" 
