@@ -106,18 +106,18 @@ module ALUCTRL(functionCode, ALUop, Shamt, ALUctrl);
 										  
 										 //"magic number" 0x30 
 										 //hardware division
-//										'h30:
-//										begin
-//										$display("Recieved opcode 0x30");
-//										  ALUctrl = 'h30;
-//										end
+										'h30:
+										begin
+										$display("Recieved opcode 0x30");
+										  ALUctrl = 'h30;
+										end
 										 //"magic number" 0x30 
 										 //hardware clipping funtion
-//                            'h31:
-//										begin
-//											$display("Recieved opcode 0x31");
-//											ALUctrl = 'h31;
-//										end									 
+                            'h31:
+										begin
+											$display("Recieved opcode 0x31");
+											ALUctrl = 'h31;
+										end									 
                             default:
                                 ALUctrl = 'h0;
                         endcase

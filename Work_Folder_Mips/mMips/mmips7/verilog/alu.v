@@ -127,45 +127,45 @@ module ALU(ctrl, a, b, r, r2, z);
                         result = c[31:0];
                         result_hi = c[63:32];
                     end
-//					'h30:
-//						begin
-//							//if( s > 0)
-//							//begin
-//							$display("Going to divide");
-//							$display("input :");
-//							$display(s);
-//							//result = s * 0.0769230769230769;
-//							var = ((s * 'd1321528399));
-//							$display("var : ");
-//							$display(var);
-//							result = (var >> 'd34);
-//							$display("result :");
-//							//result
-//							//this can maybe result in round of errors
-//							//to fix this maybe use magic division numbers
-//							$display(result);
+					'h30:
+						begin
+							//if( s > 0)
+							//begin
+							$display("Going to divide");
+							$display("input :");
+							$display(s);
+							//result = s * 0.0769230769230769;
+							var = ((s * 'd1321528399));
+							$display("var : ");
+							$display(var);
+							result = (var >> 'd34);
+							$display("result :");
+							//result
+							//this can maybe result in round of errors
+							//to fix this maybe use magic division numbers
+							$display(result);
+							end
+//						else if (s < 12)
+//							begin
+//							result = 0;
 //							end
-////						else if (s < 12)
-////							begin
-////							result = 0;
-////							end
-////						else 
-////						begin
-////							result = 0;
-////						end
-//						//end
+//						else 
+//						begin
+//							result = 0;
+//						end
+						//end
 						
-//				'h31:
-//				begin
-//				$display("hardware clipping");
-//				   if (s < 0)
-//						result = 0;
-//					if(s > 255)
-//						result = 255;
-//					else
-//						result = s;
+				'h31:
+				begin
+				$display("hardware clipping");
+				   if (s < 0)
+						result = 0;
+					if(s > 255)
+						result = 255;
+					else
+						result = s;
 				
-				//end
+				end
                     
                 default: //No default case: invallid opcode! 
                     begin 
