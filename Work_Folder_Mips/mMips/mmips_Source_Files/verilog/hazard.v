@@ -97,6 +97,10 @@ module HAZARD(
                 // (Control) branch hazard
                 // Don't fetch a new instruction, insert a 'nop'
                 hazard = 1'b1;
+        if (BranchOpID != 2'b00 || BranchOpEX != 2'b00)
+                // (Control) branch hazard
+                // Don't fetch a new instruction, insert a 'nop'
+                hazard = 1'b1;
             else if (IDEXRegWrite == 1'b1 && ( 
                         IDEXRegDst == 2'b00 && IDEXWriteRegisterRt == ifidreadregister1 ||
                         IDEXRegDst == 2'b01 && IDEXWriteRegisterRd == ifidreadregister1 ||

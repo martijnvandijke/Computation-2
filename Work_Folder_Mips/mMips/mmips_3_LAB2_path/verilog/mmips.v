@@ -252,7 +252,25 @@ module mMIPS(
         .in3(bus_if_pc),
         .sel(bus_id_ctrl_ex_alusel),
         .out(bus_mux6));
-
+	
+	MUX4 #(.WIDTH(`DWORD)) forward1(
+		 .in0(bus_registers_1), 
+		 .in1(bus_mux6), 
+		 .in2(bus_ex_alu_result), 
+		 .in3(bus_mux3), 
+		 .sel(bus_sel_forwarding1),
+		 .out(bus_forwarding1_out)
+		);
+			  //bus_id_data_reg2
+	MUX4 #(.WIDTH(`DWORD)) forward2(
+		 .in0(bus_registers_2), 
+		 .in1(bus_mux6), 
+		 .in2(bus_ex_alu_result), 
+		 .in3(bus_mux3), 
+		 .sel(bus_sel_forwarding2),
+		 .out(bus_forwarding2_out)
+		);
+	
     /*
      * instruction decoder
      */
