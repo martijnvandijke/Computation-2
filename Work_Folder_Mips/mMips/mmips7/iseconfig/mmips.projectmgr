@@ -8,16 +8,24 @@
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
          <ClosedNode>/Automatic `includes</ClosedNode>
-         <ClosedNode>/mMIPS_sim D:|Computation-2|Work_Folder_Mips|mMips|mmips7|verilog|mMIPS_sim.v</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
+         <SelectedItem>Automatic `includes</SelectedItem>
          <SelectedItem>mMIPS_sim (D:/Computation-2/Work_Folder_Mips/mMips/mmips7/verilog/mMIPS_sim.v)</SelectedItem>
+         <SelectedItem>mMIPS - mMIPS (D:/Computation-2/Work_Folder_Mips/mMips/mmips7/verilog/mmips.v)</SelectedItem>
+         <SelectedItem>mux1 - MUX2 (D:/Computation-2/Work_Folder_Mips/mMips/mmips7/verilog/mux.v)</SelectedItem>
+         <SelectedItem>mux2 - MUX2 (D:/Computation-2/Work_Folder_Mips/mMips/mmips7/verilog/mux.v)</SelectedItem>
+         <SelectedItem>mux3 - MUX3 (D:/Computation-2/Work_Folder_Mips/mMips/mmips7/verilog/mux.v)</SelectedItem>
+         <SelectedItem>mux4 - MUX3 (D:/Computation-2/Work_Folder_Mips/mMips/mmips7/verilog/mux.v)</SelectedItem>
+         <SelectedItem>mux5 - MUX3 (D:/Computation-2/Work_Folder_Mips/mMips/mmips7/verilog/mux.v)</SelectedItem>
+         <SelectedItem>mux6 - MUX4 (D:/Computation-2/Work_Folder_Mips/mMips/mmips7/verilog/mux.v)</SelectedItem>
+         <SelectedItem>forwarding1 - MUX4 (D:/Computation-2/Work_Folder_Mips/mMips/mmips7/verilog/mux.v)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000000e4000000020000000000000000000000000200000064ffffffff000000810000000300000002000000e40000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000017b000000020000000000000000000000000200000064ffffffff0000008100000003000000020000017b0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>mMIPS_sim (D:/Computation-2/Work_Folder_Mips/mMips/mmips7/verilog/mMIPS_sim.v)</CurrentItem>
+      <CurrentItem>forwarding1 - MUX4 (D:/Computation-2/Work_Folder_Mips/mMips/mmips7/verilog/mux.v)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VERILOG" guiview="Process" >
       <ClosedNodes>
@@ -64,13 +72,13 @@
          <ClosedNodesVersion>2</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>mMIPS - mMIPS (D:/Computation-2/Work_Folder_Mips/mMips/mmips7/verilog/mmips.v)</SelectedItem>
+         <SelectedItem>aluctrl - ALUCTRL (D:/Computation-2/Work_Folder_Mips/mMips/mmips7/verilog/aluctrl.v)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >9</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >2</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000018f000000020000000000000000000000000200000064ffffffff0000008100000003000000020000018f0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>mMIPS - mMIPS (D:/Computation-2/Work_Folder_Mips/mMips/mmips7/verilog/mmips.v)</CurrentItem>
+      <CurrentItem>aluctrl - ALUCTRL (D:/Computation-2/Work_Folder_Mips/mMips/mmips7/verilog/aluctrl.v)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -91,6 +99,22 @@
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
+         <SelectedItem>Simulate Behavioral Model</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000010f000000010000000100000000000000000000000064ffffffff0000008100000000000000010000010f0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Simulate Behavioral Model</CurrentItem>
+   </ItemView>
+   <SourceProcessView>000000ff00000000000000020000011b0000011b01000000050100000002</SourceProcessView>
+   <CurrentView>Implementation</CurrentView>
+   <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
          <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
@@ -99,6 +123,4 @@
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem></CurrentItem>
    </ItemView>
-   <SourceProcessView>000000ff00000000000000020000011b0000011b01000000050100000002</SourceProcessView>
-   <CurrentView>Behavioral Simulation</CurrentView>
 </Project>

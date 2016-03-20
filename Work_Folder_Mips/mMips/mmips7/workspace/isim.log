@@ -105419,3 +105419,4 @@ forwarding A
 Finished in      439280 cycles
 
 Stopped at time : 43928101 ns : File "D:/Computation-2/Work_Folder_Mips/mMips/mmips7/verilog/testbench.v" Line 132
+The simulator has terminated in an unexpected manner.  Please review the ISim log (isim.log) for details.

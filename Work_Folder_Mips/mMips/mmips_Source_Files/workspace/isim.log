@@ -1,5 +1,6 @@
 ISim log file
 Running: D:\Computation-2\Work_Folder_Mips\mMips\mmips_Source_Files\workspace\testbench_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/Computation-2/Work_Folder_Mips/mMips/mmips_Source_Files/workspace/testbench_isim_beh.wdb 
+INFO: There is another simulation running in the same directory. Using database file name isim1.wdb.
 ISim P.28xd (signature 0xa0883be4)
 ----------------------------------------------------------------------
 INFO:Security:50 - The XILINXD_LICENSE_FILE environment variable is set to '2100@tuelicense.campus.tue.nl'.

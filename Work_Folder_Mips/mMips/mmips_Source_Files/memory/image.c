@@ -11,16 +11,23 @@ void main(void)
     {
         for (b = 1; b < WIDTH - 1; b++)
         {
+			int aminus = (a - 1) * WIDTH;
+			int unsigned aplus = (a + 1) * WIDTH;
+			int atimes = a * WIDTH;
+			int unsigned bplus = b + 1;
+			int bminus = b - 1;
+
+
             result=((
-                         -7*(int)buf_i[(a - 1) * WIDTH + b - 1] +
-                          5*(int)buf_i[(a - 1) * WIDTH + b    ] +
-                          2*(int)buf_i[(a - 1) * WIDTH + b + 1] +
-                         -1*(int)buf_i[ a      * WIDTH + b - 1] +
-                         15*(int)buf_i[ a      * WIDTH + b    ] +
-                         -1*(int)buf_i[ a      * WIDTH + b + 1] +
-                          2*(int)buf_i[(a + 1) * WIDTH + b - 1] +
-                          5*(int)buf_i[(a + 1) * WIDTH + b    ] +
-                         -7*(int)buf_i[(a + 1) * WIDTH + b + 1] +
+                         -7*(int)buf_i[aminus + bminus] +
+                          5*(int)buf_i[aminus  + b    ] +
+                          2*(int)buf_i[aminus  + bplus] +
+                         -1*(int)buf_i[ atimes    + bminus] +
+                         15*(int)buf_i[ atimes       + b    ] +
+                         -1*(int)buf_i[ atimes      + bplus] +
+                          2*(int)buf_i[aplus  + bminus] +
+                          5*(int)buf_i[aplus  + b    ] +
+                         -7*(int)buf_i[aplus  + bplus] +
                         128) / 13);
 
             /* Clipping */
