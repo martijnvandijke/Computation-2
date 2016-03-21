@@ -48,8 +48,8 @@ void init()
     // Example Timer functions
     // You might want to remove these after you are done testing with them
     glutTimerFunc(1000, alarm, 112);
-    glutTimerFunc(1500, alarm, 1);
-    glutTimerFunc(2000, alarm, 2);
+    //glutTimerFunc(1500, alarm, 1);
+    //glutTimerFunc(2000, alarm, 2);
 
     // Set the background color.
     // The color is in the (red, green, blue, alpha) format (RGBA)
@@ -70,6 +70,40 @@ void init()
     gluOrtho2D(0, windowWidth, 0, windowHeight);
 
     glMatrixMode(GL_MODELVIEW);
+	//PointF position = { 512, 384 };
+	//Color color = { 0.2f, 1, 0.2f };
+	//Pixel* pixel = new Pixel{ position, color };
+	//drawList.push_back(pixel);
+	//pixel->draw();
+
+	//PointF begin1 = { 30,400 };
+	//PointF begin2 = { 34, 430 };
+	//PointF begin3 = { 45,410 };
+	//PointF begin4 = { 48, 412 };
+	//float lind = 2.0;
+	////Line* line = new Line{ begin1, begin2, color ,lind };
+	////drawList.push_back(line);
+	//float r = 10;
+	//int seg = 10;
+	////Circle* cirle = new Circle(begin1, color, r, seg);
+	////drawList.push_back(cirle);
+	//Sqaure* sq = new Sqaure(begin1, begin2,begin3,begin4, color);
+	//drawList.push_back(sq);
+	//float speed = 200;
+	//int health = 100;
+	//Enemy* en = new Enemy(begin1, speed, health );
+	//PointF posEnemy = en->Move();
+	//Circle* cirle = new Circle(posEnemy, color, r, seg);
+	//drawList.push_back(cirle);
+	//PointF bullet = { posEnemy.x()	,posEnemy.y() };
+	//Line* bulletline = new Line{ bullet, begin2, color, lind };
+	//drawList.push_back(bulletline);
+	//glLineStipple(110,1400);
+
+}
+
+//if idle do all the calculations
+void idle(int value) {
 	PointF position = { 512, 384 };
 	Color color = { 0.2f, 1, 0.2f };
 	Pixel* pixel = new Pixel{ position, color };
@@ -77,9 +111,9 @@ void init()
 	pixel->draw();
 
 	PointF begin1 = { 30,400 };
-	PointF begin2 = { 30, 400 };
+	PointF begin2 = { 34, 430 };
 	PointF begin3 = { 45,410 };
-	PointF begin4 = { 45, 410 };
+	PointF begin4 = { 48, 412 };
 	float lind = 2.0;
 	//Line* line = new Line{ begin1, begin2, color ,lind };
 	//drawList.push_back(line);
@@ -87,17 +121,22 @@ void init()
 	int seg = 10;
 	//Circle* cirle = new Circle(begin1, color, r, seg);
 	//drawList.push_back(cirle);
-	Sqaure* sq = new Sqaure(begin1, begin2,begin3,begin4, color);
+	Sqaure* sq = new Sqaure(begin1, begin2, begin3, begin4, color);
 	drawList.push_back(sq);
 	float speed = 200;
 	int health = 100;
-	Enemy* en = new Enemy(begin1, speed, health );
+	Enemy* en = new Enemy(begin1, speed, health);
 	PointF posEnemy = en->Move();
 	Circle* cirle = new Circle(posEnemy, color, r, seg);
 	drawList.push_back(cirle);
+	PointF bullet = { posEnemy.x()	,posEnemy.y() };
+	Line* bulletline = new Line{ bullet, begin2, color, lind };
+	drawList.push_back(bulletline);
+	begin1 = { posEnemy[0]	,posEnemy.y() };
+	//Enemy* en = new Enemy(begin1, speed, health);
+	glutPostRedisplay();
+	glutTimerFunc(160, idle, 10);
 }
-
-
 
 //---------------------------------------------------------------------------
 // void alarm(int alarmnumber)
@@ -214,6 +253,7 @@ int main(int argc, char* argv[])
     // Enter the main application loop
     // While in the main loop, your registered callbacks will be called
     cout << "Starting GLUT main loop..." << endl;
+	glutTimerFunc(10, idle, 10);
     glutMainLoop();
 
     return EXIT_SUCCESS;

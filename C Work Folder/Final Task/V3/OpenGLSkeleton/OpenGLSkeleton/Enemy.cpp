@@ -14,6 +14,7 @@ Enemy::Enemy(const PointF& begin,float speed, int health)
 
 PointF Enemy::Move()
 {
-	PointF speed = { _speed, 10 };
-	return  speed;
+	PointF speed2 = { (_begin[0] + _speed) , 80 };
+	PointF speed = { _speed, 80 };
+	return  speed2;
 }
