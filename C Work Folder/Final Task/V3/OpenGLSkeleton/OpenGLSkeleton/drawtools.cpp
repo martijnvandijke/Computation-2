@@ -84,7 +84,7 @@ const PointF& Line::end() const
 
 void Line::print() const
 {
-	cout << "test" << endl;
+	//cout << "test" << endl;
 	// To be implemented by you
     // Hint: Look at how Pixel manipules the output stream with manipulators
     // For a detailed reference, look here: http://en.cppreference.com/w/cpp/io/manip
@@ -92,7 +92,7 @@ void Line::print() const
 
 void Line::draw() const
 {
-	cout << "test222" << endl;
+	cout << "Lijntjes tekenen" << endl;
 	glLineWidth( _lineWidth);
 	// dashed lines as  http://www.opengl.org.ru/docs/pg/0204.html
 	glLineStipple(1, 0x3F07);
@@ -101,6 +101,7 @@ void Line::draw() const
 	glColor3f(_color[0], _color[1], _color[2]);
 	glVertex2fv(_begin.data() );
 	glVertex2fv(_end.data() );
+	glDisable(GL_LINE_STIPPLE);
 	glEnd();
 	// To be implemented by you
 	// Aim for about 10 lines of code

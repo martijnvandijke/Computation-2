@@ -4,6 +4,13 @@
 
 using namespace std;
 
+//int Enemy::increase()
+//{
+//	_idNumber++;
+//	_id = _idNumber;
+//	return _id;
+//}
+
 Enemy::Enemy(const PointF& begin,float speed, int health)
 	: _begin{begin},
 	_health{health},
@@ -12,9 +19,14 @@ Enemy::Enemy(const PointF& begin,float speed, int health)
 
 }
 
+PointF Enemy::Value() {
+	return  _begin;
+}
+
 PointF Enemy::Move()
 {
-	PointF speed2 = { (_begin[0] + _speed) , 80 };
-	PointF speed = { _speed, 80 };
-	return  speed2;
+	cout << "moving the enemy" << endl;
+	//PointF speed2 = { (_begin[0] + 50) , (_begin[1] + 50)};
+	_begin = { (_begin[0] + 50) , (_begin[1] + 50) };
+	return  _begin;
 }

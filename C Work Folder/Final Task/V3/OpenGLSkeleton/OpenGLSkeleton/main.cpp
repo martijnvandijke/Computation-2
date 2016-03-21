@@ -14,18 +14,22 @@
 
 #define _USE_MATH_DEFINES   // Signal math.h that we would like defines like M_PI
 #include <math.h>           // Might come in usefull for cosine functions and stuff like that
-
+#include <vector>
 #include "main.h"           // Function declarations and some definitions
 #include "drawtools.h"      // contains all you need to draw stuff
 #include "Enemy.h" 
+#include <list>
 
 using namespace std;
 std::string keytext;
 DrawList drawList;
+//std::list<Enemy*> enemylist;
 
 // Put your global variables here
+vector<Enemy*> enenemyvector;
 
-
+Enemy* enemyarray[];
+float speed2 = 0;
 //---------------------------------------------------------------------------
 // void init(void)
 // This function is called when glut is initialized. Use it to initialize
@@ -94,7 +98,7 @@ void init()
 	//Enemy* en = new Enemy(begin1, speed, health );
 	//PointF posEnemy = en->Move();
 	//Circle* cirle = new Circle(posEnemy, color, r, seg);
-	//drawList.push_back(cirle);
+	//drawList.pufloat speed2 = 0;sh_back(cirle);
 	//PointF bullet = { posEnemy.x()	,posEnemy.y() };
 	//Line* bulletline = new Line{ bullet, begin2, color, lind };
 	//drawList.push_back(bulletline);
@@ -104,38 +108,56 @@ void init()
 
 //if idle do all the calculations
 void idle(int value) {
-	PointF position = { 512, 384 };
+	//PointF position = { 512, 384 };
 	Color color = { 0.2f, 1, 0.2f };
-	Pixel* pixel = new Pixel{ position, color };
-	drawList.push_back(pixel);
-	pixel->draw();
-
-	PointF begin1 = { 30,400 };
+	//Pixel* pixel = new Pixel{ position, color };
+	//drawList.push_back(pixel);
+	//pixel->draw();
+	float speed2 = 10 ;
+	PointF begin1 = { (30+speed2),(20+speed2) };
 	PointF begin2 = { 34, 430 };
-	PointF begin3 = { 45,410 };
-	PointF begin4 = { 48, 412 };
+	//PointF begin3 = { 45,410 };
+	//PointF begin4 = { 48, 412 };
 	float lind = 2.0;
-	//Line* line = new Line{ begin1, begin2, color ,lind };
-	//drawList.push_back(line);
+	////Line* line = new Line{ begin1, begin2, color ,lind };
+	////drawList.push_back(line);
 	float r = 10;
 	int seg = 10;
-	//Circle* cirle = new Circle(begin1, color, r, seg);
-	//drawList.push_back(cirle);
-	Sqaure* sq = new Sqaure(begin1, begin2, begin3, begin4, color);
-	drawList.push_back(sq);
+	////Circle* cirle = new Circle(begin1, color, r, seg);
+	////drawList.push_back(cirle);
+
+	//
+	//Sqaure* sq = new Sqaure(begin1, begin2, begin3, begin4, color);
+	//drawList.push_back(sq);
 	float speed = 200;
 	int health = 100;
+	
+	//amke neew enemy and put them in the back of the enemy list
 	Enemy* en = new Enemy(begin1, speed, health);
-	PointF posEnemy = en->Move();
+	enenemyvector.push_back(en);
+
+	//enemylist.push_back(en);
+	//enemylist._Nextnode()->_Next
+	////get the front enemey
+	////Enemy* enemy = enemylist.front()->Move();
+	////increment the movemment of the enemy
+	PointF posEnemy = enenemyvector.at(0)->Move();
+	//enemylist.;
+	//draw the ennemy
+
 	Circle* cirle = new Circle(posEnemy, color, r, seg);
 	drawList.push_back(cirle);
-	PointF bullet = { posEnemy.x()	,posEnemy.y() };
-	Line* bulletline = new Line{ bullet, begin2, color, lind };
+	//PointF bullet = { posEnemy.x()	,posEnemy.y() };
+	Line* bulletline = new Line{ posEnemy, begin2, color, lind };
 	drawList.push_back(bulletline);
-	begin1 = { posEnemy[0]	,posEnemy.y() };
+	//begin1 = { posEnemy[0]	,posEnemy.y() };
 	//Enemy* en = new Enemy(begin1, speed, health);
+	//enemylist.clear();
+
+	//cal the display function -> draw everything 
 	glutPostRedisplay();
-	glutTimerFunc(160, idle, 10);
+	//cal this function agains
+	glutTimerFunc(160, idle, 100);
 }
 
 //---------------------------------------------------------------------------
@@ -177,20 +199,7 @@ void reshape(int w, int h)
 //		it = drawList.erase(it); // Erase returns the next iterator } else { ++it; // Increment the iterator } }
 //
 
-
-//---------------------------------------------------------------------------
-// void display(void)
-// The main display callback. This callback is called when the screen has
-// to be redrawn. This is when:
-// - The screen first becomes active
-// - The screen is resized
-// - You call glutPostRedisplay()
-
-void display()
-{
-    glClear(GL_COLOR_BUFFER_BIT);   // clear the backbuffer
     //glBegin(GL_POINTS);             // Start a new drawing block for drawing points
-
     //    // Draw points here
     //    // The point (0,0) corresponds to the lower left corner.
 
@@ -204,8 +213,20 @@ void display()
     //    glColor3fv(color.data());           // Set color from array
     //    PointF point = { 200, 400 };        // A two dimensional point (see drawtools.h)
     //    glVertex2fv(point.data());          // Set position from array
-		
     //glEnd(); // End of the drawing block
+
+//---------------------------------------------------------------------------
+// void display(void)
+// The main display callback. This callback is called when the screen has
+// to be redrawn. This is when:
+// - The screen first becomes active
+// - The screen is resized
+// - You call glutPostRedisplay()
+
+void display()
+{
+    glClear(GL_COLOR_BUFFER_BIT);   // clear the backbuffer
+
 	drawtext(keytext, 100, 100);
 	for (Drawable* drawable : drawList){ 
 		drawable->draw(); 
