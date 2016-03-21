@@ -22,9 +22,9 @@ void main(void)
                          -7*(int)buf_i[aminus + bminus] +
                           5*(int)buf_i[aminus  + b    ] +
                           2*(int)buf_i[aminus  + bplus] +
-                         -1*(int)buf_i[ atimes    + bminus] +
-                         15*(int)buf_i[ atimes       + b    ] +
-                         -1*(int)buf_i[ atimes      + bplus] +
+                         -1*(int)buf_i[atimes    + bminus] +
+                         15*(int)buf_i[atimes       + b    ] +
+                         -1*(int)buf_i[atimes      + bplus] +
                           2*(int)buf_i[aplus  + bminus] +
                           5*(int)buf_i[aplus  + b    ] +
                          -7*(int)buf_i[aplus  + bplus] +
