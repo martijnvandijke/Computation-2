@@ -1,5 +1,5 @@
 ISim log file
-Running: D:\Computation-2\Work_Folder_Mips\mMips\mmips_3_LAB2_path\workspace\testbench_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/Computation-2/Work_Folder_Mips/mMips/mmips_3_LAB2_path/workspace/testbench_isim_beh.wdb 
+Running: D:\Computation-2\Work_Folder_Mips\mMips\mmips_6\workspace\testbench_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/Computation-2/Work_Folder_Mips/mMips/mmips_6/workspace/testbench_isim_beh.wdb 
 ISim P.28xd (signature 0xa0883be4)
 ----------------------------------------------------------------------
 INFO:Security:50 - The XILINXD_LICENSE_FILE environment variable is set to '2100@tuelicense.campus.tue.nl'.
@@ -21,3 +21,5406 @@ Time resolution is 1 ps
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
 # run all
+Going to apply the trick
+       291
+        22
+Going to apply the trick
+         1
+         0
+Going to apply the trick
+       307
+        24
+Going to apply the trick
+         2
+         0
+Going to apply the trick
+       297
+        23
+Going to apply the trick
+         3
+         0
+Going to apply the trick
+       303
+        23
+Going to apply the trick
+         4
+         0
+Going to apply the trick
+       293
+        23
+Going to apply the trick
+         5
+         0
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+         6
+         0
+Going to apply the trick
+       294
+        23
+Going to apply the trick
+         7
+         1
+Going to apply the trick
+       314
+        24
+Going to apply the trick
+         8
+         1
+Going to apply the trick
+       292
+        22
+Going to apply the trick
+         9
+         1
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+        10
+         1
+Going to apply the trick
+       283
+        22
+Going to apply the trick
+        11
+         1
+Going to apply the trick
+       313
+        24
+Going to apply the trick
+        12
+         1
+Going to apply the trick
+       305
+        23
+Going to apply the trick
+        13
+         1
+Going to apply the trick
+       320
+        25
+Going to apply the trick
+        14
+         1
+Going to apply the trick
+       306
+        24
+Going to apply the trick
+        15
+         1
+Going to apply the trick
+       327
+        25
+Going to apply the trick
+        16
+         1
+Going to apply the trick
+       304
+        23
+Going to apply the trick
+        17
+         1
+Going to apply the trick
+       320
+        25
+Going to apply the trick
+        18
+         1
+Going to apply the trick
+4294967293
+ 330382095
+Going to apply the trick
+        19
+         1
+Going to apply the trick
+       818
+        63
+Going to apply the trick
+        20
+         2
+Going to apply the trick
+       799
+        61
+Going to apply the trick
+        21
+         2
+Going to apply the trick
+       815
+        63
+Going to apply the trick
+        22
+         2
+Going to apply the trick
+       748
+        58
+Going to apply the trick
+        23
+         2
+Going to apply the trick
+       887
+        68
+Going to apply the trick
+        24
+         2
+Going to apply the trick
+       830
+        64
+Going to apply the trick
+        25
+         2
+Going to apply the trick
+       847
+        65
+Going to apply the trick
+        26
+         2
+Going to apply the trick
+       511
+        39
+Going to apply the trick
+        27
+         2
+Going to apply the trick
+      1317
+       101
+Going to apply the trick
+        28
+         2
+Going to apply the trick
+      1273
+        98
+Going to apply the trick
+        29
+         2
+Going to apply the trick
+      1288
+        99
+Going to apply the trick
+        30
+         2
+Going to apply the trick
+       306
+        24
+Going to apply the trick
+         1
+         0
+Going to apply the trick
+       321
+        25
+Going to apply the trick
+         2
+         0
+Going to apply the trick
+       307
+        24
+Going to apply the trick
+         3
+         0
+Going to apply the trick
+       307
+        24
+Going to apply the trick
+         4
+         0
+Going to apply the trick
+       293
+        23
+Going to apply the trick
+         5
+         0
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+         6
+         0
+Going to apply the trick
+       293
+        23
+Going to apply the trick
+         7
+         1
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+         8
+         1
+Going to apply the trick
+       293
+        23
+Going to apply the trick
+         9
+         1
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+        10
+         1
+Going to apply the trick
+       286
+        22
+Going to apply the trick
+        11
+         1
+Going to apply the trick
+       326
+        25
+Going to apply the trick
+        12
+         1
+Going to apply the trick
+       304
+        23
+Going to apply the trick
+        13
+         1
+Going to apply the trick
+       320
+        25
+Going to apply the trick
+        14
+         1
+Going to apply the trick
+       304
+        23
+Going to apply the trick
+        15
+         1
+Going to apply the trick
+       320
+        25
+Going to apply the trick
+        16
+         1
+Going to apply the trick
+       304
+        23
+Going to apply the trick
+        17
+         1
+Going to apply the trick
+       320
+        25
+Going to apply the trick
+        18
+         1
+Going to apply the trick
+        41
+         3
+Going to apply the trick
+        19
+         1
+Going to apply the trick
+      1022
+        79
+Going to apply the trick
+        20
+         2
+Going to apply the trick
+       719
+        55
+Going to apply the trick
+        21
+         2
+Going to apply the trick
+       776
+        60
+Going to apply the trick
+        22
+         2
+Going to apply the trick
+       687
+        53
+Going to apply the trick
+        23
+         2
+Going to apply the trick
+       881
+        68
+Going to apply the trick
+        24
+         2
+Going to apply the trick
+       803
+        62
+Going to apply the trick
+        25
+         2
+Going to apply the trick
+       863
+        66
+Going to apply the trick
+        26
+         2
+Going to apply the trick
+       464
+        36
+Going to apply the trick
+        27
+         2
+Going to apply the trick
+      1547
+       119
+Going to apply the trick
+        28
+         2
+Going to apply the trick
+      1238
+        95
+Going to apply the trick
+        29
+         2
+Going to apply the trick
+      1335
+       103
+Going to apply the trick
+        30
+         2
+Going to apply the trick
+       292
+        22
+Going to apply the trick
+         1
+         0
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+         2
+         0
+Going to apply the trick
+       291
+        22
+Going to apply the trick
+         3
+         0
+Going to apply the trick
+       301
+        23
+Going to apply the trick
+         4
+         0
+Going to apply the trick
+       293
+        23
+Going to apply the trick
+         5
+         0
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+         6
+         0
+Going to apply the trick
+       293
+        23
+Going to apply the trick
+         7
+         1
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+         8
+         1
+Going to apply the trick
+       293
+        23
+Going to apply the trick
+         9
+         1
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+        10
+         1
+Going to apply the trick
+       286
+        22
+Going to apply the trick
+        11
+         1
+Going to apply the trick
+       326
+        25
+Going to apply the trick
+        12
+         1
+Going to apply the trick
+       304
+        23
+Going to apply the trick
+        13
+         1
+Going to apply the trick
+       320
+        25
+Going to apply the trick
+        14
+         1
+Going to apply the trick
+       311
+        24
+Going to apply the trick
+        15
+         1
+Going to apply the trick
+       322
+        25
+Going to apply the trick
+        16
+         1
+Going to apply the trick
+       305
+        23
+Going to apply the trick
+        17
+         1
+Going to apply the trick
+       321
+        25
+Going to apply the trick
+        18
+         1
+Going to apply the trick
+        32
+         2
+Going to apply the trick
+        19
+         1
+Going to apply the trick
+      1002
+        77
+Going to apply the trick
+        20
+         2
+Going to apply the trick
+       722
+        56
+Going to apply the trick
+        21
+         2
+Going to apply the trick
+       776
+        60
+Going to apply the trick
+        22
+         2
+Going to apply the trick
+       683
+        53
+Going to apply the trick
+        23
+         2
+Going to apply the trick
+       862
+        66
+Going to apply the trick
+        24
+         2
+Going to apply the trick
+       761
+        59
+Going to apply the trick
+        25
+         2
+Going to apply the trick
+       822
+        63
+Going to apply the trick
+        26
+         2
+Going to apply the trick
+       431
+        33
+Going to apply the trick
+        27
+         2
+Going to apply the trick
+      1641
+       126
+Going to apply the trick
+        28
+         2
+Going to apply the trick
+      1299
+       100
+Going to apply the trick
+        29
+         2
+Going to apply the trick
+      1400
+       108
+Going to apply the trick
+        30
+         2
+Going to apply the trick
+       293
+        23
+Going to apply the trick
+         1
+         0
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+         2
+         0
+Going to apply the trick
+       286
+        22
+Going to apply the trick
+         3
+         0
+Going to apply the trick
+       306
+        24
+Going to apply the trick
+         4
+         0
+Going to apply the trick
+       292
+        22
+Going to apply the trick
+         5
+         0
+Going to apply the trick
+       307
+        24
+Going to apply the trick
+         6
+         0
+Going to apply the trick
+       299
+        23
+Going to apply the trick
+         7
+         1
+Going to apply the trick
+       310
+        24
+Going to apply the trick
+         8
+         1
+Going to apply the trick
+       293
+        23
+Going to apply the trick
+         9
+         1
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+        10
+         1
+Going to apply the trick
+       286
+        22
+Going to apply the trick
+        11
+         1
+Going to apply the trick
+       326
+        25
+Going to apply the trick
+        12
+         1
+Going to apply the trick
+       304
+        23
+Going to apply the trick
+        13
+         1
+Going to apply the trick
+       320
+        25
+Going to apply the trick
+        14
+         1
+Going to apply the trick
+       305
+        23
+Going to apply the trick
+        15
+         1
+Going to apply the trick
+       306
+        24
+Going to apply the trick
+        16
+         1
+Going to apply the trick
+       291
+        22
+Going to apply the trick
+        17
+         1
+Going to apply the trick
+       307
+        24
+Going to apply the trick
+        18
+         1
+Going to apply the trick
+        17
+         1
+Going to apply the trick
+        19
+         1
+Going to apply the trick
+      1003
+        77
+Going to apply the trick
+        20
+         2
+Going to apply the trick
+       721
+        55
+Going to apply the trick
+        21
+         2
+Going to apply the trick
+       775
+        60
+Going to apply the trick
+        22
+         2
+Going to apply the trick
+       691
+        53
+Going to apply the trick
+        23
+         2
+Going to apply the trick
+       876
+        67
+Going to apply the trick
+        24
+         2
+Going to apply the trick
+       791
+        61
+Going to apply the trick
+        25
+         2
+Going to apply the trick
+       849
+        65
+Going to apply the trick
+        26
+         2
+Going to apply the trick
+       471
+        36
+Going to apply the trick
+        27
+         2
+Going to apply the trick
+      1690
+       130
+Going to apply the trick
+        28
+         2
+Going to apply the trick
+      1295
+       100
+Going to apply the trick
+        29
+         2
+Going to apply the trick
+      1401
+       108
+Going to apply the trick
+        30
+         2
+Going to apply the trick
+       293
+        23
+Going to apply the trick
+         1
+         0
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+         2
+         0
+Going to apply the trick
+       292
+        22
+Going to apply the trick
+         3
+         0
+Going to apply the trick
+       322
+        25
+Going to apply the trick
+         4
+         0
+Going to apply the trick
+       306
+        24
+Going to apply the trick
+         5
+         0
+Going to apply the trick
+       321
+        25
+Going to apply the trick
+         6
+         0
+Going to apply the trick
+       307
+        24
+Going to apply the trick
+         7
+         1
+Going to apply the trick
+       307
+        24
+Going to apply the trick
+         8
+         1
+Going to apply the trick
+       293
+        23
+Going to apply the trick
+         9
+         1
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+        10
+         1
+Going to apply the trick
+       286
+        22
+Going to apply the trick
+        11
+         1
+Going to apply the trick
+       326
+        25
+Going to apply the trick
+        12
+         1
+Going to apply the trick
+       304
+        23
+Going to apply the trick
+        13
+         1
+Going to apply the trick
+       320
+        25
+Going to apply the trick
+        14
+         1
+Going to apply the trick
+       317
+        24
+Going to apply the trick
+        15
+         1
+Going to apply the trick
+       318
+        24
+Going to apply the trick
+        16
+         1
+Going to apply the trick
+       307
+        24
+Going to apply the trick
+        17
+         1
+Going to apply the trick
+       322
+        25
+Going to apply the trick
+        18
+         1
+Going to apply the trick
+        41
+         3
+Going to apply the trick
+        19
+         1
+Going to apply the trick
+      1025
+        79
+Going to apply the trick
+        20
+         2
+Going to apply the trick
+       737
+        57
+Going to apply the trick
+        21
+         2
+Going to apply the trick
+       791
+        61
+Going to apply the trick
+        22
+         2
+Going to apply the trick
+       683
+        53
+Going to apply the trick
+        23
+         2
+Going to apply the trick
+       865
+        67
+Going to apply the trick
+        24
+         2
+Going to apply the trick
+       775
+        60
+Going to apply the trick
+        25
+         2
+Going to apply the trick
+       835
+        64
+Going to apply the trick
+        26
+         2
+Going to apply the trick
+       460
+        35
+Going to apply the trick
+        27
+         2
+Going to apply the trick
+      1665
+       128
+Going to apply the trick
+        28
+         2
+Going to apply the trick
+      1282
+        99
+Going to apply the trick
+        29
+         2
+Going to apply the trick
+      1388
+       107
+Going to apply the trick
+        30
+         2
+Going to apply the trick
+       293
+        23
+Going to apply the trick
+         1
+         0
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+         2
+         0
+Going to apply the trick
+       294
+        23
+Going to apply the trick
+         3
+         0
+Going to apply the trick
+       314
+        24
+Going to apply the trick
+         4
+         0
+Going to apply the trick
+       292
+        22
+Going to apply the trick
+         5
+         0
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+         6
+         0
+Going to apply the trick
+       291
+        22
+Going to apply the trick
+         7
+         1
+Going to apply the trick
+       301
+        23
+Going to apply the trick
+         8
+         1
+Going to apply the trick
+       293
+        23
+Going to apply the trick
+         9
+         1
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+        10
+         1
+Going to apply the trick
+       286
+        22
+Going to apply the trick
+        11
+         1
+Going to apply the trick
+       326
+        25
+Going to apply the trick
+        12
+         1
+Going to apply the trick
+       304
+        23
+Going to apply the trick
+        13
+         1
+Going to apply the trick
+       320
+        25
+Going to apply the trick
+        14
+         1
+Going to apply the trick
+       313
+        24
+Going to apply the trick
+        15
+         1
+Going to apply the trick
+       294
+        23
+Going to apply the trick
+        16
+         1
+Going to apply the trick
+       279
+        21
+Going to apply the trick
+        17
+         1
+Going to apply the trick
+       295
+        23
+Going to apply the trick
+        18
+         1
+Going to apply the trick
+4294967289
+ 330382095
+Going to apply the trick
+        19
+         1
+Going to apply the trick
+       978
+        75
+Going to apply the trick
+        20
+         2
+Going to apply the trick
+       693
+        53
+Going to apply the trick
+        21
+         2
+Going to apply the trick
+       748
+        58
+Going to apply the trick
+        22
+         2
+Going to apply the trick
+       647
+        50
+Going to apply the trick
+        23
+         2
+Going to apply the trick
+       873
+        67
+Going to apply the trick
+        24
+         2
+Going to apply the trick
+       787
+        61
+Going to apply the trick
+        25
+         2
+Going to apply the trick
+       846
+        65
+Going to apply the trick
+        26
+         2
+Going to apply the trick
+       459
+        35
+Going to apply the trick
+        27
+         2
+Going to apply the trick
+      1661
+       128
+Going to apply the trick
+        28
+         2
+Going to apply the trick
+      1279
+        98
+Going to apply the trick
+        29
+         2
+Going to apply the trick
+      1384
+       106
+Going to apply the trick
+        30
+         2
+Going to apply the trick
+       293
+        23
+Going to apply the trick
+         1
+         0
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+         2
+         0
+Going to apply the trick
+       293
+        23
+Going to apply the trick
+         3
+         0
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+         4
+         0
+Going to apply the trick
+       293
+        23
+Going to apply the trick
+         5
+         0
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+         6
+         0
+Going to apply the trick
+       293
+        23
+Going to apply the trick
+         7
+         1
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+         8
+         1
+Going to apply the trick
+       293
+        23
+Going to apply the trick
+         9
+         1
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+        10
+         1
+Going to apply the trick
+       286
+        22
+Going to apply the trick
+        11
+         1
+Going to apply the trick
+       326
+        25
+Going to apply the trick
+        12
+         1
+Going to apply the trick
+       304
+        23
+Going to apply the trick
+        13
+         1
+Going to apply the trick
+       320
+        25
+Going to apply the trick
+        14
+         1
+Going to apply the trick
+       310
+        24
+Going to apply the trick
+        15
+         1
+Going to apply the trick
+       296
+        23
+Going to apply the trick
+        16
+         1
+Going to apply the trick
+       294
+        23
+Going to apply the trick
+        17
+         1
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+        18
+         1
+Going to apply the trick
+        39
+         3
+Going to apply the trick
+        19
+         1
+Going to apply the trick
+      1039
+        80
+Going to apply the trick
+        20
+         2
+Going to apply the trick
+       753
+        58
+Going to apply the trick
+        21
+         2
+Going to apply the trick
+       805
+        62
+Going to apply the trick
+        22
+         2
+Going to apply the trick
+       692
+        53
+Going to apply the trick
+        23
+         2
+Going to apply the trick
+       918
+        71
+Going to apply the trick
+        24
+         2
+Going to apply the trick
+       814
+        63
+Going to apply the trick
+        25
+         2
+Going to apply the trick
+       874
+        67
+Going to apply the trick
+        26
+         2
+Going to apply the trick
+       483
+        37
+Going to apply the trick
+        27
+         2
+Going to apply the trick
+      1708
+       131
+Going to apply the trick
+        28
+         2
+Going to apply the trick
+      1333
+       103
+Going to apply the trick
+        29
+         2
+Going to apply the trick
+      1438
+       111
+Going to apply the trick
+        30
+         2
+Going to apply the trick
+       293
+        23
+Going to apply the trick
+         1
+         0
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+         2
+         0
+Going to apply the trick
+       293
+        23
+Going to apply the trick
+         3
+         0
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+         4
+         0
+Going to apply the trick
+       293
+        23
+Going to apply the trick
+         5
+         0
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+         6
+         0
+Going to apply the trick
+       293
+        23
+Going to apply the trick
+         7
+         1
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+         8
+         1
+Going to apply the trick
+       293
+        23
+Going to apply the trick
+         9
+         1
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+        10
+         1
+Going to apply the trick
+       286
+        22
+Going to apply the trick
+        11
+         1
+Going to apply the trick
+       326
+        25
+Going to apply the trick
+        12
+         1
+Going to apply the trick
+       304
+        23
+Going to apply the trick
+        13
+         1
+Going to apply the trick
+       320
+        25
+Going to apply the trick
+        14
+         1
+Going to apply the trick
+       311
+        24
+Going to apply the trick
+        15
+         1
+Going to apply the trick
+       302
+        23
+Going to apply the trick
+        16
+         1
+Going to apply the trick
+       293
+        23
+Going to apply the trick
+        17
+         1
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+        18
+         1
+Going to apply the trick
+        18
+         1
+Going to apply the trick
+        19
+         1
+Going to apply the trick
+       978
+        75
+Going to apply the trick
+        20
+         2
+Going to apply the trick
+       680
+        52
+Going to apply the trick
+        21
+         2
+Going to apply the trick
+       736
+        57
+Going to apply the trick
+        22
+         2
+Going to apply the trick
+       642
+        49
+Going to apply the trick
+        23
+         2
+Going to apply the trick
+       887
+        68
+Going to apply the trick
+        24
+         2
+Going to apply the trick
+       786
+        60
+Going to apply the trick
+        25
+         2
+Going to apply the trick
+       848
+        65
+Going to apply the trick
+        26
+         2
+Going to apply the trick
+       450
+        35
+Going to apply the trick
+        27
+         2
+Going to apply the trick
+      1690
+       130
+Going to apply the trick
+        28
+         2
+Going to apply the trick
+      1302
+       100
+Going to apply the trick
+        29
+         2
+Going to apply the trick
+      1411
+       109
+Going to apply the trick
+        30
+         2
+Going to apply the trick
+       293
+        23
+Going to apply the trick
+         1
+         0
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+         2
+         0
+Going to apply the trick
+       293
+        23
+Going to apply the trick
+         3
+         0
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+         4
+         0
+Going to apply the trick
+       293
+        23
+Going to apply the trick
+         5
+         0
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+         6
+         0
+Going to apply the trick
+       293
+        23
+Going to apply the trick
+         7
+         1
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+         8
+         1
+Going to apply the trick
+       293
+        23
+Going to apply the trick
+         9
+         1
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+        10
+         1
+Going to apply the trick
+       286
+        22
+Going to apply the trick
+        11
+         1
+Going to apply the trick
+       326
+        25
+Going to apply the trick
+        12
+         1
+Going to apply the trick
+       304
+        23
+Going to apply the trick
+        13
+         1
+Going to apply the trick
+       320
+        25
+Going to apply the trick
+        14
+         1
+Going to apply the trick
+       311
+        24
+Going to apply the trick
+        15
+         1
+Going to apply the trick
+       302
+        23
+Going to apply the trick
+        16
+         1
+Going to apply the trick
+       293
+        23
+Going to apply the trick
+        17
+         1
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+        18
+         1
+Going to apply the trick
+        37
+         3
+Going to apply the trick
+        19
+         1
+Going to apply the trick
+      1012
+        78
+Going to apply the trick
+        20
+         2
+Going to apply the trick
+       741
+        57
+Going to apply the trick
+        21
+         2
+Going to apply the trick
+       792
+        61
+Going to apply the trick
+        22
+         2
+Going to apply the trick
+       675
+        52
+Going to apply the trick
+        23
+         2
+Going to apply the trick
+       896
+        69
+Going to apply the trick
+        24
+         2
+Going to apply the trick
+       787
+        61
+Going to apply the trick
+        25
+         2
+Going to apply the trick
+       847
+        65
+Going to apply the trick
+        26
+         2
+Going to apply the trick
+       478
+        37
+Going to apply the trick
+        27
+         2
+Going to apply the trick
+      1714
+       132
+Going to apply the trick
+        28
+         2
+Going to apply the trick
+      1320
+       102
+Going to apply the trick
+        29
+         2
+Going to apply the trick
+      1427
+       110
+Going to apply the trick
+        30
+         2
+Going to apply the trick
+       292
+        22
+Going to apply the trick
+         1
+         0
+Going to apply the trick
+       307
+        24
+Going to apply the trick
+         2
+         0
+Going to apply the trick
+       299
+        23
+Going to apply the trick
+         3
+         0
+Going to apply the trick
+       310
+        24
+Going to apply the trick
+         4
+         0
+Going to apply the trick
+       293
+        23
+Going to apply the trick
+         5
+         0
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+         6
+         0
+Going to apply the trick
+       293
+        23
+Going to apply the trick
+         7
+         1
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+         8
+         1
+Going to apply the trick
+       293
+        23
+Going to apply the trick
+         9
+         1
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+        10
+         1
+Going to apply the trick
+       286
+        22
+Going to apply the trick
+        11
+         1
+Going to apply the trick
+       326
+        25
+Going to apply the trick
+        12
+         1
+Going to apply the trick
+       304
+        23
+Going to apply the trick
+        13
+         1
+Going to apply the trick
+       320
+        25
+Going to apply the trick
+        14
+         1
+Going to apply the trick
+       304
+        23
+Going to apply the trick
+        15
+         1
+Going to apply the trick
+       300
+        23
+Going to apply the trick
+        16
+         1
+Going to apply the trick
+       292
+        22
+Going to apply the trick
+        17
+         1
+Going to apply the trick
+       307
+        24
+Going to apply the trick
+        18
+         1
+Going to apply the trick
+        51
+         4
+Going to apply the trick
+        19
+         1
+Going to apply the trick
+       982
+        76
+Going to apply the trick
+        20
+         2
+Going to apply the trick
+       685
+        53
+Going to apply the trick
+        21
+         2
+Going to apply the trick
+       740
+        57
+Going to apply the trick
+        22
+         2
+Going to apply the trick
+       624
+        48
+Going to apply the trick
+        23
+         2
+Going to apply the trick
+       890
+        68
+Going to apply the trick
+        24
+         2
+Going to apply the trick
+       802
+        62
+Going to apply the trick
+        25
+         2
+Going to apply the trick
+       862
+        66
+Going to apply the trick
+        26
+         2
+Going to apply the trick
+       470
+        36
+Going to apply the trick
+        27
+         2
+Going to apply the trick
+      1669
+       128
+Going to apply the trick
+        28
+         2
+Going to apply the trick
+      1278
+        98
+Going to apply the trick
+        29
+         2
+Going to apply the trick
+      1386
+       107
+Going to apply the trick
+        30
+         2
+Going to apply the trick
+       306
+        24
+Going to apply the trick
+         1
+         0
+Going to apply the trick
+       321
+        25
+Going to apply the trick
+         2
+         0
+Going to apply the trick
+       307
+        24
+Going to apply the trick
+         3
+         0
+Going to apply the trick
+       307
+        24
+Going to apply the trick
+         4
+         0
+Going to apply the trick
+       293
+        23
+Going to apply the trick
+         5
+         0
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+         6
+         0
+Going to apply the trick
+       293
+        23
+Going to apply the trick
+         7
+         1
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+         8
+         1
+Going to apply the trick
+       293
+        23
+Going to apply the trick
+         9
+         1
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+        10
+         1
+Going to apply the trick
+       286
+        22
+Going to apply the trick
+        11
+         1
+Going to apply the trick
+       326
+        25
+Going to apply the trick
+        12
+         1
+Going to apply the trick
+       304
+        23
+Going to apply the trick
+        13
+         1
+Going to apply the trick
+       320
+        25
+Going to apply the trick
+        14
+         1
+Going to apply the trick
+       310
+        24
+Going to apply the trick
+        15
+         1
+Going to apply the trick
+       316
+        24
+Going to apply the trick
+        16
+         1
+Going to apply the trick
+       306
+        24
+Going to apply the trick
+        17
+         1
+Going to apply the trick
+       321
+        25
+Going to apply the trick
+        18
+         1
+Going to apply the trick
+        69
+         5
+Going to apply the trick
+        19
+         1
+Going to apply the trick
+       959
+        74
+Going to apply the trick
+        20
+         2
+Going to apply the trick
+       691
+        53
+Going to apply the trick
+        21
+         2
+Going to apply the trick
+       742
+        57
+Going to apply the trick
+        22
+         2
+Going to apply the trick
+       623
+        48
+Going to apply the trick
+        23
+         2
+Going to apply the trick
+       892
+        69
+Going to apply the trick
+        24
+         2
+Going to apply the trick
+       775
+        60
+Going to apply the trick
+        25
+         2
+Going to apply the trick
+       836
+        64
+Going to apply the trick
+        26
+         2
+Going to apply the trick
+       435
+        33
+Going to apply the trick
+        27
+         2
+Going to apply the trick
+      1674
+       129
+Going to apply the trick
+        28
+         2
+Going to apply the trick
+      1307
+       101
+Going to apply the trick
+        29
+         2
+Going to apply the trick
+      1412
+       109
+Going to apply the trick
+        30
+         2
+Going to apply the trick
+       292
+        22
+Going to apply the trick
+         1
+         0
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+         2
+         0
+Going to apply the trick
+       291
+        22
+Going to apply the trick
+         3
+         0
+Going to apply the trick
+       301
+        23
+Going to apply the trick
+         4
+         0
+Going to apply the trick
+       293
+        23
+Going to apply the trick
+         5
+         0
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+         6
+         0
+Going to apply the trick
+       293
+        23
+Going to apply the trick
+         7
+         1
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+         8
+         1
+Going to apply the trick
+       293
+        23
+Going to apply the trick
+         9
+         1
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+        10
+         1
+Going to apply the trick
+       286
+        22
+Going to apply the trick
+        11
+         1
+Going to apply the trick
+       326
+        25
+Going to apply the trick
+        12
+         1
+Going to apply the trick
+       304
+        23
+Going to apply the trick
+        13
+         1
+Going to apply the trick
+       320
+        25
+Going to apply the trick
+        14
+         1
+Going to apply the trick
+       312
+        24
+Going to apply the trick
+        15
+         1
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+        16
+         1
+Going to apply the trick
+       292
+        22
+Going to apply the trick
+        17
+         1
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+        18
+         1
+Going to apply the trick
+        34
+         3
+Going to apply the trick
+        19
+         1
+Going to apply the trick
+       919
+        71
+Going to apply the trick
+        20
+         2
+Going to apply the trick
+       662
+        51
+Going to apply the trick
+        21
+         2
+Going to apply the trick
+       713
+        55
+Going to apply the trick
+        22
+         2
+Going to apply the trick
+       611
+        47
+Going to apply the trick
+        23
+         2
+Going to apply the trick
+       888
+        68
+Going to apply the trick
+        24
+         2
+Going to apply the trick
+       777
+        60
+Going to apply the trick
+        25
+         2
+Going to apply the trick
+       836
+        64
+Going to apply the trick
+        26
+         2
+Going to apply the trick
+       427
+        33
+Going to apply the trick
+        27
+         2
+Going to apply the trick
+      1696
+       130
+Going to apply the trick
+        28
+         2
+Going to apply the trick
+      1303
+       100
+Going to apply the trick
+        29
+         2
+Going to apply the trick
+      1410
+       108
+Going to apply the trick
+        30
+         2
+Going to apply the trick
+       293
+        23
+Going to apply the trick
+         1
+         0
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+         2
+         0
+Going to apply the trick
+       293
+        23
+Going to apply the trick
+         3
+         0
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+         4
+         0
+Going to apply the trick
+       293
+        23
+Going to apply the trick
+         5
+         0
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+         6
+         0
+Going to apply the trick
+       300
+        23
+Going to apply the trick
+         7
+         1
+Going to apply the trick
+       310
+        24
+Going to apply the trick
+         8
+         1
+Going to apply the trick
+       294
+        23
+Going to apply the trick
+         9
+         1
+Going to apply the trick
+       309
+        24
+Going to apply the trick
+        10
+         1
+Going to apply the trick
+       280
+        22
+Going to apply the trick
+        11
+         1
+Going to apply the trick
+       324
+        25
+Going to apply the trick
+        12
+         1
+Going to apply the trick
+       304
+        23
+Going to apply the trick
+        13
+         1
+Going to apply the trick
+       320
+        25
+Going to apply the trick
+        14
+         1
+Going to apply the trick
+       311
+        24
+Going to apply the trick
+        15
+         1
+Going to apply the trick
+       302
+        23
+Going to apply the trick
+        16
+         1
+Going to apply the trick
+       293
+        23
+Going to apply the trick
+        17
+         1
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+        18
+         1
+Going to apply the trick
+        52
+         4
+Going to apply the trick
+        19
+         1
+Going to apply the trick
+       962
+        74
+Going to apply the trick
+        20
+         2
+Going to apply the trick
+       706
+        54
+Going to apply the trick
+        21
+         2
+Going to apply the trick
+       755
+        58
+Going to apply the trick
+        22
+         2
+Going to apply the trick
+       618
+        48
+Going to apply the trick
+        23
+         2
+Going to apply the trick
+       887
+        68
+Going to apply the trick
+        24
+         2
+Going to apply the trick
+       774
+        60
+Going to apply the trick
+        25
+         2
+Going to apply the trick
+       833
+        64
+Going to apply the trick
+        26
+         2
+Going to apply the trick
+       450
+        35
+Going to apply the trick
+        27
+         2
+Going to apply the trick
+      1732
+       133
+Going to apply the trick
+        28
+         2
+Going to apply the trick
+      1330
+       102
+Going to apply the trick
+        29
+         2
+Going to apply the trick
+      1437
+       111
+Going to apply the trick
+        30
+         2
+Going to apply the trick
+       293
+        23
+Going to apply the trick
+         1
+         0
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+         2
+         0
+Going to apply the trick
+       293
+        23
+Going to apply the trick
+         3
+         0
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+         4
+         0
+Going to apply the trick
+       293
+        23
+Going to apply the trick
+         5
+         0
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+         6
+         0
+Going to apply the trick
+       294
+        23
+Going to apply the trick
+         7
+         1
+Going to apply the trick
+       294
+        23
+Going to apply the trick
+         8
+         1
+Going to apply the trick
+       280
+        22
+Going to apply the trick
+         9
+         1
+Going to apply the trick
+       295
+        23
+Going to apply the trick
+        10
+         1
+Going to apply the trick
+       272
+        21
+Going to apply the trick
+        11
+         1
+Going to apply the trick
+       327
+        25
+Going to apply the trick
+        12
+         1
+Going to apply the trick
+       304
+        23
+Going to apply the trick
+        13
+         1
+Going to apply the trick
+       320
+        25
+Going to apply the trick
+        14
+         1
+Going to apply the trick
+       311
+        24
+Going to apply the trick
+        15
+         1
+Going to apply the trick
+       302
+        23
+Going to apply the trick
+        16
+         1
+Going to apply the trick
+       293
+        23
+Going to apply the trick
+        17
+         1
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+        18
+         1
+Going to apply the trick
+        44
+         3
+Going to apply the trick
+        19
+         1
+Going to apply the trick
+       934
+        72
+Going to apply the trick
+        20
+         2
+Going to apply the trick
+       662
+        51
+Going to apply the trick
+        21
+         2
+Going to apply the trick
+       714
+        55
+Going to apply the trick
+        22
+         2
+Going to apply the trick
+       607
+        47
+Going to apply the trick
+        23
+         2
+Going to apply the trick
+       923
+        71
+Going to apply the trick
+        24
+         2
+Going to apply the trick
+       817
+        63
+Going to apply the trick
+        25
+         2
+Going to apply the trick
+       876
+        67
+Going to apply the trick
+        26
+         2
+Going to apply the trick
+       471
+        36
+Going to apply the trick
+        27
+         2
+Going to apply the trick
+      1719
+       132
+Going to apply the trick
+        28
+         2
+Going to apply the trick
+      1315
+       101
+Going to apply the trick
+        29
+         2
+Going to apply the trick
+      1424
+       110
+Going to apply the trick
+        30
+         2
+Going to apply the trick
+       293
+        23
+Going to apply the trick
+         1
+         0
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+         2
+         0
+Going to apply the trick
+       300
+        23
+Going to apply the trick
+         3
+         0
+Going to apply the trick
+       310
+        24
+Going to apply the trick
+         4
+         0
+Going to apply the trick
+       294
+        23
+Going to apply the trick
+         5
+         0
+Going to apply the trick
+       309
+        24
+Going to apply the trick
+         6
+         0
+Going to apply the trick
+       286
+        22
+Going to apply the trick
+         7
+         1
+Going to apply the trick
+       300
+        23
+Going to apply the trick
+         8
+         1
+Going to apply the trick
+       294
+        23
+Going to apply the trick
+         9
+         1
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+        10
+         1
+Going to apply the trick
+       288
+        22
+Going to apply the trick
+        11
+         1
+Going to apply the trick
+       333
+        26
+Going to apply the trick
+        12
+         1
+Going to apply the trick
+       304
+        23
+Going to apply the trick
+        13
+         1
+Going to apply the trick
+       320
+        25
+Going to apply the trick
+        14
+         1
+Going to apply the trick
+       311
+        24
+Going to apply the trick
+        15
+         1
+Going to apply the trick
+       302
+        23
+Going to apply the trick
+        16
+         1
+Going to apply the trick
+       293
+        23
+Going to apply the trick
+        17
+         1
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+        18
+         1
+Going to apply the trick
+        60
+         5
+Going to apply the trick
+        19
+         1
+Going to apply the trick
+       950
+        73
+Going to apply the trick
+        20
+         2
+Going to apply the trick
+       694
+        53
+Going to apply the trick
+        21
+         2
+Going to apply the trick
+       743
+        57
+Going to apply the trick
+        22
+         2
+Going to apply the trick
+       623
+        48
+Going to apply the trick
+        23
+         2
+Going to apply the trick
+       896
+        69
+Going to apply the trick
+        24
+         2
+Going to apply the trick
+       761
+        59
+Going to apply the trick
+        25
+         2
+Going to apply the trick
+       823
+        63
+Going to apply the trick
+        26
+         2
+Going to apply the trick
+       421
+        32
+Going to apply the trick
+        27
+         2
+Going to apply the trick
+      1700
+       131
+Going to apply the trick
+        28
+         2
+Going to apply the trick
+      1317
+       101
+Going to apply the trick
+        29
+         2
+Going to apply the trick
+      1425
+       110
+Going to apply the trick
+        30
+         2
+Going to apply the trick
+       293
+        23
+Going to apply the trick
+         1
+         0
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+         2
+         0
+Going to apply the trick
+       294
+        23
+Going to apply the trick
+         3
+         0
+Going to apply the trick
+       294
+        23
+Going to apply the trick
+         4
+         0
+Going to apply the trick
+       280
+        22
+Going to apply the trick
+         5
+         0
+Going to apply the trick
+       295
+        23
+Going to apply the trick
+         6
+         0
+Going to apply the trick
+       279
+        21
+Going to apply the trick
+         7
+         1
+Going to apply the trick
+       309
+        24
+Going to apply the trick
+         8
+         1
+Going to apply the trick
+       293
+        23
+Going to apply the trick
+         9
+         1
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+        10
+         1
+Going to apply the trick
+       286
+        22
+Going to apply the trick
+        11
+         1
+Going to apply the trick
+       326
+        25
+Going to apply the trick
+        12
+         1
+Going to apply the trick
+       304
+        23
+Going to apply the trick
+        13
+         1
+Going to apply the trick
+       320
+        25
+Going to apply the trick
+        14
+         1
+Going to apply the trick
+       311
+        24
+Going to apply the trick
+        15
+         1
+Going to apply the trick
+       302
+        23
+Going to apply the trick
+        16
+         1
+Going to apply the trick
+       293
+        23
+Going to apply the trick
+        17
+         1
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+        18
+         1
+Going to apply the trick
+        44
+         3
+Going to apply the trick
+        19
+         1
+Going to apply the trick
+       914
+        70
+Going to apply the trick
+        20
+         2
+Going to apply the trick
+       650
+        50
+Going to apply the trick
+        21
+         2
+Going to apply the trick
+       701
+        54
+Going to apply the trick
+        22
+         2
+Going to apply the trick
+       569
+        44
+Going to apply the trick
+        23
+         2
+Going to apply the trick
+       875
+        67
+Going to apply the trick
+        24
+         2
+Going to apply the trick
+       775
+        60
+Going to apply the trick
+        25
+         2
+Going to apply the trick
+       833
+        64
+Going to apply the trick
+        26
+         2
+Going to apply the trick
+       462
+        36
+Going to apply the trick
+        27
+         2
+Going to apply the trick
+      1719
+       132
+Going to apply the trick
+        28
+         2
+Going to apply the trick
+      1304
+       100
+Going to apply the trick
+        29
+         2
+Going to apply the trick
+      1412
+       109
+Going to apply the trick
+        30
+         2
+Going to apply the trick
+       293
+        23
+Going to apply the trick
+         1
+         0
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+         2
+         0
+Going to apply the trick
+       292
+        22
+Going to apply the trick
+         3
+         0
+Going to apply the trick
+       302
+        23
+Going to apply the trick
+         4
+         0
+Going to apply the trick
+       294
+        23
+Going to apply the trick
+         5
+         0
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+         6
+         0
+Going to apply the trick
+       295
+        23
+Going to apply the trick
+         7
+         1
+Going to apply the trick
+       315
+        24
+Going to apply the trick
+         8
+         1
+Going to apply the trick
+       293
+        23
+Going to apply the trick
+         9
+         1
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+        10
+         1
+Going to apply the trick
+       286
+        22
+Going to apply the trick
+        11
+         1
+Going to apply the trick
+       326
+        25
+Going to apply the trick
+        12
+         1
+Going to apply the trick
+       304
+        23
+Going to apply the trick
+        13
+         1
+Going to apply the trick
+       320
+        25
+Going to apply the trick
+        14
+         1
+Going to apply the trick
+       311
+        24
+Going to apply the trick
+        15
+         1
+Going to apply the trick
+       302
+        23
+Going to apply the trick
+        16
+         1
+Going to apply the trick
+       293
+        23
+Going to apply the trick
+        17
+         1
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+        18
+         1
+Going to apply the trick
+        45
+         3
+Going to apply the trick
+        19
+         1
+Going to apply the trick
+       940
+        72
+Going to apply the trick
+        20
+         2
+Going to apply the trick
+       693
+        53
+Going to apply the trick
+        21
+         2
+Going to apply the trick
+       741
+        57
+Going to apply the trick
+        22
+         2
+Going to apply the trick
+       623
+        48
+Going to apply the trick
+        23
+         2
+Going to apply the trick
+       943
+        73
+Going to apply the trick
+        24
+         2
+Going to apply the trick
+       815
+        63
+Going to apply the trick
+        25
+         2
+Going to apply the trick
+       874
+        67
+Going to apply the trick
+        26
+         2
+Going to apply the trick
+       482
+        37
+Going to apply the trick
+        27
+         2
+Going to apply the trick
+      1697
+       131
+Going to apply the trick
+        28
+         2
+Going to apply the trick
+      1304
+       100
+Going to apply the trick
+        29
+         2
+Going to apply the trick
+      1411
+       109
+Going to apply the trick
+        30
+         2
+Going to apply the trick
+       292
+        22
+Going to apply the trick
+         1
+         0
+Going to apply the trick
+       307
+        24
+Going to apply the trick
+         2
+         0
+Going to apply the trick
+       306
+        24
+Going to apply the trick
+         3
+         0
+Going to apply the trick
+       312
+        24
+Going to apply the trick
+         4
+         0
+Going to apply the trick
+       294
+        23
+Going to apply the trick
+         5
+         0
+Going to apply the trick
+       309
+        24
+Going to apply the trick
+         6
+         0
+Going to apply the trick
+       287
+        22
+Going to apply the trick
+         7
+         1
+Going to apply the trick
+       306
+        24
+Going to apply the trick
+         8
+         1
+Going to apply the trick
+       293
+        23
+Going to apply the trick
+         9
+         1
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+        10
+         1
+Going to apply the trick
+       293
+        23
+Going to apply the trick
+        11
+         1
+Going to apply the trick
+       328
+        25
+Going to apply the trick
+        12
+         1
+Going to apply the trick
+       305
+        23
+Going to apply the trick
+        13
+         1
+Going to apply the trick
+       321
+        25
+Going to apply the trick
+        14
+         1
+Going to apply the trick
+       298
+        23
+Going to apply the trick
+        15
+         1
+Going to apply the trick
+       298
+        23
+Going to apply the trick
+        16
+         1
+Going to apply the trick
+       292
+        22
+Going to apply the trick
+        17
+         1
+Going to apply the trick
+       307
+        24
+Going to apply the trick
+        18
+         1
+Going to apply the trick
+        69
+         5
+Going to apply the trick
+        19
+         1
+Going to apply the trick
+       950
+        73
+Going to apply the trick
+        20
+         2
+Going to apply the trick
+       679
+        52
+Going to apply the trick
+        21
+         2
+Going to apply the trick
+       730
+        56
+Going to apply the trick
+        22
+         2
+Going to apply the trick
+       589
+        45
+Going to apply the trick
+        23
+         2
+Going to apply the trick
+       907
+        70
+Going to apply the trick
+        24
+         2
+Going to apply the trick
+       785
+        60
+Going to apply the trick
+        25
+         2
+Going to apply the trick
+       847
+        65
+Going to apply the trick
+        26
+         2
+Going to apply the trick
+       432
+        33
+Going to apply the trick
+        27
+         2
+Going to apply the trick
+      1688
+       130
+Going to apply the trick
+        28
+         2
+Going to apply the trick
+      1314
+       101
+Going to apply the trick
+        29
+         2
+Going to apply the trick
+      1421
+       109
+Going to apply the trick
+        30
+         2
+Going to apply the trick
+       306
+        24
+Going to apply the trick
+         1
+         0
+Going to apply the trick
+       321
+        25
+Going to apply the trick
+         2
+         0
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+         3
+         0
+Going to apply the trick
+       293
+        23
+Going to apply the trick
+         4
+         0
+Going to apply the trick
+       280
+        22
+Going to apply the trick
+         5
+         0
+Going to apply the trick
+       295
+        23
+Going to apply the trick
+         6
+         0
+Going to apply the trick
+       279
+        21
+Going to apply the trick
+         7
+         1
+Going to apply the trick
+       309
+        24
+Going to apply the trick
+         8
+         1
+Going to apply the trick
+       293
+        23
+Going to apply the trick
+         9
+         1
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+        10
+         1
+Going to apply the trick
+       287
+        22
+Going to apply the trick
+        11
+         1
+Going to apply the trick
+       312
+        24
+Going to apply the trick
+        12
+         1
+Going to apply the trick
+       291
+        22
+Going to apply the trick
+        13
+         1
+Going to apply the trick
+       307
+        24
+Going to apply the trick
+        14
+         1
+Going to apply the trick
+       296
+        23
+Going to apply the trick
+        15
+         1
+Going to apply the trick
+       317
+        24
+Going to apply the trick
+        16
+         1
+Going to apply the trick
+       306
+        24
+Going to apply the trick
+        17
+         1
+Going to apply the trick
+       321
+        25
+Going to apply the trick
+        18
+         1
+Going to apply the trick
+        92
+         7
+Going to apply the trick
+        19
+         1
+Going to apply the trick
+       917
+        71
+Going to apply the trick
+        20
+         2
+Going to apply the trick
+       656
+        50
+Going to apply the trick
+        21
+         2
+Going to apply the trick
+       706
+        54
+Going to apply the trick
+        22
+         2
+Going to apply the trick
+       548
+        42
+Going to apply the trick
+        23
+         2
+Going to apply the trick
+       914
+        70
+Going to apply the trick
+        24
+         2
+Going to apply the trick
+       800
+        62
+Going to apply the trick
+        25
+         2
+Going to apply the trick
+       860
+        66
+Going to apply the trick
+        26
+         2
+Going to apply the trick
+       511
+        39
+Going to apply the trick
+        27
+         2
+Going to apply the trick
+      1767
+       136
+Going to apply the trick
+        28
+         2
+Going to apply the trick
+      1361
+       105
+Going to apply the trick
+        29
+         2
+Going to apply the trick
+      1469
+       113
+Going to apply the trick
+        30
+         2
+Going to apply the trick
+       292
+        22
+Going to apply the trick
+         1
+         0
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+         2
+         0
+Going to apply the trick
+       290
+        22
+Going to apply the trick
+         3
+         0
+Going to apply the trick
+       295
+        23
+Going to apply the trick
+         4
+         0
+Going to apply the trick
+       294
+        23
+Going to apply the trick
+         5
+         0
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+         6
+         0
+Going to apply the trick
+       295
+        23
+Going to apply the trick
+         7
+         1
+Going to apply the trick
+       315
+        24
+Going to apply the trick
+         8
+         1
+Going to apply the trick
+       293
+        23
+Going to apply the trick
+         9
+         1
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+        10
+         1
+Going to apply the trick
+       285
+        22
+Going to apply the trick
+        11
+         1
+Going to apply the trick
+       320
+        25
+Going to apply the trick
+        12
+         1
+Going to apply the trick
+       305
+        23
+Going to apply the trick
+        13
+         1
+Going to apply the trick
+       320
+        25
+Going to apply the trick
+        14
+         1
+Going to apply the trick
+       314
+        24
+Going to apply the trick
+        15
+         1
+Going to apply the trick
+       315
+        24
+Going to apply the trick
+        16
+         1
+Going to apply the trick
+       292
+        22
+Going to apply the trick
+        17
+         1
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+        18
+         1
+Going to apply the trick
+        48
+         4
+Going to apply the trick
+        19
+         1
+Going to apply the trick
+       863
+        66
+Going to apply the trick
+        20
+         2
+Going to apply the trick
+       628
+        48
+Going to apply the trick
+        21
+         2
+Going to apply the trick
+       676
+        52
+Going to apply the trick
+        22
+         2
+Going to apply the trick
+       563
+        43
+Going to apply the trick
+        23
+         2
+Going to apply the trick
+       948
+        73
+Going to apply the trick
+        24
+         2
+Going to apply the trick
+       801
+        62
+Going to apply the trick
+        25
+         2
+Going to apply the trick
+       862
+        66
+Going to apply the trick
+        26
+         2
+Going to apply the trick
+       544
+        42
+Going to apply the trick
+        27
+         2
+Going to apply the trick
+      1658
+       128
+Going to apply the trick
+        28
+         2
+Going to apply the trick
+      1246
+        96
+Going to apply the trick
+        29
+         2
+Going to apply the trick
+      1357
+       104
+Going to apply the trick
+        30
+         2
+Going to apply the trick
+       293
+        23
+Going to apply the trick
+         1
+         0
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+         2
+         0
+Going to apply the trick
+       300
+        23
+Going to apply the trick
+         3
+         0
+Going to apply the trick
+       310
+        24
+Going to apply the trick
+         4
+         0
+Going to apply the trick
+       294
+        23
+Going to apply the trick
+         5
+         0
+Going to apply the trick
+       309
+        24
+Going to apply the trick
+         6
+         0
+Going to apply the trick
+       294
+        23
+Going to apply the trick
+         7
+         1
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+         8
+         1
+Going to apply the trick
+       294
+        23
+Going to apply the trick
+         9
+         1
+Going to apply the trick
+       309
+        24
+Going to apply the trick
+        10
+         1
+Going to apply the trick
+       287
+        22
+Going to apply the trick
+        11
+         1
+Going to apply the trick
+       326
+        25
+Going to apply the trick
+        12
+         1
+Going to apply the trick
+       305
+        23
+Going to apply the trick
+        13
+         1
+Going to apply the trick
+       321
+        25
+Going to apply the trick
+        14
+         1
+Going to apply the trick
+       305
+        23
+Going to apply the trick
+        15
+         1
+Going to apply the trick
+       300
+        23
+Going to apply the trick
+        16
+         1
+Going to apply the trick
+       293
+        23
+Going to apply the trick
+        17
+         1
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+        18
+         1
+Going to apply the trick
+        58
+         4
+Going to apply the trick
+        19
+         1
+Going to apply the trick
+       918
+        71
+Going to apply the trick
+        20
+         2
+Going to apply the trick
+       684
+        53
+Going to apply the trick
+        21
+         2
+Going to apply the trick
+       730
+        56
+Going to apply the trick
+        22
+         2
+Going to apply the trick
+       606
+        47
+Going to apply the trick
+        23
+         2
+Going to apply the trick
+       924
+        71
+Going to apply the trick
+        24
+         2
+Going to apply the trick
+       774
+        60
+Going to apply the trick
+        25
+         2
+Going to apply the trick
+       835
+        64
+Going to apply the trick
+        26
+         2
+Going to apply the trick
+       539
+        41
+Going to apply the trick
+        27
+         2
+Going to apply the trick
+      1544
+       119
+Going to apply the trick
+        28
+         2
+Going to apply the trick
+      1193
+        92
+Going to apply the trick
+        29
+         2
+Going to apply the trick
+      1295
+       100
+Going to apply the trick
+        30
+         2
+Going to apply the trick
+       293
+        23
+Going to apply the trick
+         1
+         0
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+         2
+         0
+Going to apply the trick
+       294
+        23
+Going to apply the trick
+         3
+         0
+Going to apply the trick
+       294
+        23
+Going to apply the trick
+         4
+         0
+Going to apply the trick
+       280
+        22
+Going to apply the trick
+         5
+         0
+Going to apply the trick
+       295
+        23
+Going to apply the trick
+         6
+         0
+Going to apply the trick
+       280
+        22
+Going to apply the trick
+         7
+         1
+Going to apply the trick
+       295
+        23
+Going to apply the trick
+         8
+         1
+Going to apply the trick
+       280
+        22
+Going to apply the trick
+         9
+         1
+Going to apply the trick
+       295
+        23
+Going to apply the trick
+        10
+         1
+Going to apply the trick
+       273
+        21
+Going to apply the trick
+        11
+         1
+Going to apply the trick
+       313
+        24
+Going to apply the trick
+        12
+         1
+Going to apply the trick
+       291
+        22
+Going to apply the trick
+        13
+         1
+Going to apply the trick
+       307
+        24
+Going to apply the trick
+        14
+         1
+Going to apply the trick
+       304
+        23
+Going to apply the trick
+        15
+         1
+Going to apply the trick
+       305
+        23
+Going to apply the trick
+        16
+         1
+Going to apply the trick
+       294
+        23
+Going to apply the trick
+        17
+         1
+Going to apply the trick
+       309
+        24
+Going to apply the trick
+        18
+         1
+Going to apply the trick
+        51
+         4
+Going to apply the trick
+        19
+         1
+Going to apply the trick
+       910
+        70
+Going to apply the trick
+        20
+         2
+Going to apply the trick
+       653
+        50
+Going to apply the trick
+        21
+         2
+Going to apply the trick
+       703
+        54
+Going to apply the trick
+        22
+         2
+Going to apply the trick
+       573
+        44
+Going to apply the trick
+        23
+         2
+Going to apply the trick
+       902
+        69
+Going to apply the trick
+        24
+         2
+Going to apply the trick
+       789
+        61
+Going to apply the trick
+        25
+         2
+Going to apply the trick
+       848
+        65
+Going to apply the trick
+        26
+         2
+Going to apply the trick
+       569
+        44
+Going to apply the trick
+        27
+         2
+Going to apply the trick
+      1489
+       115
+Going to apply the trick
+        28
+         2
+Going to apply the trick
+      1161
+        89
+Going to apply the trick
+        29
+         2
+Going to apply the trick
+      1258
+        97
+Going to apply the trick
+        30
+         2
+Going to apply the trick
+       292
+        22
+Going to apply the trick
+         1
+         0
+Going to apply the trick
+       307
+        24
+Going to apply the trick
+         2
+         0
+Going to apply the trick
+       298
+        23
+Going to apply the trick
+         3
+         0
+Going to apply the trick
+       304
+        23
+Going to apply the trick
+         4
+         0
+Going to apply the trick
+       294
+        23
+Going to apply the trick
+         5
+         0
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+         6
+         0
+Going to apply the trick
+       294
+        23
+Going to apply the trick
+         7
+         1
+Going to apply the trick
+       309
+        24
+Going to apply the trick
+         8
+         1
+Going to apply the trick
+       294
+        23
+Going to apply the trick
+         9
+         1
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+        10
+         1
+Going to apply the trick
+       287
+        22
+Going to apply the trick
+        11
+         1
+Going to apply the trick
+       327
+        25
+Going to apply the trick
+        12
+         1
+Going to apply the trick
+       305
+        23
+Going to apply the trick
+        13
+         1
+Going to apply the trick
+       320
+        25
+Going to apply the trick
+        14
+         1
+Going to apply the trick
+       307
+        24
+Going to apply the trick
+        15
+         1
+Going to apply the trick
+       293
+        23
+Going to apply the trick
+        16
+         1
+Going to apply the trick
+       279
+        21
+Going to apply the trick
+        17
+         1
+Going to apply the trick
+       294
+        23
+Going to apply the trick
+        18
+         1
+Going to apply the trick
+        53
+         4
+Going to apply the trick
+        19
+         1
+Going to apply the trick
+       919
+        71
+Going to apply the trick
+        20
+         2
+Going to apply the trick
+       669
+        51
+Going to apply the trick
+        21
+         2
+Going to apply the trick
+       717
+        55
+Going to apply the trick
+        22
+         2
+Going to apply the trick
+       558
+        43
+Going to apply the trick
+        23
+         2
+Going to apply the trick
+       911
+        70
+Going to apply the trick
+        24
+         2
+Going to apply the trick
+       784
+        60
+Going to apply the trick
+        25
+         2
+Going to apply the trick
+       844
+        65
+Going to apply the trick
+        26
+         2
+Going to apply the trick
+       597
+        46
+Going to apply the trick
+        27
+         2
+Going to apply the trick
+      1446
+       111
+Going to apply the trick
+        28
+         2
+Going to apply the trick
+      1139
+        88
+Going to apply the trick
+        29
+         2
+Going to apply the trick
+      1233
+        95
+Going to apply the trick
+        30
+         2
+Going to apply the trick
+       306
+        24
+Going to apply the trick
+         1
+         0
+Going to apply the trick
+       321
+        25
+Going to apply the trick
+         2
+         0
+Going to apply the trick
+       307
+        24
+Going to apply the trick
+         3
+         0
+Going to apply the trick
+       307
+        24
+Going to apply the trick
+         4
+         0
+Going to apply the trick
+       293
+        23
+Going to apply the trick
+         5
+         0
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+         6
+         0
+Going to apply the trick
+       293
+        23
+Going to apply the trick
+         7
+         1
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+         8
+         1
+Going to apply the trick
+       293
+        23
+Going to apply the trick
+         9
+         1
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+        10
+         1
+Going to apply the trick
+       286
+        22
+Going to apply the trick
+        11
+         1
+Going to apply the trick
+       326
+        25
+Going to apply the trick
+        12
+         1
+Going to apply the trick
+       304
+        23
+Going to apply the trick
+        13
+         1
+Going to apply the trick
+       320
+        25
+Going to apply the trick
+        14
+         1
+Going to apply the trick
+       309
+        24
+Going to apply the trick
+        15
+         1
+Going to apply the trick
+       310
+        24
+Going to apply the trick
+        16
+         1
+Going to apply the trick
+       307
+        24
+Going to apply the trick
+        17
+         1
+Going to apply the trick
+       321
+        25
+Going to apply the trick
+        18
+         1
+Going to apply the trick
+        86
+         7
+Going to apply the trick
+        19
+         1
+Going to apply the trick
+       916
+        70
+Going to apply the trick
+        20
+         2
+Going to apply the trick
+       656
+        50
+Going to apply the trick
+        21
+         2
+Going to apply the trick
+       705
+        54
+Going to apply the trick
+        22
+         2
+Going to apply the trick
+       567
+        44
+Going to apply the trick
+        23
+         2
+Going to apply the trick
+       969
+        75
+Going to apply the trick
+        24
+         2
+Going to apply the trick
+       841
+        65
+Going to apply the trick
+        25
+         2
+Going to apply the trick
+       901
+        69
+Going to apply the trick
+        26
+         2
+Going to apply the trick
+       580
+        45
+Going to apply the trick
+        27
+         2
+Going to apply the trick
+      1394
+       107
+Going to apply the trick
+        28
+         2
+Going to apply the trick
+      1122
+        86
+Going to apply the trick
+        29
+         2
+Going to apply the trick
+      1214
+        93
+Going to apply the trick
+        30
+         2
+Going to apply the trick
+       292
+        22
+Going to apply the trick
+         1
+         0
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+         2
+         0
+Going to apply the trick
+       284
+        22
+Going to apply the trick
+         3
+         0
+Going to apply the trick
+       299
+        23
+Going to apply the trick
+         4
+         0
+Going to apply the trick
+       292
+        22
+Going to apply the trick
+         5
+         0
+Going to apply the trick
+       307
+        24
+Going to apply the trick
+         6
+         0
+Going to apply the trick
+       299
+        23
+Going to apply the trick
+         7
+         1
+Going to apply the trick
+       310
+        24
+Going to apply the trick
+         8
+         1
+Going to apply the trick
+       293
+        23
+Going to apply the trick
+         9
+         1
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+        10
+         1
+Going to apply the trick
+       286
+        22
+Going to apply the trick
+        11
+         1
+Going to apply the trick
+       326
+        25
+Going to apply the trick
+        12
+         1
+Going to apply the trick
+       304
+        23
+Going to apply the trick
+        13
+         1
+Going to apply the trick
+       320
+        25
+Going to apply the trick
+        14
+         1
+Going to apply the trick
+       312
+        24
+Going to apply the trick
+        15
+         1
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+        16
+         1
+Going to apply the trick
+       292
+        22
+Going to apply the trick
+        17
+         1
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+        18
+         1
+Going to apply the trick
+        54
+         4
+Going to apply the trick
+        19
+         1
+Going to apply the trick
+       879
+        68
+Going to apply the trick
+        20
+         2
+Going to apply the trick
+       642
+        49
+Going to apply the trick
+        21
+         2
+Going to apply the trick
+       690
+        53
+Going to apply the trick
+        22
+         2
+Going to apply the trick
+       562
+        43
+Going to apply the trick
+        23
+         2
+Going to apply the trick
+       931
+        72
+Going to apply the trick
+        24
+         2
+Going to apply the trick
+       770
+        59
+Going to apply the trick
+        25
+         2
+Going to apply the trick
+       834
+        64
+Going to apply the trick
+        26
+         2
+Going to apply the trick
+       479
+        37
+Going to apply the trick
+        27
+         2
+Going to apply the trick
+      1445
+       111
+Going to apply the trick
+        28
+         2
+Going to apply the trick
+      1197
+        92
+Going to apply the trick
+        29
+         2
+Going to apply the trick
+      1288
+        99
+Going to apply the trick
+        30
+         2
+Going to apply the trick
+       292
+        22
+Going to apply the trick
+         1
+         0
+Going to apply the trick
+       307
+        24
+Going to apply the trick
+         2
+         0
+Going to apply the trick
+       291
+        22
+Going to apply the trick
+         3
+         0
+Going to apply the trick
+       322
+        25
+Going to apply the trick
+         4
+         0
+Going to apply the trick
+       305
+        23
+Going to apply the trick
+         5
+         0
+Going to apply the trick
+       320
+        25
+Going to apply the trick
+         6
+         0
+Going to apply the trick
+       313
+        24
+Going to apply the trick
+         7
+         1
+Going to apply the trick
+       309
+        24
+Going to apply the trick
+         8
+         1
+Going to apply the trick
+       293
+        23
+Going to apply the trick
+         9
+         1
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+        10
+         1
+Going to apply the trick
+       279
+        21
+Going to apply the trick
+        11
+         1
+Going to apply the trick
+       324
+        25
+Going to apply the trick
+        12
+         1
+Going to apply the trick
+       303
+        23
+Going to apply the trick
+        13
+         1
+Going to apply the trick
+       319
+        25
+Going to apply the trick
+        14
+         1
+Going to apply the trick
+       310
+        24
+Going to apply the trick
+        15
+         1
+Going to apply the trick
+       302
+        23
+Going to apply the trick
+        16
+         1
+Going to apply the trick
+       292
+        22
+Going to apply the trick
+        17
+         1
+Going to apply the trick
+       307
+        24
+Going to apply the trick
+        18
+         1
+Going to apply the trick
+        73
+         6
+Going to apply the trick
+        19
+         1
+Going to apply the trick
+       914
+        70
+Going to apply the trick
+        20
+         2
+Going to apply the trick
+       671
+        52
+Going to apply the trick
+        21
+         2
+Going to apply the trick
+       718
+        55
+Going to apply the trick
+        22
+         2
+Going to apply the trick
+       573
+        44
+Going to apply the trick
+        23
+         2
+Going to apply the trick
+       930
+        72
+Going to apply the trick
+        24
+         2
+Going to apply the trick
+       801
+        62
+Going to apply the trick
+        25
+         2
+Going to apply the trick
+       860
+        66
+Going to apply the trick
+        26
+         2
+Going to apply the trick
+       491
+        38
+Going to apply the trick
+        27
+         2
+Going to apply the trick
+      1562
+       120
+Going to apply the trick
+        28
+         2
+Going to apply the trick
+      1239
+        95
+Going to apply the trick
+        29
+         2
+Going to apply the trick
+      1336
+       103
+Going to apply the trick
+        30
+         2
+Going to apply the trick
+       306
+        24
+Going to apply the trick
+         1
+         0
+Going to apply the trick
+       321
+        25
+Going to apply the trick
+         2
+         0
+Going to apply the trick
+       307
+        24
+Going to apply the trick
+         3
+         0
+Going to apply the trick
+       327
+        25
+Going to apply the trick
+         4
+         0
+Going to apply the trick
+       305
+        23
+Going to apply the trick
+         5
+         0
+Going to apply the trick
+       321
+        25
+Going to apply the trick
+         6
+         0
+Going to apply the trick
+       305
+        23
+Going to apply the trick
+         7
+         1
+Going to apply the trick
+       300
+        23
+Going to apply the trick
+         8
+         1
+Going to apply the trick
+       293
+        23
+Going to apply the trick
+         9
+         1
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+        10
+         1
+Going to apply the trick
+       285
+        22
+Going to apply the trick
+        11
+         1
+Going to apply the trick
+       340
+        26
+Going to apply the trick
+        12
+         1
+Going to apply the trick
+       317
+        24
+Going to apply the trick
+        13
+         1
+Going to apply the trick
+       333
+        26
+Going to apply the trick
+        14
+         1
+Going to apply the trick
+       324
+        25
+Going to apply the trick
+        15
+         1
+Going to apply the trick
+       315
+        24
+Going to apply the trick
+        16
+         1
+Going to apply the trick
+       306
+        24
+Going to apply the trick
+        17
+         1
+Going to apply the trick
+       321
+        25
+Going to apply the trick
+        18
+         1
+Going to apply the trick
+        99
+         8
+Going to apply the trick
+        19
+         1
+Going to apply the trick
+       899
+        69
+Going to apply the trick
+        20
+         2
+Going to apply the trick
+       645
+        50
+Going to apply the trick
+        21
+         2
+Going to apply the trick
+       694
+        53
+Going to apply the trick
+        22
+         2
+Going to apply the trick
+       531
+        41
+Going to apply the trick
+        23
+         2
+Going to apply the trick
+       926
+        71
+Going to apply the trick
+        24
+         2
+Going to apply the trick
+       799
+        61
+Going to apply the trick
+        25
+         2
+Going to apply the trick
+       860
+        66
+Going to apply the trick
+        26
+         2
+Going to apply the trick
+       487
+        37
+Going to apply the trick
+        27
+         2
+Going to apply the trick
+      1628
+       125
+Going to apply the trick
+        28
+         2
+Going to apply the trick
+      1287
+        99
+Going to apply the trick
+        29
+         2
+Going to apply the trick
+      1388
+       107
+Going to apply the trick
+        30
+         2
+Going to apply the trick
+       291
+        22
+Going to apply the trick
+         1
+         0
+Going to apply the trick
+       307
+        24
+Going to apply the trick
+         2
+         0
+Going to apply the trick
+       298
+        23
+Going to apply the trick
+         3
+         0
+Going to apply the trick
+       309
+        24
+Going to apply the trick
+         4
+         0
+Going to apply the trick
+       292
+        22
+Going to apply the trick
+         5
+         0
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+         6
+         0
+Going to apply the trick
+       291
+        22
+Going to apply the trick
+         7
+         1
+Going to apply the trick
+       301
+        23
+Going to apply the trick
+         8
+         1
+Going to apply the trick
+       293
+        23
+Going to apply the trick
+         9
+         1
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+        10
+         1
+Going to apply the trick
+       287
+        22
+Going to apply the trick
+        11
+         1
+Going to apply the trick
+       332
+        26
+Going to apply the trick
+        12
+         1
+Going to apply the trick
+       303
+        23
+Going to apply the trick
+        13
+         1
+Going to apply the trick
+       320
+        25
+Going to apply the trick
+        14
+         1
+Going to apply the trick
+       303
+        23
+Going to apply the trick
+        15
+         1
+Going to apply the trick
+       299
+        23
+Going to apply the trick
+        16
+         1
+Going to apply the trick
+       291
+        22
+Going to apply the trick
+        17
+         1
+Going to apply the trick
+       307
+        24
+Going to apply the trick
+        18
+         1
+Going to apply the trick
+        96
+         7
+Going to apply the trick
+        19
+         1
+Going to apply the trick
+       857
+        66
+Going to apply the trick
+        20
+         2
+Going to apply the trick
+       622
+        48
+Going to apply the trick
+        21
+         2
+Going to apply the trick
+       669
+        51
+Going to apply the trick
+        22
+         2
+Going to apply the trick
+       494
+        38
+Going to apply the trick
+        23
+         2
+Going to apply the trick
+       938
+        72
+Going to apply the trick
+        24
+         2
+Going to apply the trick
+       798
+        61
+Going to apply the trick
+        25
+         2
+Going to apply the trick
+       859
+        66
+Going to apply the trick
+        26
+         2
+Going to apply the trick
+       469
+        36
+Going to apply the trick
+        27
+         2
+Going to apply the trick
+      1646
+       127
+Going to apply the trick
+        28
+         2
+Going to apply the trick
+      1279
+        98
+Going to apply the trick
+        29
+         2
+Going to apply the trick
+      1384
+       106
+Going to apply the trick
+        30
+         2
+Going to apply the trick
+       306
+        24
+Going to apply the trick
+         1
+         0
+Going to apply the trick
+       321
+        25
+Going to apply the trick
+         2
+         0
+Going to apply the trick
+       307
+        24
+Going to apply the trick
+         3
+         0
+Going to apply the trick
+       307
+        24
+Going to apply the trick
+         4
+         0
+Going to apply the trick
+       293
+        23
+Going to apply the trick
+         5
+         0
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+         6
+         0
+Going to apply the trick
+       300
+        23
+Going to apply the trick
+         7
+         1
+Going to apply the trick
+       310
+        24
+Going to apply the trick
+         8
+         1
+Going to apply the trick
+       294
+        23
+Going to apply the trick
+         9
+         1
+Going to apply the trick
+       309
+        24
+Going to apply the trick
+        10
+         1
+Going to apply the trick
+       280
+        22
+Going to apply the trick
+        11
+         1
+Going to apply the trick
+       324
+        25
+Going to apply the trick
+        12
+         1
+Going to apply the trick
+       304
+        23
+Going to apply the trick
+        13
+         1
+Going to apply the trick
+       320
+        25
+Going to apply the trick
+        14
+         1
+Going to apply the trick
+       310
+        24
+Going to apply the trick
+        15
+         1
+Going to apply the trick
+       316
+        24
+Going to apply the trick
+        16
+         1
+Going to apply the trick
+       306
+        24
+Going to apply the trick
+        17
+         1
+Going to apply the trick
+       321
+        25
+Going to apply the trick
+        18
+         1
+Going to apply the trick
+        84
+         6
+Going to apply the trick
+        19
+         1
+Going to apply the trick
+       829
+        64
+Going to apply the trick
+        20
+         2
+Going to apply the trick
+       608
+        47
+Going to apply the trick
+        21
+         2
+Going to apply the trick
+       653
+        50
+Going to apply the trick
+        22
+         2
+Going to apply the trick
+       501
+        39
+Going to apply the trick
+        23
+         2
+Going to apply the trick
+       973
+        75
+Going to apply the trick
+        24
+         2
+Going to apply the trick
+       811
+        62
+Going to apply the trick
+        25
+         2
+Going to apply the trick
+       872
+        67
+Going to apply the trick
+        26
+         2
+Going to apply the trick
+       451
+        35
+Going to apply the trick
+        27
+         2
+Going to apply the trick
+      1693
+       130
+Going to apply the trick
+        28
+         2
+Going to apply the trick
+      1327
+       102
+Going to apply the trick
+        29
+         2
+Going to apply the trick
+      1432
+       110
+Going to apply the trick
+        30
+         2
+Going to apply the trick
+       292
+        22
+Going to apply the trick
+         1
+         0
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+         2
+         0
+Going to apply the trick
+       284
+        22
+Going to apply the trick
+         3
+         0
+Going to apply the trick
+       299
+        23
+Going to apply the trick
+         4
+         0
+Going to apply the trick
+       292
+        22
+Going to apply the trick
+         5
+         0
+Going to apply the trick
+       307
+        24
+Going to apply the trick
+         6
+         0
+Going to apply the trick
+       300
+        23
+Going to apply the trick
+         7
+         1
+Going to apply the trick
+       296
+        23
+Going to apply the trick
+         8
+         1
+Going to apply the trick
+       280
+        22
+Going to apply the trick
+         9
+         1
+Going to apply the trick
+       295
+        23
+Going to apply the trick
+        10
+         1
+Going to apply the trick
+       272
+        21
+Going to apply the trick
+        11
+         1
+Going to apply the trick
+       327
+        25
+Going to apply the trick
+        12
+         1
+Going to apply the trick
+       304
+        23
+Going to apply the trick
+        13
+         1
+Going to apply the trick
+       320
+        25
+Going to apply the trick
+        14
+         1
+Going to apply the trick
+       312
+        24
+Going to apply the trick
+        15
+         1
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+        16
+         1
+Going to apply the trick
+       292
+        22
+Going to apply the trick
+        17
+         1
+Going to apply the trick
+       308
+        24
+Going to apply the trick
+        18
+         1
+Going to apply the trick
+        64
+         5
+Going to apply the trick
+        19
+         1
+Going to apply the trick
+       859
+        66
+Going to apply the trick
+        20
+         2
+Going to apply the trick
+       648
+        50
+Going to apply the trick
+        21
+         2
+Going to apply the trick
+       692
+        53
+Going to apply the trick
+        22
+         2
+Going to apply the trick
+       567
+        44
+Going to apply the trick
+        23
+         2
+Going to apply the trick
+       989
+        76
+Going to apply the trick
+        24
+         2
+Going to apply the trick
+       813
+        63
+Going to apply the trick
+        25
+         2
+Going to apply the trick
+       875
+        67
+Going to apply the trick
+        26
+         2
+Going to apply the trick
+       410
+        32
+Going to apply the trick
+        27
+         2
+Going to apply the trick
+      1754
+       135
+Going to apply the trick
+        28
+         2
+Going to apply the trick
+      1372
+       106
+Going to apply the trick
+        29
+         2
+Going to apply the trick
+      1481
+       114
+Going to apply the trick
+        30
+         2
+Finished in      476795 cycles
+
+Stopped at time : 47679601 ns : File "D:/Computation-2/Work_Folder_Mips/mMips/mmips_6/verilog/testbench.v" Line 132

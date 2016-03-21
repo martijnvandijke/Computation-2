@@ -153,7 +153,15 @@ module ALU(ctrl, a, b, r, r2, z);
                         result = c[31:0];
                         result_hi = c[63:32];
                     end
-				    'h14:
+						  //division
+						'h14:	
+						begin
+					
+					
+						end
+						
+					
+				    'h30:
 							begin
 									if (s < 0)
 										result = 0;
@@ -161,6 +169,13 @@ module ALU(ctrl, a, b, r, r2, z);
 										result = 255;
 									else
 										result = s;
+							end
+							
+						 'h34:
+							begin
+										$display("Het werkt ik kom heiro");
+										result = result * 0.0769230769;
+									
 							end
                     
                 default: //No default case: invallid opcode! 

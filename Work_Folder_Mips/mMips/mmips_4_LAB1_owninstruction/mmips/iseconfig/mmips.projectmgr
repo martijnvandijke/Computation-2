@@ -10,13 +10,13 @@
          <ClosedNode>/Automatic `includes</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>mMIPS_sim (C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_4_LAB1_owninstruction/mmips/verilog/mMIPS_sim.v)</SelectedItem>
+         <SelectedItem>mMIPS_sim (D:/Computation-2/Work_Folder_Mips/mMips/mmips_4_LAB1_owninstruction/mmips/verilog/mMIPS_sim.v)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000017b000000020000000000000000000000000200000064ffffffff0000008100000003000000020000017b0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>mMIPS_sim (C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_4_LAB1_owninstruction/mmips/verilog/mMIPS_sim.v)</CurrentItem>
+      <CurrentItem>mMIPS_sim (D:/Computation-2/Work_Folder_Mips/mMips/mmips_4_LAB1_owninstruction/mmips/verilog/mMIPS_sim.v)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VERILOG" guiview="Process" >
       <ClosedNodes>
@@ -27,13 +27,13 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Synthesize - XST</SelectedItem>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000139000000010000000100000000000000000000000064ffffffff000000810000000000000001000001390000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000010f000000010000000100000000000000000000000064ffffffff0000008100000000000000010000010f0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>Synthesize - XST</CurrentItem>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView guiview="File" >
       <ClosedNodes>
@@ -64,13 +64,13 @@
          <ClosedNode>/testbench C:|Users|martijn|Documents|GitHub|Computation-2|Work_Folder_Mips|mMips|mmips_4_ref_own instruction|mmips|verilog|testbench.v/mMIPS_sim - mMIPS_sim/mMIPS - mMIPS</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>mMIPS - mMIPS (C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_4_LAB1_owninstruction/mmips/verilog/mmips.v)</SelectedItem>
+         <SelectedItem>mMIPS - mMIPS (D:/Computation-2/Work_Folder_Mips/mMips/mmips_4_LAB1_owninstruction/mmips/verilog/mmips.v)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000018f000000020000000000000000000000000200000064ffffffff0000008100000003000000020000018f0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>mMIPS - mMIPS (C:/Users/martijn/Documents/GitHub/Computation-2/Work_Folder_Mips/mMips/mmips_4_LAB1_owninstruction/mmips/verilog/mmips.v)</CurrentItem>
+      <CurrentItem>mMIPS - mMIPS (D:/Computation-2/Work_Folder_Mips/mMips/mmips_4_LAB1_owninstruction/mmips/verilog/mmips.v)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -82,7 +82,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000109000000010000000100000000000000000000000064ffffffff000000810000000000000001000001090000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000015e000000010000000100000000000000000000000064ffffffff0000008100000000000000010000015e0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem/>
    </ItemView>
@@ -95,10 +95,17 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000139000000010000000100000000000000000000000064ffffffff000000810000000000000001000001390000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000010f000000010000000100000000000000000000000064ffffffff0000008100000000000000010000010f0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>Simulate Behavioral Model</CurrentItem>
    </ItemView>
    <SourceProcessView>000000ff00000000000000020000011b0000011b01000000050100000002</SourceProcessView>
-   <CurrentView>Implementation</CurrentView>
+   <CurrentView>Behavioral Simulation</CurrentView>
+</Project>
+<?xml version="1.0" encoding="utf-8"?>
+<!--This is an ISE project configuration file.-->
+<!--It holds project specific layout data for the projectmgr plugin.-->
+<!--Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.-->
+<Project version="2" owner="projectmgr" name="mmips" >
+   <!--This is an ISE project configuration file.-->
 </Project>

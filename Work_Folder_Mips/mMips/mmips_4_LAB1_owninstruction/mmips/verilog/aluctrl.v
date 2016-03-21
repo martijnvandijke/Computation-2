@@ -108,6 +108,7 @@ module ALUCTRL(functionCode, ALUop, Shamt, ALUctrl);
                                 //image clipping operation
 									 'h30 :
 											ALUctrl = 'h14;
+											//send it to the clipping code
                             default:
                                 ALUctrl = 'h0;
                         endcase

@@ -4,13 +4,13 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.16 secs
+Total CPU time to Xst completion: 0.15 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.16 secs
+Total CPU time to Xst completion: 0.15 secs
  
 --> Reading design: mMIPS_sim.prj
 
@@ -87,7 +87,7 @@ Keep Hierarchy                     : No
 Netlist Hierarchy                  : As_Optimized
 RTL Output                         : Yes
 Global Optimization                : AllClockNets
-Read Cores                         : NO
+Read Cores                         : YES
 Write Timing Constraints           : NO
 Cross Clock Analysis               : NO
 Hierarchy Separator                : /
@@ -105,56 +105,56 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "D:\Computation-2\Work_Folder_Mips\mMips\mmips_3_LAB2_path\verilog\signextend.v" into library work
+Analyzing Verilog file "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\signextend.v" into library work
 Parsing module <SIGNEXTEND_BYTE>.
-Analyzing Verilog file "D:\Computation-2\Work_Folder_Mips\mMips\mmips_3_LAB2_path\verilog\shift.v" into library work
+Analyzing Verilog file "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\shift.v" into library work
 Parsing module <SHIFTLEFT>.
-Analyzing Verilog file "D:\Computation-2\Work_Folder_Mips\mMips\mmips_3_LAB2_path\verilog\register.v" into library work
-Parsing verilog file "D:\Computation-2\Work_Folder_Mips\mMips\mmips_3_LAB2_path\verilog\/mmips_defines.v" included at line 18.
+Analyzing Verilog file "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\register.v" into library work
+Parsing verilog file "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\/mmips_defines.v" included at line 18.
 Parsing module <REGISTER>.
-Analyzing Verilog file "D:\Computation-2\Work_Folder_Mips\mMips\mmips_3_LAB2_path\verilog\regfile16.v" into library work
-Parsing verilog file "D:\Computation-2\Work_Folder_Mips\mMips\mmips_3_LAB2_path\verilog\/mmips_defines.v" included at line 19.
+Analyzing Verilog file "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\regfile16.v" into library work
+Parsing verilog file "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\/mmips_defines.v" included at line 19.
 Parsing module <REGFILE16>.
-WARNING:HDLCompiler:991 - "D:\Computation-2\Work_Folder_Mips\mMips\mmips_3_LAB2_path\verilog\regfile16.v" Line 61: Event expressions must result in a singular type
-WARNING:HDLCompiler:991 - "D:\Computation-2\Work_Folder_Mips\mMips\mmips_3_LAB2_path\verilog\regfile16.v" Line 63: Event expressions must result in a singular type
-Analyzing Verilog file "D:\Computation-2\Work_Folder_Mips\mMips\mmips_3_LAB2_path\verilog\mux.v" into library work
-Parsing verilog file "D:\Computation-2\Work_Folder_Mips\mMips\mmips_3_LAB2_path\verilog\/mmips_defines.v" included at line 19.
+WARNING:HDLCompiler:991 - "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\regfile16.v" Line 61: Event expressions must result in a singular type
+WARNING:HDLCompiler:991 - "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\regfile16.v" Line 63: Event expressions must result in a singular type
+Analyzing Verilog file "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\mux.v" into library work
+Parsing verilog file "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\/mmips_defines.v" included at line 19.
 Parsing module <MUX2>.
 Parsing module <MUX3>.
 Parsing module <MUX4>.
-Analyzing Verilog file "D:\Computation-2\Work_Folder_Mips\mMips\mmips_3_LAB2_path\verilog\memdev.v" into library work
+Analyzing Verilog file "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\memdev.v" into library work
 Parsing module <MEMDEV>.
-Analyzing Verilog file "D:\Computation-2\Work_Folder_Mips\mMips\mmips_3_LAB2_path\verilog\imm2word.v" into library work
+Analyzing Verilog file "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\imm2word.v" into library work
 Parsing module <IMM2WORD>.
-Analyzing Verilog file "D:\Computation-2\Work_Folder_Mips\mMips\mmips_3_LAB2_path\verilog\hazard_ctrl.v" into library work
+Analyzing Verilog file "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\hazard_ctrl.v" into library work
 Parsing module <HAZARD_CTRL>.
-Analyzing Verilog file "D:\Computation-2\Work_Folder_Mips\mMips\mmips_3_LAB2_path\verilog\hazard.v" into library work
+Analyzing Verilog file "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\hazard.v" into library work
 Parsing module <HAZARD>.
-Analyzing Verilog file "D:\Computation-2\Work_Folder_Mips\mMips\mmips_3_LAB2_path\verilog\decoder.v" into library work
+Analyzing Verilog file "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\decoder.v" into library work
 Parsing module <DECODER>.
-Analyzing Verilog file "D:\Computation-2\Work_Folder_Mips\mMips\mmips_3_LAB2_path\verilog\ctrl.v" into library work
+Analyzing Verilog file "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\ctrl.v" into library work
 Parsing module <CTRL>.
-Analyzing Verilog file "D:\Computation-2\Work_Folder_Mips\mMips\mmips_3_LAB2_path\verilog\branch_ctrl.v" into library work
+Analyzing Verilog file "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\branch_ctrl.v" into library work
 Parsing module <BRANCH_CTRL>.
-Analyzing Verilog file "D:\Computation-2\Work_Folder_Mips\mMips\mmips_3_LAB2_path\verilog\aluctrl.v" into library work
+Analyzing Verilog file "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\aluctrl.v" into library work
 Parsing module <ALUCTRL>.
-Analyzing Verilog file "D:\Computation-2\Work_Folder_Mips\mMips\mmips_3_LAB2_path\verilog\alu.v" into library work
+Analyzing Verilog file "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\alu.v" into library work
 Parsing module <ALU>.
-Analyzing Verilog file "D:\Computation-2\Work_Folder_Mips\mMips\mmips_3_LAB2_path\verilog\add.v" into library work
+Analyzing Verilog file "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\add.v" into library work
 Parsing module <ADD>.
-Analyzing Verilog file "D:\Computation-2\Work_Folder_Mips\mMips\mmips_3_LAB2_path\verilog\rom.v" into library work
-Parsing verilog file "D:\Computation-2\Work_Folder_Mips\mMips\mmips_3_LAB2_path\verilog\/mmips_defines.v" included at line 19.
+Analyzing Verilog file "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\rom.v" into library work
+Parsing verilog file "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\/mmips_defines.v" included at line 19.
 Parsing module <rom>.
-WARNING:HDLCompiler:991 - "D:\Computation-2\Work_Folder_Mips\mMips\mmips_3_LAB2_path\verilog\rom.v" Line 114: Event expressions must result in a singular type
-Analyzing Verilog file "D:\Computation-2\Work_Folder_Mips\mMips\mmips_3_LAB2_path\verilog\ram.v" into library work
-Parsing verilog file "D:\Computation-2\Work_Folder_Mips\mMips\mmips_3_LAB2_path\verilog\/mmips_defines.v" included at line 19.
+WARNING:HDLCompiler:991 - "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\rom.v" Line 114: Event expressions must result in a singular type
+Analyzing Verilog file "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\ram.v" into library work
+Parsing verilog file "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\/mmips_defines.v" included at line 19.
 Parsing module <ram>.
-WARNING:HDLCompiler:991 - "D:\Computation-2\Work_Folder_Mips\mMips\mmips_3_LAB2_path\verilog\ram.v" Line 172: Event expressions must result in a singular type
-Analyzing Verilog file "D:\Computation-2\Work_Folder_Mips\mMips\mmips_3_LAB2_path\verilog\mmips.v" into library work
-Parsing verilog file "D:\Computation-2\Work_Folder_Mips\mMips\mmips_3_LAB2_path\verilog\/mmips_defines.v" included at line 18.
+WARNING:HDLCompiler:991 - "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\ram.v" Line 172: Event expressions must result in a singular type
+Analyzing Verilog file "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\mmips.v" into library work
+Parsing verilog file "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\/mmips_defines.v" included at line 18.
 Parsing module <mMIPS>.
-Analyzing Verilog file "D:\Computation-2\Work_Folder_Mips\mMips\mmips_3_LAB2_path\verilog\mMIPS_sim.v" into library work
-Parsing verilog file "D:\Computation-2\Work_Folder_Mips\mMips\mmips_3_LAB2_path\verilog\/mmips_defines.v" included at line 20.
+Analyzing Verilog file "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\mMIPS_sim.v" into library work
+Parsing verilog file "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\/mmips_defines.v" included at line 20.
 Parsing module <mMIPS_sim>.
 
 =========================================================================
@@ -176,7 +176,7 @@ Elaborating module <MUX4(WIDTH=32)>.
 Elaborating module <DECODER>.
 
 Elaborating module <CTRL>.
-WARNING:HDLCompiler:1127 - "D:\Computation-2\Work_Folder_Mips\mMips\mmips_3_LAB2_path\verilog\mmips.v" Line 288: Assignment to bus_ctrl_c1 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\mmips.v" Line 315: Assignment to bus_ctrl_c1 ignored, since the identifier is never used
 
 Elaborating module <SHIFTLEFT>.
 
@@ -211,8 +211,8 @@ Elaborating module <REGISTER(WIDTH=2)>.
 Elaborating module <MEMDEV>.
 
 Elaborating module <ram(RAM_BRAM=64)>.
-WARNING:HDLCompiler:91 - "D:\Computation-2\Work_Folder_Mips\mMips\mmips_3_LAB2_path\verilog\ram.v" Line 120: Signal <enable> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\Computation-2\Work_Folder_Mips\mMips\mmips_3_LAB2_path\verilog\ram.v" Line 128: Signal <ram_din> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\ram.v" Line 120: Signal <enable> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\ram.v" Line 128: Signal <ram_din> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 
 Elaborating module <RAMB16BWER(INIT_FILE="../memory/ram/mips_ram00.hex",SIM_DEVICE="SPARTAN6",DATA_WIDTH_A=36,DATA_WIDTH_B=0,WRITE_MODE_A="NO_CHANGE")>.
 
@@ -445,40 +445,40 @@ Elaborating module <RAMB16BWER(INIT_FILE="../memory/rom/mips_rom47.hex",SIM_DEVI
 =========================================================================
 
 Synthesizing Unit <mMIPS_sim>.
-    Related source file is "D:\Computation-2\Work_Folder_Mips\mMips\mmips_3_LAB2_path\verilog\mMIPS_sim.v".
+    Related source file is "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\mMIPS_sim.v".
     Summary:
 	no macro.
 Unit <mMIPS_sim> synthesized.
 
 Synthesizing Unit <mMIPS>.
-    Related source file is "D:\Computation-2\Work_Folder_Mips\mMips\mmips_3_LAB2_path\verilog\mmips.v".
-INFO:Xst:3210 - "D:\Computation-2\Work_Folder_Mips\mMips\mmips_3_LAB2_path\verilog\mmips.v" line 272: Output port <c1> of the instance <ctrl> is unconnected or connected to loadless signal.
+    Related source file is "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\mmips.v".
+INFO:Xst:3210 - "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\mmips.v" line 299: Output port <c1> of the instance <ctrl> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <mMIPS> synthesized.
 
 Synthesizing Unit <MUX2>.
-    Related source file is "D:\Computation-2\Work_Folder_Mips\mMips\mmips_3_LAB2_path\verilog\mux.v".
+    Related source file is "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\mux.v".
     Summary:
 	inferred   1 Multiplexer(s).
 Unit <MUX2> synthesized.
 
 Synthesizing Unit <MUX3_1>.
-    Related source file is "D:\Computation-2\Work_Folder_Mips\mMips\mmips_3_LAB2_path\verilog\mux.v".
+    Related source file is "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\mux.v".
         WIDTH = 32
     Summary:
 	inferred   1 Multiplexer(s).
 Unit <MUX3_1> synthesized.
 
 Synthesizing Unit <MUX3_2>.
-    Related source file is "D:\Computation-2\Work_Folder_Mips\mMips\mmips_3_LAB2_path\verilog\mux.v".
+    Related source file is "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\mux.v".
         WIDTH = 5
     Summary:
 	inferred   1 Multiplexer(s).
 Unit <MUX3_2> synthesized.
 
 Synthesizing Unit <MUX4>.
-    Related source file is "D:\Computation-2\Work_Folder_Mips\mMips\mmips_3_LAB2_path\verilog\mux.v".
+    Related source file is "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\mux.v".
         WIDTH = 32
     Found 32-bit 4-to-1 multiplexer for signal <out> created at line 68.
     Summary:
@@ -486,13 +486,13 @@ Synthesizing Unit <MUX4>.
 Unit <MUX4> synthesized.
 
 Synthesizing Unit <DECODER>.
-    Related source file is "D:\Computation-2\Work_Folder_Mips\mMips\mmips_3_LAB2_path\verilog\decoder.v".
+    Related source file is "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\decoder.v".
     Summary:
 	no macro.
 Unit <DECODER> synthesized.
 
 Synthesizing Unit <CTRL>.
-    Related source file is "D:\Computation-2\Work_Folder_Mips\mMips\mmips_3_LAB2_path\verilog\ctrl.v".
+    Related source file is "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\ctrl.v".
 WARNING:Xst:737 - Found 1-bit latch for signal <AluSel<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <AluSel<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <HiLoWrite>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -501,33 +501,33 @@ WARNING:Xst:737 - Found 1-bit latch for signal <HiLoWrite>. Latches may be gener
 Unit <CTRL> synthesized.
 
 Synthesizing Unit <SHIFTLEFT>.
-    Related source file is "D:\Computation-2\Work_Folder_Mips\mMips\mmips_3_LAB2_path\verilog\shift.v".
+    Related source file is "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\shift.v".
 WARNING:Xst:647 - Input <in<31:30>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Summary:
 	no macro.
 Unit <SHIFTLEFT> synthesized.
 
 Synthesizing Unit <SIGNEXTEND_BYTE>.
-    Related source file is "D:\Computation-2\Work_Folder_Mips\mMips\mmips_3_LAB2_path\verilog\signextend.v".
+    Related source file is "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\signextend.v".
 WARNING:Xst:647 - Input <in<31:8>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Summary:
 	no macro.
 Unit <SIGNEXTEND_BYTE> synthesized.
 
 Synthesizing Unit <IMM2WORD>.
-    Related source file is "D:\Computation-2\Work_Folder_Mips\mMips\mmips_3_LAB2_path\verilog\imm2word.v".
+    Related source file is "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\imm2word.v".
     Summary:
 	no macro.
 Unit <IMM2WORD> synthesized.
 
 Synthesizing Unit <ALUCTRL>.
-    Related source file is "D:\Computation-2\Work_Folder_Mips\mMips\mmips_3_LAB2_path\verilog\aluctrl.v".
+    Related source file is "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\aluctrl.v".
     Summary:
 	inferred   1 Multiplexer(s).
 Unit <ALUCTRL> synthesized.
 
 Synthesizing Unit <ALU>.
-    Related source file is "D:\Computation-2\Work_Folder_Mips\mMips\mmips_3_LAB2_path\verilog\alu.v".
+    Related source file is "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\alu.v".
     Found 32-bit subtractor for signal <a[31]_b[31]_sub_7_OUT> created at line 77.
     Found 32-bit adder for signal <a[31]_b[31]_add_2_OUT> created at line 62.
     Found 32x32-bit multiplier for signal <a[31]_b[31]_MuLt_14_OUT> created at line 152.
@@ -545,50 +545,50 @@ WARNING:Xst:737 - Found 1-bit latch for signal <zero>. Latches may be generated 
 Unit <ALU> synthesized.
 
 Synthesizing Unit <REGFILE16>.
-    Related source file is "D:\Computation-2\Work_Folder_Mips\mMips\mmips_3_LAB2_path\verilog\regfile16.v".
+    Related source file is "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\regfile16.v".
     Found 32x32-bit dual-port RAM <Mram_regs> for signal <regs>.
     Summary:
 	inferred   2 RAM(s).
 Unit <REGFILE16> synthesized.
 
 Synthesizing Unit <ADD>.
-    Related source file is "D:\Computation-2\Work_Folder_Mips\mMips\mmips_3_LAB2_path\verilog\add.v".
+    Related source file is "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\add.v".
     Found 32-bit adder for signal <r> created at line 27.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 Unit <ADD> synthesized.
 
 Synthesizing Unit <BRANCH_CTRL>.
-    Related source file is "D:\Computation-2\Work_Folder_Mips\mMips\mmips_3_LAB2_path\verilog\branch_ctrl.v".
+    Related source file is "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\branch_ctrl.v".
     Found 1-bit 4-to-1 multiplexer for signal <Branch> created at line 26.
     Summary:
 	inferred   1 Multiplexer(s).
 Unit <BRANCH_CTRL> synthesized.
 
 Synthesizing Unit <HAZARD_CTRL>.
-    Related source file is "D:\Computation-2\Work_Folder_Mips\mMips\mmips_3_LAB2_path\verilog\hazard_ctrl.v".
+    Related source file is "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\hazard_ctrl.v".
     Summary:
 	inferred  11 Multiplexer(s).
 Unit <HAZARD_CTRL> synthesized.
 
 Synthesizing Unit <HAZARD>.
-    Related source file is "D:\Computation-2\Work_Folder_Mips\mMips\mmips_3_LAB2_path\verilog\hazard.v".
+    Related source file is "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\hazard.v".
+WARNING:Xst:647 - Input <EXMEMRegWrite> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <EXMEMWriteRegister> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <Instr<15:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-    Found 5-bit comparator equal for signal <IDEXWriteRegisterRt[4]_Instr[25]_equal_4_o> created at line 101
-    Found 5-bit comparator equal for signal <IDEXWriteRegisterRd[4]_Instr[25]_equal_6_o> created at line 102
-    Found 5-bit comparator equal for signal <IDEXWriteRegisterRt[4]_Instr[20]_equal_8_o> created at line 103
-    Found 5-bit comparator equal for signal <IDEXWriteRegisterRd[4]_Instr[20]_equal_10_o> created at line 104
-    Found 5-bit comparator equal for signal <EXMEMWriteRegister[4]_Instr[25]_equal_12_o> created at line 108
-    Found 5-bit comparator equal for signal <EXMEMWriteRegister[4]_Instr[20]_equal_13_o> created at line 109
-    Found 5-bit comparator equal for signal <MEMWBWriteRegister[4]_Instr[25]_equal_15_o> created at line 113
-    Found 5-bit comparator equal for signal <MEMWBWriteRegister[4]_Instr[20]_equal_16_o> created at line 114
+    Found 5-bit comparator equal for signal <MEMWBWriteRegister[4]_Instr[25]_equal_3_o> created at line 115
+    Found 5-bit comparator equal for signal <MEMWBWriteRegister[4]_Instr[20]_equal_7_o> created at line 122
+    Found 5-bit comparator equal for signal <IDEXWriteRegisterRt[4]_Instr[25]_equal_15_o> created at line 138
+    Found 5-bit comparator equal for signal <IDEXWriteRegisterRd[4]_Instr[25]_equal_17_o> created at line 139
+    Found 5-bit comparator equal for signal <IDEXWriteRegisterRt[4]_Instr[20]_equal_19_o> created at line 140
+    Found 5-bit comparator equal for signal <IDEXWriteRegisterRd[4]_Instr[20]_equal_21_o> created at line 141
     Summary:
-	inferred   8 Comparator(s).
+	inferred   6 Comparator(s).
 	inferred  11 Multiplexer(s).
 Unit <HAZARD> synthesized.
 
 Synthesizing Unit <REGISTER_1>.
-    Related source file is "D:\Computation-2\Work_Folder_Mips\mMips\mmips_3_LAB2_path\verilog\register.v".
+    Related source file is "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\register.v".
         WIDTH = 32
     Found 32-bit register for signal <out>.
     Summary:
@@ -596,7 +596,7 @@ Synthesizing Unit <REGISTER_1>.
 Unit <REGISTER_1> synthesized.
 
 Synthesizing Unit <REGISTER_2>.
-    Related source file is "D:\Computation-2\Work_Folder_Mips\mMips\mmips_3_LAB2_path\verilog\register.v".
+    Related source file is "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\register.v".
         WIDTH = 5
     Found 5-bit register for signal <out>.
     Summary:
@@ -604,7 +604,7 @@ Synthesizing Unit <REGISTER_2>.
 Unit <REGISTER_2> synthesized.
 
 Synthesizing Unit <REGISTER_3>.
-    Related source file is "D:\Computation-2\Work_Folder_Mips\mMips\mmips_3_LAB2_path\verilog\register.v".
+    Related source file is "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\register.v".
         WIDTH = 6
     Found 6-bit register for signal <out>.
     Summary:
@@ -612,7 +612,7 @@ Synthesizing Unit <REGISTER_3>.
 Unit <REGISTER_3> synthesized.
 
 Synthesizing Unit <REGISTER_4>.
-    Related source file is "D:\Computation-2\Work_Folder_Mips\mMips\mmips_3_LAB2_path\verilog\register.v".
+    Related source file is "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\register.v".
         WIDTH = 1
     Found 1-bit register for signal <out>.
     Summary:
@@ -620,7 +620,7 @@ Synthesizing Unit <REGISTER_4>.
 Unit <REGISTER_4> synthesized.
 
 Synthesizing Unit <REGISTER_5>.
-    Related source file is "D:\Computation-2\Work_Folder_Mips\mMips\mmips_3_LAB2_path\verilog\register.v".
+    Related source file is "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\register.v".
         WIDTH = 2
     Found 2-bit register for signal <out>.
     Summary:
@@ -628,7 +628,7 @@ Synthesizing Unit <REGISTER_5>.
 Unit <REGISTER_5> synthesized.
 
 Synthesizing Unit <MEMDEV>.
-    Related source file is "D:\Computation-2\Work_Folder_Mips\mMips\mmips_3_LAB2_path\verilog\memdev.v".
+    Related source file is "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\memdev.v".
 WARNING:Xst:647 - Input <a_read_reg<1:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <a_read_reg<30:3>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 1-bit register for signal <sending>.
@@ -639,7 +639,7 @@ WARNING:Xst:647 - Input <a_read_reg<30:3>> is never used. This port will be pres
 Unit <MEMDEV> synthesized.
 
 Synthesizing Unit <ram>.
-    Related source file is "D:\Computation-2\Work_Folder_Mips\mMips\mmips_3_LAB2_path\verilog\ram.v".
+    Related source file is "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\ram.v".
         RAM_BRAM = 64
     Found 1-bit register for signal <lblw>.
     Found 2-bit register for signal <r>.
@@ -807,7 +807,7 @@ WARNING:Xst:737 - Found 1-bit latch for signal <ENA<0>>. Latches may be generate
 Unit <ram> synthesized.
 
 Synthesizing Unit <rom>.
-    Related source file is "D:\Computation-2\Work_Folder_Mips\mMips\mmips_3_LAB2_path\verilog\rom.v".
+    Related source file is "D:\Computation-2\Work_Folder_Mips\mMips\mmips_5_Final\mmips\verilog\rom.v".
         ROM_BRAM = 48
     Found 14-bit register for signal <ADDRA>.
     Found 48-bit register for signal <ENA>.
@@ -843,19 +843,19 @@ Macro Statistics
  6-bit register                                        : 1
 # Latches                                              : 122
  1-bit latch                                           : 122
-# Comparators                                          : 16
+# Comparators                                          : 14
  21-bit comparator greater                             : 2
  21-bit comparator lessequal                           : 2
  32-bit comparator greater                             : 4
- 5-bit comparator equal                                : 8
-# Multiplexers                                         : 174
- 1-bit 2-to-1 multiplexer                              : 118
+ 5-bit comparator equal                                : 6
+# Multiplexers                                         : 176
+ 1-bit 2-to-1 multiplexer                              : 116
  1-bit 3-to-1 multiplexer                              : 8
  1-bit 4-to-1 multiplexer                              : 17
- 2-bit 2-to-1 multiplexer                              : 9
+ 2-bit 2-to-1 multiplexer                              : 11
  32-bit 2-to-1 multiplexer                             : 10
  32-bit 23-to-1 multiplexer                            : 1
- 32-bit 4-to-1 multiplexer                             : 2
+ 32-bit 4-to-1 multiplexer                             : 4
  32-bit 48-to-1 multiplexer                            : 1
  32-bit 64-to-1 multiplexer                            : 1
  5-bit 2-to-1 multiplexer                              : 2
@@ -910,7 +910,7 @@ WARNING:Xst:2677 - Node <bramid_31> of sequential type is unconnected in block <
 WARNING:Xst:2404 -  FFs/Latches <bramid<31:21>> (without init value) have a constant value of 0 in block <rom>.
 
 Synthesizing (advanced) Unit <REGFILE16>.
-INFO:Xst:3217 - HDL ADVISOR - Register <id_data_reg1/out> currently described with an asynchronous reset, could be combined with distributed RAM <Mram_regs> for implementation on block RAM resources if you made this reset synchronous instead.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_regs> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
     -----------------------------------------------------------------------
     | ram_type           | Distributed                         |          |
     -----------------------------------------------------------------------
@@ -926,7 +926,7 @@ INFO:Xst:3217 - HDL ADVISOR - Register <id_data_reg1/out> currently described wi
     |     addrB          | connected to signal <r_addr_reg1>   |          |
     |     doB            | connected to signal <r_data_reg1>   |          |
     -----------------------------------------------------------------------
-INFO:Xst:3217 - HDL ADVISOR - Register <id_data_reg2/out> currently described with an asynchronous reset, could be combined with distributed RAM <Mram_regs1> for implementation on block RAM resources if you made this reset synchronous instead.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_regs1> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
     -----------------------------------------------------------------------
     | ram_type           | Distributed                         |          |
     -----------------------------------------------------------------------
@@ -942,8 +942,6 @@ INFO:Xst:3217 - HDL ADVISOR - Register <id_data_reg2/out> currently described wi
     |     addrB          | connected to signal <r_addr_reg2>   |          |
     |     doB            | connected to signal <r_data_reg2>   |          |
     -----------------------------------------------------------------------
-INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_regs> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
-INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_regs1> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
 Unit <REGFILE16> synthesized (advanced).
 
 Synthesizing (advanced) Unit <ram>.
@@ -989,19 +987,19 @@ Macro Statistics
  32-bit subtractor                                     : 1
 # Registers                                            : 615
  Flip-Flops                                            : 615
-# Comparators                                          : 16
+# Comparators                                          : 14
  21-bit comparator greater                             : 2
  21-bit comparator lessequal                           : 2
  32-bit comparator greater                             : 4
- 5-bit comparator equal                                : 8
-# Multiplexers                                         : 235
- 1-bit 2-to-1 multiplexer                              : 150
+ 5-bit comparator equal                                : 6
+# Multiplexers                                         : 237
+ 1-bit 2-to-1 multiplexer                              : 148
  1-bit 3-to-1 multiplexer                              : 8
  1-bit 4-to-1 multiplexer                              : 48
- 2-bit 2-to-1 multiplexer                              : 9
+ 2-bit 2-to-1 multiplexer                              : 11
  32-bit 2-to-1 multiplexer                             : 9
  32-bit 23-to-1 multiplexer                            : 1
- 32-bit 4-to-1 multiplexer                             : 1
+ 32-bit 4-to-1 multiplexer                             : 3
  32-bit 48-to-1 multiplexer                            : 1
  32-bit 64-to-1 multiplexer                            : 1
  5-bit 2-to-1 multiplexer                              : 2
@@ -1111,15 +1109,15 @@ Top Level Output File Name         : mMIPS_sim.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 2514
+# BELS                             : 2581
 #      GND                         : 1
 #      INV                         : 2
 #      LUT1                        : 30
-#      LUT2                        : 44
-#      LUT3                        : 95
-#      LUT4                        : 191
-#      LUT5                        : 303
-#      LUT6                        : 1525
+#      LUT2                        : 43
+#      LUT3                        : 86
+#      LUT4                        : 208
+#      LUT5                        : 302
+#      LUT6                        : 1586
 #      MUXCY                       : 157
 #      MUXF7                       : 39
 #      VCC                         : 1
@@ -1152,16 +1150,16 @@ Selected Device : 6slx45tcsg324-3
 
 Slice Logic Utilization: 
  Number of Slice Registers:             662  out of  54576     1%  
- Number of Slice LUTs:                 2238  out of  27288     8%  
-    Number used as Logic:              2190  out of  27288     8%  
+ Number of Slice LUTs:                 2305  out of  27288     8%  
+    Number used as Logic:              2257  out of  27288     8%  
     Number used as Memory:               48  out of   6408     0%  
        Number used as RAM:               48
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   2435
-   Number with an unused Flip Flop:    1773  out of   2435    72%  
-   Number with an unused LUT:           197  out of   2435     8%  
-   Number of fully used LUT-FF pairs:   465  out of   2435    19%  
+ Number of LUT Flip Flop pairs used:   2539
+   Number with an unused Flip Flop:    1877  out of   2539    73%  
+   Number with an unused LUT:           234  out of   2539     9%  
+   Number of fully used LUT-FF pairs:   428  out of   2539    16%  
    Number of unique control sets:        11
 
 IO Utilization: 
@@ -1215,7 +1213,7 @@ Timing Summary:
 Speed Grade: -3
 
    Minimum period: 17.683ns (Maximum Frequency: 56.552MHz)
-   Minimum input arrival time before clock: 7.485ns
+   Minimum input arrival time before clock: 7.383ns
    Maximum output required time after clock: 20.381ns
    Maximum combinational path delay: No path found
 
@@ -1226,7 +1224,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
   Clock period: 17.683ns (frequency: 56.552MHz)
-  Total number of paths / destination ports: 246513036 / 1395
+  Total number of paths / destination ports: 246507677 / 1395
 -------------------------------------------------------------------------
 Delay:               17.683ns (Levels of Logic = 6)
   Source:            mMIPS/id_instr_25_0/out_5 (FF)
@@ -1254,7 +1252,7 @@ Delay:               17.683ns (Levels of Logic = 6)
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
   Total number of paths / destination ports: 991 / 943
 -------------------------------------------------------------------------
-Offset:              7.485ns (Levels of Logic = 4)
+Offset:              7.383ns (Levels of Logic = 4)
   Source:            en (PAD)
   Destination:       imem/ENA_47 (FF)
   Destination Clock: clk rising
@@ -1263,18 +1261,18 @@ Offset:              7.485ns (Levels of Logic = 4)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O           352   1.222   2.180  en_IBUF (en_IBUF)
-     LUT6:I4->O            1   0.203   0.944  imem/Reset_OR_DriverANDClockEnable483 (imem/Reset_OR_DriverANDClockEnable482)
+     IBUF:I->O           352   1.222   2.076  en_IBUF (en_IBUF)
+     LUT5:I4->O            1   0.205   0.944  imem/Reset_OR_DriverANDClockEnable483 (imem/Reset_OR_DriverANDClockEnable482)
      LUT6:I0->O            1   0.203   0.580  imem/Reset_OR_DriverANDClockEnable484 (imem/Reset_OR_DriverANDClockEnable483)
      LUT4:I3->O           48   0.205   1.519  imem/Reset_OR_DriverANDClockEnable486 (imem/Reset_OR_DriverANDClockEnable)
      FDRE:R                    0.430          imem/ENA_1
     ----------------------------------------
-    Total                      7.485ns (2.263ns logic, 5.222ns route)
-                                       (30.2% logic, 69.8% route)
+    Total                      7.383ns (2.265ns logic, 5.118ns route)
+                                       (30.7% logic, 69.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 800869 / 37
+  Total number of paths / destination ports: 800864 / 37
 -------------------------------------------------------------------------
 Offset:              20.381ns (Levels of Logic = 9)
   Source:            mMIPS/id_instr_25_0/out_5 (FF)
@@ -1292,7 +1290,7 @@ Offset:              20.381ns (Levels of Logic = 9)
      DSP48A1:PCIN47->P14    1   2.264   0.580  mMIPS/alu/Mmult_a[31]_b[31]_MuLt_14_OUT2 (mMIPS/alu/a[31]_b[31]_MuLt_14_OUT<31>)
      LUT6:I5->O            1   0.205   0.580  mMIPS/alu/Mmux_result259 (mMIPS/alu/Mmux_result258)
      LUT6:I5->O            2   0.205   0.617  mMIPS/alu/Mmux_result2510 (mMIPS/bus_alu_result<31>)
-     LUT6:I5->O           42   0.205   1.538  mMIPS/mux2711 (mMIPS/bus_mux6<31>)
+     LUT6:I5->O           42   0.205   1.538  mMIPS/mux101171 (mMIPS/bus_mux6<31>)
      LUT4:I2->O            2   0.203   0.616  mMIPS/memdev/dev_send_eop1 (dev_send_eop_OBUF)
      OBUF:I->O                 2.571          dev_w_OBUF (dev_w)
     ----------------------------------------
@@ -1312,7 +1310,7 @@ Source Clock     |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 clk              |   17.683|    6.894|    2.316|         |
 en               |         |    7.169|    2.487|         |
 mMIPS/alu/_n0122 |         |    7.821|         |         |
-mMIPS/ctrl/_n0086|         |    1.613|         |         |
+mMIPS/ctrl/_n0086|         |    1.385|         |         |
 -----------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock en
@@ -1336,20 +1334,20 @@ Clock to Setup on destination clock mMIPS/ctrl/_n0086
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |         |         |    3.428|         |
+clk            |         |         |    3.473|         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 39.00 secs
-Total CPU time to Xst completion: 38.56 secs
+Total REAL time to Xst completion: 28.00 secs
+Total CPU time to Xst completion: 28.61 secs
  
 --> 
 
-Total memory usage is 359100 kilobytes
+Total memory usage is 331904 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  203 (   0 filtered)
-Number of infos    :   34 (   0 filtered)
+Number of warnings :  205 (   0 filtered)
+Number of infos    :   32 (   0 filtered)
 

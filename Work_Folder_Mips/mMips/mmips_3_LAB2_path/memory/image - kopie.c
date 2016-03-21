@@ -34,13 +34,13 @@ void main(void)
                          -1*(int)buf_i[ a      * bplus] +
                           2*(int)buf_i[(a + 1) * bminus ] +
                           5*(int)buf_i[(a + 1) * b_width ] +
-                         -7*(int)buf_i[(a + 1) * bplus] +  rest );
+                         -7*(int)buf_i[(a + 1) * bplus] +  128)/13 );
 
-			var = sfu0(result, max_int);
+			//var = sfu0(result, max_int);
             /* Clipping */
-            //if(result<0) buf_o[a * WIDTH + b] = 0;
-            //else if (result > 255) buf_o[a * WIDTH + b] = (char)255;
-            //else buf_o[a * WIDTH + b] = result;
+            if(result<0) buf_o[a * WIDTH + b] = 0;
+            else if (result > 255) buf_o[a * WIDTH + b] = (char)255;
+            else buf_o[a * WIDTH + b] = result;
         }
     }
 }

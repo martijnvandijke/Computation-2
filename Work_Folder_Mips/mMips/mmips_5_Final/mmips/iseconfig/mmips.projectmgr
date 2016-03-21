@@ -10,13 +10,13 @@
          <ClosedNode>/Automatic `includes</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>mMIPS_sim (D:/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/verilog/mMIPS_sim.v)</SelectedItem>
+         <SelectedItem>forwarding1 - MUX4 (D:/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/verilog/mux.v)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >3</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000017b000000020000000000000000000000000200000064ffffffff0000008100000003000000020000017b0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>mMIPS_sim (D:/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/verilog/mMIPS_sim.v)</CurrentItem>
+      <CurrentItem>aluctrl - ALUCTRL (D:/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/verilog/aluctrl.v)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VERILOG" guiview="Process" >
       <ClosedNodes>
@@ -27,13 +27,13 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Synthesize - XST</SelectedItem>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001c3000000010000000100000000000000000000000064ffffffff000000810000000000000001000001c30000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000010f000000010000000100000000000000000000000064ffffffff0000008100000000000000010000010f0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>Synthesize - XST</CurrentItem>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView guiview="File" >
       <ClosedNodes>
@@ -64,13 +64,13 @@
          <ClosedNode>/testbench C:|Users|martijn|Documents|GitHub|Computation-2|Work_Folder_Mips|mMips|mmips_4_ref_own instruction|mmips|verilog|testbench.v/mMIPS_sim - mMIPS_sim/mMIPS - mMIPS</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>testbench (D:/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/verilog/testbench.v)</SelectedItem>
+         <SelectedItem>hazard - HAZARD (D:/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/verilog/hazard.v)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >9</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000018f000000020000000000000000000000000200000064ffffffff0000008100000003000000020000018f0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>testbench (D:/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/verilog/testbench.v)</CurrentItem>
+      <CurrentItem>hazard - HAZARD (D:/Computation-2/Work_Folder_Mips/mMips/mmips_5_Final/mmips/verilog/hazard.v)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -82,7 +82,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001c3000000010000000100000000000000000000000064ffffffff000000810000000000000001000001c30000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000010f000000010000000100000000000000000000000064ffffffff0000008100000000000000010000010f0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem/>
    </ItemView>
@@ -95,10 +95,10 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001c3000000010000000100000000000000000000000064ffffffff000000810000000000000001000001c30000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000010f000000010000000100000000000000000000000064ffffffff0000008100000000000000010000010f0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>Simulate Behavioral Model</CurrentItem>
    </ItemView>
    <SourceProcessView>000000ff00000000000000020000013b0000009d01000000050100000002</SourceProcessView>
-   <CurrentView>Behavioral Simulation</CurrentView>
+   <CurrentView>Implementation</CurrentView>
 </Project>

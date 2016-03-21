@@ -20,5 +20,17 @@
 <msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"D:/Computation-2/Work_Folder_Mips/mMips/mmips_3_LAB2_path/workspace/../verilog/testbench.v" Line 33: Port <arg fmt="%s" index="1">dev_dout</arg> is not connected to this instance
 </msg>
 
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"D:/Computation-2/Work_Folder_Mips/mMips/mmips_3_LAB2_path/workspace/../verilog/mmips.v" Line 261: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">sel</arg>&gt;. Formal port size is <arg fmt="%d" index="2">2</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"D:/Computation-2/Work_Folder_Mips/mMips/mmips_3_LAB2_path/workspace/../verilog/mmips.v" Line 262: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">out</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"D:/Computation-2/Work_Folder_Mips/mMips/mmips_3_LAB2_path/workspace/../verilog/mmips.v" Line 270: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">sel</arg>&gt;. Formal port size is <arg fmt="%d" index="2">2</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"D:/Computation-2/Work_Folder_Mips/mMips/mmips_3_LAB2_path/workspace/../verilog/mmips.v" Line 271: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">out</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+</msg>
+
 </messages>
 

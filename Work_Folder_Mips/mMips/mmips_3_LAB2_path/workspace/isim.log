@@ -14,6 +14,10 @@ WARNING:Security:42 - Your software subscription period has lapsed. Your current
 
 ----------------------------------------------------------------------
 This is a Full version of ISim.
+WARNING: File "D:/Computation-2/Work_Folder_Mips/mMips/mmips_3_LAB2_path/verilog/mmips.v" Line 261.  For instance mMIPS/forward1/, width 2 of formal port sel is not equal to width 1 of actual signal bus_sel_forwarding1.
+WARNING: File "D:/Computation-2/Work_Folder_Mips/mMips/mmips_3_LAB2_path/verilog/mmips.v" Line 262.  For instance mMIPS/forward1/, width 32 of formal port out is not equal to width 1 of actual signal bus_forwarding1_out.
+WARNING: File "D:/Computation-2/Work_Folder_Mips/mMips/mmips_3_LAB2_path/verilog/mmips.v" Line 270.  For instance mMIPS/forward2/, width 2 of formal port sel is not equal to width 1 of actual signal bus_sel_forwarding2.
+WARNING: File "D:/Computation-2/Work_Folder_Mips/mMips/mmips_3_LAB2_path/verilog/mmips.v" Line 271.  For instance mMIPS/forward2/, width 32 of formal port out is not equal to width 1 of actual signal bus_forwarding2_out.
 Time resolution is 1 ps
 # onerror resume
 # wave add /
@@ -21,4 +25,4 @@ Time resolution is 1 ps
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
 # run all
-The simulator has terminated in an unexpected manner.  Please review the ISim log (isim.log) for details.
+Stopped at time : 129425251 ns : File "D:/Computation-2/Work_Folder_Mips/mMips/mmips_3_LAB2_path/verilog/add.v" Line 27
