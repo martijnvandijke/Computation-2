@@ -225,6 +225,7 @@ void circle(float x, float y, float r, int segments)
 {
 	glBegin(GL_TRIANGLE_FAN);
 	glVertex2f(x, y);
+	glColor3f(color[0], color[1], color[2]);
 	for (int n = 0; n <= segments; ++n) {
 		float const t = 2 * M_PI * (float)n / (float)segments;
 		glVertex2f(x + sin(t) * r, y + cos(t) * r);
