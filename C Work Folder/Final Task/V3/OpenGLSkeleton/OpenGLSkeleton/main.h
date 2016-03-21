@@ -16,7 +16,7 @@ void display();
 void alarm(int alarmnumber);
 void keyfunc(unsigned char key, int x, int y);
 void drawtext(std::string keytext, int x, int y);
-void circle(float x, float y, float r, int segments);
+//void circle(float x, float y, float r, int segments);
 
 
 #endif

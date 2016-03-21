@@ -79,11 +79,13 @@
   <ItemGroup>
     <ClCompile Include="drawlist.cpp" />
     <ClCompile Include="drawtools.cpp" />
+    <ClCompile Include="Enemy.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="drawlist.h" />
     <ClInclude Include="drawtools.h" />
+    <ClInclude Include="Enemy.h" />
     <ClInclude Include="glut.h" />
     <ClInclude Include="main.h" />
   </ItemGroup>

@@ -205,7 +205,24 @@ private:
 	int _segments;
 };
 
+class Sqaure : public Drawable
+{
+public: 
+	Sqaure(const PointF& begin, const PointF& end, const PointF& begin2, const PointF& end2, const Color& color);
 
+	void draw() const override;
+
+	// Print Line in EDIF++ format
+	void print() const override;
+
+private :
+	PointF _begin;
+	PointF _end;
+	PointF _begin2;
+	PointF _end2;
+	Color _color;
+
+};
 
 //
 // Text

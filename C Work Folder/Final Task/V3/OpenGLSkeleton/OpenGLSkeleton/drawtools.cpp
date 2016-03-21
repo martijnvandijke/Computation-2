@@ -102,55 +102,6 @@ void Line::draw() const
 	// Aim for about 10 lines of code
 }
 
-//
-// Text
-//
-
-// Implement the Text class here
-
-//Cirlce::Circle(const PointF& pos, const Color& color, float r, float segments)
-//	: _pos{ pos }
-//	, _color{ color }
-//	, _radius{ r }
-//	, _sharpnes{ segments}
-//{
-//	//test
-//}
-
-//
-// Cirlce
-//
-//Circle::Circle(const PointF& pos, const Color& color, float r, float segments);
-//	:_pos{ pos }
-//	, _color{ color }
-//	, _r{ r }
-//	, _segments{ segments}
-//{
-//	// To be implemented by you
-//}
-//
-//const PointF & Circle::pos() const
-//{
-//	return _pos;
-//}
-//	//
-//void Circle::draw() const
-//{
-//	glBegin(GL_TRIANGLE_FAN);
-//	glVertex2f(x, y);
-//	glColor3f(color[0], color[1], color[2]);
-//	for (int n = 0; n <= _segments; ++n) {
-//		float const t = 2 * M_PI * (float)n / (float)_segments;
-//		glVertex2f(x + sin(t) * r, y + cos(t) * r);
-//	}
-//	glEnd();
-//
-//}
-//
-//void Circle::print() const
-//{
-//	//to do
-//}
 
 Circle::Circle(const PointF& position, const Color& color, float radius, int segments)
 	: _position{ position }
@@ -166,7 +117,7 @@ void Circle::draw() const
 {
 	glBegin(GL_TRIANGLE_FAN);
 	glVertex2f(_position.x() , _position.y() );
-	//glColor3fv(_color.data());
+	glColor3fv(_color.data());
 	for (int n = 0; n <= _segments; ++n) {
 		float const t = 2 * M_PI * (float)n / (float)_segments;
 		glVertex2f(_position.x() + sin(t) * _radius, _position.y() + cos(t) * _radius);
@@ -178,4 +129,33 @@ void Circle::print() const
 {
 	cout << "test of cricle " << endl;
 	//print function
+}
+
+Sqaure::Sqaure(const PointF & begin, const PointF & end, const PointF & begin2, const PointF & end2, const Color & color )
+	: _begin{ begin }
+	, _end{ end }
+	, _end2{end2}
+	, _begin2{begin2}
+	, _color{ color }
+{
+	//
+}
+
+void Sqaure::draw() const
+{
+	//draw function
+	glBegin(GL_QUADS);
+	glColor3fv(_color.data());
+	glVertex2f(	_begin.x() ,_begin.y()	);
+	glVertex2f( _end.x() , _end.y()	);
+	glVertex2f( _begin2.x(), _begin2.y());
+	glVertex2f( _end2.x(),  _end2.y());
+	glEnd();
+}
+
+void Sqaure::print() const
+{
+
+	//print fuinction
+
 }

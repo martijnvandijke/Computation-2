@@ -17,6 +17,7 @@
 
 #include "main.h"           // Function declarations and some definitions
 #include "drawtools.h"      // contains all you need to draw stuff
+#include "Enemy.h" 
 
 using namespace std;
 std::string keytext;
@@ -76,16 +77,23 @@ void init()
 	pixel->draw();
 
 	PointF begin1 = { 30,400 };
-	PointF begin2 = { 80, 700 };
+	PointF begin2 = { 30, 400 };
+	PointF begin3 = { 45,410 };
+	PointF begin4 = { 45, 410 };
 	float lind = 2.0;
-	Line* line = new Line{ begin1, begin2, color ,lind };
-	drawList.push_back(line);
-	line->draw();
-	line->print();
+	//Line* line = new Line{ begin1, begin2, color ,lind };
+	//drawList.push_back(line);
 	float r = 10;
 	int seg = 10;
-	Circle* cirle = new Circle(begin1, color, r, seg);
-	cirle->print();
+	//Circle* cirle = new Circle(begin1, color, r, seg);
+	//drawList.push_back(cirle);
+	Sqaure* sq = new Sqaure(begin1, begin2,begin3,begin4, color);
+	drawList.push_back(sq);
+	float speed = 200;
+	int health = 100;
+	Enemy* en = new Enemy(begin1, speed, health );
+	PointF posEnemy = en->Move();
+	Circle* cirle = new Circle(posEnemy, color, r, seg);
 	drawList.push_back(cirle);
 }
 
@@ -142,23 +150,23 @@ void reshape(int w, int h)
 void display()
 {
     glClear(GL_COLOR_BUFFER_BIT);   // clear the backbuffer
-    glBegin(GL_POINTS);             // Start a new drawing block for drawing points
+    //glBegin(GL_POINTS);             // Start a new drawing block for drawing points
 
-        // Draw points here
-        // The point (0,0) corresponds to the lower left corner.
+    //    // Draw points here
+    //    // The point (0,0) corresponds to the lower left corner.
 
-        // The following lines will draw the point (100, 200) in red
-        glColor3f(1.0, 0.0, 0.0);   // Set color
-        glVertex2f(100, 200);       // Set position
+    //    // The following lines will draw the point (100, 200) in red
+    //    glColor3f(1.0, 0.0, 0.0);   // Set color
+    //    glVertex2f(100, 200);       // Set position
 
-        // The following lines will draw the point (200, 400) in blue
-        // Alternative approach to the above:
-        Color color = { 0.0f, 0.0f, 1.0f }; // A color (see drawtools.h)
-        glColor3fv(color.data());           // Set color from array
-        PointF point = { 200, 400 };        // A two dimensional point (see drawtools.h)
-        glVertex2fv(point.data());          // Set position from array
+    //    // The following lines will draw the point (200, 400) in blue
+    //    // Alternative approach to the above:
+    //    Color color = { 0.0f, 0.0f, 1.0f }; // A color (see drawtools.h)
+    //    glColor3fv(color.data());           // Set color from array
+    //    PointF point = { 200, 400 };        // A two dimensional point (see drawtools.h)
+    //    glVertex2fv(point.data());          // Set position from array
 		
-    glEnd(); // End of the drawing block
+    //glEnd(); // End of the drawing block
 	drawtext(keytext, 100, 100);
 	for (Drawable* drawable : drawList){ 
 		drawable->draw(); 
@@ -193,16 +201,6 @@ void drawtext(std::string keytext, int x, int y) {
 
 }
 
-void circle(float x, float y, float r, int segments)
-{
-	glBegin(GL_TRIANGLE_FAN);
-	glVertex2f(x, y);
-	for (int n = 0; n <= segments; ++n) {
-		float const t = 2 * M_PI * (float)n / (float)segments;
-		glVertex2f(x + sin(t) * r, y + cos(t) * r);
-	}
-	glEnd();
-}
 
 //---------------------------------------------------------------------------
 int main(int argc, char* argv[])
