@@ -20,6 +20,10 @@ Enemy::Enemy(const PointF& begin,PointF current ,float speed, int health)
 	Count++;
 	_id = Count;
 }
+void Enemy::Health(int i) {
+	_health = i;
+}
+
 
 PointF Enemy::Value() {
 	return  _begin;

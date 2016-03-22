@@ -20,19 +20,20 @@
 #include "drawtools.h"      // contains all you need to draw stuff
 #include "Enemy.h" 
 #include "Turret.h" 
-#include "Bullet.h"
 #include <fstream>
+#include <map>
 
-int map[2];
+//int map[][];
 using namespace std;
 std::string keytext;
 DrawList drawList;
+string filename = "test";
 //std::list<Enemy*> enemylist;
-
+map<string, int, int> fieldMap;
 // Put your global variables here
 vector<Enemy*> enenemyvector;
 vector<Turret*> turretvector;
-vector<Bullet*> bulletvector;
+vector<Line*> bulletvector;
 
 //---------------------------------------------------------------------------
 // void init(void)
@@ -145,29 +146,49 @@ void drawEnemy() {
 	//number of triganles that need to be drawn
 	int seg = 20;
 	for (unsigned i = 0; i<enenemyvector.size(); i++) {
-		PointF posEnemy = enenemyvector.at(i)->Move();
-		enenemyvector.at(i)->Update(posEnemy);
-		r = enenemyvector.at(i)->_health;
-		Circle* cirle = new Circle(posEnemy, color, r, seg);
-		drawList.push_back(cirle);
-		cout << "Enemy id :" << endl;
-		cout << enenemyvector.at(i)->_id << endl;
-		drawBullets(posEnemy,i);
-		//draw the bullet
-		
+		PointF curpos = enenemyvector.at(i)->_current;
+
+		//if the enemy is out of the screen
+		if (curpos[0] > windowWidth || curpos[1] > windowHeight) {
+			//delete the enemy
+			enenemyvector.erase((enenemyvector.begin() + i));
+		}
+
+		else {
+			if (enenemyvector.at(i)->_health > 0) {
+				PointF posEnemy = enenemyvector.at(i)->Move();
+				enenemyvector.at(i)->Update(posEnemy);
+				r = enenemyvector.at(i)->_health;
+				Circle* cirle = new Circle(posEnemy, color, r, seg);
+				drawList.push_back(cirle);
+				cout << "Enemy id :" << endl;
+				cout << enenemyvector.at(i)->_id << endl;
+				cout << "Enemy health" << endl;
+				cout << enenemyvector.at(i)->_health << endl;
+				drawBullets(posEnemy, i);
+				Bullet(posEnemy, i);
+				//draw the bullet
+			}
+			else
+			{
+				//delete the enemy from the vecto list
+				enenemyvector.erase((enenemyvector.begin() + i));
+			}
+		}
 	}
 }
 
-//draw the bullets per 
+//draw the to be drawn bullets 
 void drawBullets(PointF posEnemy, int j){
 		
 		Color color = { 0.2f, 1, 0.2f };
 		float lind = 2.0;
+		int bulletlenght = 4;
 
 		//loop trough all the turrets
 		for (unsigned i = 0; i < turretvector.size(); i++) {
 
-			//if turret health is positive
+			//if turret health is positive ->later function
 			if (turretvector.at(i)->_health > 0) {
 					float dx =  turretvector.at(i)->_position[0] - posEnemy[0];
 					float dy =  turretvector.at(i)->_position[1] - posEnemy[1];
@@ -188,21 +209,21 @@ void drawBullets(PointF posEnemy, int j){
 
 						Line* bulletline = new Line{ posEnemy, turretvector.at(i)->_position , color, lind };
 						drawList.push_back(bulletline);
-						Bullet* bullet = new Bullet(bulletline);
-						bulletvector.push_back(bullet);
+						
+						bulletvector.push_back(bulletline);
 						//update track id of the turret
 						turretvector.at(i)->Aim(enenemyvector.at(j)->_id);
 					}
 					//no enemy in track
 					if (aimingId == 0) {
-						//gt current pos of the enemy
+						//get current pos of the first enemy
 						PointF posEnemy = enenemyvector.front()->_current;
 
 
 						Line* bulletline = new Line{ posEnemy, turretvector.at(i)->_position , color, lind };
 						drawList.push_back(bulletline);
-						Bullet* bullet = new Bullet(bulletline);
-						bulletvector.push_back(bullet);
+						
+						bulletvector.push_back(bulletline);
 						//update track id of the turret
 						turretvector.at(i)->Aim(enenemyvector.front()->_id);
 					}
@@ -244,6 +265,16 @@ void drawTurret() {
 	}
 }
 
+void Bullet(PointF posEnemy,int j) {
+	for (unsigned i = 0; i < bulletvector.size(); i++) {
+		PointF end = bulletvector.at(i)->end();
+		//if the bullet end position is the same as the current enemy position eg a hit of the bullet
+		if (end[0] == posEnemy[0] && end[1] == posEnemy[1]) {
+			//
+			enenemyvector.at(j)->Health(-10);
+		}
+	}
+}
 //if idle do all the calculations
 void idle(int value) {
 	raster();
@@ -256,7 +287,6 @@ void idle(int value) {
 	//makeEnemy();
 	//draw the ennemy
 	drawEnemy();
-
 	//make a new turret
 	
 	

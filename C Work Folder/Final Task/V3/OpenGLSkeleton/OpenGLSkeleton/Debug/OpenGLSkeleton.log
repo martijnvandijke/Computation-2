@@ -1,25 +1,2 @@
 ﻿  main.cpp
-d:\computation-2\c work folder\final task\v3\openglskeleton\openglskeleton\bullet.h(10): error C2011: 'Bullet': 'class' type redefinition
-  d:\computation-2\c work folder\final task\v3\openglskeleton\openglskeleton\drawtools.h(188): note: see declaration of 'Bullet'
-d:\computation-2\c work folder\final task\v3\openglskeleton\openglskeleton\main.cpp(191): error C2027: use of undefined type 'Bullet'
-  d:\computation-2\c work folder\final task\v3\openglskeleton\openglskeleton\drawtools.h(188): note: see declaration of 'Bullet'
-d:\computation-2\c work folder\final task\v3\openglskeleton\openglskeleton\main.cpp(204): error C2027: use of undefined type 'Bullet'
-  d:\computation-2\c work folder\final task\v3\openglskeleton\openglskeleton\drawtools.h(188): note: see declaration of 'Bullet'
-  Bullet.cpp
-d:\computation-2\c work folder\final task\v3\openglskeleton\openglskeleton\bullet.h(10): error C2011: 'Bullet': 'class' type redefinition
-  d:\computation-2\c work folder\final task\v3\openglskeleton\openglskeleton\drawtools.h(188): note: see declaration of 'Bullet'
-d:\computation-2\c work folder\final task\v3\openglskeleton\openglskeleton\bullet.cpp(6): error C2027: use of undefined type 'Bullet'
-  d:\computation-2\c work folder\final task\v3\openglskeleton\openglskeleton\drawtools.h(188): note: see declaration of 'Bullet'
-d:\computation-2\c work folder\final task\v3\openglskeleton\openglskeleton\bullet.cpp(6): error C2143: syntax error: missing ')' before '*'
-d:\computation-2\c work folder\final task\v3\openglskeleton\openglskeleton\bullet.cpp(6): error C2143: syntax error: missing ';' before '*'
-d:\computation-2\c work folder\final task\v3\openglskeleton\openglskeleton\bullet.cpp(6): error C2079: 'Line' uses undefined class 'Bullet'
-d:\computation-2\c work folder\final task\v3\openglskeleton\openglskeleton\bullet.cpp(6): error C2059: syntax error: ')'
-d:\computation-2\c work folder\final task\v3\openglskeleton\openglskeleton\bullet.cpp(7): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-d:\computation-2\c work folder\final task\v3\openglskeleton\openglskeleton\bullet.cpp(7): error C2059: syntax error: ':'
-d:\computation-2\c work folder\final task\v3\openglskeleton\openglskeleton\bullet.cpp(7): error C2440: 'initializing': cannot convert from 'int *' to 'int'
-  d:\computation-2\c work folder\final task\v3\openglskeleton\openglskeleton\bullet.cpp(7): note: Reason: cannot convert from 'int *' to 'int'
-  d:\computation-2\c work folder\final task\v3\openglskeleton\openglskeleton\bullet.cpp(7): note: There is no context in which this conversion is possible
-d:\computation-2\c work folder\final task\v3\openglskeleton\openglskeleton\bullet.cpp(8): error C2059: syntax error: '{'
-d:\computation-2\c work folder\final task\v3\openglskeleton\openglskeleton\bullet.cpp(8): error C2143: syntax error: missing ';' before '{'
-d:\computation-2\c work folder\final task\v3\openglskeleton\openglskeleton\bullet.cpp(8): error C2447: '{': missing function header (old-style formal list?)
-  Generating Code...
+  OpenGLSkeleton.vcxproj -> D:\Computation-2\C Work Folder\Final Task\V3\OpenGLSkeleton\Debug\OpenGLSkeleton.exe

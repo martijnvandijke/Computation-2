@@ -10,6 +10,8 @@ public :
 //	int increase();
 	Enemy(const PointF& begin, PointF current,float speed, int health);
 
+	void Health(int i);
+
 	virtual PointF Move();
 	int	Update(PointF current);
 	PointF Value();

@@ -92,7 +92,7 @@ void Line::print() const
 
 void Line::draw() const
 {
-	cout << "Lijntjes tekenen" << endl;
+	//cout << "Lijntjes tekenen" << endl;
 	glLineWidth( _lineWidth);
 	// dashed lines as  http://www.opengl.org.ru/docs/pg/0204.html
 	glLineStipple(1, 0x3F07);
@@ -132,7 +132,7 @@ void Circle::draw() const
 
 void Circle::print() const
 {
-	cout << "test of cricle " << endl;
+	//cout << "test of cricle " << endl;
 	//print function
 }
 

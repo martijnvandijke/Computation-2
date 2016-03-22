@@ -24,5 +24,7 @@ void drawTurret();
 void raster();
 //void readFile(string filename);
 void drawBullets(PointF posEnemy, int i);
+void Bullet(PointF posEnemy, int i);
+
 
 #endif
