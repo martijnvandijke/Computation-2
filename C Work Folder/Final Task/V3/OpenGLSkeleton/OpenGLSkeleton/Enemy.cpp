@@ -10,14 +10,15 @@ using namespace std;
 //	_id = _idNumber;
 //	return _id;
 //}
-
+int Count = 1;
 Enemy::Enemy(const PointF& begin,PointF current ,float speed, int health)
 	: _begin{begin},
 	_current{current},
 	_health{health},
 	_speed { speed}
 {
-
+	Count++;
+	_id = Count;
 }
 
 PointF Enemy::Value() {

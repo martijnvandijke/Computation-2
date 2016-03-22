@@ -23,6 +23,8 @@ public:
 PointF _begin;
 PointF _current;
 int	_health;
+int _id;
+
 private :
 	
 float _speed;

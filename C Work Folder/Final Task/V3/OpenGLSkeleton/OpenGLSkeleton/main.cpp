@@ -11,7 +11,8 @@
 #include <iostream>
 #include <string>
 #include "glut.h"           // glut header file. Never include glut before stdlib.h!
-
+#include <iostream>
+#include <list>
 #define _USE_MATH_DEFINES   // Signal math.h that we would like defines like M_PI
 #include <math.h>           // Might come in usefull for cosine functions and stuff like that
 #include <vector>
@@ -19,8 +20,10 @@
 #include "drawtools.h"      // contains all you need to draw stuff
 #include "Enemy.h" 
 #include "Turret.h" 
-#include <list>
+#include "Bullet.h"
+#include <fstream>
 
+int map[2];
 using namespace std;
 std::string keytext;
 DrawList drawList;
@@ -29,6 +32,7 @@ DrawList drawList;
 // Put your global variables here
 vector<Enemy*> enenemyvector;
 vector<Turret*> turretvector;
+vector<Bullet*> bulletvector;
 
 //---------------------------------------------------------------------------
 // void init(void)
@@ -64,11 +68,56 @@ void init()
     // Set the size of the viewport (drawing grid) in pixels
     // We are looking at the rectangle from (0,0) to (windowWidth,windowHeight)
     gluOrtho2D(0, windowWidth, 0, windowHeight);
+	
 
+
+	
     glMatrixMode(GL_MODELVIEW);
 	makeTurret(100,200);
 	makeEnemy();
+	raster();
+}
 
+//read a the map file
+void readFile(string filename) {
+	string word;
+	ifstream fp;
+	fp.open(filename, ios::in);
+	while (!fp.eof()) {
+		fp >> word;
+		if (!fp.eof()) { // prevent last line twice
+			//add(word);
+		}
+	}
+
+	// Close the file
+	fp.close();
+
+}
+
+//make a grid for easy acces
+void raster() {
+	//readFile();
+	Color color = { 0.2f, 1, 0.2f };
+	int rasterHoogte = windowHeight;
+	int rasterBreedte = windowWidth;
+	int res =  15;
+	float radius = 2.5;
+	int seg = 5;
+	float varx;
+	float vary;
+	for (int i = 0; i < (rasterBreedte/res); i++) {
+		for (int j = 0; j < (rasterHoogte/res); j++) {
+			varx = 20 * i;
+			vary = 20 * j;
+			PointF posPixel = { varx , vary };
+			Circle* dots = new Circle(posPixel, color, radius, seg);
+			drawList.push_back(dots);
+		}
+	}
+}
+
+void path() {
 
 }
 
@@ -77,10 +126,9 @@ void makeEnemy() {
 	PointF begin1 = { 30,20 };
 	PointF begin2 = { 34, 430 };
 	float lind = 2.0;
-
 	float r = 10;
 	int seg = 10;
-	float speed = 10;
+	float speed = 5;
 	int health = 20;
 	Enemy* en = new Enemy(begin1, begin1, speed, health);
 	enenemyvector.push_back(en);
@@ -92,7 +140,7 @@ void drawEnemy() {
 	PointF begin1 = { 30,20 };
 	//position of the turren
 	PointF begin2 = { 34, 430 };
-	float lind = 2.0;
+	
 	float r;
 	//number of triganles that need to be drawn
 	int seg = 20;
@@ -102,9 +150,75 @@ void drawEnemy() {
 		r = enenemyvector.at(i)->_health;
 		Circle* cirle = new Circle(posEnemy, color, r, seg);
 		drawList.push_back(cirle);
-		Line* bulletline = new Line{ posEnemy, turretvector.at(0)->_position , color, lind };
-		drawList.push_back(bulletline);
+		cout << "Enemy id :" << endl;
+		cout << enenemyvector.at(i)->_id << endl;
+		drawBullets(posEnemy,i);
+		//draw the bullet
+		
 	}
+}
+
+//draw the bullets per 
+void drawBullets(PointF posEnemy, int j){
+		
+		Color color = { 0.2f, 1, 0.2f };
+		float lind = 2.0;
+
+		//loop trough all the turrets
+		for (unsigned i = 0; i < turretvector.size(); i++) {
+
+			//if turret health is positive
+			if (turretvector.at(i)->_health > 0) {
+					float dx =  turretvector.at(i)->_position[0] - posEnemy[0];
+					float dy =  turretvector.at(i)->_position[1] - posEnemy[1];
+					//caclulate range to enemy
+					float rangeToEnemy = sqrt(	pow(dx,2)  + pow(dy,2)	);
+
+				cout << rangeToEnemy << endl;
+
+				//if enemy is in the range
+				if (rangeToEnemy < turretvector.at(i)->_range) {
+					PointF turPos = turretvector.at(i)->_position;
+					//if the turret is not aiming a other target
+					int aimingId = turretvector.at(i)->_aiming;
+
+					//if the current turret is locked on to the current enemy
+					if (aimingId == enenemyvector.at(j)->_id) {
+						//draw bullet to the enemy
+
+						Line* bulletline = new Line{ posEnemy, turretvector.at(i)->_position , color, lind };
+						drawList.push_back(bulletline);
+						Bullet* bullet = new Bullet(bulletline);
+						bulletvector.push_back(bullet);
+						//update track id of the turret
+						turretvector.at(i)->Aim(enenemyvector.at(j)->_id);
+					}
+					//no enemy in track
+					if (aimingId == 0) {
+						//gt current pos of the enemy
+						PointF posEnemy = enenemyvector.front()->_current;
+
+
+						Line* bulletline = new Line{ posEnemy, turretvector.at(i)->_position , color, lind };
+						drawList.push_back(bulletline);
+						Bullet* bullet = new Bullet(bulletline);
+						bulletvector.push_back(bullet);
+						//update track id of the turret
+						turretvector.at(i)->Aim(enenemyvector.front()->_id);
+					}
+
+					//s^2 ( V_b^2 - V_e^2) + 1s*r*V_e^2*cos(a) - V_e^2*r^2
+
+
+
+				}
+
+			}
+			//destroy turret
+			else {
+				
+			}
+		}
 }
 
 void makeTurret(float x,float y) {
@@ -113,14 +227,14 @@ void makeTurret(float x,float y) {
 	int health = 100;
 	int upgrade = 0;
 	int type = 0;
-	int range = 100;
+	int range = 300;
 	Turret* tur = new Turret(pos, color, range, health,upgrade,type);
 	turretvector.push_back(tur);
 }
 
 void drawTurret() {
 	for (unsigned i = 0; i < turretvector.size(); i++) {
-		Color color = { 0.2f, 1, 0.2f };
+		Color color = { 0.2f, 0.2f, 0.2f };
 		PointF pos = turretvector.at(i)->_position;
 		PointF begin2 = { (pos[0] - 20) ,(pos[1]) };
 		PointF begin3 = { (pos[0]) , (pos[1] + 40) };
@@ -132,7 +246,7 @@ void drawTurret() {
 
 //if idle do all the calculations
 void idle(int value) {
-	
+	raster();
 	//always make a turrent before the enemy
 	//makeTurret();
 	//draw the turret's
@@ -181,6 +295,7 @@ void reshape(int w, int h)
     glMatrixMode(GL_PROJECTION);  
     glLoadIdentity();
     gluOrtho2D(0, w, 0, h);
+	raster();
 }
 
 

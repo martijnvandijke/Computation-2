@@ -164,3 +164,16 @@ void Sqaure::print() const
 	//print fuinction
 
 }
+
+Text::Text(const std::string & str)
+{
+
+}
+
+void Text::draw() const
+{
+}
+
+void Text::print() const
+{
+}

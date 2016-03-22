@@ -185,7 +185,9 @@ private:
     float _lineWidth;
 	// You can add more private members here, if needed
 };
+class Bullet : public Line {
 
+};
 
 class Circle : public Drawable
 {
