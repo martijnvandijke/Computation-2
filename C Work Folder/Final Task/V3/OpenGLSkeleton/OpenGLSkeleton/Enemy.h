@@ -8,9 +8,10 @@
 class Enemy {
 public :
 //	int increase();
-	Enemy(const PointF& begin,float speed, int health);
+	Enemy(const PointF& begin, PointF current,float speed, int health);
 
 	virtual PointF Move();
+	int	Update(PointF current);
 	PointF Value();
 
 //protected:
@@ -20,9 +21,12 @@ public :
 //	static int _idNumber;
 public:
 PointF _begin;
-private :
-float _speed;
+PointF _current;
 int	_health;
+private :
+	
+float _speed;
+
 //int _id;
 
 };

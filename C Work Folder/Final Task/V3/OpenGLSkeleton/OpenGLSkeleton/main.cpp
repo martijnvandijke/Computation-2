@@ -18,6 +18,7 @@
 #include "main.h"           // Function declarations and some definitions
 #include "drawtools.h"      // contains all you need to draw stuff
 #include "Enemy.h" 
+#include "Turret.h" 
 #include <list>
 
 using namespace std;
@@ -27,9 +28,8 @@ DrawList drawList;
 
 // Put your global variables here
 vector<Enemy*> enenemyvector;
+vector<Turret*> turretvector;
 
-Enemy* enemyarray[];
-float speed2 = 0;
 //---------------------------------------------------------------------------
 // void init(void)
 // This function is called when glut is initialized. Use it to initialize
@@ -52,19 +52,11 @@ void init()
     // Example Timer functions
     // You might want to remove these after you are done testing with them
     glutTimerFunc(1000, alarm, 112);
-    //glutTimerFunc(1500, alarm, 1);
-    //glutTimerFunc(2000, alarm, 2);
-
-    // Set the background color.
-    // The color is in the (red, green, blue, alpha) format (RGBA)
-    // Color values range from 0.0f to 1.0f.
+    
     // E.g. glClearColor(1.0, 0.0, 0.0, 1.0); results in a red background.
-    glClearColor(1.0, 1.0, 1.0, 1.0);               // Set background color to white
+    glClearColor(0.003921568627451, 0.502, 0.447, 0.2);               // Set background color to white
 
-    // The following funtions setup the view of the screen.
-    // OpenGL actually creates a 3D world, which is displayed trough a
-    // viewport (the glut window). The way pixels are projected onto
-    // this viewport is setup here.
+    
     // Keep them like this if you don't need fancy options
     glMatrixMode(GL_PROJECTION);    // Next lines will adjust the projection matrix
     glLoadIdentity();               // Reset projection matrix to the identity matrix
@@ -74,85 +66,87 @@ void init()
     gluOrtho2D(0, windowWidth, 0, windowHeight);
 
     glMatrixMode(GL_MODELVIEW);
-	//PointF position = { 512, 384 };
-	//Color color = { 0.2f, 1, 0.2f };
-	//Pixel* pixel = new Pixel{ position, color };
-	//drawList.push_back(pixel);
-	//pixel->draw();
+	makeTurret(100,200);
+	makeEnemy();
 
-	//PointF begin1 = { 30,400 };
-	//PointF begin2 = { 34, 430 };
-	//PointF begin3 = { 45,410 };
-	//PointF begin4 = { 48, 412 };
-	//float lind = 2.0;
-	////Line* line = new Line{ begin1, begin2, color ,lind };
-	////drawList.push_back(line);
-	//float r = 10;
-	//int seg = 10;
-	////Circle* cirle = new Circle(begin1, color, r, seg);
-	////drawList.push_back(cirle);
-	//Sqaure* sq = new Sqaure(begin1, begin2,begin3,begin4, color);
-	//drawList.push_back(sq);
-	//float speed = 200;
-	//int health = 100;
-	//Enemy* en = new Enemy(begin1, speed, health );
-	//PointF posEnemy = en->Move();
-	//Circle* cirle = new Circle(posEnemy, color, r, seg);
-	//drawList.pufloat speed2 = 0;sh_back(cirle);
-	//PointF bullet = { posEnemy.x()	,posEnemy.y() };
-	//Line* bulletline = new Line{ bullet, begin2, color, lind };
-	//drawList.push_back(bulletline);
-	//glLineStipple(110,1400);
 
+}
+
+void makeEnemy() {
+	Color color = { 0.2f, 1, 0.2f };
+	PointF begin1 = { 30,20 };
+	PointF begin2 = { 34, 430 };
+	float lind = 2.0;
+
+	float r = 10;
+	int seg = 10;
+	float speed = 10;
+	int health = 20;
+	Enemy* en = new Enemy(begin1, begin1, speed, health);
+	enenemyvector.push_back(en);
+}
+
+void drawEnemy() {
+	Color color = { 0.2f, 1, 0.2f };
+	//statrt position of the enemy
+	PointF begin1 = { 30,20 };
+	//position of the turren
+	PointF begin2 = { 34, 430 };
+	float lind = 2.0;
+	float r;
+	//number of triganles that need to be drawn
+	int seg = 20;
+	for (unsigned i = 0; i<enenemyvector.size(); i++) {
+		PointF posEnemy = enenemyvector.at(i)->Move();
+		enenemyvector.at(i)->Update(posEnemy);
+		r = enenemyvector.at(i)->_health;
+		Circle* cirle = new Circle(posEnemy, color, r, seg);
+		drawList.push_back(cirle);
+		Line* bulletline = new Line{ posEnemy, turretvector.at(0)->_position , color, lind };
+		drawList.push_back(bulletline);
+	}
+}
+
+void makeTurret(float x,float y) {
+	Color color = { 0.2f, 1, 0.2f };
+	PointF pos = { x,y };
+	int health = 100;
+	int upgrade = 0;
+	int type = 0;
+	int range = 100;
+	Turret* tur = new Turret(pos, color, range, health,upgrade,type);
+	turretvector.push_back(tur);
+}
+
+void drawTurret() {
+	for (unsigned i = 0; i < turretvector.size(); i++) {
+		Color color = { 0.2f, 1, 0.2f };
+		PointF pos = turretvector.at(i)->_position;
+		PointF begin2 = { (pos[0] - 20) ,(pos[1]) };
+		PointF begin3 = { (pos[0]) , (pos[1] + 40) };
+		PointF begin4 = { (pos[0] + 20) , (pos[1]) };
+		Sqaure* sq = new Sqaure(pos, begin2, begin3, begin4, color);
+		drawList.push_back(sq);
+	}
 }
 
 //if idle do all the calculations
 void idle(int value) {
-	//PointF position = { 512, 384 };
-	Color color = { 0.2f, 1, 0.2f };
-	//Pixel* pixel = new Pixel{ position, color };
-	//drawList.push_back(pixel);
-	//pixel->draw();
-	float speed2 = 10 ;
-	PointF begin1 = { (30+speed2),(20+speed2) };
-	PointF begin2 = { 34, 430 };
-	//PointF begin3 = { 45,410 };
-	//PointF begin4 = { 48, 412 };
-	float lind = 2.0;
-	////Line* line = new Line{ begin1, begin2, color ,lind };
-	////drawList.push_back(line);
-	float r = 10;
-	int seg = 10;
-	////Circle* cirle = new Circle(begin1, color, r, seg);
-	////drawList.push_back(cirle);
-
-	//
-	//Sqaure* sq = new Sqaure(begin1, begin2, begin3, begin4, color);
-	//drawList.push_back(sq);
-	float speed = 200;
-	int health = 100;
 	
-	//amke neew enemy and put them in the back of the enemy list
-	Enemy* en = new Enemy(begin1, speed, health);
-	enenemyvector.push_back(en);
+	//always make a turrent before the enemy
+	//makeTurret();
+	//draw the turret's
+	drawTurret();
 
-	//enemylist.push_back(en);
-	//enemylist._Nextnode()->_Next
-	////get the front enemey
-	////Enemy* enemy = enemylist.front()->Move();
-	////increment the movemment of the enemy
-	PointF posEnemy = enenemyvector.at(0)->Move();
-	//enemylist.;
+	//make a new enemy
+	//makeEnemy();
 	//draw the ennemy
+	drawEnemy();
 
-	Circle* cirle = new Circle(posEnemy, color, r, seg);
-	drawList.push_back(cirle);
-	//PointF bullet = { posEnemy.x()	,posEnemy.y() };
-	Line* bulletline = new Line{ posEnemy, begin2, color, lind };
-	drawList.push_back(bulletline);
-	//begin1 = { posEnemy[0]	,posEnemy.y() };
-	//Enemy* en = new Enemy(begin1, speed, health);
-	//enemylist.clear();
+	//make a new turret
+	
+	
+
 
 	//cal the display function -> draw everything 
 	glutPostRedisplay();
@@ -160,11 +154,12 @@ void idle(int value) {
 	glutTimerFunc(160, idle, 100);
 }
 
+
+
 //---------------------------------------------------------------------------
 // void alarm(int alarmnumber)
 // Demonstration of a timer callback. alarmnumber is used to distinguish
 // between different timers.
-
 void alarm(int alarmNumber)
 {
     if(alarmNumber == 112) {
@@ -180,11 +175,6 @@ void alarm(int alarmNumber)
 
 //---------------------------------------------------------------------------
 // void reshape(int w, int h)
-// Handle window resizing (reshaping) events
-// The reshape callback is called when the window is resized or moved
-// In the current implementation, the drawing grid is extended or truncated 
-// when the window is reshaped
-
 void reshape(int w, int h) 
 {    
     glViewport(0, 0, w, h);
@@ -193,36 +183,10 @@ void reshape(int w, int h)
     gluOrtho2D(0, w, 0, h);
 }
 
-//latter refrence use
-//for (auto it = drawList.begin(); it != drawList.end(); /* nothing */) {
-//	if (/* condition */) {
-//		it = drawList.erase(it); // Erase returns the next iterator } else { ++it; // Increment the iterator } }
-//
 
-    //glBegin(GL_POINTS);             // Start a new drawing block for drawing points
-    //    // Draw points here
-    //    // The point (0,0) corresponds to the lower left corner.
-
-    //    // The following lines will draw the point (100, 200) in red
-    //    glColor3f(1.0, 0.0, 0.0);   // Set color
-    //    glVertex2f(100, 200);       // Set position
-
-    //    // The following lines will draw the point (200, 400) in blue
-    //    // Alternative approach to the above:
-    //    Color color = { 0.0f, 0.0f, 1.0f }; // A color (see drawtools.h)
-    //    glColor3fv(color.data());           // Set color from array
-    //    PointF point = { 200, 400 };        // A two dimensional point (see drawtools.h)
-    //    glVertex2fv(point.data());          // Set position from array
-    //glEnd(); // End of the drawing block
 
 //---------------------------------------------------------------------------
 // void display(void)
-// The main display callback. This callback is called when the screen has
-// to be redrawn. This is when:
-// - The screen first becomes active
-// - The screen is resized
-// - You call glutPostRedisplay()
-
 void display()
 {
     glClear(GL_COLOR_BUFFER_BIT);   // clear the backbuffer
@@ -236,15 +200,25 @@ void display()
     // Visualize the drawing commands
     glFlush();            // Execute all commands waiting to be executed
     glutSwapBuffers();    // Swap the backbuffer and frontbuffer
+	drawList.clear();
 }
 
 void keyfunc(unsigned char key, int x, int y) {
+	if (key == 't') {
+		cout << "jow ik maak een turret aan" << endl;
+		makeTurret(x,y);
+	}
+	if (key == 'e') {
+		cout << "jow ik maak een enemy aan" << endl;
+		makeEnemy();
+	}
+
 	char c = key;
 	keytext = string{ c } +", " + to_string(x) + ", " + to_string(y);
 	
 	//cout << "jow ik heb characters" << endl;
-	drawtext(keytext, x, y);
-	glutPostRedisplay();
+	//drawtext(keytext, x, y);
+	//glutPostRedisplay();
 }
 
 void drawtext(std::string keytext, int x, int y) {
@@ -275,6 +249,7 @@ int main(int argc, char* argv[])
     // While in the main loop, your registered callbacks will be called
     cout << "Starting GLUT main loop..." << endl;
 	glutTimerFunc(10, idle, 10);
+
     glutMainLoop();
 
     return EXIT_SUCCESS;
