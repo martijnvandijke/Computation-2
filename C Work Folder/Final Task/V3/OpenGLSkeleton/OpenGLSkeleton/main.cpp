@@ -29,7 +29,10 @@ std::string keytext;
 DrawList drawList;
 string filename = "test";
 //std::list<Enemy*> enemylist;
-map<string, int, int> fieldMap;
+//map<int,int,char> fieldMap;
+string MapName;
+char Map[100][100];
+//char PlayerMAp[100][100];
 // Put your global variables here
 vector<Enemy*> enenemyvector;
 vector<Turret*> turretvector;
@@ -83,20 +86,47 @@ void init()
 void readFile(string filename) {
 	string word;
 	ifstream fp;
-	fp.open(filename, ios::in);
-	while (!fp.eof()) {
-		fp >> word;
-		if (!fp.eof()) { // prevent last line twice
-			//add(word);
-		}
+	MapName = filename;
+	int CountLines = 0;
+	filename = "test.txt";
+	fp.open(filename); // , ios::in);
+	if (fp.fail()) {
+		cout << "Erro parsing the file \n Please try again" << endl;
+		return;
 	}
 
+	while (	getline(fp, word)){
+		//no map has yet been loaded, load the map name
+		//if (CountLines == 0) {
+		//	cout << "Storing map name" << endl;
+		//	MapName = word;
+		//	
+		//	continue;
+		//}
+		//count the "y" 
+		CountLines++;
+		//cout << word << endl;
+		for (unsigned i = 0; i < word.size(); i++) {
+			//get char at place in string
+			char c = (word.at(i));
+			//cout << c << endl;
+			//store char in the map
+			Map[i][CountLines] = c;
+
+			//cout << "map contains :" << endl;
+			//cout << Map[i][CountLines] << endl;
+			//fieldMap[i, CountLines] = c;
+			//fieldMap.insert( c, i, 2);	// = word.at(i);
+
+		}
+	}
+	//char Map[100][100];
 	// Close the file
 	fp.close();
 
 }
 
-//make a grid for easy acces
+//make a grid 
 void raster() {
 	//readFile();
 	Color color = { 0.2f, 1, 0.2f };
@@ -108,20 +138,54 @@ void raster() {
 	float varx;
 	float vary;
 	for (int i = 0; i < (rasterBreedte/res); i++) {
-		for (int j = 0; j < (rasterHoogte/res); j++) {
+		for (int j = 0; j < ((rasterHoogte)/res); j++) {
+			
 			varx = 20 * i;
 			vary = 20 * j;
-			PointF posPixel = { varx , vary };
-			Circle* dots = new Circle(posPixel, color, radius, seg);
-			drawList.push_back(dots);
+			if ((windowWidth - 200) > varx) {
+				PointF posPixel = { varx , vary };
+				Circle* dots = new Circle(posPixel, color, radius, seg);
+				drawList.push_back(dots);
+			}
+		}
+	}
+	path();
+}
+
+//draw the path from the map file
+void path() {
+	for (int i = 0; i < 100; i++) {
+		for (int j = 0; j < 100; j++) {
+			float x = i*20;
+			float y = j*20;
+			//path for the enemy
+			if (Map[i][j] == '/') { 
+				Color color = { 0.2f, 1, 0.2f };
+				PointF begin1 = { x,y };
+				PointF begin2 = { (x),(y+20) };
+				PointF begin3 = { (x-20),(y+20) };
+				PointF begin4 = { (x - 20), (y) };
+				Sqaure* sq = new Sqaure(begin1, begin2, begin3, begin4, color);
+				drawList.push_back(sq);
+			}
+			//path where building is allowed
+			if (Map[i][j] == '*') {
+				Color color = { 0.4f, 0.4f, 0.4f };
+				PointF begin1 = { x,y };
+				PointF begin2 = { (x),(y + 20) };
+				PointF begin3 = { (x - 20),(y + 20) };
+				PointF begin4 = { (x - 20), (y) };
+				Sqaure* sq = new Sqaure(begin1, begin2, begin3, begin4, color);
+				drawList.push_back(sq);
+			}
+			else {
+				continue;
+			}
 		}
 	}
 }
 
-void path() {
-
-}
-
+//make a new enemey on the stack
 void makeEnemy() {
 	Color color = { 0.2f, 1, 0.2f };
 	PointF begin1 = { 30,20 };
@@ -135,6 +199,7 @@ void makeEnemy() {
 	enenemyvector.push_back(en);
 }
 
+//draw the enemy's
 void drawEnemy() {
 	Color color = { 0.2f, 1, 0.2f };
 	//statrt position of the enemy
@@ -161,10 +226,10 @@ void drawEnemy() {
 				r = enenemyvector.at(i)->_health;
 				Circle* cirle = new Circle(posEnemy, color, r, seg);
 				drawList.push_back(cirle);
-				cout << "Enemy id :" << endl;
-				cout << enenemyvector.at(i)->_id << endl;
-				cout << "Enemy health" << endl;
-				cout << enenemyvector.at(i)->_health << endl;
+				//cout << "Enemy id :" << endl;
+				//cout << enenemyvector.at(i)->_id << endl;
+				//cout << "Enemy health" << endl;
+				//cout << enenemyvector.at(i)->_health << endl;
 				drawBullets(posEnemy, i);
 				Bullet(posEnemy, i);
 				//draw the bullet
@@ -277,6 +342,8 @@ void Bullet(PointF posEnemy,int j) {
 }
 //if idle do all the calculations
 void idle(int value) {
+	readFile("test");
+
 	raster();
 	//always make a turrent before the enemy
 	//makeTurret();
