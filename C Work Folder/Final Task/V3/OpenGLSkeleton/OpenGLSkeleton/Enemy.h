@@ -12,7 +12,7 @@ public :
 
 	void Health(int i);
 
-	virtual PointF Move();
+	virtual PointF Move(int i, int j);
 	int	Update(PointF current);
 	PointF Value();
 

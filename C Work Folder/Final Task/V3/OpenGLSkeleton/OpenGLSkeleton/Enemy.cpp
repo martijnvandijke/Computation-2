@@ -29,14 +29,37 @@ PointF Enemy::Value() {
 	return  _begin;
 }
 
-PointF Enemy::Move()
+PointF Enemy::Move(int x, int y)
 {
+	if (x == 0 && y == 0) {
+		PointF speed2 = { (_current[0] ) , (_current[1]) };
+		return  speed2;
+	}
+	//move right
+	if (x == 1){
+		PointF speed2 = { (_current[0] + _speed) , (_current[1]) };
+		return  speed2;
+	}
+	//move up
+	if (y == 1) {
+		PointF speed2 = { (_current[0]) , (_current[1]+_speed) };
+		return  speed2;
+	}
+	//move down
+	if (x == -1) {
+		PointF speed2 = { (_current[0] - _speed) , (_current[1]) };
+		return  speed2;
+	}
+	//move left
+	if (y == -1) {
+		PointF speed2 = { (_current[0]) , (_current[1] - _speed) };
+		return  speed2;
+	}
 
-
-	cout << "moving the enemy" << endl;
+	//cout << "moving the enemy" << endl;
 	//PointF speed2 = { (_begin[0] + 50) , (_begin[1] + 50)};
-	PointF speed2 = { (_current[0] + _speed) , (_current[1] + _speed) };
-	return  speed2;
+	
+	
 }
 
 int Enemy::Update(PointF current) {

@@ -31,7 +31,9 @@ string filename = "test";
 //std::list<Enemy*> enemylist;
 //map<int,int,char> fieldMap;
 string MapName;
-char Map[100][100];
+const int mapSizex = 100;
+const int mapSizey = 100;
+char Map[mapSizex][mapSizey];
 //char PlayerMAp[100][100];
 // Put your global variables here
 vector<Enemy*> enenemyvector;
@@ -77,7 +79,7 @@ void init()
 
 	
     glMatrixMode(GL_MODELVIEW);
-	makeTurret(100,200);
+	makeTurret(100,300);
 	makeEnemy();
 	raster();
 }
@@ -86,6 +88,7 @@ void init()
 void readFile(string filename) {
 	string word;
 	ifstream fp;
+	//Map[100][100] = {};
 	MapName = filename;
 	int CountLines = 0;
 	filename = "test.txt";
@@ -111,8 +114,8 @@ void readFile(string filename) {
 			char c = (word.at(i));
 			//cout << c << endl;
 			//store char in the map
-			Map[i][CountLines] = c;
-
+			Map[i][(CountLines - 1)] = c;
+			
 			//cout << "map contains :" << endl;
 			//cout << Map[i][CountLines] << endl;
 			//fieldMap[i, CountLines] = c;
@@ -126,6 +129,7 @@ void readFile(string filename) {
 
 }
 
+
 //make a grid 
 void raster() {
 	//readFile();
@@ -137,27 +141,36 @@ void raster() {
 	int seg = 5;
 	float varx;
 	float vary;
+
 	for (int i = 0; i < (rasterBreedte/res); i++) {
 		for (int j = 0; j < ((rasterHoogte)/res); j++) {
 			
 			varx = 20 * i;
 			vary = 20 * j;
-			if ((windowWidth - 200) > varx) {
+			//make a grid if the width still has 200 pixels
+			if ((windowWidth - 100) > varx) {
 				PointF posPixel = { varx , vary };
 				Circle* dots = new Circle(posPixel, color, radius, seg);
 				drawList.push_back(dots);
 			}
+			else {
+				continue;
+			}
 		}
 	}
+
+	//draw the grid
 	path();
 }
 
 //draw the path from the map file
 void path() {
-	for (int i = 0; i < 100; i++) {
-		for (int j = 0; j < 100; j++) {
+	for (int i = 0; i < mapSizex; i++) {
+		for (int j = 0; j < mapSizey; j++) {
 			float x = i*20;
 			float y = j*20;
+			//cout << "map contins:" << endl;
+			//cout << Map[i][j] << endl;
 			//path for the enemy
 			if (Map[i][j] == '/') { 
 				Color color = { 0.2f, 1, 0.2f };
@@ -178,18 +191,31 @@ void path() {
 				Sqaure* sq = new Sqaure(begin1, begin2, begin3, begin4, color);
 				drawList.push_back(sq);
 			}
+
+			if (Map[i][j] == 'E') {
+				Color color = { 1.0f, 0.4f, 0.4f };
+				PointF begin1 = { x,y };
+				PointF begin2 = { (x),(y + 20) };
+				PointF begin3 = { (x - 20),(y + 20) };
+				PointF begin4 = { (x - 20), (y) };
+				Sqaure* sq = new Sqaure(begin1, begin2, begin3, begin4, color);
+				drawList.push_back(sq);
+			}
+
 			else {
 				continue;
 			}
 		}
 	}
+
+	
 }
 
 //make a new enemey on the stack
 void makeEnemy() {
-	Color color = { 0.2f, 1, 0.2f };
-	PointF begin1 = { 30,20 };
-	PointF begin2 = { 34, 430 };
+	Color color = { 0.2f, 0.1f, 0.8f };
+	PointF begin1 = { 30,30 };
+	PointF begin2 = { 0, 0 };
 	float lind = 2.0;
 	float r = 10;
 	int seg = 10;
@@ -198,14 +224,14 @@ void makeEnemy() {
 	Enemy* en = new Enemy(begin1, begin1, speed, health);
 	enenemyvector.push_back(en);
 }
-
+int set = 0;
 //draw the enemy's
 void drawEnemy() {
-	Color color = { 0.2f, 1, 0.2f };
+	Color color = { 0.2f, 0.1f, 0.8f };
 	//statrt position of the enemy
-	PointF begin1 = { 30,20 };
+	//PointF begin1 = { 30,20 };
 	//position of the turren
-	PointF begin2 = { 34, 430 };
+	//PointF begin2 = { 34, 430 };
 	
 	float r;
 	//number of triganles that need to be drawn
@@ -221,17 +247,140 @@ void drawEnemy() {
 
 		else {
 			if (enenemyvector.at(i)->_health > 0) {
-				PointF posEnemy = enenemyvector.at(i)->Move();
-				enenemyvector.at(i)->Update(posEnemy);
-				r = enenemyvector.at(i)->_health;
-				Circle* cirle = new Circle(posEnemy, color, r, seg);
-				drawList.push_back(cirle);
+				PointF curpos = enenemyvector.at(i)->_current;
+				int curx = curpos[0] /20;
+				int cury = curpos[1] / 20;
+				cout << curx << cury << endl;
+				//cout << "map contains :" << endl;
+				//cout << Map[10][10] << endl;
+				// get the map character that is 20 pixels further
+				char nextCharXplus = Map[(curx+1)][cury];
+				char nextCharYplus = Map[curx][(cury + 1)];
+				char nextCharXmin =	Map[(curx - 1)][cury];
+				char nextCharYmin = Map[curx][(cury - 1)];
+
+				if (Map[(curx + 2)][cury] == 'E') {
+					PointF posEnemy = enenemyvector.at(i)->Move(1, 0);
+					cout << "Moving enemy right" << endl;
+					enenemyvector.at(i)->Update(posEnemy);
+					r = enenemyvector.at(i)->_health;
+					Circle* cirle = new Circle(posEnemy, color, r, seg);
+					drawList.push_back(cirle);
+					drawBullets(posEnemy, i);
+					Bullet(posEnemy, i);
+					continue;
+				}
+
+				if (nextCharXplus == 'E') {
+					PointF posEnemy = enenemyvector.at(i)->Move(0, 0);
+					cout << "Enemy has been let trough the defenses" << endl;
+					enenemyvector.at(i)->Update(posEnemy);
+					r = enenemyvector.at(i)->_health;
+					Circle* cirle = new Circle(posEnemy, color, r, seg);
+					drawList.push_back(cirle);
+					drawBullets(posEnemy, i);
+					Bullet(posEnemy, i);
+					//set = 1;
+					//enenemyvector.
+					continue;
+				}
+
+
+				//cout << "ik ben tot hiero gekomen" << endl;
+				//cout << nextCharXplus << nextCharYplus << nextCharXmin << nextCharYmin << endl;
+				// move 20 y pixels right
+				if (nextCharYplus == '/' && Map[(curx)][(cury +2)]  && set != 1 ) {
+					PointF posEnemy = enenemyvector.at(i)->Move(0,1);
+					cout << "Moving enemy up" << endl;
+					enenemyvector.at(i)->Update(posEnemy);
+					r = enenemyvector.at(i)->_health;
+					Circle* cirle = new Circle(posEnemy, color, r, seg);
+					drawList.push_back(cirle);
+					drawBullets(posEnemy, i);
+					Bullet(posEnemy, i);
+					//set = 1;
+					continue;
+				}
+				// move 20 x pixels rght
+				if (nextCharXplus == '/' && Map[(curx + 2)][cury]== '/'	) {
+					/*if (nextCharYmin == '/' && set != 2) {
+						PointF posEnemy = enenemyvector.at(i)->Move(0, -1);
+						cout << "Moving enemy down" << endl;
+						enenemyvector.at(i)->Update(posEnemy);
+						r = enenemyvector.at(i)->_health;
+						Circle* cirle = new Circle(posEnemy, color, r, seg);
+						drawList.push_back(cirle);
+						drawBullets(posEnemy, i);
+						Bullet(posEnemy, i);
+						set = 2;
+						return;
+					}
+					
+				else {*/
+					PointF posEnemy = enenemyvector.at(i)->Move(1, 0);
+					cout << "Moving enemy right" << endl;
+					enenemyvector.at(i)->Update(posEnemy);
+					r = enenemyvector.at(i)->_health;
+					Circle* cirle = new Circle(posEnemy, color, r, seg);
+					drawList.push_back(cirle);
+					drawBullets(posEnemy, i);
+					Bullet(posEnemy, i);
+					continue;
+			
+					
+				}
+				//move 20 pixels down
+				if (nextCharYmin == '/' && Map[curx][(cury - 2)] == '/'  ) {
+					//if(	set == 1 ){}
+					PointF posEnemy = enenemyvector.at(i)->Move(0, -1);
+					cout << "Moving enemy down" << endl;
+					enenemyvector.at(i)->Update(posEnemy);
+					r = enenemyvector.at(i)->_health;
+					Circle* cirle = new Circle(posEnemy, color, r, seg);
+					drawList.push_back(cirle);
+					drawBullets(posEnemy, i);
+					Bullet(posEnemy, i);
+					set = 1;
+					continue;
+				}
+				//move 20 pixels left
+				if (nextCharXmin == '/') {
+					PointF posEnemy = enenemyvector.at(i)->Move(-1, 0);
+					cout << "Moving enemy left" << endl;
+					enenemyvector.at(i)->Update(posEnemy);
+					r = enenemyvector.at(i)->_health;
+					Circle* cirle = new Circle(posEnemy, color, r, seg);
+					drawList.push_back(cirle);
+					drawBullets(posEnemy, i);
+					Bullet(posEnemy, i);
+					
+					continue;
+				}
+				else {
+					cout << "error" << endl;
+					cout << nextCharXplus << nextCharYplus << nextCharXmin << nextCharYmin << endl;
+					cout << curx << "  " << cury << endl;
+					set = 0;
+					continue;
+ 				}
+
+				//for (int x = 0; x < mapSizex; x++) {
+				//	for (int y = 0; y < mapSizey; y++) {
+				//		
+				//	}
+				//}
+				//PointF posEnemy = enenemyvector.at(i)->Move();
 				//cout << "Enemy id :" << endl;
 				//cout << enenemyvector.at(i)->_id << endl;
 				//cout << "Enemy health" << endl;
 				//cout << enenemyvector.at(i)->_health << endl;
-				drawBullets(posEnemy, i);
-				Bullet(posEnemy, i);
+
+				//enenemyvector.at(i)->Update(posEnemy);
+				//r = enenemyvector.at(i)->_health;
+				//Circle* cirle = new Circle(posEnemy, color, r, seg);
+				//drawList.push_back(cirle);
+				//drawBullets(posEnemy, i);
+				//Bullet(posEnemy, i);
 				//draw the bullet
 			}
 			else
@@ -313,7 +462,7 @@ void makeTurret(float x,float y) {
 	int health = 100;
 	int upgrade = 0;
 	int type = 0;
-	int range = 300;
+	int range = 200;
 	Turret* tur = new Turret(pos, color, range, health,upgrade,type);
 	turretvector.push_back(tur);
 }
@@ -349,7 +498,8 @@ void idle(int value) {
 	//makeTurret();
 	//draw the turret's
 	drawTurret();
-
+	//cout << "map contains :" << endl;
+	//cout << Map[2][2] << endl;
 	//make a new enemy
 	//makeEnemy();
 	//draw the ennemy
@@ -416,9 +566,11 @@ void display()
 }
 
 void keyfunc(unsigned char key, int x, int y) {
+	int seneY;
+	seneY = windowHeight - y;
 	if (key == 't') {
 		cout << "jow ik maak een turret aan" << endl;
-		makeTurret(x,y);
+		makeTurret(x,seneY);
 	}
 	if (key == 'e') {
 		cout << "jow ik maak een enemy aan" << endl;
@@ -446,6 +598,21 @@ void drawtext(std::string keytext, int x, int y) {
 	}
 
 }
+
+//handle mouse movement
+//void mouseMovement(int x, int y){
+//	static float lastx = 0.0;
+//	static float lasty = 0.0;
+//
+//	lastx = (float)x - lastx;
+//	lasty = (float)y - lasty;
+//
+//	if ((abs((int)lastx) > 10) || (abs((int)lasty) > 10)){
+//		lastx = (float)x;
+//		lasty = (float)y;
+//		return;
+//	}
+//}
 
 
 //---------------------------------------------------------------------------

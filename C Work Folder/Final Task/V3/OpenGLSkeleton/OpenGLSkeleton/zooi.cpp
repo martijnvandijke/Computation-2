@@ -1,3 +1,193 @@
+//if (nextCharYplus == '/' && Map[(curx + 2)][cury] == '/' && Map[(curx + 3)][cury] == '/') {
+//	PointF posEnemy = enenemyvector.at(i)->Move(0, 1);
+//	cout << "Moving enemy up" << endl;
+//	enenemyvector.at(i)->Update(posEnemy);
+//	r = enenemyvector.at(i)->_health;
+//	Circle* cirle = new Circle(posEnemy, color, r, seg);
+//	drawList.push_back(cirle);
+//	drawBullets(posEnemy, i);
+//	Bullet(posEnemy, i);
+//
+//	return;
+//}
+//// move 20 y pixels rght
+//if (nextCharXplus == '/') {
+//	PointF posEnemy = enenemyvector.at(i)->Move(1, 0);
+//	cout << "Moving enemy right" << endl;
+//	enenemyvector.at(i)->Update(posEnemy);
+//	r = enenemyvector.at(i)->_health;
+//	Circle* cirle = new Circle(posEnemy, color, r, seg);
+//	drawList.push_back(cirle);
+//	drawBullets(posEnemy, i);
+//	Bullet(posEnemy, i);
+//	return;
+//}
+////move 20 pixels down
+//if (nextCharYmin == '/') {
+//	PointF posEnemy = enenemyvector.at(i)->Move(0, -1);
+//	cout << "Moving enemy down" << endl;
+//	enenemyvector.at(i)->Update(posEnemy);
+//	r = enenemyvector.at(i)->_health;
+//	Circle* cirle = new Circle(posEnemy, color, r, seg);
+//	drawList.push_back(cirle);
+//	drawBullets(posEnemy, i);
+//	Bullet(posEnemy, i);
+//	return;
+//}
+////move 20 pixels left
+//if (nextCharXmin == '/') {
+//	PointF posEnemy = enenemyvector.at(i)->Move(-1, 0);
+//	cout << "Moving enemy left" << endl;
+//	enenemyvector.at(i)->Update(posEnemy);
+//	r = enenemyvector.at(i)->_health;
+//	Circle* cirle = new Circle(posEnemy, color, r, seg);
+//	drawList.push_back(cirle);
+//	drawBullets(posEnemy, i);
+//	Bullet(posEnemy, i);
+//	return;
+//}
+//else {
+//	cout << "error" << endl;
+//	cout << nextCharXplus << nextCharYplus << nextCharXmin << nextCharYmin << endl;
+//	cout << curx << "  " << cury << endl;
+//	return;
+//}
+
+//for (int x = 0; x < mapSizex; x++) {
+//	for (int y = 0; y < mapSizey; y++) {
+//		
+//	}
+//}
+//PointF posEnemy = enenemyvector.at(i)->Move();
+//cout << "Enemy id :" << endl;
+//cout << enenemyvector.at(i)->_id << endl;
+//cout << "Enemy health" << endl;
+//cout << enenemyvector.at(i)->_health << endl;
+
+//enenemyvector.at(i)->Update(posEnemy);
+//r = enenemyvector.at(i)->_health;
+//Circle* cirle = new Circle(posEnemy, color, r, seg);
+//drawList.push_back(cirle);
+//drawBullets(posEnemy, i);
+//Bullet(posEnemy, i);
+//draw the bullet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//if (nextCharYplus == '/') {
+//	PointF posEnemy = enenemyvector.at(i)->Move(0, 1);
+//	cout << "Moving enemy up" << endl;
+//	enenemyvector.at(i)->Update(posEnemy);
+//	r = enenemyvector.at(i)->_health;
+//	Circle* cirle = new Circle(posEnemy, color, r, seg);
+//	drawList.push_back(cirle);
+//	drawBullets(posEnemy, i);
+//	Bullet(posEnemy, i);
+//}
+//// move 20 y pixels rght
+//if (nextCharXplus == '/') {
+//	PointF posEnemy = enenemyvector.at(i)->Move(1, 0);
+//	cout << "Moving enemy right" << endl;
+//	enenemyvector.at(i)->Update(posEnemy);
+//	r = enenemyvector.at(i)->_health;
+//	Circle* cirle = new Circle(posEnemy, color, r, seg);
+//	drawList.push_back(cirle);
+//	drawBullets(posEnemy, i);
+//	Bullet(posEnemy, i);
+//}
+////move 20 pixels down
+//if (nextCharYmin == '/') {
+//	PointF posEnemy = enenemyvector.at(i)->Move(0, -1);
+//	cout << "Moving enemy down" << endl;
+//	enenemyvector.at(i)->Update(posEnemy);
+//	r = enenemyvector.at(i)->_health;
+//	Circle* cirle = new Circle(posEnemy, color, r, seg);
+//	drawList.push_back(cirle);
+//	drawBullets(posEnemy, i);
+//	Bullet(posEnemy, i);
+//}
+////move 20 pixels left
+//if (nextCharXmin == '/') {
+//	PointF posEnemy = enenemyvector.at(i)->Move(-1, 0);
+//	cout << "Moving enemy left" << endl;
+//	enenemyvector.at(i)->Update(posEnemy);
+//	r = enenemyvector.at(i)->_health;
+//	Circle* cirle = new Circle(posEnemy, color, r, seg);
+//	drawList.push_back(cirle);
+//	drawBullets(posEnemy, i);
+//	Bullet(posEnemy, i);
+//}
+//else {
+//	cout << "error" << endl;
+//	return;
+//}
+
+//for (int x = 0; x < mapSizex; x++) {
+//	for (int y = 0; y < mapSizey; y++) {
+//		
+//	}
+//}
+//PointF posEnemy = enenemyvector.at(i)->Move();
+//cout << "Enemy id :" << endl;
+//cout << enenemyvector.at(i)->_id << endl;
+//cout << "Enemy health" << endl;
+//cout << enenemyvector.at(i)->_health << endl;
+
+//enenemyvector.at(i)->Update(posEnemy);
+//r = enenemyvector.at(i)->_health;
+//Circle* cirle = new Circle(posEnemy, color, r, seg);
+//drawList.push_back(cirle);
+//drawBullets(posEnemy, i);
+//Bullet(posEnemy, i);
+//draw the bullet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //latter refrence use
 //for (auto it = drawList.begin(); it != drawList.end(); /* nothing */) {
 //	if (/* condition */) {
