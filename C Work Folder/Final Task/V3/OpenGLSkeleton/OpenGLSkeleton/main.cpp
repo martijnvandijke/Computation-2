@@ -1,12 +1,3 @@
-////////////////////////////////////////////////////////////
-//
-// File: main.cpp
-// Author: Peter Koek (based on version by Sven Goossens)
-// Purpose:
-//      A skeleton for the final assignment
-//      Without modifications, this should draw 2 pixels on the screen
-//
-///////////////////////////////////////////////////////////
 
 #include <iostream>
 #include <string>
@@ -23,29 +14,23 @@
 #include <fstream>
 #include <map>
 
-//int map[][];
+//global variables and defiinitions
 using namespace std;
 std::string keytext;
 DrawList drawList;
 string filename = "test";
-//std::list<Enemy*> enemylist;
-//map<int,int,char> fieldMap;
+int PlayerHealth = 100;
+int PlayerScore = 0;
 string MapName;
 const int mapSizex = 100;
 const int mapSizey = 100;
 char Map[mapSizex][mapSizey];
-//char PlayerMAp[100][100];
-// Put your global variables here
 vector<Enemy*> enenemyvector;
 vector<Turret*> turretvector;
 vector<Line*> bulletvector;
+int start = 0;
 
-//---------------------------------------------------------------------------
-// void init(void)
-// This function is called when glut is initialized. Use it to initialize
-// variables and setup things that have to be done BEFORE the actual
-// picture is drawn.
-
+//only excuted once
 void init()
 {
     // Create a display window
@@ -53,31 +38,21 @@ void init()
     glutInitWindowSize(windowWidth, windowHeight);  // 1024 x 500 pixel window
     glutInitWindowPosition(0,0);                    // Window appears in the top-left corner of the screen
     glutCreateWindow(windowTitle);                  // Create window with title
-
     // Register callbacks
     glutDisplayFunc(display);                       // Main display function
     glutReshapeFunc(reshape);                       // Reshape function, called when the window resizes
 	glutKeyboardFunc(keyfunc);
-
     // Example Timer functions
     // You might want to remove these after you are done testing with them
-    glutTimerFunc(1000, alarm, 112);
-    
+    glutTimerFunc(1000, alarm, 112);   
     // E.g. glClearColor(1.0, 0.0, 0.0, 1.0); results in a red background.
-    glClearColor(0.003921568627451, 0.502, 0.447, 0.2);               // Set background color to white
-
-    
+    glClearColor(0.003921568627451, 0.502, 0.447, 0.2);               // Set background color to white 
     // Keep them like this if you don't need fancy options
     glMatrixMode(GL_PROJECTION);    // Next lines will adjust the projection matrix
     glLoadIdentity();               // Reset projection matrix to the identity matrix
-
     // Set the size of the viewport (drawing grid) in pixels
     // We are looking at the rectangle from (0,0) to (windowWidth,windowHeight)
     gluOrtho2D(0, windowWidth, 0, windowHeight);
-	
-
-
-	
     glMatrixMode(GL_MODELVIEW);
 	makeTurret(100,300);
 	makeEnemy();
@@ -100,12 +75,7 @@ void readFile(string filename) {
 
 	while (	getline(fp, word)){
 		//no map has yet been loaded, load the map name
-		//if (CountLines == 0) {
-		//	cout << "Storing map name" << endl;
-		//	MapName = word;
-		//	
-		//	continue;
-		//}
+
 		//count the "y" 
 		CountLines++;
 		//cout << word << endl;
@@ -115,15 +85,10 @@ void readFile(string filename) {
 			//cout << c << endl;
 			//store char in the map
 			Map[i][(CountLines - 1)] = c;
-			
-			//cout << "map contains :" << endl;
-			//cout << Map[i][CountLines] << endl;
-			//fieldMap[i, CountLines] = c;
-			//fieldMap.insert( c, i, 2);	// = word.at(i);
 
 		}
 	}
-	//char Map[100][100];
+
 	// Close the file
 	fp.close();
 
@@ -214,7 +179,7 @@ void path() {
 //make a new enemey on the stack
 void makeEnemy() {
 	Color color = { 0.2f, 0.1f, 0.8f };
-	PointF begin1 = { 30,30 };
+	PointF begin1 = { 30,40 };
 	PointF begin2 = { 0, 0 };
 	float lind = 2.0;
 	float r = 10;
@@ -224,15 +189,9 @@ void makeEnemy() {
 	Enemy* en = new Enemy(begin1, begin1, speed, health);
 	enenemyvector.push_back(en);
 }
-int set = 0;
-//draw the enemy's
+//draw the enemy's + make alogirthm
 void drawEnemy() {
 	Color color = { 0.2f, 0.1f, 0.8f };
-	//statrt position of the enemy
-	//PointF begin1 = { 30,20 };
-	//position of the turren
-	//PointF begin2 = { 34, 430 };
-	
 	float r;
 	//number of triganles that need to be drawn
 	int seg = 20;
@@ -259,6 +218,18 @@ void drawEnemy() {
 				char nextCharXmin =	Map[(curx - 1)][cury];
 				char nextCharYmin = Map[curx][(cury - 1)];
 
+				if (Map[(curx)][cury] == 'E') {
+					PointF posEnemy = enenemyvector.at(i)->Move(1, 0);	
+					cout << "Enemy has been let trough the defenses" << endl;
+					enenemyvector.at(i)->Update(posEnemy);
+					r = enenemyvector.at(i)->_health;
+					Circle* cirle = new Circle(posEnemy, color, r, seg);
+					drawList.push_back(cirle);
+					drawBullets(posEnemy, i);
+					Bullet(posEnemy, i);
+					continue;
+				}
+
 				if (Map[(curx + 2)][cury] == 'E') {
 					PointF posEnemy = enenemyvector.at(i)->Move(1, 0);
 					cout << "Moving enemy right" << endl;
@@ -272,8 +243,8 @@ void drawEnemy() {
 				}
 
 				if (nextCharXplus == 'E') {
-					PointF posEnemy = enenemyvector.at(i)->Move(0, 0);
-					cout << "Enemy has been let trough the defenses" << endl;
+					PointF posEnemy = enenemyvector.at(i)->Move(1, 0);
+				
 					enenemyvector.at(i)->Update(posEnemy);
 					r = enenemyvector.at(i)->_health;
 					Circle* cirle = new Circle(posEnemy, color, r, seg);
@@ -289,9 +260,9 @@ void drawEnemy() {
 				//cout << "ik ben tot hiero gekomen" << endl;
 				//cout << nextCharXplus << nextCharYplus << nextCharXmin << nextCharYmin << endl;
 				// move 20 y pixels right
-				if (nextCharYplus == '/' && Map[(curx)][(cury +2)]  && set != 1 ) {
+				if (nextCharYplus == '/' && Map[(curx)][(cury +2)] ) {
 					PointF posEnemy = enenemyvector.at(i)->Move(0,1);
-					cout << "Moving enemy up" << endl;
+					//cout << "Moving enemy up" << endl;
 					enenemyvector.at(i)->Update(posEnemy);
 					r = enenemyvector.at(i)->_health;
 					Circle* cirle = new Circle(posEnemy, color, r, seg);
@@ -303,22 +274,9 @@ void drawEnemy() {
 				}
 				// move 20 x pixels rght
 				if (nextCharXplus == '/' && Map[(curx + 2)][cury]== '/'	) {
-					/*if (nextCharYmin == '/' && set != 2) {
-						PointF posEnemy = enenemyvector.at(i)->Move(0, -1);
-						cout << "Moving enemy down" << endl;
-						enenemyvector.at(i)->Update(posEnemy);
-						r = enenemyvector.at(i)->_health;
-						Circle* cirle = new Circle(posEnemy, color, r, seg);
-						drawList.push_back(cirle);
-						drawBullets(posEnemy, i);
-						Bullet(posEnemy, i);
-						set = 2;
-						return;
-					}
 					
-				else {*/
 					PointF posEnemy = enenemyvector.at(i)->Move(1, 0);
-					cout << "Moving enemy right" << endl;
+					//cout << "Moving enemy right" << endl;
 					enenemyvector.at(i)->Update(posEnemy);
 					r = enenemyvector.at(i)->_health;
 					Circle* cirle = new Circle(posEnemy, color, r, seg);
@@ -333,20 +291,20 @@ void drawEnemy() {
 				if (nextCharYmin == '/' && Map[curx][(cury - 2)] == '/'  ) {
 					//if(	set == 1 ){}
 					PointF posEnemy = enenemyvector.at(i)->Move(0, -1);
-					cout << "Moving enemy down" << endl;
+					//cout << "Moving enemy down" << endl;
 					enenemyvector.at(i)->Update(posEnemy);
 					r = enenemyvector.at(i)->_health;
 					Circle* cirle = new Circle(posEnemy, color, r, seg);
 					drawList.push_back(cirle);
 					drawBullets(posEnemy, i);
 					Bullet(posEnemy, i);
-					set = 1;
+					//set = 1;
 					continue;
 				}
 				//move 20 pixels left
 				if (nextCharXmin == '/') {
 					PointF posEnemy = enenemyvector.at(i)->Move(-1, 0);
-					cout << "Moving enemy left" << endl;
+					//cout << "Moving enemy left" << endl;
 					enenemyvector.at(i)->Update(posEnemy);
 					r = enenemyvector.at(i)->_health;
 					Circle* cirle = new Circle(posEnemy, color, r, seg);
@@ -360,28 +318,11 @@ void drawEnemy() {
 					cout << "error" << endl;
 					cout << nextCharXplus << nextCharYplus << nextCharXmin << nextCharYmin << endl;
 					cout << curx << "  " << cury << endl;
-					set = 0;
+					//set = 0;
 					continue;
  				}
 
-				//for (int x = 0; x < mapSizex; x++) {
-				//	for (int y = 0; y < mapSizey; y++) {
-				//		
-				//	}
-				//}
-				//PointF posEnemy = enenemyvector.at(i)->Move();
-				//cout << "Enemy id :" << endl;
-				//cout << enenemyvector.at(i)->_id << endl;
-				//cout << "Enemy health" << endl;
-				//cout << enenemyvector.at(i)->_health << endl;
 
-				//enenemyvector.at(i)->Update(posEnemy);
-				//r = enenemyvector.at(i)->_health;
-				//Circle* cirle = new Circle(posEnemy, color, r, seg);
-				//drawList.push_back(cirle);
-				//drawBullets(posEnemy, i);
-				//Bullet(posEnemy, i);
-				//draw the bullet
 			}
 			else
 			{
@@ -395,7 +336,8 @@ void drawEnemy() {
 //draw the to be drawn bullets 
 void drawBullets(PointF posEnemy, int j){
 		
-		Color color = { 0.2f, 1, 0.2f };
+		//initilize functions
+		Color color = { 0.9f, 0.9f, 0.9f };
 		float lind = 2.0;
 		int bulletlenght = 4;
 
@@ -404,45 +346,67 @@ void drawBullets(PointF posEnemy, int j){
 
 			//if turret health is positive ->later function
 			if (turretvector.at(i)->_health > 0) {
+					//get the poistion of the turrets
 					float dx =  turretvector.at(i)->_position[0] - posEnemy[0];
 					float dy =  turretvector.at(i)->_position[1] - posEnemy[1];
 					//caclulate range to enemy
 					float rangeToEnemy = sqrt(	pow(dx,2)  + pow(dy,2)	);
-
-				cout << rangeToEnemy << endl;
-
-				//if enemy is in the range
-				if (rangeToEnemy < turretvector.at(i)->_range) {
-					PointF turPos = turretvector.at(i)->_position;
-					//if the turret is not aiming a other target
-					int aimingId = turretvector.at(i)->_aiming;
-
-					//if the current turret is locked on to the current enemy
-					if (aimingId == enenemyvector.at(j)->_id) {
-						//draw bullet to the enemy
-
-						Line* bulletline = new Line{ posEnemy, turretvector.at(i)->_position , color, lind };
-						drawList.push_back(bulletline);
+					//cout << rangeToEnemy << endl;
+					//if enemy is in the range
+					if (rangeToEnemy < turretvector.at(i)->_range) {
+						//get position of the turret
+						PointF turPos = turretvector.at(i)->_position;
+						//get the aiming id of the turret
+						int aimingId = turretvector.at(i)->_aiming;
+						//s^2 ( V_b^2 - V_e^2) + 1s*r*V_e^2*cos(a) - V_e^2*r^2
+						//if the current turret is locked on to the current enemy
+						//if (aimingId == enenemyvector.at(j)->_id) {
+							//draw bullet to the enemy
+							PointF posTurret = turretvector.at(i)->_position;
+							int bulletSpeed = turretvector.at(i)->_bulletSpeed;
+							int EnemeySpeed = enenemyvector.at(j)->_speed;
+							float dy = abs(posEnemy[1] - posTurret[1]);
+							float dx = abs(posEnemy[0] - posTurret[0]);
+							cout << "abs dx ,dy" << endl;
+							cout << dx << "   "<< dy << endl;
+							float alfa = tan((dy/dx));
+							cout << alfa << endl;
+							cout << cos(alfa) << endl;
+							int a = 175;//(pow(bulletSpeed,2) - pow(EnemeySpeed,2));
+							int b = rangeToEnemy * pow(EnemeySpeed,2) * cos(alfa);
+							int c = -(pow(EnemeySpeed, 2)* pow(rangeToEnemy, 2));
+							cout << a << "  " << b << "   " << c << endl;
+							int x1 = (-b + sqrt(b * b - 4 * a * c)) / (2 * a);
+							int x2 = (-b - sqrt(b * b - 4 * a * c)) / (2 * a);
+							cout << "Value of the s'es are :" << endl;
+							cout << x1 << " " << x2 << endl;
+							cout << "jow ik draw the bullet line" << endl;
+							float posx = x1;
+							float posy = dy	;
+							PointF posEnemy = { posx, posy };
+							Line* bulletline = new Line{ posEnemy, turretvector.at(i)->_position , color, lind };
+							drawList.push_back(bulletline);
 						
-						bulletvector.push_back(bulletline);
-						//update track id of the turret
-						turretvector.at(i)->Aim(enenemyvector.at(j)->_id);
-					}
-					//no enemy in track
-					if (aimingId == 0) {
-						//get current pos of the first enemy
-						PointF posEnemy = enenemyvector.front()->_current;
+							bulletvector.push_back(bulletline);
+							//update track id of the turret
+							turretvector.at(i)->Aim(enenemyvector.at(j)->_id);
+						//}
+						//no enemy in track
+						//if(aimingId == 0) {
+						//	cout << "jow ben heir" << endl;
+						//	//get current pos of the first enemy
+						//	PointF posEnemy = enenemyvector.front()->_current;
 
 
-						Line* bulletline = new Line{ posEnemy, turretvector.at(i)->_position , color, lind };
-						drawList.push_back(bulletline);
+						//	Line* bulletline = new Line{ posEnemy, turretvector.at(i)->_position , color, lind };
+						//	drawList.push_back(bulletline);
+						//
+						//	bulletvector.push_back(bulletline);
+						//	//update track id of the turret
+						//	turretvector.at(i)->Aim(enenemyvector.front()->_id);
+						//}
+
 						
-						bulletvector.push_back(bulletline);
-						//update track id of the turret
-						turretvector.at(i)->Aim(enenemyvector.front()->_id);
-					}
-
-					//s^2 ( V_b^2 - V_e^2) + 1s*r*V_e^2*cos(a) - V_e^2*r^2
 
 
 
@@ -451,20 +415,30 @@ void drawBullets(PointF posEnemy, int j){
 			}
 			//destroy turret
 			else {
-				
+				//destroy turret from the list
+				delete turretvector.at(i);
+				turretvector.erase(turretvector.begin() + i);	//(enenemyvector.begin() + i)
 			}
 		}
 }
 
 void makeTurret(float x,float y) {
-	Color color = { 0.2f, 1, 0.2f };
-	PointF pos = { x,y };
-	int health = 100;
-	int upgrade = 0;
-	int type = 0;
-	int range = 200;
-	Turret* tur = new Turret(pos, color, range, health,upgrade,type);
-	turretvector.push_back(tur);
+	int posx = x/20;
+	int posy = y/20;
+	if(Map[posx][posy] != '/') {
+		Color color = { 0.2f, 1, 0.2f };
+		PointF pos = { x,y };
+		int health = 100;
+		int upgrade = 0;
+		int type = 0;
+		int range = 150;
+		Turret* tur = new Turret(pos, color, range, health, upgrade, type);
+		turretvector.push_back(tur);
+	}
+	else {
+		cout << "connot place turret there" << endl;
+		return;
+	}
 }
 
 void drawTurret() {
@@ -495,19 +469,13 @@ void idle(int value) {
 
 	raster();
 	//always make a turrent before the enemy
-	//makeTurret();
+
 	//draw the turret's
 	drawTurret();
-	//cout << "map contains :" << endl;
-	//cout << Map[2][2] << endl;
-	//make a new enemy
-	//makeEnemy();
-	//draw the ennemy
+
 	drawEnemy();
 	//make a new turret
 	
-	
-
 
 	//cal the display function -> draw everything 
 	glutPostRedisplay();
@@ -517,10 +485,7 @@ void idle(int value) {
 
 
 
-//---------------------------------------------------------------------------
-// void alarm(int alarmnumber)
-// Demonstration of a timer callback. alarmnumber is used to distinguish
-// between different timers.
+
 void alarm(int alarmNumber)
 {
     if(alarmNumber == 112) {
@@ -569,7 +534,7 @@ void keyfunc(unsigned char key, int x, int y) {
 	int seneY;
 	seneY = windowHeight - y;
 	if (key == 't') {
-		cout << "jow ik maak een turret aan" << endl;
+		//cout << "jow ik maak een turret aan" << endl;
 		makeTurret(x,seneY);
 	}
 	if (key == 'e') {
@@ -579,10 +544,6 @@ void keyfunc(unsigned char key, int x, int y) {
 
 	char c = key;
 	keytext = string{ c } +", " + to_string(x) + ", " + to_string(y);
-	
-	//cout << "jow ik heb characters" << endl;
-	//drawtext(keytext, x, y);
-	//glutPostRedisplay();
 }
 
 void drawtext(std::string keytext, int x, int y) {
@@ -598,21 +559,6 @@ void drawtext(std::string keytext, int x, int y) {
 	}
 
 }
-
-//handle mouse movement
-//void mouseMovement(int x, int y){
-//	static float lastx = 0.0;
-//	static float lasty = 0.0;
-//
-//	lastx = (float)x - lastx;
-//	lasty = (float)y - lasty;
-//
-//	if ((abs((int)lastx) > 10) || (abs((int)lasty) > 10)){
-//		lastx = (float)x;
-//		lasty = (float)y;
-//		return;
-//	}
-//}
 
 
 //---------------------------------------------------------------------------

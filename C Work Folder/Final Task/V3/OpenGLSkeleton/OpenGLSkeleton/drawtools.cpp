@@ -95,8 +95,8 @@ void Line::draw() const
 	//cout << "Lijntjes tekenen" << endl;
 	glLineWidth( _lineWidth);
 	// dashed lines as  http://www.opengl.org.ru/docs/pg/0204.html
-	glLineStipple(1, 0x3F07);
-	glEnable(GL_LINE_STIPPLE);
+	//glLineStipple(1, 0x3F07);
+	//glEnable(GL_LINE_STIPPLE);
 	glBegin(GL_LINES);
 	glColor3f(_color[0], _color[1], _color[2]);
 	glVertex2fv(_begin.data() );

@@ -64,6 +64,18 @@
 //cout << "Enemy health" << endl;
 //cout << enenemyvector.at(i)->_health << endl;
 
+		//if (CountLines == 0) {
+		//	cout << "Storing map name" << endl;
+		//	MapName = word;
+		//	
+		//	continue;
+		//}
+			
+			//cout << "map contains :" << endl;
+			//cout << Map[i][CountLines] << endl;
+			//fieldMap[i, CountLines] = c;
+			//fieldMap.insert( c, i, 2);	// = word.at(i);
+
 //enenemyvector.at(i)->Update(posEnemy);
 //r = enenemyvector.at(i)->_health;
 //Circle* cirle = new Circle(posEnemy, color, r, seg);
@@ -72,8 +84,38 @@
 //Bullet(posEnemy, i);
 //draw the bullet
 
+				//for (int x = 0; x < mapSizex; x++) {
+				//	for (int y = 0; y < mapSizey; y++) {
+				//		
+				//	}
+				//}
+				//PointF posEnemy = enenemyvector.at(i)->Move();
+				//cout << "Enemy id :" << endl;
+				//cout << enenemyvector.at(i)->_id << endl;
+				//cout << "Enemy health" << endl;
+				//cout << enenemyvector.at(i)->_health << endl;
 
-
+				//enenemyvector.at(i)->Update(posEnemy);
+				//r = enenemyvector.at(i)->_health;
+				//Circle* cirle = new Circle(posEnemy, color, r, seg);
+				//drawList.push_back(cirle);
+				//drawBullets(posEnemy, i);
+				//Bullet(posEnemy, i);
+				//draw the bullet
+/*if (nextCharYmin == '/' && set != 2) {
+						PointF posEnemy = enenemyvector.at(i)->Move(0, -1);
+						cout << "Moving enemy down" << endl;
+						enenemyvector.at(i)->Update(posEnemy);
+						r = enenemyvector.at(i)->_health;
+						Circle* cirle = new Circle(posEnemy, color, r, seg);
+						drawList.push_back(cirle);
+						drawBullets(posEnemy, i);
+						Bullet(posEnemy, i);
+						set = 2;
+						return;
+					}
+					
+				else {*/
 
 
 

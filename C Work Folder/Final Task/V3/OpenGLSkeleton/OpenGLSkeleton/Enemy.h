@@ -26,10 +26,11 @@ PointF _begin;
 PointF _current;
 int	_health;
 int _id;
+float _speed;
 
 private :
 	
-float _speed;
+
 
 //int _id;
 
