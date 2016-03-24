@@ -8,6 +8,8 @@ public: FiredBullet(PointF destination, PointF begin, PointF current, int speed)
 
 		PointF Move();
 		PointF Move2();
+		void Update(PointF begin);
+		void Update2(PointF begin);
 public:
 	PointF _begin;
 	PointF _destination;

@@ -398,7 +398,7 @@ void drawBullets(PointF posEnemy, int j){
 							cout << "calulting intercet point" << endl;
 							PointF  BulletIntercept = {	(posEnemy[0] + posx) ,  (posy )};
 							cout << BulletIntercept[0] << "    " << BulletIntercept[1] << endl;
-							PointF BulletStart = { posTurret[0], (posTurret[1] +4) };
+							//PointF BulletStart = { posTurret[0], (posTurret[1]) };
 							FiredBullet* bullet = new FiredBullet(BulletIntercept,posTurret,posTurret,bulletSpeed);
 							bulletvector.push_back(bullet);
 							//PointF BulletPos = bulletvector.at(i)->Move();
@@ -479,18 +479,20 @@ void drawBullet() {
 	Color color = { 0.9f, 0.9f, 0.9f };
 	float lind = 2.0;
 	for (unsigned i = 0; i < bulletvector.size(); i++) {
-		cout << "going to draw the bullets for real this time" << endl;
+		//cout << "going to draw the bullets for real this time" << endl;
 
 		PointF BulletPos = bulletvector.at(i)->Move();
+		bulletvector.at(i)->Update(BulletPos);
 		cout << "Bullet position : " << endl;
 		cout << BulletPos[0] << "  "  << BulletPos[1] << endl;
 		PointF Bulletpos2 =  bulletvector.at(i)->Move2();
+		bulletvector.at(i)->Update2(Bulletpos2);
 		Line* bulletline = new Line{ BulletPos , Bulletpos2 , color, lind };
 		drawList.push_back(bulletline);
 		//PointF end = bulletvector.at(i)
 		////if the bullet end position is the same as the current enemy position eg a hit of the bullet
 		//if (end[0] == posEnemy[0] && end[1] == posEnemy[1]) {
-		//	//
+		//	
 		//	enenemyvector.at(j)->Health(-10);
 		//}
 	}
