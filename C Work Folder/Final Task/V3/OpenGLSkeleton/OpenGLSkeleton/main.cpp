@@ -1,3 +1,9 @@
+// Made by Martyn van Dijke
+// Student number : 087668
+// Build date :
+// Version : 
+// Main file
+///////////////////////////////
 
 #include <iostream>
 #include <string>
@@ -6,14 +12,14 @@
 #include <list>
 #define _USE_MATH_DEFINES   // Signal math.h that we would like defines like M_PI
 #include <math.h>           // Might come in usefull for cosine functions and stuff like that
-#include <vector>
+#include <vector>			//get the vector dll's
 #include "main.h"           // Function declarations and some definitions
 #include "drawtools.h"      // contains all you need to draw stuff
-#include "Enemy.h" 
-#include "Turret.h"
-#include "FiredBullet.h"
-#include <fstream>
-#include <map>
+#include "Enemy.h"			//get the enemys class
+#include "Turret.h"			//get the turret class
+#include "FiredBullet.h"	//get the bulelt class
+#include <fstream>	
+
 
 
 //global variables and defiinitions
@@ -27,10 +33,10 @@ string MapName;		//map name
 const int mapSizex = 100;	//map size in x direction
 const int mapSizey = 100;	//map size in y direction
 char Map[mapSizex][mapSizey];	//map data
+//vectors for more easy acces then list and more flexibel :)
 vector<Enemy*> enenemyvector;	//vector contains all the enemey
 vector<Turret*> turretvector;	//vector contains all the turrets
-vector<FiredBullet*> bulletvector;
-//vector<Bullet*> bulletvector;	//bullet vector contains calulated intersection point + 
+vector<FiredBullet*> bulletvector; //vector containing all the bullets that have been fired and are still live
 int start = 0;
 
 //only excuted once
@@ -47,7 +53,7 @@ void init()
 	glutKeyboardFunc(keyfunc);
     // Example Timer functions
     // You might want to remove these after you are done testing with them
-    glutTimerFunc(1000, alarm, 112);   
+   // glutTimerFunc(1000, alarm, 112);   
     // E.g. glClearColor(1.0, 0.0, 0.0, 1.0); results in a red background.
     glClearColor(0.003921568627451, 0.502, 0.447, 0.2);               // Set background color to white 
     // Keep them like this if you don't need fancy options
@@ -62,11 +68,10 @@ void init()
 	raster();
 }
 
-//read a the map file
+//read the map file from a .txt file
 void readFile(string filename) {
 	string word;
 	ifstream fp;
-	//Map[100][100] = {};
 	MapName = filename;
 	int CountLines = 0;
 	filename = "test.txt";
@@ -79,13 +84,11 @@ void readFile(string filename) {
 	while (	getline(fp, word)){
 		//no map has yet been loaded, load the map name
 
-		//count the "y" 
+		//count the "y" direction
 		CountLines++;
-		//cout << word << endl;
 		for (unsigned i = 0; i < word.size(); i++) {
 			//get char at place in string
 			char c = (word.at(i));
-			//cout << c << endl;
 			//store char in the map
 			Map[i][(CountLines - 1)] = c;
 
@@ -100,7 +103,6 @@ void readFile(string filename) {
 
 //make a grid 
 void raster() {
-	//readFile();
 	Color color = { 0.2f, 1, 0.2f };
 	int rasterHoogte = windowHeight;
 	int rasterBreedte = windowWidth;
@@ -137,10 +139,9 @@ void path() {
 		for (int j = 0; j < mapSizey; j++) {
 			float x = i*20;
 			float y = j*20;
-			//cout << "map contins:" << endl;
-			//cout << Map[i][j] << endl;
-			//path for the enemy
+
 			if (Map[i][j] == '/') { 
+				//draw the path where enemy's walk
 				Color color = { 0.2f, 1, 0.2f };
 				PointF begin1 = { x,y };
 				PointF begin2 = { (x),(y+20) };
@@ -151,6 +152,7 @@ void path() {
 			}
 			//path where building is allowed
 			if (Map[i][j] == '*') {
+				//draw the building site
 				Color color = { 0.4f, 0.4f, 0.4f };
 				PointF begin1 = { x,y };
 				PointF begin2 = { (x),(y + 20) };
@@ -159,8 +161,9 @@ void path() {
 				Sqaure* sq = new Sqaure(begin1, begin2, begin3, begin4, color);
 				drawList.push_back(sq);
 			}
-
+			//end point of the map
 			if (Map[i][j] == 'E') {
+				//draw the end map
 				Color color = { 1.0f, 0.4f, 0.4f };
 				PointF begin1 = { x,y };
 				PointF begin2 = { (x),(y + 20) };
@@ -169,7 +172,7 @@ void path() {
 				Sqaure* sq = new Sqaure(begin1, begin2, begin3, begin4, color);
 				drawList.push_back(sq);
 			}
-
+			//if the map data contains nothing special
 			else {
 				continue;
 			}
@@ -204,35 +207,35 @@ void drawEnemy() {
 		//if the enemy is out of the screen
 		if (curpos[0] > windowWidth || curpos[1] > windowHeight) {
 			//delete the enemy
+			delete enenemyvector.at(i);
+			//delete the enemy from the enemy vector
 			enenemyvector.erase((enenemyvector.begin() + i));
 		}
-
+		//enemy is still in the screen
 		else {
+			//walk algorithm is good but could do better
 			if (enenemyvector.at(i)->_health > 0) {
 				PointF curpos = enenemyvector.at(i)->_current;
 				int curx = curpos[0] /20;
 				int cury = curpos[1] / 20;
 				cout << curx << cury << endl;
-				//cout << "map contains :" << endl;
-				//cout << Map[10][10] << endl;
 				// get the map character that is 20 pixels further
 				char nextCharXplus = Map[(curx+1)][cury];
 				char nextCharYplus = Map[curx][(cury + 1)];
 				char nextCharXmin =	Map[(curx - 1)][cury];
 				char nextCharYmin = Map[curx][(cury - 1)];
 
+				//if the enemy is at the end of the defensen
 				if (Map[(curx)][cury] == 'E') {
-					PointF posEnemy = enenemyvector.at(i)->Move(1, 0);	
-					cout << "Enemy has been let trough the defenses" << endl;
-					enenemyvector.at(i)->Update(posEnemy);
-					r = enenemyvector.at(i)->_health;
-					Circle* cirle = new Circle(posEnemy, color, r, seg);
-					drawList.push_back(cirle);
-					drawBullets(posEnemy, i);
-					//Bullet(posEnemy, i);
+					//decrease the player health
+					PlayerHealth = PlayerHealth - 10;
+					//delete the enemy
+					delete enenemyvector.at(i);
+					//delete the enemy from the enemy vector
+					enenemyvector.erase((enenemyvector.begin() + i));
 					continue;
 				}
-
+				//once the end line is insight
 				if (Map[(curx + 2)][cury] == 'E') {
 					PointF posEnemy = enenemyvector.at(i)->Move(1, 0);
 					cout << "Moving enemy right" << endl;
@@ -244,10 +247,9 @@ void drawEnemy() {
 					//Bullet(posEnemy, i);
 					continue;
 				}
-
+				//once the end line is insight
 				if (nextCharXplus == 'E') {
 					PointF posEnemy = enenemyvector.at(i)->Move(1, 0);
-				
 					enenemyvector.at(i)->Update(posEnemy);
 					r = enenemyvector.at(i)->_health;
 					Circle* cirle = new Circle(posEnemy, color, r, seg);
@@ -258,10 +260,6 @@ void drawEnemy() {
 					//enenemyvector.
 					continue;
 				}
-
-
-				//cout << "ik ben tot hiero gekomen" << endl;
-				//cout << nextCharXplus << nextCharYplus << nextCharXmin << nextCharYmin << endl;
 				// move 20 y pixels right
 				if (nextCharYplus == '/' && Map[(curx)][(cury +2)] ) {
 					PointF posEnemy = enenemyvector.at(i)->Move(0,1);
@@ -287,8 +285,6 @@ void drawEnemy() {
 					drawBullets(posEnemy, i);
 					//Bullet(posEnemy, i);
 					continue;
-			
-					
 				}
 				//move 20 pixels down
 				if (nextCharYmin == '/' && Map[curx][(cury - 2)] == '/'  ) {
@@ -327,16 +323,18 @@ void drawEnemy() {
 
 
 			}
-			else
+			else	//the enemy has zerp health
 			{
-				//delete the enemy from the vecto list
-				enenemyvector.erase((enenemyvector.begin() + i));
+					//delete the enemy
+					delete enenemyvector.at(i);
+					//delete the enemy from the enemy vector
+					enenemyvector.erase((enenemyvector.begin() + i));
 			}
 		}
 	}
 }
 
-//draw the to be drawn bullets 
+//caclulate the interscet point of the bullet to be fired and the enenemy ->nees some debugging
 void drawBullets(PointF posEnemy, int j){
 		//cout << "going to put bullets on the list" << endl;
 		//initilize functions
@@ -436,33 +434,43 @@ void drawBullets(PointF posEnemy, int j){
 			}
 			//destroy turret
 			else {
-				//destroy turret from the list
+				//destroy the turret
 				delete turretvector.at(i);
+				//destroy the turret from the turret vector
 				turretvector.erase(turretvector.begin() + i);	//(enenemyvector.begin() + i)
 			}
 		}
 }
 
+//make turret at a poistion (if it is possible)
 void makeTurret(float x,float y) {
 	int posx = x/20;
 	int posy = y/20;
-	if(Map[posx][posy] != '/') {
+	// do not place turrets at the edge of the path -> a miniumum of 1 tile should be between the turret and the path
+	if(Map[(posx+1)][(posy+1)] != '/' && Map[(posx -1)][(posy -1)] != '/'&& Map[(posx -1)][(posy )] != '/' && Map[(posx)][(posy - 1)]) {
 		Color color = { 0.2f, 1, 0.2f };
 		PointF pos = { x,y };
+		//give the turret health -> later use
 		int health = 100;
+		//give teh turret 0 upgrade -> basic turret -> later use
 		int upgrade = 0;
+		//give the turret a type -> later use
 		int type = 0;
+		//set the range of the turret
 		int range = 150;
+		//make a new turret and put it on the turret vector
 		Turret* tur = new Turret(pos, color, range, health, upgrade, type);
 		turretvector.push_back(tur);
 	}
 	else {
-		cout << "connot place turret there" << endl;
+		cout << "Cannot place turret there" << endl;
 		return;
 	}
 }
 
+//draw all of the turrets
 void drawTurret() {
+	//for every turret construct the turret
 	for (unsigned i = 0; i < turretvector.size(); i++) {
 		Color color = { 0.2f, 0.2f, 0.2f };
 		PointF pos = turretvector.at(i)->_position;
@@ -470,31 +478,44 @@ void drawTurret() {
 		PointF begin3 = { (pos[0]) , (pos[1] + 40) };
 		PointF begin4 = { (pos[0] + 20) , (pos[1]) };
 		Sqaure* sq = new Sqaure(pos, begin2, begin3, begin4, color);
+		//put turret on the drawlist
 		drawList.push_back(sq);
 	}
 }
 
+//draw bullet's function
 void drawBullet() {
-	
+	//define colors and width of the bullet
 	Color color = { 0.9f, 0.9f, 0.9f };
 	float lind = 2.0;
 	for (unsigned i = 0; i < bulletvector.size(); i++) {
-		//cout << "going to draw the bullets for real this time" << endl;
+		// if bullet is out of screen 
+		if (bulletvector.at(i)->_current[0] > windowWidth || bulletvector.at(i)->_current[1] > windowHeight) {
+			//delete the bullet 
+			delete bulletvector.at(i);
+			//delte the bulelt from the vector
+			bulletvector.erase(bulletvector.begin() + i);	
+		}
+		else {
+			//cout << "going to draw the bullets for real this time" << endl;
+//debug deze schit !!
+			PointF BulletPos = bulletvector.at(i)->Move();
+			bulletvector.at(i)->Update(BulletPos);
+			cout << "Bullet position : " << endl;
+			cout << BulletPos[0] << "  " << BulletPos[1] << endl;
+			PointF Bulletpos2 = bulletvector.at(i)->Move2();
+			bulletvector.at(i)->Update2(Bulletpos2);
+			Line* bulletline = new Line{ BulletPos , Bulletpos2 , color, lind };
+			//drawList.push_back(bulletline);
 
-		PointF BulletPos = bulletvector.at(i)->Move();
-		bulletvector.at(i)->Update(BulletPos);
-		cout << "Bullet position : " << endl;
-		cout << BulletPos[0] << "  "  << BulletPos[1] << endl;
-		PointF Bulletpos2 =  bulletvector.at(i)->Move2();
-		bulletvector.at(i)->Update2(Bulletpos2);
-		Line* bulletline = new Line{ BulletPos , Bulletpos2 , color, lind };
-		drawList.push_back(bulletline);
-		//PointF end = bulletvector.at(i)
-		////if the bullet end position is the same as the current enemy position eg a hit of the bullet
-		//if (end[0] == posEnemy[0] && end[1] == posEnemy[1]) {
-		//	
-		//	enenemyvector.at(j)->Health(-10);
-		//}
+
+			//PointF end = bulletvector.at(i)
+			////if the bullet end position is the same as the current enemy position eg a hit of the bullet
+			//if (end[0] == posEnemy[0] && end[1] == posEnemy[1]) {
+			//	
+			//	enenemyvector.at(j)->Health(-10);
+			//}
+		}
 	}
 }
 //if idle do all the calculations
@@ -519,19 +540,19 @@ void idle(int value) {
 
 
 
-
-void alarm(int alarmNumber)
-{
-    if(alarmNumber == 112) {
-        cout << "Ring Ring!!! This was alarm 112!" << endl;
-        cout << "Next alarm will ring in 100 ms." << endl;
-
-        // Register another timer with a different number that triggers after 100 ms
-        glutTimerFunc(100, alarm, 1337);
-    } else {
-        cout << "Ring Ring!!! Alarm with alarmnumber " << alarmNumber << " called!" << endl;
-    }
-}
+//
+//void alarm(int alarmNumber)
+//{
+//    if(alarmNumber == 112) {
+//        cout << "Ring Ring!!! This was alarm 112!" << endl;
+//        cout << "Next alarm will ring in 100 ms." << endl;
+//
+//        // Register another timer with a different number that triggers after 100 ms
+//        glutTimerFunc(100, alarm, 1337);
+//    } else {
+//        cout << "Ring Ring!!! Alarm with alarmnumber " << alarmNumber << " called!" << endl;
+//    }
+//}
 
 //---------------------------------------------------------------------------
 // void reshape(int w, int h)
@@ -551,8 +572,9 @@ void reshape(int w, int h)
 void display()
 {
     glClear(GL_COLOR_BUFFER_BIT);   // clear the backbuffer
+	//drawtext(keytext, 100, 100);
 
-	drawtext(keytext, 100, 100);
+	//draw everything on the drawlist
 	for (Drawable* drawable : drawList){ 
 		drawable->draw(); 
 		
@@ -561,6 +583,7 @@ void display()
     // Visualize the drawing commands
     glFlush();            // Execute all commands waiting to be executed
     glutSwapBuffers();    // Swap the backbuffer and frontbuffer
+	//clear the drawing list
 	drawList.clear();
 }
 
@@ -568,34 +591,42 @@ void keyfunc(unsigned char key, int x, int y) {
 	int seneY;
 	seneY = windowHeight - y;
 	if (key == 't') {
-		//cout << "jow ik maak een turret aan" << endl;
+		cout << "Making a turret at cursor poistion" << endl;
 		makeTurret(x,seneY);
 	}
 	if (key == 'e') {
-		cout << "jow ik maak een enemy aan" << endl;
+		cout << "Making a enemy" << endl;
 		makeEnemy();
+	}
+	//starting game
+	if (key == 's') {
+		cout << "Wich map do you want to load ? \n Type the map name " << endl;
+		cin >> filename;
+		cout << "starting game \n calling the  timer function " << endl;
+		glutTimerFunc(10, idle, 10);
 	}
 
 	char c = key;
-	keytext = string{ c } +", " + to_string(x) + ", " + to_string(y);
+	//keytext = string{ c } +", " + to_string(x) + ", " + to_string(y);
 }
 
-void drawtext(std::string keytext, int x, int y) {
+//old debug fucntion
+//void drawtext(std::string keytext, int x, int y) {
+//
+//	//cout << "jow ik ga ze uitrpinten" << endl;
+//	glRasterPos2f(100, 100);
+//	glColor3f(0, 0, 0);
+//
+//	for (char& c : keytext)
+//	{
+//		//cout << c << endl;
+//		glutBitmapCharacter(GLUT_BITMAP_HELVETICA_18, c);
+//	}
+//
+//}
 
-	//cout << "jow ik ga ze uitrpinten" << endl;
-	glRasterPos2f(100, 100);
-	glColor3f(0, 0, 0);
 
-	for (char& c : keytext)
-	{
-		//cout << c << endl;
-		glutBitmapCharacter(GLUT_BITMAP_HELVETICA_18, c);
-	}
-
-}
-
-
-//---------------------------------------------------------------------------
+//main function
 int main(int argc, char* argv[])
 {
     // Inialize GLUT
@@ -607,7 +638,6 @@ int main(int argc, char* argv[])
     // Enter the main application loop
     // While in the main loop, your registered callbacks will be called
     cout << "Starting GLUT main loop..." << endl;
-	glutTimerFunc(10, idle, 10);
 
     glutMainLoop();
 

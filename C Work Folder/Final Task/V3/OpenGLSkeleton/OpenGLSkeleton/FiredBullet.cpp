@@ -2,8 +2,11 @@
 #include <iostream>
 #include <string>
 
+//Bullet file
+
 using namespace std;
 int Count2 = 0;
+
 //desitnation pointF m begin PointF and speed
 FiredBullet::FiredBullet(PointF destination, PointF begin, PointF current, int speed)
 	: _begin{begin},
@@ -17,12 +20,14 @@ FiredBullet::FiredBullet(PointF destination, PointF begin, PointF current, int s
 	cout << _begin[0] << " " << _begin[1] << " destination :" << _destination[0] << "   : " << _destination[1] << endl;
 }
 
+//update the poistion of the bullet
 PointF FiredBullet::Move()
 {
 	PointF speed = { (_begin[0] + _speed)	, ( _begin[1])	 };
 	cout << speed[0] << " : :::" << speed[1] << endl;
 	return speed;
 }
+
 
 void FiredBullet::Update(PointF begin) {
 	_begin = begin;

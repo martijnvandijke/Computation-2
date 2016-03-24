@@ -1,6 +1,8 @@
 #ifndef TURRET_H
 #define TURRET_H
 
+// Turret header file for turret classes
+
 #include <array>
 
 #include "drawtools.h"

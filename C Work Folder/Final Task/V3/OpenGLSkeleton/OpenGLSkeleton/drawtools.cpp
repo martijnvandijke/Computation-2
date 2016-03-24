@@ -6,6 +6,7 @@
 //      Extending the Drawable class to provide a set of drawing tools
 //      Contains an implementation of the Pixel class,
 //      and a skeleton for the Line class
+// edited by Martyn van Dijke
 //
 ///////////////////////////////////////////////////////////
 

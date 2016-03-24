@@ -1,15 +1,10 @@
 #include "Enemy.h"
 #include <iostream>
 
+// Enemy files
 
 using namespace std;
 
-//int Enemy::increase()
-//{
-//	_idNumber++;
-//	_id = _idNumber;
-//	return _id;
-//}
 int Count = 1;
 Enemy::Enemy(const PointF& begin,PointF current ,float speed, int health)
 	: _begin{begin},
