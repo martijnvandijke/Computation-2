@@ -11,9 +11,10 @@
 #include "drawtools.h"      // contains all you need to draw stuff
 #include "Enemy.h" 
 #include "Turret.h"
-
+#include "FiredBullet.h"
 #include <fstream>
 #include <map>
+
 
 //global variables and defiinitions
 using namespace std;
@@ -28,7 +29,8 @@ const int mapSizey = 100;	//map size in y direction
 char Map[mapSizex][mapSizey];	//map data
 vector<Enemy*> enenemyvector;	//vector contains all the enemey
 vector<Turret*> turretvector;	//vector contains all the turrets
-vector<Bullet*> bulletvector;	//bullet vector contains calulated intersection point + 
+vector<FiredBullet*> bulletvector;
+//vector<Bullet*> bulletvector;	//bullet vector contains calulated intersection point + 
 int start = 0;
 
 //only excuted once
@@ -227,7 +229,7 @@ void drawEnemy() {
 					Circle* cirle = new Circle(posEnemy, color, r, seg);
 					drawList.push_back(cirle);
 					drawBullets(posEnemy, i);
-					Bullet(posEnemy, i);
+					//Bullet(posEnemy, i);
 					continue;
 				}
 
@@ -239,7 +241,7 @@ void drawEnemy() {
 					Circle* cirle = new Circle(posEnemy, color, r, seg);
 					drawList.push_back(cirle);
 					drawBullets(posEnemy, i);
-					Bullet(posEnemy, i);
+					//Bullet(posEnemy, i);
 					continue;
 				}
 
@@ -251,7 +253,7 @@ void drawEnemy() {
 					Circle* cirle = new Circle(posEnemy, color, r, seg);
 					drawList.push_back(cirle);
 					drawBullets(posEnemy, i);
-					Bullet(posEnemy, i);
+					//Bullet(posEnemy, i);
 					//set = 1;
 					//enenemyvector.
 					continue;
@@ -269,7 +271,7 @@ void drawEnemy() {
 					Circle* cirle = new Circle(posEnemy, color, r, seg);
 					drawList.push_back(cirle);
 					drawBullets(posEnemy, i);
-					Bullet(posEnemy, i);
+					//Bullet(posEnemy, i);
 					//set = 1;
 					continue;
 				}
@@ -283,7 +285,7 @@ void drawEnemy() {
 					Circle* cirle = new Circle(posEnemy, color, r, seg);
 					drawList.push_back(cirle);
 					drawBullets(posEnemy, i);
-					Bullet(posEnemy, i);
+					//Bullet(posEnemy, i);
 					continue;
 			
 					
@@ -298,7 +300,7 @@ void drawEnemy() {
 					Circle* cirle = new Circle(posEnemy, color, r, seg);
 					drawList.push_back(cirle);
 					drawBullets(posEnemy, i);
-					Bullet(posEnemy, i);
+					//Bullet(posEnemy, i);
 					//set = 1;
 					continue;
 				}
@@ -311,7 +313,7 @@ void drawEnemy() {
 					Circle* cirle = new Circle(posEnemy, color, r, seg);
 					drawList.push_back(cirle);
 					drawBullets(posEnemy, i);
-					Bullet(posEnemy, i);
+					//Bullet(posEnemy, i);
 					
 					continue;
 				}
@@ -336,7 +338,7 @@ void drawEnemy() {
 
 //draw the to be drawn bullets 
 void drawBullets(PointF posEnemy, int j){
-		
+		//cout << "going to put bullets on the list" << endl;
 		//initilize functions
 		Color color = { 0.9f, 0.9f, 0.9f };
 		float lind = 2.0;
@@ -355,6 +357,7 @@ void drawBullets(PointF posEnemy, int j){
 					//cout << rangeToEnemy << endl;
 					//if enemy is in the range
 					if (rangeToEnemy < turretvector.at(i)->_range) {
+						cout << "enemy in range" << endl;
 						//get position of the turret
 						PointF turPos = turretvector.at(i)->_position;
 						//get the aiming id of the turret
@@ -389,13 +392,20 @@ void drawBullets(PointF posEnemy, int j){
 							if (x1 < 0 && x2 > 0) {
 								float posx = x2;
 							}
-							float posy =	posEnemy[1] + 	(dy / 15);
+							posx = x1;
+							float posy = posEnemy[1] + 	(dy / 15);
 							//calculate the point where the bullet would intercept the enemy
+							cout << "calulting intercet point" << endl;
 							PointF  BulletIntercept = {	(posEnemy[0] + posx) ,  (posy )};
-							PointF BulletStart = posTurret;
+							cout << BulletIntercept[0] << "    " << BulletIntercept[1] << endl;
+							PointF BulletStart = { posTurret[0], (posTurret[1] +4) };
+							FiredBullet* bullet = new FiredBullet(BulletIntercept,posTurret,posTurret,bulletSpeed);
+							bulletvector.push_back(bullet);
+							//PointF BulletPos = bulletvector.at(i)->Move();
+							//Bullet* but = new Bullet(BulletIntercept, posTurret);
 							//Bullet* bullet = new Bullet(BulletIntercept,BulletStart);
 
-							//Line* bulletline = new Line{ BulletIntercept, turretvector.at(i)->_position , color, lind };
+							//Line* bulletline = new Line{ BulletPos , turretvector.at(i)->_position , color, lind };
 							//drawList.push_back(bulletline);
 						
 							//bulletvector.push_back(bulletline);
@@ -464,14 +474,25 @@ void drawTurret() {
 	}
 }
 
-void Bullet(PointF posEnemy,int j) {
+void drawBullet() {
+	
+	Color color = { 0.9f, 0.9f, 0.9f };
+	float lind = 2.0;
 	for (unsigned i = 0; i < bulletvector.size(); i++) {
-		PointF end = bulletvector.at(i)->end();
-		//if the bullet end position is the same as the current enemy position eg a hit of the bullet
-		if (end[0] == posEnemy[0] && end[1] == posEnemy[1]) {
-			//
-			enenemyvector.at(j)->Health(-10);
-		}
+		cout << "going to draw the bullets for real this time" << endl;
+
+		PointF BulletPos = bulletvector.at(i)->Move();
+		cout << "Bullet position : " << endl;
+		cout << BulletPos[0] << "  "  << BulletPos[1] << endl;
+		PointF Bulletpos2 =  bulletvector.at(i)->Move2();
+		Line* bulletline = new Line{ BulletPos , Bulletpos2 , color, lind };
+		drawList.push_back(bulletline);
+		//PointF end = bulletvector.at(i)
+		////if the bullet end position is the same as the current enemy position eg a hit of the bullet
+		//if (end[0] == posEnemy[0] && end[1] == posEnemy[1]) {
+		//	//
+		//	enenemyvector.at(j)->Health(-10);
+		//}
 	}
 }
 //if idle do all the calculations
@@ -486,7 +507,7 @@ void idle(int value) {
 
 	drawEnemy();
 	//make a new turret
-	
+	drawBullet();
 
 	//cal the display function -> draw everything 
 	glutPostRedisplay();

@@ -24,7 +24,6 @@ public:
 private:
 	Color _color;
 	
-	
 
 };
 

@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Bullet">
+    <Position X="9.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAgAABAAAAAAAAAAAAAAAAgAAAQAAA=</HashCode>
+      <FileName>Bullet.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Turret">
+    <Position X="7.5" Y="4" Width="1.5" />
+    <NestedTypes>
+      <Class Name="Turret::Bullet" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Turret.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAEIAAQgEQAAAAAAAAAAAAAAAAAAkACAAAA=</HashCode>
+      <FileName>Turret.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Drawable" Collapsed="true">
+    <Position X="5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAIAAAAAAAAAAAAAIABAAAAAAEAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>drawlist.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Point&lt;T&gt;" Collapsed="true">
+    <Position X="13.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAgAAAAAAAAAAAAAEAAAAAAABwAAAAAAA=</HashCode>
+      <FileName>drawtools.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pixel" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAIAAAAAAIBAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>drawtools.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Line" Collapsed="true">
+    <Position X="5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAACACAIAAAgAAIAAAAQAAAAAAAAAAAAAAQBAAA=</HashCode>
+      <FileName>drawtools.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Circle" Collapsed="true">
+    <Position X="7.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAQAAAAAAAAIAAAAAAIAAAAAAAgAAAAAAAAAgAQAAAA=</HashCode>
+      <FileName>drawtools.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sqaure" Collapsed="true">
+    <Position X="9.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAIAAAgAAIAAAAAAAAAAAAAAgAAAQQIAAA=</HashCode>
+      <FileName>drawtools.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Text" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAABAAAAAIAAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>drawtools.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Enemy" Collapsed="true">
+    <Position X="12" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQACgAAAIEAAAAgAABAAAAAAAAAAAAABAAgBAAAAAA=</HashCode>
+      <FileName>Enemy.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="Color" Collapsed="true">
+    <Position X="12" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAAAAAAAAAAEAAAAIAQARgAAAAAA=</HashCode>
+      <FileName>drawtools.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

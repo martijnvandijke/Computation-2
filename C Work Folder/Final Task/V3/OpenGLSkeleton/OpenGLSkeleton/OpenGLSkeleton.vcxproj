@@ -77,22 +77,26 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Bullet.cpp" />
     <ClCompile Include="drawlist.cpp" />
     <ClCompile Include="drawtools.cpp" />
     <ClCompile Include="Enemy.cpp" />
+    <ClCompile Include="FiredBullet.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Turret.cpp" />
     <ClCompile Include="zooi.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Bullet.h" />
+    <ClInclude Include="FiredBullet.h" />
     <ClInclude Include="Turret.h" />
     <ClInclude Include="drawlist.h" />
     <ClInclude Include="drawtools.h" />
     <ClInclude Include="Enemy.h" />
     <ClInclude Include="glut.h" />
     <ClInclude Include="main.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
