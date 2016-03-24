@@ -10,7 +10,8 @@
 #include "main.h"           // Function declarations and some definitions
 #include "drawtools.h"      // contains all you need to draw stuff
 #include "Enemy.h" 
-#include "Turret.h" 
+#include "Turret.h"
+
 #include <fstream>
 #include <map>
 
@@ -19,15 +20,15 @@ using namespace std;
 std::string keytext;
 DrawList drawList;
 string filename = "test";
-int PlayerHealth = 100;
-int PlayerScore = 0;
-string MapName;
-const int mapSizex = 100;
-const int mapSizey = 100;
-char Map[mapSizex][mapSizey];
-vector<Enemy*> enenemyvector;
-vector<Turret*> turretvector;
-vector<Line*> bulletvector;
+int PlayerHealth = 100;	//	player health
+int PlayerScore = 0;	// player score
+string MapName;		//map name 
+const int mapSizex = 100;	//map size in x direction
+const int mapSizey = 100;	//map size in y direction
+char Map[mapSizex][mapSizey];	//map data
+vector<Enemy*> enenemyvector;	//vector contains all the enemey
+vector<Turret*> turretvector;	//vector contains all the turrets
+vector<Bullet*> bulletvector;	//bullet vector contains calulated intersection point + 
 int start = 0;
 
 //only excuted once
@@ -381,13 +382,23 @@ void drawBullets(PointF posEnemy, int j){
 							cout << "Value of the s'es are :" << endl;
 							cout << x1 << " " << x2 << endl;
 							cout << "jow ik draw the bullet line" << endl;
-							float posx = x1;
-							float posy = dy	;
-							PointF posEnemy = { posx, posy };
-							Line* bulletline = new Line{ posEnemy, turretvector.at(i)->_position , color, lind };
-							drawList.push_back(bulletline);
+							float posx;
+							if (x1 > 0) {
+								float posx = x1;
+							}
+							if (x1 < 0 && x2 > 0) {
+								float posx = x2;
+							}
+							float posy =	posEnemy[1] + 	(dy / 15);
+							//calculate the point where the bullet would intercept the enemy
+							PointF  BulletIntercept = {	(posEnemy[0] + posx) ,  (posy )};
+							PointF BulletStart = posTurret;
+							//Bullet* bullet = new Bullet(BulletIntercept,BulletStart);
+
+							//Line* bulletline = new Line{ BulletIntercept, turretvector.at(i)->_position , color, lind };
+							//drawList.push_back(bulletline);
 						
-							bulletvector.push_back(bulletline);
+							//bulletvector.push_back(bulletline);
 							//update track id of the turret
 							turretvector.at(i)->Aim(enenemyvector.at(j)->_id);
 						//}

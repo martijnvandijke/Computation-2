@@ -34,6 +34,8 @@ private :
 
 //int _id;
 
+PointF Move();
+
 };
 
 #endif

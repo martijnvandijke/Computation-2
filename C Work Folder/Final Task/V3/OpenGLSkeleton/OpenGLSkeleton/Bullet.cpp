@@ -1,11 +1,9 @@
 #include "Bullet.h"
+#include "Bullet.h"
 
 
-int Count = 0;
-
-Bullet::Bullet(Line* bulletline)
-	:_bulletline{ bulletline }
+Bullet::Bullet(PointF InterceptPos, PointF beginPos, )
+	: 
 {
-	Count++;
-	_id = Count;
+
 }

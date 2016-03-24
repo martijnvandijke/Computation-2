@@ -29,6 +29,8 @@ PointF Enemy::Value() {
 	return  _begin;
 }
 
+
+
 PointF Enemy::Move(int x, int y)
 {
 	if (x == 0 && y == 0) {

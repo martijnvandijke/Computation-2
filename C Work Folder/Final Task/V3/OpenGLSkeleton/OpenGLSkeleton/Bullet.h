@@ -5,14 +5,14 @@
 
 #include "drawtools.h"
 
+class : Bullet {
 
-class Bullet
-{
-public: Bullet(Line* bulletline);
+public: Bullet(PointF InterceptPos, PointF beginPos, );
 
-public:
-	int _id;
-	Line* _bulletline;
+
+
 };
+
+
 
 #endif
