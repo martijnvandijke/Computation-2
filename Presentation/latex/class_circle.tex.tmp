@@ -1,0 +1,35 @@
+\hypertarget{class_circle}{}\section{Circle Class Reference}
+\label{class_circle}\index{Circle@{Circle}}
+
+
+Inheritance diagram for Circle\+:
+% FIG 0
+
+
+Collaboration diagram for Circle\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Circle} (const \hyperlink{class_point}{PointF} \&position, const \hyperlink{struct_color}{Color} \&color, float radius, int segments)\hypertarget{class_circle_aebd221fdf78d39b6901a66890d85fbb4}{}\label{class_circle_aebd221fdf78d39b6901a66890d85fbb4}
+
+\item 
+void {\bfseries draw} () const  override\hypertarget{class_circle_ac80d2faf29eab56f1a5c041424a07db8}{}\label{class_circle_ac80d2faf29eab56f1a5c041424a07db8}
+
+\item 
+void {\bfseries print} () const  override\hypertarget{class_circle_a1410f18d9caec03103d23c162ccce1d1}{}\label{class_circle_a1410f18d9caec03103d23c162ccce1d1}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 193 of file drawtools.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Open\+G\+L\+Skeleton/\+Open\+G\+L\+Skeleton/drawtools.\+h\item 
+Open\+G\+L\+Skeleton/\+Open\+G\+L\+Skeleton/drawtools.\+cpp\end{DoxyCompactItemize}
