@@ -42,7 +42,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
     <CodeAnalysisRuleSet>C:\Program Files (x86)\Microsoft Visual Studio 14.0\Team Tools\Static Analysis Tools\Rule Sets\NativeRecommendedRules.ruleset</CodeAnalysisRuleSet>
-    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -54,10 +54,8 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <IntrinsicFunctions>true</IntrinsicFunctions>
-      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
-      <PreprocessToFile>true</PreprocessToFile>
-      <EnablePREfast>true</EnablePREfast>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <EnablePREfast>false</EnablePREfast>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -88,15 +86,15 @@
     <ClCompile Include="Enemy.cpp" />
     <ClCompile Include="FiredBullet.cpp" />
     <ClCompile Include="main.cpp">
-      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</IntrinsicFunctions>
-      <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Speed</FavorSizeOrSpeed>
-      <PreprocessToFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</PreprocessToFile>
+      <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Neither</FavorSizeOrSpeed>
+      <PreprocessToFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</PreprocessToFile>
     </ClCompile>
     <ClCompile Include="Turret.cpp" />
     <ClCompile Include="zooi.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="FiredBullet.h" />
+    <ClInclude Include="resource.h" />
     <ClInclude Include="Turret.h" />
     <ClInclude Include="drawlist.h" />
     <ClInclude Include="drawtools.h" />
@@ -107,6 +105,12 @@
   <ItemGroup>
     <None Include="ClassDiagram.cd" />
     <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="OpenGLSkeleton.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\icon.ico" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

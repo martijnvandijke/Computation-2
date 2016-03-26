@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?><DEFECTS><DEFECT>
+    <SFA>
+      <FILEPATH>d:\computation-2\c work folder\final task\v3\openglskeleton\openglskeleton\</FILEPATH>
+      <FILENAME>glut.h</FILENAME>
+      <LINE>146</LINE>
+      <COLUMN>28</COLUMN>
+    </SFA>
+    <DEFECTCODE>28251</DEFECTCODE>
+    <DESCRIPTION>Inconsistent annotation for 'exit': this instance has no annotations. See c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdlib.h(50). </DESCRIPTION>
+    <FUNCTION>exit</FUNCTION>
+    <DECORATED>exit</DECORATED>
+    <FUNCLINE>146</FUNCLINE>
+    <PATH />
+  </DEFECT></DEFECTS>

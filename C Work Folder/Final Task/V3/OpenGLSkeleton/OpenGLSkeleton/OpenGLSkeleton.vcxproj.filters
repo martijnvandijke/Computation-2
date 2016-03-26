@@ -55,9 +55,18 @@
     <ClInclude Include="FiredBullet.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram.cd" />
     <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="OpenGLSkeleton.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\icon.ico" />
   </ItemGroup>
 </Project>
