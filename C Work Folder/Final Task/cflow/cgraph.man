@@ -1,0 +1,97 @@
+CGRAPH(1)                 USER COMMANDS                   CGRAPH(1)
+
+
+
+NAME
+     cgraph -- extract call graphs from c sources
+
+SYNOPSIS
+     cgraph [-traditional] [-ansi] [-gnu] [-gcc] [-synch] [file...]
+
+DESCRIPTION
+     cgraph reads the files given on the command line (or standard input if
+     none given) and outputs labeled directed graphs, representing c language
+     call relations.
+
+     Each line of the output is of the form:
+	parent	child	linenumber	filename
+     meaning that child is called from parent at that line in that file.
+     The fields are separated by tabs.
+
+     The child "-" signals a definition of parent.
+
+     cgraph is meant to be used together with dfs(1) in pipes.
+
+OPTIONS
+     The following options can be used to select the set of keywords recognized:
+
+     -traditional	for K&R keywords
+     -ansi		for ANSI keywords
+     -gnu, -gcc		for GCC keywords
+
+    There is also an option to allow re-synchronization of braces:
+
+     -synch		assumes that a closing brace in the first column
+			signals the end of a function body.
+
+    This is an attempt to correct possible brace mismatches due to macro
+    expansion and conditional code.
+    See LIMITATIONS below.
+
+EXAMPLE
+     As an example, given the following input file (named file.c)
+         /*
+         * a version of cat
+         */
+
+         #define ALLOC(n)	((char *) malloc(n*sizeof(char)))
+
+         main()
+         {
+          char *s=ALLOC(BUFSIZ);
+          while (fgets(s,BUFSIZ,stdin))
+           fputs(s,stdout);
+         }
+
+     the command:
+          cgraph file.c
+
+     produces the output
+          ALLOC	-	5	file.c
+          ALLOC	malloc	5	file.c
+          main	-	7	file.c
+          main	ALLOC	9	file.c
+          main	fgets	10	file.c
+          main	fputs	11	file.c
+
+    which is suitable as input to dfs(1).
+
+SEE ALSO
+     cflow(1), dfs(1)
+
+DIAGNOSTICS
+     Complains about bad options. 
+     Complains about unknown files.
+     Complains about lack of memory to save names.
+     Does not complain about syntax errors.
+     Warns about re-synchronization.
+     Warns about apparent brace mismatch and suggests the use of -synch.
+     Exits with status 1 if errors are found, 0 otherwise.
+
+LIMITATIONS
+     Because cgraph performs a purely lexical scan of c sources, certain
+     syntactical constructs cannot be recognized and so:
+     - function declarations inside function bodies are mistaken for calls;
+     - macro parameters used as functions, as in #define apply(f) f(x,y),
+       generate absolute call references;
+     - pre-processor directives are not acted upon (see below);
+     - syntax errors in general are handled very naively and not reported.
+     Trigraphs are not recognized.
+     Finally, because cgraph does not understand pre-processor directives,
+     it can be confused by unbalanced braces inside macros and conditional code.
+     The -synch option tries to minimize the damage caused by this confusion.
+
+AUTHOR
+     Luiz Henrique de Figueiredo (lhf@visgraf.impa.br)
+     for the Free Software Foundation and the GNU effort
+     Last change: 28 Nov 89

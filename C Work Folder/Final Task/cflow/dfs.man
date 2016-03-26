@@ -1,0 +1,120 @@
+DFS(1)                 USER COMMANDS                   DFS(1)
+
+
+
+NAME
+     dfs -- perform rooted depth-first searches on directed graphs
+
+SYNOPSIS
+     dfs [-cimnrs] [-d depth] [-f rootfile] [-g graphfile] [root...]
+
+DESCRIPTION
+     dfs is a tool to help analyze dependency information, as abstracted
+     in terms of labeled directed graphs.
+
+     dfs reads a graph description from a file and outputs maximal path
+     trees to standard output, representing multi-level dependency.
+
+     Each line in a graph description file describes an edge and has the form
+ 	vertex-a	vertex-b	label (comment)
+     These fields are separated by whitespace are all optional.
+     If present, a comment extends to the end of the line (whitespace included).
+     Vertices equal to "-" are interpreted as absent.
+     Whether the edge is from a to b or from b to a is controlled by -r.
+     Vertices are said to be defined if there is an edge from it.
+
+     Each line of output is formatted as follows:
+     - a decimal number for cross reference, followed by a colon and a space
+       (optional, but always present in definitions);
+     - a suitable number of tabs indicating the depth (path length);
+     - a decimal number indicating the depth (optional);
+     - the name of a vertex;
+     - a tag (see below);
+     - a tab and a comment (optional).
+
+     Tags are interpreted as follows:
+     :	this is a definition and children follow.
+     .	this is a definition and there are no children to follow (a leaf).
+     +	this is a definition but it is too deep to show children.
+     *	this is an external name (one for which there is no definition).
+     =n	see definition in line labeled n.
+
+OPTIONS
+     The following options are interpreted by dfs:
+
+     -c     Show comments.
+	    By default, comments are not shown.
+
+     -d n   Cut the tree at depth n.
+	    By default, this is a very large number.
+
+     -f r   Read roots, one per line, from file r.
+	    By default, roots are only read from the command line.
+	    If no file and no names are given on the command line,
+	    all names are used as roots and processed in alphabetical order.
+	    The special name "main" is processed first, in this case.
+
+     -g g   Read graph, one edge per line, from file g.
+	    By default, the graph is read from standard input.
+
+     -i     Include numerical indentation level indicators.
+	    These can be useful when visually scanning the output.
+            By default, numerical indicators are not shown.
+
+     -m     Allows multiple edges.
+            By default, multiple edges are replaced by single edges.
+
+     -n     Number all output lines for cross reference.
+            By default, only lines containing definitions are numbered.
+
+     -r     Interpret edges in reverse.
+	    By default, edges go from the first vertex to the second vertex.
+
+     -s     Be silent about missing names.
+	    By default, complains about missing names.
+
+EXAMPLE
+     As an example, given the following input file (called file.g)
+	  main	-	<file.c 4>
+	  main	f	<file.c 7>
+	  main	g	<file.c 8>
+	  main	h	<file.c 9>
+	  f	-	<file.c 10>
+	  f	h	<file.c 11>
+	  g	-	<file.c 14>
+	  -	h	h is an external function
+
+     the command:
+          dfs -c -d 1 -g file.g
+
+     produces the output
+          1:	main:	<file.c 4>
+          		f+	<file.c 7>
+          		g.	<file.c 8>
+          		h*	<file.c 9>
+          2:	f:	<file.c 10>
+          		h*	<file.c 11>
+          	g.	<file.c 14>
+          	h*	h is an external function
+          	main=1	<file.c 4>
+
+     When the indentation level becomes too deep, the -e option of
+     pr(1) can be used to compress the tab expansion to something
+     less than every eight spaces.
+
+SEE ALSO
+     cflow(1), cgraph(1)
+
+DIAGNOSTICS
+     Complains about bad options. 
+     Complains about unknown names and files.
+     Complains about lack of memory to build graph and/or to sort names.
+     Exits with status 1 if errors are found, 0 otherwise.
+
+LIMITATIONS
+     For options -d, -f and -g, only the last value given is effective.
+
+AUTHOR
+     Luiz Henrique de Figueiredo (lhf@visgraf.impa.br)
+     for the Free Software Foundation and the GNU effort
+     Last change: 21 Nov 89

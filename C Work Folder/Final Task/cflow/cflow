@@ -1,0 +1,82 @@
+#! /bin/sh
+
+# cflow
+# extract call graphs from sources and generate flow trees
+# Luiz Henrique de Figueiredo (lhf@visgraf.impa.br)
+# for the Free Software Foundation and the GNU effort
+# 23 Nov 89
+
+FFLAGS=
+BFLAGS=
+DIR=../bin
+#DIR=/usr/lib
+TMP=/usr/tmp/cf.$$
+GRAPH=$TMP.g
+
+trap "rm -f $TMP.?; kill $$" 1 2 3
+echo "" >$GRAPH
+
+while [ "$1" != "" ]
+do
+	case "$1" in
+	-c)
+		BFLAGS="$BFLAGS $1"
+		;;
+	-d*)
+		BFLAGS="$BFLAGS $1"
+		;;
+	-i*)
+		echo cflow: cannot handle -i yet.
+		exit 1;
+		;;
+	-r)
+		BFLAGS="$BFLAGS $1"
+		;;
+	-traditional)
+		FFLAGS="$FFLAGS $1"
+		;;
+	-ansi)
+		FFLAGS="$FFLAGS $1"
+		;;
+	-gcc)
+		FFLAGS="$FFLAGS $1"
+		;;
+	-gnu)
+		FFLAGS="$FFLAGS $1"
+		;;
+	-synch)
+		FFLAGS="$FFLAGS $1"
+		;;
+	*.c)
+		$DIR/cgraph $FFLAGS $1 >>$GRAPH
+		;;
+	*.f)
+		echo cflow: cannot handle fortran files yet.
+		;;
+	*.l)
+		echo cflow: cannot handle lex files yet.
+		;;
+	*.i)
+		$DIR/cgraph $FFLAGS $1 >>$GRAPH
+		;;
+	*.o)
+		echo cflow: cannot handle object files yet.
+		;;
+	*.p)
+		echo cflow: cannot handle pascal files yet.
+		;;
+	*.s)
+		echo cflow: cannot handle asm files yet.
+		;;
+	*.y)
+		echo cflow: cannot handle yacc files yet.
+		exit 1;
+		;;
+	*)
+		echo cflow: do not know how to handle $1.
+		;;
+	esac
+	shift
+done
+$DIR/dfs $BFLAGS <$GRAPH
+rm -f $TMP.?
