@@ -21,6 +21,12 @@ FiredBullet::FiredBullet(PointF destination, PointF begin, PointF current, int s
 	cout << "begin x:"<< _begin[0] << " begin y:" << _begin[1] << " destination x:" << _destination[0] << "   destination y:" << _destination[1] << endl;
 }
 
+FiredBullet::~FiredBullet()
+{
+	
+
+}
+
 //update the poistion of the bullet
 PointF FiredBullet::Move()
 {

@@ -6,7 +6,7 @@
 
 class FiredBullet {
 public: FiredBullet(PointF destination, PointF begin, PointF current, int speed);
-
+		~FiredBullet();
 		PointF Move();
 		PointF Move2();
 		void Update(PointF begin);
@@ -18,5 +18,8 @@ public:
 	int _speed;
 	int _id;
 };
+
+
+
 
 #endif

@@ -20,10 +20,10 @@
 #include "FiredBullet.h"	//get the bulelt class
 #include <fstream>	
 
-#define CRTDBG_MAP_ALLOC
-#include <stdlib.h>
-//#include <vld.h> 
-#include <crtdbg.h>
+//#define CRTDBG_MAP_ALLOC
+//#include <stdlib.h>
+////#include <vld.h> 
+//#include <crtdbg.h>
 
 //global variables and defiinitions
 using namespace std;
@@ -75,10 +75,10 @@ void readFile(string filename) {
 	ifstream fp;
 	MapName = filename;
 	int CountLines = 0;
-	filename = "test.txt";
+	filename = filename + ".txt";
 	fp.open(filename); // , ios::in);
 	if (fp.fail()) {
-		cout << "Erro parsing the file \n Please try again" << endl;
+		cout << "Error parsing with the file \nPlease try again" << endl;
 		return;
 	}
 
@@ -229,7 +229,7 @@ void drawEnemy() {
 
 				//if the distnace is smaller tne the radius of the object
 				if ( dx < 100 &&	dy < 100	) {
-					enenemyvector.at(i)->Health(5);;
+					enenemyvector.at(i)->Health(2);;
 					cout << "Damaged an enemy" << endl;
 					PlayerScore = PlayerScore + 10;
 				}
@@ -239,7 +239,7 @@ void drawEnemy() {
 			if (enenemyvector.at(i)->_health > 0) {
 				int curx = curpos[0] /20;
 				int cury = curpos[1] / 20;
-				cout << curx << cury << endl;
+				//cout << curx << cury << endl;
 				// get the map character that is 20 pixels further
 				char nextCharXplus = Map[(curx+1)][cury];
 				char nextCharYplus = Map[curx][(cury + 1)];
@@ -427,7 +427,6 @@ void drawBullets(PointF posEnemy, int j){
 							//make a new bullet with the corresponding data
 							FiredBullet* bullet = new FiredBullet(BulletIntercept,posTurret,posTurret,bulletSpeed);
 							bulletvector.push_back(bullet);
-
 							//update track id of the turret
 							turretvector.at(i)->Aim(enenemyvector.at(j)->_id);
 
@@ -553,7 +552,7 @@ void idle(int value) {
 	glutPostRedisplay();
 
 	if (PlayerHealth > 0 ){
-		glutTimerFunc(100, idle, 100);
+		glutTimerFunc(100, idle, 50);
 	}
 	else {
 		cout << "You have lot the game with a score of :" << PlayerScore << endl;
