@@ -20,6 +20,7 @@ void Enemy::Health(int i) {
 }
 
 
+
 PointF Enemy::Value() {
 	return  _begin;
 }

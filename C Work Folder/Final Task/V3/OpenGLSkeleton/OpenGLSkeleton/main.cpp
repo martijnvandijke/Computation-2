@@ -213,18 +213,25 @@ void drawEnemy() {
 			//delete the enemy from the enemy vector
 			enenemyvector.erase((enenemyvector.begin() + i));
 		}
+
 		//enemy is still in the screen
 		else {
 			PointF curpos = enenemyvector.at(i)->_current;
 
-			//decrease the enemy health 
+			//decrease the enemy health if a bullet hits the enemy
 			for (unsigned j = 0; j < bulletvector.size(); j++) {
 				PointF Bullet = bulletvector.at(j)->_current;
-
+				//calulate the diffrence in position
+				float dx = abs( curpos[0] - Bullet[0]);
+				float dy = abs( curpos[1] - Bullet[1]);
+				cout << "dx :" << dx << "dy:" << dy << endl;
 				//bullet and enemy are at the same poition
-				if (Bullet[0] == curpos[0] && Bullet[1] == curpos[1]) {
-					enenemyvector.at(i)->Health(10);;
+
+				//if the distnace is smaller tne the radius of the object
+				if ( dx < 100 &&	dy < 100	) {
+					enenemyvector.at(i)->Health(5);;
 					cout << "Damaged an enemy" << endl;
+					PlayerScore = PlayerScore + 10;
 				}
 
 			}
@@ -247,6 +254,7 @@ void drawEnemy() {
 					delete enenemyvector.at(i);
 					//delete the enemy from the enemy vector
 					enenemyvector.erase((enenemyvector.begin() + i));
+					PlayerHealth = PlayerHealth - 30;
 					continue;
 				}
 				//once the end line is insight
@@ -341,7 +349,7 @@ void drawEnemy() {
 			{
 					cout << "Deleted an enenemy" << endl;
 					//delete the enemy
-					delete enenemyvector.at(i);
+					delete enenemyvector[i];
 					//delete the enemy from the enemy vector
 					enenemyvector.erase((enenemyvector.begin() + i));
 			}
@@ -543,8 +551,16 @@ void idle(int value) {
 
 	//cal the display function -> draw everything 
 	glutPostRedisplay();
+
+	if (PlayerHealth > 0 ){
+		glutTimerFunc(100, idle, 100);
+	}
+	else {
+		cout << "You have lot the game with a score of :" << PlayerScore << endl;
+		exit(0);
+	}
 	//cal this function agains
-	glutTimerFunc(100, idle, 100);
+	
 }
 
 
