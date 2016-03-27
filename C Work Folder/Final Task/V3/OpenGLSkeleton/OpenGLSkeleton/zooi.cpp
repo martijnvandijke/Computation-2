@@ -1,3 +1,52 @@
+							//float posy = posEnemy[1] + 	(dy / 15);
+							//PointF BulletStart = { posTurret[0], (posTurret[1]) };
+							//PointF BulletPos = bulletvector.at(i)->Move();
+							//Bullet* but = new Bullet(BulletIntercept, posTurret);
+							//Bullet* bullet = new Bullet(BulletIntercept,BulletStart);
+
+							//Line* bulletline = new Line{ BulletPos , turretvector.at(i)->_position , color, lind };
+							//drawList.push_back(bulletline);
+						
+							//bulletvector.push_back(bulletline);
+
+
+
+						//}
+						//no enemy in track
+						//if(aimingId == 0) {
+						//	cout << "jow ben heir" << endl;
+						//	//get current pos of the first enemy
+						//	PointF posEnemy = enenemyvector.front()->_current;
+
+
+						//	Line* bulletline = new Line{ posEnemy, turretvector.at(i)->_position , color, lind };
+						//	drawList.push_back(bulletline);
+						//
+						//	bulletvector.push_back(bulletline);
+						//	//update track id of the turret
+						//	turretvector.at(i)->Aim(enenemyvector.front()->_id);
+						//}
+
+
+
+
+
+
+
+
+//float dy = abs(posEnemy[1] - posTurret[1]);
+//float dx = abs(posEnemy[0] - posTurret[0]);
+//PointF posTurret = turretvector.at(i)->_position;
+
+
+
+
+
+
+
+
+
+
 //if (nextCharYplus == '/' && Map[(curx + 2)][cury] == '/' && Map[(curx + 3)][cury] == '/') {
 //	PointF posEnemy = enenemyvector.at(i)->Move(0, 1);
 //	cout << "Moving enemy up" << endl;
