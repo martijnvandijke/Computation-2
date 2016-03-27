@@ -3,9 +3,12 @@ cd /D %~dp0
 
 del /s /f *.ps *.dvi *.aux *.toc *.idx *.ind *.ilg *.log *.out *.brf *.blg *.bbl refman.pdf
 
-latex refman.tex
+pdflatex refman
 echo ----
 makeindex refman.idx
+echo ----
+pdflatex refman
+
 setlocal enabledelayedexpansion
 set count=8
 :repeat
@@ -17,11 +20,11 @@ set /a count-=1
 if !count! EQU 0 goto :skip
 
 echo ----
-latex refman.tex
+pdflatex refman
 goto :repeat
 :skip
 endlocal
 makeindex refman.idx
-latex refman.tex
-dvips -o refman.ps refman.dvi
-gswin32c -q -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -sOutputFile=refman.pdf -c save pop -f refman.ps
+pdflatex refman
+cd /D %Dir_Old%
+set Dir_Old=
