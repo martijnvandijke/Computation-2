@@ -22,6 +22,7 @@
 // Use PointF for a point with float values
 // Use PointI for a point with int values
 //
+using namespace std;
 
 template<typename T>
 class Point
@@ -234,10 +235,10 @@ private :
 class Text : public Drawable
 {
 public:
-    Text(const std::string& str);
+    Text(const string str, Color color, PointF Pos);
 
     // Draw Line to the screen
-    void draw() const override;
+    void draw()	const override;
 
     // Print Line in EDIF++ format
     void print() const override;
@@ -245,8 +246,11 @@ public:
 	// You can add more public members here, if needed
 
 private:
-	std::string _str;
-
+	string _string;
+	Color _color;
+	PointF _Position;
+	int _x;
+	int _y;
 	// You can add more private members here, if needed
 };
 

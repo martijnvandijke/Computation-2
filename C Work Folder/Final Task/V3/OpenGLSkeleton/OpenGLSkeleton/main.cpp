@@ -8,6 +8,7 @@
 #include <iostream>
 #include <string>
 #include "glut.h"           // glut header file. Never include glut before stdlib.h!
+#include <GL/glut.h>
 #include <iostream>
 #include <list>
 #define _USE_MATH_DEFINES   // Signal math.h that we would like defines like M_PI
@@ -251,7 +252,7 @@ void drawEnemy() {
 				//if the enemy is at the end of the defensen
 				if (Map[(curx)][cury] == 'E') {
 					//decrease the player health
-					PlayerHealth = PlayerHealth - 10;
+					//PlayerHealth = PlayerHealth - 10;
 					//delete the enemy
 					delete enenemyvector.at(i);
 					//delete the enemy from the enemy vector
@@ -262,7 +263,6 @@ void drawEnemy() {
 				//once the end line is insight
 				if (Map[(curx + 2)][cury] == 'E') {
 					PointF posEnemy = enenemyvector.at(i)->Move(1, 0);
-					cout << "Moving enemy right" << endl;
 					enenemyvector.at(i)->Update(posEnemy);
 					Circle* cirle = new Circle(posEnemy, color, r, seg);
 					drawList.push_back(cirle);
@@ -337,9 +337,9 @@ void drawEnemy() {
 					continue;
 				}
 				else {
-					cout << "error" << endl;
-					cout << nextCharXplus << nextCharYplus << nextCharXmin << nextCharYmin << endl;
-					cout << curx << "  " << cury << endl;
+					cout << "Error unable to move the enemy" << endl;
+					//cout << nextCharXplus << nextCharYplus << nextCharXmin << nextCharYmin << endl;
+					//cout << curx << "  " << cury << endl;
 					//set = 0;
 					continue;
  				}
@@ -357,6 +357,8 @@ void drawEnemy() {
 		}
 	}
 }
+
+
 
 //caclulate the interscet point of the bullet to be fired and the enenemy ->nees some debugging
 void drawBullets(PointF posEnemy, int j){
@@ -495,19 +497,8 @@ void drawTurret() {
 }
 
 
-void print(int x, int y, int z, char *string)
-{
-	//set the position of the text in the window using the x and y coordinates
-	glRasterPos2f(x, y);
-	//get the length of the string to display
-	int len = (int)strlen(string);
 
-	//loop to display character by character
-	for (int i = 0; i < len; i++)
-	{
-		glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24, string[i]);
-	}
-};
+
 
 //draw bullet's function
 void drawBullet() {
@@ -550,13 +541,54 @@ void drawBullet() {
 	}
 }
 
+void printtext(int x, int y, string String)
+{
+	//(x,y) is from the bottom left of the window
+	glMatrixMode(GL_PROJECTION);
+	glPushMatrix();
+	glLoadIdentity();
+	glOrtho(0, windowWidth, 0, windowHeight, -1.0f, 1.0f);
+	glMatrixMode(GL_MODELVIEW);
+	glPushMatrix();
+	glLoadIdentity();
+	glPushAttrib(GL_DEPTH_TEST);
+	glDisable(GL_DEPTH_TEST);
+	glRasterPos2i(x, y);
+	for (int i = 0; i<String.size(); i++)
+	{
+		glutBitmapCharacter(GLUT_BITMAP_9_BY_15, String[i]);
+	}
+	glPopAttrib();
+	glMatrixMode(GL_PROJECTION);
+	glPopMatrix();
+	glMatrixMode(GL_MODELVIEW);
+	glPopMatrix();
+}
+
+void drawtext(std::string keytext, int x, int y) {
+
+		//cout << "jow ik ga ze uitrpinten" << endl;
+		glRasterPos2f(900, 100);
+		glColor3f(0, 0, 0);
+	
+		for (char& c : keytext)
+		{
+			//cout << c << endl;
+			glutBitmapCharacter(GLUT_BITMAP_HELVETICA_18, c);
+		}
+
+	}
+
+
 //if idle do all the calculations
 void idle(int value) {
-
+	string std = "test";
+	printtext(600, 600, std);
+	//drawtext("test", 600, 700);
 	//make the grid
 	raster();
 	//always make a turrent before the enemy
-
+	//glutBitmapCharacter(GLUT_BITMAP_HELVETICA_18, 't');
 	//draw the turret's
 	drawTurret();
 
@@ -568,11 +600,7 @@ void idle(int value) {
 	//cal the display function -> draw everything 
 	glutPostRedisplay();
 
-	//print(800, 100, 1, "test of dit werkt");
-	//glRasterPos2i(100, 120);
-	//glColor4f(0.0f, 0.0f, 1.0f, 1.0f);
-	//glutBitmapString(GLUT_BITMAP_HELVETICA_18, "text to render");
-
+	
 	if (PlayerHealth > 0 ){
 		glutTimerFunc(100, idle, 50);
 	}
@@ -583,6 +611,7 @@ void idle(int value) {
 	//cal this function agains
 	
 }
+
 
 
 //---------------------------------------------------------------------------

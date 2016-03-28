@@ -7,5 +7,6 @@ var searchData=
   ['drawbullet',['drawBullet',['../main_8cpp.html#a43d711f5646009700e97e8cce499d5fc',1,'drawBullet():&#160;main.cpp'],['../main_8h.html#a70905cc5bc8c0f833efdf0e0a5421ea9',1,'drawBullet(PointF posEnemy, int i):&#160;main.h']]],
   ['drawbullets',['drawBullets',['../main_8cpp.html#ac38de32b006bf30195d8818e3a7a194e',1,'drawBullets(PointF posEnemy, int j):&#160;main.cpp'],['../main_8h.html#ab2fa1a17f837164cf85183f1dd0745eb',1,'drawBullets(PointF posEnemy, int i):&#160;main.cpp']]],
   ['drawenemy',['drawEnemy',['../main_8cpp.html#a1cf88fce392d9a574a5bc8164f67c058',1,'drawEnemy():&#160;main.cpp'],['../main_8h.html#a1cf88fce392d9a574a5bc8164f67c058',1,'drawEnemy():&#160;main.cpp']]],
+  ['drawtext',['drawtext',['../main_8cpp.html#ab654aa8bdc3e7793b056f810dbb7334a',1,'main.cpp']]],
   ['drawturret',['drawTurret',['../main_8cpp.html#a1e9bebd8dfdc2136dba6a711e43a5fa9',1,'drawTurret():&#160;main.cpp'],['../main_8h.html#a1e9bebd8dfdc2136dba6a711e43a5fa9',1,'drawTurret():&#160;main.cpp']]]
 ];

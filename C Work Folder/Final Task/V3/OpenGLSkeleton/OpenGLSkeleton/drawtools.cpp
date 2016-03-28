@@ -12,7 +12,7 @@
 
 #include <iostream>
 #include <iomanip>
-
+#include <string.h>
 #include "glut.h"
 #include "drawtools.h"
 
@@ -166,13 +166,29 @@ void Sqaure::print() const
 
 }
 
-Text::Text(const std::string & str)
+
+
+
+Text::Text(const string string, Color color, PointF Pos)
+	: _string{string},
+	_color{color},
+	_Position{Pos}
+
 {
 
 }
 
 void Text::draw() const
 {
+	//cout << "ga text printen" << endl;
+	glColor3f(_color[0], _color[1], _color[2]);
+	glRasterPos2f(_x, _y);
+	string text = _string;
+	for (char& c : text)
+	{	
+		//cout << c << endl;
+		glutBitmapCharacter(GLUT_BITMAP_HELVETICA_18, c	);
+	}
 }
 
 void Text::print() const

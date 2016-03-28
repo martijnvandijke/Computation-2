@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="1">
+    <root name="D:/Computation-2/C Work Folder/Final Task/V3/OpenGLSkeleton/OpenGLSkeleton"/>
+    <defines>
+        <define name="compu test2"/>
+    </defines>
+    <paths>
+        <dir name="D:/Computation-2/C Work Folder/Final Task/V3/OpenGLSkeleton/OpenGLSkeleton"/>
+    </paths>
+    <libraries>
+        <library>gnu</library>
+        <library>windows</library>
+    </libraries>
+</project>

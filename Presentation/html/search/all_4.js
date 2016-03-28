@@ -10,6 +10,7 @@ var searchData=
   ['drawlist',['DrawList',['../drawlist_8h.html#a4dd7049762619e3d87a40c5305bbbfb2',1,'DrawList():&#160;drawlist.h'],['../main_8cpp.html#a83d31e00f72d27dad682e1ca6c120f9c',1,'drawList():&#160;main.cpp']]],
   ['drawlist_2ecpp',['drawlist.cpp',['../drawlist_8cpp.html',1,'']]],
   ['drawlist_2eh',['drawlist.h',['../drawlist_8h.html',1,'']]],
+  ['drawtext',['drawtext',['../main_8cpp.html#ab654aa8bdc3e7793b056f810dbb7334a',1,'main.cpp']]],
   ['drawtools_2ecpp',['drawtools.cpp',['../drawtools_8cpp.html',1,'']]],
   ['drawtools_2eh',['drawtools.h',['../drawtools_8h.html',1,'']]],
   ['drawturret',['drawTurret',['../main_8cpp.html#a1e9bebd8dfdc2136dba6a711e43a5fa9',1,'drawTurret():&#160;main.cpp'],['../main_8h.html#a1e9bebd8dfdc2136dba6a711e43a5fa9',1,'drawTurret():&#160;main.cpp']]]

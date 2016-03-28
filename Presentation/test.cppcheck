@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="1">
+    <includedir>
+        <dir name="D:/Computation-2/C Work Folder/Final Task/V3/OpenGLSkeleton/OpenGLSkeleton/"/>
+    </includedir>
+    <defines>
+        <define name="compu"/>
+    </defines>
+    <paths>
+        <dir name="D:/Computation-2/C Work Folder/Final Task/V3/OpenGLSkeleton"/>
+    </paths>
+    <libraries>
+        <library>windows</library>
+    </libraries>
+</project>
