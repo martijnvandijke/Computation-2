@@ -24,6 +24,7 @@ FiredBullet::FiredBullet(PointF destination, PointF begin, PointF current, int s
 FiredBullet::~FiredBullet()
 {
 	
+	//delete FiredBullet;
 
 }
 

@@ -20,6 +20,7 @@
 #include "FiredBullet.h"	//get the bulelt class
 #include <fstream>	
 
+
 //#define CRTDBG_MAP_ALLOC
 //#include <stdlib.h>
 ////#include <vld.h> 
@@ -199,7 +200,7 @@ void makeEnemy() {
 //draw the enemy's + make alogirthm
 void drawEnemy() {
 	Color color = { 0.2f, 0.1f, 0.8f };
-	float r;
+	float r = 10;
 	//number of triganles that need to be drawn
 	int seg = 20;
 	for (unsigned i = 0; i<enenemyvector.size(); i++) {
@@ -232,6 +233,7 @@ void drawEnemy() {
 					enenemyvector.at(i)->Health(2);;
 					cout << "Damaged an enemy" << endl;
 					PlayerScore = PlayerScore + 10;
+
 				}
 
 			}
@@ -262,7 +264,6 @@ void drawEnemy() {
 					PointF posEnemy = enenemyvector.at(i)->Move(1, 0);
 					cout << "Moving enemy right" << endl;
 					enenemyvector.at(i)->Update(posEnemy);
-					r = enenemyvector.at(i)->_health;
 					Circle* cirle = new Circle(posEnemy, color, r, seg);
 					drawList.push_back(cirle);
 					drawBullets(posEnemy, i);
@@ -425,11 +426,13 @@ void drawBullets(PointF posEnemy, int j){
 							cout << "x : " << posEnemy[0] << "  y:" << posEnemy[1] << endl;
 							cout << "x:" << BulletIntercept[0] << "   y: " << BulletIntercept[1] << endl;
 							//make a new bullet with the corresponding data
+							//int Bulletid = bulletvector.back()->_id + 1;
+
 							FiredBullet* bullet = new FiredBullet(BulletIntercept,posTurret,posTurret,bulletSpeed);
 							bulletvector.push_back(bullet);
 							//update track id of the turret
 							turretvector.at(i)->Aim(enenemyvector.at(j)->_id);
-
+							
 
 
 						
@@ -492,6 +495,19 @@ void drawTurret() {
 }
 
 
+void print(int x, int y, int z, char *string)
+{
+	//set the position of the text in the window using the x and y coordinates
+	glRasterPos2f(x, y);
+	//get the length of the string to display
+	int len = (int)strlen(string);
+
+	//loop to display character by character
+	for (int i = 0; i < len; i++)
+	{
+		glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24, string[i]);
+	}
+};
 
 //draw bullet's function
 void drawBullet() {
@@ -505,10 +521,11 @@ void drawBullet() {
 		// if bullet is out of screen 
 		if (BulletPos[0] > windowWidth || BulletPos[1] > windowHeight || BulletPos[0] < 0 || BulletPos[1] < 0) {
 			//delete the bullet 
-			delete bulletvector.at(i);
+			//int bulletID = bulletvector.at(i)->_id;
+			//delete bulletvector.at(i);
 			//delete the bulelt from the vector
+			delete bulletvector[i];
 			bulletvector.erase(bulletvector.begin() + i);	
-			PlayerScore = PlayerScore + 100;
 			cout << "Deleted an bullet" << endl;
 		}
 		else {
@@ -551,6 +568,11 @@ void idle(int value) {
 	//cal the display function -> draw everything 
 	glutPostRedisplay();
 
+	//print(800, 100, 1, "test of dit werkt");
+	//glRasterPos2i(100, 120);
+	//glColor4f(0.0f, 0.0f, 1.0f, 1.0f);
+	//glutBitmapString(GLUT_BITMAP_HELVETICA_18, "text to render");
+
 	if (PlayerHealth > 0 ){
 		glutTimerFunc(100, idle, 50);
 	}
@@ -562,21 +584,6 @@ void idle(int value) {
 	
 }
 
-
-
-//
-//void alarm(int alarmNumber)
-//{
-//    if(alarmNumber == 112) {
-//        cout << "Ring Ring!!! This was alarm 112!" << endl;
-//        cout << "Next alarm will ring in 100 ms." << endl;
-//
-//        // Register another timer with a different number that triggers after 100 ms
-//        glutTimerFunc(100, alarm, 1337);
-//    } else {
-//        cout << "Ring Ring!!! Alarm with alarmnumber " << alarmNumber << " called!" << endl;
-//    }
-//}
 
 //---------------------------------------------------------------------------
 // void reshape(int w, int h)
@@ -641,20 +648,6 @@ void keyfunc(unsigned char key, int x, int y) {
 	//keytext = string{ c } +", " + to_string(x) + ", " + to_string(y);
 }
 
-//old debug fucntion
-//void drawtext(std::string keytext, int x, int y) {
-//
-//	//cout << "jow ik ga ze uitrpinten" << endl;
-//	glRasterPos2f(100, 100);
-//	glColor3f(0, 0, 0);
-//
-//	for (char& c : keytext)
-//	{
-//		//cout << c << endl;
-//		glutBitmapCharacter(GLUT_BITMAP_HELVETICA_18, c);
-//	}
-//
-//}
 
 
 //main function
