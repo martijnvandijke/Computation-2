@@ -33,6 +33,7 @@ using namespace std;
 std::string keytext;
 DrawList drawList;	//stuf that needs to be updated
 DrawList Static;	//stuff that is static and does not need to be cleared from the list
+DrawList DrawTextList;
 
 string filename = "test";
 int PlayerHealth = 100;	//	player health
@@ -61,7 +62,7 @@ void init()
 	glutKeyboardFunc(keyfunc);
 
     // E.g. glClearColor(1.0, 0.0, 0.0, 1.0); results in a red background.
-    glClearColor(0.003921568627451, 0.502, 0.447, 0.2);               // Set background color to white 
+    glClearColor(0.91015625, 0.88671875, 0.65234375, 0.2);               // Set background color to white 
     // Keep them like this if you don't need fancy options
     glMatrixMode(GL_PROJECTION);    // Next lines will adjust the projection matrix
     glLoadIdentity();               // Reset projection matrix to the identity matrix
@@ -115,7 +116,7 @@ void readFile(string filename) {
 
 //make a grid 
 void raster() {
-	Color color = { 0.2f, 1, 0.2f };
+	Color color = { 0.40625,0.76171875,0.63671875 };
 	int rasterHoogte = windowHeight;
 	int rasterBreedte = windowWidth;
 	int res =  15;
@@ -130,7 +131,7 @@ void raster() {
 			varx = 20 * i;
 			vary = 20 * j;
 			//make a grid if the width still has 200 pixels
-			if ((windowWidth - 100) > varx) {
+			if ((windowWidth - 200) > varx) {
 				PointF posPixel = { varx , vary };
 				Circle* dots = new Circle(posPixel, color, radius, seg);
 				Static.push_back(dots);
@@ -154,7 +155,7 @@ void path() {
 
 			if (Map[i][j] == '/' ) { 
 				//draw the path where enemy's walk
-				Color color = { 0.2f, 1, 0.2f };
+				Color color = { 0.47265625, 0.33203125, 0.28125 };
 				PointF begin1 = { x,y };
 				PointF begin2 = { (x),(y+20) };
 				PointF begin3 = { (x-20),(y+20) };
@@ -166,7 +167,7 @@ void path() {
 			//path where building is allowed
 			if (Map[i][j] == '*' || Map[i][j] == 'T') {
 				//draw the building site
-				Color color = { 0.4f, 0.4f, 0.4f };
+				Color color = { 0 , 0.47265625, 0.41796875 };
 				PointF begin1 = { x,y };
 				PointF begin2 = { (x),(y + 20) };
 				PointF begin3 = { (x - 20),(y + 20) };
@@ -212,7 +213,7 @@ void makeEnemy() {
 }
 //draw the enemy's + make alogirthm
 void drawEnemy() {
-	Color color = { 0.2f, 0.1f, 0.8f };
+	Color color = { 0.12890625, 0.5859375, 0.94921875 };
 	float r = 22;
 	//number of triganles that need to be drawn
 	int seg = 20;
@@ -579,7 +580,9 @@ void idle(int value) {
 	//make a new turret
 	drawBullet();
 
-	//cal the display function -> draw everything 
+	text();
+	//cal the disp
+	//display function -> draw everything 
 	glutPostRedisplay();
 
 	//update of the global variables
@@ -592,6 +595,105 @@ void idle(int value) {
 		exit(0);
 	}
 
+}
+
+//draw all the text that needs to be displayed
+void text() {
+	//definition stuff
+	float x = (windowWidth - 180);
+	float y = windowHeight - 100;
+	Color color = { 0.375, 0.48828125, 0.54296875 };
+
+	//print the plaer health -> fancy icon ?
+	PointF pos = { x, y };
+	Text* texttodisp = new Text("Player Health : ", color, pos);
+	DrawTextList.push_back(texttodisp);
+	PointF pos2 = { (x +125), y };
+	Text* texttodisp2 = new Text(to_string(	PlayerHealth)	, color, pos2);
+	DrawTextList.push_back(texttodisp2);
+
+	//print the player Score
+	PointF pos3 = { x, (y -50) };
+	Text* texttodisp3 = new Text("Player Score : ", color, pos3);
+	DrawTextList.push_back(texttodisp3);
+	PointF pos4 = { (x+125), (y - 50) };
+	Text* texttodisp4 = new Text(to_string(PlayerScore), color, pos4);
+	DrawTextList.push_back(texttodisp4);
+}
+
+
+
+//menu types declaration
+enum MENU_TYPE
+{
+	MENU_FRONT,
+	MENU_SPOT,
+	MENU_BACK,
+	MENU_BACK_FRONT,
+};
+
+//function for the submenu of the Load Map data
+void SubMenu2(int item) {
+	switch (item)
+	{
+	case 1: {
+		filename = "map1";
+		readFile(filename);
+		cout << "Starting the game......." << endl;
+		glutTimerFunc(10, idle, 10);
+		raster();
+		return;
+	}
+	case 2: {
+		filename = "map2";
+		readFile(filename);
+		cout << "Starting the game......." << endl;
+		glutTimerFunc(10, idle, 10);
+		raster();
+		return;
+	}
+	case 3: {
+		filename = "map3";
+		readFile(filename);
+		cout << "Starting the game......." << endl;
+		glutTimerFunc(10, idle, 10);
+		raster();
+		return;
+	}
+	default:
+		break;
+	}
+
+}
+
+//function for the menu
+void menu(int item)
+{
+	switch (item){
+		case MENU_FRONT:
+	
+		//Generate enenmy
+		case MENU_SPOT:{
+			makeEnemy();
+			return;
+		}
+		case MENU_BACK: {
+
+		}
+		//Quit the Game
+		case MENU_BACK_FRONT:{
+			exit(0);
+			return;
+		}
+		break;
+		default:
+		{
+			
+		}
+		break;
+	}
+	glutPostRedisplay();
+	return;
 }
 
 
@@ -628,6 +730,12 @@ void display()
 		//delete the pointers on the drawlist
 		delete drawable;
 	}
+
+	for (Drawable* drawable : DrawTextList) {
+		drawable->draw();
+
+	}
+
 	
     // Visualize the drawing commands
     glFlush();            // Execute all commands waiting to be executed
@@ -636,7 +744,7 @@ void display()
 	drawList.clear();
 }
 
-//read teh inut from the main game and do corresponding stuff with it
+//read the inut from the main game and do corresponding stuff with it
 void keyfunc(unsigned char key, int x, int y) {
 	int seneY;
 	seneY = windowHeight - y;
@@ -678,20 +786,36 @@ int main(int argc, char* argv[])
     // Initialize your program
     init();
     // Enter the main application loop
-	cout << "																																				" << endl;
-	cout << "  ▄▄▄█████▓ ▒█████   █     █░▓█████  ██▀███     ▓█████▄ ▓█████   █████▒▓█████  ███▄    █   ██████ ▓█████      ▄████  ▄▄▄       ███▄ ▄███▓▓█████ " << endl;
-	cout << "  ▓  ██▒ ▓▒▒██▒  ██▒▓█░ █ ░█░▓█   ▀ ▓██ ▒ ██▒   ▒██▀ ██▌▓█   ▀ ▓██   ▒ ▓█   ▀  ██ ▀█   █ ▒██    ▒ ▓█   ▀     ██▒ ▀█▒▒████▄    ▓██▒▀█▀ ██▒▓█   ▀  " << endl;
-	cout << "  ▒ ▓██░ ▒░▒██░  ██▒▒█░ █ ░█ ▒███   ▓██ ░▄█ ▒   ░██   █▌▒███   ▒████ ░ ▒███   ▓██  ▀█ ██▒░ ▓██▄   ▒███      ▒██░▄▄▄░▒██  ▀█▄  ▓██    ▓██░▒███   " << endl;
-	cout << "  ░ ▓██▓ ░ ▒██   ██░░█░ █ ░█ ▒▓█  ▄ ▒██▀▀█▄     ░▓█▄   ▌▒▓█  ▄ ░▓█▒  ░ ▒▓█  ▄ ▓██▒  ▐▌██▒  ▒   ██▒▒▓█  ▄    ░▓█  ██▓░██▄▄▄▄██ ▒██    ▒██ ▒▓█  ▄  " << endl;
-	cout << "    ▒██▒ ░ ░ ████▓▒░░░██▒██▓ ░▒████▒░██▓ ▒██▒   ░▒████▓ ░▒████▒░▒█░    ░▒████▒▒██░   ▓██░▒██████▒▒░▒████▒   ░▒▓███▀▒ ▓█   ▓██▒▒██▒   ░██▒░▒████▒ " << endl;
-	cout << "    ▒ ░░   ░ ▒░▒░▒░ ░ ▓░▒ ▒  ░░ ▒░ ░░ ▒▓ ░▒▓░    ▒▒▓  ▒ ░░ ▒░ ░ ▒ ░    ░░ ▒░ ░░ ▒░   ▒ ▒ ▒ ▒▓▒ ▒ ░░░ ▒░ ░    ░▒   ▒  ▒▒   ▓▒█░░ ▒░   ░  ░░░ ▒░ ░ " << endl;
-	cout << "      ░      ░ ▒ ▒░   ▒ ░ ░   ░ ░  ░  ░▒ ░ ▒░    ░ ▒  ▒  ░ ░  ░ ░       ░ ░  ░░ ░░   ░ ▒░░ ░▒  ░ ░ ░ ░  ░     ░   ░   ▒   ▒▒ ░░  ░      ░ ░ ░  ░ " << endl;
-	cout << "    ░      ░ ░ ░ ▒    ░   ░     ░     ░░   ░     ░ ░  ░    ░    ░ ░       ░      ░   ░ ░ ░  ░  ░     ░      ░ ░   ░   ░   ▒   ░      ░      ░   " << endl;
-	cout << "               ░ ░      ░       ░  ░   ░           ░       ░  ░           ░  ░         ░       ░     ░  ░         ░       ░  ░       ░      ░  ░ " << endl;
-	//                                                 ░                                                                                              
+	printf(R"EOF(
+	________                                ________     ________                        
+	___  __/________      ______________    ___  __ \_______  __/_______________________ 
+	__  /  _  __ \_ | /| / /  _ \_  ___/    __  / / /  _ \_  /_ _  _ \_  __ \_  ___/  _ \
+	_  /   / /_/ /_ |/ |/ //  __/  /        _  /_/ //  __/  __/ /  __/  / / /(__  )/  __/
+	/_/    \____/____/|__/ \___//_/         /_____/ \___//_/    \___//_/ /_//____/ \___/                                                                                                                                                                            
 
+	)EOF");
+	
+	printf(R"EOF(				                                                      
+	|\/| _. _| _  |_    |\/| _..__|_  ._     _.._  | \oo|  _ 
+	|  |(_|(_|(/_ |_)\/ |  |(_||  |_\/| | \/(_|| | |_/|||<(/_
+		             /              /                 _|     
+	)EOF");
+	cout << "Press start the game to begin...." << endl;
+	int SubMenu = glutCreateMenu(SubMenu2);
+	glutAddMenuEntry("Map 1", 1);
+	glutAddMenuEntry("Map 2", 2);
+	glutAddMenuEntry("Map 3", 2);
+	// Create a menu
+	int GameMenu= glutCreateMenu(menu);
+	// Add menu items
+	//glutAddMenuEntry("Start the Game", MENU_FRONT);
+	glutAddSubMenu("Load map : (start game)", SubMenu);
+	glutAddMenuEntry("Spawn an Enemy", MENU_SPOT);
+	glutAddMenuEntry("Quit the game", MENU_BACK_FRONT);
+	// Associate the right mouse button with menu
+	glutAttachMenu(GLUT_RIGHT_BUTTON);
+	
 
-	//fancy asci text hiero 
 	glutMainLoop();
     return EXIT_SUCCESS;
 }

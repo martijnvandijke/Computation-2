@@ -6,13 +6,12 @@
 // main header file
 const int windowWidth = 1024;
 const int windowHeight = 768;
-const char* windowTitle = "Final Task: Tower Defense by Martyn van Dijke";
+const char* windowTitle = "Final C Task: Tower Defense by: Martyn van Dijke";
 
 
 // Function declarations
 int main(int argc, char* argv[]);
 void init();
-
 // Place your glut callback declarations here:
 void reshape(int w, int h);
 void display();
@@ -26,8 +25,9 @@ void drawTurret();
 void raster();
 void readFile(string filename);
 void drawBullets(PointF posEnemy, int i);
-void drawBullet(PointF posEnemy, int i);
 void path();
 void Start();
+void text();
+
 
 #endif

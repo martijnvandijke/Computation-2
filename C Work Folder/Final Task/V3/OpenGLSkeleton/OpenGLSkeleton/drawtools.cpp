@@ -40,11 +40,11 @@ void Pixel::draw() const
 	glBegin(GL_POINTS); // Start drawing mode
 	
         // Set color
-	    glColor3fv(_color.data());
+	 glColor3fv(_color.data());
 
         // Draw the pixel at _position
-        glVertex2fv(_position.data());
-
+    glVertex2fv(_position.data());
+	glDisable(GL_POINTS);
 	glEnd();
 }
 
@@ -102,7 +102,7 @@ void Line::draw() const
 	glColor3f(_color[0], _color[1], _color[2]);
 	glVertex2fv(_begin.data() );
 	glVertex2fv(_end.data() );
-	glDisable(GL_LINE_STIPPLE);
+	glDisable(GL_LINES);
 	glEnd();
 	// To be implemented by you
 	// Aim for about 10 lines of code
@@ -128,6 +128,7 @@ void Circle::draw() const
 		float const t = 2 * M_PI * (float)n / (float)_segments;
 		glVertex2f(_position.x() + sin(t) * _radius, _position.y() + cos(t) * _radius);
 	}
+	glDisable(GL_TRIANGLE_FAN);
 	glEnd();
 }
 
@@ -156,6 +157,7 @@ void Sqaure::draw() const
 	glVertex2f( _end.x() , _end.y()	);
 	glVertex2f( _begin2.x(), _begin2.y());
 	glVertex2f( _end2.x(),  _end2.y());
+	glDisable(GL_QUADS);
 	glEnd();
 }
 
@@ -179,11 +181,13 @@ void Text::draw() const
 {
 	//cout << "ga text printen" << endl;
 	glColor3f(_color[0], _color[1], _color[2]);
-	glRasterPos2f(_x, _y);
+	glRasterPos2f(_Position[0], _Position[1]);
+	//cout << _Position[0] <<"  " << _Position[1] << endl;
 	string text = _string;
+	//cout << text << endl;
 	for (char& c : text)
 	{	
-		//cout << c << endl;
+		//cout << "Ik ga printen"<< c << endl;
 		glutBitmapCharacter(GLUT_BITMAP_HELVETICA_18, c	);
 	}
 }
