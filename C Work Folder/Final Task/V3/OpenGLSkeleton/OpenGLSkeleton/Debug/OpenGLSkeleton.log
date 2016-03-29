@@ -1,3 +1,3 @@
 ﻿  main.cpp
-d:\computation-2\c work folder\final task\v3\openglskeleton\openglskeleton\main.cpp(557): warning C4018: '<': signed/unsigned mismatch
+d:\computation-2\c work folder\final task\v3\openglskeleton\openglskeleton\main.cpp(564): warning C4018: '<': signed/unsigned mismatch
   OpenGLSkeleton.vcxproj -> D:\Computation-2\C Work Folder\Final Task\V3\OpenGLSkeleton\Debug\OpenGLSkeleton.exe

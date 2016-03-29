@@ -143,7 +143,7 @@ void path() {
 			float x = i*20;
 			float y = j*20;
 
-			if (Map[i][j] == '/') { 
+			if (Map[i][j] == '/' ) { 
 				//draw the path where enemy's walk
 				Color color = { 0.2f, 1, 0.2f };
 				PointF begin1 = { x,y };
@@ -154,7 +154,7 @@ void path() {
 				drawList.push_back(sq);
 			}
 			//path where building is allowed
-			if (Map[i][j] == '*') {
+			if (Map[i][j] == '*' || Map[i][j] == 'T') {
 				//draw the building site
 				Color color = { 0.4f, 0.4f, 0.4f };
 				PointF begin1 = { x,y };
@@ -194,14 +194,14 @@ void makeEnemy() {
 	float r = 10;
 	int seg = 10;
 	float speed = 5;
-	int health = 20;
+	int health = 100;
 	Enemy* en = new Enemy(begin1, begin1, speed, health);
 	enenemyvector.push_back(en);
 }
 //draw the enemy's + make alogirthm
 void drawEnemy() {
 	Color color = { 0.2f, 0.1f, 0.8f };
-	float r = 10;
+	float r = 22;
 	//number of triganles that need to be drawn
 	int seg = 20;
 	for (unsigned i = 0; i<enenemyvector.size(); i++) {
@@ -231,7 +231,7 @@ void drawEnemy() {
 
 				//if the distnace is smaller tne the radius of the object
 				if ( dx < 100 &&	dy < 100	) {
-					enenemyvector.at(i)->Health(2);;
+					enenemyvector.at(i)->Health(5);;
 					cout << "Damaged an enemy" << endl;
 					PlayerScore = PlayerScore + 10;
 
@@ -274,7 +274,7 @@ void drawEnemy() {
 				if (nextCharXplus == 'E') {
 					PointF posEnemy = enenemyvector.at(i)->Move(1, 0);
 					enenemyvector.at(i)->Update(posEnemy);
-					r = enenemyvector.at(i)->_health;
+					//r = enenemyvector.at(i)->_health;
 					Circle* cirle = new Circle(posEnemy, color, r, seg);
 					drawList.push_back(cirle);
 					drawBullets(posEnemy, i);
@@ -288,7 +288,7 @@ void drawEnemy() {
 					PointF posEnemy = enenemyvector.at(i)->Move(0,1);
 					//cout << "Moving enemy up" << endl;
 					enenemyvector.at(i)->Update(posEnemy);
-					r = enenemyvector.at(i)->_health;
+					//r = enenemyvector.at(i)->_health;
 					Circle* cirle = new Circle(posEnemy, color, r, seg);
 					drawList.push_back(cirle);
 					drawBullets(posEnemy, i);
@@ -302,7 +302,7 @@ void drawEnemy() {
 					PointF posEnemy = enenemyvector.at(i)->Move(1, 0);
 					//cout << "Moving enemy right" << endl;
 					enenemyvector.at(i)->Update(posEnemy);
-					r = enenemyvector.at(i)->_health;
+					//r = enenemyvector.at(i)->_health;
 					Circle* cirle = new Circle(posEnemy, color, r, seg);
 					drawList.push_back(cirle);
 					drawBullets(posEnemy, i);
@@ -315,7 +315,7 @@ void drawEnemy() {
 					PointF posEnemy = enenemyvector.at(i)->Move(0, -1);
 					//cout << "Moving enemy down" << endl;
 					enenemyvector.at(i)->Update(posEnemy);
-					r = enenemyvector.at(i)->_health;
+					//r = enenemyvector.at(i)->_health;
 					Circle* cirle = new Circle(posEnemy, color, r, seg);
 					drawList.push_back(cirle);
 					drawBullets(posEnemy, i);
@@ -328,7 +328,7 @@ void drawEnemy() {
 					PointF posEnemy = enenemyvector.at(i)->Move(-1, 0);
 					//cout << "Moving enemy left" << endl;
 					enenemyvector.at(i)->Update(posEnemy);
-					r = enenemyvector.at(i)->_health;
+					//r = enenemyvector.at(i)->_health;
 					Circle* cirle = new Circle(posEnemy, color, r, seg);
 					drawList.push_back(cirle);
 					drawBullets(posEnemy, i);
@@ -346,7 +346,7 @@ void drawEnemy() {
 
 
 			}
-			else	//the enemy has zerp health
+			else	//the enemy has zero health
 			{
 					cout << "Deleted an enenemy" << endl;
 					//delete the enemy
@@ -379,7 +379,7 @@ void drawBullets(PointF posEnemy, int j){
 					float dy = abs(posEnemy[1] - posTurret[1]);
 					float dx = abs(posEnemy[0] - posTurret[0]);
 					//caclulate range to enemy
-					float rangeToEnemy = sqrt(	pow(dx,2)  + pow(dy,2)	);
+					float rangeToEnemy = sqrt(	(pow(dx,2)  + pow(dy,2))	);
 					//cout << rangeToEnemy << endl;
 					//if enemy is in the range
 					if (rangeToEnemy < turretvector.at(i)->_range) {
@@ -388,7 +388,8 @@ void drawBullets(PointF posEnemy, int j){
 						PointF turPos = turretvector.at(i)->_position;
 						//get the aiming id of the turret
 						int aimingId = turretvector.at(i)->_aiming;
-						//s^2 ( V_b^2 - V_e^2) + 1s*r*V_e^2*cos(a) - V_e^2*r^2
+						//s^2 ( V_b^2 - V_e^2) + 1s*r*V_e^2*cos(a) - V_e^2*r^2 <- eqaution to solve 
+
 						//if the current turret is locked on to the current enemy
 						//if (aimingId == enenemyvector.at(j)->_id) {
 							
@@ -413,13 +414,13 @@ void drawBullets(PointF posEnemy, int j){
 							cout <<"x1:" << x1 << " x2:" << x2 << endl;
 							//cout << "jow ik draw the bullet line" << endl;
 							float posx;
-							//if (x1 > 0) {
-							//	float posx = x1;
-							//}
-							//if (x1 < 0 && x2 > 0) {
-							//	float posx = x2;
-							//}
-							posx = x1;
+							if (x1 >= 0) {
+								posx = x1;
+							}
+							if (x1 < 0 && x2 >= 0) {
+								posx = x2;
+							}
+							//posx = x1;
 							
 							//calculate the point where the bullet would intercept the enemy
 							cout << "Calulting intercet point" << endl;
@@ -460,7 +461,13 @@ void makeTurret(float x,float y) {
 	int posx = x/20;
 	int posy = y/20;
 	// do not place turrets at the edge of the path -> a miniumum of 1 tile should be between the turret and the path
-	if(Map[(posx+1)][(posy+1)] != '/' && Map[(posx -1)][(posy -1)] != '/'&& Map[(posx -1)][(posy )] != '/' && Map[(posx)][(posy - 1)]) {
+	if(Map[(posx+1)][(posy+1)] != '/' && Map[(posx -1)][(posy -1)] != '/'&& Map[(posx -1)][(posy )] != '/' && Map[(posx)][(posy - 1)]	&& (Map[posx][posy] != 'T' && Map[(posx+1)][posy] !='T' && Map[(posx)][(posy+1)] && Map[(posx+1)][(posy+1)] != 'T' )	){
+		//store the turret poisition of the map, prevent the paler from placing two turrets on eachother
+		Map[posx][posy] = 'T';
+		Map[(posx + 1)][(posy + 1)] = 'T';
+		Map[(posx)][(posy + 1)] = 'T';
+		Map[(posx + 1)][posy] = 'T';
+
 		Color color = { 0.2f, 1, 0.2f };
 		PointF pos = { x,y };
 		//give the turret health -> later use
