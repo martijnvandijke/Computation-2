@@ -21,7 +21,7 @@
 #include "FiredBullet.h"	//get the bulelt class
 #include <fstream>	
 #include <windows.h>
-
+#pragma comment(lib, "Winmm.lib")
 
 //#define CRTDBG_MAP_ALLOC
 //#include <stdlib.h>
@@ -35,7 +35,7 @@ DrawList drawList;	//stuf that needs to be updated
 DrawList Static;	//stuff that is static and does not need to be cleared from the list
 DrawList DrawTextList;
 
-string filename = "test";
+string filename;
 int PlayerHealth = 100;	//	player health
 int PlayerScore = 0;	// player score
 string MapName;		//map name 
@@ -46,7 +46,10 @@ char Map[mapSizex][mapSizey];	//map data
 vector<Enemy*> enenemyvector;	//vector contains all the enemey
 vector<Turret*> turretvector;	//vector contains all the turrets
 vector<FiredBullet*> bulletvector; //vector containing all the bullets that have been fired and are still live
-
+int NumberFrames = 0;
+int currentTime = 0;
+int fps;
+int PrevTime = 0;
 
 //only excuted once
 void init()
@@ -252,7 +255,7 @@ void drawEnemy() {
 					enenemyvector.at(i)->Health(5);;
 					cout << "Damaged an enemy" << endl;
 					PlayerScore = PlayerScore + 10;
-
+					PlaySoundW(L"point.wav", NULL, SND_FILENAME | SND_NODEFAULT | SND_ASYNC);
 				}
 
 			}
@@ -276,6 +279,7 @@ void drawEnemy() {
 					//delete the enemy from the enemy vector
 					enenemyvector.erase((enenemyvector.begin() + i));
 					PlayerHealth = PlayerHealth - 30;
+					PlaySoundW(L"loss.wav", NULL, SND_FILENAME | SND_NODEFAULT | SND_ASYNC);
 					continue;
 				}
 				//once the end line is insight
@@ -571,7 +575,7 @@ void drawBullet() {
 
 //if idle do all the calculations
 void idle(int value) {
-	
+	CalcFPS();
 	//draw the turret's
 	drawTurret();
 
@@ -579,7 +583,8 @@ void idle(int value) {
 	drawEnemy();
 	//make a new turret
 	drawBullet();
-
+	
+	DrawButton();
 	text();
 	//cal the disp
 	//display function -> draw everything 
@@ -587,11 +592,12 @@ void idle(int value) {
 
 	//update of the global variables
 	if (PlayerHealth > 0 ){
-		glutTimerFunc(100, idle, 50);
+		glutTimerFunc(20, idle, 20);
 	}
 	else {
 		cout << "You have lot the game with a score of :" << PlayerScore << endl;
-		Beep(700, 200);
+		PlaySoundW(L"death.wav", NULL, SND_FILENAME | SND_NODEFAULT | SND_ASYNC);
+		Sleep(8000);
 		exit(0);
 	}
 
@@ -604,6 +610,13 @@ void text() {
 	float y = windowHeight - 100;
 	Color color = { 0.375, 0.48828125, 0.54296875 };
 
+	PointF posF = { x, (y+50) };
+	Text* texttodispF = new Text("FPS :", color, posF);
+	DrawTextList.push_back(texttodispF);
+	PointF pos2F = { (x + 125), (y+50) };
+	Text* texttodisp2F = new Text(to_string(fps), color, pos2F);
+	DrawTextList.push_back(texttodisp2F);
+
 	//print the plaer health -> fancy icon ?
 	PointF pos = { x, y };
 	Text* texttodisp = new Text("Player Health : ", color, pos);
@@ -612,6 +625,10 @@ void text() {
 	Text* texttodisp2 = new Text(to_string(	PlayerHealth)	, color, pos2);
 	DrawTextList.push_back(texttodisp2);
 
+	//PointF posH = { x, y };
+	//Heart* test = new Heart(color, posH);
+	//DrawTextList.push_back(test);
+
 	//print the player Score
 	PointF pos3 = { x, (y -50) };
 	Text* texttodisp3 = new Text("Player Score : ", color, pos3);
@@ -619,9 +636,61 @@ void text() {
 	PointF pos4 = { (x+125), (y - 50) };
 	Text* texttodisp4 = new Text(to_string(PlayerScore), color, pos4);
 	DrawTextList.push_back(texttodisp4);
+
+	//print current player map 
+	PointF pos5 = { x, (y - 100) };
+	Text* texttodisp5 = new Text("Curret map : ", color, pos5);
+	DrawTextList.push_back(texttodisp5);
+	PointF pos6 = { (x + 125), (y - 100) };
+	Text* texttodisp6 = new Text(MapName, color, pos6);
+	DrawTextList.push_back(texttodisp6);
 }
 
+void CalcFPS() {
+	NumberFrames++;
+	currentTime = glutGet(GLUT_ELAPSED_TIME);
+	int DeltaTime = currentTime - PrevTime;
+	if (DeltaTime > 1000) {
+		fps = NumberFrames / (DeltaTime / 1000.0f);
+		PrevTime = currentTime;
+		NumberFrames = 0;
+	}
 
+}
+
+void DrawButton() {
+	float x = (windowWidth - 180);
+	float padding = 5;
+	Color Textcolor = { 0.375, 0.48828125, 0.54296875 };
+	Color Button = { 0.99609375, 0.33984375, 0.1328125 };
+	//start button
+	PointF begin = { (x+150),375 };
+	PointF begin2 = { (x+150),  400};
+	PointF end = { x,400 };
+	PointF end2 = { x , 375 };
+	int mode = 1;
+	Sqaure* sq = new Sqaure(begin, begin2, end, end2, Button);
+	Static.push_back(sq);
+	PointF PosText = { (x+padding) , (end2[1] + padding) };
+	string text_to = "Start Game";
+	Text* button_text = new Text(text_to, Textcolor, PosText);
+	DrawTextList.push_back(button_text);
+
+	//Spawn Enemy button
+	PointF begin3 = { (x + 150),300 };
+	PointF begin4 = { (x + 150),  325 };
+	PointF end3 = { x,325 };
+	PointF end4 = { x , 300 };
+	int mode2 = 1;
+	Sqaure* sq2 = new Sqaure(begin3, begin4, end3, end4, Button);
+	Static.push_back(sq2);
+	PointF PosText2 = { (x + padding) , (end4[1] + padding) };
+	string text_to2 = "Spawn Enemy";
+	Text* button_text2 = new Text(text_to2, Textcolor, PosText2);
+	DrawTextList.push_back(button_text2);
+
+	
+}
 
 //menu types declaration
 enum MENU_TYPE
@@ -639,7 +708,7 @@ void SubMenu2(int item) {
 	case 1: {
 		filename = "map1";
 		readFile(filename);
-		cout << "Starting the game......." << endl;
+		cout << "Starting map 1......." << endl;
 		glutTimerFunc(10, idle, 10);
 		raster();
 		return;
@@ -647,7 +716,7 @@ void SubMenu2(int item) {
 	case 2: {
 		filename = "map2";
 		readFile(filename);
-		cout << "Starting the game......." << endl;
+		cout << "Starting map 2......." << endl;
 		glutTimerFunc(10, idle, 10);
 		raster();
 		return;
@@ -655,7 +724,7 @@ void SubMenu2(int item) {
 	case 3: {
 		filename = "map3";
 		readFile(filename);
-		cout << "Starting the game......." << endl;
+		cout << "Starting map 3......." << endl;
 		glutTimerFunc(10, idle, 10);
 		raster();
 		return;
@@ -727,21 +796,24 @@ void display()
 	//draw everything on the drawlist
 	for (Drawable* drawable : drawList){ 
 		drawable->draw(); 
-		//delete the pointers on the drawlist
+		//delete the pointers to the drawable on the drawlist
 		delete drawable;
 	}
 
+	//lastly draw the text -> ensures the text is always draw on top
 	for (Drawable* drawable : DrawTextList) {
 		drawable->draw();
-
+		//delte the ponter to the drawable
+		delete drawable;
 	}
 
 	
     // Visualize the drawing commands
     glFlush();            // Execute all commands waiting to be executed
     glutSwapBuffers();    // Swap the backbuffer and frontbuffer
-	//clear the drawing list
+	//clear the drawing + text list
 	drawList.clear();
+	DrawTextList.clear();
 }
 
 //read the inut from the main game and do corresponding stuff with it
@@ -787,19 +859,19 @@ int main(int argc, char* argv[])
     init();
     // Enter the main application loop
 	printf(R"EOF(
-	________                                ________     ________                        
-	___  __/________      ______________    ___  __ \_______  __/_______________________ 
-	__  /  _  __ \_ | /| / /  _ \_  ___/    __  / / /  _ \_  /_ _  _ \_  __ \_  ___/  _ \
-	_  /   / /_/ /_ |/ |/ //  __/  /        _  /_/ //  __/  __/ /  __/  / / /(__  )/  __/
-	/_/    \____/____/|__/ \___//_/         /_____/ \___//_/    \___//_/ /_//____/ \___/                                                                                                                                                                            
+________                                ________     ________                        
+___  __/________      ______________    ___  __ \_______  __/_______________________ 
+__  /  _  __ \_ | /| / /  _ \_  ___/    __  / / /  _ \_  /_ _  _ \_  __ \_  ___/  _ \
+_  /   / /_/ /_ |/ |/ //  __/  /        _  /_/ //  __/  __/ /  __/  / / /(__  )/  __/
+/_/    \____/____/|__/ \___//_/         /_____/ \___//_/    \___//_/ /_//____/ \___/                                                                                                                                                                            
 
-	)EOF");
+)EOF");
 	
 	printf(R"EOF(				                                                      
-	|\/| _. _| _  |_    |\/| _..__|_  ._     _.._  | \oo|  _ 
-	|  |(_|(_|(/_ |_)\/ |  |(_||  |_\/| | \/(_|| | |_/|||<(/_
-		             /              /                 _|     
-	)EOF");
+|\/| _. _| _  |_    |\/| _..__|_  ._     _.._  | \oo|  _ 
+|  |(_|(_|(/_ |_)\/ |  |(_||  |_\/| | \/(_|| | |_/|||<(/_
+	             /              /                 _|     
+)EOF");
 	cout << "Press start the game to begin...." << endl;
 	int SubMenu = glutCreateMenu(SubMenu2);
 	glutAddMenuEntry("Map 1", 1);
@@ -809,13 +881,12 @@ int main(int argc, char* argv[])
 	int GameMenu= glutCreateMenu(menu);
 	// Add menu items
 	//glutAddMenuEntry("Start the Game", MENU_FRONT);
-	glutAddSubMenu("Load map : (start game)", SubMenu);
+	glutAddSubMenu("Start map :", SubMenu);
 	glutAddMenuEntry("Spawn an Enemy", MENU_SPOT);
 	glutAddMenuEntry("Quit the game", MENU_BACK_FRONT);
 	// Associate the right mouse button with menu
 	glutAttachMenu(GLUT_RIGHT_BUTTON);
 	
-
 	glutMainLoop();
     return EXIT_SUCCESS;
 }

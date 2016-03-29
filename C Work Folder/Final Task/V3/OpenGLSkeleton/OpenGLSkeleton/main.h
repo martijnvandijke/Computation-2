@@ -28,6 +28,7 @@ void drawBullets(PointF posEnemy, int i);
 void path();
 void Start();
 void text();
-
+void DrawButton();
+void CalcFPS();
 
 #endif

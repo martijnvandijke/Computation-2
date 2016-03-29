@@ -253,6 +253,38 @@ private:
 	// You can add more private members here, if needed
 };
 
+class Heart : public Drawable
+{
+public:
+	Heart(Color color, PointF Pos);
 
+	void draw() const override;
+
+	void print() const override;
+
+private:
+	Color _color;
+	PointF _Pos;
+};
+
+class Button : public Drawable
+{
+public:
+	Button(string text, int mode, Color color, PointF begin, PointF end);
+
+	void draw() const override;
+
+	void print() const override;
+
+	void Update();
+
+private:
+	Color _color;
+	PointF _begin;
+	PointF _end;
+	int _mode;
+	string _text;
+
+};
 
 #endif

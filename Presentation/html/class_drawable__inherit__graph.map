@@ -1,7 +1,9 @@
 <map id="Drawable" name="Drawable">
-<area shape="rect" id="node2" href="$class_circle.html" title="Circle" alt="" coords="5,80,60,107"/>
-<area shape="rect" id="node3" href="$class_line.html" title="Line" alt="" coords="84,80,131,107"/>
-<area shape="rect" id="node4" href="$class_pixel.html" title="Pixel" alt="" coords="155,80,206,107"/>
-<area shape="rect" id="node5" href="$class_sqaure.html" title="Sqaure" alt="" coords="231,80,293,107"/>
-<area shape="rect" id="node6" href="$class_text.html" title="Text" alt="" coords="317,80,364,107"/>
+<area shape="rect" id="node2" href="$class_button.html" title="Button" alt="" coords="5,80,65,107"/>
+<area shape="rect" id="node3" href="$class_circle.html" title="Circle" alt="" coords="89,80,144,107"/>
+<area shape="rect" id="node4" href="$class_heart.html" title="Heart" alt="" coords="169,80,222,107"/>
+<area shape="rect" id="node5" href="$class_line.html" title="Line" alt="" coords="247,80,293,107"/>
+<area shape="rect" id="node6" href="$class_pixel.html" title="Pixel" alt="" coords="318,80,369,107"/>
+<area shape="rect" id="node7" href="$class_sqaure.html" title="Sqaure" alt="" coords="393,80,456,107"/>
+<area shape="rect" id="node8" href="$class_text.html" title="Text" alt="" coords="480,80,527,107"/>
 </map>

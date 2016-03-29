@@ -1,9 +1,4 @@
 <map id="glutBitmapCharacter" name="glutBitmapCharacter">
-<area shape="rect" id="node2" href="$class_text.html#a7216b35c6425969c0a103ec4e8ab035b" title="Text::draw" alt="" coords="193,5,276,32"/>
-<area shape="rect" id="node3" href="$main_8cpp.html#a0e7c09465cc5ff2508a7744473268fee" title="printtext" alt="" coords="200,56,269,83"/>
-<area shape="rect" id="node8" href="$main_8cpp.html#ab654aa8bdc3e7793b056f810dbb7334a" title="drawtext" alt="" coords="199,107,270,133"/>
-<area shape="rect" id="node4" href="$main_8cpp.html#aa1b7d944fc5d269240500e79c79745b9" title="idle" alt="" coords="324,56,367,83"/>
-<area shape="rect" id="node5" href="$main_8h.html#ac4648a04ce3040e8ba3e561a9716e79e" title="keyfunc" alt="" coords="415,56,481,83"/>
-<area shape="rect" id="node6" href="$main_8h.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init" alt="" coords="529,56,568,83"/>
-<area shape="rect" id="node7" href="$main_8h.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="616,56,667,83"/>
+<area shape="rect" id="node2" href="$class_text.html#a7216b35c6425969c0a103ec4e8ab035b" title="Text::draw" alt="" coords="199,5,282,32"/>
+<area shape="rect" id="node3" href="$class_button.html#aeb1ff67de69aef54504f36871e247edd" title="Button::draw" alt="" coords="193,56,288,83"/>
 </map>

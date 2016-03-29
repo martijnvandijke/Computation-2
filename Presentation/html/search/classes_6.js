@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['sqaure',['Sqaure',['../class_sqaure.html',1,'']]]
+  ['line',['Line',['../class_line.html',1,'']]]
 ];

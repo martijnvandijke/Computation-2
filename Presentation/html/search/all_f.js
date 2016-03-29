@@ -9,6 +9,6 @@ var searchData=
   ['pointf',['PointF',['../drawtools_8h.html#adc4a66bcb59b74164130ed47cb387ec3',1,'drawtools.h']]],
   ['pointi',['PointI',['../drawtools_8h.html#aca011a8a706ad4f0b3d267cf3b099fac',1,'drawtools.h']]],
   ['position',['Position',['../class_turret.html#a86f457d14098684ab3954864b07dc560',1,'Turret']]],
-  ['print',['print',['../class_drawable.html#a7c2f20125950862e6b68109697d30076',1,'Drawable::print()'],['../class_pixel.html#a221ff226e8e4485cb0ce5b9caa243808',1,'Pixel::print()'],['../class_line.html#afde7d113f49b62a76836972013e1af14',1,'Line::print()'],['../class_circle.html#a1410f18d9caec03103d23c162ccce1d1',1,'Circle::print()'],['../class_sqaure.html#a6a920c167c227af42d704d3184820140',1,'Sqaure::print()'],['../class_text.html#ac8f8d4208050ddfdeea3bb7bb4d52939',1,'Text::print()']]],
-  ['printtext',['printtext',['../main_8cpp.html#a0e7c09465cc5ff2508a7744473268fee',1,'main.cpp']]]
+  ['prevtime',['PrevTime',['../main_8cpp.html#a4da79230dff46da09964727606ed93b9',1,'main.cpp']]],
+  ['print',['print',['../class_drawable.html#a7c2f20125950862e6b68109697d30076',1,'Drawable::print()'],['../class_pixel.html#a221ff226e8e4485cb0ce5b9caa243808',1,'Pixel::print()'],['../class_line.html#afde7d113f49b62a76836972013e1af14',1,'Line::print()'],['../class_circle.html#a1410f18d9caec03103d23c162ccce1d1',1,'Circle::print()'],['../class_sqaure.html#a6a920c167c227af42d704d3184820140',1,'Sqaure::print()'],['../class_text.html#ac8f8d4208050ddfdeea3bb7bb4d52939',1,'Text::print()'],['../class_heart.html#aa097e9bf47b03cee55724db6b5f1c80d',1,'Heart::print()'],['../class_button.html#a1a416884dd2bfbf3570358200bbc0ba6',1,'Button::print()']]]
 ];

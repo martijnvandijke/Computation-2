@@ -179,6 +179,7 @@ Text::Text(const string string, Color color, PointF Pos)
 
 void Text::draw() const
 {
+	
 	//cout << "ga text printen" << endl;
 	glColor3f(_color[0], _color[1], _color[2]);
 	glRasterPos2f(_Position[0], _Position[1]);
@@ -193,5 +194,87 @@ void Text::draw() const
 }
 
 void Text::print() const
+{
+
+}
+Heart::Heart(Color color, PointF Pos)
+	:_color{color},
+	_Pos{ Pos }
+{
+
+}
+
+void Heart::draw() const
+{
+	
+	// http://mathworld.wolfram.com/HeartCurve.html
+	glBegin(GL_LINE_LOOP);
+	glVertex2d(_Pos[0], _Pos[1]);
+}
+//	glMatrixMode(GL_PROJECTION);
+//	glLoadIdentity();
+//	gluOrtho2D(-2, 2, -2, 2);
+//	glPointSize(2);
+//	glColor3ub(255, 0, 0);  // Color Red
+//	glBegin(GL_POINTS);
+//	for (float x = -1.139; x <= 1.139; x += 0.001)
+//	{
+//		float delta = cbrt(x*x) * cbrt(x*x) - 4 * x*x + 4;
+//		float y1 = (cbrt(x*x) + sqrt(delta)) / 2;
+//		float y2 = (cbrt(x*x) - sqrt(delta)) / 2;
+//		glVertex2f(x, y1);
+//		glVertex2f(x, y2);
+//	}
+//	glEnd();
+//	glMatrixMode(GL_MODELVIEW);
+//}
+
+void Heart::print() const
+{
+
+}
+//text mode color begin pos end pos
+Button::Button(string text, int mode, Color color, PointF begin, PointF end)
+	: _color{color},
+	_text{text},
+	_mode{mode},
+	_begin{begin},
+	_end{end}
+{
+
+
+}
+
+void Button::draw() const
+{
+
+	// Create font:
+
+
+	//fill sqaure
+	if (_mode == 1) {
+
+	}
+
+	Color Textcolor = { 0.375, 0.48828125, 0.54296875 };
+	glColor3f(_color[0], _color[1], _color[2]);
+	glRasterPos2f(_begin[0], _begin[1]);
+	//cout << _Position[0] <<"  " << _Position[1] << endl;
+	string text = _text;
+	//cout << text << endl;
+	for (char& c : text)
+	{
+		//cout << "Ik ga printen"<< c << endl;
+		glutBitmapCharacter(GLUT_BITMAP_HELVETICA_18, c);
+	}
+	
+}
+
+void Button::print() const
+{
+
+}
+
+void Button::Update()
 {
 }
