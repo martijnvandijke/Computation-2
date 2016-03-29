@@ -20,6 +20,7 @@
 #include "Turret.h"			//get the turret class
 #include "FiredBullet.h"	//get the bulelt class
 #include <fstream>	
+#include <windows.h>
 
 
 //#define CRTDBG_MAP_ALLOC
@@ -31,6 +32,8 @@
 using namespace std;
 std::string keytext;
 DrawList drawList;
+DrawList Grid;
+
 string filename = "test";
 int PlayerHealth = 100;	//	player health
 int PlayerScore = 0;	// player score
@@ -124,7 +127,7 @@ void raster() {
 			if ((windowWidth - 100) > varx) {
 				PointF posPixel = { varx , vary };
 				Circle* dots = new Circle(posPixel, color, radius, seg);
-				drawList.push_back(dots);
+				Grid.push_back(dots);
 			}
 			else {
 				continue;
@@ -151,7 +154,8 @@ void path() {
 				PointF begin3 = { (x-20),(y+20) };
 				PointF begin4 = { (x - 20), (y) };
 				Sqaure* sq = new Sqaure(begin1, begin2, begin3, begin4, color);
-				drawList.push_back(sq);
+				Grid.push_back(sq);
+				//drawList.push_back(sq);
 			}
 			//path where building is allowed
 			if (Map[i][j] == '*' || Map[i][j] == 'T') {
@@ -162,7 +166,8 @@ void path() {
 				PointF begin3 = { (x - 20),(y + 20) };
 				PointF begin4 = { (x - 20), (y) };
 				Sqaure* sq = new Sqaure(begin1, begin2, begin3, begin4, color);
-				drawList.push_back(sq);
+				Grid.push_back(sq);
+				//drawList.push_back(sq);
 			}
 			//end point of the map
 			if (Map[i][j] == 'E') {
@@ -173,7 +178,8 @@ void path() {
 				PointF begin3 = { (x - 20),(y + 20) };
 				PointF begin4 = { (x - 20), (y) };
 				Sqaure* sq = new Sqaure(begin1, begin2, begin3, begin4, color);
-				drawList.push_back(sq);
+				Grid.push_back(sq);
+				//drawList.push_back(sq);
 			}
 			//if the map data contains nothing special
 			else {
@@ -205,12 +211,17 @@ void drawEnemy() {
 	//number of triganles that need to be drawn
 	int seg = 20;
 	for (unsigned i = 0; i<enenemyvector.size(); i++) {
+
+
 		PointF curpos = enenemyvector.at(i)->_current;
 
 		//if the enemy is out of the screen
 		if (curpos[0] > windowWidth || curpos[1] > windowHeight) {
 			//delete the enemy
-			delete enenemyvector.at(i);
+			
+
+
+			//delete (*enenemyvector);
 			cout << "Deleted an enemy" << endl;
 			//delete the enemy from the enemy vector
 			enenemyvector.erase((enenemyvector.begin() + i));
@@ -432,7 +443,8 @@ void drawBullets(PointF posEnemy, int j){
 							//int Bulletid = bulletvector.back()->_id + 1;
 
 							FiredBullet* bullet = new FiredBullet(BulletIntercept,posTurret,posTurret,bulletSpeed);
-							bulletvector.push_back(bullet);
+							//*test = bullet.
+							bulletvector.push_back(bullet	);
 							//update track id of the turret
 							turretvector.at(i)->Aim(enenemyvector.at(j)->_id);
 							
@@ -593,7 +605,7 @@ void idle(int value) {
 	printtext(600, 600, std);
 	//drawtext("test", 600, 700);
 	//make the grid
-	raster();
+	//raster();
 	//always make a turrent before the enemy
 	//glutBitmapCharacter(GLUT_BITMAP_HELVETICA_18, 't');
 	//draw the turret's
@@ -602,7 +614,7 @@ void idle(int value) {
 	//draw the enemy's
 	drawEnemy();
 	//make a new turret
-	drawBullet();
+	//drawBullet();
 
 	//cal the display function -> draw everything 
 	glutPostRedisplay();
@@ -640,17 +652,31 @@ void display()
     glClear(GL_COLOR_BUFFER_BIT);   // clear the backbuffer
 	//drawtext(keytext, 100, 100);
 
+	//draw the gird -> do not clear it Fixses the memory leak
+	for (Drawable* drawable : Grid) {
+		drawable->draw();
+
+	}
+
+	Sleep(100);
+
 	//draw everything on the drawlist
 	for (Drawable* drawable : drawList){ 
 		drawable->draw(); 
 		
 	}
+
+	
 	
     // Visualize the drawing commands
     glFlush();            // Execute all commands waiting to be executed
     glutSwapBuffers();    // Swap the backbuffer and frontbuffer
 	//clear the drawing list
 	drawList.clear();
+
+	//string std = "test";
+	//printtext(600, 600, std);
+	//drawtext(std, 700, 700);
 }
 
 //read teh inut from the main game and do corresponding stuff with it
