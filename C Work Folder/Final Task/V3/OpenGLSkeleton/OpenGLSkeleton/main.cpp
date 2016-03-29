@@ -1,4 +1,4 @@
-// Made by Martyn van Dijke
+﻿// Made by Martyn van Dijke
 // Student number : 087668
 // Build date :
 // Version : 
@@ -31,8 +31,8 @@
 //global variables and defiinitions
 using namespace std;
 std::string keytext;
-DrawList drawList;
-DrawList Grid;
+DrawList drawList;	//stuf that needs to be updated
+DrawList Static;	//stuff that is static and does not need to be cleared from the list
 
 string filename = "test";
 int PlayerHealth = 100;	//	player health
@@ -45,7 +45,7 @@ char Map[mapSizex][mapSizey];	//map data
 vector<Enemy*> enenemyvector;	//vector contains all the enemey
 vector<Turret*> turretvector;	//vector contains all the turrets
 vector<FiredBullet*> bulletvector; //vector containing all the bullets that have been fired and are still live
-int start = 0;
+
 
 //only excuted once
 void init()
@@ -69,9 +69,15 @@ void init()
     // We are looking at the rectangle from (0,0) to (windowWidth,windowHeight)
     gluOrtho2D(0, windowWidth, 0, windowHeight);
     glMatrixMode(GL_MODELVIEW);
-	makeTurret(100,300);
-	makeEnemy();
-	raster();
+	Start();
+	//makeTurret(100,300);
+	//makeEnemy();
+	//raster();
+}
+
+//draw the start screen -> fancy opening of the game
+void Start() {
+
 }
 
 //read the map file from a .txt file
@@ -127,7 +133,7 @@ void raster() {
 			if ((windowWidth - 100) > varx) {
 				PointF posPixel = { varx , vary };
 				Circle* dots = new Circle(posPixel, color, radius, seg);
-				Grid.push_back(dots);
+				Static.push_back(dots);
 			}
 			else {
 				continue;
@@ -154,7 +160,7 @@ void path() {
 				PointF begin3 = { (x-20),(y+20) };
 				PointF begin4 = { (x - 20), (y) };
 				Sqaure* sq = new Sqaure(begin1, begin2, begin3, begin4, color);
-				Grid.push_back(sq);
+				Static.push_back(sq);
 				//drawList.push_back(sq);
 			}
 			//path where building is allowed
@@ -166,7 +172,7 @@ void path() {
 				PointF begin3 = { (x - 20),(y + 20) };
 				PointF begin4 = { (x - 20), (y) };
 				Sqaure* sq = new Sqaure(begin1, begin2, begin3, begin4, color);
-				Grid.push_back(sq);
+				Static.push_back(sq);
 				//drawList.push_back(sq);
 			}
 			//end point of the map
@@ -178,7 +184,7 @@ void path() {
 				PointF begin3 = { (x - 20),(y + 20) };
 				PointF begin4 = { (x - 20), (y) };
 				Sqaure* sq = new Sqaure(begin1, begin2, begin3, begin4, color);
-				Grid.push_back(sq);
+				Static.push_back(sq);
 				//drawList.push_back(sq);
 			}
 			//if the map data contains nothing special
@@ -472,7 +478,7 @@ void drawBullets(PointF posEnemy, int j){
 void makeTurret(float x,float y) {
 	int posx = x/20;
 	int posy = y/20;
-	// do not place turrets at the edge of the path -> a miniumum of 1 tile should be between the turret and the path
+	// do not place turrets at the edge of the path -> a miniumum of 1 tile should be between the turret and the path and do not place the turret at a place where there is already a turret
 	if(Map[(posx+1)][(posy+1)] != '/' && Map[(posx -1)][(posy -1)] != '/'&& Map[(posx -1)][(posy )] != '/' && Map[(posx)][(posy - 1)]	&& (Map[posx][posy] != 'T' && Map[(posx+1)][posy] !='T' && Map[(posx)][(posy+1)] && Map[(posx+1)][(posy+1)] != 'T' )	){
 		//store the turret poisition of the map, prevent the paler from placing two turrets on eachother
 		Map[posx][posy] = 'T';
@@ -522,7 +528,7 @@ void drawTurret() {
 //draw bullet's function
 void drawBullet() {
 	//define colors and width of the bullet
-	Color color = { 0.9f, 0.9f, 0.9f };
+	Color color = { 0.9f, 0.9f, 0.9f }; //white bullets
 	float lind = 2.0;
 	//itterate over the bullet vector
 	for (unsigned i = 0; i < bulletvector.size(); i++) {
@@ -560,75 +566,32 @@ void drawBullet() {
 	}
 }
 
-void printtext(int x, int y, string String)
-{
-	//(x,y) is from the bottom left of the window
-	glMatrixMode(GL_PROJECTION);
-	glPushMatrix();
-	glLoadIdentity();
-	glOrtho(0, windowWidth, 0, windowHeight, -1.0f, 1.0f);
-	glMatrixMode(GL_MODELVIEW);
-	glPushMatrix();
-	glLoadIdentity();
-	glPushAttrib(GL_DEPTH_TEST);
-	glDisable(GL_DEPTH_TEST);
-	glRasterPos2i(x, y);
-	for (int i = 0; i<String.size(); i++)
-	{
-		glutBitmapCharacter(GLUT_BITMAP_9_BY_15, String[i]);
-	}
-	glPopAttrib();
-	glMatrixMode(GL_PROJECTION);
-	glPopMatrix();
-	glMatrixMode(GL_MODELVIEW);
-	glPopMatrix();
-}
-
-void drawtext(std::string keytext, int x, int y) {
-
-		//cout << "jow ik ga ze uitrpinten" << endl;
-		glRasterPos2f(900, 100);
-		glColor3f(0, 0, 0);
-	
-		for (char& c : keytext)
-		{
-			//cout << c << endl;
-			glutBitmapCharacter(GLUT_BITMAP_HELVETICA_18, c);
-		}
-
-	}
 
 
 //if idle do all the calculations
 void idle(int value) {
-	string std = "test";
-	printtext(600, 600, std);
-	//drawtext("test", 600, 700);
-	//make the grid
-	//raster();
-	//always make a turrent before the enemy
-	//glutBitmapCharacter(GLUT_BITMAP_HELVETICA_18, 't');
+	
 	//draw the turret's
 	drawTurret();
 
 	//draw the enemy's
 	drawEnemy();
 	//make a new turret
-	//drawBullet();
+	drawBullet();
 
 	//cal the display function -> draw everything 
 	glutPostRedisplay();
 
-	
+	//update of the global variables
 	if (PlayerHealth > 0 ){
 		glutTimerFunc(100, idle, 50);
 	}
 	else {
 		cout << "You have lot the game with a score of :" << PlayerScore << endl;
+		Beep(700, 200);
 		exit(0);
 	}
-	//cal this function agains
-	
+
 }
 
 
@@ -652,31 +615,25 @@ void display()
     glClear(GL_COLOR_BUFFER_BIT);   // clear the backbuffer
 	//drawtext(keytext, 100, 100);
 
-	//draw the gird -> do not clear it Fixses the memory leak
-	for (Drawable* drawable : Grid) {
+	//draw all the Static Stuff
+	for (Drawable* drawable : Static) {
 		drawable->draw();
-
+		
 	}
 
-	Sleep(100);
 
 	//draw everything on the drawlist
 	for (Drawable* drawable : drawList){ 
 		drawable->draw(); 
-		
+		//delete the pointers on the drawlist
+		delete drawable;
 	}
-
-	
 	
     // Visualize the drawing commands
     glFlush();            // Execute all commands waiting to be executed
     glutSwapBuffers();    // Swap the backbuffer and frontbuffer
 	//clear the drawing list
 	drawList.clear();
-
-	//string std = "test";
-	//printtext(600, 600, std);
-	//drawtext(std, 700, 700);
 }
 
 //read teh inut from the main game and do corresponding stuff with it
@@ -698,6 +655,7 @@ void keyfunc(unsigned char key, int x, int y) {
 		readFile(filename);
 		cout << "Starting the game......." << endl;
 		glutTimerFunc(10, idle, 10);
+		raster();
 	}
 	//quitting the game
 	if (key == 'q') {
@@ -720,8 +678,20 @@ int main(int argc, char* argv[])
     // Initialize your program
     init();
     // Enter the main application loop
-    // While in the main loop, your registered callbacks will be called
-    cout << "Starting GLUT main loop..." << endl;
-    glutMainLoop();
+	cout << "																																				" << endl;
+	cout << "  ▄▄▄█████▓ ▒█████   █     █░▓█████  ██▀███     ▓█████▄ ▓█████   █████▒▓█████  ███▄    █   ██████ ▓█████      ▄████  ▄▄▄       ███▄ ▄███▓▓█████ " << endl;
+	cout << "  ▓  ██▒ ▓▒▒██▒  ██▒▓█░ █ ░█░▓█   ▀ ▓██ ▒ ██▒   ▒██▀ ██▌▓█   ▀ ▓██   ▒ ▓█   ▀  ██ ▀█   █ ▒██    ▒ ▓█   ▀     ██▒ ▀█▒▒████▄    ▓██▒▀█▀ ██▒▓█   ▀  " << endl;
+	cout << "  ▒ ▓██░ ▒░▒██░  ██▒▒█░ █ ░█ ▒███   ▓██ ░▄█ ▒   ░██   █▌▒███   ▒████ ░ ▒███   ▓██  ▀█ ██▒░ ▓██▄   ▒███      ▒██░▄▄▄░▒██  ▀█▄  ▓██    ▓██░▒███   " << endl;
+	cout << "  ░ ▓██▓ ░ ▒██   ██░░█░ █ ░█ ▒▓█  ▄ ▒██▀▀█▄     ░▓█▄   ▌▒▓█  ▄ ░▓█▒  ░ ▒▓█  ▄ ▓██▒  ▐▌██▒  ▒   ██▒▒▓█  ▄    ░▓█  ██▓░██▄▄▄▄██ ▒██    ▒██ ▒▓█  ▄  " << endl;
+	cout << "    ▒██▒ ░ ░ ████▓▒░░░██▒██▓ ░▒████▒░██▓ ▒██▒   ░▒████▓ ░▒████▒░▒█░    ░▒████▒▒██░   ▓██░▒██████▒▒░▒████▒   ░▒▓███▀▒ ▓█   ▓██▒▒██▒   ░██▒░▒████▒ " << endl;
+	cout << "    ▒ ░░   ░ ▒░▒░▒░ ░ ▓░▒ ▒  ░░ ▒░ ░░ ▒▓ ░▒▓░    ▒▒▓  ▒ ░░ ▒░ ░ ▒ ░    ░░ ▒░ ░░ ▒░   ▒ ▒ ▒ ▒▓▒ ▒ ░░░ ▒░ ░    ░▒   ▒  ▒▒   ▓▒█░░ ▒░   ░  ░░░ ▒░ ░ " << endl;
+	cout << "      ░      ░ ▒ ▒░   ▒ ░ ░   ░ ░  ░  ░▒ ░ ▒░    ░ ▒  ▒  ░ ░  ░ ░       ░ ░  ░░ ░░   ░ ▒░░ ░▒  ░ ░ ░ ░  ░     ░   ░   ▒   ▒▒ ░░  ░      ░ ░ ░  ░ " << endl;
+	cout << "    ░      ░ ░ ░ ▒    ░   ░     ░     ░░   ░     ░ ░  ░    ░    ░ ░       ░      ░   ░ ░ ░  ░  ░     ░      ░ ░   ░   ░   ▒   ░      ░      ░   " << endl;
+	cout << "               ░ ░      ░       ░  ░   ░           ░       ░  ░           ░  ░         ░       ░     ░  ░         ░       ░  ░       ░      ░  ░ " << endl;
+	//                                                 ░                                                                                              
+
+
+	//fancy asci text hiero 
+	glutMainLoop();
     return EXIT_SUCCESS;
 }

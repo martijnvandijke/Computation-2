@@ -231,7 +231,6 @@ private :
 //
 // Text
 //
-
 class Text : public Drawable
 {
 public:

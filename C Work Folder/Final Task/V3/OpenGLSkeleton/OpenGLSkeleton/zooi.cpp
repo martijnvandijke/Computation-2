@@ -1,4 +1,49 @@
-							//float posy = posEnemy[1] + 	(dy / 15);
+//void printtext(int x, int y, string String)
+//{
+//	//(x,y) is from the bottom left of the window
+//	glMatrixMode(GL_PROJECTION);
+//	glPushMatrix();
+//	glLoadIdentity();
+//	glOrtho(0, windowWidth, 0, windowHeight, -1.0f, 1.0f);
+//	glMatrixMode(GL_MODELVIEW);
+//	glPushMatrix();
+//	glLoadIdentity();
+//	glPushAttrib(GL_DEPTH_TEST);
+//	glDisable(GL_DEPTH_TEST);
+//	glRasterPos2i(x, y);
+//	for (int i = 0; i<String.size(); i++)
+//	{
+//		glutBitmapCharacter(GLUT_BITMAP_9_BY_15, String[i]);
+//	}
+//	glPopAttrib();
+//	glMatrixMode(GL_PROJECTION);
+//	glPopMatrix();
+//	glMatrixMode(GL_MODELVIEW);
+//	glPopMatrix();
+//}
+//
+//void drawtext(std::string keytext, int x, int y) {
+//
+//		//cout << "jow ik ga ze uitrpinten" << endl;
+//		glRasterPos2f(900, 100);
+//		glColor3f(0, 0, 0);
+//	
+//		for (char& c : keytext)
+//		{
+//			//cout << c << endl;
+//			glutBitmapCharacter(GLUT_BITMAP_HELVETICA_18, c);
+//		}
+//
+//	}
+
+
+
+
+
+
+
+
+//float posy = posEnemy[1] + 	(dy / 15);
 							//PointF BulletStart = { posTurret[0], (posTurret[1]) };
 							//PointF BulletPos = bulletvector.at(i)->Move();
 							//Bullet* but = new Bullet(BulletIntercept, posTurret);

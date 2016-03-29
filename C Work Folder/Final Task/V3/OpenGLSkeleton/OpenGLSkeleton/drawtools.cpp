@@ -161,9 +161,7 @@ void Sqaure::draw() const
 
 void Sqaure::print() const
 {
-
 	//print fuinction
-
 }
 
 
@@ -173,7 +171,6 @@ Text::Text(const string string, Color color, PointF Pos)
 	: _string{string},
 	_color{color},
 	_Position{Pos}
-
 {
 
 }

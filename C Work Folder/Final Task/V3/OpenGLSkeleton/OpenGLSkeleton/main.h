@@ -24,9 +24,10 @@ void makeTurret(float x,float y);
 void drawEnemy();
 void drawTurret();
 void raster();
-//void readFile(string filename);
+void readFile(string filename);
 void drawBullets(PointF posEnemy, int i);
 void drawBullet(PointF posEnemy, int i);
 void path();
+void Start();
 
 #endif
