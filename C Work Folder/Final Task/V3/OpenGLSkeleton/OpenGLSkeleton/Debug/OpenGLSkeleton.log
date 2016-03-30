@@ -1,1 +1,12 @@
-﻿  OpenGLSkeleton.vcxproj -> D:\Computation-2\C Work Folder\Final Task\V3\OpenGLSkeleton\Debug\OpenGLSkeleton.exe
+﻿  zooi.cpp
+  Turret.cpp
+  main.cpp
+  FiredBullet.cpp
+  Enemy.cpp
+  drawtools.cpp
+  drawlist.cpp
+  Running Code Analysis for C/C++...
+  Generating Code...
+d:\computation-2\c work folder\final task\v3\openglskeleton\openglskeleton\enemy.cpp(62): warning C4715: 'Enemy::Move': not all control paths return a value
+  OpenGLSkeleton.vcxproj -> D:\Computation-2\C Work Folder\Final Task\V3\OpenGLSkeleton\Debug\OpenGLSkeleton.exe
+d:\computation-2\c work folder\final task\v3\openglskeleton\openglskeleton\glut.h(146): warning C28251: Inconsistent annotation for 'exit': this instance has no annotations. See c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdlib.h(50). 

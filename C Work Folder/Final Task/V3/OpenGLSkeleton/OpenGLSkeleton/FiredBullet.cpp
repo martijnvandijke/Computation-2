@@ -17,8 +17,8 @@ FiredBullet::FiredBullet(PointF destination, PointF begin, PointF current, int s
 	Count2++;
 	_id = Count2;
 	//_current = { _begin[0], _begin[1]	};
-	cout << "Made a bullet in the Bullet class:" << endl;
-	cout << "begin x:"<< _begin[0] << " begin y:" << _begin[1] << " destination x:" << _destination[0] << "   destination y:" << _destination[1] << endl;
+	//cout << "Made a bullet in the Bullet class:" << endl;
+	//cout << "begin x:"<< _begin[0] << " begin y:" << _begin[1] << " destination x:" << _destination[0] << "   destination y:" << _destination[1] << endl;
 }
 
 FiredBullet::~FiredBullet()
@@ -38,12 +38,12 @@ PointF FiredBullet::Move()
 	if (dx > 0) {
 		if (dy > 0) {
 			PointF speed = { (_begin[0] - _speed)	, (_begin[1] - _speed) };
-			cout << speed[0] << " : :::" << speed[1] << endl;
+			//cout << speed[0] << " : :::" << speed[1] << endl;
 			return speed;
 		}
 		else {
 			PointF speed = { (_begin[0] - _speed)	, (_begin[1] + _speed) };
-			cout << speed[0] << " : :::" << speed[1] << endl;
+			//cout << speed[0] << " : :::" << speed[1] << endl;
 			return speed;
 		}
 	}
@@ -51,12 +51,12 @@ PointF FiredBullet::Move()
 	else {
 		if (dy > 0) {
 			PointF speed = { (_begin[0] + _speed)	, (_begin[1] - _speed) };
-			cout << speed[0] << " : :::" << speed[1] << endl;
+			//cout << speed[0] << " : :::" << speed[1] << endl;
 			return speed;
 		}
 		else {
 			PointF speed = { (_begin[0] + _speed)	, (_begin[1] + _speed) };
-			cout << speed[0] << " : :::" << speed[1] << endl;
+			//cout << speed[0] << " : :::" << speed[1] << endl;
 			return speed;
 		}
 	}

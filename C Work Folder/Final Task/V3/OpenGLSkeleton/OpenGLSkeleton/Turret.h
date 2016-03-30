@@ -9,7 +9,9 @@
 
 class Turret {
 
-public: Turret(PointF position,Color color , int range, int health, int upgrade, int type);
+public: Turret(PointF position,Color color , int range, int health, int upgrade, int type, int time);
+
+	void TimeUpdate(int CurTime);
 
 	int	Aim(int i);
 
@@ -23,6 +25,7 @@ public:
 	int _health;
 	int _bulletSpeed;
 	int _aiming = 0;
+	int _lastTime;
 private:
 	Color _color;
 	

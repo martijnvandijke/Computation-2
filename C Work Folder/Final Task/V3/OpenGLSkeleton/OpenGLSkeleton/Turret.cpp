@@ -2,18 +2,23 @@
 
 //Turret file
 
-Turret::Turret(PointF position,Color color ,int range, int health, int upgrade, int type)
+Turret::Turret(PointF position,Color color ,int range, int health, int upgrade, int type,int time)
 	: _position{ position },
 	_range{ range },
 	_health{ health },
 	_color{color},
 	_upgrade{ upgrade },
-	_type{type}
+	_type{type},
+	_lastTime{time}
 {
 	//define bullet speeds for the turret
 	if (_type == 0) {
-		_bulletSpeed = 20;
+		_bulletSpeed = 7;
 	}
+}
+void Turret::TimeUpdate(int CurTime) {
+	_lastTime = CurTime;
+
 }
 
 int Turret::Aim(int i)

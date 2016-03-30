@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="1">
+    <root name="D:/Computation-2/C Work Folder/Final Task/V3/OpenGLSkeleton/OpenGLSkeleton"/>
+    <includedir>
+        <dir name="D:/Computation-2/C Work Folder/Final Task/V3/OpenGLSkeleton/OpenGLSkeleton/"/>
+    </includedir>
+    <defines>
+        <define name="Compu stats"/>
+    </defines>
+    <paths>
+        <dir name="D:/Computation-2/C Work Folder/Final Task/V3/OpenGLSkeleton/OpenGLSkeleton"/>
+    </paths>
+</project>

@@ -1,4 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?><DEFECTS><DEFECT>
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
     <SFA>
       <FILEPATH>d:\computation-2\c work folder\final task\v3\openglskeleton\openglskeleton\</FILEPATH>
       <FILENAME>glut.h</FILENAME>
@@ -11,7 +13,8 @@
     <DECORATED>exit</DECORATED>
     <FUNCLINE>146</FUNCLINE>
     <PATH />
-  </DEFECT><DEFECT>
+  </DEFECT>
+  <DEFECT>
     <SFA>
       <FILEPATH>d:\computation-2\c work folder\final task\v3\openglskeleton\openglskeleton\</FILEPATH>
       <FILENAME>main.cpp</FILENAME>
@@ -31,7 +34,8 @@
         <COLUMN>15</COLUMN>
       </SFA>
     </PATH>
-  </DEFECT><DEFECT>
+  </DEFECT>
+  <DEFECT>
     <SFA>
       <FILEPATH>d:\computation-2\c work folder\final task\v3\openglskeleton\openglskeleton\</FILEPATH>
       <FILENAME>main.cpp</FILENAME>
@@ -51,7 +55,8 @@
         <COLUMN>16</COLUMN>
       </SFA>
     </PATH>
-  </DEFECT><DEFECT>
+  </DEFECT>
+  <DEFECT>
     <SFA>
       <FILEPATH>d:\computation-2\c work folder\final task\v3\openglskeleton\openglskeleton\</FILEPATH>
       <FILENAME>main.cpp</FILENAME>
@@ -71,4 +76,5 @@
         <COLUMN>16</COLUMN>
       </SFA>
     </PATH>
-  </DEFECT></DEFECTS>
+  </DEFECT>
+</DEFECTS>

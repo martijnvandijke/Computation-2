@@ -50,7 +50,7 @@ int NumberFrames = 0;
 int currentTime = 0;
 int fps;
 int PrevTime = 0;
-
+int WaitTme = 400;
 //only excuted once
 void init()
 {
@@ -74,9 +74,6 @@ void init()
     gluOrtho2D(0, windowWidth, 0, windowHeight);
     glMatrixMode(GL_MODELVIEW);
 	Start();
-	//makeTurret(100,300);
-	//makeEnemy();
-	//raster();
 }
 
 //draw the start screen -> fancy opening of the game
@@ -91,15 +88,13 @@ void readFile(string filename) {
 	MapName = filename;
 	int CountLines = 0;
 	filename = filename + ".txt";
-	fp.open(filename); // , ios::in);
+	fp.open(filename);
 	if (fp.fail()) {
 		cout << "Error parsing with the file \nPlease try again" << endl;
 		return;
 	}
 
 	while (	getline(fp, word)){
-		//no map has yet been loaded, load the map name
-
 		//count the "y" direction
 		CountLines++;
 		for (unsigned i = 0; i < word.size(); i++) {
@@ -117,7 +112,7 @@ void readFile(string filename) {
 }
 
 
-//make a grid 
+//make a grid
 void raster() {
 	Color color = { 0.40625,0.76171875,0.63671875 };
 	int rasterHoogte = windowHeight;
@@ -209,12 +204,13 @@ void makeEnemy() {
 	float lind = 2.0;
 	float r = 10;
 	int seg = 10;
-	float speed = 5;
+	float speed = 1;
 	int health = 100;
 	Enemy* en = new Enemy(begin1, begin1, speed, health);
 	enenemyvector.push_back(en);
 }
-//draw the enemy's + make alogirthm
+
+//draw the enemy's + walk alogirthm
 void drawEnemy() {
 	Color color = { 0.12890625, 0.5859375, 0.94921875 };
 	float r = 22;
@@ -232,7 +228,7 @@ void drawEnemy() {
 
 
 			//delete (*enenemyvector);
-			cout << "Deleted an enemy" << endl;
+			//cout << "Deleted an enemy" << endl;
 			//delete the enemy from the enemy vector
 			enenemyvector.erase((enenemyvector.begin() + i));
 		}
@@ -247,13 +243,13 @@ void drawEnemy() {
 				//calulate the diffrence in position
 				float dx = abs( curpos[0] - Bullet[0]);
 				float dy = abs( curpos[1] - Bullet[1]);
-				cout << "dx :" << dx << "dy:" << dy << endl;
+				//cout << "dx :" << dx << "dy:" << dy << endl;
 				//bullet and enemy are at the same poition
 
 				//if the distnace is smaller tne the radius of the object
 				if ( dx < 100 &&	dy < 100	) {
-					enenemyvector.at(i)->Health(5);;
-					cout << "Damaged an enemy" << endl;
+					enenemyvector.at(i)->Health(1);;
+					//cout << "Damaged an enemy" << endl;
 					PlayerScore = PlayerScore + 10;
 					PlaySoundW(L"point.wav", NULL, SND_FILENAME | SND_NODEFAULT | SND_ASYNC);
 				}
@@ -391,100 +387,56 @@ void drawBullets(PointF posEnemy, int j){
 
 		//loop trough all the turrets
 		for (unsigned i = 0; i < turretvector.size(); i++) {
+			//get current time and the time the turret has last fired
+			int currentTime = glutGet(GLUT_ELAPSED_TIME);
+			int TimeTurret = turretvector.at(i)->_lastTime;
 
-			//if turret health is positive ->later function
-			if (turretvector.at(i)->_health > 0) {
+			//if the turret is allowed to fire
+			if ((currentTime - TimeTurret) > WaitTme) {
+
+				//if turret health is positive ->later function
+				if (turretvector.at(i)->_health > 0) {
 					//get the distance between the turret and enemy
-					//float dx =  turretvector.at(i)->_position[0] - posEnemy[0];
-					//float dy =  turretvector.at(i)->_position[1] - posEnemy[1];
+
 					PointF posTurret = turretvector.at(i)->_position;
 					float dy = abs(posEnemy[1] - posTurret[1]);
 					float dx = abs(posEnemy[0] - posTurret[0]);
+
 					//caclulate range to enemy
-					float rangeToEnemy = sqrt(	(pow(dx,2)  + pow(dy,2))	);
-					//cout << rangeToEnemy << endl;
+					float rangeToEnemy = sqrt((pow(dx, 2) + pow(dy, 2)));
 					//if enemy is in the range
 					if (rangeToEnemy < turretvector.at(i)->_range) {
-						cout << "Enemy is in range" << endl;
-						//get position of the turret
-						PointF turPos = turretvector.at(i)->_position;
-						//get the aiming id of the turret
-						int aimingId = turretvector.at(i)->_aiming;
-						//s^2 ( V_b^2 - V_e^2) + 1s*r*V_e^2*cos(a) - V_e^2*r^2 <- eqaution to solve 
-
-						//if the current turret is locked on to the current enemy
-						//if (aimingId == enenemyvector.at(j)->_id) {
-							
-							int bulletSpeed = turretvector.at(i)->_bulletSpeed;
-							int EnemeySpeed = enenemyvector.at(j)->_speed;
-							cout << "abs dx ,dy" << endl;
-							cout << dx << "   "<< dy << endl;
-							//calulate the anlge between the enemy and the turret
-							float alfa = atan((dy/dx));
-							cout <<"alfa: " << alfa << endl;
-
-//							cout << cos(alfa) << endl;
-							//for now the diffrenxe in speed is 15^2
-							int a = 175;//(pow(bulletSpeed,2) - pow(EnemeySpeed,2));
-
-							int b = 2*rangeToEnemy * pow(EnemeySpeed,2) * cos(alfa);
-							int c = -(pow(EnemeySpeed, 2)* pow(rangeToEnemy, 2));
-							cout <<"a:" << a << "  b:" << b << "  c: " << c << endl;
-							int x1 = (-b + sqrt(b * b - 4 * a * c)) / (2 * a);
-							int x2 = (-b - sqrt(b * b - 4 * a * c)) / (2 * a);
-							cout << "Value of the s'es are :" << endl;
-							cout <<"x1:" << x1 << " x2:" << x2 << endl;
-							//cout << "jow ik draw the bullet line" << endl;
-							float posx;
-							if (x1 >= 0) {
-								posx = x1;
-							}
-							if (x1 < 0 && x2 >= 0) {
-								posx = x2;
-							}
-							//posx = x1;
-							
-							//calculate the point where the bullet would intercept the enemy
-							cout << "Calulting intercet point" << endl;
-							PointF  BulletIntercept = {	(posEnemy[0] + posx) ,  (posEnemy[1] )};
-							cout << "Poition Enemy :" << endl;
-							cout << "x : " << posEnemy[0] << "  y:" << posEnemy[1] << endl;
-							cout << "x:" << BulletIntercept[0] << "   y: " << BulletIntercept[1] << endl;
-							//make a new bullet with the corresponding data
-							//int Bulletid = bulletvector.back()->_id + 1;
-
-							FiredBullet* bullet = new FiredBullet(BulletIntercept,posTurret,posTurret,bulletSpeed);
-							//*test = bullet.
-							bulletvector.push_back(bullet	);
-							//update track id of the turret
-							turretvector.at(i)->Aim(enenemyvector.at(j)->_id);
-							
-
-
-						
-
-
+						// As from the Part 2A. PDF
+						int a = (pow(turretvector.at(i)->_bulletSpeed, 2) - pow(enenemyvector.at(j)->_speed, 2));	//static for the same bullet & enemey
+						float alfa = atan((dy / dx));
+						int b = 2 * rangeToEnemy* pow(enenemyvector.at(j)->_speed, 2)*cos(alfa);	//variable depending on the distance from turret to object
+						int c = -pow(enenemyvector.at(j)->_speed, 2)* pow(rangeToEnemy, 2);
+						//cout << a << " b: " << b << " c: " << c << endl;
+						//calulating the outcomes for s
+						int x_1 = (-b + sqrt((pow(b, 2) - 4 * a*c))) / (2 * a);
+						int x_2 = (-b - sqrt((pow(b, 2) - 4 * a*c))) / (2 * a);
+						int posx = x_1;
+						int posy = 0;
+						PointF BulletIntercept = { (posEnemy[0] + posx)	, (posEnemy[1] + posy) };
+						FiredBullet* bullet = new FiredBullet(BulletIntercept, posTurret, posTurret, turretvector.at(i)->_bulletSpeed);
+						bulletvector.push_back(bullet);
+						turretvector.at(i)->TimeUpdate(currentTime);
+					}
 
 				}
+			}
 
-			}
-			//destroy turret
-			else {
-				//destroy the turret
-				delete turretvector.at(i);
-				//destroy the turret from the turret vector
-				turretvector.erase(turretvector.begin() + i);	//(enenemyvector.begin() + i)
-			}
 
 		}
+
 }
 
-//make turret at a poistion (if it is possible)
+//make turret at a poistion and check if this is possible
 void makeTurret(float x,float y) {
 	int posx = x/20;
 	int posy = y/20;
 	// do not place turrets at the edge of the path -> a miniumum of 1 tile should be between the turret and the path and do not place the turret at a place where there is already a turret
-	if(Map[(posx+1)][(posy+1)] != '/' && Map[(posx -1)][(posy -1)] != '/'&& Map[(posx -1)][(posy )] != '/' && Map[(posx)][(posy - 1)]	&& (Map[posx][posy] != 'T' && Map[(posx+1)][posy] !='T' && Map[(posx)][(posy+1)] && Map[(posx+1)][(posy+1)] != 'T' )	){
+	if(Map[(posx+1)][(posy+1)] != '/' && Map[(posx -1)][(posy -1)] != '/'&& Map[(posx -1)][(posy )] != '/' && Map[(posx)][(posy - 1)]  != '/' && Map[(posx)][(posy)] != '/' && Map[(posx)][(posy+1)] != '/' && (Map[posx][posy] != 'T' && Map[(posx+1)][posy] !='T' && Map[(posx)][(posy+1)]  != 'T' && Map[(posx+1)][(posy+1)] != 'T' )	){
 		//store the turret poisition of the map, prevent the paler from placing two turrets on eachother
 		Map[posx][posy] = 'T';
 		Map[(posx + 1)][(posy + 1)] = 'T';
@@ -502,7 +454,7 @@ void makeTurret(float x,float y) {
 		//set the range of the turret
 		int range = 150;
 		//make a new turret and put it on the turret vector
-		Turret* tur = new Turret(pos, color, range, health, upgrade, type);
+		Turret* tur = new Turret(pos, color, range, health, upgrade, type, glutGet(GLUT_ELAPSED_TIME) );
 		turretvector.push_back(tur);
 	}
 	else {
@@ -513,7 +465,7 @@ void makeTurret(float x,float y) {
 
 //draw all of the turrets
 void drawTurret() {
-	//for every turret construct the turret
+	//for every turret construct the corresonding turret
 	for (unsigned i = 0; i < turretvector.size(); i++) {
 		Color color = { 0.2f, 0.2f, 0.2f };
 		PointF pos = turretvector.at(i)->_position;
@@ -521,16 +473,12 @@ void drawTurret() {
 		PointF begin3 = { (pos[0]) , (pos[1] + 40) };
 		PointF begin4 = { (pos[0] + 20) , (pos[1]) };
 		Sqaure* sq = new Sqaure(pos, begin2, begin3, begin4, color);
-		//put turret on the drawlist
-		drawList.push_back(sq);
+		//put turret on the Static drawlist
+		Static.push_back(sq);
 	}
 }
 
-
-
-
-
-//draw bullet's function
+//draw the actual bullet's as is seen on screen
 void drawBullet() {
 	//define colors and width of the bullet
 	Color color = { 0.9f, 0.9f, 0.9f }; //white bullets
@@ -541,32 +489,19 @@ void drawBullet() {
 
 		// if bullet is out of screen 
 		if (BulletPos[0] > windowWidth || BulletPos[1] > windowHeight || BulletPos[0] < 0 || BulletPos[1] < 0) {
-			//delete the bullet 
-			//int bulletID = bulletvector.at(i)->_id;
-			//delete bulletvector.at(i);
-			//delete the bulelt from the vector
-			delete bulletvector[i];
+			//delete the bulelt from the vector and the pointer to the bullet
+			delete bulletvector.at(i);
 			bulletvector.erase(bulletvector.begin() + i);	
-			cout << "Deleted an bullet" << endl;
+			
 		}
 		else {
-			
+			//update the movement of the bullet
 			bulletvector.at(i)->Update(BulletPos);
-			cout << "Bullet position : " << endl;
-			cout << BulletPos[0] << "  " << BulletPos[1] << endl;
-			//PointF Bulletpos2 = bulletvector.at(i)->Move2();
-			//bulletvector.at(i)->Update2(Bulletpos2);
-			PointF BulletPos2 = { BulletPos[0], (BulletPos[1] + 10) };
+			//draw the bullet
+			PointF BulletPos2 = { BulletPos[0], (BulletPos[1] + 5) };
 			Line* bulletline = new Line{ BulletPos , BulletPos2 , color, lind };
 			drawList.push_back(bulletline);
 
-
-			//PointF end = bulletvector.at(i)
-			////if the bullet end position is the same as the current enemy position eg a hit of the bullet
-			//if (end[0] == posEnemy[0] && end[1] == posEnemy[1]) {
-			//	
-			//	enenemyvector.at(j)->Health(-10);
-			//}
 		}
 	}
 }
@@ -575,10 +510,10 @@ void drawBullet() {
 
 //if idle do all the calculations
 void idle(int value) {
+	//calulate the number of Frames
 	CalcFPS();
 	//draw the turret's
 	drawTurret();
-
 	//draw the enemy's
 	drawEnemy();
 	//make a new turret
@@ -586,7 +521,7 @@ void idle(int value) {
 	
 	DrawButton();
 	text();
-	//cal the disp
+	
 	//display function -> draw everything 
 	glutPostRedisplay();
 
@@ -784,15 +719,11 @@ void reshape(int w, int h)
 void display()
 {
     glClear(GL_COLOR_BUFFER_BIT);   // clear the backbuffer
-	//drawtext(keytext, 100, 100);
 
-	//draw all the Static Stuff
+	//draw all the Static Stuff -> map data
 	for (Drawable* drawable : Static) {
 		drawable->draw();
-		
 	}
-
-
 	//draw everything on the drawlist
 	for (Drawable* drawable : drawList){ 
 		drawable->draw(); 
@@ -803,15 +734,13 @@ void display()
 	//lastly draw the text -> ensures the text is always draw on top
 	for (Drawable* drawable : DrawTextList) {
 		drawable->draw();
-		//delte the ponter to the drawable
+		//delete the ponter to the drawable
 		delete drawable;
 	}
-
-	
     // Visualize the drawing commands
     glFlush();            // Execute all commands waiting to be executed
     glutSwapBuffers();    // Swap the backbuffer and frontbuffer
-	//clear the drawing + text list
+	//clear the drawing & text list
 	drawList.clear();
 	DrawTextList.clear();
 }
@@ -847,8 +776,6 @@ void keyfunc(unsigned char key, int x, int y) {
 	//char c = key;
 	//keytext = string{ c } +", " + to_string(x) + ", " + to_string(y);
 }
-
-
 
 //main function
 int main(int argc, char* argv[])

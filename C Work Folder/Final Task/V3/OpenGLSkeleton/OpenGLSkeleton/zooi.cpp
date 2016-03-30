@@ -1,3 +1,109 @@
+
+
+			//PointF end = bulletvector.at(i)
+			////if the bullet end position is the same as the current enemy position eg a hit of the bullet
+			//if (end[0] == posEnemy[0] && end[1] == posEnemy[1]) {
+			//	
+			//	enenemyvector.at(j)->Health(-10);
+			//}
+
+
+
+
+
+//cout << "Bullet position : " << endl;
+			//cout << BulletPos[0] << "  " << BulletPos[1] << endl;
+			//PointF Bulletpos2 = bulletvector.at(i)->Move2();
+			//bulletvector.at(i)->Update2(Bulletpos2);
+
+
+
+
+
+
+
+
+
+//if (rangeToEnemy < turretvector.at(i)->_range) {
+//	cout << "Enemy is in range" << endl;
+//	//get position of the turret
+//	PointF turPos = turretvector.at(i)->_position;
+//	//get the aiming id of the turret
+//	int aimingId = turretvector.at(i)->_aiming;
+//	//s^2 ( V_b^2 - V_e^2) + 1s*r*V_e^2*cos(a) - V_e^2*r^2 <- eqaution to solve 
+//
+//	//if the current turret is locked on to the current enemy
+//	//if (aimingId == enenemyvector.at(j)->_id) {
+//
+//	int bulletSpeed = turretvector.at(i)->_bulletSpeed;
+//	int EnemeySpeed = enenemyvector.at(j)->_speed;
+//	cout << "abs dx ,dy" << endl;
+//	cout << dx << "   " << dy << endl;
+//	//calulate the anlge between the enemy and the turret
+//	float alfa = atan((dy / dx));
+//	cout << "alfa: " << alfa << endl;
+//
+//	//							cout << cos(alfa) << endl;
+//	//for now the diffrenxe in speed is 15^2
+//	int a = 175;//(pow(bulletSpeed,2) - pow(EnemeySpeed,2));
+//
+//	int b = 2 * rangeToEnemy * pow(EnemeySpeed, 2) * cos(alfa);
+//	int c = -(pow(EnemeySpeed, 2)* pow(rangeToEnemy, 2));
+//	cout << "a:" << a << "  b:" << b << "  c: " << c << endl;
+//	int x1 = (-b + sqrt(b * b - 4 * a * c)) / (2 * a);
+//	int x2 = (-b - sqrt(b * b - 4 * a * c)) / (2 * a);
+//	cout << "Value of the s'es are :" << endl;
+//	cout << "x1:" << x1 << " x2:" << x2 << endl;
+//	//cout << "jow ik draw the bullet line" << endl;
+//	float posx;
+//	if (x1 >= 0) {
+//		posx = x1;
+//	}
+//	if (x1 < 0 && x2 >= 0) {
+//		posx = x2;
+//	}
+//	//posx = x1;
+//
+//	//calculate the point where the bullet would intercept the enemy
+//	cout << "Calulting intercet point" << endl;
+//	PointF  BulletIntercept = { (posEnemy[0] + posx) ,  (posEnemy[1]) };
+//	cout << "Poition Enemy :" << endl;
+//	cout << "x : " << posEnemy[0] << "  y:" << posEnemy[1] << endl;
+//	cout << "x:" << BulletIntercept[0] << "   y: " << BulletIntercept[1] << endl;
+//	//make a new bullet with the corresponding data
+//	//int Bulletid = bulletvector.back()->_id + 1;
+//
+//	FiredBullet* bullet = new FiredBullet(BulletIntercept, posTurret, posTurret, bulletSpeed);
+//	//*test = bullet.
+//	bulletvector.push_back(bullet);
+//	//update track id of the turret
+//	turretvector.at(i)->Aim(enenemyvector.at(j)->_id);
+//
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //void printtext(int x, int y, string String)
 //{
 //	//(x,y) is from the bottom left of the window
