@@ -12,21 +12,35 @@
 {\ttfamily \#include \char`\"{}Turret.\+h\char`\"{}}\\*
 {\ttfamily \#include \char`\"{}Fired\+Bullet.\+h\char`\"{}}\\*
 {\ttfamily \#include $<$fstream$>$}\\*
-{\ttfamily \#include $<$stdlib.\+h$>$}\\*
-{\ttfamily \#include $<$crtdbg.\+h$>$}\\*
+{\ttfamily \#include $<$windows.\+h$>$}\\*
 Include dependency graph for main.\+cpp\+:
-% FIG 0
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp__incl}
+\end{center}
+\end{figure}
 \subsection*{Macros}
 \begin{DoxyCompactItemize}
 \item 
 \#define \hyperlink{main_8cpp_a525335710b53cb064ca56b936120431e}{\+\_\+\+U\+S\+E\+\_\+\+M\+A\+T\+H\+\_\+\+D\+E\+F\+I\+N\+ES}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
 \item 
-\#define \hyperlink{main_8cpp_a4905dd6e51c94ac94ec1c4118a20656a}{C\+R\+T\+D\+B\+G\+\_\+\+M\+A\+P\+\_\+\+A\+L\+L\+OC}
+enum \hyperlink{main_8cpp_a0de0e072620e775fe9c75d3d5e117900}{M\+E\+N\+U\+\_\+\+T\+Y\+PE} \{ \hyperlink{main_8cpp_a0de0e072620e775fe9c75d3d5e117900a37afbf5c6a28e443c2937f536ca0c41a}{M\+E\+N\+U\+\_\+\+F\+R\+O\+NT}, 
+\hyperlink{main_8cpp_a0de0e072620e775fe9c75d3d5e117900a9a7f2d6970500275fa28de339e23224d}{M\+E\+N\+U\+\_\+\+S\+P\+OT}, 
+\hyperlink{main_8cpp_a0de0e072620e775fe9c75d3d5e117900a342928a9e737978a667fd700446db98c}{M\+E\+N\+U\+\_\+\+B\+A\+CK}, 
+\hyperlink{main_8cpp_a0de0e072620e775fe9c75d3d5e117900a4e11c86027eb3d7a306a23385b415e88}{M\+E\+N\+U\+\_\+\+B\+A\+C\+K\+\_\+\+F\+R\+O\+NT}
+ \}
 \end{DoxyCompactItemize}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
 void \hyperlink{main_8cpp_a02fd73d861ef2e4aabb38c0c9ff82947}{init} ()
+\item 
+void \hyperlink{main_8cpp_a07aaf1227e4d645f15e0a964f54ef291}{Start} ()
 \item 
 void \hyperlink{main_8cpp_a7b17b0c78fa9e56e9e228bd54275cd93}{read\+File} (string \hyperlink{main_8cpp_a3a1a90139c2c8ab1fca0ea8b1790b7b2}{filename})
 \item 
@@ -48,6 +62,18 @@ void \hyperlink{main_8cpp_a43d711f5646009700e97e8cce499d5fc}{draw\+Bullet} ()
 \item 
 void \hyperlink{main_8cpp_aa1b7d944fc5d269240500e79c79745b9}{idle} (int value)
 \item 
+void \hyperlink{main_8cpp_a96b72be91f6be2a3bcb095c810af0a0f}{text} ()
+\item 
+void \hyperlink{main_8cpp_ae235aba3da99a1a98eff2725f78fd76f}{Calc\+F\+PS} ()
+\item 
+void \hyperlink{main_8cpp_a94ccbc3feb752aeabc9774afbfc0a8c1}{Draw\+Button} ()
+\item 
+void \hyperlink{main_8cpp_a0596242bf68a6ef382eb5095ff275c7f}{Sub\+Menu2} (int item)
+\item 
+void \hyperlink{main_8cpp_a6508d93879d4a974e3d48adb16f27650}{menu} (int item)
+\item 
+void \hyperlink{main_8cpp_a79f11062f9d13d49cbc4302131544fde}{Mouse\+Click} (int button, int state, int x, int y)
+\item 
 void \hyperlink{main_8cpp_acc1ffe65e6869931318610cae7210078}{reshape} (int w, int h)
 \item 
 void \hyperlink{main_8cpp_a1e5b20fed15743656bb6d2e6a6ea6269}{display} ()
@@ -63,7 +89,11 @@ std\+::string \hyperlink{main_8cpp_a9e6b0a455cf17eae20ab1d846857a438}{keytext}
 \item 
 \hyperlink{drawlist_8h_a4dd7049762619e3d87a40c5305bbbfb2}{Draw\+List} \hyperlink{main_8cpp_a83d31e00f72d27dad682e1ca6c120f9c}{draw\+List}
 \item 
-string \hyperlink{main_8cpp_a3a1a90139c2c8ab1fca0ea8b1790b7b2}{filename} = \char`\"{}test\char`\"{}
+\hyperlink{drawlist_8h_a4dd7049762619e3d87a40c5305bbbfb2}{Draw\+List} \hyperlink{main_8cpp_a2d0f241950efcefabc8783b975d97b8b}{Static}
+\item 
+\hyperlink{drawlist_8h_a4dd7049762619e3d87a40c5305bbbfb2}{Draw\+List} \hyperlink{main_8cpp_ab6ec2f0d922cdded843e4ed8f7c039c3}{Draw\+Text\+List}
+\item 
+string \hyperlink{main_8cpp_a3a1a90139c2c8ab1fca0ea8b1790b7b2}{filename}
 \item 
 int \hyperlink{main_8cpp_a185f4542c638e29c9a6c41f3a22f42ea}{Player\+Health} = 100
 \item 
@@ -83,7 +113,19 @@ vector$<$ \hyperlink{class_turret}{Turret} $\ast$ $>$ \hyperlink{main_8cpp_a4f88
 \item 
 vector$<$ \hyperlink{class_fired_bullet}{Fired\+Bullet} $\ast$ $>$ \hyperlink{main_8cpp_a89d8c75a0feb64c03d7c4518b0c661f2}{bulletvector}
 \item 
-int \hyperlink{main_8cpp_a37722a150250e2a5a98e5e0d11e53449}{start} = 0
+vector$<$ \hyperlink{class_button}{Button} $\ast$ $>$ \hyperlink{main_8cpp_a7edf522381725954c5ff8bd06e5ccff5}{Button\+Vector}
+\item 
+int \hyperlink{main_8cpp_a95d3433efc8990e776a1755d9653e3a1}{Number\+Frames} = 0
+\item 
+int \hyperlink{main_8cpp_a73ab6b9ae8c97849c3323ef4fe822ad3}{current\+Time} = 0
+\item 
+int \hyperlink{main_8cpp_a45b67662d620a977a2cfe519f7ab6273}{fps}
+\item 
+int \hyperlink{main_8cpp_a4da79230dff46da09964727606ed93b9}{Prev\+Time} = 0
+\item 
+int \hyperlink{main_8cpp_ab6f396318b940e326513fc803b191067}{Wait\+Tme} = 250
+\item 
+int \hyperlink{main_8cpp_aca88a52dae5a5f74cfaa56c90eb86abb}{lose} = 0
 \end{DoxyCompactItemize}
 
 
@@ -91,12 +133,59 @@ int \hyperlink{main_8cpp_a37722a150250e2a5a98e5e0d11e53449}{start} = 0
 \index{main.\+cpp@{main.\+cpp}!\+\_\+\+U\+S\+E\+\_\+\+M\+A\+T\+H\+\_\+\+D\+E\+F\+I\+N\+ES@{\+\_\+\+U\+S\+E\+\_\+\+M\+A\+T\+H\+\_\+\+D\+E\+F\+I\+N\+ES}}
 \index{\+\_\+\+U\+S\+E\+\_\+\+M\+A\+T\+H\+\_\+\+D\+E\+F\+I\+N\+ES@{\+\_\+\+U\+S\+E\+\_\+\+M\+A\+T\+H\+\_\+\+D\+E\+F\+I\+N\+ES}!main.\+cpp@{main.\+cpp}}
 \subsubsection[{\texorpdfstring{\+\_\+\+U\+S\+E\+\_\+\+M\+A\+T\+H\+\_\+\+D\+E\+F\+I\+N\+ES}{_USE_MATH_DEFINES}}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+U\+S\+E\+\_\+\+M\+A\+T\+H\+\_\+\+D\+E\+F\+I\+N\+ES}\hypertarget{main_8cpp_a525335710b53cb064ca56b936120431e}{}\label{main_8cpp_a525335710b53cb064ca56b936120431e}
-\index{main.\+cpp@{main.\+cpp}!C\+R\+T\+D\+B\+G\+\_\+\+M\+A\+P\+\_\+\+A\+L\+L\+OC@{C\+R\+T\+D\+B\+G\+\_\+\+M\+A\+P\+\_\+\+A\+L\+L\+OC}}
-\index{C\+R\+T\+D\+B\+G\+\_\+\+M\+A\+P\+\_\+\+A\+L\+L\+OC@{C\+R\+T\+D\+B\+G\+\_\+\+M\+A\+P\+\_\+\+A\+L\+L\+OC}!main.\+cpp@{main.\+cpp}}
-\subsubsection[{\texorpdfstring{C\+R\+T\+D\+B\+G\+\_\+\+M\+A\+P\+\_\+\+A\+L\+L\+OC}{CRTDBG_MAP_ALLOC}}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+R\+T\+D\+B\+G\+\_\+\+M\+A\+P\+\_\+\+A\+L\+L\+OC}\hypertarget{main_8cpp_a4905dd6e51c94ac94ec1c4118a20656a}{}\label{main_8cpp_a4905dd6e51c94ac94ec1c4118a20656a}
+
+
+\subsection{Enumeration Type Documentation}
+\index{main.\+cpp@{main.\+cpp}!M\+E\+N\+U\+\_\+\+T\+Y\+PE@{M\+E\+N\+U\+\_\+\+T\+Y\+PE}}
+\index{M\+E\+N\+U\+\_\+\+T\+Y\+PE@{M\+E\+N\+U\+\_\+\+T\+Y\+PE}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{\texorpdfstring{M\+E\+N\+U\+\_\+\+T\+Y\+PE}{MENU_TYPE}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf M\+E\+N\+U\+\_\+\+T\+Y\+PE}}\hypertarget{main_8cpp_a0de0e072620e775fe9c75d3d5e117900}{}\label{main_8cpp_a0de0e072620e775fe9c75d3d5e117900}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{M\+E\+N\+U\+\_\+\+F\+R\+O\+NT@{M\+E\+N\+U\+\_\+\+F\+R\+O\+NT}!main.\+cpp@{main.\+cpp}}\index{main.\+cpp@{main.\+cpp}!M\+E\+N\+U\+\_\+\+F\+R\+O\+NT@{M\+E\+N\+U\+\_\+\+F\+R\+O\+NT}}\item[{\em 
+M\+E\+N\+U\+\_\+\+F\+R\+O\+NT\hypertarget{main_8cpp_a0de0e072620e775fe9c75d3d5e117900a37afbf5c6a28e443c2937f536ca0c41a}{}\label{main_8cpp_a0de0e072620e775fe9c75d3d5e117900a37afbf5c6a28e443c2937f536ca0c41a}
+}]\index{M\+E\+N\+U\+\_\+\+S\+P\+OT@{M\+E\+N\+U\+\_\+\+S\+P\+OT}!main.\+cpp@{main.\+cpp}}\index{main.\+cpp@{main.\+cpp}!M\+E\+N\+U\+\_\+\+S\+P\+OT@{M\+E\+N\+U\+\_\+\+S\+P\+OT}}\item[{\em 
+M\+E\+N\+U\+\_\+\+S\+P\+OT\hypertarget{main_8cpp_a0de0e072620e775fe9c75d3d5e117900a9a7f2d6970500275fa28de339e23224d}{}\label{main_8cpp_a0de0e072620e775fe9c75d3d5e117900a9a7f2d6970500275fa28de339e23224d}
+}]\index{M\+E\+N\+U\+\_\+\+B\+A\+CK@{M\+E\+N\+U\+\_\+\+B\+A\+CK}!main.\+cpp@{main.\+cpp}}\index{main.\+cpp@{main.\+cpp}!M\+E\+N\+U\+\_\+\+B\+A\+CK@{M\+E\+N\+U\+\_\+\+B\+A\+CK}}\item[{\em 
+M\+E\+N\+U\+\_\+\+B\+A\+CK\hypertarget{main_8cpp_a0de0e072620e775fe9c75d3d5e117900a342928a9e737978a667fd700446db98c}{}\label{main_8cpp_a0de0e072620e775fe9c75d3d5e117900a342928a9e737978a667fd700446db98c}
+}]\index{M\+E\+N\+U\+\_\+\+B\+A\+C\+K\+\_\+\+F\+R\+O\+NT@{M\+E\+N\+U\+\_\+\+B\+A\+C\+K\+\_\+\+F\+R\+O\+NT}!main.\+cpp@{main.\+cpp}}\index{main.\+cpp@{main.\+cpp}!M\+E\+N\+U\+\_\+\+B\+A\+C\+K\+\_\+\+F\+R\+O\+NT@{M\+E\+N\+U\+\_\+\+B\+A\+C\+K\+\_\+\+F\+R\+O\+NT}}\item[{\em 
+M\+E\+N\+U\+\_\+\+B\+A\+C\+K\+\_\+\+F\+R\+O\+NT\hypertarget{main_8cpp_a0de0e072620e775fe9c75d3d5e117900a4e11c86027eb3d7a306a23385b415e88}{}\label{main_8cpp_a0de0e072620e775fe9c75d3d5e117900a4e11c86027eb3d7a306a23385b415e88}
+}]\end{description}
+\end{Desc}
 
 
 \subsection{Function Documentation}
+\index{main.\+cpp@{main.\+cpp}!Calc\+F\+PS@{Calc\+F\+PS}}
+\index{Calc\+F\+PS@{Calc\+F\+PS}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{\texorpdfstring{Calc\+F\+P\+S()}{CalcFPS()}}]{\setlength{\rightskip}{0pt plus 5cm}void Calc\+F\+PS (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{main_8cpp_ae235aba3da99a1a98eff2725f78fd76f}{}\label{main_8cpp_ae235aba3da99a1a98eff2725f78fd76f}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{main_8cpp_ae235aba3da99a1a98eff2725f78fd76f_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp_ae235aba3da99a1a98eff2725f78fd76f_icgraph}
+\end{center}
+\end{figure}
+
+
 \index{main.\+cpp@{main.\+cpp}!display@{display}}
 \index{display@{display}!main.\+cpp@{main.\+cpp}}
 \subsubsection[{\texorpdfstring{display()}{display()}}]{\setlength{\rightskip}{0pt plus 5cm}void display (
@@ -107,13 +196,25 @@ int \hyperlink{main_8cpp_a37722a150250e2a5a98e5e0d11e53449}{start} = 0
 
 
 Here is the call graph for this function\+:
-% FIG 1
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=249pt]{main_8cpp_a1e5b20fed15743656bb6d2e6a6ea6269_cgraph}
+\end{center}
+\end{figure}
 
 
 
 
 Here is the caller graph for this function\+:
-% FIG 2
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp_a1e5b20fed15743656bb6d2e6a6ea6269_icgraph}
+\end{center}
+\end{figure}
 
 
 \index{main.\+cpp@{main.\+cpp}!draw\+Bullet@{draw\+Bullet}}
@@ -126,7 +227,13 @@ Here is the caller graph for this function\+:
 
 
 Here is the caller graph for this function\+:
-% FIG 3
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp_a43d711f5646009700e97e8cce499d5fc_icgraph}
+\end{center}
+\end{figure}
 
 
 \index{main.\+cpp@{main.\+cpp}!draw\+Bullets@{draw\+Bullets}}
@@ -139,8 +246,45 @@ Here is the caller graph for this function\+:
 )}\hypertarget{main_8cpp_ac38de32b006bf30195d8818e3a7a194e}{}\label{main_8cpp_ac38de32b006bf30195d8818e3a7a194e}
 
 
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=231pt]{main_8cpp_ac38de32b006bf30195d8818e3a7a194e_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
 Here is the caller graph for this function\+:
-% FIG 4
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp_ac38de32b006bf30195d8818e3a7a194e_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{main.\+cpp@{main.\+cpp}!Draw\+Button@{Draw\+Button}}
+\index{Draw\+Button@{Draw\+Button}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{\texorpdfstring{Draw\+Button()}{DrawButton()}}]{\setlength{\rightskip}{0pt plus 5cm}void Draw\+Button (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{main_8cpp_a94ccbc3feb752aeabc9774afbfc0a8c1}{}\label{main_8cpp_a94ccbc3feb752aeabc9774afbfc0a8c1}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=221pt]{main_8cpp_a94ccbc3feb752aeabc9774afbfc0a8c1_icgraph}
+\end{center}
+\end{figure}
 
 
 \index{main.\+cpp@{main.\+cpp}!draw\+Enemy@{draw\+Enemy}}
@@ -153,13 +297,25 @@ Here is the caller graph for this function\+:
 
 
 Here is the call graph for this function\+:
-% FIG 5
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=335pt]{main_8cpp_a1cf88fce392d9a574a5bc8164f67c058_cgraph}
+\end{center}
+\end{figure}
 
 
 
 
 Here is the caller graph for this function\+:
-% FIG 6
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp_a1cf88fce392d9a574a5bc8164f67c058_icgraph}
+\end{center}
+\end{figure}
 
 
 \index{main.\+cpp@{main.\+cpp}!draw\+Turret@{draw\+Turret}}
@@ -172,7 +328,13 @@ Here is the caller graph for this function\+:
 
 
 Here is the caller graph for this function\+:
-% FIG 7
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp_a1e9bebd8dfdc2136dba6a711e43a5fa9_icgraph}
+\end{center}
+\end{figure}
 
 
 \index{main.\+cpp@{main.\+cpp}!idle@{idle}}
@@ -185,13 +347,25 @@ Here is the caller graph for this function\+:
 
 
 Here is the call graph for this function\+:
-% FIG 8
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp_aa1b7d944fc5d269240500e79c79745b9_cgraph}
+\end{center}
+\end{figure}
 
 
 
 
 Here is the caller graph for this function\+:
-% FIG 9
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp_aa1b7d944fc5d269240500e79c79745b9_icgraph}
+\end{center}
+\end{figure}
 
 
 \index{main.\+cpp@{main.\+cpp}!init@{init}}
@@ -204,13 +378,24 @@ Here is the caller graph for this function\+:
 
 
 Here is the call graph for this function\+:
-% FIG 10
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp_a02fd73d861ef2e4aabb38c0c9ff82947_cgraph}
+\end{center}
+\end{figure}
 
 
 
 
-Here is the caller graph for this function\+:
-% FIG 11
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=183pt]{main_8cpp_a02fd73d861ef2e4aabb38c0c9ff82947_icgraph}
+\end{center}
+\end{figure}
 
 
 \index{main.\+cpp@{main.\+cpp}!keyfunc@{keyfunc}}
@@ -225,13 +410,24 @@ Here is the caller graph for this function\+:
 
 
 Here is the call graph for this function\+:
-% FIG 12
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp_ac4648a04ce3040e8ba3e561a9716e79e_cgraph}
+\end{center}
+\end{figure}
 
 
 
 
-Here is the caller graph for this function\+:
-% FIG 13
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=269pt]{main_8cpp_ac4648a04ce3040e8ba3e561a9716e79e_icgraph}
+\end{center}
+\end{figure}
 
 
 \index{main.\+cpp@{main.\+cpp}!main@{main}}
@@ -245,7 +441,13 @@ Here is the caller graph for this function\+:
 
 
 Here is the call graph for this function\+:
-% FIG 14
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97_cgraph}
+\end{center}
+\end{figure}
 
 
 \index{main.\+cpp@{main.\+cpp}!make\+Enemy@{make\+Enemy}}
@@ -258,7 +460,13 @@ Here is the call graph for this function\+:
 
 
 Here is the caller graph for this function\+:
-% FIG 15
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp_a47debe550fd5b70944eae6af62ea3971_icgraph}
+\end{center}
+\end{figure}
 
 
 \index{main.\+cpp@{main.\+cpp}!make\+Turret@{make\+Turret}}
@@ -271,8 +479,91 @@ Here is the caller graph for this function\+:
 )}\hypertarget{main_8cpp_aa41f0bcd25e90a2c7d7ce37f9b575e2b}{}\label{main_8cpp_aa41f0bcd25e90a2c7d7ce37f9b575e2b}
 
 
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=243pt]{main_8cpp_aa41f0bcd25e90a2c7d7ce37f9b575e2b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
 Here is the caller graph for this function\+:
-% FIG 16
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp_aa41f0bcd25e90a2c7d7ce37f9b575e2b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{main.\+cpp@{main.\+cpp}!menu@{menu}}
+\index{menu@{menu}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{\texorpdfstring{menu(int item)}{menu(int item)}}]{\setlength{\rightskip}{0pt plus 5cm}void menu (
+\begin{DoxyParamCaption}
+\item[{int}]{item}
+\end{DoxyParamCaption}
+)}\hypertarget{main_8cpp_a6508d93879d4a974e3d48adb16f27650}{}\label{main_8cpp_a6508d93879d4a974e3d48adb16f27650}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{main_8cpp_a6508d93879d4a974e3d48adb16f27650_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=195pt]{main_8cpp_a6508d93879d4a974e3d48adb16f27650_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{main.\+cpp@{main.\+cpp}!Mouse\+Click@{Mouse\+Click}}
+\index{Mouse\+Click@{Mouse\+Click}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{\texorpdfstring{Mouse\+Click(int button, int state, int x, int y)}{MouseClick(int button, int state, int x, int y)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mouse\+Click (
+\begin{DoxyParamCaption}
+\item[{int}]{button, }
+\item[{int}]{state, }
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}\hypertarget{main_8cpp_a79f11062f9d13d49cbc4302131544fde}{}\label{main_8cpp_a79f11062f9d13d49cbc4302131544fde}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp_a79f11062f9d13d49cbc4302131544fde_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{main_8cpp_a79f11062f9d13d49cbc4302131544fde_icgraph}
+\end{center}
+\end{figure}
 
 
 \index{main.\+cpp@{main.\+cpp}!path@{path}}
@@ -285,7 +576,13 @@ Here is the caller graph for this function\+:
 
 
 Here is the caller graph for this function\+:
-% FIG 17
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp_a6cab36a37ab2490834c45d7f507fa871_icgraph}
+\end{center}
+\end{figure}
 
 
 \index{main.\+cpp@{main.\+cpp}!raster@{raster}}
@@ -297,14 +594,25 @@ Here is the caller graph for this function\+:
 )}\hypertarget{main_8cpp_a7090504cbeaafddda05596cac43c8066}{}\label{main_8cpp_a7090504cbeaafddda05596cac43c8066}
 
 
-Here is the call graph for this function\+:
-% FIG 18
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=192pt]{main_8cpp_a7090504cbeaafddda05596cac43c8066_cgraph}
+\end{center}
+\end{figure}
 
 
 
 
 Here is the caller graph for this function\+:
-% FIG 19
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp_a7090504cbeaafddda05596cac43c8066_icgraph}
+\end{center}
+\end{figure}
 
 
 \index{main.\+cpp@{main.\+cpp}!read\+File@{read\+File}}
@@ -317,7 +625,13 @@ Here is the caller graph for this function\+:
 
 
 Here is the caller graph for this function\+:
-% FIG 20
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp_a7b17b0c78fa9e56e9e228bd54275cd93_icgraph}
+\end{center}
+\end{figure}
 
 
 \index{main.\+cpp@{main.\+cpp}!reshape@{reshape}}
@@ -330,14 +644,93 @@ Here is the caller graph for this function\+:
 )}\hypertarget{main_8cpp_acc1ffe65e6869931318610cae7210078}{}\label{main_8cpp_acc1ffe65e6869931318610cae7210078}
 
 
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=279pt]{main_8cpp_acc1ffe65e6869931318610cae7210078_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{main_8cpp_acc1ffe65e6869931318610cae7210078_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{main.\+cpp@{main.\+cpp}!Start@{Start}}
+\index{Start@{Start}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{\texorpdfstring{Start()}{Start()}}]{\setlength{\rightskip}{0pt plus 5cm}void Start (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{main_8cpp_a07aaf1227e4d645f15e0a964f54ef291}{}\label{main_8cpp_a07aaf1227e4d645f15e0a964f54ef291}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=257pt]{main_8cpp_a07aaf1227e4d645f15e0a964f54ef291_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{main.\+cpp@{main.\+cpp}!Sub\+Menu2@{Sub\+Menu2}}
+\index{Sub\+Menu2@{Sub\+Menu2}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{\texorpdfstring{Sub\+Menu2(int item)}{SubMenu2(int item)}}]{\setlength{\rightskip}{0pt plus 5cm}void Sub\+Menu2 (
+\begin{DoxyParamCaption}
+\item[{int}]{item}
+\end{DoxyParamCaption}
+)}\hypertarget{main_8cpp_a0596242bf68a6ef382eb5095ff275c7f}{}\label{main_8cpp_a0596242bf68a6ef382eb5095ff275c7f}
+
+
 Here is the call graph for this function\+:
-% FIG 21
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp_a0596242bf68a6ef382eb5095ff275c7f_cgraph}
+\end{center}
+\end{figure}
 
 
 
 
 Here is the caller graph for this function\+:
-% FIG 22
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=217pt]{main_8cpp_a0596242bf68a6ef382eb5095ff275c7f_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{main.\+cpp@{main.\+cpp}!text@{text}}
+\index{text@{text}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{\texorpdfstring{text()}{text()}}]{\setlength{\rightskip}{0pt plus 5cm}void text (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{main_8cpp_a96b72be91f6be2a3bcb095c810af0a0f}{}\label{main_8cpp_a96b72be91f6be2a3bcb095c810af0a0f}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp_a96b72be91f6be2a3bcb095c810af0a0f_icgraph}
+\end{center}
+\end{figure}
 
 
 
@@ -346,18 +739,33 @@ Here is the caller graph for this function\+:
 \index{main.\+cpp@{main.\+cpp}!bulletvector@{bulletvector}}
 \index{bulletvector@{bulletvector}!main.\+cpp@{main.\+cpp}}
 \subsubsection[{\texorpdfstring{bulletvector}{bulletvector}}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf Fired\+Bullet}$\ast$$>$ bulletvector}\hypertarget{main_8cpp_a89d8c75a0feb64c03d7c4518b0c661f2}{}\label{main_8cpp_a89d8c75a0feb64c03d7c4518b0c661f2}
+\index{main.\+cpp@{main.\+cpp}!Button\+Vector@{Button\+Vector}}
+\index{Button\+Vector@{Button\+Vector}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{\texorpdfstring{Button\+Vector}{ButtonVector}}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf Button}$\ast$$>$ Button\+Vector}\hypertarget{main_8cpp_a7edf522381725954c5ff8bd06e5ccff5}{}\label{main_8cpp_a7edf522381725954c5ff8bd06e5ccff5}
+\index{main.\+cpp@{main.\+cpp}!current\+Time@{current\+Time}}
+\index{current\+Time@{current\+Time}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{\texorpdfstring{current\+Time}{currentTime}}]{\setlength{\rightskip}{0pt plus 5cm}int current\+Time = 0}\hypertarget{main_8cpp_a73ab6b9ae8c97849c3323ef4fe822ad3}{}\label{main_8cpp_a73ab6b9ae8c97849c3323ef4fe822ad3}
 \index{main.\+cpp@{main.\+cpp}!draw\+List@{draw\+List}}
 \index{draw\+List@{draw\+List}!main.\+cpp@{main.\+cpp}}
 \subsubsection[{\texorpdfstring{draw\+List}{drawList}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Draw\+List} draw\+List}\hypertarget{main_8cpp_a83d31e00f72d27dad682e1ca6c120f9c}{}\label{main_8cpp_a83d31e00f72d27dad682e1ca6c120f9c}
+\index{main.\+cpp@{main.\+cpp}!Draw\+Text\+List@{Draw\+Text\+List}}
+\index{Draw\+Text\+List@{Draw\+Text\+List}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{\texorpdfstring{Draw\+Text\+List}{DrawTextList}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Draw\+List} Draw\+Text\+List}\hypertarget{main_8cpp_ab6ec2f0d922cdded843e4ed8f7c039c3}{}\label{main_8cpp_ab6ec2f0d922cdded843e4ed8f7c039c3}
 \index{main.\+cpp@{main.\+cpp}!enenemyvector@{enenemyvector}}
 \index{enenemyvector@{enenemyvector}!main.\+cpp@{main.\+cpp}}
 \subsubsection[{\texorpdfstring{enenemyvector}{enenemyvector}}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf Enemy}$\ast$$>$ enenemyvector}\hypertarget{main_8cpp_a5c4660994873e64005af97f40bfd0fcc}{}\label{main_8cpp_a5c4660994873e64005af97f40bfd0fcc}
 \index{main.\+cpp@{main.\+cpp}!filename@{filename}}
 \index{filename@{filename}!main.\+cpp@{main.\+cpp}}
-\subsubsection[{\texorpdfstring{filename}{filename}}]{\setlength{\rightskip}{0pt plus 5cm}string filename = \char`\"{}test\char`\"{}}\hypertarget{main_8cpp_a3a1a90139c2c8ab1fca0ea8b1790b7b2}{}\label{main_8cpp_a3a1a90139c2c8ab1fca0ea8b1790b7b2}
+\subsubsection[{\texorpdfstring{filename}{filename}}]{\setlength{\rightskip}{0pt plus 5cm}string filename}\hypertarget{main_8cpp_a3a1a90139c2c8ab1fca0ea8b1790b7b2}{}\label{main_8cpp_a3a1a90139c2c8ab1fca0ea8b1790b7b2}
+\index{main.\+cpp@{main.\+cpp}!fps@{fps}}
+\index{fps@{fps}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{\texorpdfstring{fps}{fps}}]{\setlength{\rightskip}{0pt plus 5cm}int fps}\hypertarget{main_8cpp_a45b67662d620a977a2cfe519f7ab6273}{}\label{main_8cpp_a45b67662d620a977a2cfe519f7ab6273}
 \index{main.\+cpp@{main.\+cpp}!keytext@{keytext}}
 \index{keytext@{keytext}!main.\+cpp@{main.\+cpp}}
 \subsubsection[{\texorpdfstring{keytext}{keytext}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string keytext}\hypertarget{main_8cpp_a9e6b0a455cf17eae20ab1d846857a438}{}\label{main_8cpp_a9e6b0a455cf17eae20ab1d846857a438}
+\index{main.\+cpp@{main.\+cpp}!lose@{lose}}
+\index{lose@{lose}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{\texorpdfstring{lose}{lose}}]{\setlength{\rightskip}{0pt plus 5cm}int lose = 0}\hypertarget{main_8cpp_aca88a52dae5a5f74cfaa56c90eb86abb}{}\label{main_8cpp_aca88a52dae5a5f74cfaa56c90eb86abb}
 \index{main.\+cpp@{main.\+cpp}!Map@{Map}}
 \index{Map@{Map}!main.\+cpp@{main.\+cpp}}
 \subsubsection[{\texorpdfstring{Map}{Map}}]{\setlength{\rightskip}{0pt plus 5cm}char Map\mbox{[}{\bf map\+Sizex}\mbox{]}\mbox{[}{\bf map\+Sizey}\mbox{]}}\hypertarget{main_8cpp_a5036a192b04887f2465887ec1a0e1b81}{}\label{main_8cpp_a5036a192b04887f2465887ec1a0e1b81}
@@ -370,15 +778,24 @@ Here is the caller graph for this function\+:
 \index{main.\+cpp@{main.\+cpp}!map\+Sizey@{map\+Sizey}}
 \index{map\+Sizey@{map\+Sizey}!main.\+cpp@{main.\+cpp}}
 \subsubsection[{\texorpdfstring{map\+Sizey}{mapSizey}}]{\setlength{\rightskip}{0pt plus 5cm}const int map\+Sizey = 100}\hypertarget{main_8cpp_a2e13fd3ff728e2ab97c70b3bda2baf27}{}\label{main_8cpp_a2e13fd3ff728e2ab97c70b3bda2baf27}
+\index{main.\+cpp@{main.\+cpp}!Number\+Frames@{Number\+Frames}}
+\index{Number\+Frames@{Number\+Frames}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{\texorpdfstring{Number\+Frames}{NumberFrames}}]{\setlength{\rightskip}{0pt plus 5cm}int Number\+Frames = 0}\hypertarget{main_8cpp_a95d3433efc8990e776a1755d9653e3a1}{}\label{main_8cpp_a95d3433efc8990e776a1755d9653e3a1}
 \index{main.\+cpp@{main.\+cpp}!Player\+Health@{Player\+Health}}
 \index{Player\+Health@{Player\+Health}!main.\+cpp@{main.\+cpp}}
 \subsubsection[{\texorpdfstring{Player\+Health}{PlayerHealth}}]{\setlength{\rightskip}{0pt plus 5cm}int Player\+Health = 100}\hypertarget{main_8cpp_a185f4542c638e29c9a6c41f3a22f42ea}{}\label{main_8cpp_a185f4542c638e29c9a6c41f3a22f42ea}
 \index{main.\+cpp@{main.\+cpp}!Player\+Score@{Player\+Score}}
 \index{Player\+Score@{Player\+Score}!main.\+cpp@{main.\+cpp}}
 \subsubsection[{\texorpdfstring{Player\+Score}{PlayerScore}}]{\setlength{\rightskip}{0pt plus 5cm}int Player\+Score = 0}\hypertarget{main_8cpp_a9b76056b45ffe24a98d5ed9f9a9f53cc}{}\label{main_8cpp_a9b76056b45ffe24a98d5ed9f9a9f53cc}
-\index{main.\+cpp@{main.\+cpp}!start@{start}}
-\index{start@{start}!main.\+cpp@{main.\+cpp}}
-\subsubsection[{\texorpdfstring{start}{start}}]{\setlength{\rightskip}{0pt plus 5cm}int start = 0}\hypertarget{main_8cpp_a37722a150250e2a5a98e5e0d11e53449}{}\label{main_8cpp_a37722a150250e2a5a98e5e0d11e53449}
+\index{main.\+cpp@{main.\+cpp}!Prev\+Time@{Prev\+Time}}
+\index{Prev\+Time@{Prev\+Time}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{\texorpdfstring{Prev\+Time}{PrevTime}}]{\setlength{\rightskip}{0pt plus 5cm}int Prev\+Time = 0}\hypertarget{main_8cpp_a4da79230dff46da09964727606ed93b9}{}\label{main_8cpp_a4da79230dff46da09964727606ed93b9}
+\index{main.\+cpp@{main.\+cpp}!Static@{Static}}
+\index{Static@{Static}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{\texorpdfstring{Static}{Static}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Draw\+List} Static}\hypertarget{main_8cpp_a2d0f241950efcefabc8783b975d97b8b}{}\label{main_8cpp_a2d0f241950efcefabc8783b975d97b8b}
 \index{main.\+cpp@{main.\+cpp}!turretvector@{turretvector}}
 \index{turretvector@{turretvector}!main.\+cpp@{main.\+cpp}}
 \subsubsection[{\texorpdfstring{turretvector}{turretvector}}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf Turret}$\ast$$>$ turretvector}\hypertarget{main_8cpp_a4f88eb1a0811bdaaffe4907bdea53d39}{}\label{main_8cpp_a4f88eb1a0811bdaaffe4907bdea53d39}
+\index{main.\+cpp@{main.\+cpp}!Wait\+Tme@{Wait\+Tme}}
+\index{Wait\+Tme@{Wait\+Tme}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{\texorpdfstring{Wait\+Tme}{WaitTme}}]{\setlength{\rightskip}{0pt plus 5cm}int Wait\+Tme = 250}\hypertarget{main_8cpp_ab6f396318b940e326513fc803b191067}{}\label{main_8cpp_ab6f396318b940e326513fc803b191067}
