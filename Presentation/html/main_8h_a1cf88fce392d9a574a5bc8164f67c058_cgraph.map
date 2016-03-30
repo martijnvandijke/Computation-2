@@ -1,3 +1,4 @@
 <map id="drawEnemy" name="drawEnemy">
 <area shape="rect" id="node2" href="$main_8cpp.html#ac38de32b006bf30195d8818e3a7a194e" title="drawBullets" alt="" coords="144,5,233,32"/>
+<area shape="rect" id="node3" href="$freeglut__std_8h.html#a74f7774cc8619e5cce6f39cf629c5683" title="glutGet" alt="" coords="281,5,345,32"/>
 </map>

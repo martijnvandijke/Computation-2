@@ -103,8 +103,10 @@ Collaboration diagram for Turret:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7c56fc2fe7272313a06fb69262f9f2e4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_turret.html#a7c56fc2fe7272313a06fb69262f9f2e4">Turret</a> (<a class="el" href="drawtools_8h.html#adc4a66bcb59b74164130ed47cb387ec3">PointF</a> position, <a class="el" href="struct_color.html">Color</a> color, int range, int health, int upgrade, int type)</td></tr>
-<tr class="separator:a7c56fc2fe7272313a06fb69262f9f2e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3d273bc8b70a66d491f0d05c23b9d1b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_turret.html#ae3d273bc8b70a66d491f0d05c23b9d1b">Turret</a> (<a class="el" href="drawtools_8h.html#adc4a66bcb59b74164130ed47cb387ec3">PointF</a> position, <a class="el" href="struct_color.html">Color</a> color, int range, int health, int upgrade, int type, int time)</td></tr>
+<tr class="separator:ae3d273bc8b70a66d491f0d05c23b9d1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6863dbe8d5a67e6549f159fa76822610"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_turret.html#a6863dbe8d5a67e6549f159fa76822610">TimeUpdate</a> (int CurTime)</td></tr>
+<tr class="separator:a6863dbe8d5a67e6549f159fa76822610"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d3b80c4fd7534448f5e7e7ce6618062"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_turret.html#a8d3b80c4fd7534448f5e7e7ce6618062">Aim</a> (int i)</td></tr>
 <tr class="separator:a8d3b80c4fd7534448f5e7e7ce6618062"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86f457d14098684ab3954864b07dc560"><td class="memItemLeft" align="right" valign="top"><a class="el" href="drawtools_8h.html#adc4a66bcb59b74164130ed47cb387ec3">PointF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_turret.html#a86f457d14098684ab3954864b07dc560">Position</a> ()</td></tr>
@@ -126,9 +128,11 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a5c5b20c2a2e56f4ced002b7d79be0b25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a359ea4b0d1eb06880d0971dbc1c77c60"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_turret.html#a359ea4b0d1eb06880d0971dbc1c77c60">_aiming</a> = 0</td></tr>
 <tr class="separator:a359ea4b0d1eb06880d0971dbc1c77c60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad08b986b6f6765959c00282d65246505"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_turret.html#ad08b986b6f6765959c00282d65246505">_lastTime</a></td></tr>
+<tr class="separator:ad08b986b6f6765959c00282d65246505"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a7c56fc2fe7272313a06fb69262f9f2e4"></a>
+<a class="anchor" id="ae3d273bc8b70a66d491f0d05c23b9d1b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -166,7 +170,13 @@ Public Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>type</em>&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>time</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -210,6 +220,22 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a6863dbe8d5a67e6549f159fa76822610"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Turret::TimeUpdate </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>CurTime</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a class="anchor" id="a359ea4b0d1eb06880d0971dbc1c77c60"></a>
 <div class="memitem">
@@ -241,6 +267,18 @@ Public Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">int Turret::_health</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad08b986b6f6765959c00282d65246505"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Turret::_lastTime</td>
         </tr>
       </table>
 </div><div class="memdoc">

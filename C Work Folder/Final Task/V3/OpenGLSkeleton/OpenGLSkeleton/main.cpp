@@ -46,11 +46,12 @@ char Map[mapSizex][mapSizey];	//map data
 vector<Enemy*> enenemyvector;	//vector contains all the enemey
 vector<Turret*> turretvector;	//vector contains all the turrets
 vector<FiredBullet*> bulletvector; //vector containing all the bullets that have been fired and are still live
+vector<Button*> ButtonVector;
 int NumberFrames = 0;
 int currentTime = 0;
 int fps;
 int PrevTime = 0;
-int WaitTme = 400;
+int WaitTme = 250;
 //only excuted once
 void init()
 {
@@ -217,17 +218,11 @@ void drawEnemy() {
 	//number of triganles that need to be drawn
 	int seg = 20;
 	for (unsigned i = 0; i<enenemyvector.size(); i++) {
-
-
 		PointF curpos = enenemyvector.at(i)->_current;
-
 		//if the enemy is out of the screen
 		if (curpos[0] > windowWidth || curpos[1] > windowHeight) {
 			//delete the enemy
-			
-
-
-			//delete (*enenemyvector);
+			delete enenemyvector.at(i);
 			//cout << "Deleted an enemy" << endl;
 			//delete the enemy from the enemy vector
 			enenemyvector.erase((enenemyvector.begin() + i));
@@ -239,19 +234,22 @@ void drawEnemy() {
 
 			//decrease the enemy health if a bullet hits the enemy
 			for (unsigned j = 0; j < bulletvector.size(); j++) {
-				PointF Bullet = bulletvector.at(j)->_current;
+				PointF Bullet = bulletvector.at(j)->_begin;
 				//calulate the diffrence in position
-				float dx = abs( curpos[0] - Bullet[0]);
-				float dy = abs( curpos[1] - Bullet[1]);
+				float dx = abs(  Bullet[0]	 - curpos[0]);
+				float dy = abs(  Bullet[1]	- curpos[1]);
 				//cout << "dx :" << dx << "dy:" << dy << endl;
 				//bullet and enemy are at the same poition
 
 				//if the distnace is smaller tne the radius of the object
-				if ( dx < 100 &&	dy < 100	) {
-					enenemyvector.at(i)->Health(1);;
+				if ( dx < 20 &&	dy < 20	) {
+					enenemyvector.at(i)->Health(10);;
 					//cout << "Damaged an enemy" << endl;
 					PlayerScore = PlayerScore + 10;
 					PlaySoundW(L"point.wav", NULL, SND_FILENAME | SND_NODEFAULT | SND_ASYNC);
+					//delete teh bullet 
+					delete bulletvector.at(j);
+					bulletvector.erase((bulletvector.begin() + j));
 				}
 
 			}
@@ -378,7 +376,7 @@ void drawEnemy() {
 
 
 
-//caclulate the interscet point of the bullet to be fired and the enenemy ->nees some debugging
+//caclulate the interscet point of the bullet to be fired and the enenemy ->need some not x direction debuggin
 void drawBullets(PointF posEnemy, int j){
 		//initilize functions
 		Color color = { 0.9f, 0.9f, 0.9f };
@@ -456,11 +454,15 @@ void makeTurret(float x,float y) {
 		//make a new turret and put it on the turret vector
 		Turret* tur = new Turret(pos, color, range, health, upgrade, type, glutGet(GLUT_ELAPSED_TIME) );
 		turretvector.push_back(tur);
+
+		//draw the turret's
+		drawTurret();
 	}
 	else {
 		cout << "Cannot place turret there, move your cursor and try again" << endl;
 		return;
 	}
+
 }
 
 //draw all of the turrets
@@ -512,14 +514,13 @@ void drawBullet() {
 void idle(int value) {
 	//calulate the number of Frames
 	CalcFPS();
-	//draw the turret's
-	drawTurret();
+	
 	//draw the enemy's
 	drawEnemy();
 	//make a new turret
 	drawBullet();
 	
-	DrawButton();
+	
 	text();
 	
 	//display function -> draw everything 
@@ -593,23 +594,28 @@ void CalcFPS() {
 
 }
 
+//draw the game Gui buttons -> static draw so only has to be draw once
 void DrawButton() {
 	float x = (windowWidth - 180);
 	float padding = 5;
 	Color Textcolor = { 0.375, 0.48828125, 0.54296875 };
-	Color Button = { 0.99609375, 0.33984375, 0.1328125 };
+	Color ButtonColor = { 0.99609375, 0.33984375, 0.1328125 };
 	//start button
 	PointF begin = { (x+150),375 };
 	PointF begin2 = { (x+150),  400};
 	PointF end = { x,400 };
 	PointF end2 = { x , 375 };
 	int mode = 1;
-	Sqaure* sq = new Sqaure(begin, begin2, end, end2, Button);
+	Sqaure* sq = new Sqaure(begin, begin2, end, end2, ButtonColor);
 	Static.push_back(sq);
 	PointF PosText = { (x+padding) , (end2[1] + padding) };
 	string text_to = "Start Game";
 	Text* button_text = new Text(text_to, Textcolor, PosText);
-	DrawTextList.push_back(button_text);
+	Static.push_back(button_text);
+	//make Button class
+	Button* start = new Button(text_to, mode, ButtonColor, begin, end, begin2, end2);
+	//add to Button vector
+	ButtonVector.push_back(start);
 
 	//Spawn Enemy button
 	PointF begin3 = { (x + 150),300 };
@@ -617,13 +623,16 @@ void DrawButton() {
 	PointF end3 = { x,325 };
 	PointF end4 = { x , 300 };
 	int mode2 = 1;
-	Sqaure* sq2 = new Sqaure(begin3, begin4, end3, end4, Button);
+	Sqaure* sq2 = new Sqaure(begin3, begin4, end3, end4, ButtonColor);
 	Static.push_back(sq2);
 	PointF PosText2 = { (x + padding) , (end4[1] + padding) };
 	string text_to2 = "Spawn Enemy";
 	Text* button_text2 = new Text(text_to2, Textcolor, PosText2);
-	DrawTextList.push_back(button_text2);
-
+	Static.push_back(button_text2);
+	//make button class
+	Button* spawn = new Button(text_to2,mode2,ButtonColor,begin3,end3,begin4,end4);
+	//add to Button vector
+	ButtonVector.push_back(spawn);
 	
 }
 
@@ -700,7 +709,48 @@ void menu(int item)
 	return;
 }
 
+//function that handles mouse clicks 
+void MouseClick(int button, int state, int x, int y){
+	int SenseY = windowHeight - y;
+	int x_map = x / 20;
+	int y_map = SenseY / 20;
 
+
+
+	if (button == GLUT_LEFT_BUTTON && state == GLUT_DOWN) {
+		
+		//if a mouse click on the map eg placing a turret
+		if (Map[x_map][y_map] == '*') {
+			makeTurret(x,SenseY);
+			return;
+		}
+		else {
+			for (unsigned i = 0; i < ButtonVector.size(); i++) {
+				
+				PointF begin = ButtonVector.at(i)->_begin;
+				//PointF begin2 = ButtonVector.at(i)->_begin2;
+				PointF end = ButtonVector.at(i)->_end;
+				//PointF end2 = ButtonVector.at(i)->_end2;
+
+				//if mouse click was on button
+				if(	x > end[0] && x < begin[0] && SenseY > begin[1] && SenseY < end[1] )
+				{
+					string text = ButtonVector.at(i)->_text;
+					if (text == "Start Game") {
+						readFile("map1");
+						cout << "Starting the game......." << endl;
+						glutTimerFunc(10, idle, 10);
+						raster();
+					}
+					if (text == "Spawn Enemy") {
+						makeEnemy();
+					}
+				}
+			}
+		}
+		
+	}
+}
 
 //---------------------------------------------------------------------------
 // void reshape(int w, int h)
@@ -769,12 +819,8 @@ void keyfunc(unsigned char key, int x, int y) {
 	//quitting the game
 	if (key == 'q') {
 		cout << "Quitting the game" << endl;
-		//_CrtDumpMemoryLeaks();
 		exit(0);
 	}
-
-	//char c = key;
-	//keytext = string{ c } +", " + to_string(x) + ", " + to_string(y);
 }
 
 //main function
@@ -800,6 +846,8 @@ _  /   / /_/ /_ |/ |/ //  __/  /        _  /_/ //  __/  __/ /  __/  / / /(__  )/
 	             /              /                 _|     
 )EOF");
 	cout << "Press start the game to begin...." << endl;
+	DrawButton();
+	glutMouseFunc(MouseClick);
 	int SubMenu = glutCreateMenu(SubMenu2);
 	glutAddMenuEntry("Map 1", 1);
 	glutAddMenuEntry("Map 2", 2);

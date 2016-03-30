@@ -1,7 +1,8 @@
 <map id="drawEnemy" name="drawEnemy">
-<area shape="rect" id="node2" href="$main_8cpp.html#aa1b7d944fc5d269240500e79c79745b9" title="idle" alt="" coords="144,31,187,57"/>
-<area shape="rect" id="node3" href="$main_8cpp.html#a0596242bf68a6ef382eb5095ff275c7f" title="SubMenu2" alt="" coords="349,5,433,32"/>
-<area shape="rect" id="node5" href="$main_8h.html#ac4648a04ce3040e8ba3e561a9716e79e" title="keyfunc" alt="" coords="235,56,301,83"/>
-<area shape="rect" id="node4" href="$main_8h.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="481,31,532,57"/>
-<area shape="rect" id="node6" href="$main_8h.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init" alt="" coords="372,56,411,83"/>
+<area shape="rect" id="node2" href="$main_8cpp.html#aa1b7d944fc5d269240500e79c79745b9" title="idle" alt="" coords="144,56,187,83"/>
+<area shape="rect" id="node3" href="$main_8cpp.html#a0596242bf68a6ef382eb5095ff275c7f" title="SubMenu2" alt="" coords="373,5,457,32"/>
+<area shape="rect" id="node5" href="$main_8cpp.html#a79f11062f9d13d49cbc4302131544fde" title="MouseClick" alt="" coords="235,56,325,83"/>
+<area shape="rect" id="node6" href="$main_8h.html#ac4648a04ce3040e8ba3e561a9716e79e" title="keyfunc" alt="" coords="247,107,313,133"/>
+<area shape="rect" id="node4" href="$main_8h.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="505,56,556,83"/>
+<area shape="rect" id="node7" href="$main_8h.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init" alt="" coords="396,107,435,133"/>
 </map>

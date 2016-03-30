@@ -1,3 +1,5 @@
 <map id="Button" name="Button">
 <area shape="rect" id="node2" href="$class_drawable.html" title="Drawable" alt="" coords="5,5,80,32"/>
+<area shape="rect" id="node3" href="$class_point.html" title="Point\&lt; float \&gt;" alt="" coords="105,5,205,32"/>
+<area shape="rect" id="node4" href="$struct_color.html" title="Color" alt="" coords="229,5,281,32"/>
 </map>

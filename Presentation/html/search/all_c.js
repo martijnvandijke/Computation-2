@@ -15,6 +15,7 @@ var searchData=
   ['menu_5ffront',['MENU_FRONT',['../main_8cpp.html#a0de0e072620e775fe9c75d3d5e117900a37afbf5c6a28e443c2937f536ca0c41a',1,'main.cpp']]],
   ['menu_5fspot',['MENU_SPOT',['../main_8cpp.html#a0de0e072620e775fe9c75d3d5e117900a9a7f2d6970500275fa28de339e23224d',1,'main.cpp']]],
   ['menu_5ftype',['MENU_TYPE',['../main_8cpp.html#a0de0e072620e775fe9c75d3d5e117900',1,'main.cpp']]],
+  ['mouseclick',['MouseClick',['../main_8cpp.html#a79f11062f9d13d49cbc4302131544fde',1,'main.cpp']]],
   ['move',['Move',['../class_enemy.html#a0ce854e74bf13c8e0d272490e29e4542',1,'Enemy::Move()'],['../class_fired_bullet.html#ad539d4400ec29a8d5acf32894c14c343',1,'FiredBullet::Move()']]],
   ['move2',['Move2',['../class_fired_bullet.html#a23c23a8751529c4a6b65cb3834590c4a',1,'FiredBullet']]]
 ];

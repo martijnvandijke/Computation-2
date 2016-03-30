@@ -172,6 +172,8 @@ Functions</h2></td></tr>
 <tr class="separator:a0596242bf68a6ef382eb5095ff275c7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6508d93879d4a974e3d48adb16f27650"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a6508d93879d4a974e3d48adb16f27650">menu</a> (int item)</td></tr>
 <tr class="separator:a6508d93879d4a974e3d48adb16f27650"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79f11062f9d13d49cbc4302131544fde"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a79f11062f9d13d49cbc4302131544fde">MouseClick</a> (int button, int state, int x, int y)</td></tr>
+<tr class="separator:a79f11062f9d13d49cbc4302131544fde"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc1ffe65e6869931318610cae7210078"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#acc1ffe65e6869931318610cae7210078">reshape</a> (int w, int h)</td></tr>
 <tr class="separator:acc1ffe65e6869931318610cae7210078"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e5b20fed15743656bb6d2e6a6ea6269"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a1e5b20fed15743656bb6d2e6a6ea6269">display</a> ()</td></tr>
@@ -211,6 +213,8 @@ Variables</h2></td></tr>
 <tr class="separator:a4f88eb1a0811bdaaffe4907bdea53d39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89d8c75a0feb64c03d7c4518b0c661f2"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="class_fired_bullet.html">FiredBullet</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a89d8c75a0feb64c03d7c4518b0c661f2">bulletvector</a></td></tr>
 <tr class="separator:a89d8c75a0feb64c03d7c4518b0c661f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7edf522381725954c5ff8bd06e5ccff5"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="class_button.html">Button</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a7edf522381725954c5ff8bd06e5ccff5">ButtonVector</a></td></tr>
+<tr class="separator:a7edf522381725954c5ff8bd06e5ccff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95d3433efc8990e776a1755d9653e3a1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a95d3433efc8990e776a1755d9653e3a1">NumberFrames</a> = 0</td></tr>
 <tr class="separator:a95d3433efc8990e776a1755d9653e3a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73ab6b9ae8c97849c3323ef4fe822ad3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a73ab6b9ae8c97849c3323ef4fe822ad3">currentTime</a> = 0</td></tr>
@@ -219,6 +223,8 @@ Variables</h2></td></tr>
 <tr class="separator:a45b67662d620a977a2cfe519f7ab6273"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4da79230dff46da09964727606ed93b9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a4da79230dff46da09964727606ed93b9">PrevTime</a> = 0</td></tr>
 <tr class="separator:a4da79230dff46da09964727606ed93b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6f396318b940e326513fc803b191067"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#ab6f396318b940e326513fc803b191067">WaitTme</a> = 250</td></tr>
+<tr class="separator:ab6f396318b940e326513fc803b191067"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="a525335710b53cb064ca56b936120431e"></a>
@@ -285,11 +291,12 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="main_8cpp_ae235aba3da99a1a98eff2725f78fd76f_icgraph.png" border="0" usemap="#main_8cpp_ae235aba3da99a1a98eff2725f78fd76f_icgraph" alt=""/></div>
 <map name="main_8cpp_ae235aba3da99a1a98eff2725f78fd76f_icgraph" id="main_8cpp_ae235aba3da99a1a98eff2725f78fd76f_icgraph">
-<area shape="rect" id="node2" href="main_8cpp.html#aa1b7d944fc5d269240500e79c79745b9" title="idle" alt="" coords="128,31,171,57"/>
-<area shape="rect" id="node3" href="main_8cpp.html#a0596242bf68a6ef382eb5095ff275c7f" title="SubMenu2" alt="" coords="333,5,417,32"/>
-<area shape="rect" id="node5" href="main_8h.html#ac4648a04ce3040e8ba3e561a9716e79e" title="keyfunc" alt="" coords="219,56,285,83"/>
-<area shape="rect" id="node4" href="main_8h.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="465,31,516,57"/>
-<area shape="rect" id="node6" href="main_8h.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init" alt="" coords="356,56,395,83"/>
+<area shape="rect" id="node2" href="main_8cpp.html#aa1b7d944fc5d269240500e79c79745b9" title="idle" alt="" coords="128,56,171,83"/>
+<area shape="rect" id="node3" href="main_8cpp.html#a0596242bf68a6ef382eb5095ff275c7f" title="SubMenu2" alt="" coords="357,5,441,32"/>
+<area shape="rect" id="node5" href="main_8cpp.html#a79f11062f9d13d49cbc4302131544fde" title="MouseClick" alt="" coords="219,56,309,83"/>
+<area shape="rect" id="node6" href="main_8h.html#ac4648a04ce3040e8ba3e561a9716e79e" title="keyfunc" alt="" coords="231,107,297,133"/>
+<area shape="rect" id="node4" href="main_8h.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="489,56,540,83"/>
+<area shape="rect" id="node7" href="main_8h.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init" alt="" coords="380,107,419,133"/>
 </map>
 </div>
 </p>
@@ -350,11 +357,12 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="main_8cpp_a43d711f5646009700e97e8cce499d5fc_icgraph.png" border="0" usemap="#main_8cpp_a43d711f5646009700e97e8cce499d5fc_icgraph" alt=""/></div>
 <map name="main_8cpp_a43d711f5646009700e97e8cce499d5fc_icgraph" id="main_8cpp_a43d711f5646009700e97e8cce499d5fc_icgraph">
-<area shape="rect" id="node2" href="main_8cpp.html#aa1b7d944fc5d269240500e79c79745b9" title="idle" alt="" coords="136,31,179,57"/>
-<area shape="rect" id="node3" href="main_8cpp.html#a0596242bf68a6ef382eb5095ff275c7f" title="SubMenu2" alt="" coords="341,5,425,32"/>
-<area shape="rect" id="node5" href="main_8h.html#ac4648a04ce3040e8ba3e561a9716e79e" title="keyfunc" alt="" coords="227,56,293,83"/>
-<area shape="rect" id="node4" href="main_8h.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="473,31,524,57"/>
-<area shape="rect" id="node6" href="main_8h.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init" alt="" coords="364,56,403,83"/>
+<area shape="rect" id="node2" href="main_8cpp.html#aa1b7d944fc5d269240500e79c79745b9" title="idle" alt="" coords="136,56,179,83"/>
+<area shape="rect" id="node3" href="main_8cpp.html#a0596242bf68a6ef382eb5095ff275c7f" title="SubMenu2" alt="" coords="365,5,449,32"/>
+<area shape="rect" id="node5" href="main_8cpp.html#a79f11062f9d13d49cbc4302131544fde" title="MouseClick" alt="" coords="227,56,317,83"/>
+<area shape="rect" id="node6" href="main_8h.html#ac4648a04ce3040e8ba3e561a9716e79e" title="keyfunc" alt="" coords="239,107,305,133"/>
+<area shape="rect" id="node4" href="main_8h.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="497,56,548,83"/>
+<area shape="rect" id="node7" href="main_8h.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init" alt="" coords="388,107,427,133"/>
 </map>
 </div>
 </p>
@@ -386,16 +394,27 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8cpp_ac38de32b006bf30195d8818e3a7a194e_cgraph.png" border="0" usemap="#main_8cpp_ac38de32b006bf30195d8818e3a7a194e_cgraph" alt=""/></div>
+<map name="main_8cpp_ac38de32b006bf30195d8818e3a7a194e_cgraph" id="main_8cpp_ac38de32b006bf30195d8818e3a7a194e_cgraph">
+<area shape="rect" id="node2" href="freeglut__std_8h.html#a74f7774cc8619e5cce6f39cf629c5683" title="glutGet" alt="" coords="143,5,207,32"/>
+</map>
+</div>
+</p>
+
+<p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="main_8cpp_ac38de32b006bf30195d8818e3a7a194e_icgraph.png" border="0" usemap="#main_8cpp_ac38de32b006bf30195d8818e3a7a194e_icgraph" alt=""/></div>
 <map name="main_8cpp_ac38de32b006bf30195d8818e3a7a194e_icgraph" id="main_8cpp_ac38de32b006bf30195d8818e3a7a194e_icgraph">
-<area shape="rect" id="node2" href="main_8h.html#a1cf88fce392d9a574a5bc8164f67c058" title="drawEnemy" alt="" coords="143,31,233,57"/>
-<area shape="rect" id="node3" href="main_8cpp.html#aa1b7d944fc5d269240500e79c79745b9" title="idle" alt="" coords="281,31,324,57"/>
-<area shape="rect" id="node4" href="main_8cpp.html#a0596242bf68a6ef382eb5095ff275c7f" title="SubMenu2" alt="" coords="487,5,571,32"/>
-<area shape="rect" id="node6" href="main_8h.html#ac4648a04ce3040e8ba3e561a9716e79e" title="keyfunc" alt="" coords="372,56,439,83"/>
-<area shape="rect" id="node5" href="main_8h.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="619,31,669,57"/>
-<area shape="rect" id="node7" href="main_8h.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init" alt="" coords="509,56,548,83"/>
+<area shape="rect" id="node2" href="main_8h.html#a1cf88fce392d9a574a5bc8164f67c058" title="drawEnemy" alt="" coords="143,56,233,83"/>
+<area shape="rect" id="node3" href="main_8cpp.html#aa1b7d944fc5d269240500e79c79745b9" title="idle" alt="" coords="281,56,324,83"/>
+<area shape="rect" id="node4" href="main_8cpp.html#a0596242bf68a6ef382eb5095ff275c7f" title="SubMenu2" alt="" coords="511,5,595,32"/>
+<area shape="rect" id="node6" href="main_8cpp.html#a79f11062f9d13d49cbc4302131544fde" title="MouseClick" alt="" coords="372,56,463,83"/>
+<area shape="rect" id="node7" href="main_8h.html#ac4648a04ce3040e8ba3e561a9716e79e" title="keyfunc" alt="" coords="384,107,451,133"/>
+<area shape="rect" id="node5" href="main_8h.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="643,56,693,83"/>
+<area shape="rect" id="node8" href="main_8h.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init" alt="" coords="533,107,572,133"/>
 </map>
 </div>
 </p>
@@ -420,11 +439,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="main_8cpp_a94ccbc3feb752aeabc9774afbfc0a8c1_icgraph.png" border="0" usemap="#main_8cpp_a94ccbc3feb752aeabc9774afbfc0a8c1_icgraph" alt=""/></div>
 <map name="main_8cpp_a94ccbc3feb752aeabc9774afbfc0a8c1_icgraph" id="main_8cpp_a94ccbc3feb752aeabc9774afbfc0a8c1_icgraph">
-<area shape="rect" id="node2" href="main_8cpp.html#aa1b7d944fc5d269240500e79c79745b9" title="idle" alt="" coords="143,31,185,57"/>
-<area shape="rect" id="node3" href="main_8cpp.html#a0596242bf68a6ef382eb5095ff275c7f" title="SubMenu2" alt="" coords="348,5,432,32"/>
-<area shape="rect" id="node5" href="main_8h.html#ac4648a04ce3040e8ba3e561a9716e79e" title="keyfunc" alt="" coords="233,56,300,83"/>
-<area shape="rect" id="node4" href="main_8h.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="480,31,531,57"/>
-<area shape="rect" id="node6" href="main_8h.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init" alt="" coords="371,56,409,83"/>
+<area shape="rect" id="node2" href="main_8h.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="143,5,193,32"/>
 </map>
 </div>
 </p>
@@ -450,6 +465,7 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="main_8cpp_a1cf88fce392d9a574a5bc8164f67c058_cgraph.png" border="0" usemap="#main_8cpp_a1cf88fce392d9a574a5bc8164f67c058_cgraph" alt=""/></div>
 <map name="main_8cpp_a1cf88fce392d9a574a5bc8164f67c058_cgraph" id="main_8cpp_a1cf88fce392d9a574a5bc8164f67c058_cgraph">
 <area shape="rect" id="node2" href="main_8cpp.html#ac38de32b006bf30195d8818e3a7a194e" title="drawBullets" alt="" coords="144,5,233,32"/>
+<area shape="rect" id="node3" href="freeglut__std_8h.html#a74f7774cc8619e5cce6f39cf629c5683" title="glutGet" alt="" coords="281,5,345,32"/>
 </map>
 </div>
 </p>
@@ -459,11 +475,12 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="main_8cpp_a1cf88fce392d9a574a5bc8164f67c058_icgraph.png" border="0" usemap="#main_8cpp_a1cf88fce392d9a574a5bc8164f67c058_icgraph" alt=""/></div>
 <map name="main_8cpp_a1cf88fce392d9a574a5bc8164f67c058_icgraph" id="main_8cpp_a1cf88fce392d9a574a5bc8164f67c058_icgraph">
-<area shape="rect" id="node2" href="main_8cpp.html#aa1b7d944fc5d269240500e79c79745b9" title="idle" alt="" coords="144,31,187,57"/>
-<area shape="rect" id="node3" href="main_8cpp.html#a0596242bf68a6ef382eb5095ff275c7f" title="SubMenu2" alt="" coords="349,5,433,32"/>
-<area shape="rect" id="node5" href="main_8h.html#ac4648a04ce3040e8ba3e561a9716e79e" title="keyfunc" alt="" coords="235,56,301,83"/>
-<area shape="rect" id="node4" href="main_8h.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="481,31,532,57"/>
-<area shape="rect" id="node6" href="main_8h.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init" alt="" coords="372,56,411,83"/>
+<area shape="rect" id="node2" href="main_8cpp.html#aa1b7d944fc5d269240500e79c79745b9" title="idle" alt="" coords="144,56,187,83"/>
+<area shape="rect" id="node3" href="main_8cpp.html#a0596242bf68a6ef382eb5095ff275c7f" title="SubMenu2" alt="" coords="373,5,457,32"/>
+<area shape="rect" id="node5" href="main_8cpp.html#a79f11062f9d13d49cbc4302131544fde" title="MouseClick" alt="" coords="235,56,325,83"/>
+<area shape="rect" id="node6" href="main_8h.html#ac4648a04ce3040e8ba3e561a9716e79e" title="keyfunc" alt="" coords="247,107,313,133"/>
+<area shape="rect" id="node4" href="main_8h.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="505,56,556,83"/>
+<area shape="rect" id="node7" href="main_8h.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init" alt="" coords="396,107,435,133"/>
 </map>
 </div>
 </p>
@@ -488,11 +505,11 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="main_8cpp_a1e9bebd8dfdc2136dba6a711e43a5fa9_icgraph.png" border="0" usemap="#main_8cpp_a1e9bebd8dfdc2136dba6a711e43a5fa9_icgraph" alt=""/></div>
 <map name="main_8cpp_a1e9bebd8dfdc2136dba6a711e43a5fa9_icgraph" id="main_8cpp_a1e9bebd8dfdc2136dba6a711e43a5fa9_icgraph">
-<area shape="rect" id="node2" href="main_8cpp.html#aa1b7d944fc5d269240500e79c79745b9" title="idle" alt="" coords="136,31,179,57"/>
-<area shape="rect" id="node3" href="main_8cpp.html#a0596242bf68a6ef382eb5095ff275c7f" title="SubMenu2" alt="" coords="341,5,425,32"/>
-<area shape="rect" id="node5" href="main_8h.html#ac4648a04ce3040e8ba3e561a9716e79e" title="keyfunc" alt="" coords="227,56,293,83"/>
-<area shape="rect" id="node4" href="main_8h.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="473,31,524,57"/>
-<area shape="rect" id="node6" href="main_8h.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init" alt="" coords="364,56,403,83"/>
+<area shape="rect" id="node2" href="main_8h.html#aa41f0bcd25e90a2c7d7ce37f9b575e2b" title="makeTurret" alt="" coords="136,31,223,57"/>
+<area shape="rect" id="node3" href="main_8cpp.html#a79f11062f9d13d49cbc4302131544fde" title="MouseClick" alt="" coords="385,5,476,32"/>
+<area shape="rect" id="node5" href="main_8h.html#ac4648a04ce3040e8ba3e561a9716e79e" title="keyfunc" alt="" coords="271,56,337,83"/>
+<area shape="rect" id="node4" href="main_8h.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="524,31,575,57"/>
+<area shape="rect" id="node6" href="main_8h.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init" alt="" coords="411,56,450,83"/>
 </map>
 </div>
 </p>
@@ -518,17 +535,15 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="main_8cpp_aa1b7d944fc5d269240500e79c79745b9_cgraph.png" border="0" usemap="#main_8cpp_aa1b7d944fc5d269240500e79c79745b9_cgraph" alt=""/></div>
 <map name="main_8cpp_aa1b7d944fc5d269240500e79c79745b9_cgraph" id="main_8cpp_aa1b7d944fc5d269240500e79c79745b9_cgraph">
-<area shape="rect" id="node2" href="main_8cpp.html#ae235aba3da99a1a98eff2725f78fd76f" title="CalcFPS" alt="" coords="122,5,197,32"/>
-<area shape="rect" id="node4" href="main_8cpp.html#a1e9bebd8dfdc2136dba6a711e43a5fa9" title="drawTurret" alt="" coords="118,56,201,83"/>
-<area shape="rect" id="node5" href="main_8cpp.html#a1cf88fce392d9a574a5bc8164f67c058" title="drawEnemy" alt="" coords="114,107,205,133"/>
-<area shape="rect" id="node7" href="main_8cpp.html#a43d711f5646009700e97e8cce499d5fc" title="drawBullet" alt="" coords="118,157,201,184"/>
-<area shape="rect" id="node8" href="main_8cpp.html#a94ccbc3feb752aeabc9774afbfc0a8c1" title="DrawButton" alt="" coords="115,208,204,235"/>
-<area shape="rect" id="node9" href="main_8cpp.html#a96b72be91f6be2a3bcb095c810af0a0f" title="text" alt="" coords="137,259,181,285"/>
-<area shape="rect" id="node10" href="freeglut__std_8h.html#a9c4773050c9477d163a077dfc7ceee74" title="glutPostRedisplay" alt="" coords="96,309,223,336"/>
-<area shape="rect" id="node11" href="freeglut__std_8h.html#a1620e1ab4791020e7c08d4ab70447675" title="glutTimerFunc" alt="" coords="107,360,211,387"/>
-<area shape="rect" id="node12" href="glut_8h.html#a6f255d924f7a6bb2c4be0c8c2f2d9ce3" title="exit" alt="" coords="138,411,181,437"/>
-<area shape="rect" id="node3" href="freeglut__std_8h.html#a74f7774cc8619e5cce6f39cf629c5683" title="glutGet" alt="" coords="283,5,347,32"/>
-<area shape="rect" id="node6" href="main_8cpp.html#ac38de32b006bf30195d8818e3a7a194e" title="drawBullets" alt="" coords="271,107,360,133"/>
+<area shape="rect" id="node2" href="main_8cpp.html#ae235aba3da99a1a98eff2725f78fd76f" title="CalcFPS" alt="" coords="278,5,353,32"/>
+<area shape="rect" id="node4" href="main_8cpp.html#a1cf88fce392d9a574a5bc8164f67c058" title="drawEnemy" alt="" coords="114,56,205,83"/>
+<area shape="rect" id="node6" href="main_8cpp.html#a43d711f5646009700e97e8cce499d5fc" title="drawBullet" alt="" coords="118,107,201,133"/>
+<area shape="rect" id="node7" href="main_8cpp.html#a96b72be91f6be2a3bcb095c810af0a0f" title="text" alt="" coords="137,157,181,184"/>
+<area shape="rect" id="node8" href="freeglut__std_8h.html#a9c4773050c9477d163a077dfc7ceee74" title="glutPostRedisplay" alt="" coords="96,208,223,235"/>
+<area shape="rect" id="node9" href="freeglut__std_8h.html#a1620e1ab4791020e7c08d4ab70447675" title="glutTimerFunc" alt="" coords="107,259,211,285"/>
+<area shape="rect" id="node10" href="glut_8h.html#a6f255d924f7a6bb2c4be0c8c2f2d9ce3" title="exit" alt="" coords="138,309,181,336"/>
+<area shape="rect" id="node3" href="freeglut__std_8h.html#a74f7774cc8619e5cce6f39cf629c5683" title="glutGet" alt="" coords="408,31,472,57"/>
+<area shape="rect" id="node5" href="main_8cpp.html#ac38de32b006bf30195d8818e3a7a194e" title="drawBullets" alt="" coords="271,56,360,83"/>
 </map>
 </div>
 </p>
@@ -538,10 +553,11 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="main_8cpp_aa1b7d944fc5d269240500e79c79745b9_icgraph.png" border="0" usemap="#main_8cpp_aa1b7d944fc5d269240500e79c79745b9_icgraph" alt=""/></div>
 <map name="main_8cpp_aa1b7d944fc5d269240500e79c79745b9_icgraph" id="main_8cpp_aa1b7d944fc5d269240500e79c79745b9_icgraph">
-<area shape="rect" id="node2" href="main_8cpp.html#a0596242bf68a6ef382eb5095ff275c7f" title="SubMenu2" alt="" coords="211,5,295,32"/>
-<area shape="rect" id="node4" href="main_8h.html#ac4648a04ce3040e8ba3e561a9716e79e" title="keyfunc" alt="" coords="96,56,163,83"/>
-<area shape="rect" id="node3" href="main_8h.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="343,31,393,57"/>
-<area shape="rect" id="node5" href="main_8h.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init" alt="" coords="233,56,272,83"/>
+<area shape="rect" id="node2" href="main_8cpp.html#a0596242bf68a6ef382eb5095ff275c7f" title="SubMenu2" alt="" coords="235,5,319,32"/>
+<area shape="rect" id="node4" href="main_8cpp.html#a79f11062f9d13d49cbc4302131544fde" title="MouseClick" alt="" coords="96,56,187,83"/>
+<area shape="rect" id="node5" href="main_8h.html#ac4648a04ce3040e8ba3e561a9716e79e" title="keyfunc" alt="" coords="108,107,175,133"/>
+<area shape="rect" id="node3" href="main_8h.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="367,56,417,83"/>
+<area shape="rect" id="node6" href="main_8h.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init" alt="" coords="257,107,296,133"/>
 </map>
 </div>
 </p>
@@ -576,25 +592,24 @@ Here is the call graph for this function:</div>
 <area shape="rect" id="node10" href="main_8cpp.html#acc1ffe65e6869931318610cae7210078" title="reshape" alt="" coords="135,360,203,387"/>
 <area shape="rect" id="node13" href="freeglut__std_8h.html#a4a3208239702781cf56b692948b5eab9" title="glutKeyboardFunc" alt="" coords="105,411,232,437"/>
 <area shape="rect" id="node14" href="main_8cpp.html#ac4648a04ce3040e8ba3e561a9716e79e" title="keyfunc" alt="" coords="135,461,202,488"/>
-<area shape="rect" id="node30" href="main_8cpp.html#a07aaf1227e4d645f15e0a964f54ef291" title="Start" alt="" coords="143,512,194,539"/>
+<area shape="rect" id="node29" href="main_8cpp.html#a07aaf1227e4d645f15e0a964f54ef291" title="Start" alt="" coords="143,512,194,539"/>
 <area shape="rect" id="node8" href="freeglut__std_8h.html#a3d7bfbfbcdc97d960dde52c505bffd4c" title="glutSwapBuffers" alt="" coords="293,259,408,285"/>
 <area shape="rect" id="node11" href="main_8cpp.html#a7090504cbeaafddda05596cac43c8066" title="raster" alt="" coords="323,335,378,361"/>
-<area shape="rect" id="node12" href="main_8cpp.html#a6cab36a37ab2490834c45d7f507fa871" title="path" alt="" coords="496,335,543,361"/>
+<area shape="rect" id="node12" href="main_8cpp.html#a6cab36a37ab2490834c45d7f507fa871" title="path" alt="" coords="496,321,543,348"/>
 <area shape="rect" id="node15" href="main_8cpp.html#aa41f0bcd25e90a2c7d7ce37f9b575e2b" title="makeTurret" alt="" coords="307,385,394,412"/>
-<area shape="rect" id="node16" href="main_8cpp.html#a47debe550fd5b70944eae6af62ea3971" title="makeEnemy" alt="" coords="303,436,398,463"/>
-<area shape="rect" id="node17" href="main_8cpp.html#a7b17b0c78fa9e56e9e228bd54275cd93" title="readFile" alt="" coords="317,487,385,513"/>
-<area shape="rect" id="node18" href="freeglut__std_8h.html#a1620e1ab4791020e7c08d4ab70447675" title="glutTimerFunc" alt="" coords="467,385,571,412"/>
-<area shape="rect" id="node19" href="main_8cpp.html#aa1b7d944fc5d269240500e79c79745b9" title="idle" alt="" coords="329,588,372,615"/>
-<area shape="rect" id="node29" href="glut_8h.html#a6f255d924f7a6bb2c4be0c8c2f2d9ce3" title="exit" alt="" coords="498,791,541,817"/>
-<area shape="rect" id="node20" href="main_8cpp.html#ae235aba3da99a1a98eff2725f78fd76f" title="CalcFPS" alt="" coords="482,436,557,463"/>
-<area shape="rect" id="node22" href="main_8cpp.html#a1e9bebd8dfdc2136dba6a711e43a5fa9" title="drawTurret" alt="" coords="478,487,561,513"/>
-<area shape="rect" id="node23" href="main_8cpp.html#a1cf88fce392d9a574a5bc8164f67c058" title="drawEnemy" alt="" coords="474,537,565,564"/>
-<area shape="rect" id="node25" href="main_8cpp.html#a43d711f5646009700e97e8cce499d5fc" title="drawBullet" alt="" coords="478,588,561,615"/>
-<area shape="rect" id="node26" href="main_8cpp.html#a94ccbc3feb752aeabc9774afbfc0a8c1" title="DrawButton" alt="" coords="475,639,564,665"/>
-<area shape="rect" id="node27" href="main_8cpp.html#a96b72be91f6be2a3bcb095c810af0a0f" title="text" alt="" coords="497,689,541,716"/>
-<area shape="rect" id="node28" href="freeglut__std_8h.html#a9c4773050c9477d163a077dfc7ceee74" title="glutPostRedisplay" alt="" coords="456,740,583,767"/>
-<area shape="rect" id="node21" href="freeglut__std_8h.html#a74f7774cc8619e5cce6f39cf629c5683" title="glutGet" alt="" coords="643,436,707,463"/>
-<area shape="rect" id="node24" href="main_8cpp.html#ac38de32b006bf30195d8818e3a7a194e" title="drawBullets" alt="" coords="631,537,720,564"/>
+<area shape="rect" id="node18" href="main_8cpp.html#a47debe550fd5b70944eae6af62ea3971" title="makeEnemy" alt="" coords="303,436,398,463"/>
+<area shape="rect" id="node19" href="main_8cpp.html#a7b17b0c78fa9e56e9e228bd54275cd93" title="readFile" alt="" coords="317,487,385,513"/>
+<area shape="rect" id="node20" href="freeglut__std_8h.html#a1620e1ab4791020e7c08d4ab70447675" title="glutTimerFunc" alt="" coords="467,473,571,500"/>
+<area shape="rect" id="node21" href="main_8cpp.html#aa1b7d944fc5d269240500e79c79745b9" title="idle" alt="" coords="329,613,372,640"/>
+<area shape="rect" id="node28" href="glut_8h.html#a6f255d924f7a6bb2c4be0c8c2f2d9ce3" title="exit" alt="" coords="498,777,541,804"/>
+<area shape="rect" id="node16" href="freeglut__std_8h.html#a74f7774cc8619e5cce6f39cf629c5683" title="glutGet" alt="" coords="768,524,832,551"/>
+<area shape="rect" id="node17" href="main_8cpp.html#a1e9bebd8dfdc2136dba6a711e43a5fa9" title="drawTurret" alt="" coords="478,423,561,449"/>
+<area shape="rect" id="node22" href="main_8cpp.html#ae235aba3da99a1a98eff2725f78fd76f" title="CalcFPS" alt="" coords="638,524,713,551"/>
+<area shape="rect" id="node23" href="main_8cpp.html#a1cf88fce392d9a574a5bc8164f67c058" title="drawEnemy" alt="" coords="474,575,565,601"/>
+<area shape="rect" id="node25" href="main_8cpp.html#a43d711f5646009700e97e8cce499d5fc" title="drawBullet" alt="" coords="478,625,561,652"/>
+<area shape="rect" id="node26" href="main_8cpp.html#a96b72be91f6be2a3bcb095c810af0a0f" title="text" alt="" coords="497,676,541,703"/>
+<area shape="rect" id="node27" href="freeglut__std_8h.html#a9c4773050c9477d163a077dfc7ceee74" title="glutPostRedisplay" alt="" coords="456,727,583,753"/>
+<area shape="rect" id="node24" href="main_8cpp.html#ac38de32b006bf30195d8818e3a7a194e" title="drawBullets" alt="" coords="631,575,720,601"/>
 </map>
 </div>
 </p>
@@ -646,23 +661,22 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="main_8cpp_ac4648a04ce3040e8ba3e561a9716e79e_cgraph.png" border="0" usemap="#main_8cpp_ac4648a04ce3040e8ba3e561a9716e79e_cgraph" alt=""/></div>
 <map name="main_8cpp_ac4648a04ce3040e8ba3e561a9716e79e_cgraph" id="main_8cpp_ac4648a04ce3040e8ba3e561a9716e79e_cgraph">
-<area shape="rect" id="node2" href="main_8cpp.html#aa41f0bcd25e90a2c7d7ce37f9b575e2b" title="makeTurret" alt="" coords="124,31,211,57"/>
-<area shape="rect" id="node3" href="main_8cpp.html#a47debe550fd5b70944eae6af62ea3971" title="makeEnemy" alt="" coords="120,81,215,108"/>
-<area shape="rect" id="node4" href="main_8cpp.html#a7b17b0c78fa9e56e9e228bd54275cd93" title="readFile" alt="" coords="133,132,201,159"/>
-<area shape="rect" id="node5" href="freeglut__std_8h.html#a1620e1ab4791020e7c08d4ab70447675" title="glutTimerFunc" alt="" coords="274,5,378,32"/>
-<area shape="rect" id="node6" href="main_8cpp.html#aa1b7d944fc5d269240500e79c79745b9" title="idle" alt="" coords="146,233,189,260"/>
-<area shape="rect" id="node16" href="glut_8h.html#a6f255d924f7a6bb2c4be0c8c2f2d9ce3" title="exit" alt="" coords="305,411,347,437"/>
-<area shape="rect" id="node17" href="main_8cpp.html#a7090504cbeaafddda05596cac43c8066" title="raster" alt="" coords="140,411,195,437"/>
-<area shape="rect" id="node7" href="main_8cpp.html#ae235aba3da99a1a98eff2725f78fd76f" title="CalcFPS" alt="" coords="289,56,363,83"/>
-<area shape="rect" id="node9" href="main_8cpp.html#a1e9bebd8dfdc2136dba6a711e43a5fa9" title="drawTurret" alt="" coords="285,107,367,133"/>
-<area shape="rect" id="node10" href="main_8cpp.html#a1cf88fce392d9a574a5bc8164f67c058" title="drawEnemy" alt="" coords="281,157,371,184"/>
-<area shape="rect" id="node12" href="main_8cpp.html#a43d711f5646009700e97e8cce499d5fc" title="drawBullet" alt="" coords="285,208,367,235"/>
-<area shape="rect" id="node13" href="main_8cpp.html#a94ccbc3feb752aeabc9774afbfc0a8c1" title="DrawButton" alt="" coords="281,259,371,285"/>
-<area shape="rect" id="node14" href="main_8cpp.html#a96b72be91f6be2a3bcb095c810af0a0f" title="text" alt="" coords="304,309,348,336"/>
-<area shape="rect" id="node15" href="freeglut__std_8h.html#a9c4773050c9477d163a077dfc7ceee74" title="glutPostRedisplay" alt="" coords="263,360,389,387"/>
-<area shape="rect" id="node8" href="freeglut__std_8h.html#a74f7774cc8619e5cce6f39cf629c5683" title="glutGet" alt="" coords="450,56,514,83"/>
-<area shape="rect" id="node11" href="main_8cpp.html#ac38de32b006bf30195d8818e3a7a194e" title="drawBullets" alt="" coords="437,157,527,184"/>
-<area shape="rect" id="node18" href="main_8cpp.html#a6cab36a37ab2490834c45d7f507fa871" title="path" alt="" coords="303,461,349,488"/>
+<area shape="rect" id="node2" href="main_8cpp.html#aa41f0bcd25e90a2c7d7ce37f9b575e2b" title="makeTurret" alt="" coords="124,25,211,52"/>
+<area shape="rect" id="node5" href="main_8cpp.html#a47debe550fd5b70944eae6af62ea3971" title="makeEnemy" alt="" coords="120,76,215,102"/>
+<area shape="rect" id="node6" href="main_8cpp.html#a7b17b0c78fa9e56e9e228bd54275cd93" title="readFile" alt="" coords="133,126,201,153"/>
+<area shape="rect" id="node7" href="freeglut__std_8h.html#a1620e1ab4791020e7c08d4ab70447675" title="glutTimerFunc" alt="" coords="274,76,378,102"/>
+<area shape="rect" id="node8" href="main_8cpp.html#aa1b7d944fc5d269240500e79c79745b9" title="idle" alt="" coords="146,228,189,254"/>
+<area shape="rect" id="node15" href="glut_8h.html#a6f255d924f7a6bb2c4be0c8c2f2d9ce3" title="exit" alt="" coords="305,380,347,406"/>
+<area shape="rect" id="node16" href="main_8cpp.html#a7090504cbeaafddda05596cac43c8066" title="raster" alt="" coords="140,405,195,432"/>
+<area shape="rect" id="node3" href="freeglut__std_8h.html#a74f7774cc8619e5cce6f39cf629c5683" title="glutGet" alt="" coords="575,126,639,153"/>
+<area shape="rect" id="node4" href="main_8cpp.html#a1e9bebd8dfdc2136dba6a711e43a5fa9" title="drawTurret" alt="" coords="285,25,367,52"/>
+<area shape="rect" id="node9" href="main_8cpp.html#ae235aba3da99a1a98eff2725f78fd76f" title="CalcFPS" alt="" coords="445,126,519,153"/>
+<area shape="rect" id="node10" href="main_8cpp.html#a1cf88fce392d9a574a5bc8164f67c058" title="drawEnemy" alt="" coords="281,177,371,204"/>
+<area shape="rect" id="node12" href="main_8cpp.html#a43d711f5646009700e97e8cce499d5fc" title="drawBullet" alt="" coords="285,228,367,254"/>
+<area shape="rect" id="node13" href="main_8cpp.html#a96b72be91f6be2a3bcb095c810af0a0f" title="text" alt="" coords="304,278,348,305"/>
+<area shape="rect" id="node14" href="freeglut__std_8h.html#a9c4773050c9477d163a077dfc7ceee74" title="glutPostRedisplay" alt="" coords="263,329,389,356"/>
+<area shape="rect" id="node11" href="main_8cpp.html#ac38de32b006bf30195d8818e3a7a194e" title="drawBullets" alt="" coords="437,177,527,204"/>
+<area shape="rect" id="node17" href="main_8cpp.html#a6cab36a37ab2490834c45d7f507fa871" title="path" alt="" coords="303,430,349,457"/>
 </map>
 </div>
 </p>
@@ -709,44 +723,46 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="main_8cpp_a0ddf1224851353fc92bfbff6f499fa97_cgraph.png" border="0" usemap="#main_8cpp_a0ddf1224851353fc92bfbff6f499fa97_cgraph" alt=""/></div>
 <map name="main_8cpp_a0ddf1224851353fc92bfbff6f499fa97_cgraph" id="main_8cpp_a0ddf1224851353fc92bfbff6f499fa97_cgraph">
-<area shape="rect" id="node2" href="freeglut__std_8h.html#abc547c43592e2ce465a58abed544f282" title="glutInit" alt="" coords="139,208,199,235"/>
+<area shape="rect" id="node2" href="freeglut__std_8h.html#abc547c43592e2ce465a58abed544f282" title="glutInit" alt="" coords="139,259,199,285"/>
 <area shape="rect" id="node3" href="main_8cpp.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init" alt="" coords="149,309,188,336"/>
-<area shape="rect" id="node33" href="freeglut__std_8h.html#af1176de81c198da074b59e14d434ebc6" title="glutCreateMenu" alt="" coords="112,411,225,437"/>
-<area shape="rect" id="node34" href="main_8cpp.html#a0596242bf68a6ef382eb5095ff275c7f" title="SubMenu2" alt="" coords="316,56,400,83"/>
-<area shape="rect" id="node35" href="freeglut__std_8h.html#aefc0e9704fb63df5a056ddc6539f46ec" title="glutAddMenuEntry" alt="" coords="104,461,233,488"/>
-<area shape="rect" id="node36" href="main_8cpp.html#a6508d93879d4a974e3d48adb16f27650" title="menu" alt="" coords="331,613,385,640"/>
-<area shape="rect" id="node37" href="freeglut__std_8h.html#adee2359911766c09d05e07bfb66eff78" title="glutAddSubMenu" alt="" coords="108,512,229,539"/>
-<area shape="rect" id="node38" href="freeglut__std_8h.html#a32fa9eaaf9df5932fe925ab68c7e8a22" title="glutAttachMenu" alt="" coords="112,563,225,589"/>
-<area shape="rect" id="node39" href="freeglut__std_8h.html#a9c4fdc94124aec578f3bea7070bd6ceb" title="glutMainLoop" alt="" coords="119,613,218,640"/>
-<area shape="rect" id="node4" href="freeglut__std_8h.html#a1082eda6b270a765d2d8f4f839cf728c" title="glutInitDisplayMode" alt="" coords="291,208,425,235"/>
-<area shape="rect" id="node5" href="freeglut__std_8h.html#af3be2e60d17964dfe49a67b37d9deba5" title="glutInitWindowSize" alt="" coords="292,259,424,285"/>
-<area shape="rect" id="node6" href="freeglut__std_8h.html#a110614b330069d2ae48de1d0ef04519b" title="glutInitWindowPosition" alt="" coords="281,309,435,336"/>
-<area shape="rect" id="node7" href="freeglut__std_8h.html#aea4ae15d87a833997b1f72d5e4a1a58e" title="glutCreateWindow" alt="" coords="295,360,421,387"/>
-<area shape="rect" id="node8" href="freeglut__std_8h.html#a765b5fa72e50aa6225a4779e176af26e" title="glutDisplayFunc" alt="" coords="301,411,415,437"/>
-<area shape="rect" id="node9" href="main_8cpp.html#a1e5b20fed15743656bb6d2e6a6ea6269" title="display" alt="" coords="327,563,389,589"/>
-<area shape="rect" id="node11" href="freeglut__std_8h.html#ae7dd32629bc897e1679597796e359ccd" title="glutReshapeFunc" alt="" coords="297,512,419,539"/>
-<area shape="rect" id="node12" href="main_8cpp.html#acc1ffe65e6869931318610cae7210078" title="reshape" alt="" coords="324,5,392,32"/>
-<area shape="rect" id="node15" href="freeglut__std_8h.html#a4a3208239702781cf56b692948b5eab9" title="glutKeyboardFunc" alt="" coords="295,107,421,133"/>
-<area shape="rect" id="node16" href="main_8cpp.html#ac4648a04ce3040e8ba3e561a9716e79e" title="keyfunc" alt="" coords="325,461,391,488"/>
-<area shape="rect" id="node32" href="main_8cpp.html#a07aaf1227e4d645f15e0a964f54ef291" title="Start" alt="" coords="333,157,383,184"/>
-<area shape="rect" id="node10" href="freeglut__std_8h.html#a3d7bfbfbcdc97d960dde52c505bffd4c" title="glutSwapBuffers" alt="" coords="483,512,597,539"/>
-<area shape="rect" id="node13" href="main_8cpp.html#a7090504cbeaafddda05596cac43c8066" title="raster" alt="" coords="513,56,567,83"/>
-<area shape="rect" id="node14" href="main_8cpp.html#a6cab36a37ab2490834c45d7f507fa871" title="path" alt="" coords="685,56,732,83"/>
-<area shape="rect" id="node17" href="main_8cpp.html#aa41f0bcd25e90a2c7d7ce37f9b575e2b" title="makeTurret" alt="" coords="497,411,583,437"/>
-<area shape="rect" id="node18" href="main_8cpp.html#a47debe550fd5b70944eae6af62ea3971" title="makeEnemy" alt="" coords="493,563,587,589"/>
-<area shape="rect" id="node19" href="main_8cpp.html#a7b17b0c78fa9e56e9e228bd54275cd93" title="readFile" alt="" coords="506,157,574,184"/>
-<area shape="rect" id="node20" href="freeglut__std_8h.html#a1620e1ab4791020e7c08d4ab70447675" title="glutTimerFunc" alt="" coords="657,183,761,209"/>
-<area shape="rect" id="node21" href="main_8cpp.html#aa1b7d944fc5d269240500e79c79745b9" title="idle" alt="" coords="519,360,561,387"/>
-<area shape="rect" id="node31" href="glut_8h.html#a6f255d924f7a6bb2c4be0c8c2f2d9ce3" title="exit" alt="" coords="687,537,730,564"/>
-<area shape="rect" id="node22" href="main_8cpp.html#ae235aba3da99a1a98eff2725f78fd76f" title="CalcFPS" alt="" coords="671,385,746,412"/>
-<area shape="rect" id="node24" href="main_8cpp.html#a1e9bebd8dfdc2136dba6a711e43a5fa9" title="drawTurret" alt="" coords="667,436,750,463"/>
-<area shape="rect" id="node25" href="main_8cpp.html#a1cf88fce392d9a574a5bc8164f67c058" title="drawEnemy" alt="" coords="663,487,754,513"/>
-<area shape="rect" id="node27" href="main_8cpp.html#a43d711f5646009700e97e8cce499d5fc" title="drawBullet" alt="" coords="667,233,750,260"/>
-<area shape="rect" id="node28" href="main_8cpp.html#a94ccbc3feb752aeabc9774afbfc0a8c1" title="DrawButton" alt="" coords="664,284,753,311"/>
-<area shape="rect" id="node29" href="main_8cpp.html#a96b72be91f6be2a3bcb095c810af0a0f" title="text" alt="" coords="687,335,731,361"/>
-<area shape="rect" id="node30" href="freeglut__std_8h.html#a9c4773050c9477d163a077dfc7ceee74" title="glutPostRedisplay" alt="" coords="645,639,772,665"/>
-<area shape="rect" id="node23" href="freeglut__std_8h.html#a74f7774cc8619e5cce6f39cf629c5683" title="glutGet" alt="" coords="833,385,897,412"/>
-<area shape="rect" id="node26" href="main_8cpp.html#ac38de32b006bf30195d8818e3a7a194e" title="drawBullets" alt="" coords="820,487,909,513"/>
+<area shape="rect" id="node32" href="main_8cpp.html#a94ccbc3feb752aeabc9774afbfc0a8c1" title="DrawButton" alt="" coords="124,411,213,437"/>
+<area shape="rect" id="node33" href="freeglut__std_8h.html#a38d0c6b34ce4f3d27b3323a2c979f434" title="glutMouseFunc" alt="" coords="113,461,224,488"/>
+<area shape="rect" id="node34" href="main_8cpp.html#a79f11062f9d13d49cbc4302131544fde" title="MouseClick" alt="" coords="313,613,403,640"/>
+<area shape="rect" id="node35" href="freeglut__std_8h.html#af1176de81c198da074b59e14d434ebc6" title="glutCreateMenu" alt="" coords="112,563,225,589"/>
+<area shape="rect" id="node36" href="main_8cpp.html#a0596242bf68a6ef382eb5095ff275c7f" title="SubMenu2" alt="" coords="316,512,400,539"/>
+<area shape="rect" id="node37" href="freeglut__std_8h.html#aefc0e9704fb63df5a056ddc6539f46ec" title="glutAddMenuEntry" alt="" coords="104,664,233,691"/>
+<area shape="rect" id="node38" href="main_8cpp.html#a6508d93879d4a974e3d48adb16f27650" title="menu" alt="" coords="331,791,385,817"/>
+<area shape="rect" id="node39" href="freeglut__std_8h.html#adee2359911766c09d05e07bfb66eff78" title="glutAddSubMenu" alt="" coords="108,765,229,792"/>
+<area shape="rect" id="node40" href="freeglut__std_8h.html#a32fa9eaaf9df5932fe925ab68c7e8a22" title="glutAttachMenu" alt="" coords="112,816,225,843"/>
+<area shape="rect" id="node41" href="freeglut__std_8h.html#a9c4fdc94124aec578f3bea7070bd6ceb" title="glutMainLoop" alt="" coords="119,867,218,893"/>
+<area shape="rect" id="node4" href="freeglut__std_8h.html#a1082eda6b270a765d2d8f4f839cf728c" title="glutInitDisplayMode" alt="" coords="291,157,425,184"/>
+<area shape="rect" id="node5" href="freeglut__std_8h.html#af3be2e60d17964dfe49a67b37d9deba5" title="glutInitWindowSize" alt="" coords="292,208,424,235"/>
+<area shape="rect" id="node6" href="freeglut__std_8h.html#a110614b330069d2ae48de1d0ef04519b" title="glutInitWindowPosition" alt="" coords="281,259,435,285"/>
+<area shape="rect" id="node7" href="freeglut__std_8h.html#aea4ae15d87a833997b1f72d5e4a1a58e" title="glutCreateWindow" alt="" coords="295,309,421,336"/>
+<area shape="rect" id="node8" href="freeglut__std_8h.html#a765b5fa72e50aa6225a4779e176af26e" title="glutDisplayFunc" alt="" coords="301,360,415,387"/>
+<area shape="rect" id="node9" href="main_8cpp.html#a1e5b20fed15743656bb6d2e6a6ea6269" title="display" alt="" coords="327,56,389,83"/>
+<area shape="rect" id="node11" href="freeglut__std_8h.html#ae7dd32629bc897e1679597796e359ccd" title="glutReshapeFunc" alt="" coords="297,461,419,488"/>
+<area shape="rect" id="node12" href="main_8cpp.html#acc1ffe65e6869931318610cae7210078" title="reshape" alt="" coords="324,411,392,437"/>
+<area shape="rect" id="node15" href="freeglut__std_8h.html#a4a3208239702781cf56b692948b5eab9" title="glutKeyboardFunc" alt="" coords="295,5,421,32"/>
+<area shape="rect" id="node16" href="main_8cpp.html#ac4648a04ce3040e8ba3e561a9716e79e" title="keyfunc" alt="" coords="325,563,391,589"/>
+<area shape="rect" id="node31" href="main_8cpp.html#a07aaf1227e4d645f15e0a964f54ef291" title="Start" alt="" coords="333,107,383,133"/>
+<area shape="rect" id="node10" href="freeglut__std_8h.html#a3d7bfbfbcdc97d960dde52c505bffd4c" title="glutSwapBuffers" alt="" coords="483,56,597,83"/>
+<area shape="rect" id="node13" href="main_8cpp.html#a7090504cbeaafddda05596cac43c8066" title="raster" alt="" coords="513,335,567,361"/>
+<area shape="rect" id="node14" href="main_8cpp.html#a6cab36a37ab2490834c45d7f507fa871" title="path" alt="" coords="685,335,732,361"/>
+<area shape="rect" id="node17" href="main_8cpp.html#aa41f0bcd25e90a2c7d7ce37f9b575e2b" title="makeTurret" alt="" coords="497,436,583,463"/>
+<area shape="rect" id="node20" href="main_8cpp.html#a47debe550fd5b70944eae6af62ea3971" title="makeEnemy" alt="" coords="493,740,587,767"/>
+<area shape="rect" id="node21" href="main_8cpp.html#a7b17b0c78fa9e56e9e228bd54275cd93" title="readFile" alt="" coords="506,689,574,716"/>
+<area shape="rect" id="node22" href="freeglut__std_8h.html#a1620e1ab4791020e7c08d4ab70447675" title="glutTimerFunc" alt="" coords="657,487,761,513"/>
+<area shape="rect" id="node23" href="main_8cpp.html#aa1b7d944fc5d269240500e79c79745b9" title="idle" alt="" coords="519,588,561,615"/>
+<area shape="rect" id="node30" href="glut_8h.html#a6f255d924f7a6bb2c4be0c8c2f2d9ce3" title="exit" alt="" coords="687,740,730,767"/>
+<area shape="rect" id="node18" href="freeglut__std_8h.html#a74f7774cc8619e5cce6f39cf629c5683" title="glutGet" alt="" coords="957,537,1021,564"/>
+<area shape="rect" id="node19" href="main_8cpp.html#a1e9bebd8dfdc2136dba6a711e43a5fa9" title="drawTurret" alt="" coords="667,436,750,463"/>
+<area shape="rect" id="node24" href="main_8cpp.html#ae235aba3da99a1a98eff2725f78fd76f" title="CalcFPS" alt="" coords="827,537,902,564"/>
+<area shape="rect" id="node25" href="main_8cpp.html#a1cf88fce392d9a574a5bc8164f67c058" title="drawEnemy" alt="" coords="663,588,754,615"/>
+<area shape="rect" id="node27" href="main_8cpp.html#a43d711f5646009700e97e8cce499d5fc" title="drawBullet" alt="" coords="667,639,750,665"/>
+<area shape="rect" id="node28" href="main_8cpp.html#a96b72be91f6be2a3bcb095c810af0a0f" title="text" alt="" coords="687,689,731,716"/>
+<area shape="rect" id="node29" href="freeglut__std_8h.html#a9c4773050c9477d163a077dfc7ceee74" title="glutPostRedisplay" alt="" coords="645,841,772,868"/>
+<area shape="rect" id="node26" href="main_8cpp.html#ac38de32b006bf30195d8818e3a7a194e" title="drawBullets" alt="" coords="820,588,909,615"/>
 </map>
 </div>
 </p>
@@ -771,10 +787,11 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="main_8cpp_a47debe550fd5b70944eae6af62ea3971_icgraph.png" border="0" usemap="#main_8cpp_a47debe550fd5b70944eae6af62ea3971_icgraph" alt=""/></div>
 <map name="main_8cpp_a47debe550fd5b70944eae6af62ea3971_icgraph" id="main_8cpp_a47debe550fd5b70944eae6af62ea3971_icgraph">
-<area shape="rect" id="node2" href="main_8cpp.html#a6508d93879d4a974e3d48adb16f27650" title="menu" alt="" coords="263,5,317,32"/>
-<area shape="rect" id="node4" href="main_8h.html#ac4648a04ce3040e8ba3e561a9716e79e" title="keyfunc" alt="" coords="148,56,215,83"/>
-<area shape="rect" id="node3" href="main_8h.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="365,31,416,57"/>
-<area shape="rect" id="node5" href="main_8h.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init" alt="" coords="271,56,309,83"/>
+<area shape="rect" id="node2" href="main_8cpp.html#a6508d93879d4a974e3d48adb16f27650" title="menu" alt="" coords="287,5,341,32"/>
+<area shape="rect" id="node4" href="main_8cpp.html#a79f11062f9d13d49cbc4302131544fde" title="MouseClick" alt="" coords="148,56,239,83"/>
+<area shape="rect" id="node5" href="main_8h.html#ac4648a04ce3040e8ba3e561a9716e79e" title="keyfunc" alt="" coords="160,107,227,133"/>
+<area shape="rect" id="node3" href="main_8h.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="389,56,440,83"/>
+<area shape="rect" id="node6" href="main_8h.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init" alt="" coords="295,107,333,133"/>
 </map>
 </div>
 </p>
@@ -806,13 +823,25 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8cpp_aa41f0bcd25e90a2c7d7ce37f9b575e2b_cgraph.png" border="0" usemap="#main_8cpp_aa41f0bcd25e90a2c7d7ce37f9b575e2b_cgraph" alt=""/></div>
+<map name="main_8cpp_aa41f0bcd25e90a2c7d7ce37f9b575e2b_cgraph" id="main_8cpp_aa41f0bcd25e90a2c7d7ce37f9b575e2b_cgraph">
+<area shape="rect" id="node2" href="freeglut__std_8h.html#a74f7774cc8619e5cce6f39cf629c5683" title="glutGet" alt="" coords="149,5,213,32"/>
+<area shape="rect" id="node3" href="main_8cpp.html#a1e9bebd8dfdc2136dba6a711e43a5fa9" title="drawTurret" alt="" coords="140,56,223,83"/>
+</map>
+</div>
+</p>
+
+<p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="main_8cpp_aa41f0bcd25e90a2c7d7ce37f9b575e2b_icgraph.png" border="0" usemap="#main_8cpp_aa41f0bcd25e90a2c7d7ce37f9b575e2b_icgraph" alt=""/></div>
 <map name="main_8cpp_aa41f0bcd25e90a2c7d7ce37f9b575e2b_icgraph" id="main_8cpp_aa41f0bcd25e90a2c7d7ce37f9b575e2b_icgraph">
-<area shape="rect" id="node2" href="main_8h.html#ac4648a04ce3040e8ba3e561a9716e79e" title="keyfunc" alt="" coords="140,5,207,32"/>
-<area shape="rect" id="node3" href="main_8h.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init" alt="" coords="255,5,293,32"/>
-<area shape="rect" id="node4" href="main_8h.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="341,5,392,32"/>
+<area shape="rect" id="node2" href="main_8cpp.html#a79f11062f9d13d49cbc4302131544fde" title="MouseClick" alt="" coords="255,5,345,32"/>
+<area shape="rect" id="node4" href="main_8h.html#ac4648a04ce3040e8ba3e561a9716e79e" title="keyfunc" alt="" coords="140,56,207,83"/>
+<area shape="rect" id="node3" href="main_8h.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="393,31,444,57"/>
+<area shape="rect" id="node5" href="main_8h.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init" alt="" coords="281,56,319,83"/>
 </map>
 </div>
 </p>
@@ -857,6 +886,79 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a class="anchor" id="a79f11062f9d13d49cbc4302131544fde"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MouseClick </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>button</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>state</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8cpp_a79f11062f9d13d49cbc4302131544fde_cgraph.png" border="0" usemap="#main_8cpp_a79f11062f9d13d49cbc4302131544fde_cgraph" alt=""/></div>
+<map name="main_8cpp_a79f11062f9d13d49cbc4302131544fde_cgraph" id="main_8cpp_a79f11062f9d13d49cbc4302131544fde_cgraph">
+<area shape="rect" id="node2" href="main_8cpp.html#aa41f0bcd25e90a2c7d7ce37f9b575e2b" title="makeTurret" alt="" coords="148,25,235,52"/>
+<area shape="rect" id="node5" href="main_8cpp.html#a96b72be91f6be2a3bcb095c810af0a0f" title="text" alt="" coords="328,76,372,102"/>
+<area shape="rect" id="node6" href="main_8cpp.html#a7b17b0c78fa9e56e9e228bd54275cd93" title="readFile" alt="" coords="157,329,225,356"/>
+<area shape="rect" id="node7" href="freeglut__std_8h.html#a1620e1ab4791020e7c08d4ab70447675" title="glutTimerFunc" alt="" coords="298,380,402,406"/>
+<area shape="rect" id="node8" href="main_8cpp.html#aa1b7d944fc5d269240500e79c79745b9" title="idle" alt="" coords="170,228,213,254"/>
+<area shape="rect" id="node15" href="main_8cpp.html#a7090504cbeaafddda05596cac43c8066" title="raster" alt="" coords="164,380,219,406"/>
+<area shape="rect" id="node17" href="main_8cpp.html#a47debe550fd5b70944eae6af62ea3971" title="makeEnemy" alt="" coords="144,430,239,457"/>
+<area shape="rect" id="node3" href="freeglut__std_8h.html#a74f7774cc8619e5cce6f39cf629c5683" title="glutGet" alt="" coords="599,126,663,153"/>
+<area shape="rect" id="node4" href="main_8cpp.html#a1e9bebd8dfdc2136dba6a711e43a5fa9" title="drawTurret" alt="" coords="309,25,391,52"/>
+<area shape="rect" id="node9" href="main_8cpp.html#ae235aba3da99a1a98eff2725f78fd76f" title="CalcFPS" alt="" coords="469,126,543,153"/>
+<area shape="rect" id="node10" href="main_8cpp.html#a1cf88fce392d9a574a5bc8164f67c058" title="drawEnemy" alt="" coords="305,177,395,204"/>
+<area shape="rect" id="node12" href="main_8cpp.html#a43d711f5646009700e97e8cce499d5fc" title="drawBullet" alt="" coords="309,228,391,254"/>
+<area shape="rect" id="node13" href="freeglut__std_8h.html#a9c4773050c9477d163a077dfc7ceee74" title="glutPostRedisplay" alt="" coords="287,278,413,305"/>
+<area shape="rect" id="node14" href="glut_8h.html#a6f255d924f7a6bb2c4be0c8c2f2d9ce3" title="exit" alt="" coords="329,329,371,356"/>
+<area shape="rect" id="node11" href="main_8cpp.html#ac38de32b006bf30195d8818e3a7a194e" title="drawBullets" alt="" coords="461,177,551,204"/>
+<area shape="rect" id="node16" href="main_8cpp.html#a6cab36a37ab2490834c45d7f507fa871" title="path" alt="" coords="327,430,373,457"/>
+</map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8cpp_a79f11062f9d13d49cbc4302131544fde_icgraph.png" border="0" usemap="#main_8cpp_a79f11062f9d13d49cbc4302131544fde_icgraph" alt=""/></div>
+<map name="main_8cpp_a79f11062f9d13d49cbc4302131544fde_icgraph" id="main_8cpp_a79f11062f9d13d49cbc4302131544fde_icgraph">
+<area shape="rect" id="node2" href="main_8h.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="144,5,195,32"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
 <a class="anchor" id="a6cab36a37ab2490834c45d7f507fa871"></a>
 <div class="memitem">
 <div class="memproto">
@@ -875,12 +977,13 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="main_8cpp_a6cab36a37ab2490834c45d7f507fa871_icgraph.png" border="0" usemap="#main_8cpp_a6cab36a37ab2490834c45d7f507fa871_icgraph" alt=""/></div>
 <map name="main_8cpp_a6cab36a37ab2490834c45d7f507fa871_icgraph" id="main_8cpp_a6cab36a37ab2490834c45d7f507fa871_icgraph">
-<area shape="rect" id="node2" href="main_8h.html#a7090504cbeaafddda05596cac43c8066" title="raster" alt="" coords="100,56,155,83"/>
-<area shape="rect" id="node3" href="main_8cpp.html#a0596242bf68a6ef382eb5095ff275c7f" title="SubMenu2" alt="" coords="319,5,403,32"/>
-<area shape="rect" id="node5" href="main_8h.html#acc1ffe65e6869931318610cae7210078" title="reshape" alt="" coords="203,56,271,83"/>
-<area shape="rect" id="node7" href="main_8h.html#ac4648a04ce3040e8ba3e561a9716e79e" title="keyfunc" alt="" coords="203,107,270,133"/>
-<area shape="rect" id="node4" href="main_8h.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="451,31,501,57"/>
-<area shape="rect" id="node6" href="main_8h.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init" alt="" coords="341,56,380,83"/>
+<area shape="rect" id="node2" href="main_8h.html#a7090504cbeaafddda05596cac43c8066" title="raster" alt="" coords="100,81,155,108"/>
+<area shape="rect" id="node3" href="main_8cpp.html#a0596242bf68a6ef382eb5095ff275c7f" title="SubMenu2" alt="" coords="322,5,406,32"/>
+<area shape="rect" id="node5" href="main_8cpp.html#a79f11062f9d13d49cbc4302131544fde" title="MouseClick" alt="" coords="319,56,409,83"/>
+<area shape="rect" id="node6" href="main_8h.html#acc1ffe65e6869931318610cae7210078" title="reshape" alt="" coords="203,107,271,133"/>
+<area shape="rect" id="node8" href="main_8h.html#ac4648a04ce3040e8ba3e561a9716e79e" title="keyfunc" alt="" coords="203,157,270,184"/>
+<area shape="rect" id="node4" href="main_8h.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="457,56,508,83"/>
+<area shape="rect" id="node7" href="main_8h.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init" alt="" coords="345,107,383,133"/>
 </map>
 </div>
 </p>
@@ -915,11 +1018,12 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="main_8cpp_a7090504cbeaafddda05596cac43c8066_icgraph.png" border="0" usemap="#main_8cpp_a7090504cbeaafddda05596cac43c8066_icgraph" alt=""/></div>
 <map name="main_8cpp_a7090504cbeaafddda05596cac43c8066_icgraph" id="main_8cpp_a7090504cbeaafddda05596cac43c8066_icgraph">
-<area shape="rect" id="node2" href="main_8cpp.html#a0596242bf68a6ef382eb5095ff275c7f" title="SubMenu2" alt="" coords="224,5,308,32"/>
-<area shape="rect" id="node4" href="main_8h.html#acc1ffe65e6869931318610cae7210078" title="reshape" alt="" coords="108,56,176,83"/>
-<area shape="rect" id="node6" href="main_8h.html#ac4648a04ce3040e8ba3e561a9716e79e" title="keyfunc" alt="" coords="109,107,175,133"/>
-<area shape="rect" id="node3" href="main_8h.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="356,31,407,57"/>
-<area shape="rect" id="node5" href="main_8h.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init" alt="" coords="247,56,285,83"/>
+<area shape="rect" id="node2" href="main_8cpp.html#a0596242bf68a6ef382eb5095ff275c7f" title="SubMenu2" alt="" coords="227,5,311,32"/>
+<area shape="rect" id="node4" href="main_8cpp.html#a79f11062f9d13d49cbc4302131544fde" title="MouseClick" alt="" coords="224,56,315,83"/>
+<area shape="rect" id="node5" href="main_8h.html#acc1ffe65e6869931318610cae7210078" title="reshape" alt="" coords="108,107,176,133"/>
+<area shape="rect" id="node7" href="main_8h.html#ac4648a04ce3040e8ba3e561a9716e79e" title="keyfunc" alt="" coords="109,157,175,184"/>
+<area shape="rect" id="node3" href="main_8h.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="363,56,413,83"/>
+<area shape="rect" id="node6" href="main_8h.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init" alt="" coords="250,107,289,133"/>
 </map>
 </div>
 </p>
@@ -945,10 +1049,11 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="main_8cpp_a7b17b0c78fa9e56e9e228bd54275cd93_icgraph.png" border="0" usemap="#main_8cpp_a7b17b0c78fa9e56e9e228bd54275cd93_icgraph" alt=""/></div>
 <map name="main_8cpp_a7b17b0c78fa9e56e9e228bd54275cd93_icgraph" id="main_8cpp_a7b17b0c78fa9e56e9e228bd54275cd93_icgraph">
-<area shape="rect" id="node2" href="main_8cpp.html#a0596242bf68a6ef382eb5095ff275c7f" title="SubMenu2" alt="" coords="236,5,320,32"/>
-<area shape="rect" id="node4" href="main_8h.html#ac4648a04ce3040e8ba3e561a9716e79e" title="keyfunc" alt="" coords="121,56,188,83"/>
-<area shape="rect" id="node3" href="main_8h.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="368,31,419,57"/>
-<area shape="rect" id="node5" href="main_8h.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init" alt="" coords="259,56,297,83"/>
+<area shape="rect" id="node2" href="main_8cpp.html#a0596242bf68a6ef382eb5095ff275c7f" title="SubMenu2" alt="" coords="260,5,344,32"/>
+<area shape="rect" id="node4" href="main_8cpp.html#a79f11062f9d13d49cbc4302131544fde" title="MouseClick" alt="" coords="121,56,212,83"/>
+<area shape="rect" id="node5" href="main_8h.html#ac4648a04ce3040e8ba3e561a9716e79e" title="keyfunc" alt="" coords="133,107,200,133"/>
+<area shape="rect" id="node3" href="main_8h.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="392,56,443,83"/>
+<area shape="rect" id="node6" href="main_8h.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init" alt="" coords="283,107,321,133"/>
 </map>
 </div>
 </p>
@@ -1048,21 +1153,19 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="main_8cpp_a0596242bf68a6ef382eb5095ff275c7f_cgraph.png" border="0" usemap="#main_8cpp_a0596242bf68a6ef382eb5095ff275c7f_cgraph" alt=""/></div>
 <map name="main_8cpp_a0596242bf68a6ef382eb5095ff275c7f_cgraph" id="main_8cpp_a0596242bf68a6ef382eb5095ff275c7f_cgraph">
-<area shape="rect" id="node2" href="main_8cpp.html#a7b17b0c78fa9e56e9e228bd54275cd93" title="readFile" alt="" coords="137,107,205,133"/>
+<area shape="rect" id="node2" href="main_8cpp.html#a7b17b0c78fa9e56e9e228bd54275cd93" title="readFile" alt="" coords="137,56,205,83"/>
 <area shape="rect" id="node3" href="freeglut__std_8h.html#a1620e1ab4791020e7c08d4ab70447675" title="glutTimerFunc" alt="" coords="265,5,369,32"/>
-<area shape="rect" id="node4" href="main_8cpp.html#aa1b7d944fc5d269240500e79c79745b9" title="idle" alt="" coords="150,208,193,235"/>
-<area shape="rect" id="node15" href="main_8cpp.html#a7090504cbeaafddda05596cac43c8066" title="raster" alt="" coords="144,360,199,387"/>
-<area shape="rect" id="node5" href="main_8cpp.html#ae235aba3da99a1a98eff2725f78fd76f" title="CalcFPS" alt="" coords="279,56,354,83"/>
-<area shape="rect" id="node7" href="main_8cpp.html#a1e9bebd8dfdc2136dba6a711e43a5fa9" title="drawTurret" alt="" coords="275,107,358,133"/>
-<area shape="rect" id="node8" href="main_8cpp.html#a1cf88fce392d9a574a5bc8164f67c058" title="drawEnemy" alt="" coords="271,157,362,184"/>
-<area shape="rect" id="node10" href="main_8cpp.html#a43d711f5646009700e97e8cce499d5fc" title="drawBullet" alt="" coords="275,208,358,235"/>
-<area shape="rect" id="node11" href="main_8cpp.html#a94ccbc3feb752aeabc9774afbfc0a8c1" title="DrawButton" alt="" coords="272,259,361,285"/>
-<area shape="rect" id="node12" href="main_8cpp.html#a96b72be91f6be2a3bcb095c810af0a0f" title="text" alt="" coords="295,309,339,336"/>
-<area shape="rect" id="node13" href="freeglut__std_8h.html#a9c4773050c9477d163a077dfc7ceee74" title="glutPostRedisplay" alt="" coords="253,360,380,387"/>
-<area shape="rect" id="node14" href="glut_8h.html#a6f255d924f7a6bb2c4be0c8c2f2d9ce3" title="exit" alt="" coords="295,411,338,437"/>
-<area shape="rect" id="node6" href="freeglut__std_8h.html#a74f7774cc8619e5cce6f39cf629c5683" title="glutGet" alt="" coords="441,56,505,83"/>
-<area shape="rect" id="node9" href="main_8cpp.html#ac38de32b006bf30195d8818e3a7a194e" title="drawBullets" alt="" coords="428,157,517,184"/>
-<area shape="rect" id="node16" href="main_8cpp.html#a6cab36a37ab2490834c45d7f507fa871" title="path" alt="" coords="293,461,340,488"/>
+<area shape="rect" id="node4" href="main_8cpp.html#aa1b7d944fc5d269240500e79c79745b9" title="idle" alt="" coords="150,157,193,184"/>
+<area shape="rect" id="node13" href="main_8cpp.html#a7090504cbeaafddda05596cac43c8066" title="raster" alt="" coords="144,284,199,311"/>
+<area shape="rect" id="node5" href="main_8cpp.html#ae235aba3da99a1a98eff2725f78fd76f" title="CalcFPS" alt="" coords="435,56,510,83"/>
+<area shape="rect" id="node7" href="main_8cpp.html#a1cf88fce392d9a574a5bc8164f67c058" title="drawEnemy" alt="" coords="271,107,362,133"/>
+<area shape="rect" id="node9" href="main_8cpp.html#a43d711f5646009700e97e8cce499d5fc" title="drawBullet" alt="" coords="275,157,358,184"/>
+<area shape="rect" id="node10" href="main_8cpp.html#a96b72be91f6be2a3bcb095c810af0a0f" title="text" alt="" coords="295,208,339,235"/>
+<area shape="rect" id="node11" href="freeglut__std_8h.html#a9c4773050c9477d163a077dfc7ceee74" title="glutPostRedisplay" alt="" coords="253,259,380,285"/>
+<area shape="rect" id="node12" href="glut_8h.html#a6f255d924f7a6bb2c4be0c8c2f2d9ce3" title="exit" alt="" coords="295,309,338,336"/>
+<area shape="rect" id="node6" href="freeglut__std_8h.html#a74f7774cc8619e5cce6f39cf629c5683" title="glutGet" alt="" coords="565,81,629,108"/>
+<area shape="rect" id="node8" href="main_8cpp.html#ac38de32b006bf30195d8818e3a7a194e" title="drawBullets" alt="" coords="428,107,517,133"/>
+<area shape="rect" id="node14" href="main_8cpp.html#a6cab36a37ab2490834c45d7f507fa871" title="path" alt="" coords="293,360,340,387"/>
 </map>
 </div>
 </p>
@@ -1098,13 +1201,13 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="main_8cpp_a96b72be91f6be2a3bcb095c810af0a0f_icgraph.png" border="0" usemap="#main_8cpp_a96b72be91f6be2a3bcb095c810af0a0f_icgraph" alt=""/></div>
 <map name="main_8cpp_a96b72be91f6be2a3bcb095c810af0a0f_icgraph" id="main_8cpp_a96b72be91f6be2a3bcb095c810af0a0f_icgraph">
 <area shape="rect" id="node2" href="class_text.html#a7216b35c6425969c0a103ec4e8ab035b" title="Text::draw" alt="" coords="109,5,192,32"/>
-<area shape="rect" id="node3" href="class_button.html#aba7fdf9fa71726041a8c606a8c1f01c7" title="Button::Button" alt="" coords="97,56,204,83"/>
-<area shape="rect" id="node4" href="class_button.html#aeb1ff67de69aef54504f36871e247edd" title="Button::draw" alt="" coords="103,107,198,133"/>
-<area shape="rect" id="node5" href="main_8cpp.html#aa1b7d944fc5d269240500e79c79745b9" title="idle" alt="" coords="129,157,172,184"/>
-<area shape="rect" id="node6" href="main_8cpp.html#a0596242bf68a6ef382eb5095ff275c7f" title="SubMenu2" alt="" coords="367,132,451,159"/>
-<area shape="rect" id="node8" href="main_8h.html#ac4648a04ce3040e8ba3e561a9716e79e" title="keyfunc" alt="" coords="252,183,319,209"/>
-<area shape="rect" id="node7" href="main_8h.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="499,157,549,184"/>
-<area shape="rect" id="node9" href="main_8h.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init" alt="" coords="389,183,428,209"/>
+<area shape="rect" id="node3" href="class_button.html#afd9cd023462980d276d2b710d828719b" title="Button::Button" alt="" coords="97,56,204,83"/>
+<area shape="rect" id="node4" href="main_8cpp.html#aa1b7d944fc5d269240500e79c79745b9" title="idle" alt="" coords="129,107,172,133"/>
+<area shape="rect" id="node7" href="main_8cpp.html#a79f11062f9d13d49cbc4302131544fde" title="MouseClick" alt="" coords="252,157,343,184"/>
+<area shape="rect" id="node5" href="main_8cpp.html#a0596242bf68a6ef382eb5095ff275c7f" title="SubMenu2" alt="" coords="391,107,475,133"/>
+<area shape="rect" id="node8" href="main_8h.html#ac4648a04ce3040e8ba3e561a9716e79e" title="keyfunc" alt="" coords="264,56,331,83"/>
+<area shape="rect" id="node6" href="main_8h.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="523,107,573,133"/>
+<area shape="rect" id="node9" href="main_8h.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init" alt="" coords="413,56,452,83"/>
 </map>
 </div>
 </p>
@@ -1118,6 +1221,18 @@ Here is the caller graph for this function:</div>
       <table class="memname">
         <tr>
           <td class="memname">vector&lt;<a class="el" href="class_fired_bullet.html">FiredBullet</a>*&gt; bulletvector</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7edf522381725954c5ff8bd06e5ccff5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt;<a class="el" href="class_button.html">Button</a>*&gt; ButtonVector</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1322,6 +1437,18 @@ Here is the caller graph for this function:</div>
       <table class="memname">
         <tr>
           <td class="memname">vector&lt;<a class="el" href="class_turret.html">Turret</a>*&gt; turretvector</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab6f396318b940e326513fc803b191067"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int WaitTme = 250</td>
         </tr>
       </table>
 </div><div class="memdoc">

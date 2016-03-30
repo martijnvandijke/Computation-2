@@ -270,7 +270,9 @@ private:
 class Button : public Drawable
 {
 public:
-	Button(string text, int mode, Color color, PointF begin, PointF end);
+	
+
+	Button(string text, int mode, Color color, PointF begin, PointF end, PointF begin2, PointF end2);
 
 	void draw() const override;
 
@@ -278,10 +280,12 @@ public:
 
 	void Update();
 
-private:
+public:
 	Color _color;
 	PointF _begin;
 	PointF _end;
+	PointF _end2;
+	PointF _begin2;
 	int _mode;
 	string _text;
 

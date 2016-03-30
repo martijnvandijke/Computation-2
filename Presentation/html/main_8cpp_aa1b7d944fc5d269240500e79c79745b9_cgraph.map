@@ -1,13 +1,11 @@
 <map id="idle" name="idle">
-<area shape="rect" id="node2" href="$main_8cpp.html#ae235aba3da99a1a98eff2725f78fd76f" title="CalcFPS" alt="" coords="122,5,197,32"/>
-<area shape="rect" id="node4" href="$main_8cpp.html#a1e9bebd8dfdc2136dba6a711e43a5fa9" title="drawTurret" alt="" coords="118,56,201,83"/>
-<area shape="rect" id="node5" href="$main_8cpp.html#a1cf88fce392d9a574a5bc8164f67c058" title="drawEnemy" alt="" coords="114,107,205,133"/>
-<area shape="rect" id="node7" href="$main_8cpp.html#a43d711f5646009700e97e8cce499d5fc" title="drawBullet" alt="" coords="118,157,201,184"/>
-<area shape="rect" id="node8" href="$main_8cpp.html#a94ccbc3feb752aeabc9774afbfc0a8c1" title="DrawButton" alt="" coords="115,208,204,235"/>
-<area shape="rect" id="node9" href="$main_8cpp.html#a96b72be91f6be2a3bcb095c810af0a0f" title="text" alt="" coords="137,259,181,285"/>
-<area shape="rect" id="node10" href="$freeglut__std_8h.html#a9c4773050c9477d163a077dfc7ceee74" title="glutPostRedisplay" alt="" coords="96,309,223,336"/>
-<area shape="rect" id="node11" href="$freeglut__std_8h.html#a1620e1ab4791020e7c08d4ab70447675" title="glutTimerFunc" alt="" coords="107,360,211,387"/>
-<area shape="rect" id="node12" href="$glut_8h.html#a6f255d924f7a6bb2c4be0c8c2f2d9ce3" title="exit" alt="" coords="138,411,181,437"/>
-<area shape="rect" id="node3" href="$freeglut__std_8h.html#a74f7774cc8619e5cce6f39cf629c5683" title="glutGet" alt="" coords="283,5,347,32"/>
-<area shape="rect" id="node6" href="$main_8cpp.html#ac38de32b006bf30195d8818e3a7a194e" title="drawBullets" alt="" coords="271,107,360,133"/>
+<area shape="rect" id="node2" href="$main_8cpp.html#ae235aba3da99a1a98eff2725f78fd76f" title="CalcFPS" alt="" coords="278,5,353,32"/>
+<area shape="rect" id="node4" href="$main_8cpp.html#a1cf88fce392d9a574a5bc8164f67c058" title="drawEnemy" alt="" coords="114,56,205,83"/>
+<area shape="rect" id="node6" href="$main_8cpp.html#a43d711f5646009700e97e8cce499d5fc" title="drawBullet" alt="" coords="118,107,201,133"/>
+<area shape="rect" id="node7" href="$main_8cpp.html#a96b72be91f6be2a3bcb095c810af0a0f" title="text" alt="" coords="137,157,181,184"/>
+<area shape="rect" id="node8" href="$freeglut__std_8h.html#a9c4773050c9477d163a077dfc7ceee74" title="glutPostRedisplay" alt="" coords="96,208,223,235"/>
+<area shape="rect" id="node9" href="$freeglut__std_8h.html#a1620e1ab4791020e7c08d4ab70447675" title="glutTimerFunc" alt="" coords="107,259,211,285"/>
+<area shape="rect" id="node10" href="$glut_8h.html#a6f255d924f7a6bb2c4be0c8c2f2d9ce3" title="exit" alt="" coords="138,309,181,336"/>
+<area shape="rect" id="node3" href="$freeglut__std_8h.html#a74f7774cc8619e5cce6f39cf629c5683" title="glutGet" alt="" coords="408,31,472,57"/>
+<area shape="rect" id="node5" href="$main_8cpp.html#ac38de32b006bf30195d8818e3a7a194e" title="drawBullets" alt="" coords="271,56,360,83"/>
 </map>

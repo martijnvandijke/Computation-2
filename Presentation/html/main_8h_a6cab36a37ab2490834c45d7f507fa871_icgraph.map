@@ -1,8 +1,9 @@
 <map id="path" name="path">
-<area shape="rect" id="node2" href="$main_8h.html#a7090504cbeaafddda05596cac43c8066" title="raster" alt="" coords="100,56,155,83"/>
-<area shape="rect" id="node3" href="$main_8cpp.html#a0596242bf68a6ef382eb5095ff275c7f" title="SubMenu2" alt="" coords="319,5,403,32"/>
-<area shape="rect" id="node5" href="$main_8h.html#acc1ffe65e6869931318610cae7210078" title="reshape" alt="" coords="203,56,271,83"/>
-<area shape="rect" id="node7" href="$main_8h.html#ac4648a04ce3040e8ba3e561a9716e79e" title="keyfunc" alt="" coords="203,107,270,133"/>
-<area shape="rect" id="node4" href="$main_8h.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="451,31,501,57"/>
-<area shape="rect" id="node6" href="$main_8h.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init" alt="" coords="341,56,380,83"/>
+<area shape="rect" id="node2" href="$main_8h.html#a7090504cbeaafddda05596cac43c8066" title="raster" alt="" coords="100,81,155,108"/>
+<area shape="rect" id="node3" href="$main_8cpp.html#a0596242bf68a6ef382eb5095ff275c7f" title="SubMenu2" alt="" coords="322,5,406,32"/>
+<area shape="rect" id="node5" href="$main_8cpp.html#a79f11062f9d13d49cbc4302131544fde" title="MouseClick" alt="" coords="319,56,409,83"/>
+<area shape="rect" id="node6" href="$main_8h.html#acc1ffe65e6869931318610cae7210078" title="reshape" alt="" coords="203,107,271,133"/>
+<area shape="rect" id="node8" href="$main_8h.html#ac4648a04ce3040e8ba3e561a9716e79e" title="keyfunc" alt="" coords="203,157,270,184"/>
+<area shape="rect" id="node4" href="$main_8h.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="457,56,508,83"/>
+<area shape="rect" id="node7" href="$main_8h.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init" alt="" coords="345,107,383,133"/>
 </map>

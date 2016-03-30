@@ -1,7 +1,8 @@
 <map id="CalcFPS" name="CalcFPS">
-<area shape="rect" id="node2" href="$main_8cpp.html#aa1b7d944fc5d269240500e79c79745b9" title="idle" alt="" coords="128,31,171,57"/>
-<area shape="rect" id="node3" href="$main_8cpp.html#a0596242bf68a6ef382eb5095ff275c7f" title="SubMenu2" alt="" coords="333,5,417,32"/>
-<area shape="rect" id="node5" href="$main_8h.html#ac4648a04ce3040e8ba3e561a9716e79e" title="keyfunc" alt="" coords="219,56,285,83"/>
-<area shape="rect" id="node4" href="$main_8h.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="465,31,516,57"/>
-<area shape="rect" id="node6" href="$main_8h.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init" alt="" coords="356,56,395,83"/>
+<area shape="rect" id="node2" href="$main_8cpp.html#aa1b7d944fc5d269240500e79c79745b9" title="idle" alt="" coords="128,56,171,83"/>
+<area shape="rect" id="node3" href="$main_8cpp.html#a0596242bf68a6ef382eb5095ff275c7f" title="SubMenu2" alt="" coords="357,5,441,32"/>
+<area shape="rect" id="node5" href="$main_8cpp.html#a79f11062f9d13d49cbc4302131544fde" title="MouseClick" alt="" coords="219,56,309,83"/>
+<area shape="rect" id="node6" href="$main_8h.html#ac4648a04ce3040e8ba3e561a9716e79e" title="keyfunc" alt="" coords="231,107,297,133"/>
+<area shape="rect" id="node4" href="$main_8h.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="489,56,540,83"/>
+<area shape="rect" id="node7" href="$main_8h.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init" alt="" coords="380,107,419,133"/>
 </map>

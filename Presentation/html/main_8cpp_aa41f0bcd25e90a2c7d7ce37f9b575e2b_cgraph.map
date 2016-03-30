@@ -1,0 +1,4 @@
+<map id="makeTurret" name="makeTurret">
+<area shape="rect" id="node2" href="$freeglut__std_8h.html#a74f7774cc8619e5cce6f39cf629c5683" title="glutGet" alt="" coords="149,5,213,32"/>
+<area shape="rect" id="node3" href="$main_8cpp.html#a1e9bebd8dfdc2136dba6a711e43a5fa9" title="drawTurret" alt="" coords="140,56,223,83"/>
+</map>

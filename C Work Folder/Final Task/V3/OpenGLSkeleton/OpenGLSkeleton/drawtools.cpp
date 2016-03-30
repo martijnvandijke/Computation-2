@@ -234,12 +234,14 @@ void Heart::print() const
 
 }
 //text mode color begin pos end pos
-Button::Button(string text, int mode, Color color, PointF begin, PointF end)
+Button::Button(string text, int mode, Color color, PointF begin, PointF end,PointF begin2, PointF end2)
 	: _color{color},
 	_text{text},
 	_mode{mode},
 	_begin{begin},
-	_end{end}
+	_end{end},
+	_begin2{begin2},
+	_end2{end2}
 {
 
 
@@ -248,25 +250,7 @@ Button::Button(string text, int mode, Color color, PointF begin, PointF end)
 void Button::draw() const
 {
 
-	// Create font:
-
-
-	//fill sqaure
-	if (_mode == 1) {
-
-	}
-
-	Color Textcolor = { 0.375, 0.48828125, 0.54296875 };
-	glColor3f(_color[0], _color[1], _color[2]);
-	glRasterPos2f(_begin[0], _begin[1]);
-	//cout << _Position[0] <<"  " << _Position[1] << endl;
-	string text = _text;
-	//cout << text << endl;
-	for (char& c : text)
-	{
-		//cout << "Ik ga printen"<< c << endl;
-		glutBitmapCharacter(GLUT_BITMAP_HELVETICA_18, c);
-	}
+	
 	
 }
 
@@ -277,4 +261,5 @@ void Button::print() const
 
 void Button::Update()
 {
+
 }
