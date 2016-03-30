@@ -13,7 +13,7 @@ Turret::Turret(PointF position,Color color ,int range, int health, int upgrade, 
 {
 	//define bullet speeds for the turret
 	if (_type == 0) {
-		_bulletSpeed = 7;
+		_bulletSpeed = 3;
 	}
 }
 void Turret::TimeUpdate(int CurTime) {
@@ -30,10 +30,7 @@ int Turret::Aim(int i)
 			_aiming = 1;
 			//return 1;
 		}
-		//else
-		//{
-		//	return 0;
-		//}
+
 	}
 
 

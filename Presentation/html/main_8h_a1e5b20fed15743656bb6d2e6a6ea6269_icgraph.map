@@ -1,4 +1,8 @@
 <map id="display" name="display">
-<area shape="rect" id="node2" href="$main_8h.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init" alt="" coords="116,5,155,32"/>
-<area shape="rect" id="node3" href="$main_8h.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="203,5,253,32"/>
+<area shape="rect" id="node2" href="$main_8h.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init" alt="" coords="368,31,407,57"/>
+<area shape="rect" id="node4" href="$main_8cpp.html#aa1b7d944fc5d269240500e79c79745b9" title="idle" alt="" coords="116,56,159,83"/>
+<area shape="rect" id="node3" href="$main_8h.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="477,81,528,108"/>
+<area shape="rect" id="node5" href="$main_8cpp.html#a0596242bf68a6ef382eb5095ff275c7f" title="SubMenu2" alt="" coords="345,81,429,108"/>
+<area shape="rect" id="node6" href="$main_8cpp.html#a79f11062f9d13d49cbc4302131544fde" title="MouseClick" alt="" coords="207,132,297,159"/>
+<area shape="rect" id="node7" href="$main_8h.html#ac4648a04ce3040e8ba3e561a9716e79e" title="keyfunc" alt="" coords="219,31,285,57"/>
 </map>

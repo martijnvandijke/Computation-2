@@ -8,8 +8,6 @@
 #include <iostream>
 #include <string>
 #include "glut.h"           // glut header file. Never include glut before stdlib.h!
-#include <GL/glut.h>
-#include <iostream>
 #include <list>
 #define _USE_MATH_DEFINES   // Signal math.h that we would like defines like M_PI
 #include <math.h>           // Might come in usefull for cosine functions and stuff like that
@@ -22,11 +20,6 @@
 #include <fstream>	
 #include <windows.h>
 #pragma comment(lib, "Winmm.lib")
-
-//#define CRTDBG_MAP_ALLOC
-//#include <stdlib.h>
-////#include <vld.h> 
-//#include <crtdbg.h>
 
 //global variables and defiinitions
 using namespace std;
@@ -42,17 +35,21 @@ string MapName;		//map name
 const int mapSizex = 100;	//map size in x direction
 const int mapSizey = 100;	//map size in y direction
 char Map[mapSizex][mapSizey];	//map data
+
 //vectors for more easy acces then list and more flexibel :)
 vector<Enemy*> enenemyvector;	//vector contains all the enemey
 vector<Turret*> turretvector;	//vector contains all the turrets
 vector<FiredBullet*> bulletvector; //vector containing all the bullets that have been fired and are still live
 vector<Button*> ButtonVector;
+
+//other global variables
 int NumberFrames = 0;
 int currentTime = 0;
 int fps;
 int PrevTime = 0;
 int WaitTme = 250;
-//only excuted once
+int lose = 0;
+//only to be excuted once
 void init()
 {
     // Create a display window
@@ -77,7 +74,7 @@ void init()
 	Start();
 }
 
-//draw the start screen -> fancy opening of the game
+//draw the start screen -> fancy opening of the game under devlopement
 void Start() {
 
 }
@@ -253,21 +250,20 @@ void drawEnemy() {
 				}
 
 			}
+
+
 			//walk algorithm is good but could do better
 			if (enenemyvector.at(i)->_health > 0) {
 				int curx = curpos[0] /20;
 				int cury = curpos[1] / 20;
-				//cout << curx << cury << endl;
 				// get the map character that is 20 pixels further
 				char nextCharXplus = Map[(curx+1)][cury];
 				char nextCharYplus = Map[curx][(cury + 1)];
 				char nextCharXmin =	Map[(curx - 1)][cury];
 				char nextCharYmin = Map[curx][(cury - 1)];
 
-				//if the enemy is at the end of the defensen
+				//if the enemy is at the end of the defense
 				if (Map[(curx)][cury] == 'E') {
-					//decrease the player health
-					//PlayerHealth = PlayerHealth - 10;
 					//delete the enemy
 					delete enenemyvector.at(i);
 					//delete the enemy from the enemy vector
@@ -290,73 +286,49 @@ void drawEnemy() {
 				if (nextCharXplus == 'E') {
 					PointF posEnemy = enenemyvector.at(i)->Move(1, 0);
 					enenemyvector.at(i)->Update(posEnemy);
-					//r = enenemyvector.at(i)->_health;
 					Circle* cirle = new Circle(posEnemy, color, r, seg);
 					drawList.push_back(cirle);
 					drawBullets(posEnemy, i);
-					//Bullet(posEnemy, i);
-					//set = 1;
-					//enenemyvector.
 					continue;
 				}
 				// move 20 y pixels right
 				if (nextCharYplus == '/' && Map[(curx)][(cury +2)] ) {
 					PointF posEnemy = enenemyvector.at(i)->Move(0,1);
-					//cout << "Moving enemy up" << endl;
 					enenemyvector.at(i)->Update(posEnemy);
-					//r = enenemyvector.at(i)->_health;
 					Circle* cirle = new Circle(posEnemy, color, r, seg);
 					drawList.push_back(cirle);
 					drawBullets(posEnemy, i);
-					//Bullet(posEnemy, i);
-					//set = 1;
 					continue;
 				}
 				// move 20 x pixels rght
-				if (nextCharXplus == '/' && Map[(curx + 2)][cury]== '/'	) {
-					
+				if (nextCharXplus == '/' && Map[(curx + 2)][cury]== '/'	) {				
 					PointF posEnemy = enenemyvector.at(i)->Move(1, 0);
-					//cout << "Moving enemy right" << endl;
 					enenemyvector.at(i)->Update(posEnemy);
-					//r = enenemyvector.at(i)->_health;
 					Circle* cirle = new Circle(posEnemy, color, r, seg);
 					drawList.push_back(cirle);
 					drawBullets(posEnemy, i);
-					//Bullet(posEnemy, i);
 					continue;
 				}
 				//move 20 pixels down
 				if (nextCharYmin == '/' && Map[curx][(cury - 2)] == '/'  ) {
-					//if(	set == 1 ){}
 					PointF posEnemy = enenemyvector.at(i)->Move(0, -1);
-					//cout << "Moving enemy down" << endl;
 					enenemyvector.at(i)->Update(posEnemy);
-					//r = enenemyvector.at(i)->_health;
 					Circle* cirle = new Circle(posEnemy, color, r, seg);
 					drawList.push_back(cirle);
 					drawBullets(posEnemy, i);
-					//Bullet(posEnemy, i);
-					//set = 1;
 					continue;
 				}
 				//move 20 pixels left
 				if (nextCharXmin == '/') {
 					PointF posEnemy = enenemyvector.at(i)->Move(-1, 0);
-					//cout << "Moving enemy left" << endl;
 					enenemyvector.at(i)->Update(posEnemy);
-					//r = enenemyvector.at(i)->_health;
 					Circle* cirle = new Circle(posEnemy, color, r, seg);
 					drawList.push_back(cirle);
-					drawBullets(posEnemy, i);
-					//Bullet(posEnemy, i);
-					
+					drawBullets(posEnemy, i);				
 					continue;
 				}
 				else {
 					cout << "Error unable to move the enemy" << endl;
-					//cout << nextCharXplus << nextCharYplus << nextCharXmin << nextCharYmin << endl;
-					//cout << curx << "  " << cury << endl;
-					//set = 0;
 					continue;
  				}
 
@@ -402,6 +374,7 @@ void drawBullets(PointF posEnemy, int j){
 
 					//caclulate range to enemy
 					float rangeToEnemy = sqrt((pow(dx, 2) + pow(dy, 2)));
+					
 					//if enemy is in the range
 					if (rangeToEnemy < turretvector.at(i)->_range) {
 						// As from the Part 2A. PDF
@@ -415,7 +388,8 @@ void drawBullets(PointF posEnemy, int j){
 						int x_2 = (-b - sqrt((pow(b, 2) - 4 * a*c))) / (2 * a);
 						int posx = x_1;
 						int posy = 0;
-						PointF BulletIntercept = { (posEnemy[0] + posx)	, (posEnemy[1] + posy) };
+						PointF BulletIntercept = { (posEnemy[0] + x_1)	, (posEnemy[1] + posy) };
+						//cout << BulletIntercept[0] << endl;
 						FiredBullet* bullet = new FiredBullet(BulletIntercept, posTurret, posTurret, turretvector.at(i)->_bulletSpeed);
 						bulletvector.push_back(bullet);
 						turretvector.at(i)->TimeUpdate(currentTime);
@@ -499,11 +473,11 @@ void drawBullet() {
 		else {
 			//update the movement of the bullet
 			bulletvector.at(i)->Update(BulletPos);
-			//draw the bullet
+			//draw the bullet		+5 becuase of the width of the bullet
 			PointF BulletPos2 = { BulletPos[0], (BulletPos[1] + 5) };
 			Line* bulletline = new Line{ BulletPos , BulletPos2 , color, lind };
+			//push to the draw list
 			drawList.push_back(bulletline);
-
 		}
 	}
 }
@@ -532,7 +506,11 @@ void idle(int value) {
 	}
 	else {
 		cout << "You have lot the game with a score of :" << PlayerScore << endl;
-		PlaySoundW(L"death.wav", NULL, SND_FILENAME | SND_NODEFAULT | SND_ASYNC);
+		PlaySoundW(L"loss.wav", NULL, SND_FILENAME | SND_NODEFAULT | SND_ASYNC);
+		lose = 1;
+		text();
+		display();
+
 		Sleep(8000);
 		exit(0);
 	}
@@ -545,7 +523,7 @@ void text() {
 	float x = (windowWidth - 180);
 	float y = windowHeight - 100;
 	Color color = { 0.375, 0.48828125, 0.54296875 };
-
+	Color loseColor = { 1,1,1};
 	PointF posF = { x, (y+50) };
 	Text* texttodispF = new Text("FPS :", color, posF);
 	DrawTextList.push_back(texttodispF);
@@ -560,10 +538,6 @@ void text() {
 	PointF pos2 = { (x +125), y };
 	Text* texttodisp2 = new Text(to_string(	PlayerHealth)	, color, pos2);
 	DrawTextList.push_back(texttodisp2);
-
-	//PointF posH = { x, y };
-	//Heart* test = new Heart(color, posH);
-	//DrawTextList.push_back(test);
 
 	//print the player Score
 	PointF pos3 = { x, (y -50) };
@@ -580,6 +554,14 @@ void text() {
 	PointF pos6 = { (x + 125), (y - 100) };
 	Text* texttodisp6 = new Text(MapName, color, pos6);
 	DrawTextList.push_back(texttodisp6);
+
+	if (lose == 1) {
+		PointF pos6 = { (windowWidth/2 -100),(windowHeight/2)  };
+		Text* texttodisp6 = new Text("You have lost this game ", loseColor, pos6);
+		DrawTextList.push_back(texttodisp6);
+		
+	}
+
 }
 
 void CalcFPS() {
@@ -752,8 +734,7 @@ void MouseClick(int button, int state, int x, int y){
 	}
 }
 
-//---------------------------------------------------------------------------
-// void reshape(int w, int h)
+//handle reshapes of the screen
 void reshape(int w, int h) 
 {    
     glViewport(0, 0, w, h);
@@ -831,6 +812,8 @@ int main(int argc, char* argv[])
     // Initialize your program
     init();
     // Enter the main application loop
+
+	//fancy asci art :)
 	printf(R"EOF(
 ________                                ________     ________                        
 ___  __/________      ______________    ___  __ \_______  __/_______________________ 
